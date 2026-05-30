@@ -1,0 +1,15 @@
+enum WowExpansion {
+  total,
+  vanilla,
+  tbc,
+  wrath,
+  cataclysm,
+  mop,
+  wod,
+  legion,
+  bfa,
+  shadowlands,
+  dragonflight,
+  warWithin,
+  midnight,
+}
