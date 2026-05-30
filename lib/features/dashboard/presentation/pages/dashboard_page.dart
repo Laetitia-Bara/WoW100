@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/theme/app_theme.dart';
-import './planner_page.dart';
+import '../../../planner/presentation/pages/planner_page.dart';
 
 class DashboardPage extends StatelessWidget {
   const DashboardPage({super.key});
