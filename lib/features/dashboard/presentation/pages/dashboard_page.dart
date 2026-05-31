@@ -15,10 +15,27 @@ class DashboardPage extends StatefulWidget {
 
 class _DashboardPageState extends State<DashboardPage> {
   final Set<WowExpansion> _collapsedExpansions = {};
+  bool _newestFirst = false;
 
   @override
   Widget build(BuildContext context) {
     final progresses = MockProgressSource.getProgress();
+
+    final totalProgress = progresses.firstWhere(
+      (progress) => progress.expansion == WowExpansion.total,
+    );
+
+    final expansionProgresses = progresses
+        .where((progress) => progress.expansion != WowExpansion.total)
+        .toList();
+
+    if (_newestFirst) {
+      expansionProgresses.sort(
+        (a, b) => b.expansion.index.compareTo(a.expansion.index),
+      );
+    }
+
+    final orderedProgresses = [totalProgress, ...expansionProgresses];
 
     return Scaffold(
       appBar: AppBar(
@@ -28,7 +45,21 @@ class _DashboardPageState extends State<DashboardPage> {
             onPressed: () {},
             icon: const Icon(Icons.filter_alt_outlined),
           ),
-          IconButton(onPressed: () {}, icon: const Icon(Icons.sort_outlined)),
+          IconButton(
+            tooltip: _newestFirst
+                ? 'Ordre historique'
+                : 'Extensions récentes en premier',
+            onPressed: () {
+              setState(() {
+                _newestFirst = !_newestFirst;
+              });
+            },
+            icon: Icon(
+              _newestFirst
+                  ? Icons.vertical_align_bottom
+                  : Icons.vertical_align_top,
+            ),
+          ),
         ],
       ),
       body: ListView(
@@ -36,7 +67,7 @@ class _DashboardPageState extends State<DashboardPage> {
         children: [
           const _HeroCard(),
           const SizedBox(height: 20),
-          for (final progress in progresses)
+          for (final progress in orderedProgresses)
             _ExpansionCard(
               progress: progress,
               isCollapsed: _collapsedExpansions.contains(progress.expansion),
