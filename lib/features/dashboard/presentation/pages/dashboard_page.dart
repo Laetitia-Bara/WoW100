@@ -110,9 +110,8 @@ class _DashboardPageState extends State<DashboardPage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => PlannerPage(
-                            extensionName: progress.expansion.label,
-                          ),
+                          builder: (_) =>
+                              PlannerPage(extension: progress.expansion),
                         ),
                       );
                     },
