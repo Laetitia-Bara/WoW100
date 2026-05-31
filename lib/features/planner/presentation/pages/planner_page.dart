@@ -30,12 +30,33 @@ class _PlannerPageState extends State<PlannerPage> {
   Widget build(BuildContext context) {
     final groupedItems = <String, List<TrackingItem>>{};
 
+    final obtainedCount = _items.where((item) => item.obtained).length;
+
+    final totalCount = _items.length;
+
+    final progress = totalCount == 0 ? 0.0 : obtainedCount / totalCount;
+
     for (final item in _items) {
       groupedItems.putIfAbsent(item.instance, () => []).add(item);
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(widget.extension.label)),
+      appBar: AppBar(
+        title: Text(widget.extension.label),
+        actions: [
+          IconButton(
+            tooltip: 'Tout décocher',
+            icon: const Icon(Icons.refresh),
+            onPressed: () {
+              setState(() {
+                _items = _items
+                    .map((item) => item.copyWith(obtained: false))
+                    .toList();
+              });
+            },
+          ),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
@@ -45,7 +66,24 @@ class _PlannerPageState extends State<PlannerPage> {
               context,
             ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800),
           ),
+
+          const SizedBox(height: 16),
+
+          Text(
+            '$obtainedCount / $totalCount obtenus',
+            style: const TextStyle(fontWeight: FontWeight.w700),
+          ),
+
           const SizedBox(height: 8),
+
+          LinearProgressIndicator(
+            value: progress,
+            minHeight: 10,
+            borderRadius: BorderRadius.circular(999),
+          ),
+
+          const SizedBox(height: 8),
+
           const Text(
             'Checklist provisoire mockée. Plus tard elle sera synchronisée avec ta progression Battle.net.',
             style: TextStyle(color: AppTheme.mutedText),
