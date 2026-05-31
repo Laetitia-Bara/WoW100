@@ -7,6 +7,7 @@ import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/sources/mock_planner_source.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/services/wowhead_url_builder.dart';
+import '../../../../data/repositories/planner_repository.dart';
 
 class PlannerPage extends StatefulWidget {
   const PlannerPage({super.key, required this.extension});
@@ -18,12 +19,23 @@ class PlannerPage extends StatefulWidget {
 }
 
 class _PlannerPageState extends State<PlannerPage> {
-  late List<TrackingItem> _items;
+  List<TrackingItem> _items = [];
+  final PlannerRepository _repository = MockPlannerRepository();
+  bool _isLoading = true;
 
   @override
   void initState() {
     super.initState();
-    _items = MockPlannerSource.getItems(widget.extension);
+    _loadItems();
+  }
+
+  Future<void> _loadItems() async {
+    final items = await _repository.getItems(widget.extension);
+
+    setState(() {
+      _items = items;
+      _isLoading = false;
+    });
   }
 
   @override
@@ -57,79 +69,81 @@ class _PlannerPageState extends State<PlannerPage> {
           ),
         ],
       ),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          Text(
-            'À récupérer dans cette extension',
-            style: Theme.of(
-              context,
-            ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800),
-          ),
+      body: _isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : ListView(
+              padding: const EdgeInsets.all(16),
+              children: [
+                Text(
+                  'À récupérer dans cette extension',
+                  style: Theme.of(
+                    context,
+                  ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800),
+                ),
 
-          const SizedBox(height: 16),
+                const SizedBox(height: 16),
 
-          Text(
-            '$obtainedCount / $totalCount obtenus',
-            style: const TextStyle(fontWeight: FontWeight.w700),
-          ),
+                Text(
+                  '$obtainedCount / $totalCount obtenus',
+                  style: const TextStyle(fontWeight: FontWeight.w700),
+                ),
 
-          const SizedBox(height: 8),
+                const SizedBox(height: 8),
 
-          LinearProgressIndicator(
-            value: progress,
-            minHeight: 10,
-            borderRadius: BorderRadius.circular(999),
-          ),
+                LinearProgressIndicator(
+                  value: progress,
+                  minHeight: 10,
+                  borderRadius: BorderRadius.circular(999),
+                ),
 
-          const SizedBox(height: 8),
+                const SizedBox(height: 8),
 
-          const Text(
-            'Checklist provisoire mockée. Plus tard elle sera synchronisée avec ta progression Battle.net.',
-            style: TextStyle(color: AppTheme.mutedText),
-          ),
-          const SizedBox(height: 20),
-
-          if (_items.isEmpty)
-            const Card(
-              child: Padding(
-                padding: EdgeInsets.all(18),
-                child: Text(
-                  'Aucun élément mocké pour cette extension pour le moment.',
+                const Text(
+                  'Checklist provisoire mockée. Plus tard elle sera synchronisée avec ta progression Battle.net.',
                   style: TextStyle(color: AppTheme.mutedText),
                 ),
-              ),
-            ),
+                const SizedBox(height: 20),
 
-          for (final entry in groupedItems.entries) ...[
-            Padding(
-              padding: const EdgeInsets.only(top: 12, bottom: 8),
-              child: Text(
-                '📍 ${entry.key}',
-                style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w800,
-                  color: AppTheme.gold,
-                ),
-              ),
+                if (_items.isEmpty)
+                  const Card(
+                    child: Padding(
+                      padding: EdgeInsets.all(18),
+                      child: Text(
+                        'Aucun élément mocké pour cette extension pour le moment.',
+                        style: TextStyle(color: AppTheme.mutedText),
+                      ),
+                    ),
+                  ),
+
+                for (final entry in groupedItems.entries) ...[
+                  Padding(
+                    padding: const EdgeInsets.only(top: 12, bottom: 8),
+                    child: Text(
+                      '📍 ${entry.key}',
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w800,
+                        color: AppTheme.gold,
+                      ),
+                    ),
+                  ),
+                  for (final item in entry.value)
+                    _PlannerItemCard(
+                      item: item,
+                      onChanged: (value) {
+                        setState(() {
+                          _items = _items.map((current) {
+                            if (current.id == item.id) {
+                              return current.copyWith(obtained: value ?? false);
+                            }
+                            return current;
+                          }).toList();
+                        });
+                      },
+                    ),
+                ],
+              ],
             ),
-            for (final item in entry.value)
-              _PlannerItemCard(
-                item: item,
-                onChanged: (value) {
-                  setState(() {
-                    _items = _items.map((current) {
-                      if (current.id == item.id) {
-                        return current.copyWith(obtained: value ?? false);
-                      }
-                      return current;
-                    }).toList();
-                  });
-                },
-              ),
-          ],
-        ],
-      ),
     );
   }
 }
