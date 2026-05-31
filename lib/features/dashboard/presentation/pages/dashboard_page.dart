@@ -16,6 +16,12 @@ class DashboardPage extends StatefulWidget {
 class _DashboardPageState extends State<DashboardPage> {
   final Set<WowExpansion> _collapsedExpansions = {};
   bool _newestFirst = false;
+  final Set<TrackingCategory> _visibleCategories = {
+    TrackingCategory.achievements,
+    TrackingCategory.mounts,
+    TrackingCategory.pets,
+    TrackingCategory.professions,
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +48,24 @@ class _DashboardPageState extends State<DashboardPage> {
         title: const Text('WoW100%'),
         actions: [
           IconButton(
-            onPressed: () {},
+            tooltip: 'Filtres',
+            onPressed: () async {
+              final result = await showModalBottomSheet<Set<TrackingCategory>>(
+                context: context,
+                isScrollControlled: true,
+                builder: (_) => _CategoryFilterSheet(
+                  selectedCategories: _visibleCategories,
+                ),
+              );
+
+              if (result != null) {
+                setState(() {
+                  _visibleCategories
+                    ..clear()
+                    ..addAll(result);
+                });
+              }
+            },
             icon: const Icon(Icons.filter_alt_outlined),
           ),
           IconButton(
@@ -70,6 +93,7 @@ class _DashboardPageState extends State<DashboardPage> {
           for (final progress in orderedProgresses)
             _ExpansionCard(
               progress: progress,
+              visibleCategories: _visibleCategories,
               isCollapsed: _collapsedExpansions.contains(progress.expansion),
               onToggleCollapse: () {
                 setState(() {
@@ -138,12 +162,14 @@ class _ExpansionCard extends StatelessWidget {
     required this.onTap,
     required this.isCollapsed,
     required this.onToggleCollapse,
+    required this.visibleCategories,
   });
 
   final ExpansionProgress progress;
   final VoidCallback? onTap;
   final bool isCollapsed;
   final VoidCallback onToggleCollapse;
+  final Set<TrackingCategory> visibleCategories;
 
   @override
   Widget build(BuildContext context) {
@@ -198,12 +224,12 @@ class _ExpansionCard extends StatelessWidget {
                 const SizedBox(height: 14),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: TrackingCategory.values.map((category) {
+                  children: visibleCategories.map((category) {
                     final completed = progress.completed[category] ?? 0;
                     final total = progress.total[category] ?? 0;
 
                     return _MiniStat(
-                      label: category.label,
+                      label: category.shortLabel,
                       value: '$completed/$total',
                     );
                   }).toList(),
@@ -234,6 +260,79 @@ class _MiniStat extends StatelessWidget {
         const SizedBox(height: 4),
         Text(value, style: const TextStyle(fontWeight: FontWeight.w700)),
       ],
+    );
+  }
+}
+
+class _CategoryFilterSheet extends StatefulWidget {
+  const _CategoryFilterSheet({required this.selectedCategories});
+
+  final Set<TrackingCategory> selectedCategories;
+
+  @override
+  State<_CategoryFilterSheet> createState() => _CategoryFilterSheetState();
+}
+
+class _CategoryFilterSheetState extends State<_CategoryFilterSheet> {
+  late final Set<TrackingCategory> _tempSelected;
+
+  @override
+  void initState() {
+    super.initState();
+    _tempSelected = {...widget.selectedCategories};
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.all(18),
+        child: DraggableScrollableSheet(
+          expand: false,
+          initialChildSize: 0.75,
+          minChildSize: 0.4,
+          maxChildSize: 0.95,
+          builder: (context, scrollController) {
+            return Column(
+              children: [
+                const Text(
+                  'Catégories affichées',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
+                ),
+                const SizedBox(height: 12),
+                Expanded(
+                  child: ListView(
+                    controller: scrollController,
+                    children: [
+                      for (final category in TrackingCategory.values)
+                        CheckboxListTile(
+                          value: _tempSelected.contains(category),
+                          title: Text(category.label),
+                          onChanged: (value) {
+                            setState(() {
+                              if (value == true) {
+                                _tempSelected.add(category);
+                              } else {
+                                _tempSelected.remove(category);
+                              }
+                            });
+                          },
+                        ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 12),
+                FilledButton(
+                  onPressed: () {
+                    Navigator.pop(context, _tempSelected);
+                  },
+                  child: const Text('Appliquer'),
+                ),
+              ],
+            );
+          },
+        ),
+      ),
     );
   }
 }
