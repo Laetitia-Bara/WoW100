@@ -4,14 +4,13 @@ import 'package:wow100/data/models/tracking_category.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/tracking_item.dart';
 import '../../../../data/models/wow_expansion.dart';
-import '../../../../data/sources/mock_planner_source.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../data/repositories/planner_repository.dart';
+import '../../../../core/services/local_check_service.dart';
 
 class PlannerPage extends StatefulWidget {
   const PlannerPage({super.key, required this.extension});
-
   final WowExpansion extension;
 
   @override
@@ -22,6 +21,7 @@ class _PlannerPageState extends State<PlannerPage> {
   List<TrackingItem> _items = [];
   final PlannerRepository _repository = MockPlannerRepository();
   bool _isLoading = true;
+  final LocalCheckService _localCheckService = LocalCheckService();
 
   @override
   void initState() {
@@ -32,8 +32,16 @@ class _PlannerPageState extends State<PlannerPage> {
   Future<void> _loadItems() async {
     final items = await _repository.getItems(widget.extension);
 
+    final updatedItems = <TrackingItem>[];
+
+    for (final item in items) {
+      final checked = await _localCheckService.isChecked(item.id);
+
+      updatedItems.add(item.copyWith(obtained: checked));
+    }
+
     setState(() {
-      _items = items;
+      _items = updatedItems;
       _isLoading = false;
     });
   }
@@ -59,7 +67,11 @@ class _PlannerPageState extends State<PlannerPage> {
           IconButton(
             tooltip: 'Tout décocher',
             icon: const Icon(Icons.refresh),
-            onPressed: () {
+            onPressed: () async {
+              for (final item in _items) {
+                await _localCheckService.clearChecked(item.id);
+              }
+
               setState(() {
                 _items = _items
                     .map((item) => item.copyWith(obtained: false))
@@ -130,12 +142,17 @@ class _PlannerPageState extends State<PlannerPage> {
                   for (final item in entry.value)
                     _PlannerItemCard(
                       item: item,
-                      onChanged: (value) {
+                      onChanged: (value) async {
+                        final checked = value ?? false;
+
+                        await _localCheckService.setChecked(item.id, checked);
+
                         setState(() {
                           _items = _items.map((current) {
                             if (current.id == item.id) {
-                              return current.copyWith(obtained: value ?? false);
+                              return current.copyWith(obtained: checked);
                             }
+
                             return current;
                           }).toList();
                         });

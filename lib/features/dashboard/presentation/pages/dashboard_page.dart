@@ -4,7 +4,7 @@ import '../../../planner/presentation/pages/planner_page.dart';
 import '../../../../data/models/expansion_progress.dart';
 import '../../../../data/models/tracking_category.dart';
 import '../../../../data/models/wow_expansion.dart';
-import '../../../../data/sources/mock_progress_source.dart';
+import '../../../../data/repositories/progress_repository.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -22,11 +22,32 @@ class _DashboardPageState extends State<DashboardPage> {
     TrackingCategory.pets,
     TrackingCategory.professions,
   };
+  final ProgressRepository _repository = MockProgressRepository();
+  bool _isLoading = true;
+  List<ExpansionProgress> _progresses = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadProgress();
+  }
+
+  Future<void> _loadProgress() async {
+    final progresses = await _repository.getProgress();
+
+    setState(() {
+      _progresses = progresses;
+      _isLoading = false;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    final progresses = MockProgressSource.getProgress();
+    if (_isLoading) {
+      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    }
 
+    final progresses = _progresses;
     final totalProgress = progresses.firstWhere(
       (progress) => progress.expansion == WowExpansion.total,
     );
