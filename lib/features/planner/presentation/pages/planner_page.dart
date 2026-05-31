@@ -22,6 +22,8 @@ class _PlannerPageState extends State<PlannerPage> {
   final PlannerRepository _repository = MockPlannerRepository();
   bool _isLoading = true;
   final LocalCheckService _localCheckService = LocalCheckService();
+  TrackingCategory? _selectedCategory;
+  String _searchQuery = '';
 
   @override
   void initState() {
@@ -56,7 +58,20 @@ class _PlannerPageState extends State<PlannerPage> {
 
     final progress = totalCount == 0 ? 0.0 : obtainedCount / totalCount;
 
-    for (final item in _items) {
+    final filteredItems = _items.where((item) {
+      final matchesCategory =
+          _selectedCategory == null || item.category == _selectedCategory;
+
+      final matchesSearch =
+          _searchQuery.isEmpty ||
+          item.name.toLowerCase().contains(_searchQuery.toLowerCase()) ||
+          item.instance.toLowerCase().contains(_searchQuery.toLowerCase()) ||
+          item.source.toLowerCase().contains(_searchQuery.toLowerCase());
+
+      return matchesCategory && matchesSearch;
+    }).toList();
+
+    for (final item in filteredItems) {
       groupedItems.putIfAbsent(item.instance, () => []).add(item);
     }
 
@@ -95,6 +110,48 @@ class _PlannerPageState extends State<PlannerPage> {
 
                 const SizedBox(height: 16),
 
+                TextField(
+                  decoration: const InputDecoration(
+                    labelText: 'Rechercher',
+                    prefixIcon: Icon(Icons.search),
+                    border: OutlineInputBorder(),
+                  ),
+                  onChanged: (value) {
+                    setState(() {
+                      _searchQuery = value;
+                    });
+                  },
+                ),
+
+                const SizedBox(height: 12),
+
+                DropdownButtonFormField<TrackingCategory?>(
+                  value: _selectedCategory,
+                  decoration: const InputDecoration(
+                    labelText: 'Catégorie',
+                    border: OutlineInputBorder(),
+                  ),
+                  items: [
+                    const DropdownMenuItem<TrackingCategory?>(
+                      value: null,
+                      child: Text('Toutes les catégories'),
+                    ),
+                    ...TrackingCategory.values.map(
+                      (category) => DropdownMenuItem<TrackingCategory?>(
+                        value: category,
+                        child: Text(category.label),
+                      ),
+                    ),
+                  ],
+                  onChanged: (value) {
+                    setState(() {
+                      _selectedCategory = value;
+                    });
+                  },
+                ),
+
+                const SizedBox(height: 20),
+
                 Text(
                   '$obtainedCount / $totalCount obtenus',
                   style: const TextStyle(fontWeight: FontWeight.w700),
@@ -116,12 +173,12 @@ class _PlannerPageState extends State<PlannerPage> {
                 ),
                 const SizedBox(height: 20),
 
-                if (_items.isEmpty)
+                if (filteredItems.isEmpty)
                   const Card(
                     child: Padding(
                       padding: EdgeInsets.all(18),
                       child: Text(
-                        'Aucun élément mocké pour cette extension pour le moment.',
+                        'Aucun élément ne correspond à cette recherche.',
                         style: TextStyle(color: AppTheme.mutedText),
                       ),
                     ),
