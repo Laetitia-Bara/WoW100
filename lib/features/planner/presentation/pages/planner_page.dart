@@ -5,6 +5,8 @@ import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/tracking_item.dart';
 import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/sources/mock_planner_source.dart';
+import 'package:url_launcher/url_launcher.dart';
+import '../../../../core/services/wowhead_url_builder.dart';
 
 class PlannerPage extends StatefulWidget {
   const PlannerPage({super.key, required this.extension});
@@ -100,6 +102,13 @@ class _PlannerItemCard extends StatelessWidget {
   final TrackingItem item;
   final ValueChanged<bool?> onChanged;
 
+  Future<void> _openWowhead() async {
+    final url = WowheadUrlBuilder.build(item: item, locale: 'fr');
+    final uri = Uri.parse(url);
+
+    await launchUrl(uri, mode: LaunchMode.externalApplication);
+  }
+
   @override
   Widget build(BuildContext context) {
     final tags = [
@@ -138,7 +147,11 @@ class _PlannerItemCard extends StatelessWidget {
             ],
           ),
         ),
-        secondary: const Icon(Icons.inventory_2_outlined),
+        secondary: IconButton(
+          tooltip: 'Ouvrir sur Wowhead',
+          icon: const Icon(Icons.open_in_new),
+          onPressed: _openWowhead,
+        ),
       ),
     );
   }
