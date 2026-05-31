@@ -6,8 +6,15 @@ import '../../../../data/models/tracking_category.dart';
 import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/sources/mock_progress_source.dart';
 
-class DashboardPage extends StatelessWidget {
+class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
+
+  @override
+  State<DashboardPage> createState() => _DashboardPageState();
+}
+
+class _DashboardPageState extends State<DashboardPage> {
+  final Set<WowExpansion> _collapsedExpansions = {};
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +39,16 @@ class DashboardPage extends StatelessWidget {
           for (final progress in progresses)
             _ExpansionCard(
               progress: progress,
+              isCollapsed: _collapsedExpansions.contains(progress.expansion),
+              onToggleCollapse: () {
+                setState(() {
+                  if (_collapsedExpansions.contains(progress.expansion)) {
+                    _collapsedExpansions.remove(progress.expansion);
+                  } else {
+                    _collapsedExpansions.add(progress.expansion);
+                  }
+                });
+              },
               onTap: progress.expansion == WowExpansion.total
                   ? null
                   : () {
@@ -85,10 +102,17 @@ class _HeroCard extends StatelessWidget {
 }
 
 class _ExpansionCard extends StatelessWidget {
-  const _ExpansionCard({required this.progress, required this.onTap});
+  const _ExpansionCard({
+    required this.progress,
+    required this.onTap,
+    required this.isCollapsed,
+    required this.onToggleCollapse,
+  });
 
   final ExpansionProgress progress;
   final VoidCallback? onTap;
+  final bool isCollapsed;
+  final VoidCallback onToggleCollapse;
 
   @override
   Widget build(BuildContext context) {
@@ -104,7 +128,14 @@ class _ExpansionCard extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  const Icon(Icons.keyboard_arrow_down),
+                  IconButton(
+                    onPressed: onToggleCollapse,
+                    icon: Icon(
+                      isCollapsed
+                          ? Icons.keyboard_arrow_right
+                          : Icons.keyboard_arrow_down,
+                    ),
+                  ),
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
@@ -124,27 +155,29 @@ class _ExpansionCard extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              LinearProgressIndicator(
-                value: progress.completionRate,
-                minHeight: 8,
-                borderRadius: BorderRadius.circular(999),
-                backgroundColor: Colors.white10,
-                color: AppTheme.gold,
-              ),
-              const SizedBox(height: 14),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: TrackingCategory.values.map((category) {
-                  final completed = progress.completed[category] ?? 0;
-                  final total = progress.total[category] ?? 0;
+              if (!isCollapsed) ...[
+                const SizedBox(height: 12),
+                LinearProgressIndicator(
+                  value: progress.completionRate,
+                  minHeight: 8,
+                  borderRadius: BorderRadius.circular(999),
+                  backgroundColor: Colors.white10,
+                  color: AppTheme.gold,
+                ),
+                const SizedBox(height: 14),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: TrackingCategory.values.map((category) {
+                    final completed = progress.completed[category] ?? 0;
+                    final total = progress.total[category] ?? 0;
 
-                  return _MiniStat(
-                    label: category.label,
-                    value: '$completed/$total',
-                  );
-                }).toList(),
-              ),
+                    return _MiniStat(
+                      label: category.label,
+                      value: '$completed/$total',
+                    );
+                  }).toList(),
+                ),
+              ],
             ],
           ),
         ),
