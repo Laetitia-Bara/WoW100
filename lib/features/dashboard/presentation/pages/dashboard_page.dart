@@ -1,27 +1,17 @@
 import 'package:flutter/material.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../planner/presentation/pages/planner_page.dart';
+import '../../../../data/models/expansion_progress.dart';
+import '../../../../data/models/tracking_category.dart';
+import '../../../../data/models/wow_expansion.dart';
+import '../../../../data/sources/mock_progress_source.dart';
 
 class DashboardPage extends StatelessWidget {
   const DashboardPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final extensions = [
-      'Vue totale',
-      'Vanilla',
-      'The Burning Crusade',
-      'Wrath of the Lich King',
-      'Cataclysm',
-      'Mists of Pandaria',
-      'Warlords of Draenor',
-      'Legion',
-      'Battle for Azeroth',
-      'Shadowlands',
-      'Dragonflight',
-      'The War Within',
-      'Midnight',
-    ];
+    final progresses = MockProgressSource.getProgress();
 
     return Scaffold(
       appBar: AppBar(
@@ -39,17 +29,18 @@ class DashboardPage extends StatelessWidget {
         children: [
           const _HeroCard(),
           const SizedBox(height: 20),
-          for (final extension in extensions)
+          for (final progress in progresses)
             _ExpansionCard(
-              title: extension,
-              progress: extension == 'Vue totale' ? 42 : 18,
-              onTap: extension == 'Vue totale'
+              progress: progress,
+              onTap: progress.expansion == WowExpansion.total
                   ? null
                   : () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => PlannerPage(extensionName: extension),
+                          builder: (_) => PlannerPage(
+                            extensionName: progress.expansion.label,
+                          ),
                         ),
                       );
                     },
@@ -94,18 +85,14 @@ class _HeroCard extends StatelessWidget {
 }
 
 class _ExpansionCard extends StatelessWidget {
-  const _ExpansionCard({
-    required this.title,
-    required this.progress,
-    required this.onTap,
-  });
+  const _ExpansionCard({required this.progress, required this.onTap});
 
-  final String title;
-  final int progress;
+  final ExpansionProgress progress;
   final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
+    final percent = (progress.completionRate * 100).round();
     return InkWell(
       onTap: onTap,
       borderRadius: BorderRadius.circular(20),
@@ -121,7 +108,7 @@ class _ExpansionCard extends StatelessWidget {
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
-                      title,
+                      progress.expansion.label,
                       style: const TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 16,
@@ -129,7 +116,7 @@ class _ExpansionCard extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    '$progress%',
+                    '$percent%',
                     style: const TextStyle(
                       color: AppTheme.gold,
                       fontWeight: FontWeight.w800,
@@ -139,21 +126,24 @@ class _ExpansionCard extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               LinearProgressIndicator(
-                value: progress / 100,
+                value: progress.completionRate,
                 minHeight: 8,
                 borderRadius: BorderRadius.circular(999),
                 backgroundColor: Colors.white10,
                 color: AppTheme.gold,
               ),
               const SizedBox(height: 14),
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  _MiniStat(label: 'HF', value: '12/120'),
-                  _MiniStat(label: 'Montures', value: '4/30'),
-                  _MiniStat(label: 'Mascottes', value: '8/55'),
-                  _MiniStat(label: 'Métiers', value: '2/10'),
-                ],
+                children: TrackingCategory.values.map((category) {
+                  final completed = progress.completed[category] ?? 0;
+                  final total = progress.total[category] ?? 0;
+
+                  return _MiniStat(
+                    label: category.label,
+                    value: '$completed/$total',
+                  );
+                }).toList(),
               ),
             ],
           ),
