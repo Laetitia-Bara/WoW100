@@ -11,11 +11,23 @@ class JsonPlannerRepository implements PlannerRepository {
 
   @override
   Future<List<TrackingItem>> getItems(WowExpansion expansion) async {
+    final assetPaths = <String>[];
+
     switch (expansion) {
       case WowExpansion.wrath:
-        return _source.loadWrathMounts();
+        assetPaths.add('assets/data/mounts/wrath_mounts.json');
+        break;
       default:
         return [];
     }
+
+    final allItems = <TrackingItem>[];
+
+    for (final path in assetPaths) {
+      final items = await _source.loadItemsFromAsset(path);
+      allItems.addAll(items);
+    }
+
+    return allItems;
   }
 }
