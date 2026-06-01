@@ -10,6 +10,7 @@ class BattleNetAuthService {
       'redirect_uri': redirectUri,
       'response_type': 'code',
       'scope': 'wow.profile',
+      'state': 'wow100-dev',
     });
 
     return uri.toString();
