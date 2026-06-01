@@ -37,5 +37,18 @@
     "groupRequired": false,
     "weeklyLockout": false,
     "blizzardId": 363
-  }
+  },
+
+  {
+  "id": "wrath-test-1",
+  "name": "Loup des bois",
+  "category": "mounts",
+  "expansion": "wrath",
+  "zone": "Test",
+  "instance": "",
+  "source": "",
+  "groupRequired": false,
+  "weeklyLockout": false,
+  "blizzardId": 14
+}
 ]

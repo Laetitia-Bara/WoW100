@@ -1,8 +1,10 @@
+import '../../core/services/battle_net_token_service.dart';
+import '../../core/services/local_check_service.dart';
 import '../models/expansion_progress.dart';
 import '../models/tracking_category.dart';
 import '../models/wow_expansion.dart';
+import '../repositories/battle_net_repository.dart';
 import '../sources/json_planner_source.dart';
-import '../../core/services/local_check_service.dart';
 
 abstract class ProgressRepository {
   Future<List<ExpansionProgress>> getProgress();
@@ -11,6 +13,8 @@ abstract class ProgressRepository {
 class JsonProgressRepository implements ProgressRepository {
   final JsonPlannerSource _source = JsonPlannerSource();
   final LocalCheckService _localCheckService = LocalCheckService();
+  final BattleNetTokenService _tokenService = BattleNetTokenService();
+  final BattleNetRepository _battleNetRepository = BattleNetRepository();
 
   @override
   Future<List<ExpansionProgress>> getProgress() async {
@@ -21,6 +25,15 @@ class JsonProgressRepository implements ProgressRepository {
       ...await _source.loadItemsFromAsset('assets/data/pets/wrath_pets.json'),
     ];
 
+    final token = await _tokenService.loadToken();
+
+    final ownedMountIds = <int>{};
+
+    if (token != null) {
+      final mounts = await _battleNetRepository.getMounts(token);
+      ownedMountIds.addAll(mounts.map((mount) => mount.id));
+    }
+
     final completed = <TrackingCategory, int>{};
     final total = <TrackingCategory, int>{};
 
@@ -28,7 +41,13 @@ class JsonProgressRepository implements ProgressRepository {
       total[item.category] = (total[item.category] ?? 0) + 1;
 
       final checked = await _localCheckService.isChecked(item.id);
-      if (checked) {
+
+      final ownedByBattleNet =
+          item.category == TrackingCategory.mounts &&
+          item.blizzardId != null &&
+          ownedMountIds.contains(item.blizzardId);
+
+      if (checked || ownedByBattleNet) {
         completed[item.category] = (completed[item.category] ?? 0) + 1;
       }
     }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:wow100/core/services/battle_net_token_service.dart';
 import 'package:wow100/data/models/tracking_category.dart';
+import 'package:wow100/data/repositories/battle_net_repository.dart';
 
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/tracking_item.dart';
@@ -37,11 +39,24 @@ class _PlannerPageState extends State<PlannerPage> {
     final items = await _repository.getItems(widget.extension);
 
     final updatedItems = <TrackingItem>[];
+    final token = await BattleNetTokenService().loadToken();
+
+    final ownedMountIds = <int>{};
+
+    if (token != null) {
+      final mounts = await BattleNetRepository().getMounts(token);
+      ownedMountIds.addAll(mounts.map((mount) => mount.id));
+    }
 
     for (final item in items) {
       final checked = await _localCheckService.isChecked(item.id);
 
-      updatedItems.add(item.copyWith(obtained: checked));
+      final ownedByBattleNet =
+          item.category == TrackingCategory.mounts &&
+          item.blizzardId != null &&
+          ownedMountIds.contains(item.blizzardId);
+
+      updatedItems.add(item.copyWith(obtained: checked || ownedByBattleNet));
     }
 
     setState(() {
