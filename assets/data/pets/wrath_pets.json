@@ -20,5 +20,18 @@
     "source": "Les Oracles",
     "groupRequired": false,
     "weeklyLockout": false
-  }
+  },
+
+  {
+  "id": "wrath-pet-test",
+  "name": "Bébé griffon",
+  "category": "pets",
+  "expansion": "wrath",
+  "zone": "Test",
+  "instance": "",
+  "source": "",
+  "groupRequired": false,
+  "weeklyLockout": false,
+  "blizzardId": 245
+}
 ]

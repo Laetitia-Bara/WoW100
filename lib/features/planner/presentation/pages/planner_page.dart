@@ -42,6 +42,10 @@ class _PlannerPageState extends State<PlannerPage> {
     final token = await BattleNetTokenService().loadToken();
 
     final ownedMountIds = <int>{};
+    final ownedPetIds = <int>{};
+
+    final pets = await BattleNetRepository().getPets(token!);
+    ownedPetIds.addAll(pets.map((pet) => pet.id));
 
     if (token != null) {
       final mounts = await BattleNetRepository().getMounts(token);
@@ -51,12 +55,19 @@ class _PlannerPageState extends State<PlannerPage> {
     for (final item in items) {
       final checked = await _localCheckService.isChecked(item.id);
 
-      final ownedByBattleNet =
+      final ownedMount =
           item.category == TrackingCategory.mounts &&
           item.blizzardId != null &&
           ownedMountIds.contains(item.blizzardId);
 
-      updatedItems.add(item.copyWith(obtained: checked || ownedByBattleNet));
+      final ownedPet =
+          item.category == TrackingCategory.pets &&
+          item.blizzardId != null &&
+          ownedPetIds.contains(item.blizzardId);
+
+      updatedItems.add(
+        item.copyWith(obtained: checked || ownedMount || ownedPet),
+      );
     }
 
     setState(() {

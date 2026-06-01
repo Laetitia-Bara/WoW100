@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../models/wow_character.dart';
 import '../models/wow_mount.dart';
+import '../models/wow_pet.dart';
 
 class BattleNetRepository {
   static const _functionsBaseUrl =
@@ -52,6 +53,27 @@ class BattleNetRepository {
       return WowMount.fromJson({
         'id': entry['mount']['id'],
         'name': entry['mount']['name'],
+      });
+    }).toList();
+  }
+
+  Future<List<WowPet>> getPets(String token) async {
+    final uri = Uri.parse('$_functionsBaseUrl/getWowPets?token=$token');
+
+    final response = await http.get(uri);
+
+    if (response.statusCode != 200) {
+      throw Exception(response.body);
+    }
+
+    final data = jsonDecode(response.body);
+
+    final pets = data['pets'] as List;
+
+    return pets.map((entry) {
+      return WowPet.fromJson({
+        'id': entry['species']['id'],
+        'name': entry['species']['name'],
       });
     }).toList();
   }

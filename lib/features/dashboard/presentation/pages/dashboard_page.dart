@@ -94,11 +94,19 @@ class _DashboardPageState extends State<DashboardPage> {
 
               if (token != null) {
                 final mounts = await BattleNetRepository().getMounts(token);
+                final pets = await BattleNetRepository().getPets(token);
 
                 if (!context.mounted) return;
 
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(content: Text('${mounts.length} montures trouvées')),
+                );
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(
+                      '${mounts.length} montures • ${pets.length} mascottes',
+                    ),
+                  ),
                 );
               }
 

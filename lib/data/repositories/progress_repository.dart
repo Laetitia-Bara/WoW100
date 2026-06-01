@@ -28,10 +28,14 @@ class JsonProgressRepository implements ProgressRepository {
     final token = await _tokenService.loadToken();
 
     final ownedMountIds = <int>{};
+    final ownedPetIds = <int>{};
 
     if (token != null) {
       final mounts = await _battleNetRepository.getMounts(token);
       ownedMountIds.addAll(mounts.map((mount) => mount.id));
+
+      final pets = await _battleNetRepository.getPets(token);
+      ownedPetIds.addAll(pets.map((pet) => pet.id));
     }
 
     final completed = <TrackingCategory, int>{};
@@ -42,12 +46,17 @@ class JsonProgressRepository implements ProgressRepository {
 
       final checked = await _localCheckService.isChecked(item.id);
 
-      final ownedByBattleNet =
+      final ownedMount =
           item.category == TrackingCategory.mounts &&
           item.blizzardId != null &&
           ownedMountIds.contains(item.blizzardId);
 
-      if (checked || ownedByBattleNet) {
+      final ownedPet =
+          item.category == TrackingCategory.pets &&
+          item.blizzardId != null &&
+          ownedPetIds.contains(item.blizzardId);
+
+      if (checked || ownedMount || ownedPet) {
         completed[item.category] = (completed[item.category] ?? 0) + 1;
       }
     }
