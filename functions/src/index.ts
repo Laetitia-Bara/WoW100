@@ -48,3 +48,35 @@ export const exchangeBattleNetCode = onRequest(
     }
   }
 );
+
+export const getWowProfile = onRequest(
+  async (request, response) => {
+    try {
+      const token = request.query.token as string;
+
+      if (!token) {
+        response.status(400).json({error: "missing_token"});
+        return;
+      }
+
+      const result = await axios.get(
+        "https://eu.api.blizzard.com/profile/user/wow",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+          params: {
+            namespace: "profile-eu",
+            locale: "fr_FR",
+          },
+        },
+      );
+
+      response.json(result.data);
+    } catch (e: any) {
+      response.status(500).json({
+        error: e?.response?.data ?? e.toString(),
+      });
+    }
+  }
+);
