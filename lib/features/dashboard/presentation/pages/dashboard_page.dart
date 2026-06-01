@@ -8,6 +8,7 @@ import '../../../../data/repositories/progress_repository.dart';
 import '../../../../data/sources/wow_expansion_catalog.dart';
 import '../../../../data/models/wow_character.dart';
 import '../../../../data/repositories/character_repository.dart';
+import '../../../auth/presentation/pages/auth_page.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -187,7 +188,12 @@ class _HeroCard extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             FilledButton.icon(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const AuthPage()),
+                );
+              },
               icon: Icon(hasCharacter ? Icons.person : Icons.login),
               label: Text(
                 hasCharacter ? 'Changer de personnage' : 'Connexion Battle.net',
