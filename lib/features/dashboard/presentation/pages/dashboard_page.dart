@@ -6,6 +6,8 @@ import '../../../../data/models/tracking_category.dart';
 import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/repositories/progress_repository.dart';
 import '../../../../data/sources/wow_expansion_catalog.dart';
+import '../../../../data/models/wow_character.dart';
+import '../../../../data/repositories/character_repository.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -26,10 +28,13 @@ class _DashboardPageState extends State<DashboardPage> {
   final ProgressRepository _repository = JsonProgressRepository();
   bool _isLoading = true;
   List<ExpansionProgress> _progresses = [];
+  final CharacterRepository _characterRepository = MockCharacterRepository();
+  WowCharacter? _mainCharacter;
 
   @override
   void initState() {
     super.initState();
+    _loadCharacter();
     _loadProgress();
   }
 
@@ -39,6 +44,14 @@ class _DashboardPageState extends State<DashboardPage> {
     setState(() {
       _progresses = progresses;
       _isLoading = false;
+    });
+  }
+
+  Future<void> _loadCharacter() async {
+    final character = await _characterRepository.getMainCharacter();
+
+    setState(() {
+      _mainCharacter = character;
     });
   }
 
@@ -110,7 +123,7 @@ class _DashboardPageState extends State<DashboardPage> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          const _HeroCard(),
+          _HeroCard(character: _mainCharacter),
           const SizedBox(height: 20),
           for (final progress in orderedProgresses)
             _ExpansionCard(
@@ -147,30 +160,38 @@ class _DashboardPageState extends State<DashboardPage> {
 }
 
 class _HeroCard extends StatelessWidget {
-  const _HeroCard();
+  const _HeroCard({required this.character});
+
+  final WowCharacter? character;
 
   @override
   Widget build(BuildContext context) {
+    final hasCharacter = character != null;
+
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(18),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Companion de collection WoW',
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
+            Text(
+              hasCharacter ? character!.name : 'Companion de collection WoW',
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
             ),
             const SizedBox(height: 8),
-            const Text(
-              'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
-              style: TextStyle(color: AppTheme.mutedText, height: 1.4),
+            Text(
+              hasCharacter
+                  ? '${character!.race} ${character!.characterClass} • ${character!.realm} ${character!.region} • Niveau ${character!.level}'
+                  : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
+              style: const TextStyle(color: AppTheme.mutedText, height: 1.4),
             ),
             const SizedBox(height: 16),
             FilledButton.icon(
               onPressed: () {},
-              icon: const Icon(Icons.login),
-              label: const Text('Connexion Battle.net'),
+              icon: Icon(hasCharacter ? Icons.person : Icons.login),
+              label: Text(
+                hasCharacter ? 'Changer de personnage' : 'Connexion Battle.net',
+              ),
             ),
           ],
         ),
