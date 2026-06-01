@@ -5,6 +5,7 @@ import '../../../../data/models/expansion_progress.dart';
 import '../../../../data/models/tracking_category.dart';
 import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/repositories/progress_repository.dart';
+import '../../../../data/sources/wow_expansion_catalog.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -196,69 +197,83 @@ class _ExpansionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final percent = (progress.completionRate * 100).round();
+    final info = WowExpansionCatalog.infoOf(progress.expansion);
+
     return InkWell(
       onTap: onTap,
       borderRadius: BorderRadius.circular(20),
       child: Card(
         margin: const EdgeInsets.only(bottom: 14),
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            children: [
-              Row(
+        clipBehavior: Clip.antiAlias,
+        child: Column(
+          children: [
+            if (progress.expansion != WowExpansion.total)
+              Image.asset(
+                info.bannerAsset,
+                height: 90,
+                width: double.infinity,
+                fit: BoxFit.cover,
+              ),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
                 children: [
-                  IconButton(
-                    onPressed: onToggleCollapse,
-                    icon: Icon(
-                      isCollapsed
-                          ? Icons.keyboard_arrow_right
-                          : Icons.keyboard_arrow_down,
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      progress.expansion.label,
-                      style: const TextStyle(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 16,
+                  Row(
+                    children: [
+                      IconButton(
+                        onPressed: onToggleCollapse,
+                        icon: Icon(
+                          isCollapsed
+                              ? Icons.keyboard_arrow_right
+                              : Icons.keyboard_arrow_down,
+                        ),
                       ),
-                    ),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          info.name,
+                          style: const TextStyle(
+                            fontWeight: FontWeight.w700,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        '$percent%',
+                        style: const TextStyle(
+                          color: AppTheme.gold,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                    ],
                   ),
-                  Text(
-                    '$percent%',
-                    style: const TextStyle(
+                  if (!isCollapsed) ...[
+                    const SizedBox(height: 12),
+                    LinearProgressIndicator(
+                      value: progress.completionRate,
+                      minHeight: 8,
+                      borderRadius: BorderRadius.circular(999),
+                      backgroundColor: Colors.white10,
                       color: AppTheme.gold,
-                      fontWeight: FontWeight.w800,
                     ),
-                  ),
+                    const SizedBox(height: 14),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: visibleCategories.map((category) {
+                        final completed = progress.completed[category] ?? 0;
+                        final total = progress.total[category] ?? 0;
+
+                        return _MiniStat(
+                          label: category.shortLabel,
+                          value: '$completed/$total',
+                        );
+                      }).toList(),
+                    ),
+                  ],
                 ],
               ),
-              if (!isCollapsed) ...[
-                const SizedBox(height: 12),
-                LinearProgressIndicator(
-                  value: progress.completionRate,
-                  minHeight: 8,
-                  borderRadius: BorderRadius.circular(999),
-                  backgroundColor: Colors.white10,
-                  color: AppTheme.gold,
-                ),
-                const SizedBox(height: 14),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: visibleCategories.map((category) {
-                    final completed = progress.completed[category] ?? 0;
-                    final total = progress.total[category] ?? 0;
-
-                    return _MiniStat(
-                      label: category.shortLabel,
-                      value: '$completed/$total',
-                    );
-                  }).toList(),
-                ),
-              ],
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
