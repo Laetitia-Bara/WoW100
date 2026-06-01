@@ -25,6 +25,7 @@ class _PlannerPageState extends State<PlannerPage> {
   TrackingCategory? _selectedCategory;
   String _searchQuery = '';
   PlannerSort _sort = PlannerSort.instance;
+  bool _missingOnly = false;
 
   @override
   void initState() {
@@ -69,7 +70,9 @@ class _PlannerPageState extends State<PlannerPage> {
           item.instance.toLowerCase().contains(_searchQuery.toLowerCase()) ||
           item.source.toLowerCase().contains(_searchQuery.toLowerCase());
 
-      return matchesCategory && matchesSearch;
+      final matchesMissingOnly = !_missingOnly || !item.obtained;
+
+      return matchesCategory && matchesSearch && matchesMissingOnly;
     }).toList();
 
     filteredItems.sort((a, b) {
@@ -193,6 +196,19 @@ class _PlannerPageState extends State<PlannerPage> {
                   },
                 ),
 
+                const SizedBox(height: 12),
+
+                SwitchListTile(
+                  value: _missingOnly,
+                  title: const Text('Afficher uniquement les manquants'),
+                  subtitle: const Text('Masquer les éléments déjà obtenus'),
+                  onChanged: (value) {
+                    setState(() {
+                      _missingOnly = value;
+                    });
+                  },
+                ),
+
                 const SizedBox(height: 20),
 
                 Text(
@@ -281,9 +297,12 @@ class _PlannerItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final tags = [
-      item.category.label,
-      item.weeklyLockout ? 'Hebdomadaire' : 'Farm libre',
-      item.groupRequired ? 'Groupe conseillé' : 'Solo possible',
+      _PlannerTag(label: item.category.label),
+      _PlannerTag(label: item.weeklyLockout ? 'Hebdomadaire' : 'Farm libre'),
+      _PlannerTag(
+        label: item.groupRequired ? 'Groupe conseillé' : 'Solo possible',
+      ),
+      if (item.obtained) const _PlannerTag(label: 'Obtenu'),
     ];
 
     return Card(
@@ -308,11 +327,7 @@ class _PlannerItemCard extends StatelessWidget {
                 style: const TextStyle(color: AppTheme.mutedText),
               ),
               const SizedBox(height: 8),
-              Wrap(
-                spacing: 8,
-                runSpacing: 8,
-                children: tags.map((tag) => _PlannerTag(label: tag)).toList(),
-              ),
+              Wrap(spacing: 8, runSpacing: 8, children: tags),
             ],
           ),
         ),
