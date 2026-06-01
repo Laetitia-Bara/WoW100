@@ -73,8 +73,8 @@ class TrackingItem {
     return TrackingItem(
       id: json['id'],
       name: json['name'],
-      category: TrackingCategory.mounts,
-      expansion: WowExpansion.wrath,
+      category: TrackingCategoryParser.fromJson(json['category']),
+      expansion: WowExpansionParser.fromJson(json['expansion']),
       zone: json['zone'],
       instance: json['instance'],
       source: json['source'],

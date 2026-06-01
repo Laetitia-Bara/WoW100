@@ -82,3 +82,12 @@ extension TrackingCategoryLabel on TrackingCategory {
     }
   }
 }
+
+extension TrackingCategoryParser on TrackingCategory {
+  static TrackingCategory fromJson(String value) {
+    return TrackingCategory.values.firstWhere(
+      (category) => category.name == value,
+      orElse: () => TrackingCategory.collections,
+    );
+  }
+}

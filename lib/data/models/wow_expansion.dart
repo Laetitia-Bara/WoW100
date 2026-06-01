@@ -46,3 +46,12 @@ extension WowExpansionLabel on WowExpansion {
     }
   }
 }
+
+extension WowExpansionParser on WowExpansion {
+  static WowExpansion fromJson(String value) {
+    return WowExpansion.values.firstWhere(
+      (expansion) => expansion.name == value,
+      orElse: () => WowExpansion.total,
+    );
+  }
+}
