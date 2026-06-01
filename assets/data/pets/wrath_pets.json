@@ -1,0 +1,24 @@
+[
+  {
+    "id": "stinky",
+    "name": "Puant",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "Norfendre",
+    "instance": "Quête",
+    "source": "Les Oracles",
+    "groupRequired": false,
+    "weeklyLockout": false
+  },
+  {
+    "id": "cobra_hatchling",
+    "name": "Bébé cobra",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "Bassin de Sholazar",
+    "instance": "Réputation",
+    "source": "Les Oracles",
+    "groupRequired": false,
+    "weeklyLockout": false
+  }
+]

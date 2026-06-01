@@ -22,7 +22,7 @@ class _DashboardPageState extends State<DashboardPage> {
     TrackingCategory.pets,
     TrackingCategory.professions,
   };
-  final ProgressRepository _repository = MockProgressRepository();
+  final ProgressRepository _repository = JsonProgressRepository();
   bool _isLoading = true;
   List<ExpansionProgress> _progresses = [];
 
@@ -127,14 +127,16 @@ class _DashboardPageState extends State<DashboardPage> {
               },
               onTap: progress.expansion == WowExpansion.total
                   ? null
-                  : () {
-                      Navigator.push(
+                  : () async {
+                      await Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (_) =>
                               PlannerPage(extension: progress.expansion),
                         ),
                       );
+
+                      await _loadProgress();
                     },
             ),
         ],
