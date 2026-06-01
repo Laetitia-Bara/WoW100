@@ -80,3 +80,58 @@ export const getWowProfile = onRequest(
     }
   }
 );
+
+export const getWowCharacters = onRequest(
+  async (request, response) => {
+    try {
+      const token = request.query.token as string;
+
+      if (!token) {
+        response.status(400).json({
+          error: "missing_token",
+        });
+        return;
+      }
+
+      const result = await axios.get(
+        "https://eu.api.blizzard.com/profile/user/wow",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+          params: {
+            namespace: "profile-eu",
+            locale: "fr_FR",
+          },
+        },
+      );
+
+      const accounts = result.data.wow_accounts ?? [];
+
+      const finalCharacters: any[] = [];
+
+      for (const account of accounts) {
+        const characters = account.characters ?? [];
+
+        for (const character of characters) {
+          finalCharacters.push({
+            name: character.name,
+            level: character.level,
+            realm: character.realm?.name,
+            race: character.playable_race?.name,
+            characterClass: character.playable_class?.name,
+            faction: character.faction?.name,
+          });
+        }
+      }
+
+      finalCharacters.sort((a, b) => b.level - a.level);
+
+      response.json(finalCharacters);
+    } catch (e: any) {
+      response.status(500).json({
+        error: e?.response?.data ?? e.toString(),
+      });
+    }
+  }
+);
