@@ -68,4 +68,20 @@ class TrackingItem {
       obtained: obtained ?? this.obtained,
     );
   }
+
+  factory TrackingItem.fromJson(Map<String, dynamic> json) {
+    return TrackingItem(
+      id: json['id'],
+      name: json['name'],
+      category: TrackingCategory.mounts,
+      expansion: WowExpansion.wrath,
+      zone: json['zone'],
+      instance: json['instance'],
+      source: json['source'],
+      wowheadItemId: json['wowheadItemId'],
+      groupRequired: json['groupRequired'],
+      weeklyLockout: json['weeklyLockout'],
+      obtained: false,
+    );
+  }
 }
