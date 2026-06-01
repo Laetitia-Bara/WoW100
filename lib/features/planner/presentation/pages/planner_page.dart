@@ -24,6 +24,7 @@ class _PlannerPageState extends State<PlannerPage> {
   final LocalCheckService _localCheckService = LocalCheckService();
   TrackingCategory? _selectedCategory;
   String _searchQuery = '';
+  PlannerSort _sort = PlannerSort.instance;
 
   @override
   void initState() {
@@ -70,6 +71,17 @@ class _PlannerPageState extends State<PlannerPage> {
 
       return matchesCategory && matchesSearch;
     }).toList();
+
+    filteredItems.sort((a, b) {
+      switch (_sort) {
+        case PlannerSort.instance:
+          return a.instance.compareTo(b.instance);
+        case PlannerSort.category:
+          return a.category.index.compareTo(b.category.index);
+        case PlannerSort.name:
+          return a.name.compareTo(b.name);
+      }
+    });
 
     for (final item in filteredItems) {
       groupedItems.putIfAbsent(item.instance, () => []).add(item);
@@ -126,7 +138,7 @@ class _PlannerPageState extends State<PlannerPage> {
                 const SizedBox(height: 12),
 
                 DropdownButtonFormField<TrackingCategory?>(
-                  value: _selectedCategory,
+                  initialValue: _selectedCategory,
                   decoration: const InputDecoration(
                     labelText: 'Catégorie',
                     border: OutlineInputBorder(),
@@ -146,6 +158,37 @@ class _PlannerPageState extends State<PlannerPage> {
                   onChanged: (value) {
                     setState(() {
                       _selectedCategory = value;
+                    });
+                  },
+                ),
+
+                const SizedBox(height: 12),
+
+                DropdownButtonFormField<PlannerSort>(
+                  initialValue: _sort,
+                  decoration: const InputDecoration(
+                    labelText: 'Trier par',
+                    border: OutlineInputBorder(),
+                  ),
+                  items: const [
+                    DropdownMenuItem(
+                      value: PlannerSort.instance,
+                      child: Text('Lieu / instance'),
+                    ),
+                    DropdownMenuItem(
+                      value: PlannerSort.category,
+                      child: Text('Catégorie'),
+                    ),
+                    DropdownMenuItem(
+                      value: PlannerSort.name,
+                      child: Text('Nom'),
+                    ),
+                  ],
+                  onChanged: (value) {
+                    if (value == null) return;
+
+                    setState(() {
+                      _sort = value;
                     });
                   },
                 ),
@@ -298,3 +341,5 @@ class _PlannerTag extends StatelessWidget {
     );
   }
 }
+
+enum PlannerSort { instance, category, name }
