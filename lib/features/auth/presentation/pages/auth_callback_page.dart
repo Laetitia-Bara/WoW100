@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wow100/core/services/battle_net_token_service.dart';
 
 import '../../../../data/models/wow_character.dart';
 import '../../../../data/repositories/battle_net_repository.dart';
@@ -39,6 +40,8 @@ class _AuthCallbackPageState extends State<AuthCallbackPage> {
       }
 
       final token = await _repository.exchangeCodeForToken(code);
+      await BattleNetTokenService().saveToken(token);
+      debugPrint('BATTLE_NET_TOKEN: $token');
       final characters = await _repository.getCharacters(token);
 
       setState(() {

@@ -9,7 +9,8 @@
     "source": "Le Roi-Liche",
     "wowheadItemId": 50818,
     "groupRequired": false,
-    "weeklyLockout": true
+    "weeklyLockout": true,
+    "blizzardId": 363
   },
   {
     "id": "mimirons_head",
@@ -21,7 +22,8 @@
     "source": "Yogg-Saron",
     "wowheadItemId": 45693,
     "groupRequired": false,
-    "weeklyLockout": true
+    "weeklyLockout": true,
+    "blizzardId": 363
   },
   {
     "id": "blue_proto_drake",
@@ -33,6 +35,7 @@
     "source": "Skadi le Brutal",
     "wowheadItemId": 44151,
     "groupRequired": false,
-    "weeklyLockout": false
+    "weeklyLockout": false,
+    "blizzardId": 363
   }
 ]

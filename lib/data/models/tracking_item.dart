@@ -37,6 +37,8 @@ class TrackingItem {
   /// Obtenu par le joueur
   final bool obtained;
 
+  final int? blizzardId;
+
   const TrackingItem({
     required this.id,
     required this.name,
@@ -50,6 +52,7 @@ class TrackingItem {
     required this.groupRequired,
     required this.weeklyLockout,
     required this.obtained,
+    this.blizzardId,
   });
 
   TrackingItem copyWith({bool? obtained}) {
@@ -66,6 +69,7 @@ class TrackingItem {
       groupRequired: groupRequired,
       weeklyLockout: weeklyLockout,
       obtained: obtained ?? this.obtained,
+      blizzardId: blizzardId,
     );
   }
 
@@ -79,9 +83,11 @@ class TrackingItem {
       instance: json['instance'],
       source: json['source'],
       wowheadItemId: json['wowheadItemId'],
+      wowheadAchievementId: json['wowheadAchievementId'],
       groupRequired: json['groupRequired'],
       weeklyLockout: json['weeklyLockout'],
       obtained: false,
+      blizzardId: json['blizzardId'],
     );
   }
 }

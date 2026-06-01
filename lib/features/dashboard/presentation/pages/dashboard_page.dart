@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:wow100/core/services/battle_net_token_service.dart';
+import 'package:wow100/data/repositories/battle_net_repository.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../planner/presentation/pages/planner_page.dart';
 import '../../../../data/models/expansion_progress.dart';
@@ -84,6 +86,39 @@ class _DashboardPageState extends State<DashboardPage> {
       appBar: AppBar(
         title: const Text('WoW100%'),
         actions: [
+          IconButton(
+            tooltip: 'Debug token',
+            icon: const Icon(Icons.vpn_key_outlined),
+            onPressed: () async {
+              final token = await BattleNetTokenService().loadToken();
+
+              if (token != null) {
+                final mounts = await BattleNetRepository().getMounts(token);
+
+                if (!context.mounted) return;
+
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('${mounts.length} montures trouvées')),
+                );
+              }
+
+              if (!context.mounted) return;
+
+              await showDialog(
+                context: context,
+                builder: (_) => AlertDialog(
+                  title: const Text('Token Battle.net'),
+                  content: SelectableText(token ?? 'Aucun token sauvegardé'),
+                  actions: [
+                    TextButton(
+                      onPressed: () => Navigator.pop(context),
+                      child: const Text('Fermer'),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
           IconButton(
             tooltip: 'Filtres',
             onPressed: () async {
