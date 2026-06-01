@@ -19,7 +19,7 @@ class PlannerPage extends StatefulWidget {
 
 class _PlannerPageState extends State<PlannerPage> {
   List<TrackingItem> _items = [];
-  final PlannerRepository _repository = MockPlannerRepository();
+  final PlannerRepository _repository = JsonPlannerRepository();
   bool _isLoading = true;
   final LocalCheckService _localCheckService = LocalCheckService();
   TrackingCategory? _selectedCategory;
