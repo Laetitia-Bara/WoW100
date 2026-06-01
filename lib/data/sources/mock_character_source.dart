@@ -7,13 +7,10 @@ class MockCharacterSource {
     return const WowCharacter(
       name: 'Orcante',
       realm: 'Khaz Modan',
-      region: 'EU',
+      faction: 'Horde',
       level: 80,
       characterClass: 'Démoniste',
       race: 'Elfe de sang',
-      realmSlug: '',
-      classId: 8,
-      raceId: 10,
     );
   }
 }

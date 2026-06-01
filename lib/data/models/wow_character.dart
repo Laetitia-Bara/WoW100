@@ -1,25 +1,28 @@
 class WowCharacter {
   final String name;
-  final String realm;
-  final String region;
   final int level;
-  final String characterClass;
+  final String realm;
   final String race;
-  final String realmSlug;
-  final int classId;
-  final int raceId;
-  final String? avatarUrl;
+  final String characterClass;
+  final String faction;
 
   const WowCharacter({
     required this.name,
-    required this.realm,
-    required this.region,
     required this.level,
-    required this.characterClass,
+    required this.realm,
     required this.race,
-    required this.realmSlug,
-    required this.classId,
-    required this.raceId,
-    this.avatarUrl,
+    required this.characterClass,
+    required this.faction,
   });
+
+  factory WowCharacter.fromJson(Map<String, dynamic> json) {
+    return WowCharacter(
+      name: json['name'] ?? '',
+      level: json['level'] ?? 0,
+      realm: json['realm'] ?? '',
+      race: json['race'] ?? '',
+      characterClass: json['characterClass'] ?? '',
+      faction: json['faction'] ?? '',
+    );
+  }
 }

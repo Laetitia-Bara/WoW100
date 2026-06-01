@@ -7,8 +7,8 @@ import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/repositories/progress_repository.dart';
 import '../../../../data/sources/wow_expansion_catalog.dart';
 import '../../../../data/models/wow_character.dart';
-import '../../../../data/repositories/character_repository.dart';
 import '../../../auth/presentation/pages/auth_page.dart';
+import '../../../../core/services/selected_character_service.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -29,7 +29,8 @@ class _DashboardPageState extends State<DashboardPage> {
   final ProgressRepository _repository = JsonProgressRepository();
   bool _isLoading = true;
   List<ExpansionProgress> _progresses = [];
-  final CharacterRepository _characterRepository = MockCharacterRepository();
+  final SelectedCharacterService _selectedCharacterService =
+      SelectedCharacterService();
   WowCharacter? _mainCharacter;
 
   @override
@@ -49,7 +50,7 @@ class _DashboardPageState extends State<DashboardPage> {
   }
 
   Future<void> _loadCharacter() async {
-    final character = await _characterRepository.getMainCharacter();
+    final character = await _selectedCharacterService.loadCharacter();
 
     setState(() {
       _mainCharacter = character;
@@ -182,7 +183,7 @@ class _HeroCard extends StatelessWidget {
             const SizedBox(height: 8),
             Text(
               hasCharacter
-                  ? '${character!.race} ${character!.characterClass} • ${character!.realm} ${character!.region} • Niveau ${character!.level}'
+                  ? '${character!.race} ${character!.characterClass} • ${character!.realm} • ${character!.faction} • Niveau ${character!.level}'
                   : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
               style: const TextStyle(color: AppTheme.mutedText, height: 1.4),
             ),
