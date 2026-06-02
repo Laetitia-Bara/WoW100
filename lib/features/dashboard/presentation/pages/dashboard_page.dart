@@ -112,11 +112,32 @@ class _DashboardPageState extends State<DashboardPage> {
 
               if (!context.mounted) return;
 
-              await showDialog(
+              /*await showDialog(
                 context: context,
                 builder: (_) => AlertDialog(
                   title: const Text('Token Battle.net'),
-                  content: SelectableText(token ?? 'Aucun token sauvegardé'),
+                  content: SelectableText(token ?? 'Aucun token sauvegardé'),*/
+              final character = await SelectedCharacterService()
+                  .loadCharacter();
+
+              await showDialog(
+                // ignore: use_build_context_synchronously
+                context: context,
+                builder: (_) => AlertDialog(
+                  title: const Text('Debug Battle.net'),
+                  content: SelectableText('''
+Token :
+${token ?? 'Aucun token'}
+
+Personnage :
+${character?.name ?? '-'}
+
+Royaume :
+${character?.realm ?? '-'}
+
+Slug :
+${character?.realmSlug ?? '-'}
+'''),
                   actions: [
                     TextButton(
                       onPressed: () => Navigator.pop(context),

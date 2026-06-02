@@ -11,6 +11,7 @@ class MockCharacterSource {
       level: 80,
       characterClass: 'Démoniste',
       race: 'Elfe de sang',
+      realmSlug: '',
     );
   }
 }

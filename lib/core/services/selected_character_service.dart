@@ -19,6 +19,7 @@ class SelectedCharacterService {
         'race': character.race,
         'characterClass': character.characterClass,
         'faction': character.faction,
+        'realmSlug': character.realmSlug,
       }),
     );
   }

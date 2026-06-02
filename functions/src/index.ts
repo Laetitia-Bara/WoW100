@@ -121,6 +121,7 @@ export const getWowCharacters = onRequest(
             race: character.playable_race?.name,
             characterClass: character.playable_class?.name,
             faction: character.faction?.name,
+            realmSlug: character.realm?.slug,
           });
         }
       }
@@ -200,4 +201,39 @@ export const getWowPets = onRequest(
       });
     }
   }
+);
+
+export const getWowAchievements = onRequest(
+  async (request, response) => {
+    try {
+      const token = request.query.token as string;
+
+      const result = await axios.get(
+        'https://eu.api.blizzard.com/profile/user/wow/collections/achievements',
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+          params: {
+            namespace: 'profile-eu',
+            locale: 'fr_FR',
+          },
+        },
+      );
+
+      response.json(result.data);
+    } catch (e: any) {
+  console.error("getWowAchievements error", {
+    status: e?.response?.status,
+    data: e?.response?.data,
+    message: e?.message,
+  });
+
+  response.status(500).json({
+    status: e?.response?.status ?? null,
+    data: e?.response?.data ?? null,
+    message: e?.message ?? String(e),
+  });
+}
+  },
 );

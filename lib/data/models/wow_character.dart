@@ -5,6 +5,7 @@ class WowCharacter {
   final String race;
   final String characterClass;
   final String faction;
+  final String realmSlug;
 
   const WowCharacter({
     required this.name,
@@ -13,6 +14,7 @@ class WowCharacter {
     required this.race,
     required this.characterClass,
     required this.faction,
+    required this.realmSlug,
   });
 
   factory WowCharacter.fromJson(Map<String, dynamic> json) {
@@ -23,6 +25,7 @@ class WowCharacter {
       race: json['race'] ?? '',
       characterClass: json['characterClass'] ?? '',
       faction: json['faction'] ?? '',
+      realmSlug: json['realmSlug'] ?? '',
     );
   }
 }
