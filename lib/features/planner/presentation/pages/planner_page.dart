@@ -44,12 +44,14 @@ class _PlannerPageState extends State<PlannerPage> {
     final ownedMountIds = <int>{};
     final ownedPetIds = <int>{};
 
-    final pets = await BattleNetRepository().getPets(token!);
-    ownedPetIds.addAll(pets.map((pet) => pet.id));
-
     if (token != null) {
-      final mounts = await BattleNetRepository().getMounts(token);
+      final battleNetRepository = BattleNetRepository();
+
+      final mounts = await battleNetRepository.getMounts(token);
       ownedMountIds.addAll(mounts.map((mount) => mount.id));
+
+      final pets = await battleNetRepository.getPets(token);
+      ownedPetIds.addAll(pets.map((pet) => pet.id));
     }
 
     for (final item in items) {
@@ -80,12 +82,6 @@ class _PlannerPageState extends State<PlannerPage> {
   Widget build(BuildContext context) {
     final groupedItems = <String, List<TrackingItem>>{};
 
-    final obtainedCount = _items.where((item) => item.obtained).length;
-
-    final totalCount = _items.length;
-
-    final progress = totalCount == 0 ? 0.0 : obtainedCount / totalCount;
-
     final filteredItems = _items.where((item) {
       final matchesCategory =
           _selectedCategory == null || item.category == _selectedCategory;
@@ -111,6 +107,12 @@ class _PlannerPageState extends State<PlannerPage> {
           return a.name.compareTo(b.name);
       }
     });
+
+    final obtainedCount = filteredItems.where((item) => item.obtained).length;
+
+    final totalCount = filteredItems.length;
+
+    final progress = totalCount == 0 ? 0.0 : obtainedCount / totalCount;
 
     for (final item in filteredItems) {
       groupedItems.putIfAbsent(item.instance, () => []).add(item);
