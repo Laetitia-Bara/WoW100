@@ -1,3 +1,5 @@
+import 'package:wow100/data/models/tracking_item.dart';
+
 import '../../core/services/battle_net_token_service.dart';
 import '../../core/services/local_check_service.dart';
 import '../models/expansion_progress.dart';
@@ -21,15 +23,18 @@ class JsonProgressRepository implements ProgressRepository {
 
   @override
   Future<List<ExpansionProgress>> getProgress() async {
-    final wrathItems = [
-      ...await _source.loadItemsFromAsset(
-        'assets/data/mounts/wrath_mounts.json',
-      ),
-      ...await _source.loadItemsFromAsset('assets/data/pets/wrath_pets.json'),
-      ...await _source.loadItemsFromAsset(
-        'assets/data/achievements/wrath_achievements.json',
-      ),
-    ];
+    final expansions = [WowExpansion.vanilla, WowExpansion.wrath];
+
+    final allItems = <TrackingItem>[];
+
+    for (final expansion in expansions) {
+      final paths = await _assetPathsForExpansion(expansion);
+
+      for (final path in paths) {
+        final items = await _source.loadItemsFromAsset(path);
+        allItems.addAll(items);
+      }
+    }
 
     final token = await _tokenService.loadToken();
 
@@ -59,45 +64,84 @@ class JsonProgressRepository implements ProgressRepository {
       }
     }
 
-    final completed = <TrackingCategory, int>{};
-    final total = <TrackingCategory, int>{};
+    final progresses = <ExpansionProgress>[];
 
-    for (final item in wrathItems) {
-      total[item.category] = (total[item.category] ?? 0) + 1;
+    final totalCompleted = <TrackingCategory, int>{};
+    final totalCounts = <TrackingCategory, int>{};
 
-      final checked = await _localCheckService.isChecked(item.id);
+    for (final expansion in expansions) {
+      final expansionItems = allItems
+          .where((item) => item.expansion == expansion)
+          .toList();
 
-      final ownedMount =
-          item.category == TrackingCategory.mounts &&
-          item.blizzardId != null &&
-          ownedMountIds.contains(item.blizzardId);
+      final completed = <TrackingCategory, int>{};
+      final total = <TrackingCategory, int>{};
 
-      final ownedPet =
-          item.category == TrackingCategory.pets &&
-          item.blizzardId != null &&
-          ownedPetIds.contains(item.blizzardId);
+      for (final item in expansionItems) {
+        total[item.category] = (total[item.category] ?? 0) + 1;
+        totalCounts[item.category] = (totalCounts[item.category] ?? 0) + 1;
 
-      final ownedAchievement =
-          item.category == TrackingCategory.achievements &&
-          item.blizzardId != null &&
-          ownedAchievementIds.contains(item.blizzardId);
+        final checked = await _localCheckService.isChecked(item.id);
 
-      if (checked || ownedMount || ownedPet || ownedAchievement) {
-        completed[item.category] = (completed[item.category] ?? 0) + 1;
+        final ownedMount =
+            item.category == TrackingCategory.mounts &&
+            item.blizzardId != null &&
+            ownedMountIds.contains(item.blizzardId);
+
+        final ownedPet =
+            item.category == TrackingCategory.pets &&
+            item.blizzardId != null &&
+            ownedPetIds.contains(item.blizzardId);
+
+        final ownedAchievement =
+            item.category == TrackingCategory.achievements &&
+            item.blizzardId != null &&
+            ownedAchievementIds.contains(item.blizzardId);
+
+        if (checked || ownedMount || ownedPet || ownedAchievement) {
+          completed[item.category] = (completed[item.category] ?? 0) + 1;
+          totalCompleted[item.category] =
+              (totalCompleted[item.category] ?? 0) + 1;
+        }
       }
+
+      progresses.add(
+        ExpansionProgress(
+          expansion: expansion,
+          completed: completed,
+          total: total,
+        ),
+      );
     }
 
     return [
       ExpansionProgress(
         expansion: WowExpansion.total,
-        completed: completed,
-        total: total,
+        completed: totalCompleted,
+        total: totalCounts,
       ),
-      ExpansionProgress(
-        expansion: WowExpansion.wrath,
-        completed: completed,
-        total: total,
-      ),
+      ...progresses,
     ];
+  }
+
+  Future<List<String>> _assetPathsForExpansion(WowExpansion expansion) async {
+    switch (expansion) {
+      case WowExpansion.vanilla:
+        return [
+          'assets/data/mounts/vanilla_mounts.json',
+          'assets/data/pets/vanilla_pets.json',
+          'assets/data/achievements/vanilla_achievements.json',
+        ];
+
+      case WowExpansion.wrath:
+        return [
+          'assets/data/mounts/wrath_mounts.json',
+          'assets/data/pets/wrath_pets.json',
+          'assets/data/achievements/wrath_achievements.json',
+        ];
+
+      default:
+        return [];
+    }
   }
 }

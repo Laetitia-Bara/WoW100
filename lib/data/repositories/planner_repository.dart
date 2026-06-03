@@ -14,6 +14,13 @@ class JsonPlannerRepository implements PlannerRepository {
     final assetPaths = <String>[];
 
     switch (expansion) {
+      case WowExpansion.vanilla:
+        assetPaths.addAll([
+          'assets/data/mounts/vanilla_mounts.json',
+          'assets/data/pets/vanilla_pets.json',
+          'assets/data/achievements/vanilla_achievements.json',
+        ]);
+        break;
       case WowExpansion.wrath:
         assetPaths.addAll([
           'assets/data/mounts/wrath_mounts.json',
