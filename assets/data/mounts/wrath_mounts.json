@@ -1,54 +1,20 @@
 [
   {
-    "id": "invincible",
-    "name": "Rênes d’Invincible",
+    "id": "mount_363",
+    "name": "Invincible",
+    "description": "Le fier destrier d’Arthas Menethil, au service de son maître dans la vie comme dans la mort. Le monter est un véritable tour de force.",
     "category": "mounts",
     "expansion": "wrath",
-    "zone": "Norfendre",
+    "zone": "Couronne de glace",
     "instance": "Citadelle de la Couronne de glace",
-    "source": "Le Roi-Liche",
-    "wowheadItemId": 50818,
-    "groupRequired": false,
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "faction": "",
+    "groupRequired": true,
     "weeklyLockout": true,
-    "blizzardId": 363
-  },
-  {
-    "id": "mimirons_head",
-    "name": "Tête de Mimiron",
-    "category": "mounts",
-    "expansion": "wrath",
-    "zone": "Norfendre",
-    "instance": "Ulduar",
-    "source": "Yogg-Saron",
-    "wowheadItemId": 45693,
-    "groupRequired": false,
-    "weeklyLockout": true,
-    "blizzardId": 363
-  },
-  {
-    "id": "blue_proto_drake",
-    "name": "Proto-drake bleu",
-    "category": "mounts",
-    "expansion": "wrath",
-    "zone": "Norfendre",
-    "instance": "Cime d’Utgarde",
-    "source": "Skadi le Brutal",
-    "wowheadItemId": 44151,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 363
-  },
-
-  {
-  "id": "wrath-test-1",
-  "name": "Loup des bois",
-  "category": "mounts",
-  "expansion": "wrath",
-  "zone": "Test",
-  "instance": "",
-  "source": "",
-  "groupRequired": false,
-  "weeklyLockout": false,
-  "blizzardId": 14
-}
+    "blizzardId": 363,
+    "categoryType": "raid_drop",
+    "boss": "Le Roi-Liche"
+  }
 ]

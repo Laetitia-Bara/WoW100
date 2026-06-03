@@ -132,8 +132,8 @@ class JsonProgressRepository implements ProgressRepository {
     switch (expansion) {
       case WowExpansion.vanilla:
         return [
-          //'assets/data/mounts/vanilla_mounts.json',
-          'assets/generated/mounts_wow100_draft.json',
+          'assets/data/mounts/vanilla_mounts.json',
+          //'assets/generated/mounts_wow100_draft.json',
           'assets/data/pets/vanilla_pets.json',
           'assets/data/achievements/vanilla_achievements.json',
         ];

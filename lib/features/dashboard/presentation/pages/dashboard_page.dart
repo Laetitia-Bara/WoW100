@@ -201,6 +201,32 @@ ${character?.realmSlug ?? '-'}
         children: [
           _HeroCard(character: _mainCharacter),
           const SizedBox(height: 20),
+
+          Card(
+            child: ListTile(
+              leading: const Icon(Icons.pets),
+              title: const Text(
+                'Toutes les montures',
+                style: TextStyle(fontWeight: FontWeight.w800),
+              ),
+              subtitle: const Text('Voir toutes les montures connues'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () async {
+                await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) =>
+                        const PlannerPage(extension: WowExpansion.allMounts),
+                  ),
+                );
+
+                await _loadProgress();
+              },
+            ),
+          ),
+
+          const SizedBox(height: 20),
+
           for (final progress in orderedProgresses)
             _ExpansionCard(
               progress: progress,

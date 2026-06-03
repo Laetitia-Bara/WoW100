@@ -386,11 +386,24 @@ class _PlannerItemCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '${item.zone} • ${item.source}',
+                [
+                  item.expansion.label,
+                  item.zone,
+                  item.instance,
+                  item.source,
+                ].where((value) => value.isNotEmpty).join(' • '),
                 style: const TextStyle(color: AppTheme.mutedText),
               ),
               const SizedBox(height: 8),
               Wrap(spacing: 8, runSpacing: 8, children: tags),
+
+              if (item.boss.isNotEmpty) ...[
+                const SizedBox(height: 6),
+                Text(
+                  'Boss : ${item.boss}',
+                  style: const TextStyle(color: AppTheme.mutedText),
+                ),
+              ],
             ],
           ),
         ),

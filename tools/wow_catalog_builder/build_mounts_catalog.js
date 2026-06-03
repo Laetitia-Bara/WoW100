@@ -109,6 +109,12 @@ async function main() {
 
   console.table(sourceStats);
 
+  const dropMounts = enrichedMounts
+    .filter((m) => m.sourceType === "DROP")
+    .slice(0, 20);
+
+  console.log(JSON.stringify(dropMounts, null, 2));
+
   const sourceMap = {
     VENDOR: "Marchand",
     DROP: "Butin",
@@ -123,22 +129,36 @@ async function main() {
     DISCOVERY: "Découverte",
   };
 
+  const metadata = JSON.parse(
+    await fs.readFile(
+      "../../assets/data/metadata/mounts_metadata.json",
+      "utf8",
+    ),
+  );
+
+  const metadataById = Object.fromEntries(
+    metadata.map((m) => [m.blizzardId, m]),
+  );
+
   const wow100Draft = enrichedMounts.map((mount) => {
+    const meta = metadataById[mount.id] ?? {};
     return {
       id: `mount_${mount.id}`,
       name: mount.name,
       description: mount.description,
       category: "mounts",
-      expansion: "vanilla",
-      zone: "",
-      instance: "",
+      expansion: meta.expansion ?? "unknown",
+      zone: meta.zone ?? "",
+      instance: meta.instance ?? "",
       source: sourceMap[mount.sourceType] ?? "Inconnu",
       sourceType: mount.sourceType || "UNKNOWN",
       sourceName: mount.sourceName || "",
       faction: mount.faction || "",
-      groupRequired: false,
-      weeklyLockout: mount.sourceType === "DROP",
+      groupRequired: meta.groupRequired ?? false,
+      weeklyLockout: meta.weeklyLockout ?? mount.sourceType === "DROP",
       blizzardId: mount.id,
+      categoryType: meta.category ?? "unknown",
+      boss: meta.boss ?? "",
     };
   });
 
@@ -149,6 +169,33 @@ async function main() {
   );
 
   console.log("Draft WoW100 sauvegardé");
+
+  const expansions = [
+    "vanilla",
+    "tbc",
+    "wrath",
+    "cataclysm",
+    "mop",
+    "wod",
+    "legion",
+    "bfa",
+    "shadowlands",
+    "dragonflight",
+    "warWithin",
+    "midnight",
+  ];
+
+  for (const expansion of expansions) {
+    const items = wow100Draft.filter((mount) => mount.expansion === expansion);
+
+    await fs.writeFile(
+      `../../assets/data/mounts/${expansion}_mounts.json`,
+      JSON.stringify(items, null, 2),
+      "utf8",
+    );
+
+    console.log(`${expansion}_mounts.json : ${items.length} montures`);
+  }
 }
 
 main().catch(console.error);
