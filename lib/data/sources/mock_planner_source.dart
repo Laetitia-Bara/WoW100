@@ -17,6 +17,7 @@ class MockPlannerSource {
         groupRequired: false,
         weeklyLockout: true,
         obtained: false,
+        boss: '',
       ),
 
       TrackingItem(
@@ -31,6 +32,7 @@ class MockPlannerSource {
         groupRequired: false,
         weeklyLockout: true,
         obtained: false,
+        boss: '',
       ),
 
       TrackingItem(
@@ -45,6 +47,7 @@ class MockPlannerSource {
         groupRequired: false,
         weeklyLockout: false,
         obtained: false,
+        boss: '',
       ),
     ];
 
