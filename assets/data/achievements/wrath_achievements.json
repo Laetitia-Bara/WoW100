@@ -1,0 +1,15 @@
+[
+  {
+    "id": "wrath_azjol_nerub",
+    "name": "Azjol-Nerub",
+    "category": "achievements",
+    "expansion": "wrath",
+    "zone": "Norfendre",
+    "instance": "Azjol-Nerub",
+    "source": "Terminer le donjon",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "wowheadAchievementId": 480,
+    "blizzardId": 480
+  }
+]

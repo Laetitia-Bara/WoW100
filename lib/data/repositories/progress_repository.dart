@@ -5,6 +5,7 @@ import '../models/tracking_category.dart';
 import '../models/wow_expansion.dart';
 import '../repositories/battle_net_repository.dart';
 import '../sources/json_planner_source.dart';
+import '../../core/services/selected_character_service.dart';
 
 abstract class ProgressRepository {
   Future<List<ExpansionProgress>> getProgress();
@@ -15,6 +16,8 @@ class JsonProgressRepository implements ProgressRepository {
   final LocalCheckService _localCheckService = LocalCheckService();
   final BattleNetTokenService _tokenService = BattleNetTokenService();
   final BattleNetRepository _battleNetRepository = BattleNetRepository();
+  final SelectedCharacterService _selectedCharacterService =
+      SelectedCharacterService();
 
   @override
   Future<List<ExpansionProgress>> getProgress() async {
@@ -23,12 +26,16 @@ class JsonProgressRepository implements ProgressRepository {
         'assets/data/mounts/wrath_mounts.json',
       ),
       ...await _source.loadItemsFromAsset('assets/data/pets/wrath_pets.json'),
+      ...await _source.loadItemsFromAsset(
+        'assets/data/achievements/wrath_achievements.json',
+      ),
     ];
 
     final token = await _tokenService.loadToken();
 
     final ownedMountIds = <int>{};
     final ownedPetIds = <int>{};
+    final ownedAchievementIds = <int>{};
 
     if (token != null) {
       final mounts = await _battleNetRepository.getMounts(token);
@@ -36,6 +43,20 @@ class JsonProgressRepository implements ProgressRepository {
 
       final pets = await _battleNetRepository.getPets(token);
       ownedPetIds.addAll(pets.map((pet) => pet.id));
+
+      final character = await _selectedCharacterService.loadCharacter();
+
+      if (character != null) {
+        final achievements = await _battleNetRepository.getAchievements(
+          token,
+          character.realmSlug,
+          character.name,
+        );
+
+        ownedAchievementIds.addAll(
+          achievements.map((achievement) => achievement.id),
+        );
+      }
     }
 
     final completed = <TrackingCategory, int>{};
@@ -56,7 +77,12 @@ class JsonProgressRepository implements ProgressRepository {
           item.blizzardId != null &&
           ownedPetIds.contains(item.blizzardId);
 
-      if (checked || ownedMount || ownedPet) {
+      final ownedAchievement =
+          item.category == TrackingCategory.achievements &&
+          item.blizzardId != null &&
+          ownedAchievementIds.contains(item.blizzardId);
+
+      if (checked || ownedMount || ownedPet || ownedAchievement) {
         completed[item.category] = (completed[item.category] ?? 0) + 1;
       }
     }

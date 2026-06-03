@@ -3,6 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/wow_character.dart';
 import '../models/wow_mount.dart';
 import '../models/wow_pet.dart';
+import '../models/wow_achievement.dart';
 
 class BattleNetRepository {
   static const _functionsBaseUrl =
@@ -74,6 +75,36 @@ class BattleNetRepository {
       return WowPet.fromJson({
         'id': entry['species']['id'],
         'name': entry['species']['name'],
+      });
+    }).toList();
+  }
+
+  Future<List<WowAchievement>> getAchievements(
+    String token,
+    String realmSlug,
+    String characterName,
+  ) async {
+    final uri = Uri.parse(
+      '$_functionsBaseUrl/getCharacterAchievements'
+      '?token=$token'
+      '&realmSlug=$realmSlug'
+      '&characterName=$characterName',
+    );
+
+    final response = await http.get(uri);
+
+    if (response.statusCode != 200) {
+      throw Exception(response.body);
+    }
+
+    final data = jsonDecode(response.body);
+
+    final achievements = data['achievements'] as List;
+
+    return achievements.map((entry) {
+      return WowAchievement.fromJson({
+        'id': entry['id'],
+        'name': entry['achievement']['name'],
       });
     }).toList();
   }

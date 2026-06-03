@@ -91,11 +91,24 @@ class _DashboardPageState extends State<DashboardPage> {
             icon: const Icon(Icons.vpn_key_outlined),
             onPressed: () async {
               final token = await BattleNetTokenService().loadToken();
+              final character = await SelectedCharacterService()
+                  .loadCharacter();
 
-              if (token != null) {
+              if (token != null && character != null) {
                 final mounts = await BattleNetRepository().getMounts(token);
                 final pets = await BattleNetRepository().getPets(token);
-
+                final achievements = await BattleNetRepository()
+                    .getAchievements(
+                      token,
+                      character.realmSlug,
+                      character.name,
+                    );
+                /*debugPrint(
+                  achievements
+                      .take(20)
+                      .map((e) => '${e.id} - ${e.name}')
+                      .join('\n'),
+                );*/
                 if (!context.mounted) return;
 
                 ScaffoldMessenger.of(context).showSnackBar(
@@ -104,21 +117,13 @@ class _DashboardPageState extends State<DashboardPage> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      '${mounts.length} montures • ${pets.length} mascottes',
+                      '${mounts.length} montures • ${pets.length} mascottes • ${achievements.length} réalisations trouvées',
                     ),
                   ),
                 );
               }
 
               if (!context.mounted) return;
-
-              /*await showDialog(
-                context: context,
-                builder: (_) => AlertDialog(
-                  title: const Text('Token Battle.net'),
-                  content: SelectableText(token ?? 'Aucun token sauvegardé'),*/
-              final character = await SelectedCharacterService()
-                  .loadCharacter();
 
               await showDialog(
                 // ignore: use_build_context_synchronously

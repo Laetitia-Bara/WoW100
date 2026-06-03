@@ -237,3 +237,41 @@ export const getWowAchievements = onRequest(
 }
   },
 );
+
+export const getCharacterAchievements = onRequest(
+  async (request, response) => {
+    try {
+      const token = request.query.token as string;
+      const realmSlug = request.query.realmSlug as string;
+      const characterName = request.query.characterName as string;
+
+      if (!token || !realmSlug || !characterName) {
+        response.status(400).json({
+          error: "missing_parameters",
+        });
+        return;
+      }
+
+      const result = await axios.get(
+        `https://eu.api.blizzard.com/profile/wow/character/${realmSlug}/${characterName.toLowerCase()}/achievements`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+          params: {
+            namespace: "profile-eu",
+            locale: "fr_FR",
+          },
+        },
+      );
+
+      response.json(result.data);
+    } catch (e: any) {
+      response.status(500).json({
+        status: e?.response?.status ?? null,
+        data: e?.response?.data ?? null,
+        message: e?.message ?? String(e),
+      });
+    }
+  }
+);
