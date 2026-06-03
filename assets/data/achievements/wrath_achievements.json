@@ -1,6 +1,6 @@
 [
   {
-    "id": "wrath_azjol_nerub",
+    "id": "azjol_nerub",
     "name": "Azjol-Nerub",
     "category": "achievements",
     "expansion": "wrath",
@@ -11,5 +11,44 @@
     "weeklyLockout": false,
     "wowheadAchievementId": 480,
     "blizzardId": 480
+  },
+  {
+    "id": "lonely",
+    "name": "Lonely?",
+    "category": "achievements",
+    "expansion": "wrath",
+    "zone": "Divers",
+    "instance": "",
+    "source": "",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "wowheadAchievementId": 1291,
+    "blizzardId": 1291
+  },
+  {
+    "id": "shave_and_a_haircut",
+    "name": "Shave and a Haircut",
+    "category": "achievements",
+    "expansion": "wrath",
+    "zone": "Divers",
+    "instance": "",
+    "source": "",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "wowheadAchievementId": 545,
+    "blizzardId": 545
+  },
+  {
+    "id": "the_oculus",
+    "name": "The Oculus",
+    "category": "achievements",
+    "expansion": "wrath",
+    "zone": "Donjons & Raids",
+    "instance": "L'Oculus",
+    "source": "Terminer le donjon",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "wowheadAchievementId": 487,
+    "blizzardId": 487
   }
 ]
