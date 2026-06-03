@@ -27,3 +27,4 @@ flutter:
     - assets/data/pets/
     - assets/images/expansions/
     - assets/data/achievements/
+    - assets/generated/

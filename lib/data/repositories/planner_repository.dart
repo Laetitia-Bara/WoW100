@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 import '../models/tracking_item.dart';
 import '../models/wow_expansion.dart';
 import '../sources/json_planner_source.dart';
@@ -16,7 +18,8 @@ class JsonPlannerRepository implements PlannerRepository {
     switch (expansion) {
       case WowExpansion.vanilla:
         assetPaths.addAll([
-          'assets/data/mounts/vanilla_mounts.json',
+          //'assets/data/mounts/vanilla_mounts.json',
+          'assets/generated/mounts_wow100_draft.json',
           'assets/data/pets/vanilla_pets.json',
           'assets/data/achievements/vanilla_achievements.json',
         ]);
@@ -38,7 +41,8 @@ class JsonPlannerRepository implements PlannerRepository {
       final items = await _source.loadItemsFromAsset(path);
       allItems.addAll(items);
     }
-
+    debugPrint('PLANNER paths = $assetPaths');
+    debugPrint('PLANNER items loaded = ${allItems.length}');
     return allItems;
   }
 }

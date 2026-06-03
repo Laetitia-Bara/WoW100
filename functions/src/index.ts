@@ -4,6 +4,27 @@ dotenv.config();
 import axios from "axios";
 import {onRequest} from "firebase-functions/v2/https";
 
+async function getBattleNetServerToken(): Promise<string> {
+  const params = new URLSearchParams();
+  params.append("grant_type", "client_credentials");
+
+  const result = await axios.post(
+    "https://eu.battle.net/oauth/token",
+    params,
+    {
+      auth: {
+        username: process.env.BATTLENET_CLIENT_ID!,
+        password: process.env.BATTLENET_CLIENT_SECRET!,
+      },
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    },
+  );
+
+  return result.data.access_token;
+}
+
 export const exchangeBattleNetCode = onRequest(
   async (request, response) => {
     try {
@@ -274,4 +295,71 @@ export const getCharacterAchievements = onRequest(
       });
     }
   }
+);
+
+export const getMountCatalog = onRequest(
+  async (request, response) => {
+    try {
+      const token = await getBattleNetServerToken();
+
+      const result = await axios.get(
+        "https://eu.api.blizzard.com/data/wow/mount/index",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+          params: {
+            namespace: "static-eu",
+            locale: "fr_FR",
+          },
+        },
+      );
+
+      response.json(result.data);
+    } catch (e: any) {
+      response.status(500).json({
+        status: e?.response?.status ?? null,
+        data: e?.response?.data ?? null,
+        message: e?.message ?? String(e),
+      });
+    }
+  },
+);
+
+export const getMountDetails = onRequest(
+  async (request, response) => {
+    try {
+      const id = request.query.id as string;
+
+      if (!id) {
+        response.status(400).json({
+          error: "missing_id",
+        });
+        return;
+      }
+
+      const token = await getBattleNetServerToken();
+
+      const result = await axios.get(
+        `https://eu.api.blizzard.com/data/wow/mount/${id}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+          params: {
+            namespace: "static-eu",
+            locale: "fr_FR",
+          },
+        },
+      );
+
+      response.json(result.data);
+    } catch (e: any) {
+      response.status(500).json({
+        status: e?.response?.status ?? null,
+        data: e?.response?.data ?? null,
+        message: e?.message ?? String(e),
+      });
+    }
+  },
 );

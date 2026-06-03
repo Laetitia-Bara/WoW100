@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 import 'tracking_category.dart';
 import 'wow_expansion.dart';
 
@@ -74,18 +76,19 @@ class TrackingItem {
   }
 
   factory TrackingItem.fromJson(Map<String, dynamic> json) {
+    debugPrint('EXPANSION JSON = ${json['expansion']}');
     return TrackingItem(
-      id: json['id'],
-      name: json['name'],
+      id: json['id'] ?? '',
+      name: json['name'] ?? '',
       category: TrackingCategoryParser.fromJson(json['category']),
       expansion: WowExpansionParser.fromJson(json['expansion']),
-      zone: json['zone'],
-      instance: json['instance'],
-      source: json['source'],
+      zone: json['zone'] ?? '',
+      instance: json['instance'] ?? '',
+      source: json['source'] ?? '',
       wowheadItemId: json['wowheadItemId'],
       wowheadAchievementId: json['wowheadAchievementId'],
-      groupRequired: json['groupRequired'],
-      weeklyLockout: json['weeklyLockout'],
+      groupRequired: json['groupRequired'] ?? false,
+      weeklyLockout: json['weeklyLockout'] ?? false,
       obtained: false,
       blizzardId: json['blizzardId'],
     );

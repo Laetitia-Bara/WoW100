@@ -20,7 +20,7 @@ extension WowExpansionLabel on WowExpansion {
       case WowExpansion.total:
         return 'Vue totale';
       case WowExpansion.vanilla:
-        return 'Classic / Vanilla';
+        return 'Vanilla';
       case WowExpansion.tbc:
         return 'The Burning Crusade';
       case WowExpansion.wrath:

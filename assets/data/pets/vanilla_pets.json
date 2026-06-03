@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "sprite_darter_hatchling",
+    "name": "Sprite Darter Hatchling",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "Feralas",
+    "instance": "",
+    "source": "World Drop",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 87
+  }
+]

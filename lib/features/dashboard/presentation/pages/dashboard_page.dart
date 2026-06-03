@@ -96,6 +96,11 @@ class _DashboardPageState extends State<DashboardPage> {
 
               if (token != null && character != null) {
                 final mounts = await BattleNetRepository().getMounts(token);
+                /*debugPrint('===== MONTURES =====');
+
+                for (final mount in mounts.take(50)) {
+                  debugPrint('${mount.id} - ${mount.name}');
+                }*/
                 final pets = await BattleNetRepository().getPets(token);
                 final achievements = await BattleNetRepository()
                     .getAchievements(

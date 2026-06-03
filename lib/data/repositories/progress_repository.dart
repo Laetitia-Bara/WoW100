@@ -23,7 +23,11 @@ class JsonProgressRepository implements ProgressRepository {
 
   @override
   Future<List<ExpansionProgress>> getProgress() async {
-    final expansions = [WowExpansion.vanilla, WowExpansion.wrath];
+    final expansions = [
+      WowExpansion.vanilla,
+      WowExpansion.tbc,
+      WowExpansion.wrath,
+    ];
 
     final allItems = <TrackingItem>[];
 
@@ -128,11 +132,17 @@ class JsonProgressRepository implements ProgressRepository {
     switch (expansion) {
       case WowExpansion.vanilla:
         return [
-          'assets/data/mounts/vanilla_mounts.json',
+          //'assets/data/mounts/vanilla_mounts.json',
+          'assets/generated/mounts_wow100_draft.json',
           'assets/data/pets/vanilla_pets.json',
           'assets/data/achievements/vanilla_achievements.json',
         ];
-
+      case WowExpansion.tbc:
+        return [
+          'assets/data/mounts/tbc_mounts.json',
+          'assets/data/pets/tbc_pets.json',
+          'assets/data/achievements/tbc_achievements.json',
+        ];
       case WowExpansion.wrath:
         return [
           'assets/data/mounts/wrath_mounts.json',

@@ -37,67 +37,80 @@ class _PlannerPageState extends State<PlannerPage> {
   }
 
   Future<void> _loadItems() async {
-    final items = await _repository.getItems(widget.extension);
+    try {
+      final items = await _repository.getItems(widget.extension);
 
-    final updatedItems = <TrackingItem>[];
-    final token = await BattleNetTokenService().loadToken();
+      final updatedItems = <TrackingItem>[];
+      final token = await BattleNetTokenService().loadToken();
 
-    final ownedMountIds = <int>{};
-    final ownedPetIds = <int>{};
-    final ownedAchievementIds = <int>{};
+      final ownedMountIds = <int>{};
+      final ownedPetIds = <int>{};
+      final ownedAchievementIds = <int>{};
 
-    if (token != null) {
-      final battleNetRepository = BattleNetRepository();
+      if (token != null) {
+        final battleNetRepository = BattleNetRepository();
 
-      final mounts = await battleNetRepository.getMounts(token);
-      ownedMountIds.addAll(mounts.map((mount) => mount.id));
+        final mounts = await battleNetRepository.getMounts(token);
+        ownedMountIds.addAll(mounts.map((mount) => mount.id));
 
-      final pets = await battleNetRepository.getPets(token);
-      ownedPetIds.addAll(pets.map((pet) => pet.id));
+        final pets = await battleNetRepository.getPets(token);
+        ownedPetIds.addAll(pets.map((pet) => pet.id));
 
-      final character = await SelectedCharacterService().loadCharacter();
-      if (character != null) {
-        final achievements = await BattleNetRepository().getAchievements(
-          token,
-          character.realmSlug,
-          character.name,
-        );
+        final character = await SelectedCharacterService().loadCharacter();
+        if (character != null) {
+          final achievements = await BattleNetRepository().getAchievements(
+            token,
+            character.realmSlug,
+            character.name,
+          );
 
-        ownedAchievementIds.addAll(
-          achievements.map((achievement) => achievement.id),
+          ownedAchievementIds.addAll(
+            achievements.map((achievement) => achievement.id),
+          );
+        }
+      }
+
+      for (final item in items) {
+        final checked = await _localCheckService.isChecked(item.id);
+
+        final ownedMount =
+            item.category == TrackingCategory.mounts &&
+            item.blizzardId != null &&
+            ownedMountIds.contains(item.blizzardId);
+
+        final ownedPet =
+            item.category == TrackingCategory.pets &&
+            item.blizzardId != null &&
+            ownedPetIds.contains(item.blizzardId);
+
+        final ownedAchievement =
+            item.category == TrackingCategory.achievements &&
+            item.blizzardId != null &&
+            ownedAchievementIds.contains(item.blizzardId);
+
+        updatedItems.add(
+          item.copyWith(
+            obtained: checked || ownedMount || ownedPet || ownedAchievement,
+          ),
         );
       }
+
+      setState(() {
+        _items = updatedItems;
+        _isLoading = false;
+      });
+      // ignore: strict_top_level_inference
+    } catch (e, stack) {
+      debugPrint('ERREUR PLANNER: $e');
+      debugPrint('$stack');
+
+      if (!mounted) return;
+
+      setState(() {
+        _items = [];
+        _isLoading = false;
+      });
     }
-
-    for (final item in items) {
-      final checked = await _localCheckService.isChecked(item.id);
-
-      final ownedMount =
-          item.category == TrackingCategory.mounts &&
-          item.blizzardId != null &&
-          ownedMountIds.contains(item.blizzardId);
-
-      final ownedPet =
-          item.category == TrackingCategory.pets &&
-          item.blizzardId != null &&
-          ownedPetIds.contains(item.blizzardId);
-
-      final ownedAchievement =
-          item.category == TrackingCategory.achievements &&
-          item.blizzardId != null &&
-          ownedAchievementIds.contains(item.blizzardId);
-
-      updatedItems.add(
-        item.copyWith(
-          obtained: checked || ownedMount || ownedPet || ownedAchievement,
-        ),
-      );
-    }
-
-    setState(() {
-      _items = updatedItems;
-      _isLoading = false;
-    });
   }
 
   @override

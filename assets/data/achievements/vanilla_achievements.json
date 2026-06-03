@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "id": "kalimdor_explorer",
+    "name": "Kalimdor Explorer",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Exploration",
+    "instance": "Kalimdor",
+    "source": "Explore the regions of Kalimdor",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "wowheadAchievementId": 43,
+    "blizzardId": 43
+  }
+]
