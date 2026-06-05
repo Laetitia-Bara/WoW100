@@ -135,7 +135,7 @@ class JsonPlannerSource {
     final sourceName = mount['sourceName'] as String?;
     if (sourceName != null && sourceName.isNotEmpty) return sourceName;
 
-    return mount['sourceType'] ?? 'Source a verifier';
+    return mount['sourceType'] ?? 'Source à vérifier';
   }
 
   bool _isWeeklyMountSource(String sourceName) {
@@ -151,41 +151,130 @@ class JsonPlannerSource {
     required String? difficulty,
     required bool hasClassification,
   }) {
-    final source = sourceName.toLowerCase();
-    final difficultyText = (difficulty ?? '').toLowerCase();
+    final source = _normalizeMountStatusText(sourceName);
+    final difficultyText = _normalizeMountStatusText(difficulty ?? '');
 
-    if (!hasClassification) {
-      return 'A classer';
+    if (source.contains('retire') || difficultyText.contains('indisponible')) {
+      return 'Retirées / indisponibles';
+    }
+
+    if (source.contains('non implemente')) {
+      return 'Non implémenté';
+    }
+
+    if (source.contains('inconnu')) {
+      return 'Inconnu';
+    }
+
+    if (source.contains('butin') || source.contains('drop')) {
+      return 'Butin';
+    }
+
+    if (source.contains('vendeur')) {
+      return 'Vendeur';
+    }
+
+    if (source.contains('reputation')) {
+      return 'Réputation';
+    }
+
+    if (source.contains('quete')) {
+      return 'Quête';
+    }
+
+    if (source.contains('haut fait') || source.contains('haut-fait')) {
+      return 'Haut-fait';
+    }
+
+    if (source.contains('metier') ||
+        source.contains('ingenierie') ||
+        source.contains('joaillerie') ||
+        source.contains('couture') ||
+        source.contains('peche') ||
+        source.contains('archeologie')) {
+      return 'Métier';
+    }
+
+    if (source.contains('evenement mondial') ||
+        source.contains('evenement') ||
+        source.contains('anniversaire') ||
+        source.contains('fete') ||
+        source.contains('amour dans l air') ||
+        source.contains('jardin des nobles') ||
+        source.contains('voile d hiver')) {
+      return 'Événement mondial';
+    }
+
+    if (source.contains('cartes') ||
+        source.contains('tcg') ||
+        source.contains('jeu de cartes')) {
+      return 'Cartes à collectionner';
     }
 
     if (source.contains('boutique')) {
       return 'Boutique';
     }
 
-    if (source.contains('cartes') || source.contains('tcg')) {
-      return 'TCG';
+    if (source.contains('pvp')) {
+      return 'PvP coté';
     }
 
     if (source.contains('promotion')) {
-      return 'Promotion';
+      return 'Promotion Blizzard';
     }
 
-    if (source.contains('retire') || difficultyText.contains('indisponible')) {
-      return 'Retirees / indisponibles';
+    if (source.contains('exploration des iles')) {
+      return 'Exploration des îles';
+    }
+
+    if (source.contains('decouverte')) {
+      return 'Secret';
+    }
+
+    if (source.contains('secret')) {
+      return 'Secret';
+    }
+
+    if (source.contains('congregation')) {
+      return 'Congrégation';
     }
 
     if (source.contains('comptoir')) {
       return 'Comptoir';
     }
 
-    if (source.contains('secret')) {
-      return 'Secrets';
+    if (source.contains('source a verifier') ||
+        (source.contains('source') && source.contains('verifier'))) {
+      if (!hasClassification) {
+        return 'A classer';
+      }
+
+      return 'A vérifier';
     }
 
-    if (source.contains('inconnu') || source.contains('non implemente')) {
-      return 'A verifier';
-    }
+    return 'Divers';
+  }
 
-    return 'Disponibles';
+  String _normalizeMountStatusText(String value) {
+    return value
+        .toLowerCase()
+        .replaceAll(RegExp(r"['’´`\-/]"), ' ')
+        .replaceAll('à', 'a')
+        .replaceAll('â', 'a')
+        .replaceAll('ä', 'a')
+        .replaceAll('é', 'e')
+        .replaceAll('è', 'e')
+        .replaceAll('ê', 'e')
+        .replaceAll('ë', 'e')
+        .replaceAll('î', 'i')
+        .replaceAll('ï', 'i')
+        .replaceAll('ô', 'o')
+        .replaceAll('ö', 'o')
+        .replaceAll('ù', 'u')
+        .replaceAll('û', 'u')
+        .replaceAll('ü', 'u')
+        .replaceAll('ç', 'c')
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
   }
 }

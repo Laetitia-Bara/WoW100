@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:wow100/core/services/battle_net_token_service.dart';
 import 'package:wow100/data/models/tracking_category.dart';
 import 'package:wow100/data/repositories/battle_net_repository.dart';
 
+import '../../../../core/services/local_check_service.dart';
+import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/tracking_item.dart';
 import '../../../../data/models/wow_expansion.dart';
-import 'package:url_launcher/url_launcher.dart';
-import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../data/repositories/planner_repository.dart';
-import '../../../../core/services/local_check_service.dart';
 
 class PlannerPage extends StatefulWidget {
   const PlannerPage({super.key, required this.extension});
+
   final WowExpansion extension;
 
   @override
@@ -20,14 +21,39 @@ class PlannerPage extends StatefulWidget {
 }
 
 class _PlannerPageState extends State<PlannerPage> {
-  List<TrackingItem> _items = [];
   final PlannerRepository _repository = JsonPlannerRepository();
-  bool _isLoading = true;
   final LocalCheckService _localCheckService = LocalCheckService();
-  TrackingCategory? _selectedCategory;
-  String _searchQuery = '';
-  PlannerSort _sort = PlannerSort.instance;
+  final Set<String> _collapsedGroups = {};
+
+  static const List<String> _preferredMountGroups = [
+    'A classer',
+    'Butin',
+    'Vendeur',
+    'Réputation',
+    'Quête',
+    'Haut-fait',
+    'Métier',
+    'Événement mondial',
+    'Divers',
+    'Cartes à collectionner',
+    'Boutique',
+    'PvP coté',
+    'Promotion Blizzard',
+    'Exploration des îles',
+    'Secret',
+    'Congrégation',
+    'Comptoir',
+    'Non implémenté',
+    'Retirées / indisponibles',
+    'Inconnu',
+    'A vérifier',
+  ];
+
+  List<TrackingItem> _items = [];
+  bool _isLoading = true;
   bool _missingOnly = false;
+  String _searchQuery = '';
+  String? _selectedGroup;
 
   @override
   void initState() {
@@ -38,22 +64,18 @@ class _PlannerPageState extends State<PlannerPage> {
   Future<void> _loadItems() async {
     try {
       final items = await _repository.getItems(widget.extension);
-
-      final updatedItems = <TrackingItem>[];
       final token = await BattleNetTokenService().loadToken();
-
       final ownedMountIds = <int>{};
 
       if (token != null) {
-        final battleNetRepository = BattleNetRepository();
-
-        final mounts = await battleNetRepository.getMounts(token);
+        final mounts = await BattleNetRepository().getMounts(token);
         ownedMountIds.addAll(mounts.map((mount) => mount.id));
       }
 
+      final updatedItems = <TrackingItem>[];
+
       for (final item in items) {
         final checked = await _localCheckService.isChecked(item.id);
-
         final ownedMount =
             item.category == TrackingCategory.mounts &&
             item.blizzardId != null &&
@@ -62,11 +84,12 @@ class _PlannerPageState extends State<PlannerPage> {
         updatedItems.add(item.copyWith(obtained: checked || ownedMount));
       }
 
+      if (!mounted) return;
+
       setState(() {
         _items = updatedItems;
         _isLoading = false;
       });
-      // ignore: strict_top_level_inference
     } catch (e, stack) {
       debugPrint('ERREUR PLANNER: $e');
       debugPrint('$stack');
@@ -80,45 +103,128 @@ class _PlannerPageState extends State<PlannerPage> {
     }
   }
 
-  @override
-  Widget build(BuildContext context) {
+  List<String> _groupOptions() {
+    final groups = _items.map(_groupLabel).toSet().toList();
+
+    groups.sort(_compareGroups);
+    return groups;
+  }
+
+  Map<String, List<TrackingItem>> _groupedItems(List<TrackingItem> items) {
     final groupedItems = <String, List<TrackingItem>>{};
 
+    for (final item in items) {
+      final group = _groupLabel(item);
+      groupedItems.putIfAbsent(group, () => []).add(item);
+    }
+
+    final sortedGroups = groupedItems.keys.toList()..sort(_compareGroups);
+    final sortedGroupedItems = <String, List<TrackingItem>>{};
+
+    for (final group in sortedGroups) {
+      final groupItems = groupedItems[group] ?? [];
+      groupItems.sort((a, b) => a.name.compareTo(b.name));
+      sortedGroupedItems[group] = groupItems;
+    }
+
+    return sortedGroupedItems;
+  }
+
+  String _groupLabel(TrackingItem item) {
+    final group = item.instance.trim();
+
+    if (group.isEmpty || group == 'A verifier') {
+      return 'A vérifier';
+    }
+
+    if (group == 'Drop') {
+      return 'Butin';
+    }
+
+    if (group == 'TCG') {
+      return 'Cartes à collectionner';
+    }
+
+    if (group == 'Promotion') {
+      return 'Promotion Blizzard';
+    }
+
+    if (group == 'Secrets') {
+      return 'Secret';
+    }
+
+    if (group == 'Retirees / indisponibles') {
+      return 'Retirées / indisponibles';
+    }
+
+    return group;
+  }
+
+  int _compareGroups(String left, String right) {
+    final leftIndex = _preferredMountGroups.indexOf(left);
+    final rightIndex = _preferredMountGroups.indexOf(right);
+
+    if (leftIndex != -1 && rightIndex != -1) {
+      return leftIndex.compareTo(rightIndex);
+    }
+
+    if (leftIndex != -1) return -1;
+    if (rightIndex != -1) return 1;
+
+    return left.compareTo(right);
+  }
+
+  Future<void> _setChecked(TrackingItem item, bool checked) async {
+    await _localCheckService.setChecked(item.id, checked);
+
+    if (!mounted) return;
+
+    setState(() {
+      _items = _items.map((current) {
+        if (current.id == item.id) {
+          return current.copyWith(obtained: checked);
+        }
+
+        return current;
+      }).toList();
+    });
+  }
+
+  void _toggleGroup(String group) {
+    setState(() {
+      if (_collapsedGroups.contains(group)) {
+        _collapsedGroups.remove(group);
+      } else {
+        _collapsedGroups.add(group);
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final groupOptions = _groupOptions();
+
     final filteredItems = _items.where((item) {
-      final matchesCategory =
-          _selectedCategory == null || item.category == _selectedCategory;
+      final group = _groupLabel(item);
+      final matchesGroup = _selectedGroup == null || group == _selectedGroup;
+      final query = _searchQuery.toLowerCase();
 
       final matchesSearch =
-          _searchQuery.isEmpty ||
-          item.name.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-          item.instance.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-          item.source.toLowerCase().contains(_searchQuery.toLowerCase());
+          query.isEmpty ||
+          item.name.toLowerCase().contains(query) ||
+          group.toLowerCase().contains(query) ||
+          item.instance.toLowerCase().contains(query) ||
+          item.source.toLowerCase().contains(query);
 
       final matchesMissingOnly = !_missingOnly || !item.obtained;
 
-      return matchesCategory && matchesSearch && matchesMissingOnly;
+      return matchesGroup && matchesSearch && matchesMissingOnly;
     }).toList();
 
-    filteredItems.sort((a, b) {
-      switch (_sort) {
-        case PlannerSort.instance:
-          return a.instance.compareTo(b.instance);
-        case PlannerSort.category:
-          return a.category.index.compareTo(b.category.index);
-        case PlannerSort.name:
-          return a.name.compareTo(b.name);
-      }
-    });
-
+    final groupedItems = _groupedItems(filteredItems);
     final obtainedCount = filteredItems.where((item) => item.obtained).length;
-
     final totalCount = filteredItems.length;
-
     final progress = totalCount == 0 ? 0.0 : obtainedCount / totalCount;
-
-    for (final item in filteredItems) {
-      groupedItems.putIfAbsent(item.instance, () => []).add(item);
-    }
 
     return Scaffold(
       appBar: AppBar(
@@ -131,6 +237,8 @@ class _PlannerPageState extends State<PlannerPage> {
               for (final item in _items) {
                 await _localCheckService.clearChecked(item.id);
               }
+
+              if (!mounted) return;
 
               setState(() {
                 _items = _items
@@ -147,14 +255,14 @@ class _PlannerPageState extends State<PlannerPage> {
               padding: const EdgeInsets.all(16),
               children: [
                 Text(
-                  'À récupérer dans cette extension',
-                  style: Theme.of(
-                    context,
-                  ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800),
+                  widget.extension == WowExpansion.allMounts
+                      ? 'Toutes les montures'
+                      : 'Montures à récupérer',
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                    fontWeight: FontWeight.w800,
+                  ),
                 ),
-
                 const SizedBox(height: 16),
-
                 TextField(
                   decoration: const InputDecoration(
                     labelText: 'Rechercher',
@@ -167,146 +275,147 @@ class _PlannerPageState extends State<PlannerPage> {
                     });
                   },
                 ),
-
                 const SizedBox(height: 12),
-
-                DropdownButtonFormField<TrackingCategory?>(
-                  initialValue: _selectedCategory,
+                DropdownButtonFormField<String?>(
+                  initialValue: _selectedGroup,
                   decoration: const InputDecoration(
-                    labelText: 'Catégorie',
+                    labelText: 'Catégorie de monture',
                     border: OutlineInputBorder(),
                   ),
                   items: [
-                    const DropdownMenuItem<TrackingCategory?>(
+                    const DropdownMenuItem<String?>(
                       value: null,
                       child: Text('Toutes les catégories'),
                     ),
-                    ...TrackingCategory.values.map(
-                      (category) => DropdownMenuItem<TrackingCategory?>(
-                        value: category,
-                        child: Text(category.label),
+                    ...groupOptions.map(
+                      (group) => DropdownMenuItem<String?>(
+                        value: group,
+                        child: Text(group),
                       ),
                     ),
                   ],
                   onChanged: (value) {
                     setState(() {
-                      _selectedCategory = value;
+                      _selectedGroup = value;
                     });
                   },
                 ),
-
                 const SizedBox(height: 12),
-
-                DropdownButtonFormField<PlannerSort>(
-                  initialValue: _sort,
-                  decoration: const InputDecoration(
-                    labelText: 'Trier par',
-                    border: OutlineInputBorder(),
-                  ),
-                  items: const [
-                    DropdownMenuItem(
-                      value: PlannerSort.instance,
-                      child: Text('Lieu / instance'),
+                Row(
+                  children: [
+                    Switch(
+                      value: _missingOnly,
+                      onChanged: (value) {
+                        setState(() {
+                          _missingOnly = value;
+                        });
+                      },
                     ),
-                    DropdownMenuItem(
-                      value: PlannerSort.category,
-                      child: Text('Catégorie'),
-                    ),
-                    DropdownMenuItem(
-                      value: PlannerSort.name,
-                      child: Text('Nom'),
+                    const SizedBox(width: 10),
+                    const Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Afficher uniquement les manquants'),
+                          SizedBox(height: 2),
+                          Text(
+                            'Masquer les montures déjà obtenues',
+                            style: TextStyle(color: AppTheme.mutedText),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
-                  onChanged: (value) {
-                    if (value == null) return;
-
-                    setState(() {
-                      _sort = value;
-                    });
-                  },
                 ),
-
-                const SizedBox(height: 12),
-
-                SwitchListTile(
-                  value: _missingOnly,
-                  title: const Text('Afficher uniquement les manquants'),
-                  subtitle: const Text('Masquer les éléments déjà obtenus'),
-                  onChanged: (value) {
-                    setState(() {
-                      _missingOnly = value;
-                    });
-                  },
-                ),
-
                 const SizedBox(height: 20),
-
                 Text(
                   '$obtainedCount / $totalCount obtenus',
                   style: const TextStyle(fontWeight: FontWeight.w700),
                 ),
-
                 const SizedBox(height: 8),
-
                 LinearProgressIndicator(
                   value: progress,
                   minHeight: 10,
                   borderRadius: BorderRadius.circular(999),
                 ),
-
-                const SizedBox(height: 8),
-
-                const Text(
-                  'Checklist provisoire mockée. Plus tard elle sera synchronisée avec ta progression Battle.net.',
-                  style: TextStyle(color: AppTheme.mutedText),
-                ),
                 const SizedBox(height: 20),
-
                 if (filteredItems.isEmpty)
                   const Card(
                     child: Padding(
                       padding: EdgeInsets.all(18),
                       child: Text(
-                        'Aucun élément ne correspond à cette recherche.',
+                        'Aucune monture ne correspond à cette recherche.',
                         style: TextStyle(color: AppTheme.mutedText),
                       ),
                     ),
                   ),
-
                 for (final entry in groupedItems.entries) ...[
-                  Padding(
-                    padding: const EdgeInsets.only(top: 12, bottom: 8),
-                    child: Text(
-                      '📍 ${entry.key}',
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w800,
-                        color: AppTheme.gold,
-                      ),
-                    ),
+                  _PlannerGroupHeader(
+                    title: entry.key,
+                    count: entry.value.length,
+                    isCollapsed: _collapsedGroups.contains(entry.key),
+                    onToggle: () => _toggleGroup(entry.key),
                   ),
-                  for (final item in entry.value)
-                    _PlannerItemCard(
-                      item: item,
-                      onChanged: (value) async {
-                        final checked = value ?? false;
-
-                        await _localCheckService.setChecked(item.id, checked);
-
-                        setState(() {
-                          _items = _items.map((current) {
-                            if (current.id == item.id) {
-                              return current.copyWith(obtained: checked);
-                            }
-
-                            return current;
-                          }).toList();
-                        });
-                      },
-                    ),
+                  if (!_collapsedGroups.contains(entry.key))
+                    for (final item in entry.value)
+                      _PlannerItemCard(
+                        item: item,
+                        onChanged: (value) => _setChecked(item, value ?? false),
+                      ),
                 ],
               ],
             ),
+    );
+  }
+}
+
+class _PlannerGroupHeader extends StatelessWidget {
+  const _PlannerGroupHeader({
+    required this.title,
+    required this.count,
+    required this.isCollapsed,
+    required this.onToggle,
+  });
+
+  final String title;
+  final int count;
+  final bool isCollapsed;
+  final VoidCallback onToggle;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 16, bottom: 8),
+      child: Row(
+        children: [
+          IconButton(
+            tooltip: isCollapsed ? 'Déplier' : 'Replier',
+            onPressed: onToggle,
+            icon: Icon(
+              isCollapsed
+                  ? Icons.keyboard_arrow_right
+                  : Icons.keyboard_arrow_down,
+            ),
+          ),
+          Expanded(
+            child: InkWell(
+              borderRadius: BorderRadius.circular(8),
+              onTap: onToggle,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                child: Text(
+                  '$title ($count)',
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w800,
+                    color: AppTheme.gold,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -317,11 +426,16 @@ class _PlannerItemCard extends StatelessWidget {
   final TrackingItem item;
   final ValueChanged<bool?> onChanged;
 
-  Future<void> _openWowhead() async {
-    final url = WowheadUrlBuilder.build(item: item, locale: 'fr');
+  Future<void> _openExternal(BuildContext context) async {
+    final locale = Localizations.localeOf(context).languageCode;
+    final url = WowheadUrlBuilder.build(item: item, locale: locale);
     final uri = Uri.parse(url);
 
-    await launchUrl(uri, mode: LaunchMode.externalApplication);
+    await launchUrl(
+      uri,
+      mode: LaunchMode.externalApplication,
+      webOnlyWindowName: '_blank',
+    );
   }
 
   @override
@@ -337,50 +451,56 @@ class _PlannerItemCard extends StatelessWidget {
 
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
-      child: CheckboxListTile(
-        value: item.obtained,
-        onChanged: onChanged,
-        title: Text(
-          item.name,
-          style: TextStyle(
-            fontWeight: FontWeight.w800,
-            decoration: item.obtained ? TextDecoration.lineThrough : null,
-          ),
-        ),
-        subtitle: Padding(
-          padding: const EdgeInsets.only(top: 6),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                [
-                  item.expansion.label,
-                  item.zone,
-                  item.instance,
-                  item.source,
-                ].where((value) => value.isNotEmpty).join(' • '),
-                style: const TextStyle(color: AppTheme.mutedText),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Checkbox(value: item.obtained, onChanged: onChanged),
+            IconButton(
+              tooltip: item.wowheadItemId != null
+                  ? 'Ouvrir sur Wowhead'
+                  : 'Ouvrir la fiche',
+              icon: const Icon(Icons.open_in_new),
+              onPressed: () => _openExternal(context),
+            ),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    item.name,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      decoration: item.obtained
+                          ? TextDecoration.lineThrough
+                          : null,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    [
+                      item.expansion.label,
+                      item.zone,
+                      item.instance,
+                      item.source,
+                    ].where((value) => value.isNotEmpty).join(' • '),
+                    style: const TextStyle(color: AppTheme.mutedText),
+                  ),
+                  const SizedBox(height: 8),
+                  Wrap(spacing: 8, runSpacing: 8, children: tags),
+                  if (item.boss.isNotEmpty) ...[
+                    const SizedBox(height: 6),
+                    Text(
+                      'Boss : ${item.boss}',
+                      style: const TextStyle(color: AppTheme.mutedText),
+                    ),
+                  ],
+                ],
               ),
-              const SizedBox(height: 8),
-              Wrap(spacing: 8, runSpacing: 8, children: tags),
-
-              if (item.boss.isNotEmpty) ...[
-                const SizedBox(height: 6),
-                Text(
-                  'Boss : ${item.boss}',
-                  style: const TextStyle(color: AppTheme.mutedText),
-                ),
-              ],
-            ],
-          ),
-        ),
-
-        secondary: IconButton(
-          tooltip: item.externalUrl.isNotEmpty
-              ? 'Ouvrir la fiche Mamytwink'
-              : 'Ouvrir sur Wowhead',
-          icon: const Icon(Icons.open_in_new),
-          onPressed: _openWowhead,
+            ),
+          ],
         ),
       ),
     );
@@ -402,5 +522,3 @@ class _PlannerTag extends StatelessWidget {
     );
   }
 }
-
-enum PlannerSort { instance, category, name }

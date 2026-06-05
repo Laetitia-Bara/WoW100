@@ -12,6 +12,7 @@ import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/repositories/progress_repository.dart';
 import '../../../../data/sources/wow_expansion_catalog.dart';
 import '../../../auth/presentation/pages/character_switch_page.dart';
+import '../../../legal/presentation/pages/legal_page.dart';
 import '../../../planner/presentation/pages/planner_page.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -139,6 +140,13 @@ class _DashboardPageState extends State<DashboardPage> {
     await _loadProgress();
   }
 
+  void _openLegalPage() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const LegalPage()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
@@ -161,7 +169,24 @@ class _DashboardPageState extends State<DashboardPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('WoW100%'),
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Text('WoW100%'),
+            const SizedBox(width: 6),
+            IconButton(
+              tooltip: 'Informations légales',
+              constraints: const BoxConstraints.tightFor(
+                width: 36,
+                height: 36,
+              ),
+              padding: EdgeInsets.zero,
+              visualDensity: VisualDensity.compact,
+              icon: const Icon(Icons.info_outline),
+              onPressed: _openLegalPage,
+            ),
+          ],
+        ),
         actions: [
           if (_mainCharacter == null)
             TextButton.icon(
@@ -385,6 +410,11 @@ class _DashboardActionBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final collectableButtons = [
       OutlinedButton.icon(
+        onPressed: () => _showComingSoon(context, 'Hauts faits'),
+        icon: const Icon(Icons.emoji_events_outlined),
+        label: const Text('HF'),
+      ),
+      OutlinedButton.icon(
         onPressed: onMountsTap,
         icon: const Icon(Icons.pets),
         label: const Text('Montures'),
@@ -393,11 +423,6 @@ class _DashboardActionBar extends StatelessWidget {
         onPressed: () => _showComingSoon(context, 'Mascottes'),
         icon: const Icon(Icons.cruelty_free),
         label: const Text('Mascottes'),
-      ),
-      OutlinedButton.icon(
-        onPressed: () => _showComingSoon(context, 'Hauts faits'),
-        icon: const Icon(Icons.emoji_events_outlined),
-        label: const Text('HF'),
       ),
     ];
 

@@ -2,10 +2,6 @@ import '../../data/models/tracking_item.dart';
 
 class WowheadUrlBuilder {
   static String build({required TrackingItem item, String locale = 'fr'}) {
-    if (item.externalUrl.isNotEmpty) {
-      return item.externalUrl;
-    }
-
     final localePath = locale == 'en' ? '' : '/$locale';
 
     if (item.wowheadItemId != null) {
@@ -14,6 +10,10 @@ class WowheadUrlBuilder {
 
     if (item.wowheadAchievementId != null) {
       return 'https://www.wowhead.com$localePath/achievement=${item.wowheadAchievementId}';
+    }
+
+    if (item.externalUrl.isNotEmpty) {
+      return item.externalUrl;
     }
 
     return 'https://www.wowhead.com$localePath';
