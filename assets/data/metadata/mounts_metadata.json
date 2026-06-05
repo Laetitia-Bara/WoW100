@@ -48,5 +48,17 @@
     "boss": "Le Roi-Liche",
     "groupRequired": true,
     "weeklyLockout": true
+  },
+  {
+    "blizzardId": 1168,
+    "expansion": "dragonflight",
+    "category": "promotion",
+    "zone": "Hearthstone",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion Blizzard",
+    "difficulty": "Facile",
+    "boss": "Connexion à Hearthstone pendant le 10e anniversaire, offre limitée du 11 mars au 14 mai 2024",
+    "groupRequired": false,
+    "weeklyLockout": false
   }
 ]

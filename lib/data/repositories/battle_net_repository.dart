@@ -1,18 +1,17 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:wow100/core/config/app_config.dart';
 import '../models/wow_character.dart';
 import '../models/wow_mount.dart';
 import '../models/wow_pet.dart';
 import '../models/wow_achievement.dart';
 
 class BattleNetRepository {
-  static const _functionsBaseUrl =
-      'http://127.0.0.1:5001/wow100-106c3/us-central1';
-
   Future<String> exchangeCodeForToken(String code) async {
-    final uri = Uri.parse(
-      '$_functionsBaseUrl/exchangeBattleNetCode?code=$code',
-    );
+    final uri = _apiUri('exchangeBattleNetCode', {
+      'code': code,
+      'redirectUri': AppConfig.battleNetRedirectUri,
+    });
 
     final response = await http.get(uri);
 
@@ -25,9 +24,9 @@ class BattleNetRepository {
   }
 
   Future<List<WowCharacter>> getCharacters(String token) async {
-    final uri = Uri.parse('$_functionsBaseUrl/getWowCharacters?token=$token');
+    final uri = _apiUri('getWowCharacters');
 
-    final response = await http.get(uri);
+    final response = await http.get(uri, headers: _authHeaders(token));
 
     if (response.statusCode != 200) {
       throw Exception(response.body);
@@ -39,9 +38,9 @@ class BattleNetRepository {
   }
 
   Future<List<WowMount>> getMounts(String token) async {
-    final uri = Uri.parse('$_functionsBaseUrl/getWowMounts?token=$token');
+    final uri = _apiUri('getWowMounts');
 
-    final response = await http.get(uri);
+    final response = await http.get(uri, headers: _authHeaders(token));
 
     if (response.statusCode != 200) {
       throw Exception(response.body);
@@ -59,9 +58,9 @@ class BattleNetRepository {
   }
 
   Future<List<WowPet>> getPets(String token) async {
-    final uri = Uri.parse('$_functionsBaseUrl/getWowPets?token=$token');
+    final uri = _apiUri('getWowPets');
 
-    final response = await http.get(uri);
+    final response = await http.get(uri, headers: _authHeaders(token));
 
     if (response.statusCode != 200) {
       throw Exception(response.body);
@@ -84,14 +83,12 @@ class BattleNetRepository {
     String realmSlug,
     String characterName,
   ) async {
-    final uri = Uri.parse(
-      '$_functionsBaseUrl/getCharacterAchievements'
-      '?token=$token'
-      '&realmSlug=$realmSlug'
-      '&characterName=$characterName',
-    );
+    final uri = _apiUri('getCharacterAchievements', {
+      'realmSlug': realmSlug,
+      'characterName': characterName,
+    });
 
-    final response = await http.get(uri);
+    final response = await http.get(uri, headers: _authHeaders(token));
 
     if (response.statusCode != 200) {
       throw Exception(response.body);
@@ -107,5 +104,19 @@ class BattleNetRepository {
         'name': entry['achievement']['name'],
       });
     }).toList();
+  }
+
+  Uri _apiUri(String path, [Map<String, String>? queryParameters]) {
+    final baseUrl = AppConfig.apiBaseUrl.endsWith('/')
+        ? AppConfig.apiBaseUrl.substring(0, AppConfig.apiBaseUrl.length - 1)
+        : AppConfig.apiBaseUrl;
+
+    return Uri.parse('$baseUrl/$path').replace(
+      queryParameters: queryParameters,
+    );
+  }
+
+  Map<String, String> _authHeaders(String token) {
+    return {'Authorization': 'Bearer $token'};
   }
 }

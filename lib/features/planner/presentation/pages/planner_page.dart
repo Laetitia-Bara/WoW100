@@ -53,7 +53,7 @@ class _PlannerPageState extends State<PlannerPage> {
   bool _isLoading = true;
   bool _missingOnly = false;
   String _searchQuery = '';
-  String? _selectedGroup;
+  final Set<String> _selectedGroups = {};
 
   @override
   void initState() {
@@ -200,13 +200,33 @@ class _PlannerPageState extends State<PlannerPage> {
     });
   }
 
+  Future<void> _openGroupSelector(List<String> groupOptions) async {
+    final result = await showModalBottomSheet<Set<String>>(
+      context: context,
+      isScrollControlled: true,
+      builder: (_) => _GroupFilterSheet(
+        options: groupOptions,
+        selectedGroups: _selectedGroups,
+      ),
+    );
+
+    if (result == null || !mounted) return;
+
+    setState(() {
+      _selectedGroups
+        ..clear()
+        ..addAll(result);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final groupOptions = _groupOptions();
 
     final filteredItems = _items.where((item) {
       final group = _groupLabel(item);
-      final matchesGroup = _selectedGroup == null || group == _selectedGroup;
+      final matchesGroup =
+          _selectedGroups.isEmpty || _selectedGroups.contains(group);
       final query = _searchQuery.toLowerCase();
 
       final matchesSearch =
@@ -276,29 +296,9 @@ class _PlannerPageState extends State<PlannerPage> {
                   },
                 ),
                 const SizedBox(height: 12),
-                DropdownButtonFormField<String?>(
-                  initialValue: _selectedGroup,
-                  decoration: const InputDecoration(
-                    labelText: 'Catégorie de monture',
-                    border: OutlineInputBorder(),
-                  ),
-                  items: [
-                    const DropdownMenuItem<String?>(
-                      value: null,
-                      child: Text('Toutes les catégories'),
-                    ),
-                    ...groupOptions.map(
-                      (group) => DropdownMenuItem<String?>(
-                        value: group,
-                        child: Text(group),
-                      ),
-                    ),
-                  ],
-                  onChanged: (value) {
-                    setState(() {
-                      _selectedGroup = value;
-                    });
-                  },
+                _GroupFilterField(
+                  selectedGroups: _selectedGroups,
+                  onTap: () => _openGroupSelector(groupOptions),
                 ),
                 const SizedBox(height: 12),
                 Row(
@@ -415,6 +415,174 @@ class _PlannerGroupHeader extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _GroupFilterField extends StatelessWidget {
+  const _GroupFilterField({required this.selectedGroups, required this.onTap});
+
+  final Set<String> selectedGroups;
+  final VoidCallback onTap;
+
+  String get _label {
+    if (selectedGroups.isEmpty) {
+      return 'Toutes les catégories';
+    }
+
+    if (selectedGroups.length <= 2) {
+      return selectedGroups.join(', ');
+    }
+
+    return '${selectedGroups.length} catégories sélectionnées';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      borderRadius: BorderRadius.circular(4),
+      onTap: onTap,
+      child: InputDecorator(
+        decoration: const InputDecoration(
+          labelText: 'Catégorie de monture',
+          border: OutlineInputBorder(),
+        ),
+        child: Row(
+          children: [
+            Expanded(
+              child: Text(
+                _label,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontWeight: FontWeight.w700),
+              ),
+            ),
+            if (selectedGroups.isNotEmpty) ...[
+              const SizedBox(width: 8),
+              Text(
+                selectedGroups.length.toString(),
+                style: const TextStyle(
+                  color: AppTheme.gold,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+            ],
+            const SizedBox(width: 8),
+            const Icon(Icons.expand_more),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _GroupFilterSheet extends StatefulWidget {
+  const _GroupFilterSheet({
+    required this.options,
+    required this.selectedGroups,
+  });
+
+  final List<String> options;
+  final Set<String> selectedGroups;
+
+  @override
+  State<_GroupFilterSheet> createState() => _GroupFilterSheetState();
+}
+
+class _GroupFilterSheetState extends State<_GroupFilterSheet> {
+  late final Set<String> _tempSelected;
+
+  @override
+  void initState() {
+    super.initState();
+    _tempSelected = {...widget.selectedGroups};
+  }
+
+  void _toggle(String group, bool selected) {
+    setState(() {
+      if (selected) {
+        _tempSelected.add(group);
+      } else {
+        _tempSelected.remove(group);
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: FractionallySizedBox(
+        heightFactor: 0.85,
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      'Catégories de montures',
+                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      setState(() {
+                        _tempSelected.clear();
+                      });
+                    },
+                    child: const Text('Tout effacer'),
+                  ),
+                ],
+              ),
+            ),
+            CheckboxListTile(
+              value: _tempSelected.isEmpty,
+              title: const Text('Toutes les catégories'),
+              subtitle: const Text('Aucune catégorie filtrée'),
+              controlAffinity: ListTileControlAffinity.leading,
+              onChanged: (_) {
+                setState(() {
+                  _tempSelected.clear();
+                });
+              },
+            ),
+            const Divider(height: 1),
+            Expanded(
+              child: ListView.builder(
+                itemCount: widget.options.length,
+                itemBuilder: (context, index) {
+                  final group = widget.options[index];
+                  final selected = _tempSelected.contains(group);
+
+                  return CheckboxListTile(
+                    value: selected,
+                    title: Text(group),
+                    controlAffinity: ListTileControlAffinity.leading,
+                    onChanged: (value) => _toggle(group, value ?? false),
+                  );
+                },
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+              child: SizedBox(
+                width: double.infinity,
+                child: FilledButton(
+                  onPressed: () => Navigator.pop(context, _tempSelected),
+                  child: Text(
+                    _tempSelected.isEmpty
+                        ? 'Afficher toutes les catégories'
+                        : 'Appliquer ${_tempSelected.length} catégorie(s)',
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

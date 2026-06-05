@@ -57,14 +57,20 @@ class JsonPlannerSource {
       final itemExpansion = expansionKey is String
           ? WowExpansionParser.fromJson(expansionKey)
           : WowExpansion.allMounts;
+      final manualSource =
+          manual?['source'] as String? ?? manual?['sourceName'] as String?;
       final mamytwinkSource = mamytwink?['source'] as String?;
       final manualInstance = manual?['instance'] as String?;
-      final sourceName = (mamytwinkSource?.isNotEmpty ?? false)
-          ? mamytwinkSource!
-          : _sourceNameFromBlizzard(mount);
+      final sourceName = (manualSource?.isNotEmpty ?? false)
+          ? manualSource!
+          : (mamytwinkSource?.isNotEmpty ?? false)
+              ? mamytwinkSource!
+              : _sourceNameFromBlizzard(mount);
       final status = _mountStatus(
         sourceName: sourceName,
-        difficulty: mamytwink?['difficulty'] as String?,
+        difficulty:
+            manual?['difficulty'] as String? ??
+            mamytwink?['difficulty'] as String?,
         hasClassification: expansionKey is String,
       );
       final instance = (manualInstance?.isNotEmpty ?? false)
