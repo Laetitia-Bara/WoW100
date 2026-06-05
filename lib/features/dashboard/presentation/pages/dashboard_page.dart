@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:wow100/core/services/battle_net_auth_service.dart';
 import 'package:wow100/core/services/battle_net_token_service.dart';
-import 'package:wow100/data/repositories/battle_net_repository.dart';
+
+import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/theme/app_theme.dart';
-import '../../../planner/presentation/pages/planner_page.dart';
 import '../../../../data/models/expansion_progress.dart';
 import '../../../../data/models/tracking_category.dart';
+import '../../../../data/models/wow_character.dart';
 import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/repositories/progress_repository.dart';
 import '../../../../data/sources/wow_expansion_catalog.dart';
-import '../../../../data/models/wow_character.dart';
-import '../../../auth/presentation/pages/auth_page.dart';
-import '../../../../core/services/selected_character_service.dart';
+import '../../../auth/presentation/pages/character_switch_page.dart';
+import '../../../planner/presentation/pages/planner_page.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -21,18 +23,18 @@ class DashboardPage extends StatefulWidget {
 
 class _DashboardPageState extends State<DashboardPage> {
   final Set<WowExpansion> _collapsedExpansions = {};
-  bool _newestFirst = false;
   final Set<TrackingCategory> _visibleCategories = {
     TrackingCategory.achievements,
     TrackingCategory.mounts,
     TrackingCategory.pets,
-    TrackingCategory.professions,
   };
   final ProgressRepository _repository = JsonProgressRepository();
-  bool _isLoading = true;
-  List<ExpansionProgress> _progresses = [];
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
+
+  bool _newestFirst = false;
+  bool _isLoading = true;
+  List<ExpansionProgress> _progresses = [];
   WowCharacter? _mainCharacter;
 
   @override
@@ -45,6 +47,8 @@ class _DashboardPageState extends State<DashboardPage> {
   Future<void> _loadProgress() async {
     final progresses = await _repository.getProgress();
 
+    if (!mounted) return;
+
     setState(() {
       _progresses = progresses;
       _isLoading = false;
@@ -54,9 +58,85 @@ class _DashboardPageState extends State<DashboardPage> {
   Future<void> _loadCharacter() async {
     final character = await _selectedCharacterService.loadCharacter();
 
+    if (!mounted) return;
+
     setState(() {
       _mainCharacter = character;
     });
+  }
+
+  Future<void> _disconnectBattleNet() async {
+    await BattleNetTokenService().clearToken();
+    await _selectedCharacterService.clearCharacter();
+
+    if (!mounted) return;
+
+    setState(() {
+      _mainCharacter = null;
+      _isLoading = true;
+    });
+
+    await _loadProgress();
+  }
+
+  Future<void> _openBattleNetLogin() async {
+    final service = BattleNetAuthService();
+    final url = service.buildAuthorizationUrl();
+
+    await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+  }
+
+  Future<void> _openCharacterSwitch() async {
+    await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const CharacterSwitchPage()),
+    );
+
+    await _loadCharacter();
+    await _loadProgress();
+  }
+
+  Future<void> _openCategoryFilters() async {
+    final result = await showModalBottomSheet<Set<TrackingCategory>>(
+      context: context,
+      isScrollControlled: true,
+      builder: (_) => _CategoryFilterSheet(
+        selectedCategories: _visibleCategories,
+      ),
+    );
+
+    if (result == null || !mounted) return;
+
+    setState(() {
+      _visibleCategories
+        ..clear()
+        ..addAll(result);
+    });
+  }
+
+  void _toggleSortOrder() {
+    setState(() {
+      _newestFirst = !_newestFirst;
+    });
+  }
+
+  void _toggleCollapse(WowExpansion expansion) {
+    setState(() {
+      if (_collapsedExpansions.contains(expansion)) {
+        _collapsedExpansions.remove(expansion);
+      } else {
+        _collapsedExpansions.add(expansion);
+      }
+    });
+  }
+
+  Future<void> _openPlanner(WowExpansion expansion) async {
+    await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => PlannerPage(extension: expansion)),
+    );
+
+    await _loadProgress();
   }
 
   @override
@@ -65,206 +145,130 @@ class _DashboardPageState extends State<DashboardPage> {
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
     }
 
-    final progresses = _progresses;
-    final totalProgress = progresses.firstWhere(
+    final totalProgress = _progresses.firstWhere(
       (progress) => progress.expansion == WowExpansion.total,
     );
 
-    final expansionProgresses = progresses
+    final extensionProgresses = _progresses
         .where((progress) => progress.expansion != WowExpansion.total)
         .toList();
 
     if (_newestFirst) {
-      expansionProgresses.sort(
+      extensionProgresses.sort(
         (a, b) => b.expansion.index.compareTo(a.expansion.index),
       );
     }
-
-    final orderedProgresses = [totalProgress, ...expansionProgresses];
 
     return Scaffold(
       appBar: AppBar(
         title: const Text('WoW100%'),
         actions: [
-          IconButton(
-            tooltip: 'Debug token',
-            icon: const Icon(Icons.vpn_key_outlined),
-            onPressed: () async {
-              final token = await BattleNetTokenService().loadToken();
-              final character = await SelectedCharacterService()
-                  .loadCharacter();
-
-              if (token != null && character != null) {
-                final mounts = await BattleNetRepository().getMounts(token);
-                /*debugPrint('===== MONTURES =====');
-
-                for (final mount in mounts.take(50)) {
-                  debugPrint('${mount.id} - ${mount.name}');
-                }*/
-                final pets = await BattleNetRepository().getPets(token);
-                final achievements = await BattleNetRepository()
-                    .getAchievements(
-                      token,
-                      character.realmSlug,
-                      character.name,
-                    );
-                /*debugPrint(
-                  achievements
-                      .take(20)
-                      .map((e) => '${e.id} - ${e.name}')
-                      .join('\n'),
-                );*/
-                if (!context.mounted) return;
-
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('${mounts.length} montures trouvées')),
-                );
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text(
-                      '${mounts.length} montures • ${pets.length} mascottes • ${achievements.length} réalisations trouvées',
-                    ),
-                  ),
-                );
-              }
-
-              if (!context.mounted) return;
-
-              await showDialog(
-                // ignore: use_build_context_synchronously
-                context: context,
-                builder: (_) => AlertDialog(
-                  title: const Text('Debug Battle.net'),
-                  content: SelectableText('''
-Token :
-${token ?? 'Aucun token'}
-
-Personnage :
-${character?.name ?? '-'}
-
-Royaume :
-${character?.realm ?? '-'}
-
-Slug :
-${character?.realmSlug ?? '-'}
-'''),
-                  actions: [
-                    TextButton(
-                      onPressed: () => Navigator.pop(context),
-                      child: const Text('Fermer'),
-                    ),
-                  ],
-                ),
-              );
-            },
-          ),
-          IconButton(
-            tooltip: 'Filtres',
-            onPressed: () async {
-              final result = await showModalBottomSheet<Set<TrackingCategory>>(
-                context: context,
-                isScrollControlled: true,
-                builder: (_) => _CategoryFilterSheet(
-                  selectedCategories: _visibleCategories,
-                ),
-              );
-
-              if (result != null) {
-                setState(() {
-                  _visibleCategories
-                    ..clear()
-                    ..addAll(result);
-                });
-              }
-            },
-            icon: const Icon(Icons.filter_alt_outlined),
-          ),
-          IconButton(
-            tooltip: _newestFirst
-                ? 'Ordre historique'
-                : 'Extensions récentes en premier',
-            onPressed: () {
-              setState(() {
-                _newestFirst = !_newestFirst;
-              });
-            },
-            icon: Icon(
-              _newestFirst
-                  ? Icons.vertical_align_bottom
-                  : Icons.vertical_align_top,
+          if (_mainCharacter == null)
+            TextButton.icon(
+              onPressed: _openBattleNetLogin,
+              icon: const Icon(Icons.login),
+              label: const Text('Connexion'),
+            )
+          else ...[
+            TextButton.icon(
+              onPressed: _openCharacterSwitch,
+              icon: const Icon(Icons.person),
+              label: const Text('Changer'),
             ),
-          ),
+            IconButton(
+              tooltip: 'Déconnexion',
+              icon: const Icon(Icons.logout),
+              onPressed: _disconnectBattleNet,
+            ),
+          ],
         ],
       ),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          _HeroCard(character: _mainCharacter),
-          const SizedBox(height: 20),
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          final isWide = constraints.maxWidth >= 1000;
+          final contentWidth = isWide ? 1180.0 : double.infinity;
 
-          Card(
-            child: ListTile(
-              leading: const Icon(Icons.pets),
-              title: const Text(
-                'Toutes les montures',
-                style: TextStyle(fontWeight: FontWeight.w800),
-              ),
-              subtitle: const Text('Voir toutes les montures connues'),
-              trailing: const Icon(Icons.chevron_right),
-              onTap: () async {
-                await Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (_) =>
-                        const PlannerPage(extension: WowExpansion.allMounts),
+          return Center(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(maxWidth: contentWidth),
+              child: ListView(
+                padding: const EdgeInsets.all(16),
+                children: [
+                  _HeroCard(
+                    character: _mainCharacter,
+                    totalProgress: totalProgress,
+                    visibleCategories: _visibleCategories,
                   ),
-                );
+                  const SizedBox(height: 20),
+                  _DashboardActionBar(
+                    newestFirst: _newestFirst,
+                    onMountsTap: () => _openPlanner(WowExpansion.allMounts),
+                    onFilterTap: _openCategoryFilters,
+                    onSortTap: _toggleSortOrder,
+                  ),
+                  const SizedBox(height: 20),
+                  if (isWide)
+                    GridView.builder(
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            crossAxisSpacing: 14,
+                            mainAxisSpacing: 14,
+                            mainAxisExtent: 248,
+                          ),
+                      itemCount: extensionProgresses.length,
+                      itemBuilder: (context, index) {
+                        final progress = extensionProgresses[index];
 
-                await _loadProgress();
-              },
-            ),
-          ),
-
-          const SizedBox(height: 20),
-
-          for (final progress in orderedProgresses)
-            _ExpansionCard(
-              progress: progress,
-              visibleCategories: _visibleCategories,
-              isCollapsed: _collapsedExpansions.contains(progress.expansion),
-              onToggleCollapse: () {
-                setState(() {
-                  if (_collapsedExpansions.contains(progress.expansion)) {
-                    _collapsedExpansions.remove(progress.expansion);
-                  } else {
-                    _collapsedExpansions.add(progress.expansion);
-                  }
-                });
-              },
-              onTap: progress.expansion == WowExpansion.total
-                  ? null
-                  : () async {
-                      await Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) =>
-                              PlannerPage(extension: progress.expansion),
+                        return _ExpansionCard(
+                          progress: progress,
+                          visibleCategories: _visibleCategories,
+                          isCollapsed: _collapsedExpansions.contains(
+                            progress.expansion,
+                          ),
+                          onToggleCollapse: () =>
+                              _toggleCollapse(progress.expansion),
+                          onTap: () => _openPlanner(progress.expansion),
+                        );
+                      },
+                    )
+                  else
+                    for (final progress in extensionProgresses)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 14),
+                        child: _ExpansionCard(
+                          progress: progress,
+                          visibleCategories: _visibleCategories,
+                          isCollapsed: _collapsedExpansions.contains(
+                            progress.expansion,
+                          ),
+                          onToggleCollapse: () =>
+                              _toggleCollapse(progress.expansion),
+                          onTap: () => _openPlanner(progress.expansion),
                         ),
-                      );
-
-                      await _loadProgress();
-                    },
+                      ),
+                ],
+              ),
             ),
-        ],
+          );
+        },
       ),
     );
   }
 }
 
 class _HeroCard extends StatelessWidget {
-  const _HeroCard({required this.character});
+  const _HeroCard({
+    required this.character,
+    required this.totalProgress,
+    required this.visibleCategories,
+  });
 
   final WowCharacter? character;
+  final ExpansionProgress totalProgress;
+  final Set<TrackingCategory> visibleCategories;
 
   @override
   Widget build(BuildContext context) {
@@ -287,22 +291,154 @@ class _HeroCard extends StatelessWidget {
                   : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
               style: const TextStyle(color: AppTheme.mutedText, height: 1.4),
             ),
-            const SizedBox(height: 16),
-            FilledButton.icon(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => const AuthPage()),
-                );
-              },
-              icon: Icon(hasCharacter ? Icons.person : Icons.login),
-              label: Text(
-                hasCharacter ? 'Changer de personnage' : 'Connexion Battle.net',
-              ),
+            const SizedBox(height: 18),
+            _TotalProgressSummary(
+              progress: totalProgress,
+              visibleCategories: visibleCategories,
             ),
           ],
         ),
       ),
+    );
+  }
+}
+
+class _TotalProgressSummary extends StatelessWidget {
+  const _TotalProgressSummary({
+    required this.progress,
+    required this.visibleCategories,
+  });
+
+  final ExpansionProgress progress;
+  final Set<TrackingCategory> visibleCategories;
+
+  @override
+  Widget build(BuildContext context) {
+    final percent = (progress.completionRate * 100).round();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            const Expanded(
+              child: Text(
+                'Vue totale',
+                style: TextStyle(fontWeight: FontWeight.w800),
+              ),
+            ),
+            Text(
+              '$percent%',
+              style: const TextStyle(
+                color: AppTheme.gold,
+                fontWeight: FontWeight.w800,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 10),
+        LinearProgressIndicator(
+          value: progress.completionRate,
+          minHeight: 8,
+          borderRadius: BorderRadius.circular(999),
+          backgroundColor: Colors.white10,
+          color: AppTheme.gold,
+        ),
+        const SizedBox(height: 14),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: visibleCategories.map((category) {
+            final completed = progress.completed[category] ?? 0;
+            final total = progress.total[category] ?? 0;
+
+            return _MiniStat(
+              label: category.shortLabel,
+              value: '$completed/$total',
+            );
+          }).toList(),
+        ),
+      ],
+    );
+  }
+}
+
+class _DashboardActionBar extends StatelessWidget {
+  const _DashboardActionBar({
+    required this.newestFirst,
+    required this.onMountsTap,
+    required this.onFilterTap,
+    required this.onSortTap,
+  });
+
+  final bool newestFirst;
+  final VoidCallback onMountsTap;
+  final VoidCallback onFilterTap;
+  final VoidCallback onSortTap;
+
+  void _showComingSoon(BuildContext context, String label) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('$label arrive dans une prochaine étape')),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final collectableButtons = [
+      OutlinedButton.icon(
+        onPressed: onMountsTap,
+        icon: const Icon(Icons.pets),
+        label: const Text('Montures'),
+      ),
+      OutlinedButton.icon(
+        onPressed: () => _showComingSoon(context, 'Mascottes'),
+        icon: const Icon(Icons.cruelty_free),
+        label: const Text('Mascottes'),
+      ),
+      OutlinedButton.icon(
+        onPressed: () => _showComingSoon(context, 'Hauts faits'),
+        icon: const Icon(Icons.emoji_events_outlined),
+        label: const Text('HF'),
+      ),
+    ];
+
+    final toolButtons = [
+      IconButton.outlined(
+        tooltip: 'Filtres',
+        onPressed: onFilterTap,
+        icon: const Icon(Icons.filter_alt_outlined),
+      ),
+      IconButton.outlined(
+        tooltip: newestFirst
+            ? 'Ordre historique'
+            : 'Extensions récentes en premier',
+        onPressed: onSortTap,
+        icon: Icon(
+          newestFirst
+              ? Icons.vertical_align_bottom
+              : Icons.vertical_align_top,
+        ),
+      ),
+    ];
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth < 620) {
+          return Wrap(
+            spacing: 10,
+            runSpacing: 10,
+            children: [...collectableButtons, ...toolButtons],
+          );
+        }
+
+        return Row(
+          children: [
+            Expanded(
+              child: Wrap(spacing: 10, runSpacing: 10, children: collectableButtons),
+            ),
+            Wrap(spacing: 8, children: toolButtons),
+          ],
+        );
+      },
     );
   }
 }
@@ -331,17 +467,16 @@ class _ExpansionCard extends StatelessWidget {
       onTap: onTap,
       borderRadius: BorderRadius.circular(20),
       child: Card(
-        margin: const EdgeInsets.only(bottom: 14),
+        margin: EdgeInsets.zero,
         clipBehavior: Clip.antiAlias,
         child: Column(
           children: [
-            if (progress.expansion != WowExpansion.total)
-              Image.asset(
-                info.bannerAsset,
-                height: 90,
-                width: double.infinity,
-                fit: BoxFit.cover,
-              ),
+            Image.asset(
+              info.bannerAsset,
+              height: 90,
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
             Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
@@ -469,7 +604,11 @@ class _CategoryFilterSheetState extends State<_CategoryFilterSheet> {
                   child: ListView(
                     controller: scrollController,
                     children: [
-                      for (final category in TrackingCategory.values)
+                      for (final category in [
+                        TrackingCategory.achievements,
+                        TrackingCategory.mounts,
+                        TrackingCategory.pets,
+                      ])
                         CheckboxListTile(
                           value: _tempSelected.contains(category),
                           title: Text(category.label),

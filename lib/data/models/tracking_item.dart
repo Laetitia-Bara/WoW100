@@ -43,6 +43,8 @@ class TrackingItem {
 
   final String boss;
 
+  final String externalUrl;
+
   const TrackingItem({
     required this.id,
     required this.name,
@@ -58,6 +60,7 @@ class TrackingItem {
     required this.obtained,
     this.blizzardId,
     required this.boss,
+    this.externalUrl = '',
   });
 
   TrackingItem copyWith({bool? obtained}) {
@@ -76,6 +79,7 @@ class TrackingItem {
       obtained: obtained ?? this.obtained,
       blizzardId: blizzardId,
       boss: boss,
+      externalUrl: externalUrl,
     );
   }
 
@@ -95,7 +99,8 @@ class TrackingItem {
       weeklyLockout: json['weeklyLockout'] ?? false,
       obtained: false,
       blizzardId: json['blizzardId'],
-      boss: '',
+      boss: json['boss'] ?? '',
+      externalUrl: json['externalUrl'] ?? json['mamytwinkUrl'] ?? '',
     );
   }
 }

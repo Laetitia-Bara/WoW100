@@ -10,7 +10,6 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../data/repositories/planner_repository.dart';
 import '../../../../core/services/local_check_service.dart';
-import '../../../../core/services/selected_character_service.dart';
 
 class PlannerPage extends StatefulWidget {
   const PlannerPage({super.key, required this.extension});
@@ -44,30 +43,12 @@ class _PlannerPageState extends State<PlannerPage> {
       final token = await BattleNetTokenService().loadToken();
 
       final ownedMountIds = <int>{};
-      final ownedPetIds = <int>{};
-      final ownedAchievementIds = <int>{};
 
       if (token != null) {
         final battleNetRepository = BattleNetRepository();
 
         final mounts = await battleNetRepository.getMounts(token);
         ownedMountIds.addAll(mounts.map((mount) => mount.id));
-
-        final pets = await battleNetRepository.getPets(token);
-        ownedPetIds.addAll(pets.map((pet) => pet.id));
-
-        final character = await SelectedCharacterService().loadCharacter();
-        if (character != null) {
-          final achievements = await BattleNetRepository().getAchievements(
-            token,
-            character.realmSlug,
-            character.name,
-          );
-
-          ownedAchievementIds.addAll(
-            achievements.map((achievement) => achievement.id),
-          );
-        }
       }
 
       for (final item in items) {
@@ -78,21 +59,7 @@ class _PlannerPageState extends State<PlannerPage> {
             item.blizzardId != null &&
             ownedMountIds.contains(item.blizzardId);
 
-        final ownedPet =
-            item.category == TrackingCategory.pets &&
-            item.blizzardId != null &&
-            ownedPetIds.contains(item.blizzardId);
-
-        final ownedAchievement =
-            item.category == TrackingCategory.achievements &&
-            item.blizzardId != null &&
-            ownedAchievementIds.contains(item.blizzardId);
-
-        updatedItems.add(
-          item.copyWith(
-            obtained: checked || ownedMount || ownedPet || ownedAchievement,
-          ),
-        );
+        updatedItems.add(item.copyWith(obtained: checked || ownedMount));
       }
 
       setState(() {
@@ -407,8 +374,11 @@ class _PlannerItemCard extends StatelessWidget {
             ],
           ),
         ),
+
         secondary: IconButton(
-          tooltip: 'Ouvrir sur Wowhead',
+          tooltip: item.externalUrl.isNotEmpty
+              ? 'Ouvrir la fiche Mamytwink'
+              : 'Ouvrir sur Wowhead',
           icon: const Icon(Icons.open_in_new),
           onPressed: _openWowhead,
         ),

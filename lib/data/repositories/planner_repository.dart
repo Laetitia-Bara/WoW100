@@ -1,5 +1,3 @@
-import 'package:flutter/foundation.dart';
-
 import '../models/tracking_item.dart';
 import '../models/wow_expansion.dart';
 import '../sources/json_planner_source.dart';
@@ -13,39 +11,24 @@ class JsonPlannerRepository implements PlannerRepository {
 
   @override
   Future<List<TrackingItem>> getItems(WowExpansion expansion) async {
-    final assetPaths = <String>[];
-
     switch (expansion) {
       case WowExpansion.allMounts:
-        assetPaths.add('assets/generated/mounts_wow100_draft.json');
-        break;
+        return _source.loadMountItems(WowExpansion.allMounts);
       case WowExpansion.vanilla:
-        assetPaths.addAll([
-          'assets/data/mounts/vanilla_mounts.json',
-          //'assets/generated/mounts_wow100_draft.json',
-          'assets/data/pets/vanilla_pets.json',
-          'assets/data/achievements/vanilla_achievements.json',
-        ]);
-        break;
+      case WowExpansion.tbc:
       case WowExpansion.wrath:
-        assetPaths.addAll([
-          'assets/data/mounts/wrath_mounts.json',
-          'assets/data/pets/wrath_pets.json',
-          'assets/data/achievements/wrath_achievements.json',
-        ]);
-        break;
+      case WowExpansion.cataclysm:
+      case WowExpansion.mop:
+      case WowExpansion.wod:
+      case WowExpansion.legion:
+      case WowExpansion.bfa:
+      case WowExpansion.shadowlands:
+      case WowExpansion.dragonflight:
+      case WowExpansion.warWithin:
+      case WowExpansion.midnight:
+        return _source.loadMountItems(expansion);
       default:
         return [];
     }
-
-    final allItems = <TrackingItem>[];
-
-    for (final path in assetPaths) {
-      final items = await _source.loadItemsFromAsset(path);
-      allItems.addAll(items);
-    }
-    debugPrint('PLANNER paths = $assetPaths');
-    debugPrint('PLANNER items loaded = ${allItems.length}');
-    return allItems;
   }
 }
