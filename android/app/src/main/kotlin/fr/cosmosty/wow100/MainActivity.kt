@@ -1,4 +1,4 @@
-package com.example.wow100
+package fr.cosmoslty.wow100
 
 import io.flutter.embedding.android.FlutterActivity
 
