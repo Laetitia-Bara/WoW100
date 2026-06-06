@@ -7,6 +7,12 @@ import '../models/tracking_category.dart';
 import '../models/wow_expansion.dart';
 
 class JsonPlannerSource {
+  static const Map<WowExpansion, String> _petAssetPaths = {
+    WowExpansion.vanilla: 'assets/data/pets/vanilla_pets.json',
+    WowExpansion.tbc: 'assets/data/pets/tbc_pets.json',
+    WowExpansion.wrath: 'assets/data/pets/wrath_pets.json',
+  };
+
   Future<List<TrackingItem>> loadWrathMounts() {
     return loadItemsFromAsset('assets/data/mounts/wrath_mounts.json');
   }
@@ -102,6 +108,37 @@ class JsonPlannerSource {
     }
 
     items.sort((a, b) {
+      final instanceCompare = a.instance.compareTo(b.instance);
+      if (instanceCompare != 0) return instanceCompare;
+
+      return a.name.compareTo(b.name);
+    });
+
+    return items;
+  }
+
+  Future<List<TrackingItem>> loadPetItems(WowExpansion expansion) async {
+    final assetPaths = <String>[];
+
+    if (expansion == WowExpansion.allPets) {
+      assetPaths.addAll(_petAssetPaths.values);
+    } else {
+      final assetPath = _petAssetPaths[expansion];
+      if (assetPath != null) {
+        assetPaths.add(assetPath);
+      }
+    }
+
+    final items = <TrackingItem>[];
+
+    for (final assetPath in assetPaths) {
+      items.addAll(await loadItemsFromAsset(assetPath));
+    }
+
+    items.sort((a, b) {
+      final expansionCompare = a.expansion.index.compareTo(b.expansion.index);
+      if (expansionCompare != 0) return expansionCompare;
+
       final instanceCompare = a.instance.compareTo(b.instance);
       if (instanceCompare != 0) return instanceCompare;
 

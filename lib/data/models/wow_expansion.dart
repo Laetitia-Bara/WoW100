@@ -1,6 +1,7 @@
 enum WowExpansion {
   total,
   allMounts,
+  allPets,
   vanilla,
   tbc,
   wrath,
@@ -22,6 +23,8 @@ extension WowExpansionLabel on WowExpansion {
         return 'Vue totale';
       case WowExpansion.allMounts:
         return 'Toutes les montures';
+      case WowExpansion.allPets:
+        return 'Toutes les mascottes';
       case WowExpansion.vanilla:
         return 'Vanilla';
       case WowExpansion.tbc:

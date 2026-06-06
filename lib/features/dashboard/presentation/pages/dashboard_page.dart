@@ -134,10 +134,15 @@ class _DashboardPageState extends State<DashboardPage> {
     });
   }
 
-  Future<void> _openPlanner(WowExpansion expansion) async {
+  Future<void> _openPlanner(
+    WowExpansion expansion, {
+    TrackingCategory category = TrackingCategory.mounts,
+  }) async {
     await Navigator.push(
       context,
-      MaterialPageRoute(builder: (_) => PlannerPage(extension: expansion)),
+      MaterialPageRoute(
+        builder: (_) => PlannerPage(extension: expansion, category: category),
+      ),
     );
 
     await _loadProgress();
@@ -231,6 +236,10 @@ class _DashboardPageState extends State<DashboardPage> {
                   _DashboardActionBar(
                     newestFirst: _newestFirst,
                     onMountsTap: () => _openPlanner(WowExpansion.allMounts),
+                    onPetsTap: () => _openPlanner(
+                      WowExpansion.allPets,
+                      category: TrackingCategory.pets,
+                    ),
                     onFilterTap: _openCategoryFilters,
                     onSortTap: _toggleSortOrder,
                   ),
@@ -244,7 +253,7 @@ class _DashboardPageState extends State<DashboardPage> {
                             crossAxisCount: 2,
                             crossAxisSpacing: 14,
                             mainAxisSpacing: 14,
-                            mainAxisExtent: 248,
+                            mainAxisExtent: 302,
                           ),
                       itemCount: extensionProgresses.length,
                       itemBuilder: (context, index) {
@@ -258,7 +267,11 @@ class _DashboardPageState extends State<DashboardPage> {
                           ),
                           onToggleCollapse: () =>
                               _toggleCollapse(progress.expansion),
-                          onTap: () => _openPlanner(progress.expansion),
+                          onMountsTap: () => _openPlanner(progress.expansion),
+                          onPetsTap: () => _openPlanner(
+                            progress.expansion,
+                            category: TrackingCategory.pets,
+                          ),
                         );
                       },
                     )
@@ -274,7 +287,11 @@ class _DashboardPageState extends State<DashboardPage> {
                           ),
                           onToggleCollapse: () =>
                               _toggleCollapse(progress.expansion),
-                          onTap: () => _openPlanner(progress.expansion),
+                          onMountsTap: () => _openPlanner(progress.expansion),
+                          onPetsTap: () => _openPlanner(
+                            progress.expansion,
+                            category: TrackingCategory.pets,
+                          ),
                         ),
                       ),
                 ],
@@ -394,12 +411,14 @@ class _DashboardActionBar extends StatelessWidget {
   const _DashboardActionBar({
     required this.newestFirst,
     required this.onMountsTap,
+    required this.onPetsTap,
     required this.onFilterTap,
     required this.onSortTap,
   });
 
   final bool newestFirst;
   final VoidCallback onMountsTap;
+  final VoidCallback onPetsTap;
   final VoidCallback onFilterTap;
   final VoidCallback onSortTap;
 
@@ -423,7 +442,7 @@ class _DashboardActionBar extends StatelessWidget {
         label: const Text('Montures'),
       ),
       OutlinedButton.icon(
-        onPressed: () => _showComingSoon(context, 'Mascottes'),
+        onPressed: onPetsTap,
         icon: const Icon(Icons.cruelty_free),
         label: const Text('Mascottes'),
       ),
@@ -474,14 +493,16 @@ class _DashboardActionBar extends StatelessWidget {
 class _ExpansionCard extends StatelessWidget {
   const _ExpansionCard({
     required this.progress,
-    required this.onTap,
+    required this.onMountsTap,
+    required this.onPetsTap,
     required this.isCollapsed,
     required this.onToggleCollapse,
     required this.visibleCategories,
   });
 
   final ExpansionProgress progress;
-  final VoidCallback? onTap;
+  final VoidCallback onMountsTap;
+  final VoidCallback onPetsTap;
   final bool isCollapsed;
   final VoidCallback onToggleCollapse;
   final Set<TrackingCategory> visibleCategories;
@@ -492,7 +513,7 @@ class _ExpansionCard extends StatelessWidget {
     final info = WowExpansionCatalog.infoOf(progress.expansion);
 
     return InkWell(
-      onTap: onTap,
+      onTap: onMountsTap,
       borderRadius: BorderRadius.circular(20),
       child: Card(
         margin: EdgeInsets.zero,
@@ -559,6 +580,26 @@ class _ExpansionCard extends StatelessWidget {
                           value: '$completed/$total',
                         );
                       }).toList(),
+                    ),
+                    const SizedBox(height: 14),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: OutlinedButton.icon(
+                            onPressed: onMountsTap,
+                            icon: const Icon(Icons.pets),
+                            label: const Text('Montures'),
+                          ),
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: OutlinedButton.icon(
+                            onPressed: onPetsTap,
+                            icon: const Icon(Icons.cruelty_free),
+                            label: const Text('Mascottes'),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ],

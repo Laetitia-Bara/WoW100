@@ -12,9 +12,14 @@ import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/repositories/planner_repository.dart';
 
 class PlannerPage extends StatefulWidget {
-  const PlannerPage({super.key, required this.extension});
+  const PlannerPage({
+    super.key,
+    required this.extension,
+    this.category = TrackingCategory.mounts,
+  });
 
   final WowExpansion extension;
+  final TrackingCategory category;
 
   @override
   State<PlannerPage> createState() => _PlannerPageState();
@@ -55,6 +60,18 @@ class _PlannerPageState extends State<PlannerPage> {
   String _searchQuery = '';
   final Set<String> _selectedGroups = {};
 
+  bool get _isPetsPlanner =>
+      widget.category == TrackingCategory.pets ||
+      widget.extension == WowExpansion.allPets;
+
+  String get _collectionName => _isPetsPlanner ? 'mascottes' : 'montures';
+
+  String get _allCollectionTitle =>
+      _isPetsPlanner ? 'Toutes les mascottes' : 'Toutes les montures';
+
+  String get _plannerTitle =>
+      _isPetsPlanner ? 'Mascottes à récupérer' : 'Montures à récupérer';
+
   @override
   void initState() {
     super.initState();
@@ -63,13 +80,22 @@ class _PlannerPageState extends State<PlannerPage> {
 
   Future<void> _loadItems() async {
     try {
-      final items = await _repository.getItems(widget.extension);
+      final items = await _repository.getItems(
+        widget.extension,
+        category: widget.category,
+      );
       final token = await BattleNetTokenService().loadToken();
       final ownedMountIds = <int>{};
+      final ownedPetIds = <int>{};
 
       if (token != null) {
-        final mounts = await BattleNetRepository().getMounts(token);
-        ownedMountIds.addAll(mounts.map((mount) => mount.id));
+        if (_isPetsPlanner) {
+          final pets = await BattleNetRepository().getPets(token);
+          ownedPetIds.addAll(pets.map((pet) => pet.id));
+        } else {
+          final mounts = await BattleNetRepository().getMounts(token);
+          ownedMountIds.addAll(mounts.map((mount) => mount.id));
+        }
       }
 
       final updatedItems = <TrackingItem>[];
@@ -80,8 +106,14 @@ class _PlannerPageState extends State<PlannerPage> {
             item.category == TrackingCategory.mounts &&
             item.blizzardId != null &&
             ownedMountIds.contains(item.blizzardId);
+        final ownedPet =
+            item.category == TrackingCategory.pets &&
+            item.blizzardId != null &&
+            ownedPetIds.contains(item.blizzardId);
 
-        updatedItems.add(item.copyWith(obtained: checked || ownedMount));
+        updatedItems.add(
+          item.copyWith(obtained: checked || ownedMount || ownedPet),
+        );
       }
 
       if (!mounted) return;
@@ -275,9 +307,10 @@ class _PlannerPageState extends State<PlannerPage> {
               padding: const EdgeInsets.all(16),
               children: [
                 Text(
-                  widget.extension == WowExpansion.allMounts
-                      ? 'Toutes les montures'
-                      : 'Montures à récupérer',
+                  widget.extension == WowExpansion.allMounts ||
+                          widget.extension == WowExpansion.allPets
+                      ? _allCollectionTitle
+                      : _plannerTitle,
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     fontWeight: FontWeight.w800,
                   ),
@@ -312,15 +345,15 @@ class _PlannerPageState extends State<PlannerPage> {
                       },
                     ),
                     const SizedBox(width: 10),
-                    const Expanded(
+                    Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Afficher uniquement les manquants'),
-                          SizedBox(height: 2),
+                          const Text('Afficher uniquement les manquants'),
+                          const SizedBox(height: 2),
                           Text(
-                            'Masquer les montures déjà obtenues',
-                            style: TextStyle(color: AppTheme.mutedText),
+                            'Masquer les $_collectionName déjà obtenues',
+                            style: const TextStyle(color: AppTheme.mutedText),
                           ),
                         ],
                       ),
@@ -340,12 +373,12 @@ class _PlannerPageState extends State<PlannerPage> {
                 ),
                 const SizedBox(height: 20),
                 if (filteredItems.isEmpty)
-                  const Card(
+                  Card(
                     child: Padding(
-                      padding: EdgeInsets.all(18),
+                      padding: const EdgeInsets.all(18),
                       child: Text(
-                        'Aucune monture ne correspond à cette recherche.',
-                        style: TextStyle(color: AppTheme.mutedText),
+                        'Aucune $_collectionName ne correspond à cette recherche.',
+                        style: const TextStyle(color: AppTheme.mutedText),
                       ),
                     ),
                   ),
@@ -445,7 +478,7 @@ class _GroupFilterField extends StatelessWidget {
       onTap: onTap,
       child: InputDecorator(
         decoration: const InputDecoration(
-          labelText: 'Catégorie de monture',
+          labelText: 'Catégorie',
           border: OutlineInputBorder(),
         ),
         child: Row(
@@ -522,7 +555,7 @@ class _GroupFilterSheetState extends State<_GroupFilterSheet> {
                 children: [
                   Expanded(
                     child: Text(
-                      'Catégories de montures',
+                      'Catégories',
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         fontWeight: FontWeight.w800,
                       ),

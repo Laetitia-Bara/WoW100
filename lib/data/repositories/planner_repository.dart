@@ -1,16 +1,27 @@
 import '../models/tracking_item.dart';
+import '../models/tracking_category.dart';
 import '../models/wow_expansion.dart';
 import '../sources/json_planner_source.dart';
 
 abstract class PlannerRepository {
-  Future<List<TrackingItem>> getItems(WowExpansion expansion);
+  Future<List<TrackingItem>> getItems(
+    WowExpansion expansion, {
+    TrackingCategory category = TrackingCategory.mounts,
+  });
 }
 
 class JsonPlannerRepository implements PlannerRepository {
   final JsonPlannerSource _source = JsonPlannerSource();
 
   @override
-  Future<List<TrackingItem>> getItems(WowExpansion expansion) async {
+  Future<List<TrackingItem>> getItems(
+    WowExpansion expansion, {
+    TrackingCategory category = TrackingCategory.mounts,
+  }) async {
+    if (category == TrackingCategory.pets || expansion == WowExpansion.allPets) {
+      return _source.loadPetItems(expansion);
+    }
+
     switch (expansion) {
       case WowExpansion.allMounts:
         return _source.loadMountItems(WowExpansion.allMounts);

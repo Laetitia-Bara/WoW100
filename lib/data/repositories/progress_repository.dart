@@ -37,10 +37,12 @@ class JsonProgressRepository implements ProgressRepository {
     ];
 
     final allMountItems = await _source.loadMountItems(WowExpansion.allMounts);
+    final allPetItems = await _source.loadPetItems(WowExpansion.allPets);
 
     final token = await _tokenService.loadToken();
 
     final ownedMountIds = <int>{};
+    final ownedPetIds = <int>{};
 
     if (token != null) {
       try {
@@ -48,6 +50,14 @@ class JsonProgressRepository implements ProgressRepository {
         ownedMountIds.addAll(mounts.map((mount) => mount.id));
       } catch (e, stack) {
         debugPrint('BATTLE.NET MOUNTS ERROR: $e');
+        debugPrint('$stack');
+      }
+
+      try {
+        final pets = await _battleNetRepository.getPets(token);
+        ownedPetIds.addAll(pets.map((pet) => pet.id));
+      } catch (e, stack) {
+        debugPrint('BATTLE.NET PETS ERROR: $e');
         debugPrint('$stack');
       }
     }
@@ -58,14 +68,27 @@ class JsonProgressRepository implements ProgressRepository {
       final expansionItems = allMountItems
           .where((item) => item.expansion == expansion)
           .toList();
+      final expansionPetItems = allPetItems
+          .where((item) => item.expansion == expansion)
+          .toList();
 
       progresses.add(
-        await _buildProgress(expansion, expansionItems, ownedMountIds),
+        await _buildProgress(
+          expansion,
+          [...expansionItems, ...expansionPetItems],
+          ownedMountIds,
+          ownedPetIds,
+        ),
       );
     }
 
     return [
-      await _buildProgress(WowExpansion.total, allMountItems, ownedMountIds),
+      await _buildProgress(
+        WowExpansion.total,
+        [...allMountItems, ...allPetItems],
+        ownedMountIds,
+        ownedPetIds,
+      ),
       ...progresses,
     ];
   }
@@ -74,23 +97,45 @@ class JsonProgressRepository implements ProgressRepository {
     WowExpansion expansion,
     List<TrackingItem> items,
     Set<int> ownedMountIds,
+    Set<int> ownedPetIds,
   ) async {
     var completedMounts = 0;
+    var completedPets = 0;
+    var totalMounts = 0;
+    var totalPets = 0;
 
     for (final item in items) {
       final checked = await _localCheckService.isChecked(item.id);
       final owned =
-          item.blizzardId != null && ownedMountIds.contains(item.blizzardId);
+          item.blizzardId != null &&
+          ((item.category == TrackingCategory.mounts &&
+                  ownedMountIds.contains(item.blizzardId)) ||
+              (item.category == TrackingCategory.pets &&
+                  ownedPetIds.contains(item.blizzardId)));
 
-      if (checked || owned) {
+      if (item.category == TrackingCategory.mounts) {
+        totalMounts += 1;
+      } else if (item.category == TrackingCategory.pets) {
+        totalPets += 1;
+      }
+
+      if ((checked || owned) && item.category == TrackingCategory.mounts) {
         completedMounts += 1;
+      } else if ((checked || owned) && item.category == TrackingCategory.pets) {
+        completedPets += 1;
       }
     }
 
     return ExpansionProgress(
       expansion: expansion,
-      completed: {TrackingCategory.mounts: completedMounts},
-      total: {TrackingCategory.mounts: items.length},
+      completed: {
+        TrackingCategory.mounts: completedMounts,
+        TrackingCategory.pets: completedPets,
+      },
+      total: {
+        TrackingCategory.mounts: totalMounts,
+        TrackingCategory.pets: totalPets,
+      },
     );
   }
 }
