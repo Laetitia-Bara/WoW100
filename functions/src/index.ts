@@ -29,10 +29,11 @@ export const exchangeBattleNetCode = onRequest(
   async (request, response) => {
     try {
       const code = request.query.code as string;
+      const redirectUri = request.query.redirectUri as string;
 
-      if (!code) {
+      if (!code || !redirectUri) {
         response.status(400).json({
-          error: "missing_code",
+          error: "missing_parameters",
         });
         return;
       }
@@ -41,10 +42,7 @@ export const exchangeBattleNetCode = onRequest(
 
       params.append("grant_type", "authorization_code");
       params.append("code", code);
-      params.append(
-        "redirect_uri",
-        "http://localhost:8080/callback",
-      );
+      params.append("redirect_uri", redirectUri);
 
       const result = await axios.post(
         "https://eu.battle.net/oauth/token",
