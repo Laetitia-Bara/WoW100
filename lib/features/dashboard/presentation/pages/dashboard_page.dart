@@ -135,7 +135,7 @@ class _DashboardPageState extends State<DashboardPage> {
 
   Future<void> _openPlanner(
     WowExpansion expansion, {
-    TrackingCategory category = TrackingCategory.mounts,
+    TrackingCategory? category,
   }) async {
     await Navigator.push(
       context,
@@ -267,15 +267,7 @@ class _DashboardPageState extends State<DashboardPage> {
                           ),
                           onToggleCollapse: () =>
                               _toggleCollapse(progress.expansion),
-                          onAchievementsTap: () => _openPlanner(
-                            progress.expansion,
-                            category: TrackingCategory.achievements,
-                          ),
-                          onMountsTap: () => _openPlanner(progress.expansion),
-                          onPetsTap: () => _openPlanner(
-                            progress.expansion,
-                            category: TrackingCategory.pets,
-                          ),
+                          onOpenPlanner: () => _openPlanner(progress.expansion),
                         );
                       },
                     )
@@ -291,15 +283,7 @@ class _DashboardPageState extends State<DashboardPage> {
                           ),
                           onToggleCollapse: () =>
                               _toggleCollapse(progress.expansion),
-                          onAchievementsTap: () => _openPlanner(
-                            progress.expansion,
-                            category: TrackingCategory.achievements,
-                          ),
-                          onMountsTap: () => _openPlanner(progress.expansion),
-                          onPetsTap: () => _openPlanner(
-                            progress.expansion,
-                            category: TrackingCategory.pets,
-                          ),
+                          onOpenPlanner: () => _openPlanner(progress.expansion),
                         ),
                       ),
                 ],
@@ -326,33 +310,336 @@ class _HeroCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final hasCharacter = character != null;
+    final characterClassColor = hasCharacter
+        ? _wowClassColor(character!.characterClass)
+        : AppTheme.text;
 
     return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(18),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              hasCharacter ? character!.name : 'Companion de collection WoW',
-              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
+      clipBehavior: Clip.antiAlias,
+      child: Stack(
+        children: [
+          if (hasCharacter) _CharacterIdentityBackdrop(character: character!),
+          Padding(
+            padding: const EdgeInsets.all(18),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  hasCharacter
+                      ? character!.name
+                      : 'Companion de collection WoW',
+                  style: TextStyle(
+                    color: characterClassColor,
+                    fontSize: 22,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  hasCharacter
+                      ? '${character!.race} ${character!.characterClass} • ${character!.realm} • ${character!.faction} • Niveau ${character!.level}'
+                      : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
+                  style: const TextStyle(
+                    color: AppTheme.mutedText,
+                    height: 1.4,
+                  ),
+                ),
+                const SizedBox(height: 18),
+                _TotalProgressSummary(
+                  progress: totalProgress,
+                  visibleCategories: visibleCategories,
+                ),
+              ],
             ),
-            const SizedBox(height: 8),
-            Text(
-              hasCharacter
-                  ? '${character!.race} ${character!.characterClass} • ${character!.realm} • ${character!.faction} • Niveau ${character!.level}'
-                  : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
-              style: const TextStyle(color: AppTheme.mutedText, height: 1.4),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _CharacterIdentityBackdrop extends StatelessWidget {
+  const _CharacterIdentityBackdrop({required this.character});
+
+  final WowCharacter character;
+
+  @override
+  Widget build(BuildContext context) {
+    final panes = [
+      _IdentityPaneData(
+        color: _wowFactionColor(character.faction),
+        icon: _factionIcon(character.faction),
+      ),
+      _IdentityPaneData(
+        color: _wowRaceColor(character.race),
+        icon: _raceIcon(character.race),
+      ),
+      _IdentityPaneData(
+        color: _wowClassColor(character.characterClass),
+        icon: _classIcon(character.characterClass),
+      ),
+    ];
+
+    return Positioned.fill(
+      child: Stack(
+        children: [
+          Row(
+            children: [
+              for (var index = 0; index < panes.length; index++)
+                Expanded(
+                  child: _IdentityBackdropPane(
+                    color: panes[index].color,
+                    icon: panes[index].icon,
+                    showDivider: index < panes.length - 1,
+                  ),
+                ),
+            ],
+          ),
+          Positioned.fill(
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    AppTheme.card.withValues(alpha: 0.18),
+                    AppTheme.card.withValues(alpha: 0.70),
+                  ],
+                ),
+              ),
             ),
-            const SizedBox(height: 18),
-            _TotalProgressSummary(
-              progress: totalProgress,
-              visibleCategories: visibleCategories,
-            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _IdentityBackdropPane extends StatelessWidget {
+  const _IdentityBackdropPane({
+    required this.color,
+    required this.icon,
+    required this.showDivider,
+  });
+
+  final Color color;
+  final IconData icon;
+  final bool showDivider;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        border: Border(
+          right: BorderSide(
+            color: showDivider
+                ? Colors.white.withValues(alpha: 0.06)
+                : Colors.transparent,
+          ),
+        ),
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            color.withValues(alpha: 0.24),
+            color.withValues(alpha: 0.08),
+            Colors.transparent,
           ],
         ),
       ),
+      child: Align(
+        alignment: Alignment.bottomRight,
+        child: Transform.translate(
+          offset: const Offset(18, 18),
+          child: Icon(icon, size: 104, color: color.withValues(alpha: 0.18)),
+        ),
+      ),
     );
+  }
+}
+
+class _IdentityPaneData {
+  const _IdentityPaneData({required this.color, required this.icon});
+
+  final Color color;
+  final IconData icon;
+}
+
+String _identityKey(String value) {
+  return value
+      .trim()
+      .toLowerCase()
+      .replaceAll('à', 'a')
+      .replaceAll('â', 'a')
+      .replaceAll('ä', 'a')
+      .replaceAll('ç', 'c')
+      .replaceAll('é', 'e')
+      .replaceAll('è', 'e')
+      .replaceAll('ê', 'e')
+      .replaceAll('ë', 'e')
+      .replaceAll('î', 'i')
+      .replaceAll('ï', 'i')
+      .replaceAll('ô', 'o')
+      .replaceAll('ö', 'o')
+      .replaceAll('ù', 'u')
+      .replaceAll('û', 'u')
+      .replaceAll('ü', 'u');
+}
+
+Color _wowFactionColor(String faction) {
+  switch (_identityKey(faction)) {
+    case 'alliance':
+      return const Color(0xFF2E8CFF);
+    case 'horde':
+      return const Color(0xFFE23B3B);
+    default:
+      return AppTheme.gold;
+  }
+}
+
+Color _wowRaceColor(String race) {
+  switch (_identityKey(race)) {
+    case 'elfe de sang':
+    case 'blood elf':
+      return const Color(0xFFD6B052);
+    case 'elfe de la nuit':
+    case 'night elf':
+      return const Color(0xFF8B5CF6);
+    case 'elfe du vide':
+    case 'void elf':
+      return const Color(0xFF6D5BFF);
+    case 'draenei':
+    case 'draenei forge-lumiere':
+      return const Color(0xFF75B6FF);
+    case 'orc':
+    case 'orc maghar':
+      return const Color(0xFF64A35F);
+    case 'troll':
+    case 'troll zandalari':
+      return const Color(0xFF3DD5B0);
+    case 'tauren':
+    case 'tauren de haut-roc':
+      return const Color(0xFFC68A57);
+    case 'mort-vivant':
+    case 'undead':
+      return const Color(0xFF7E8A9A);
+    case 'humain':
+    case 'human':
+      return const Color(0xFFE4C39A);
+    case 'nain':
+    case 'dwarf':
+      return const Color(0xFFB86B45);
+    case 'gnome':
+      return const Color(0xFFE879F9);
+    case 'worgen':
+      return const Color(0xFF7C8795);
+    case 'pandaren':
+      return const Color(0xFF2BB673);
+    case 'vulpérin':
+    case 'vulperin':
+      return const Color(0xFFE6A15C);
+    default:
+      return AppTheme.gold;
+  }
+}
+
+Color _wowClassColor(String characterClass) {
+  switch (_identityKey(characterClass)) {
+    case 'chevalier de la mort':
+      return const Color(0xFFC41E3A);
+    case 'chasseur de demons':
+      return const Color(0xFFA330C9);
+    case 'druide':
+      return const Color(0xFFFF7C0A);
+    case 'evocateur':
+      return const Color(0xFF33937F);
+    case 'chasseur':
+      return const Color(0xFFAAD372);
+    case 'mage':
+      return const Color(0xFF3FC7EB);
+    case 'moine':
+      return const Color(0xFF00FF98);
+    case 'paladin':
+      return const Color(0xFFF48CBA);
+    case 'pretre':
+      return const Color(0xFFFFFFFF);
+    case 'voleur':
+      return const Color(0xFFFFF468);
+    case 'chaman':
+      return const Color(0xFF0070DD);
+    case 'demoniste':
+      return const Color(0xFF8788EE);
+    case 'guerrier':
+      return const Color(0xFFC69B6D);
+    default:
+      return AppTheme.text;
+  }
+}
+
+IconData _factionIcon(String faction) {
+  switch (_identityKey(faction)) {
+    case 'alliance':
+      return Icons.shield_outlined;
+    case 'horde':
+      return Icons.local_fire_department;
+    default:
+      return Icons.public;
+  }
+}
+
+IconData _raceIcon(String race) {
+  switch (_identityKey(race)) {
+    case 'elfe de sang':
+    case 'blood elf':
+      return Icons.auto_awesome;
+    case 'elfe de la nuit':
+    case 'night elf':
+    case 'elfe du vide':
+    case 'void elf':
+      return Icons.nightlight_round;
+    case 'draenei':
+    case 'draenei forge-lumiere':
+      return Icons.flare;
+    case 'orc':
+    case 'orc maghar':
+    case 'tauren':
+    case 'tauren de haut-roc':
+      return Icons.terrain_outlined;
+    default:
+      return Icons.person_outline;
+  }
+}
+
+IconData _classIcon(String characterClass) {
+  switch (_identityKey(characterClass)) {
+    case 'chevalier de la mort':
+      return Icons.ac_unit;
+    case 'chasseur de demons':
+      return Icons.visibility_outlined;
+    case 'druide':
+      return Icons.spa_outlined;
+    case 'evocateur':
+      return Icons.air;
+    case 'chasseur':
+      return Icons.track_changes;
+    case 'mage':
+      return Icons.auto_fix_high;
+    case 'moine':
+      return Icons.self_improvement;
+    case 'paladin':
+      return Icons.wb_sunny_outlined;
+    case 'pretre':
+      return Icons.healing;
+    case 'voleur':
+      return Icons.flash_on;
+    case 'chaman':
+      return Icons.thunderstorm_outlined;
+    case 'demoniste':
+      return Icons.blur_on;
+    case 'guerrier':
+      return Icons.construction;
+    default:
+      return Icons.stars;
   }
 }
 
@@ -500,18 +787,14 @@ class _DashboardActionBar extends StatelessWidget {
 class _ExpansionCard extends StatelessWidget {
   const _ExpansionCard({
     required this.progress,
-    required this.onAchievementsTap,
-    required this.onMountsTap,
-    required this.onPetsTap,
+    required this.onOpenPlanner,
     required this.isCollapsed,
     required this.onToggleCollapse,
     required this.visibleCategories,
   });
 
   final ExpansionProgress progress;
-  final VoidCallback onAchievementsTap;
-  final VoidCallback onMountsTap;
-  final VoidCallback onPetsTap;
+  final VoidCallback onOpenPlanner;
   final bool isCollapsed;
   final VoidCallback onToggleCollapse;
   final Set<TrackingCategory> visibleCategories;
@@ -523,7 +806,7 @@ class _ExpansionCard extends StatelessWidget {
     final info = WowExpansionCatalog.infoOf(progress.expansion);
 
     return InkWell(
-      onTap: onMountsTap,
+      onTap: onOpenPlanner,
       borderRadius: BorderRadius.circular(20),
       child: Card(
         margin: EdgeInsets.zero,
@@ -588,12 +871,6 @@ class _ExpansionCard extends StatelessWidget {
                         return _MiniStat(
                           label: category.shortLabel,
                           value: '$completed/$total',
-                          onTap: switch (category) {
-                            TrackingCategory.achievements => onAchievementsTap,
-                            TrackingCategory.mounts => onMountsTap,
-                            TrackingCategory.pets => onPetsTap,
-                            _ => null,
-                          },
                         );
                       }).toList(),
                     ),
@@ -609,29 +886,24 @@ class _ExpansionCard extends StatelessWidget {
 }
 
 class _MiniStat extends StatelessWidget {
-  const _MiniStat({required this.label, required this.value, this.onTap});
+  const _MiniStat({required this.label, required this.value});
 
   final String label;
   final String value;
-  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      borderRadius: BorderRadius.circular(6),
-      onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-        child: Column(
-          children: [
-            Text(
-              label,
-              style: const TextStyle(color: AppTheme.mutedText, fontSize: 12),
-            ),
-            const SizedBox(height: 4),
-            Text(value, style: const TextStyle(fontWeight: FontWeight.w700)),
-          ],
-        ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+      child: Column(
+        children: [
+          Text(
+            label,
+            style: const TextStyle(color: AppTheme.mutedText, fontSize: 12),
+          ),
+          const SizedBox(height: 4),
+          Text(value, style: const TextStyle(fontWeight: FontWeight.w700)),
+        ],
       ),
     );
   }

@@ -13,14 +13,10 @@ import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/repositories/planner_repository.dart';
 
 class PlannerPage extends StatefulWidget {
-  const PlannerPage({
-    super.key,
-    required this.extension,
-    this.category = TrackingCategory.mounts,
-  });
+  const PlannerPage({super.key, required this.extension, this.category});
 
   final WowExpansion extension;
-  final TrackingCategory category;
+  final TrackingCategory? category;
 
   @override
   State<PlannerPage> createState() => _PlannerPageState();
@@ -61,6 +57,7 @@ class _PlannerPageState extends State<PlannerPage> {
   bool _isLoading = true;
   bool _missingOnly = false;
   String _searchQuery = '';
+  final Set<TrackingCategory> _selectedCategories = {};
   final Set<String> _selectedGroups = {};
 
   bool get _isPetsPlanner =>
@@ -71,7 +68,23 @@ class _PlannerPageState extends State<PlannerPage> {
       widget.category == TrackingCategory.achievements ||
       widget.extension == WowExpansion.allAchievements;
 
+  bool get _isExtensionPlanner =>
+      widget.category == null &&
+      widget.extension != WowExpansion.allAchievements &&
+      widget.extension != WowExpansion.allMounts &&
+      widget.extension != WowExpansion.allPets;
+
+  bool get _tracksAchievements => _isExtensionPlanner || _isAchievementsPlanner;
+
+  bool get _tracksMounts =>
+      _isExtensionPlanner ||
+      widget.category == TrackingCategory.mounts ||
+      widget.extension == WowExpansion.allMounts;
+
+  bool get _tracksPets => _isExtensionPlanner || _isPetsPlanner;
+
   String get _collectionName {
+    if (_isExtensionPlanner) return 'collectables';
     if (_isAchievementsPlanner) return 'hauts faits';
     if (_isPetsPlanner) return 'mascottes';
 
@@ -86,7 +99,8 @@ class _PlannerPageState extends State<PlannerPage> {
   }
 
   String get _plannerTitle {
-    if (_isAchievementsPlanner) return 'Hauts faits a terminer';
+    if (_isExtensionPlanner) return 'Collectables de ${widget.extension.label}';
+    if (_isAchievementsPlanner) return 'Hauts Faits';
     if (_isPetsPlanner) return 'Mascottes à récupérer';
 
     return 'Montures à récupérer';
@@ -110,7 +124,7 @@ class _PlannerPageState extends State<PlannerPage> {
       final ownedAchievementIds = <int>{};
 
       if (token != null) {
-        if (_isAchievementsPlanner) {
+        if (_tracksAchievements) {
           final character = await _selectedCharacterService.loadCharacter();
 
           if (character != null) {
@@ -123,10 +137,14 @@ class _PlannerPageState extends State<PlannerPage> {
               achievements.map((achievement) => achievement.id),
             );
           }
-        } else if (_isPetsPlanner) {
+        }
+
+        if (_tracksPets) {
           final pets = await BattleNetRepository().getPets(token);
           ownedPetIds.addAll(pets.map((pet) => pet.id));
-        } else {
+        }
+
+        if (_tracksMounts) {
           final mounts = await BattleNetRepository().getMounts(token);
           ownedMountIds.addAll(mounts.map((mount) => mount.id));
         }
@@ -180,6 +198,31 @@ class _PlannerPageState extends State<PlannerPage> {
 
     groups.sort(_compareGroups);
     return groups;
+  }
+
+  List<TrackingCategory> _categoryOptions() {
+    final categories = _items.map((item) => item.category).toSet().toList();
+    const preferredCategories = [
+      TrackingCategory.achievements,
+      TrackingCategory.mounts,
+      TrackingCategory.pets,
+    ];
+
+    categories.sort((left, right) {
+      final leftIndex = preferredCategories.indexOf(left);
+      final rightIndex = preferredCategories.indexOf(right);
+
+      if (leftIndex != -1 && rightIndex != -1) {
+        return leftIndex.compareTo(rightIndex);
+      }
+
+      if (leftIndex != -1) return -1;
+      if (rightIndex != -1) return 1;
+
+      return left.label.compareTo(right.label);
+    });
+
+    return categories;
   }
 
   Map<String, List<TrackingItem>> _groupedItems(List<TrackingItem> items) {
@@ -291,12 +334,38 @@ class _PlannerPageState extends State<PlannerPage> {
     });
   }
 
+  Future<void> _openCategorySelector(
+    List<TrackingCategory> categoryOptions,
+  ) async {
+    final result = await showModalBottomSheet<Set<TrackingCategory>>(
+      context: context,
+      isScrollControlled: true,
+      builder: (_) => _CategoryFilterSheet(
+        options: categoryOptions,
+        selectedCategories: _selectedCategories,
+      ),
+    );
+
+    if (result == null || !mounted) return;
+
+    setState(() {
+      _selectedCategories
+        ..clear()
+        ..addAll(result);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final groupOptions = _groupOptions();
+    final categoryOptions = _categoryOptions();
 
     final filteredItems = _items.where((item) {
       final group = _groupLabel(item);
+      final matchesCategory =
+          !_isExtensionPlanner ||
+          _selectedCategories.isEmpty ||
+          _selectedCategories.contains(item.category);
       final matchesGroup =
           _selectedGroups.isEmpty || _selectedGroups.contains(group);
       final query = _searchQuery.toLowerCase();
@@ -310,7 +379,10 @@ class _PlannerPageState extends State<PlannerPage> {
 
       final matchesMissingOnly = !_missingOnly || !item.obtained;
 
-      return matchesGroup && matchesSearch && matchesMissingOnly;
+      return matchesCategory &&
+          matchesGroup &&
+          matchesSearch &&
+          matchesMissingOnly;
     }).toList();
 
     final groupedItems = _groupedItems(filteredItems);
@@ -359,7 +431,8 @@ class _PlannerPageState extends State<PlannerPage> {
                 const SizedBox(height: 16),
                 TextField(
                   decoration: const InputDecoration(
-                    labelText: 'Rechercher',
+                    labelText:
+                        'Rechercher (ex : extension, nom, réputation, etc ...)',
                     prefixIcon: Icon(Icons.search),
                     border: OutlineInputBorder(),
                   ),
@@ -370,6 +443,13 @@ class _PlannerPageState extends State<PlannerPage> {
                   },
                 ),
                 const SizedBox(height: 12),
+                if (_isExtensionPlanner) ...[
+                  _CategoryFilterField(
+                    selectedCategories: _selectedCategories,
+                    onTap: () => _openCategorySelector(categoryOptions),
+                  ),
+                  const SizedBox(height: 12),
+                ],
                 _GroupFilterField(
                   selectedGroups: _selectedGroups,
                   onTap: () => _openGroupSelector(groupOptions),
@@ -502,14 +582,14 @@ class _GroupFilterField extends StatelessWidget {
 
   String get _label {
     if (selectedGroups.isEmpty) {
-      return 'Toutes les catégories';
+      return 'Tous les groupes';
     }
 
     if (selectedGroups.length <= 2) {
       return selectedGroups.join(', ');
     }
 
-    return '${selectedGroups.length} catégories sélectionnées';
+    return '${selectedGroups.length} groupes sélectionnés';
   }
 
   @override
@@ -519,7 +599,7 @@ class _GroupFilterField extends StatelessWidget {
       onTap: onTap,
       child: InputDecorator(
         decoration: const InputDecoration(
-          labelText: 'Catégorie',
+          labelText: 'Groupes',
           border: OutlineInputBorder(),
         ),
         child: Row(
@@ -544,6 +624,179 @@ class _GroupFilterField extends StatelessWidget {
             ],
             const SizedBox(width: 8),
             const Icon(Icons.expand_more),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _CategoryFilterField extends StatelessWidget {
+  const _CategoryFilterField({
+    required this.selectedCategories,
+    required this.onTap,
+  });
+
+  final Set<TrackingCategory> selectedCategories;
+  final VoidCallback onTap;
+
+  String get _label {
+    if (selectedCategories.isEmpty) {
+      return 'HF, Montures, Mascottes';
+    }
+
+    if (selectedCategories.length <= 2) {
+      return selectedCategories
+          .map((category) => category.shortLabel)
+          .join(', ');
+    }
+
+    return '${selectedCategories.length} catégories sélectionnées';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      borderRadius: BorderRadius.circular(4),
+      onTap: onTap,
+      child: InputDecorator(
+        decoration: const InputDecoration(
+          labelText: 'Catégories',
+          border: OutlineInputBorder(),
+        ),
+        child: Row(
+          children: [
+            Expanded(
+              child: Text(
+                _label,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontWeight: FontWeight.w700),
+              ),
+            ),
+            if (selectedCategories.isNotEmpty) ...[
+              const SizedBox(width: 8),
+              Text(
+                selectedCategories.length.toString(),
+                style: const TextStyle(
+                  color: AppTheme.gold,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+            ],
+            const SizedBox(width: 8),
+            const Icon(Icons.expand_more),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _CategoryFilterSheet extends StatefulWidget {
+  const _CategoryFilterSheet({
+    required this.options,
+    required this.selectedCategories,
+  });
+
+  final List<TrackingCategory> options;
+  final Set<TrackingCategory> selectedCategories;
+
+  @override
+  State<_CategoryFilterSheet> createState() => _CategoryFilterSheetState();
+}
+
+class _CategoryFilterSheetState extends State<_CategoryFilterSheet> {
+  late final Set<TrackingCategory> _tempSelected;
+
+  @override
+  void initState() {
+    super.initState();
+    _tempSelected = {...widget.selectedCategories};
+  }
+
+  void _toggle(TrackingCategory category, bool selected) {
+    setState(() {
+      if (selected) {
+        _tempSelected.add(category);
+      } else {
+        _tempSelected.remove(category);
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: FractionallySizedBox(
+        heightFactor: 0.65,
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      'Catégories',
+                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      setState(() {
+                        _tempSelected.clear();
+                      });
+                    },
+                    child: const Text('Tout effacer'),
+                  ),
+                ],
+              ),
+            ),
+            CheckboxListTile(
+              value: _tempSelected.isEmpty,
+              title: const Text('Toutes les catégories'),
+              subtitle: const Text('HF, montures et mascottes'),
+              controlAffinity: ListTileControlAffinity.leading,
+              onChanged: (_) {
+                setState(() {
+                  _tempSelected.clear();
+                });
+              },
+            ),
+            const Divider(height: 1),
+            Expanded(
+              child: ListView.builder(
+                itemCount: widget.options.length,
+                itemBuilder: (context, index) {
+                  final category = widget.options[index];
+                  final selected = _tempSelected.contains(category);
+
+                  return CheckboxListTile(
+                    value: selected,
+                    title: Text(category.label),
+                    controlAffinity: ListTileControlAffinity.leading,
+                    onChanged: (value) => _toggle(category, value ?? false),
+                  );
+                },
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+              child: SizedBox(
+                width: double.infinity,
+                child: FilledButton(
+                  onPressed: () => Navigator.pop(context, _tempSelected),
+                  child: Text(
+                    _tempSelected.isEmpty
+                        ? 'Afficher toutes les catégories'
+                        : 'Appliquer ${_tempSelected.length} catégorie(s)',
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
@@ -596,7 +849,7 @@ class _GroupFilterSheetState extends State<_GroupFilterSheet> {
                 children: [
                   Expanded(
                     child: Text(
-                      'Catégories',
+                      'Groupes',
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         fontWeight: FontWeight.w800,
                       ),
@@ -615,8 +868,8 @@ class _GroupFilterSheetState extends State<_GroupFilterSheet> {
             ),
             CheckboxListTile(
               value: _tempSelected.isEmpty,
-              title: const Text('Toutes les catégories'),
-              subtitle: const Text('Aucune catégorie filtrée'),
+              title: const Text('Tous les groupes'),
+              subtitle: const Text('Aucun groupe filtré'),
               controlAffinity: ListTileControlAffinity.leading,
               onChanged: (_) {
                 setState(() {
@@ -649,8 +902,8 @@ class _GroupFilterSheetState extends State<_GroupFilterSheet> {
                   onPressed: () => Navigator.pop(context, _tempSelected),
                   child: Text(
                     _tempSelected.isEmpty
-                        ? 'Afficher toutes les catégories'
-                        : 'Appliquer ${_tempSelected.length} catégorie(s)',
+                        ? 'Afficher tous les groupes'
+                        : 'Appliquer ${_tempSelected.length} groupe(s)',
                   ),
                 ),
               ),
@@ -669,7 +922,12 @@ class _PlannerItemCard extends StatelessWidget {
   final ValueChanged<bool?> onChanged;
 
   Future<void> _openExternal(BuildContext context) async {
-    final locale = Localizations.localeOf(context).languageCode;
+    final locale = WowheadUrlBuilder.preferredLocaleCode(
+      WidgetsBinding.instance.platformDispatcher.locales.map(
+        (locale) => locale.toLanguageTag(),
+      ),
+      fallback: Localizations.localeOf(context).languageCode,
+    );
     final url = WowheadUrlBuilder.build(item: item, locale: locale);
     final uri = Uri.parse(url);
 
