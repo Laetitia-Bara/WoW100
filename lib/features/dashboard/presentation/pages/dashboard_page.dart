@@ -359,7 +359,8 @@ class _TotalProgressSummary extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final percent = (progress.completionRate * 100).round();
+    final completionRate = progress.completionRateFor(visibleCategories);
+    final percent = (completionRate * 100).round();
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -383,7 +384,7 @@ class _TotalProgressSummary extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         LinearProgressIndicator(
-          value: progress.completionRate,
+          value: completionRate,
           minHeight: 8,
           borderRadius: BorderRadius.circular(999),
           backgroundColor: Colors.white10,
@@ -509,7 +510,8 @@ class _ExpansionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final percent = (progress.completionRate * 100).round();
+    final completionRate = progress.completionRateFor(visibleCategories);
+    final percent = (completionRate * 100).round();
     final info = WowExpansionCatalog.infoOf(progress.expansion);
 
     return InkWell(
@@ -562,7 +564,7 @@ class _ExpansionCard extends StatelessWidget {
                   if (!isCollapsed) ...[
                     const SizedBox(height: 12),
                     LinearProgressIndicator(
-                      value: progress.completionRate,
+                      value: completionRate,
                       minHeight: 8,
                       borderRadius: BorderRadius.circular(999),
                       backgroundColor: Colors.white10,

@@ -23,4 +23,19 @@ class ExpansionProgress {
 
     return completedSum / totalSum;
   }
+
+  double completionRateFor(Set<TrackingCategory> categories) {
+    final completedSum = categories.fold(
+      0,
+      (sum, category) => sum + (completed[category] ?? 0),
+    );
+    final totalSum = categories.fold(
+      0,
+      (sum, category) => sum + (total[category] ?? 0),
+    );
+
+    if (totalSum == 0) return 0;
+
+    return completedSum / totalSum;
+  }
 }
