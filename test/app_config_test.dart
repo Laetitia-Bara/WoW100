@@ -49,13 +49,13 @@ void main() {
 
   group('AppConfig runtime defaults', () {
     test('uses an absolute API URL outside Flutter Web', () {
-      expect(AppConfig.apiBaseUrl, 'https://wow100.pages.dev/api');
+      expect(AppConfig.apiBaseUrl, 'https://wow100.cosmos-lty.fr/api');
     });
 
     test('uses an HTTPS Battle.net redirect URL', () {
       expect(
         AppConfig.battleNetRedirectUri,
-        'https://wow100.pages.dev/callback',
+        'https://wow100.cosmos-lty.fr/callback',
       );
     });
   });

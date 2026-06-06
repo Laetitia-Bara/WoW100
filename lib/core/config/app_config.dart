@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 class AppConfig {
   static const battleNetClientId = 'd1a63c10c180407c9ce681b2faee7b5d';
   static const _defaultApiBaseUrl = '/api';
-  static const _defaultAppBaseUrl = 'https://wow100.pages.dev';
+  static const _defaultAppBaseUrl = 'https://wow100.cosmos-lty.fr';
 
   static const _apiBaseUrl = String.fromEnvironment(
     'WOW100_API_BASE_URL',
