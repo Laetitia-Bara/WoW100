@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "build:pets": "node --use-system-ca build_pets_catalog.js",
     "build:mamytwink-candidates": "node --use-system-ca build_mamytwink_mount_candidates.js"
   },
   "dependencies": {

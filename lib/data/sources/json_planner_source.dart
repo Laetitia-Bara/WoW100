@@ -11,6 +11,15 @@ class JsonPlannerSource {
     WowExpansion.vanilla: 'assets/data/pets/vanilla_pets.json',
     WowExpansion.tbc: 'assets/data/pets/tbc_pets.json',
     WowExpansion.wrath: 'assets/data/pets/wrath_pets.json',
+    WowExpansion.cataclysm: 'assets/data/pets/cataclysm_pets.json',
+    WowExpansion.mop: 'assets/data/pets/mop_pets.json',
+    WowExpansion.wod: 'assets/data/pets/wod_pets.json',
+    WowExpansion.legion: 'assets/data/pets/legion_pets.json',
+    WowExpansion.bfa: 'assets/data/pets/bfa_pets.json',
+    WowExpansion.shadowlands: 'assets/data/pets/shadowlands_pets.json',
+    WowExpansion.dragonflight: 'assets/data/pets/dragonflight_pets.json',
+    WowExpansion.warWithin: 'assets/data/pets/warWithin_pets.json',
+    WowExpansion.midnight: 'assets/data/pets/midnight_pets.json',
   };
 
   Future<List<TrackingItem>> loadWrathMounts() {
@@ -118,15 +127,15 @@ class JsonPlannerSource {
   }
 
   Future<List<TrackingItem>> loadPetItems(WowExpansion expansion) async {
+    if (expansion == WowExpansion.allPets) {
+      return loadItemsFromAsset('assets/generated/pets_wow100_draft.json');
+    }
+
     final assetPaths = <String>[];
 
-    if (expansion == WowExpansion.allPets) {
-      assetPaths.addAll(_petAssetPaths.values);
-    } else {
-      final assetPath = _petAssetPaths[expansion];
-      if (assetPath != null) {
-        assetPaths.add(assetPath);
-      }
+    final assetPath = _petAssetPaths[expansion];
+    if (assetPath != null) {
+      assetPaths.add(assetPath);
     }
 
     final items = <TrackingItem>[];

@@ -1,37 +1,2096 @@
 [
   {
-    "id": "stinky",
-    "name": "Puant",
+    "id": "pet_246",
+    "name": "Bébé coursier du vent",
+    "description": "Thorg le Cul-de-jatte aurait dû mieux écouter le vieux proverbe orc qui dit : « Ne tirez pas la wyverne par la queue. »",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "Norfendre",
+    "zone": "",
+    "instance": "Boutique",
+    "source": "Boutique en jeu",
+    "sourceType": "PETSTORE",
+    "sourceName": "Boutique en jeu",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 246,
+    "creatureId": 36909,
+    "creatureName": "Bébé coursier du vent",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/246",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Wind Rider Cub",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/246",
+      "familyType": 8,
+      "sourceCodes": [
+        24
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_245",
+    "name": "Bébé griffon",
+    "description": "Cadeau des nains Marteaux-hardis aux héros de l'Alliance, ces petits descendent directement des griffons chevauchés par Falstad et son clan à Grim Batol.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Boutique",
+    "source": "Boutique en jeu",
+    "sourceType": "PETSTORE",
+    "sourceName": "Boutique en jeu",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 245,
+    "creatureId": 36908,
+    "creatureName": "Bébé griffon",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/245",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Gryphon Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/245",
+      "familyType": 3,
+      "sourceCodes": [
+        24
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_249",
+    "name": "Mini K.T.",
+    "description": "De son vivant, Kel'Thuzad a trahi le Kirin Tor et créé le Culte des damnés. Dans la mort, il sert le Fléau comme seigneur archiliche de Naxxramas.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Boutique",
+    "source": "Boutique en jeu",
+    "sourceType": "PETSTORE",
+    "sourceName": "Boutique en jeu",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 249,
+    "creatureId": 36979,
+    "creatureName": "Mini K.T.",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/249",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Lil' K.T.",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/249",
+      "familyType": 4,
+      "sourceCodes": [
+        24
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_256",
+    "name": "Mini XT",
+    "description": "Cet instable petit assemblage est une reproduction du gigantesque prototype des Titans d'Ulduar. Il lui arrive de casser ses jouets.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Boutique",
+    "source": "Boutique en jeu",
+    "sourceType": "PETSTORE",
+    "sourceName": "Boutique en jeu",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 256,
+    "creatureId": 40703,
+    "creatureName": "Mini XT",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/256",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Lil' XT",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/256",
+      "familyType": 10,
+      "sourceCodes": [
+        24
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_248",
+    "name": "Moine pandaren",
+    "description": "Le moine pandaren est un compagnon intrépide, qui s'entraîne avec acharnement pour perfectionner son art… sauf si vous lui offrez un verre. Il trouverait cela malpoli de refuser.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Boutique",
+    "source": "Boutique en jeu",
+    "sourceType": "PETSTORE",
+    "sourceName": "Boutique en jeu",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 248,
+    "creatureId": 36911,
+    "creatureName": "Moine pandaren",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/248",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Pandaren Monk",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/248",
+      "familyType": 1,
+      "sourceCodes": [
+        24
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_187",
+    "name": "Chauve-souricette vampirique",
+    "description": "Les chauves-souris vampires sont dressées pour servir d'éclaireurs et de montures par les Réprouvés de Fossoyeuse et les Trolls amani de Zul'Aman.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 187,
+    "creatureId": 28513,
+    "creatureName": "Chauve-souricette vampirique",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/187",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Vampiric Batling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/187",
+      "familyType": 4,
+      "sourceCodes": [
+        2
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_197",
+    "name": "Jeune cobra",
+    "description": "Les cobras d'Azeroth sont célèbres pour leur venin à action rapide et leurs frappes fulgurantes.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 197,
+    "creatureId": 32591,
+    "creatureName": "Jeune cobra",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/197",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Cobra Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/197",
+      "familyType": 8,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        3711
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_234",
+    "name": "Jeune raptor de Gundrak",
+    "description": "Ce raptor rusé vient des déserts gelés du Norfendre. L'hostilité de l'environnement dans lequel il a grandi lui permet de rester fort là où beaucoup d'autres seraient déjà morts.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 234,
+    "creatureId": 35400,
+    "creatureName": "Jeune raptor de Gundrak",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/234",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Gundrak Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/234",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        66
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_233",
+    "name": "Jeune raptor déviant",
+    "description": "La demande de cette race aux tons pourpres a entraîné un fort déclin de la population de raptors dans la région des cavernes des Lamentations.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 233,
+    "creatureId": 35395,
+    "creatureName": "Jeune raptor déviant",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/233",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Deviate Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/233",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        718
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_239",
+    "name": "Jeune raptor razzashi",
+    "description": "Les raptors razzashi font partie des prédateurs les plus rusés de la jungle, ce qui leur attire la faveur des Trolls gurubashi.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 239,
+    "creatureId": 35394,
+    "creatureName": "Jeune raptor razzashi",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/239",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Razzashi Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/239",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        33
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_235",
+    "name": "Jeune raptor sauteur",
+    "description": "Ce petit de Takk le Bondisseur possède une agilité incroyable. Il est à l'aise même dans les environnements les plus encombrés.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 235,
+    "creatureId": 35387,
+    "creatureName": "Jeune raptor sauteur",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/235",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Leaping Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/235",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        17
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_238",
+    "name": "Jeune raptor tranchegueule",
+    "description": "Les mères tranchegueules protègent leurs œufs avec sauvagerie. L'air adorable des petits ne fait que cacher leur férocité innée.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 238,
+    "creatureId": 35398,
+    "creatureName": "Jeune raptor tranchegueule",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/238",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Razormaw Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/238",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        11
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_232",
+    "name": "Jeune raptor véloce",
+    "description": "Quitte rarement le nid avant d'être arrivé à maturité. Adore aller faire des farces au nid de tranchegueules le plus proche.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 232,
+    "creatureId": 35396,
+    "creatureName": "Jeune raptor véloce",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/232",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Darting Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/232",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        15
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_237",
+    "name": "Jeune ravasaure",
+    "description": "Plus grands que les autres bébés raptors, ces petits deviennent d'imposants reptiles capables de ravages impressionnants.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 237,
+    "creatureId": 35397,
+    "creatureName": "Jeune ravasaure",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/237",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Ravasaur Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/237",
+      "familyType": 8,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        490
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_194",
+    "name": "Oisillon pique-bœuf",
+    "description": "Contrairement à la plupart des « œufs mystérieux » de Geen le gorloc, celui-ci contenait une vraie créature vivante.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 194,
+    "creatureId": 32589,
+    "creatureName": "Oisillon pique-bœuf",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/194",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Tickbird Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/194",
+      "familyType": 3,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        3711
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_195",
+    "name": "Oisillon pique-bœuf blanc",
+    "description": "Le très rare pique-bœuf albinos fait l'objet d'un culte chez les Oracles. Il est réputé apporter de grands orages, de bonnes récoltes d'asticots, et de longues hibernations de varleus.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 195,
+    "creatureId": 32590,
+    "creatureName": "Oisillon pique-bœuf blanc",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/195",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "White Tickbird Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/195",
+      "familyType": 3,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        3711
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_196",
+    "name": "Proto-drakonnet",
+    "description": "Ces dragonnets voraces grandissent à une vitesse incroyable et peuvent ingurgiter pas loin de deux fois leur poids en viande crue chaque jour.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 196,
+    "creatureId": 32592,
+    "creatureName": "Proto-drakonnet",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/196",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Proto-Drake Whelp",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/196",
+      "familyType": 2,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        3711
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_242",
+    "name": "Bébé tigre spectral",
+    "description": "Curieux et affectueux, ces chatons semblent réussir à se cacher dans les endroits les plus surprenants.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Cartes à collectionner",
+    "source": "Jeu de cartes à collectionner",
+    "sourceType": "TCG",
+    "sourceName": "Jeu de cartes à collectionner",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 242,
+    "creatureId": 36511,
+    "creatureName": "Bébé tigre spectral",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/242",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Spectral Tiger Cub",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/242",
+      "familyType": 6,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_241",
+    "name": "Cerf-volant rohart",
+    "description": "Lorsqu'on aperçoit ces cerfs-volants au-dessus des rives du Norfendre, c'est un signe : les roharts ne sont pas loin.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Cartes à collectionner",
+    "source": "Jeu de cartes à collectionner",
+    "sourceType": "TCG",
+    "sourceName": "Jeu de cartes à collectionner",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 241,
+    "creatureId": 36482,
+    "creatureName": "Cerf-volant rohart",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/241",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Tuskarr Kite",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/241",
+      "familyType": 3,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_201",
+    "name": "Dinde dodue",
+    "description": "Humble, clairvoyante, et délicieuse avec une petite sauce aux airelles.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 201,
+    "creatureId": 32818,
+    "creatureName": "Dinde dodue",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/201",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Plump Turkey",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/201",
+      "familyType": 3,
+      "sourceCodes": [
+        12
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_251",
+    "name": "Gaspi toxique",
+    "description": "Cette, euh, « adorable » petite créature adore jouer avec les bestioles. Il faut juste ne pas les laisser approcher trop près.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 251,
+    "creatureId": 38374,
+    "creatureName": "Gaspi toxique",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/251",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Toxic Wasteling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/251",
+      "familyType": 6,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        209
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_253",
+    "name": "Givrelin algide",
+    "description": "Même s'il est clairement moins dangereux que son premier maître, le seigneur du Givre Ahune, le givrelin s'est déjà fait prendre à bombarder les aventuriers innocents de boules de neige.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 253,
+    "creatureId": 40198,
+    "creatureName": "Givrelin algide",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/253",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Frigid Frostling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/253",
+      "familyType": 7,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        3717
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_200",
+    "name": "Lapin du printemps",
+    "description": "Les lapins du printemps symbolisent la fertilité, et ils adorent montrer pourquoi.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 200,
+    "creatureId": 32791,
+    "creatureName": "Lapin du printemps",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/200",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Spring Rabbit",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/200",
+      "familyType": 5,
+      "sourceCodes": [
+        5,
+        16
+      ],
+      "locations": [
+        3524,
+        1,
+        14,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_226",
+    "name": "Louveteau varleu curieux",
+    "description": "Malgré leur petite taille, les varleus sont parmi les créatures les plus agressives du Norfendre, ce qui rend souvent leur curiosité naturelle un peu intimidante.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 226,
+    "creatureId": 33529,
+    "creatureName": "Louveteau varleu curieux",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/226",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Curious Wolvar Pup",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/226",
+      "familyType": 1,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        4395
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_1351",
+    "name": "Marionnette macabre",
+    "description": "Ces marionnettes possédées sont animées d’un semblant de vie par les esprits fantaisistes de ceux qui nous ont quittés.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 1351,
+    "creatureId": 34770,
+    "creatureName": "Marionnette macabre",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/1351",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Macabre Marionette",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/1351",
+      "familyType": 4,
+      "sourceCodes": [
+        4
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_225",
+    "name": "Têtard oracle curieux",
+    "description": "Le sautillant gorloc est un lointain cousin du Murloc.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 225,
+    "creatureId": 33530,
+    "creatureName": "Têtard oracle curieux",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/225",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Curious Oracle Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/225",
+      "familyType": 1,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        4395
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_199",
+    "name": "Familier du Kirin Tor",
+    "description": "Pour empêcher les apprentis d'utiliser ce familier pour faire leurs corvées à leur place, les archimages dispersèrent la formule permettant de l'invoquer dans les pages de nombreux recueils magiques cachés dans Dalaran.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Haut-fait",
+    "source": "Haut fait",
+    "sourceType": "ACHIEVEMENT",
+    "sourceName": "Haut fait",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 199,
+    "creatureId": 32643,
+    "creatureName": "Familier du Kirin Tor",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/199",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Kirin Tor Familiar",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/199",
+      "familyType": 7,
+      "sourceCodes": [
+        12
+      ],
+      "locations": [
+        4395
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_250",
+    "name": "Groopy",
+    "description": "Groopy est tout petit, mais très dangereux si on le pousse à bout.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Haut-fait",
+    "source": "Haut fait",
+    "sourceType": "ACHIEVEMENT",
+    "sourceName": "Haut fait",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 250,
+    "creatureId": 37865,
+    "creatureName": "Groopy",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/250",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Perky Pug",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/250",
+      "familyType": 5,
+      "sourceCodes": [
+        12
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_243",
+    "name": "Jeune dragonnet onyxien",
+    "description": "Ce jeune dragon, rejeton d'Onyxia, est fermement décidé à ne pas reproduire les erreurs cataclysmiques de son grand-père.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Haut-fait",
+    "source": "Haut fait",
+    "sourceType": "ACHIEVEMENT",
+    "sourceName": "Haut fait",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 243,
+    "creatureId": 36607,
+    "creatureName": "Jeune dragonnet onyxien",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/243",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Onyxian Whelpling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/243",
+      "familyType": 2,
+      "sourceCodes": [
+        11
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_202",
+    "name": "Ourson du Blizzard",
+    "description": "Cet ours rare est élevé pour sa taille réduite et son apparence éternellement jeune.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Haut-fait",
+    "source": "Haut fait",
+    "sourceType": "ACHIEVEMENT",
+    "sourceName": "Haut fait",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 202,
+    "creatureId": 32841,
+    "creatureName": "Ourson du Blizzard",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/202",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Baby Blizzard Bear",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/202",
+      "familyType": 8,
+      "sourceCodes": [
+        11
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_203",
+    "name": "Petit faon",
+    "description": "Elle adore être entourée d'amis. D'au moins soixante-quinze amis, pour être précis.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Haut-fait",
+    "source": "Haut fait",
+    "sourceType": "ACHIEVEMENT",
+    "sourceName": "Haut fait",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 203,
+    "creatureId": 32939,
+    "creatureName": "Petit faon",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/203",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Little Fawn",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/203",
+      "familyType": 5,
+      "sourceCodes": [
+        12
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_211",
+    "name": "Clampant des rivages",
+    "description": "Le clampant des rivages s'est adapté au grand froid du nord en hibernant sous les plages insulaires.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 211,
+    "creatureId": 33226,
+    "creatureName": "Clampant des rivages",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/211",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Strand Crawler",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/211",
+      "familyType": 9,
+      "sourceCodes": [
+        2
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_193",
+    "name": "Rat d'égout géant",
+    "description": "Rencontrer ce rat dans une allée sombre ne serait pas une bonne idée. Ni ailleurs, en fait.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 193,
+    "creatureId": 31575,
+    "creatureName": "Rat d'égout géant",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/193",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Giant Sewer Rat",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/193",
+      "familyType": 5,
+      "sourceCodes": [
+        2,
+        14,
+        16
+      ],
+      "locations": [
+        4395
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_217",
+    "name": "Bourbimus le Gladiateur",
+    "description": "Bourbimus est le plus imposant de tous les combattants d'arène murlocs. Et pendant longtemps, il était le seul.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 217,
+    "creatureId": 33578,
+    "creatureName": "Bourbimus le Gladiateur",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/217",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Murkimus the Gladiator",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/217",
+      "familyType": 1,
+      "sourceCodes": [],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_244",
+    "name": "Chiot du magma",
+    "description": "Venus des terres de Feu et du Cœur du magma, les chiens du magma sont de la lignée du mâle alpha, Magmadar.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 244,
+    "creatureId": 36871,
+    "creatureName": "Chiot du magma",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/244",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Core Hound Pup",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/244",
+      "familyType": 7,
+      "sourceCodes": [
+        11
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_188",
+    "name": "Frigy",
+    "description": "Créé accidentellement lorsque les pouvoirs macabres du roi-liche relevèrent Frigecroc dans la non-mort.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 188,
+    "creatureId": 28883,
+    "creatureName": "Frigy",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/188",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Frosty",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/188",
+      "familyType": 4,
+      "sourceCodes": [],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_228",
+    "name": "Grognie",
+    "description": "Très rares sont les Murlocs qui réussissent à franchir les frontières de l'espace et du temps. Plus rares encore sont ceux qui en reviennent avec le type d'armure et d'armement futuristes que porte Grognie.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 228,
+    "creatureId": 34694,
+    "creatureName": "Grognie",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/228",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Grunty",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/228",
+      "familyType": 1,
+      "sourceCodes": [
+        8
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_192",
+    "name": "M. Glagla",
+    "description": "M. Glagla nous ramène à une époque plus éclairée, lorsque les gentilshommes se livraient leurs duels en queue-de-pie.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 192,
+    "creatureId": 29726,
+    "creatureName": "M. Glagla",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/192",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Mr. Chilly",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/192",
+      "familyType": 9,
+      "sourceCodes": [
+        11
+      ],
+      "locations": [
+        7502
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_258",
+    "name": "Mini Thor",
+    "description": "Puissante unité d’artillerie de l’armée terrane. Le Thor est toujours le premier à foncer au feu, et le dernier à en sortir.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 258,
+    "creatureId": 42078,
+    "creatureName": "Mini Thor",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/258",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Mini Thor",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/258",
+      "familyType": 10,
+      "sourceCodes": [
+        8
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_227",
+    "name": "Robo-baston",
+    "description": "Un robot de combat dont la batterie est alimentée par de délicieux électrolytes bleus et rouges.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 227,
+    "creatureId": 34587,
+    "creatureName": "Robo-baston",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/227",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Warbot",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/227",
+      "familyType": 10,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        4395,
+        1637,
+        1519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_247",
+    "name": "Tigre zipao",
+    "description": "Un grand nombre de personnes pense (peut-être à tort) que la couleur unique de cette famille de tigres, aperçus en de très rares occasions, provient de magies résiduelles ou d’un autre évènement de ce genre.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 247,
+    "creatureId": 36910,
+    "creatureName": "Tigre zipao",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/247",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Zipao Tiger",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/247",
+      "familyType": 6,
+      "sourceCodes": [],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_214",
+    "name": "Ecuyer d'Argent",
+    "description": "De nombreux adolescents de Hurlevent se sont engagés comme écuyers dans la Croisade d'argent, espérant un jour pouvoir servir la Lumière sacrée au combat.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
     "instance": "Quête",
-    "source": "Les Oracles",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
     "groupRequired": false,
-    "weeklyLockout": false
+    "weeklyLockout": false,
+    "blizzardId": 214,
+    "creatureId": 33238,
+    "creatureName": "Ecuyer d'Argent",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/214",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Argent Squire",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/214",
+      "familyType": 1,
+      "sourceCodes": [],
+      "locations": [
+        210
+      ]
+    },
+    "mamytwink": null
   },
   {
-    "id": "cobra_hatchling",
-    "name": "Bébé cobra",
+    "id": "pet_216",
+    "name": "Gruntinet d'Argent",
+    "description": "Ces jeunes Orcs s'efforcent d'incarner les valeurs de la Croisade d'argent : vaillance, force et intégrité.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "Bassin de Sholazar",
-    "instance": "Réputation",
-    "source": "Les Oracles",
+    "zone": "",
+    "instance": "Quête",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
     "groupRequired": false,
-    "weeklyLockout": false
+    "weeklyLockout": false,
+    "blizzardId": 216,
+    "creatureId": 33239,
+    "creatureName": "Gruntinet d'Argent",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/216",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Argent Gruntling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/216",
+      "familyType": 1,
+      "sourceCodes": [],
+      "locations": [
+        210
+      ]
+    },
+    "mamytwink": null
   },
-
   {
-  "id": "wrath-pet-test",
-  "name": "Bébé griffon",
-  "category": "pets",
-  "expansion": "wrath",
-  "zone": "Test",
-  "instance": "",
-  "source": "",
-  "groupRequired": false,
-  "weeklyLockout": false,
-  "blizzardId": 245
-}
+    "id": "pet_84",
+    "name": "Poulet de la marche de l'Ouest",
+    "description": "Ne traitez pas cet oiseau de poule mouillée. C'est un coup à se retrouver avec de l'œuf plein le visage.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Quête",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 84,
+    "creatureId": 30379,
+    "creatureName": "Poulet de la marche de l'Ouest",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/84",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Westfall Chicken",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/84",
+      "familyType": 3,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        85,
+        40
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_209",
+    "name": "Agneau d'Elwynn",
+    "description": "Contrairement à ceux obtenus par métamorphose, les véritables moutons de souche peuvent se révéler effrayants.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 209,
+    "creatureId": 33200,
+    "creatureName": "Agneau d'Elwynn",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/209",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Elwynn Lamb",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/209",
+      "familyType": 5,
+      "sourceCodes": [
+        2,
+        5,
+        14
+      ],
+      "locations": [
+        210
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_213",
+    "name": "Balai enchanté",
+    "description": "Créé par un apprenti elfe de sang, ce balai se révèlerait une invention très utile si quelqu'un trouvait un jour comment le faire s'arrêter.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 213,
+    "creatureId": 33227,
+    "creatureName": "Balai enchanté",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/213",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Enchanted Broom",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/213",
+      "familyType": 6,
+      "sourceCodes": [
+        2,
+        5,
+        14
+      ],
+      "locations": [
+        210
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_224",
+    "name": "Chat calico",
+    "description": "Nombreux sont ceux qui se sont moqués de ce chat juste avant un combat. Les derniers mots qu'ils prononcent sont en général : « Ouh le gentil chachat à sa mémère. »",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 224,
+    "creatureId": 34364,
+    "creatureName": "Chat calico",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/224",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Calico Cat",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/224",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        4395
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_206",
+    "name": "Chauve-souricette de Tirisfal",
+    "description": "Capable de percevoir les battements de cœur d'un adversaire par écholocalisation.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 206,
+    "creatureId": 33197,
+    "creatureName": "Chauve-souricette de Tirisfal",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/206",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Tirisfal Batling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/206",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        5,
+        14
+      ],
+      "locations": [
+        210
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_190",
+    "name": "Crâne fantomatique",
+    "description": "Lorsqu'il sent la mort imminente d'une créature, le crâne lance un ricanement strident.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 190,
+    "creatureId": 29147,
+    "creatureName": "Crâne fantomatique",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/190",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Ghostly Skull",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/190",
+      "familyType": 4,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        4395
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_218",
+    "name": "Fétiche de Sen'jin",
+    "description": "Ce fétiche vous apporte trois compagnons en un. Impossible de savoir lequel sortira avant de l'avoir invoqué !",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 218,
+    "creatureId": 33810,
+    "creatureName": "Fétiche de Sen'jin",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/218",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Sen'jin Fetish",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/218",
+      "familyType": 4,
+      "sourceCodes": [
+        2,
+        5,
+        14
+      ],
+      "locations": [
+        210
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_212",
+    "name": "Flagellin du val d'Ammen",
+    "description": "Les effets à long terme de la pollution entraînée par l'Exodar font encore l'objet d’observations.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 212,
+    "creatureId": 33205,
+    "creatureName": "Flagellin du val d'Ammen",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/212",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Ammen Vale Lashling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/212",
+      "familyType": 7,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        210
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_204",
+    "name": "Jeune pousse de Teldrassil",
+    "description": "Tous les jours, il danse dès le réveil. Tant de joie de vivre dans un si petit arbre !",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 204,
+    "creatureId": 33188,
+    "creatureName": "Jeune pousse de Teldrassil",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/204",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Teldrassil Sproutling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/204",
+      "familyType": 7,
+      "sourceCodes": [
+        2,
+        5,
+        14
+      ],
+      "locations": [
+        210
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_236",
+    "name": "Jeune raptor d'obsidienne",
+    "description": "Ce petit est recherché pour sa robe unique. Mais malgré les soins affectueux de Breanni, le naturel féroce du raptor revient toujours au galop.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 236,
+    "creatureId": 35399,
+    "creatureName": "Jeune raptor d'obsidienne",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/236",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Obsidian Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/236",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        4395
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_215",
+    "name": "Mécacuicui",
+    "description": "Utilisé comme monture d'apprentissage pour les jeunes Gnomes, le mécacuicui n'a pas encore la vitesse de ses grands frères, mais déjà leur charme.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 215,
+    "creatureId": 33274,
+    "creatureName": "Mécacuicui",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/215",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Mechanopeep",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/215",
+      "familyType": 10,
+      "sourceCodes": [
+        2,
+        5,
+        14
+      ],
+      "locations": [
+        210
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_205",
+    "name": "Ourson de Dun Morogh",
+    "description": "Les ours de Dun Morogh sont très recherchés pour leur robustesse, leur fidélité et leur ardeur au combat. Et la compagnie des nains ne fait rien pour atténuer leur férocité.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 205,
+    "creatureId": 33194,
+    "creatureName": "Ourson de Dun Morogh",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/205",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Dun Morogh Cub",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/205",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5,
+        14
+      ],
+      "locations": [
+        210
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_198",
+    "name": "Pingoui",
+    "description": "Connu pour ses grands yeux ébahis et ses glissades stylées.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 198,
+    "creatureId": 32595,
+    "creatureName": "Pingoui",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/198",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Pengu",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/198",
+      "familyType": 9,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        65,
+        495
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_254",
+    "name": "Rob-fusée mécanique bleu",
+    "description": "C'est la meilleure vente du rayon jouets de Jepetto cette saison. Le nouveau châssis bleu de ce robot au tempérament de feu en fait la coqueluche des enfants d'Azeroth.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 254,
+    "creatureId": 40295,
+    "creatureName": "Rob-fusée mécanique bleu",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/254",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Blue Clockwork Rocket Bot",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/254",
+      "familyType": 10,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        4395,
+        1637,
+        1519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_207",
+    "name": "Scorpion de Durotar",
+    "description": "L'impétueux scorpion de Durotar est un féroce prédateur du désert. Mais il ne pique que rarement son propre maître.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 207,
+    "creatureId": 33198,
+    "creatureName": "Scorpion de Durotar",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/207",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Durotar Scorpion",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/207",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5,
+        14
+      ],
+      "locations": [
+        210
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_210",
+    "name": "Trottineur de Mulgore",
+    "description": "La vitesse de course d'un haut-trotteur sur terrain dégagé est inégalée. Ses prédateurs doivent donc avoir recours à la furtivité et aux tactiques de groupe.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 210,
+    "creatureId": 33219,
+    "creatureName": "Trottineur de Mulgore",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/210",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Mulgore Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/210",
+      "familyType": 5,
+      "sourceCodes": [
+        2,
+        5,
+        14
+      ],
+      "locations": [
+        210
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_229",
+    "name": "Wyrmelin chatoyant",
+    "description": "Cette rarissime espèce de wyrm de mana est très recherchée pour sa couleur unique et son tempérament docile.",
+    "category": "pets",
+    "expansion": "wrath",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 229,
+    "creatureId": 34724,
+    "creatureName": "Wyrmelin chatoyant",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/229",
+    "wowhead": {
+      "expansion": "wrath",
+      "expansionName": "Wrath of the Lich King",
+      "wowheadName": "Shimmering Wyrmling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/229",
+      "familyType": 6,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        210
+      ]
+    },
+    "mamytwink": null
+  }
 ]

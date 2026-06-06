@@ -253,7 +253,7 @@ class _DashboardPageState extends State<DashboardPage> {
                             crossAxisCount: 2,
                             crossAxisSpacing: 14,
                             mainAxisSpacing: 14,
-                            mainAxisExtent: 302,
+                            mainAxisExtent: 248,
                           ),
                       itemCount: extensionProgresses.length,
                       itemBuilder: (context, index) {
@@ -578,28 +578,13 @@ class _ExpansionCard extends StatelessWidget {
                         return _MiniStat(
                           label: category.shortLabel,
                           value: '$completed/$total',
+                          onTap: switch (category) {
+                            TrackingCategory.mounts => onMountsTap,
+                            TrackingCategory.pets => onPetsTap,
+                            _ => null,
+                          },
                         );
                       }).toList(),
-                    ),
-                    const SizedBox(height: 14),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: OutlinedButton.icon(
-                            onPressed: onMountsTap,
-                            icon: const Icon(Icons.pets),
-                            label: const Text('Montures'),
-                          ),
-                        ),
-                        const SizedBox(width: 10),
-                        Expanded(
-                          child: OutlinedButton.icon(
-                            onPressed: onPetsTap,
-                            icon: const Icon(Icons.cruelty_free),
-                            label: const Text('Mascottes'),
-                          ),
-                        ),
-                      ],
                     ),
                   ],
                 ],
@@ -613,22 +598,30 @@ class _ExpansionCard extends StatelessWidget {
 }
 
 class _MiniStat extends StatelessWidget {
-  const _MiniStat({required this.label, required this.value});
+  const _MiniStat({required this.label, required this.value, this.onTap});
 
   final String label;
   final String value;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          label,
-          style: const TextStyle(color: AppTheme.mutedText, fontSize: 12),
+    return InkWell(
+      borderRadius: BorderRadius.circular(6),
+      onTap: onTap,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+        child: Column(
+          children: [
+            Text(
+              label,
+              style: const TextStyle(color: AppTheme.mutedText, fontSize: 12),
+            ),
+            const SizedBox(height: 4),
+            Text(value, style: const TextStyle(fontWeight: FontWeight.w700)),
+          ],
         ),
-        const SizedBox(height: 4),
-        Text(value, style: const TextStyle(fontWeight: FontWeight.w700)),
-      ],
+      ),
     );
   }
 }

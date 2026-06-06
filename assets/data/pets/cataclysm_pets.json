@@ -1,0 +1,2304 @@
+[
+  {
+    "id": "pet_311",
+    "name": "Bébé gardien",
+    "description": "Ce minuscule lion ailé est encore un peu maladroit, mais il s'entraîne dur pour devenir la meilleure monture possible.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Boutique",
+    "source": "Boutique en jeu",
+    "sourceType": "PETSTORE",
+    "sourceName": "Boutique en jeu",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 311,
+    "creatureId": 53283,
+    "creatureName": "Bébé gardien",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/311",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Guardian Cub",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/311",
+      "familyType": 3,
+      "sourceCodes": [
+        8
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_296",
+    "name": "Bébé sélénien",
+    "description": "Les séléniens sont bénis par Elune et répandent la grâce de la nature partout où ils vont. Ces vivaces volailles sont toujours partantes pour une petite danse.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Boutique",
+    "source": "Boutique en jeu",
+    "sourceType": "PETSTORE",
+    "sourceName": "Boutique en jeu",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 296,
+    "creatureId": 51601,
+    "creatureName": "Bébé sélénien",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/296",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Moonkin Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/296",
+      "familyType": 1,
+      "sourceCodes": [
+        24
+      ],
+      "locations": [
+        7502
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_298",
+    "name": "Bébé sélénien",
+    "description": "Le rugissement caractéristique du sélénien est l'un des sons les plus terrifiants du règne animal.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Boutique",
+    "source": "Boutique en jeu",
+    "sourceType": "PETSTORE",
+    "sourceName": "Boutique en jeu",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 298,
+    "creatureId": 51649,
+    "creatureName": "Bébé sélénien",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/298",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Moonkin Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/298",
+      "familyType": 1,
+      "sourceCodes": [
+        24
+      ],
+      "locations": [
+        7502
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_316",
+    "name": "Jeune hippogriffe cénarien",
+    "description": "Les bébés hippogriffes cénariens, pas encore aussi redoutables qu’ils le deviendront adultes, ont une apparence presque inoffensive qui a pris au dépourvu plus d’un dresseur novice du Cercle cénarien.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Boutique",
+    "source": "Boutique en jeu",
+    "sourceType": "PETSTORE",
+    "sourceName": "Boutique en jeu",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 316,
+    "creatureId": 53623,
+    "creatureName": "Jeune hippogriffe cénarien",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/316",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Cenarion Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/316",
+      "familyType": 3,
+      "sourceCodes": [
+        24
+      ],
+      "locations": [
+        7502,
+        15347
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_297",
+    "name": "Mini Ragnaros",
+    "description": "Il n'est jamais trop tôt pour invoquer cette minuscule incarnation du funeste seigneur du Feu.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Boutique",
+    "source": "Boutique en jeu",
+    "sourceType": "PETSTORE",
+    "sourceName": "Boutique en jeu",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 297,
+    "creatureId": 51600,
+    "creatureName": "Mini Ragnaros",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/297",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Lil' Ragnaros",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/297",
+      "familyType": 7,
+      "sourceCodes": [
+        24
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_293",
+    "name": "Géode en élémentium",
+    "description": "Souvent confondue avec une gemme rare par les mineurs, la géode prévient de sa présence en émettant des vibrations mélodiques.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 293,
+    "creatureId": 50722,
+    "creatureName": "Géode en élémentium",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/293",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Elementium Geode",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/293",
+      "familyType": 7,
+      "sourceCodes": [
+        2,
+        19
+      ],
+      "locations": [
+        5042,
+        5095,
+        5389,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_286",
+    "name": "M. Boustifs",
+    "description": "Les larves des Maleterres sont un effet secondaire de la corruption nécromantique et de l'accumulation de cadavres. M. Boustifs est d'une lignée particulièrement agile.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 286,
+    "creatureId": 50586,
+    "creatureName": "M. Boustifs",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/286",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Mr. Grubbs",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/286",
+      "familyType": 8,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        139
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_279",
+    "name": "Minuscule araignée de schiste",
+    "description": "L'araignée de schiste est un élémentaire, pas un véritable arachnide. Mais sa résilience et sa férocité en font un animal craint jusqu'au cœur du Tréfonds.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 279,
+    "creatureId": 48982,
+    "creatureName": "Minuscule araignée de schiste",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/279",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Tiny Shale Spider",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/279",
+      "familyType": 7,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        5042
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_278",
+    "name": "Renardeau",
+    "description": "Les incessants combats de Tol Barad rendent ces renardeaux difficiles à se procurer. L'afflux de collectionneurs a donc décimé la population de renards de la région.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 278,
+    "creatureId": 48641,
+    "creatureName": "Renardeau",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/278",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Fox Kit",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/278",
+      "familyType": 8,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        5389
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_303",
+    "name": "Bébé sabre-de-nuit",
+    "description": "Elune a donné aux sabres-de-nuit leur robe noire et argentée afin qu'ils puissent se fondre dans les ombres du clair de lune.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Cartes à collectionner",
+    "source": "Jeu de cartes à collectionner",
+    "sourceType": "TCG",
+    "sourceName": "Jeu de cartes à collectionner",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 303,
+    "creatureId": 52344,
+    "creatureName": "Bébé sabre-de-nuit",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/303",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Nightsaber Cub",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/303",
+      "familyType": 8,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_333",
+    "name": "Grell grégaire",
+    "description": "Les grells sont l'incarnation de la sauvagerie de la nature. Les grells domestiques sont extrêmement rares.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Cartes à collectionner",
+    "source": "Jeu de cartes à collectionner",
+    "sourceType": "TCG",
+    "sourceName": "Jeu de cartes à collectionner",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 333,
+    "creatureId": 54730,
+    "creatureName": "Grell grégaire",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/333",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Gregarious Grell",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/333",
+      "familyType": 1,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_302",
+    "name": "Lichette de Landro",
+    "description": "Comment le Gobelin Landro Tirauloin a pu se procurer sa lichette reste un mystère… mais il n'aurait jamais dû la mettre en jeu si facilement lors d'une partie de cartes.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Cartes à collectionner",
+    "source": "Jeu de cartes à collectionner",
+    "sourceType": "TCG",
+    "sourceName": "Jeu de cartes à collectionner",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 302,
+    "creatureId": 52343,
+    "creatureName": "Lichette de Landro",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/302",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Landro's Lichling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/302",
+      "familyType": 4,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_285",
+    "name": "Mini XT de Landro",
+    "description": "Toujours « prêt à jouer », le mini XT de Landro est presque impossible à distinguer du vrai. Sujets à de fréquents caprices et attaques de narcolepsie.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Cartes à collectionner",
+    "source": "Jeu de cartes à collectionner",
+    "sourceType": "TCG",
+    "sourceName": "Jeu de cartes à collectionner",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 285,
+    "creatureId": 50468,
+    "creatureName": "Mini XT de Landro",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/285",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Landro's Lil' XT",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/285",
+      "familyType": 10,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_328",
+    "name": "Poisson-globe violet",
+    "description": "Vous pourriez être tenté de penser que ce poisson ferait un piètre adversaire hors de l'eau… Attendez donc de voir l'intensité qu'abrite sa bulle protectrice.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Cartes à collectionner",
+    "source": "Jeu de cartes à collectionner",
+    "sourceType": "TCG",
+    "sourceName": "Jeu de cartes à collectionner",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 328,
+    "creatureId": 54383,
+    "creatureName": "Poisson-globe violet",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/328",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Purple Puffer",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/328",
+      "familyType": 9,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_321",
+    "name": "Caisse flippante",
+    "description": "Les précédents propriétaires de cette caisse ont signalé la mystérieuse disparition de plusieurs autres compagnons de leur collection.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 321,
+    "creatureId": 54128,
+    "creatureName": "Caisse flippante",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/321",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Creepy Crate",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/321",
+      "familyType": 4,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        1637,
+        1519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_319",
+    "name": "Familier félin",
+    "description": "Avec cette sorcière à moustaches, il faut jouer à pile ou fâche, et s'envoler à tombeau ouvert !",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 319,
+    "creatureId": 53884,
+    "creatureName": "Familier félin",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/319",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Feline Familiar",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/319",
+      "familyType": 8,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        12,
+        1497
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_308",
+    "name": "Gambettes",
+    "description": "Les marcheurs des marais sauvages sont agressifs et dangereux. Mais si vous réussissez à en apprivoiser un, il se montrera fidèle et affectueux.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 308,
+    "creatureId": 53048,
+    "creatureName": "Gambettes",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/308",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Legs",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/308",
+      "familyType": 6,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        3703
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_337",
+    "name": "Grumeau",
+    "description": "Échappé de l'atelier du Grand-père Hiver, ce minuscule élémentaire s'est retrouvé enfermé dans un paquet cadeau dérobé par l'abominable Grinche.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 337,
+    "creatureId": 55215,
+    "creatureName": "Grumeau",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/337",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Lumpy",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/337",
+      "familyType": 7,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        1537,
+        1637
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_342",
+    "name": "Lanterne de fête",
+    "description": "Chacune de ces lanternes brille en l'honneur de l'âme d'un esprit ancestral. Durant la Fête lunaire, les fantômes des anciens transmettent leur sagesse aux jeunes générations.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 342,
+    "creatureId": 55574,
+    "creatureName": "Lanterne de fête",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/342",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Festival Lantern",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/342",
+      "familyType": 6,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        493
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_341",
+    "name": "Lanterne lunaire",
+    "description": "Ces lanternes magiques se trouvent pendant la Fête lunaire, qui célèbre la défaite de la Légion ardente face aux races libres d'Azeroth.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 341,
+    "creatureId": 55571,
+    "creatureName": "Lanterne lunaire",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/341",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Lunar Lantern",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/341",
+      "familyType": 6,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        493
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_289",
+    "name": "Vroum l'escargot",
+    "description": "Si vous le cherchez, il est dans sa coquille. Comme tout escargot qui se respecte.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 289,
+    "creatureId": 51635,
+    "creatureName": "Vroum l'escargot",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/289",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Scooter the Snail",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/289",
+      "familyType": 5,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        1637,
+        1519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_255",
+    "name": "Dragon céleste",
+    "description": "Breanni de Dalaran, une des plus grandes spécialistes des compagnons exotiques du monde, n'offre le dragon céleste mystique qu'à ceux dont la folie collectionneuse peut égaler la sienne.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Haut-fait",
+    "source": "Haut fait",
+    "sourceType": "ACHIEVEMENT",
+    "sourceName": "Haut fait",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 255,
+    "creatureId": 40624,
+    "creatureName": "Dragon céleste",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/255",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Celestial Dragon",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/255",
+      "familyType": 2,
+      "sourceCodes": [
+        12
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_265",
+    "name": "Gravillon",
+    "description": "Petit élémentaire aventureux, Gravillon a échappé aux girevers affamés des profondeurs Désagrégées et bravé le vide sidéral du Néant distordu, pour terminer enfermé dans une étroite boîte aux lettres.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Haut-fait",
+    "source": "Haut fait",
+    "sourceType": "ACHIEVEMENT",
+    "sourceName": "Haut fait",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 265,
+    "creatureId": 45247,
+    "creatureName": "Gravillon",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/265",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Pebble",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/265",
+      "familyType": 7,
+      "sourceCodes": [
+        12
+      ],
+      "locations": [
+        5042
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_325",
+    "name": "Kaliri brillant",
+    "description": "Ce kaliri, une des créatures les plus rares, se différencie des autres par son plumage brillant et ce que les chasseurs sont prêts à faire pour le capturer.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Haut-fait",
+    "source": "Haut fait",
+    "sourceType": "ACHIEVEMENT",
+    "sourceName": "Haut fait",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 325,
+    "creatureId": 54374,
+    "creatureName": "Kaliri brillant",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/325",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Brilliant Kaliri",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/325",
+      "familyType": 3,
+      "sourceCodes": [
+        12
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_323",
+    "name": "Noisette",
+    "description": "La plupart des écureuils amassent des glands pour se préparer à l'hiver. Noisette, lui, les amasse pour être sûr d'avoir assez de munitions.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Haut-fait",
+    "source": "Haut fait",
+    "sourceType": "ACHIEVEMENT",
+    "sourceName": "Haut fait",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 323,
+    "creatureId": 54227,
+    "creatureName": "Noisette",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/323",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Nuts",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/323",
+      "familyType": 5,
+      "sourceCodes": [
+        12
+      ],
+      "locations": [
+        8670
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_262",
+    "name": "Compagnon mécanique démilitarisé",
+    "description": "Robuste porte-étendard de la technologie gnome, ce petit automate est un compagnon parfait pour les ingénieurs solitaires itinérants.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 262,
+    "creatureId": 43916,
+    "creatureName": "Compagnon mécanique démilitarisé",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/262",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "De-Weaponized Mechanical Companion",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/262",
+      "familyType": 10,
+      "sourceCodes": [
+        1
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_261",
+    "name": "Destructeur de monde personnel",
+    "description": "Le dernier cri de l'ingénierie gobeline. Plans inspirés du gigantesque saccageur gangrené de la péninsule des Flammes infernales.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 261,
+    "creatureId": 43800,
+    "creatureName": "Destructeur de monde personnel",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/261",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Personal World Destroyer",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/261",
+      "familyType": 10,
+      "sourceCodes": [
+        1
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_310",
+    "name": "Figurine vaudou",
+    "description": "Les figurines vaudou peuvent tirer leur puissance des flacons de mojo, de la sueur de Troll et de la chair des ennemis de leur tribu.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 310,
+    "creatureId": 53232,
+    "creatureName": "Figurine vaudou",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/310",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Voodoo Figurine",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/310",
+      "familyType": 4,
+      "sourceCodes": [
+        1
+      ],
+      "locations": [
+        139,
+        33,
+        8,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_277",
+    "name": "Gnome mécanique",
+    "description": "Le Gnome mécanique serait à l'origine une création des Titans. Certaines de ses pièces sont si petites qu'on ne peut les voir à l'œil nu.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 277,
+    "creatureId": 48609,
+    "creatureName": "Gnome mécanique",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/277",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Clockwork Gnome",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/277",
+      "familyType": 10,
+      "sourceCodes": [
+        1
+      ],
+      "locations": [
+        45,
+        3,
+        46,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_264",
+    "name": "Griffe rampante",
+    "description": "À première vue, il ne s'agit que de la patte d'un petit primate. À mieux y regarder, on s'aperçoit que son aspect desséché lui vient de siècles d'exposition aux sables d'Uldum.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 264,
+    "creatureId": 45128,
+    "creatureName": "Griffe rampante",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/264",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Crawling Claw",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/264",
+      "familyType": 4,
+      "sourceCodes": [
+        1
+      ],
+      "locations": [
+        5034
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_340",
+    "name": "Jeune hippocampe",
+    "description": "Malgré sa toute petite taille, il est impossible de ne pas voir un jeune hippocampe traverser l’eau.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 340,
+    "creatureId": 55386,
+    "creatureName": "Jeune hippocampe",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/340",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Sea Pony",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/340",
+      "familyType": 9,
+      "sourceCodes": [
+        2,
+        16
+      ],
+      "locations": [
+        5861
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_309",
+    "name": "Jeune pterreurdactyle",
+    "description": "Les œufs de pterreurdactyles sont couvés sous les fossiles de leurs ancêtres, ce qui permet aux bébés de s'imprégner de la férocité et de la ruse de leurs ascendants.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 309,
+    "creatureId": 53225,
+    "creatureName": "Jeune pterreurdactyle",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/309",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Pterrordax Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/309",
+      "familyType": 3,
+      "sourceCodes": [
+        1
+      ],
+      "locations": [
+        4,
+        46,
+        10,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_266",
+    "name": "Jeune raptor fossilisé",
+    "description": "Vous le fixez dans les yeux. Et il vous fixe aussi intensément. Il paraît si intelligent. Parfois, on jurerait qu’il songe au meilleur moyen d'ouvrir les portes.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 266,
+    "creatureId": 45340,
+    "creatureName": "Jeune raptor fossilisé",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/266",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Fossilized Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/266",
+      "familyType": 4,
+      "sourceCodes": [
+        1
+      ],
+      "locations": [
+        4,
+        46,
+        10,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_292",
+    "name": "Lampe magique",
+    "description": "Higitus figi… ? Hockiti pocki… ? Abracadab… ? Prestidigi… Oh, mais enfin Archimède !",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 292,
+    "creatureId": 50545,
+    "creatureName": "Lampe magique",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/292",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Magic Lamp",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/292",
+      "familyType": 6,
+      "sourceCodes": [
+        1
+      ],
+      "locations": [
+        1657,
+        1537,
+        1519,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_267",
+    "name": "Lanterne enchantée",
+    "description": "Réduit les chances de vous faire dévorer par des monstres voraces lorsque vous pénétrez dans un endroit obscur.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 267,
+    "creatureId": 46898,
+    "creatureName": "Lanterne enchantée",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/267",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Enchanted Lantern",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/267",
+      "familyType": 6,
+      "sourceCodes": [
+        1
+      ],
+      "locations": [
+        1637,
+        3847,
+        1638,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_329",
+    "name": "Diablourbie",
+    "description": "Si vous devez faire face à Diablourbie ou à l'un des autres Murlocs primordiaux, le port de la pierre d'âme est fortement conseillé.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 329,
+    "creatureId": 54438,
+    "creatureName": "Diablourbie",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/329",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Murkablo",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/329",
+      "familyType": 1,
+      "sourceCodes": [
+        8
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_268",
+    "name": "Mini Aile de mort",
+    "description": "Des nations entières tremblent sous son ombre. Il est le Destructeur, celui qui fut l’Aspect de la terre, et qui brisa Azeroth. Désormais disponible en format poche.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 268,
+    "creatureId": 46896,
+    "creatureName": "Mini Aile de mort",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/268",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Lil' Deathwing",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/268",
+      "familyType": 2,
+      "sourceCodes": [
+        8
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_294",
+    "name": "Mortibus",
+    "description": "La venue d'Aile de mort a profondément transformé Azeroth. Même les Murlocs des fonds océaniques n'ont pas échappé à l'influence de sa corruption.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 294,
+    "creatureId": 51122,
+    "creatureName": "Mortibus",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/294",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Deathy",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/294",
+      "familyType": 1,
+      "sourceCodes": [
+        8
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_240",
+    "name": "Panthère en onyx",
+    "description": "La nuit, la panthère onyx est invisible, semblable à une ombre qui rôde et disparaît à l’aube.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 240,
+    "creatureId": 35468,
+    "creatureName": "Panthère en onyx",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/240",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Onyx Panther",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/240",
+      "familyType": 6,
+      "sourceCodes": [],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_331",
+    "name": "Ballon de l’Alliance",
+    "description": "Créés pour amuser les enfants à la foire de Sombrelune, ces ballons magiques ne sont pas du genre à se dégonfler.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Quête",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 331,
+    "creatureId": 54539,
+    "creatureName": "Ballon de l’Alliance",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/331",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Alliance Balloon",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/331",
+      "familyType": 3,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        1519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_332",
+    "name": "Ballon de la Horde",
+    "description": "Ces ballons sont une merveille de magie. Ils ne se dégonflent jamais et apparaissent en général par paquets de quatre-vingt-dix-neuf.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Quête",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 332,
+    "creatureId": 54541,
+    "creatureName": "Ballon de la Horde",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/332",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Horde Balloon",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/332",
+      "familyType": 3,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        1637
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_301",
+    "name": "Bébé panthère",
+    "description": "Il vous a regardé avec ses grands yeux noirs, l'air de vous demander : « C’est toi, ma maman ? »",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Quête",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 301,
+    "creatureId": 52226,
+    "creatureName": "Bébé panthère",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/301",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Panther Cub",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/301",
+      "familyType": 8,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        33
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_307",
+    "name": "Jeune flagellant",
+    "description": "Dans les jungles de Strangleronce, les bébés raptors qui n'ont pas de chance sont capturés par les Gurubashi et emmenés dans la cité trolle de Zul’Gurub.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Quête",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 307,
+    "creatureId": 52894,
+    "creatureName": "Jeune flagellant",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/307",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Lashtail Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/307",
+      "familyType": 8,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        1977
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_259",
+    "name": "Mini jouteur bleu",
+    "description": "Contrairement à son homologue doré, le mini jouteur bleu aime prendre son temps quand il plante sa lance dans les yeux d'un adversaire.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Quête",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 259,
+    "creatureId": 42177,
+    "creatureName": "Mini jouteur bleu",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/259",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Blue Mini Jouster",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/259",
+      "familyType": 3,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        616
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_260",
+    "name": "Mini jouteur doré",
+    "description": "Cette petite créature est bien connue pour sa capacité à vous suriner les yeux plus vite que l'éclair.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Quête",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 260,
+    "creatureId": 42183,
+    "creatureName": "Mini jouteur doré",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/260",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Gold Mini Jouster",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/260",
+      "familyType": 3,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        616
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_287",
+    "name": "Petite flamouche",
+    "description": "Ces insectes étranges volent autour des bassins de lave dans la journée et émettent une lumière incandescente la nuit.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Quête",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 287,
+    "creatureId": 51632,
+    "creatureName": "Petite flamouche",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/287",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Tiny Flamefly",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/287",
+      "familyType": 3,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        46
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_220",
+    "name": "Ratatin",
+    "description": "Une évocation solennelle de ce qui fut perdu lorsque le Brise-monde changea pour toujours la face d'Azeroth.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Quête",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 220,
+    "creatureId": 34278,
+    "creatureName": "Ratatin",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/220",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Withers",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/220",
+      "familyType": 7,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        148
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_291",
+    "name": "Tournesol chantant",
+    "description": "Cette fleur suave embellira votre journée grâce à son chaleureux sourire et son chant joyeux ! Aussi très efficace contre les Morts-vivants.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Quête",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 291,
+    "creatureId": 51090,
+    "creatureName": "Tournesol chantant",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/291",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Singing Sunflower",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/291",
+      "familyType": 7,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        267
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_336",
+    "name": "Ballon de Sombrelune",
+    "description": "Il ne fait que flotter…",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 336,
+    "creatureId": 55187,
+    "creatureName": "Ballon de Sombrelune",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/336",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Darkmoon Balloon",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/336",
+      "familyType": 3,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        5861
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_306",
+    "name": "Bébé de Berceau-de-l’Hiver",
+    "description": "C'est quand ils batifolent dans la neige fraîche que les bébés de Berceau-de-l'Hiver sont les plus heureux.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 306,
+    "creatureId": 52831,
+    "creatureName": "Bébé de Berceau-de-l’Hiver",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/306",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Winterspring Cub",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/306",
+      "familyType": 8,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        618
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_272",
+    "name": "Bébé tatou",
+    "description": "Se roule en boule pour se protéger quand il se sent menacé. Ou quand sa mère l'appelle pour le dîner.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 272,
+    "creatureId": 48242,
+    "creatureName": "Bébé tatou",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/272",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Armadillo Pup",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/272",
+      "familyType": 5,
+      "sourceCodes": [
+        5,
+        12
+      ],
+      "locations": [
+        1657,
+        1537,
+        1637,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_338",
+    "name": "Chariotte de Sombrelune",
+    "description": "Ce robuste jouet, capable d'encaisser les traitements même les plus imaginatifs, fait fureur chez les enfants d'Azeroth.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 338,
+    "creatureId": 55356,
+    "creatureName": "Chariotte de Sombrelune",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/338",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Darkmoon Tonk",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/338",
+      "familyType": 10,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        5861
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_318",
+    "name": "Flagellant cramoisi",
+    "description": "Né sur le sol cendreux des terres de Feu, le flagellant fut transplanté vers Azeroth avec l'aide des Gardiens d'Hyjal.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 318,
+    "creatureId": 53661,
+    "creatureName": "Flagellant cramoisi",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/318",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Crimson Lasher",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/318",
+      "familyType": 7,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        5733
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_282",
+    "name": "Héraut de guilde",
+    "description": "Quand une guilde a accumulé des monceaux de richesses, de courageux soldats sont appelés pour porter haut ses couleurs.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 282,
+    "creatureId": 49587,
+    "creatureName": "Héraut de guilde",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/282",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Guild Herald",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/282",
+      "familyType": 1,
+      "sourceCodes": [
+        5,
+        12
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_283",
+    "name": "Héraut de guilde",
+    "description": "Les guildes riches s'attirent la faveur de soldats prêts à porter leurs étendards au combat.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 283,
+    "creatureId": 49590,
+    "creatureName": "Héraut de guilde",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/283",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Guild Herald",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/283",
+      "familyType": 1,
+      "sourceCodes": [
+        5,
+        12
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_270",
+    "name": "Jeune phénix sombre",
+    "description": "Les faucons de feu naissent des cendres d'un phénix. Les phénix sombres, eux, naissent de leurs ombres.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 270,
+    "creatureId": 47944,
+    "creatureName": "Jeune phénix sombre",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/270",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Dark Phoenix Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/270",
+      "familyType": 7,
+      "sourceCodes": [
+        5,
+        12
+      ],
+      "locations": [
+        1657,
+        1537,
+        1637,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_343",
+    "name": "Lionceau de Sombrelune",
+    "description": "Ce chaton très câlin aime jouer, mais il semble parfois chasser des proies invisibles.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 343,
+    "creatureId": 56031,
+    "creatureName": "Lionceau de Sombrelune",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/343",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Darkmoon Cub",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/343",
+      "familyType": 8,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        5861
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_320",
+    "name": "Mini Tarecgosa",
+    "description": "Membre légendaire du vol draconique bleu.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 320,
+    "creatureId": 54027,
+    "creatureName": "Mini Tarecgosa",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/320",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Lil' Tarecgosa",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/320",
+      "familyType": 2,
+      "sourceCodes": [
+        5,
+        12
+      ],
+      "locations": [
+        1657,
+        1537,
+        1637,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_271",
+    "name": "Mouette de Rouillemont",
+    "description": "Cet oiseau est un vétéran chevronné des longues batailles navales autour de Tol Barad. Un vétéran un peu empâté, il faut bien le dire, à force de se servir sur les épaves.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 271,
+    "creatureId": 48107,
+    "creatureName": "Mouette de Rouillemont",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/271",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Rustberg Gull",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/271",
+      "familyType": 3,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        5389
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_317",
+    "name": "Ourson d’Hyjal",
+    "description": "Les oursons d'Hyjal ont beaucoup souffert lors du Cataclysme. Mais pour voir le bon côté des choses, c'est aussi lui qui a développé leur attirance pour les hauteurs et les acrobaties périlleuses.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 317,
+    "creatureId": 53658,
+    "creatureName": "Ourson d’Hyjal",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/317",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Hyjal Bear Cub",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/317",
+      "familyType": 8,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        5733
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_280",
+    "name": "Page de guilde",
+    "description": "Les pages de guildes se doivent d'être intrépides, car c'est à eux qu'il revient d'annoncer les victoires de leurs guildes sur la Horde.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 280,
+    "creatureId": 49586,
+    "creatureName": "Page de guilde",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/280",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Guild Page",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/280",
+      "familyType": 1,
+      "sourceCodes": [
+        5,
+        12
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_281",
+    "name": "Page de guilde",
+    "description": "Quand une guilde se couvre d'honneur en terrassant les champions de l'Alliance, certains Orcs viennent s'associer à sa gloire en se mettant à son service.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 281,
+    "creatureId": 49588,
+    "creatureName": "Page de guilde",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/281",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Guild Page",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/281",
+      "familyType": 1,
+      "sourceCodes": [
+        5,
+        12
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_330",
+    "name": "Singe de Sombrelune",
+    "description": "Les singes d'Azeroth sont célèbres pour leurs tours pendables, et cette ruse innée est encore plus développée chez ces adorables compagnons de la foire de Sombrelune.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 330,
+    "creatureId": 54491,
+    "creatureName": "Singe de Sombrelune",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/330",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Darkmoon Monkey",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/330",
+      "familyType": 8,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        5861
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_335",
+    "name": "Tortue de Sombrelune",
+    "description": "Ce reptile caparaçonné protège vaillamment la maison qu'il transporte sur son dos par son humeur infailliblement enjouée.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 335,
+    "creatureId": 54487,
+    "creatureName": "Tortue de Sombrelune",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/335",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Darkmoon Turtle",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/335",
+      "familyType": 9,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        5861
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_339",
+    "name": "Zeppelin de Sombrelune",
+    "description": "Débarrassée des mines et fusées de l'ancien modèle, cette version adaptée aux plus jeunes rencontre un grand succès auprès des enfants d'Azeroth.",
+    "category": "pets",
+    "expansion": "cataclysm",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 339,
+    "creatureId": 55367,
+    "creatureName": "Zeppelin de Sombrelune",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/339",
+    "wowhead": {
+      "expansion": "cataclysm",
+      "expansionName": "Cataclysm",
+      "wowheadName": "Darkmoon Zeppelin",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/339",
+      "familyType": 10,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        5861
+      ]
+    },
+    "mamytwink": null
+  }
+]

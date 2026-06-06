@@ -1,14 +1,2061 @@
 [
   {
-    "id": "sprite_darter_hatchling",
-    "name": "Sprite Darter Hatchling",
+    "id": "pet_50",
+    "name": "Ara aile verte",
+    "description": "Cet oiseau coloré est l'animal de compagnie préféré des pirates défias, qui se servent de lui pour ne pas oublier leurs mots de passe, listes de courses et recettes de cuisine.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "Feralas",
-    "instance": "",
-    "source": "World Drop",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 50,
+    "creatureId": 7387,
+    "creatureName": "Ara aile verte",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/50",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Green Wing Macaw",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/50",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        1581
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_49",
+    "name": "Ara jacinthe",
+    "description": "Les Trolls de la jungle apprennent à ces oiseaux à imiter les appels à l'aide pour attirer les voyageurs ignorants dans leurs pièges.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 49,
+    "creatureId": 7391,
+    "creatureName": "Ara jacinthe",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/49",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Hyacinth Macaw",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/49",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_42",
+    "name": "Chat tigré noir",
+    "description": "Vieux proverbe d'Alterac : « Un chat a neuf vies, mais n'a besoin que d'une. »",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 42,
+    "creatureId": 7383,
+    "creatureName": "Chat tigré noir",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/42",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Black Tabby Cat",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/42",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        267
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_90",
+    "name": "Jeune couveuse",
+    "description": "Les jeunes couveuses naissent sur les torrides hauteurs du pic Rochenoire, mais peuvent s'adapter à la plupart des environnements.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 90,
+    "creatureId": 10598,
+    "creatureName": "Jeune couveuse",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/90",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Smolderweb Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/90",
+      "familyType": 8,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        1583
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_57",
+    "name": "Jeune dragonnet azur",
+    "description": "Comme tous les membres du vol draconique bleu, ces petites créatures fantasques démontrent une certaine affinité avec la magie des Arcanes.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 57,
+    "creatureId": 7547,
+    "creatureName": "Jeune dragonnet azur",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/57",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Azure Whelpling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/57",
+      "familyType": 2,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        618
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_58",
+    "name": "Jeune dragonnet cramoisi",
+    "description": "Né dans les Paluns, ce petit dragon commence tout juste à apprendre à chasser, cracher du feu, et semer adorablement la dévastation sur son passage.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 58,
+    "creatureId": 7544,
+    "creatureName": "Jeune dragonnet cramoisi",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/58",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Crimson Whelpling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/58",
+      "familyType": 2,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        11
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_1563",
+    "name": "Jeune dragonnet de bronze",
+    "description": "Le jeune dragonnet de bronze était perdu dans le temps jusqu’à ce qu’un évènement inhabituel lui permette de s’échapper.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 1563,
+    "creatureId": 7546,
+    "creatureName": "Jeune dragonnet de bronze",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/1563",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Bronze Whelpling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/1563",
+      "familyType": 2,
+      "sourceCodes": [
+        2
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_59",
+    "name": "Jeune dragonnet émeraude",
+    "description": "Jadis couvés et élevés par le dragon vert Itharius, les dragons de cette lignée unique ont élu domicile dans les jungles de Féralas.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 59,
+    "creatureId": 7545,
+    "creatureName": "Jeune dragonnet émeraude",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/59",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Emerald Whelpling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/59",
+      "familyType": 2,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        357
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_56",
+    "name": "Jeune dragonnet sombre",
+    "description": "Il espère grandir suffisamment pour détruire des villages, comme maman.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 56,
+    "creatureId": 7543,
+    "creatureName": "Jeune dragonnet sombre",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/56",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Dark Whelpling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/56",
+      "familyType": 2,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        3,
+        15,
+        11
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_87",
+    "name": "Jeune fée fléchetteuse",
+    "description": "Ces adorables créatures aiment faire un gros câlin à leur maître après une longue journée de combats brutaux et sanglants.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 87,
+    "creatureId": 9662,
+    "creatureName": "Jeune fée fléchetteuse",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/87",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Sprite Darter Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/87",
+      "familyType": 2,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        357
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_89",
+    "name": "Jeune worg",
+    "description": "Les worgs sont les compagnons préférés des Orcs et font preuve d'une fidélité farouche sur le champ de bataille.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 89,
+    "creatureId": 10259,
+    "creatureName": "Jeune worg",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/89",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Worg Pup",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/89",
+      "familyType": 8,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        1583
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_114",
+    "name": "Suinteux dégoûtant",
+    "description": "Avertissement : Ne jamais manipuler le suinteux dégoûtant sans être équipé de gants et lunettes de protection. NE PAS LAVER. Très salissant.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 114,
+    "creatureId": 15429,
+    "creatureName": "Suinteux dégoûtant",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/114",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Disgusting Oozeling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/114",
+      "familyType": 6,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        1377,
+        4298,
+        3429,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_69",
+    "name": "Chouette blanche",
+    "description": "Le plumage d'un blanc brillant de ces majestueuses créatures est très recherché par les Furbolgs de Berceau-de-l'Hiver, qui l'utilisent pour leurs rituels.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Combat de mascottes",
+    "source": "Combat de mascottes",
+    "sourceType": "WILDPET",
+    "sourceName": "Combat de mascottes",
     "groupRequired": false,
     "weeklyLockout": false,
-    "blizzardId": 87
+    "blizzardId": 69,
+    "creatureId": 7554,
+    "creatureName": "Chouette blanche",
+    "isCapturable": true,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/69",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Snowy Owl",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/69",
+      "familyType": 3,
+      "sourceCodes": [],
+      "locations": [
+        618
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_119",
+    "name": "Assistant du Père Hiver",
+    "description": "Ces compagnons saisonniers travaillent très dur pour préparer la fête du Voile d'hiver. Aussi, ils apprécieraient qu'on les laisse tranquilles le reste de l'année.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 119,
+    "creatureId": 15698,
+    "creatureName": "Assistant du Père Hiver",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/119",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Father Winter's Helper",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/119",
+      "familyType": 1,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        1537,
+        1637
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_125",
+    "name": "Bip-Bip",
+    "description": "Rien ne sert de courir : il faut partir à point.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 125,
+    "creatureId": 16547,
+    "creatureName": "Bip-Bip",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/125",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Speedy",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/125",
+      "familyType": 9,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        1637,
+        1519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_122",
+    "name": "Colportecœur",
+    "description": "Le pouvoir de l'amour peut être ravageur. Surtout dans les mains d'un Gobelin volant et acariâtre.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 122,
+    "creatureId": 16085,
+    "creatureName": "Colportecœur",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/122",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Peddlefeet",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/122",
+      "familyType": 1,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        1657,
+        1537,
+        1637,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_128",
+    "name": "Esprit de l'été",
+    "description": "C'est un fragment d'été, qui a l'odeur des soirées chaleureuses et des orages estivaux. En regardant de près, on y distingue un visage.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 128,
+    "creatureId": 16701,
+    "creatureName": "Esprit de l'été",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/128",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Spirit of Summer",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/128",
+      "familyType": 7,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        1657,
+        1637,
+        3487,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_106",
+    "name": "Jubelin",
+    "description": "La légendaire grenouille à bière était classée parmi les espèces disparues, jusqu'à ce que les curieux breuvages de la foire de Sombrelune la poussent à sortir de sa cachette.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 106,
+    "creatureId": 14878,
+    "creatureName": "Jubelin",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/106",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Jubling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/106",
+      "familyType": 9,
+      "sourceCodes": [],
+      "locations": [
+        5861
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_126",
+    "name": "M. Trémousse",
+    "description": "Nombreux sont ceux qui pensent que le nom de « Trémousse » fait référence au postérieur de ce cochon. C'est en voyant le mouvement de leurs entrailles pendantes qu'ils comprennent leur erreur.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 126,
+    "creatureId": 16548,
+    "creatureName": "M. Trémousse",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/126",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Mr. Wiggles",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/126",
+      "familyType": 5,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        1637,
+        1519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_117",
+    "name": "Mini-bonhomme de neige",
+    "description": "Il adore danser, gigoter et jouer avec vous ! Il a tendance à fondre après la fête du Voile d'hiver, certes, mais ne vous inquiétez pas : il reviendra !",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 117,
+    "creatureId": 15710,
+    "creatureName": "Mini-bonhomme de neige",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/117",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Tiny Snowman",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/117",
+      "familyType": 7,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        1537,
+        1637
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_127",
+    "name": "Moustaches le rat",
+    "description": "Moustaches est un fin tacticien, capable de feindre la mort pour échapper aux prédateurs et aux huissiers de justice.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 127,
+    "creatureId": 16549,
+    "creatureName": "Moustaches le rat",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/127",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Whiskers the Rat",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/127",
+      "familyType": 5,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        1637,
+        1519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_120",
+    "name": "Petite assistante de l'Hiver",
+    "description": "Pendant la glorieuse fête du Voile d'hiver, ces fidèles compagnons sèment la joie partout dans le monde. Mais le reste de l'année, ils sont occupés.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 120,
+    "creatureId": 15705,
+    "creatureName": "Petite assistante de l'Hiver",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/120",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Winter's Little Helper",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/120",
+      "familyType": 1,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        1537,
+        1637
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_118",
+    "name": "Renne de l’hiver",
+    "description": "N'a pas trop apprécié tout ce temps passé enfermé dans un paquet cadeau.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 118,
+    "creatureId": 15706,
+    "creatureName": "Renne de l’hiver",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/118",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Winter Reindeer",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/118",
+      "familyType": 5,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        1537,
+        1637
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_85",
+    "name": "Bombinette",
+    "description": "Potentiellement explosive, incontestablement adorable. Tenir éloignée des flammes.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 85,
+    "creatureId": 9656,
+    "creatureName": "Bombinette",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/85",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Pet Bombling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/85",
+      "familyType": 10,
+      "sourceCodes": [
+        1,
+        2
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_95",
+    "name": "Crapaud mécanique",
+    "description": "Nos talentueux ingénieurs ont mis au point une réplique fidèle de la grenouille forestière, pour seulement dix fois son prix d'achat.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 95,
+    "creatureId": 12419,
+    "creatureName": "Crapaud mécanique",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/95",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Lifelike Toad",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/95",
+      "familyType": 10,
+      "sourceCodes": [
+        1,
+        2
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_39",
+    "name": "Ecureuil mécanique",
+    "description": "Certains disent que les écureuils mécaniques aiment manger des pignons et grimper aux arbres à cames.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 39,
+    "creatureId": 2671,
+    "creatureName": "Ecureuil mécanique",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/39",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Mechanical Squirrel",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/39",
+      "familyType": 10,
+      "sourceCodes": [
+        1,
+        2,
+        28
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_86",
+    "name": "Petit fumant",
+    "description": "Ce minuscule robot de maintien de l'ordre est souvent équipé du dernier cri en matière d'annulateur d'Arcane et de disperseur de foule. Ne convient pas aux écologistes.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 86,
+    "creatureId": 9657,
+    "creatureName": "Petit fumant",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/86",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Lil' Smoky",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/86",
+      "familyType": 10,
+      "sourceCodes": [
+        1,
+        2
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_116",
+    "name": "Yéti mécanique paisible",
+    "description": "Cet astucieux jouet est équipé d’un commutateur secret permettant de désactiver le mode « Tranquillité ». Heureusement, même les ingénieurs qui l’ont construit ne savent pas comment le trouver.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 116,
+    "creatureId": 15699,
+    "creatureName": "Yéti mécanique paisible",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/116",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Tranquil Mechanical Yeti",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/116",
+      "familyType": 10,
+      "sourceCodes": [
+        1,
+        2
+      ],
+      "locations": [
+        618
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_111",
+    "name": "Albie",
+    "description": "Le caractère charmeur et le numéro enlevé d'Albie sont un remède infaillible à l'amertume même la plus tenace.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 111,
+    "creatureId": 15358,
+    "creatureName": "Albie",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/111",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Lurky",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/111",
+      "familyType": 1,
+      "sourceCodes": [
+        8
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_92",
+    "name": "Bébé panda",
+    "description": "Ce minuscule bébé panda est très recherché par les aventuriers d'Azeroth, malgré une certaine tendance à la narcolepsie.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 92,
+    "creatureId": 11325,
+    "creatureName": "Bébé panda",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/92",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Panda Cub",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/92",
+      "familyType": 8,
+      "sourceCodes": [
+        8
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_107",
+    "name": "Bourbie",
+    "description": "Chaque apparition de ce Murloc adulé mais timide est un grand succès populaire.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 107,
+    "creatureId": 15186,
+    "creatureName": "Bourbie",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/107",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Murky",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/107",
+      "familyType": 1,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        1537,
+        1637
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_121",
+    "name": "Gloubie",
+    "description": "Gloubie est une artiste née, mais elle reste discrète. Ses apparitions en public sont rares.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 121,
+    "creatureId": 16069,
+    "creatureName": "Gloubie",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/121",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Gurky",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/121",
+      "familyType": 1,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        1537,
+        1637
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_93",
+    "name": "Mini Diablo",
+    "description": "ET LES CIEUX TREMBLERONT, ET LES HOMMES PLEURERONT, ET LA FIN DES TEMPS SERA… Euh, mais vous êtes vraiment grand, vous !",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 93,
+    "creatureId": 11326,
+    "creatureName": "Mini Diablo",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/93",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Mini Diablo",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/93",
+      "familyType": 6,
+      "sourceCodes": [
+        8
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_758",
+    "name": "Minuscule dragon rouge",
+    "description": "On dit qu’en voir un en automne est synonyme de bonne fortune. Il est connu pour se cacher des créatures inconnues.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 758,
+    "creatureId": 14756,
+    "creatureName": "Minuscule dragon rouge",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/758",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Tiny Red Dragon",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/758",
+      "familyType": 2,
+      "sourceCodes": [],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_757",
+    "name": "Minuscule dragon vert",
+    "description": "Les légendes racontent que ces êtres d’émeraude vibrant portent chance et assurent des voyages sans danger à leurs propriétaires.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 757,
+    "creatureId": 14755,
+    "creatureName": "Minuscule dragon vert",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/757",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Tiny Green Dragon",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/757",
+      "familyType": 2,
+      "sourceCodes": [],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_1168",
+    "name": "Murki",
+    "description": "Murki est un membre de la race de Murlocs la plus rare du monde.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 1168,
+    "creatureId": 15361,
+    "creatureName": "Murki",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/1168",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Murki",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/1168",
+      "familyType": 1,
+      "sourceCodes": [],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_94",
+    "name": "Zergling",
+    "description": "Membre de l'Essaim qui semble insignifiant au premier abord, le zergling se révèle féroce et n'est pas à prendre à la légère. Très dangereux en grand nombre.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 94,
+    "creatureId": 11327,
+    "creatureName": "Zergling",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/94",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Zergling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/94",
+      "familyType": 5,
+      "sourceCodes": [
+        8
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_83",
+    "name": "Poulet mécanique",
+    "description": "N'ayez aucune inquiétude : les protocoles de combat et le système de visée de ce modèle ont été désactivés. Euh, je crois. - Orguignard Odipnoticus",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Quête",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 83,
+    "creatureId": 8376,
+    "creatureName": "Poulet mécanique",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/83",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Mechanical Chicken",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/83",
+      "familyType": 10,
+      "sourceCodes": [
+        4
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_55",
+    "name": "Cafard de Fossoyeuse",
+    "description": "Posséder un cafard est la plupart du temps le fruit d'un achat compulsif. Ensuite, ses propriétaires ont toujours un mal fou à se séparer de lui, même après plusieurs tentatives.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 55,
+    "creatureId": 7395,
+    "creatureName": "Cafard de Fossoyeuse",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/55",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Undercity Cockroach",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/55",
+      "familyType": 5,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        11,
+        1497,
+        1637
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_40",
+    "name": "Chat bombay",
+    "description": "Donni Anthania voudrait qu'un bombay soit enterré avec elle à sa mort. Mais l'aventurier sage saura faire bien meilleur usage de ses talents.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 40,
+    "creatureId": 7385,
+    "creatureName": "Chat bombay",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/40",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Bombay Cat",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/40",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5,
+        14
+      ],
+      "locations": [
+        12
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_44",
+    "name": "Chat siamois",
+    "description": "Est connu pour ses yeux bleus. Est également un mets très recherché par les Murlocs géants.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 44,
+    "creatureId": 7380,
+    "creatureName": "Chat siamois",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/44",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Siamese Cat",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/44",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5,
+        14
+      ],
+      "locations": [
+        3523
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_45",
+    "name": "Chat tigré argenté",
+    "description": "Dormir est le deuxième sport préféré de ce chat. Le premier est bâiller.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 45,
+    "creatureId": 7381,
+    "creatureName": "Chat tigré argenté",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/45",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Silver Tabby Cat",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/45",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        12
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_43",
+    "name": "Chat tigré roux",
+    "description": "La dernière personne qui a essayé d'apprendre à ce chat à faire où on lui dit de faire a appris à ses dépens qu'une petite tache sur un tapis vaut mieux qu'un grand ravage partout ailleurs.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 43,
+    "creatureId": 7382,
+    "creatureName": "Chat tigré roux",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/43",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Orange Tabby Cat",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/43",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        12
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_46",
+    "name": "Chaton blanc",
+    "description": "La reine possédait trois chatons. Le premier lui rapporta un rat dodu. Le second, un savoureux lapin. Et le troisième, le blanc, son préféré, lui rapporta la tête de sa rivale.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 46,
+    "creatureId": 7386,
+    "creatureName": "Chaton blanc",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/46",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "White Kitten",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/46",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        1519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_70",
+    "name": "Chien de prairie brun",
+    "description": "C'est un système complexe de galeries qui protège les chiens de prairie des sabots de leurs voisins les plus imposants.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 70,
+    "creatureId": 14421,
+    "creatureName": "Chien de prairie brun",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/70",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Brown Prairie Dog",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/70",
+      "familyType": 5,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        1638
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_67",
+    "name": "Chouette-faucon",
+    "description": "Ce rapace au plumage noir est souvent considéré comme un signe funeste par les druides de Teldrassil.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 67,
+    "creatureId": 7555,
+    "creatureName": "Chouette-faucon",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/67",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Hawk Owl",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/67",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        1657,
+        1519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_75",
+    "name": "Cobra noir",
+    "description": "Le courageux Xan'tish piste, capture et dresse ces nobles serpents pour qu'ils combattent aux côtés de leurs compagnons.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 75,
+    "creatureId": 7565,
+    "creatureName": "Cobra noir",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/75",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Black Kingsnake",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/75",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        1637
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_47",
+    "name": "Cockatiel",
+    "description": "D'aucuns disent qu'il est possible d'apprendre à cet oiseau à parler. Mais il est assez intelligent pour savoir se taire.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 47,
+    "creatureId": 7390,
+    "creatureName": "Cockatiel",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/47",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Cockatiel",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/47",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_68",
+    "name": "Grande chouette cornue",
+    "description": "Traditionnellement, les enfants elfes de la nuit reçoivent une plume de chouette pour leur premier anniversaire, comme porte-bonheur.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 68,
+    "creatureId": 7553,
+    "creatureName": "Grande chouette cornue",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/68",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Great Horned Owl",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/68",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        1657,
+        1519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_65",
+    "name": "Grenouille arboricole",
+    "description": "Célèbres pour leurs cuisses puissantes et leur vue perçante.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 65,
+    "creatureId": 7549,
+    "creatureName": "Grenouille arboricole",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/65",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Tree Frog",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/65",
+      "familyType": 9,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        5861
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_64",
+    "name": "Grenouille forestière",
+    "description": "Les étals des marchands de la foire de Sombrelune regorgent de merveilles insolites et exotiques. Et aussi de grenouilles.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 64,
+    "creatureId": 7550,
+    "creatureName": "Grenouille forestière",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/64",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Wood Frog",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/64",
+      "familyType": 9,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        5861
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_72",
+    "name": "Lapin patte-blanche",
+    "description": "Ce matin, un lapin patte-blanche a tué un chasseur. Puis l'a écorché. Avec les dents.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 72,
+    "creatureId": 7560,
+    "creatureName": "Lapin patte-blanche",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/72",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Snowshoe Rabbit",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/72",
+      "familyType": 5,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_52",
+    "name": "Poulet d'Ancône",
+    "description": "Pour lui, c'est vous qui avez un goût de poulet.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 52,
+    "creatureId": 7394,
+    "creatureName": "Poulet d'Ancône",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/52",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Ancona Chicken",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/52",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        400
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_41",
+    "name": "Rex de Cornouailles",
+    "description": "Donni Anthania invite régulièrement ces chats à prendre le thé. Mais elle ne leur sert jamais leur boisson favorite : les larmes de leurs ennemis.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 41,
+    "creatureId": 7384,
+    "creatureName": "Rex de Cornouailles",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/41",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Cornish Rex Cat",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/41",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        12
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_51",
+    "name": "Sénégal",
+    "description": "Cet oiseau coloré est l'animal de compagnie préféré des Gobelins de Baie-du-Butin, qui apprécient son talent pour le comptage des pièces, l'équilibrage des budgets et le mensonge dans les négociations.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 51,
+    "creatureId": 7389,
+    "creatureName": "Sénégal",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/51",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Senegal",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/51",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_74",
+    "name": "Serpent albinos",
+    "description": "Ce reptile est un compagnon recherché par les mages du Kirin Tor. C'est à se demander s'il n'est vraiment qu'un simple serpent.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 74,
+    "creatureId": 7561,
+    "creatureName": "Serpent albinos",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/74",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Albino Snake",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/74",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        4395
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_77",
+    "name": "Serpent brun",
+    "description": "Le serpent brun habite les territoires de la Horde. Il ne paraît pas très impressionnant, jusqu'à ce qu'un ennemi passe à portée.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 77,
+    "creatureId": 7562,
+    "creatureName": "Serpent brun",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/77",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Brown Snake",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/77",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        1637
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_78",
+    "name": "Serpent cramoisi",
+    "description": "Il n'y a pas que sa cruauté naturelle qui fait du serpent cramoisi un des compagnons préférés des Trolls sombrelances. Il y a aussi sa loyauté.",
+    "category": "pets",
+    "expansion": "vanilla",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 78,
+    "creatureId": 7567,
+    "creatureName": "Serpent cramoisi",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/78",
+    "wowhead": {
+      "expansion": "vanilla",
+      "expansionName": "Vanilla",
+      "wowheadName": "Crimson Snake",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/78",
+      "familyType": 8,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        1637
+      ]
+    },
+    "mamytwink": null
   }
 ]

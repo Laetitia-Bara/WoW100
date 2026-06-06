@@ -1,1 +1,1582 @@
-[]
+[
+  {
+    "id": "pet_175",
+    "name": "Jeune phénix",
+    "description": "Enfant du dieu phénix Al'ar, ce petit vole dès sa sortie de l'œuf.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 175,
+    "creatureId": 26119,
+    "creatureName": "Jeune phénix",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/175",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Phoenix Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/175",
+      "familyType": 7,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        4131
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_146",
+    "name": "Luciole",
+    "description": "Souvent utilisé comme source de lumière par les sporelins pour naviguer le long des rivières du marécage de Zangar, ce petit insecte lumineux les aide à éviter les dangereux piqueurs Tourbembrase.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 146,
+    "creatureId": 21076,
+    "creatureName": "Luciole",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/146",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Firefly",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/146",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        3521
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_165",
+    "name": "Mojo",
+    "description": "Les féticheurs amani transforment beaucoup de gens en grenouilles. Certains ne s'en remettent jamais.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 165,
+    "creatureId": 24480,
+    "creatureName": "Mojo",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/165",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Mojo",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/165",
+      "familyType": 9,
+      "sourceCodes": [],
+      "locations": [
+        3805
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_1073",
+    "name": "Terkie",
+    "description": "Terkie, aussi timide qu’adorable, préfère la compagnie d’amis proches plutôt que d’en découvrir de nouveaux.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Butin",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "groupRequired": false,
+    "weeklyLockout": true,
+    "blizzardId": 1073,
+    "creatureId": 16445,
+    "creatureName": "Terkie",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/1073",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Terky",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/1073",
+      "familyType": 1,
+      "sourceCodes": [
+        2,
+        28
+      ],
+      "locations": [
+        7502
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_156",
+    "name": "Bananas",
+    "description": "Landro aurait préféré ne pas se séparer de Bananas. Mais il s'est dit qu'il valait mieux que le petit soit loin, très loin de Baie-du-Butin au moment où son père, le roi Mukla, se rendrait compte qu'il avait disparu.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Cartes à collectionner",
+    "source": "Jeu de cartes à collectionner",
+    "sourceType": "TCG",
+    "sourceName": "Jeu de cartes à collectionner",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 156,
+    "creatureId": 23234,
+    "creatureName": "Bananas",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/156",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Bananas",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/156",
+      "familyType": 8,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_169",
+    "name": "Cerf-volant dragon",
+    "description": "Beaucoup moins bruyant qu'un vrai dragon.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Cartes à collectionner",
+    "source": "Jeu de cartes à collectionner",
+    "sourceType": "TCG",
+    "sourceName": "Jeu de cartes à collectionner",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 169,
+    "creatureId": 25110,
+    "creatureName": "Cerf-volant dragon",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/169",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Dragon Kite",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/169",
+      "familyType": 3,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_130",
+    "name": "Jeune hippogriffe",
+    "description": "Lors d'une invasion de Harpies en Féralas, plusieurs aires d'hippogriffes furent attaquées. Des centaines de bébés se retrouvèrent orphelins et furent recueillis par les druides de l'île de Sardor.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Cartes à collectionner",
+    "source": "Jeu de cartes à collectionner",
+    "sourceType": "TCG",
+    "sourceName": "Jeu de cartes à collectionner",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 130,
+    "creatureId": 17255,
+    "creatureName": "Jeune hippogriffe",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/130",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Hippogryph Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/130",
+      "familyType": 3,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_183",
+    "name": "Marchand-d'âme éthérien",
+    "description": "Les marchands-d'âmes éthériens emmènent en voyage ceux qui peuvent libérer les essences dont ils ont besoin de leurs hôtes turbulents.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Cartes à collectionner",
+    "source": "Jeu de cartes à collectionner",
+    "sourceType": "TCG",
+    "sourceName": "Jeu de cartes à collectionner",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 183,
+    "creatureId": 27914,
+    "creatureName": "Marchand-d'âme éthérien",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/183",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Ethereal Soul-Trader",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/183",
+      "familyType": 6,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_168",
+    "name": "Poulet-fusée",
+    "description": "Lors de l'invasion de l'Outreterre par la Légion ardente, Landro Tirauloin a proposé les plans de cette créature pour participer à l'effort de guerre. La Horde et l'Alliance ont toutes deux décliné l'offre.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Cartes à collectionner",
+    "source": "Jeu de cartes à collectionner",
+    "sourceType": "TCG",
+    "sourceName": "Jeu de cartes à collectionner",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 168,
+    "creatureId": 25109,
+    "creatureName": "Poulet-fusée",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/168",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Rocket Chicken",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/168",
+      "familyType": 10,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        5287
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_179",
+    "name": "Esprit de Compétition",
+    "description": "Ces créatures stupéfiantes sont offertes en récompense aux héros victorieux au combat. Elles symbolisent le courage et la force.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Comptoir",
+    "source": "Comptoir",
+    "sourceType": "TRADINGPOST",
+    "sourceName": "Comptoir",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 179,
+    "creatureId": 27217,
+    "creatureName": "Esprit de Compétition",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/179",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Spirit of Competition",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/179",
+      "familyType": 2,
+      "sourceCodes": [
+        28
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_159",
+    "name": "Cahouète",
+    "description": "Les elekk domestiques sont dressés à la monte par les Draeneï. Les sauvages sont chassés pour leurs défenses d'ivoire.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 159,
+    "creatureId": 23266,
+    "creatureName": "Cahouète",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/159",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Peanut",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/159",
+      "familyType": 5,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        3703
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_158",
+    "name": "Egbert",
+    "description": "Les faucons-pérégrins servent généralement de montures aux Sin'dorei. Mais celui-ci fut déclaré inapte au service après le diagnostic de plusieurs névroses anxieuses.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 158,
+    "creatureId": 23258,
+    "creatureName": "Egbert",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/158",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Egbert",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/158",
+      "familyType": 5,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        3703
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_166",
+    "name": "Pachyderme rose au format pinte",
+    "description": "L'elekk rose est une créature timide. Il ne se montre qu'à ceux qui ont su gagner sa confiance, ou à ceux qui sont trop ivres pour lui faire du mal.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 166,
+    "creatureId": 24753,
+    "creatureName": "Pachyderme rose au format pinte",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/166",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Pint-Sized Pink Pachyderm",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/166",
+      "familyType": 5,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        1,
+        14,
+        1537,
+        -1
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_191",
+    "name": "Rob-fusée mécanique",
+    "description": "Ce guerrier mécanique est un cadeau en vogue lors de la fête du Voile d’hiver. Piles non incluses. Munitions mortelles incluses.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 191,
+    "creatureId": 24968,
+    "creatureName": "Rob-fusée mécanique",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/191",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Clockwork Rocket Bot",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/191",
+      "familyType": 10,
+      "sourceCodes": [
+        11
+      ],
+      "locations": [
+        1537,
+        1637
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_162",
+    "name": "Sprotchelin sinistre",
+    "description": "Cette cucurbitacée coquine aime surgir du sol et vous coller une trouille d'enfer. Voire six trouilles d'enfer.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 162,
+    "creatureId": 23909,
+    "creatureName": "Sprotchelin sinistre",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/162",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Sinister Squashling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/162",
+      "familyType": 7,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        12,
+        1497
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_157",
+    "name": "Willy",
+    "description": "Un rien maléfique mais considérablement narcoleptique. À tenir éloigné des bestioles !",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 157,
+    "creatureId": 23231,
+    "creatureName": "Willy",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/157",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Willy",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/157",
+      "familyType": 6,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        3703
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_153",
+    "name": "Wolpertinger",
+    "description": "Les participants de la fête des Brasseurs qui racontent l'histoire de cette mystérieuse créature sont légion. Ceux qui s'en rappellent encore le lendemain matin sont plus rares.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Événement mondial",
+    "source": "Évènement mondial",
+    "sourceType": "WORLDEVENT",
+    "sourceName": "Évènement mondial",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 153,
+    "creatureId": 22943,
+    "creatureName": "Wolpertinger",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/153",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Wolpertinger",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/153",
+      "familyType": 5,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        1,
+        14
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_160",
+    "name": "Schlingo",
+    "description": "Schlingo se sert de son fumet pour repousser les prédateurs et attirer les chattes. La technique marche beaucoup mieux dans un cas que dans l'autre.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Haut-fait",
+    "source": "Haut fait",
+    "sourceType": "ACHIEVEMENT",
+    "sourceName": "Haut fait",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 160,
+    "creatureId": 23274,
+    "creatureName": "Schlingo",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/160",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Stinker",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/160",
+      "familyType": 5,
+      "sourceCodes": [
+        12
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_164",
+    "name": "Bourbe-haleine",
+    "description": "Bourbe-haleine est un crocilisque comme les autres, mais doté d'un excellent sens de l'humour.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 164,
+    "creatureId": 24389,
+    "creatureName": "Bourbe-haleine",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/164",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Muckbreath",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/164",
+      "familyType": 9,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        3519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_163",
+    "name": "Chicot",
+    "description": "La peau et la viande du crocilisque sont très recherchées par les trappeurs. Mais l'animal est féroce et dur à surprendre.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 163,
+    "creatureId": 24388,
+    "creatureName": "Chicot",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/163",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Toothy",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/163",
+      "familyType": 9,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        3519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_174",
+    "name": "Chuck",
+    "description": "Après des années passées à étudier les crocilisques, le célèbre pêcheur Nat Pagle a établi que leurs bébés étaient plutôt inoffensifs.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 174,
+    "creatureId": 26056,
+    "creatureName": "Chuck",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/174",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Chuck",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/174",
+      "familyType": 9,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        3519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_132",
+    "name": "Ecrevisse magique",
+    "description": "Les écrevisses magiques sont le fruit d'un peu de pêche et de beaucoup de magie. Si votre ligne est merveilleuse, votre pêche pourrait être miraculeuse.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 132,
+    "creatureId": 18839,
+    "creatureName": "Ecrevisse magique",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/132",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Magical Crawdad",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/132",
+      "familyType": 9,
+      "sourceCodes": [],
+      "locations": [
+        3519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_173",
+    "name": "Patibulle",
+    "description": "Les crocilisques sont des prédateurs amphibiens hexapodes des eaux côtières. Certains archéologues ont pour théorie qu'ils descendent des dimeurtrodons du cratère d'Un'Goro.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Métier",
+    "source": "Métier",
+    "sourceType": "PROFESSION",
+    "sourceName": "Métier",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 173,
+    "creatureId": 26050,
+    "creatureName": "Patibulle",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/173",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Snarly",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/173",
+      "familyType": 9,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        3519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_171",
+    "name": "Cochon argenté",
+    "description": "D'après les druides, il existe un lien particulier entre les cochons argentés et les dorés, car les deux espèces sont apparues en Azeroth à la même époque.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 171,
+    "creatureId": 25147,
+    "creatureName": "Cochon argenté",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/171",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Silver Pig",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/171",
+      "familyType": 5,
+      "sourceCodes": [
+        11
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_170",
+    "name": "Cochon doré",
+    "description": "Ce cochon doré fait honneur à ses ancêtres en apportant bonne fortune à ses amis.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 170,
+    "creatureId": 25146,
+    "creatureName": "Cochon doré",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/170",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Golden Pig",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/170",
+      "familyType": 5,
+      "sourceCodes": [
+        11
+      ],
+      "locations": [
+        1537,
+        1637
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_131",
+    "name": "Dragonnet du Néant",
+    "description": "Petit des drakes du Néant d'Outreterre, ce jeune dragon débute dans son rôle de chasseur, gardien et adorable terreur venue des cieux.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 131,
+    "creatureId": 18381,
+    "creatureName": "Dragonnet du Néant",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/131",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Netherwhelp",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/131",
+      "familyType": 2,
+      "sourceCodes": [
+        8
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_180",
+    "name": "Essence de compétition",
+    "description": "Seuls les héros ayant prouvé leur valeur par de grands exploits reçoivent l'un de ces reptiles mystiques.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 180,
+    "creatureId": 27346,
+    "creatureName": "Essence de compétition",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/180",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Essence of Competition",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/180",
+      "familyType": 2,
+      "sourceCodes": [
+        11
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_189",
+    "name": "Mini Tyraël",
+    "description": "Je suis la Justice incarnée !",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 189,
+    "creatureId": 29089,
+    "creatureName": "Mini Tyraël",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/189",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Mini Tyrael",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/189",
+      "familyType": 1,
+      "sourceCodes": [
+        8
+      ],
+      "locations": [
+        1519,
+        1497
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_124",
+    "name": "Polet",
+    "description": "Cette petite créature tient de nombreux traits de ses parents. Mais pour ce qui est du chant, elle est unique.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 124,
+    "creatureId": 16456,
+    "creatureName": "Polet",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/124",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Poley",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/124",
+      "familyType": 8,
+      "sourceCodes": [],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_155",
+    "name": "Verni",
+    "description": "Verni grogne quand il est de mauvaise humeur, ou quand il mange. Dans les deux cas, mieux vaut le laisser tranquille.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion",
+    "sourceType": "PROMOTION",
+    "sourceName": "Promotion",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 155,
+    "creatureId": 23198,
+    "creatureName": "Verni",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/155",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Lucky",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/155",
+      "familyType": 5,
+      "sourceCodes": [
+        8
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_149",
+    "name": "Pititaile",
+    "description": "L'énergie magique émise lors de la transformation d'Aile-du-ciel en sa véritable forme arakkoa a libéré cette pauvre créature, un petit oiseau emprisonné par Luanga pour alimenter son ignoble malédiction.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Quête",
+    "source": "Quête",
+    "sourceType": "QUEST",
+    "sourceName": "Quête",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 149,
+    "creatureId": 22445,
+    "creatureName": "Pititaile",
+    "isCapturable": false,
+    "isTradable": false,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/149",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Miniwing",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/149",
+      "familyType": 3,
+      "sourceCodes": [
+        4,
+        5
+      ],
+      "locations": [
+        3519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_1927",
+    "name": "Ash’ana",
+    "description": "L’un des petits d’Ash’alah, que les Tisse-Rêves vous ont confié.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 1927,
+    "creatureId": 17254,
+    "creatureName": "Ash’ana",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/1927",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Ash'ana",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/1927",
+      "familyType": 8,
+      "sourceCodes": [
+        5
+      ],
+      "locations": []
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_172",
+    "name": "Brûletin incendiaire",
+    "description": "Les anciens chamans ont lancé un avertissement : des feux follets de Ragnaros, fidèles serviteurs du seigneur du Feu, ont envahi le front du Magma. Nous vous conseillons la plus grande vigilance.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 172,
+    "creatureId": 25706,
+    "creatureName": "Brûletin incendiaire",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/172",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Searing Scorchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/172",
+      "familyType": 7,
+      "sourceCodes": [
+        2
+      ],
+      "locations": [
+        5733
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_186",
+    "name": "Frai du Néant",
+    "description": "Venus de la forêt de Terokkar, les petits de raie du Néant naissent pendant la saison des pluies. Des centaines d'individus qui constituent une couvée, seuls quelques-uns survivent jusqu'à l'âge adulte.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 186,
+    "creatureId": 28470,
+    "creatureName": "Frai du Néant",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/186",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Nether Ray Fry",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/186",
+      "familyType": 3,
+      "sourceCodes": [],
+      "locations": [
+        3519
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_144",
+    "name": "Jeune faucon-dragon argenté",
+    "description": "Un faucon-dragon d'une espèce féroce, qu'on aperçoit souvent piquer du ciel sur sa proie.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 144,
+    "creatureId": 21063,
+    "creatureName": "Jeune faucon-dragon argenté",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/144",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Silver Dragonhawk Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/144",
+      "familyType": 2,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        3430
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_145",
+    "name": "Jeune faucon-dragon bleu",
+    "description": "Élevé par les rares marchands encore actifs à Raz-de-Néant.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 145,
+    "creatureId": 21056,
+    "creatureName": "Jeune faucon-dragon bleu",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/145",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Blue Dragonhawk Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/145",
+      "familyType": 2,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        3523
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_142",
+    "name": "Jeune faucon-dragon doré",
+    "description": "Naguère coqueluche des éleveurs de faucons-dragons de Lune-d’Argent. Facilement repérable pour ses prédateurs la nuit, ce qui stimule ses réflexes dès son plus jeune âge.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 142,
+    "creatureId": 21055,
+    "creatureName": "Jeune faucon-dragon doré",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/142",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Golden Dragonhawk Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/142",
+      "familyType": 2,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        3430
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_143",
+    "name": "Jeune faucon-dragon rouge",
+    "description": "Ennemi juré des faucons-dragons argentés. S'entend relativement bien avec les faucons-dragons dorés.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 143,
+    "creatureId": 21064,
+    "creatureName": "Jeune faucon-dragon rouge",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/143",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Red Dragonhawk Hatchling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/143",
+      "familyType": 2,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        3430
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_137",
+    "name": "Lapin marron",
+    "description": "Ce lapin est la chose la plus adorable que ses adversaires ont jamais vu. Et la dernière, aussi.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 137,
+    "creatureId": 20472,
+    "creatureName": "Lapin marron",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/137",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Brown Rabbit",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/137",
+      "familyType": 5,
+      "sourceCodes": [
+        5
+      ],
+      "locations": [
+        3523
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_167",
+    "name": "Minuscule sporoptère",
+    "description": "Les sporoptères sauvages sont des créatures féroces. Mais, domestiqués jeunes, ils peuvent devenir des compagnons fidèles.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 167,
+    "creatureId": 25062,
+    "creatureName": "Minuscule sporoptère",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/167",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Tiny Sporebat",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/167",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        14
+      ],
+      "locations": [
+        3521
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_141",
+    "name": "Phalène blanc",
+    "description": "Aime par-dessus tout voler au cœur des nuits embrumées, qui sont fréquentes sur l'île de Brume-Azur.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 141,
+    "creatureId": 21018,
+    "creatureName": "Phalène blanc",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/141",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "White Moth",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/141",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        8277,
+        3557
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_138",
+    "name": "Phalène bleu",
+    "description": "Cet insecte délicat habite l'île de Brume-Azur, et on raconte qu'il possède des propriétés guérisseuses.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 138,
+    "creatureId": 21010,
+    "creatureName": "Phalène bleu",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/138",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Blue Moth",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/138",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        3557
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_140",
+    "name": "Phalène jaune",
+    "description": "Aime par-dessus tout voler au cœur des orages, qui sont fréquents sur l'île de Brume-Azur.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 140,
+    "creatureId": 21008,
+    "creatureName": "Phalène jaune",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/140",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Yellow Moth",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/140",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        8277,
+        3557
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_139",
+    "name": "Phalène rouge",
+    "description": "Produit de l'exposition d'insectes à des énergies magiques sauvages, cette créature aux couleurs surprenantes est apparue après l'introduction de phalènes dans les écodômes de Raz-de-Néant.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 139,
+    "creatureId": 21009,
+    "creatureName": "Phalène rouge",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/139",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Red Moth",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/139",
+      "familyType": 3,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        3523
+      ]
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "pet_136",
+    "name": "Wyrmelin de mana",
+    "description": "Rashaad l'éthéré a commencé l'élevage de ces énigmatiques créatures après avoir eu vent de leur capacité à se nourrir d'énergie arcanique.",
+    "category": "pets",
+    "expansion": "tbc",
+    "zone": "",
+    "instance": "Vendeur",
+    "source": "Vendeur",
+    "sourceType": "VENDOR",
+    "sourceName": "Vendeur",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 136,
+    "creatureId": 20408,
+    "creatureName": "Wyrmelin de mana",
+    "isCapturable": false,
+    "isTradable": true,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/battle-pet/136",
+    "wowhead": {
+      "expansion": "tbc",
+      "expansionName": "The Burning Crusade",
+      "wowheadName": "Mana Wyrmling",
+      "wowheadUrl": "https://www.wowhead.com/battle-pet/136",
+      "familyType": 6,
+      "sourceCodes": [
+        2,
+        5
+      ],
+      "locations": [
+        3523
+      ]
+    },
+    "mamytwink": null
+  }
+]
