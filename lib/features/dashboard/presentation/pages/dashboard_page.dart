@@ -81,6 +81,9 @@ class _DashboardPageState extends State<DashboardPage> {
   }
 
   Future<void> _openBattleNetLogin() async {
+    await BattleNetTokenService().clearToken();
+    await _selectedCharacterService.clearCharacter();
+
     final service = BattleNetAuthService();
     final url = service.buildAuthorizationUrl();
 
