@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/services/battle_net_auth_service.dart';
 import '../../../../core/theme/app_theme.dart';
@@ -9,9 +8,7 @@ class AuthPage extends StatelessWidget {
 
   Future<void> _openBattleNetLogin() async {
     final service = BattleNetAuthService();
-    final url = service.buildAuthorizationUrl();
-
-    await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+    await service.openAuthorization();
   }
 
   @override

@@ -1,3 +1,5 @@
+import 'package:url_launcher/url_launcher.dart';
+
 import '../config/app_config.dart';
 
 class BattleNetAuthService {
@@ -13,5 +15,15 @@ class BattleNetAuthService {
     });
 
     return uri.toString();
+  }
+
+  Future<void> openAuthorization() async {
+    final uri = Uri.parse(buildAuthorizationUrl());
+
+    await launchUrl(
+      uri,
+      mode: LaunchMode.platformDefault,
+      webOnlyWindowName: '_self',
+    );
   }
 }

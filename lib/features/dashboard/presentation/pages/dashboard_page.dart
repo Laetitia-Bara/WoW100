@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:wow100/core/services/battle_net_auth_service.dart';
 import 'package:wow100/core/services/battle_net_token_service.dart';
 
@@ -85,9 +84,7 @@ class _DashboardPageState extends State<DashboardPage> {
     await _selectedCharacterService.clearCharacter();
 
     final service = BattleNetAuthService();
-    final url = service.buildAuthorizationUrl();
-
-    await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+    await service.openAuthorization();
   }
 
   Future<void> _openCharacterSwitch() async {
