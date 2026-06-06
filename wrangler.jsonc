@@ -1,13 +1,8 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "wow100",
+  "pages_build_output_dir": "build/web",
   "compatibility_date": "2026-06-05",
-  "observability": {
-    "enabled": true
-  },
-  "assets": {
-    "directory": "web"
-  },
   "compatibility_flags": [
     "nodejs_compat"
   ]
