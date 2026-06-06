@@ -383,8 +383,8 @@ class _CharacterIdentityBackdrop extends StatelessWidget {
           Positioned(
             top: -70,
             right: -34,
-            child: Icon(
-              style.icon,
+            child: _FactionBackdropEmblem(
+              type: style.emblemType,
               size: 210,
               color: style.emblemColor.withValues(alpha: 0.11),
             ),
@@ -392,8 +392,8 @@ class _CharacterIdentityBackdrop extends StatelessWidget {
           Positioned(
             bottom: -54,
             left: 44,
-            child: Icon(
-              style.icon,
+            child: _FactionBackdropEmblem(
+              type: style.emblemType,
               size: 150,
               color: style.accentColor.withValues(alpha: 0.08),
             ),
@@ -450,7 +450,7 @@ _FactionBackdropStyle _factionBackdropStyle(String faction) {
         ],
         accentColor: Color(0xFFE7B84F),
         emblemColor: Color(0xFF4F8DFF),
-        icon: Icons.shield_outlined,
+        emblemType: _FactionEmblemType.alliance,
       );
     case 'horde':
       return const _FactionBackdropStyle(
@@ -461,7 +461,7 @@ _FactionBackdropStyle _factionBackdropStyle(String faction) {
         ],
         accentColor: Color(0xFFE23B3B),
         emblemColor: Color(0xFFFF5048),
-        icon: Icons.local_fire_department,
+        emblemType: _FactionEmblemType.horde,
       );
     default:
       return const _FactionBackdropStyle(
@@ -472,7 +472,7 @@ _FactionBackdropStyle _factionBackdropStyle(String faction) {
         ],
         accentColor: AppTheme.gold,
         emblemColor: AppTheme.gold,
-        icon: Icons.public,
+        emblemType: _FactionEmblemType.neutral,
       );
   }
 }
@@ -515,13 +515,130 @@ class _FactionBackdropStyle {
     required this.gradientColors,
     required this.accentColor,
     required this.emblemColor,
-    required this.icon,
+    required this.emblemType,
   });
 
   final List<Color> gradientColors;
   final Color accentColor;
   final Color emblemColor;
-  final IconData icon;
+  final _FactionEmblemType emblemType;
+}
+
+enum _FactionEmblemType { alliance, horde, neutral }
+
+class _FactionBackdropEmblem extends StatelessWidget {
+  const _FactionBackdropEmblem({
+    required this.type,
+    required this.size,
+    required this.color,
+  });
+
+  final _FactionEmblemType type;
+  final double size;
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) {
+    if (type == _FactionEmblemType.neutral) {
+      return Icon(Icons.public, size: size, color: color);
+    }
+
+    return SizedBox.square(
+      dimension: size,
+      child: CustomPaint(painter: _FactionEmblemPainter(type, color)),
+    );
+  }
+}
+
+class _FactionEmblemPainter extends CustomPainter {
+  const _FactionEmblemPainter(this.type, this.color);
+
+  final _FactionEmblemType type;
+  final Color color;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()
+      ..color = color
+      ..style = PaintingStyle.fill;
+
+    final path = switch (type) {
+      _FactionEmblemType.alliance => _alliancePath(size),
+      _FactionEmblemType.horde => _hordePath(size),
+      _FactionEmblemType.neutral => Path(),
+    };
+
+    canvas.drawPath(path, paint);
+  }
+
+  @override
+  bool shouldRepaint(covariant _FactionEmblemPainter oldDelegate) {
+    return oldDelegate.type != type || oldDelegate.color != color;
+  }
+
+  Path _alliancePath(Size size) {
+    final w = size.width;
+    final h = size.height;
+
+    return Path()
+      ..fillType = PathFillType.evenOdd
+      ..moveTo(w * 0.50, h * 0.07)
+      ..cubicTo(w * 0.58, h * 0.17, w * 0.67, h * 0.12, w * 0.77, h * 0.12)
+      ..cubicTo(w * 0.74, h * 0.20, w * 0.72, h * 0.28, w * 0.82, h * 0.35)
+      ..cubicTo(w * 0.73, h * 0.37, w * 0.73, h * 0.46, w * 0.89, h * 0.52)
+      ..cubicTo(w * 0.76, h * 0.54, w * 0.77, h * 0.66, w * 0.95, h * 0.72)
+      ..cubicTo(w * 0.75, h * 0.78, w * 0.72, h * 0.87, w * 0.65, h * 0.97)
+      ..cubicTo(w * 0.60, h * 0.88, w * 0.56, h * 0.78, w * 0.50, h * 0.68)
+      ..cubicTo(w * 0.44, h * 0.78, w * 0.40, h * 0.88, w * 0.35, h * 0.97)
+      ..cubicTo(w * 0.28, h * 0.87, w * 0.25, h * 0.78, w * 0.05, h * 0.72)
+      ..cubicTo(w * 0.23, h * 0.66, w * 0.24, h * 0.54, w * 0.11, h * 0.52)
+      ..cubicTo(w * 0.27, h * 0.46, w * 0.27, h * 0.37, w * 0.18, h * 0.35)
+      ..cubicTo(w * 0.28, h * 0.28, w * 0.26, h * 0.20, w * 0.23, h * 0.12)
+      ..cubicTo(w * 0.33, h * 0.12, w * 0.42, h * 0.17, w * 0.50, h * 0.07)
+      ..close()
+      ..moveTo(w * 0.50, h * 0.25)
+      ..cubicTo(w * 0.60, h * 0.34, w * 0.64, h * 0.45, w * 0.61, h * 0.57)
+      ..lineTo(w * 0.50, h * 0.53)
+      ..lineTo(w * 0.39, h * 0.57)
+      ..cubicTo(w * 0.36, h * 0.45, w * 0.40, h * 0.34, w * 0.50, h * 0.25)
+      ..close()
+      ..moveTo(w * 0.37, h * 0.66)
+      ..lineTo(w * 0.50, h * 0.73)
+      ..lineTo(w * 0.63, h * 0.66)
+      ..lineTo(w * 0.59, h * 0.83)
+      ..lineTo(w * 0.50, h * 0.89)
+      ..lineTo(w * 0.41, h * 0.83)
+      ..close();
+  }
+
+  Path _hordePath(Size size) {
+    final w = size.width;
+    final h = size.height;
+
+    return Path()
+      ..fillType = PathFillType.evenOdd
+      ..moveTo(w * 0.50, h * 0.07)
+      ..cubicTo(w * 0.65, h * 0.16, w * 0.74, h * 0.25, w * 0.88, h * 0.25)
+      ..cubicTo(w * 0.84, h * 0.34, w * 0.80, h * 0.44, w * 0.86, h * 0.55)
+      ..cubicTo(w * 0.74, h * 0.53, w * 0.66, h * 0.61, w * 0.62, h * 0.73)
+      ..cubicTo(w * 0.58, h * 0.85, w * 0.55, h * 0.93, w * 0.50, h * 0.97)
+      ..cubicTo(w * 0.45, h * 0.93, w * 0.42, h * 0.85, w * 0.38, h * 0.73)
+      ..cubicTo(w * 0.34, h * 0.61, w * 0.26, h * 0.53, w * 0.14, h * 0.55)
+      ..cubicTo(w * 0.20, h * 0.44, w * 0.16, h * 0.34, w * 0.12, h * 0.25)
+      ..cubicTo(w * 0.26, h * 0.25, w * 0.35, h * 0.16, w * 0.50, h * 0.07)
+      ..close()
+      ..moveTo(w * 0.50, h * 0.25)
+      ..cubicTo(w * 0.43, h * 0.37, w * 0.39, h * 0.50, w * 0.42, h * 0.65)
+      ..lineTo(w * 0.50, h * 0.78)
+      ..lineTo(w * 0.58, h * 0.65)
+      ..cubicTo(w * 0.61, h * 0.50, w * 0.57, h * 0.37, w * 0.50, h * 0.25)
+      ..close()
+      ..moveTo(w * 0.40, h * 0.46)
+      ..lineTo(w * 0.50, h * 0.35)
+      ..lineTo(w * 0.60, h * 0.46)
+      ..lineTo(w * 0.50, h * 0.56)
+      ..close();
+  }
 }
 
 class _TotalProgressSummary extends StatelessWidget {
