@@ -1,6 +1,9 @@
+import 'package:flutter/foundation.dart';
+
 class AppConfig {
   static const battleNetClientId = 'd1a63c10c180407c9ce681b2faee7b5d';
   static const _defaultApiBaseUrl = '/api';
+  static const _defaultAppBaseUrl = 'https://wow100.pages.dev';
 
   static const _apiBaseUrl = String.fromEnvironment(
     'WOW100_API_BASE_URL',
@@ -12,14 +15,28 @@ class AppConfig {
     defaultValue: '',
   );
 
-  static String get apiBaseUrl => normalizeApiBaseUrl(_apiBaseUrl);
+  static String get apiBaseUrl {
+    final normalized = normalizeApiBaseUrl(_apiBaseUrl);
 
-  static String get appBaseUrl {
-    if (_appBaseUrl.isNotEmpty) {
-      return _appBaseUrl;
+    if (!kIsWeb && normalized.startsWith('/')) {
+      return '$appBaseUrl$normalized';
     }
 
-    return Uri.base.origin;
+    return normalized;
+  }
+
+  static String get appBaseUrl {
+    final configuredBaseUrl = normalizeAppBaseUrl(_appBaseUrl);
+    if (configuredBaseUrl != null) {
+      return configuredBaseUrl;
+    }
+
+    if (Uri.base.hasScheme &&
+        (Uri.base.scheme == 'http' || Uri.base.scheme == 'https')) {
+      return Uri.base.origin;
+    }
+
+    return _defaultAppBaseUrl;
   }
 
   static String get battleNetRedirectUri => '$appBaseUrl/callback';
@@ -47,6 +64,26 @@ class AppConfig {
 
     final path = trimmed.startsWith('/') ? trimmed : '/$trimmed';
     return _withoutTrailingSlash(path);
+  }
+
+  static String? normalizeAppBaseUrl(String value) {
+    final trimmed = value.trim();
+
+    if (trimmed.isEmpty || _looksLikeLocalFilePath(trimmed)) {
+      return null;
+    }
+
+    final uri = Uri.tryParse(trimmed);
+    if (uri == null || !uri.hasScheme) {
+      return null;
+    }
+
+    final scheme = uri.scheme.toLowerCase();
+    if ((scheme != 'http' && scheme != 'https') || uri.host.isEmpty) {
+      return null;
+    }
+
+    return _withoutTrailingSlash(uri.origin);
   }
 
   static bool _looksLikeLocalFilePath(String value) {

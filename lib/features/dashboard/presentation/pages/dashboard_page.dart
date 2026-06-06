@@ -365,35 +365,38 @@ class _CharacterIdentityBackdrop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final panes = [
-      _IdentityPaneData(
-        color: _wowFactionColor(character.faction),
-        icon: _factionIcon(character.faction),
-      ),
-      _IdentityPaneData(
-        color: _wowRaceColor(character.race),
-        icon: _raceIcon(character.race),
-      ),
-      _IdentityPaneData(
-        color: _wowClassColor(character.characterClass),
-        icon: _classIcon(character.characterClass),
-      ),
-    ];
+    final style = _factionBackdropStyle(character.faction);
 
     return Positioned.fill(
       child: Stack(
         children: [
-          Row(
-            children: [
-              for (var index = 0; index < panes.length; index++)
-                Expanded(
-                  child: _IdentityBackdropPane(
-                    color: panes[index].color,
-                    icon: panes[index].icon,
-                    showDivider: index < panes.length - 1,
-                  ),
-                ),
-            ],
+          DecoratedBox(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: style.gradientColors,
+              ),
+            ),
+            child: const SizedBox.expand(),
+          ),
+          Positioned(
+            top: -70,
+            right: -34,
+            child: Icon(
+              style.icon,
+              size: 210,
+              color: style.emblemColor.withValues(alpha: 0.11),
+            ),
+          ),
+          Positioned(
+            bottom: -54,
+            left: 44,
+            child: Icon(
+              style.icon,
+              size: 150,
+              color: style.accentColor.withValues(alpha: 0.08),
+            ),
           ),
           Positioned.fill(
             child: DecoratedBox(
@@ -413,56 +416,6 @@ class _CharacterIdentityBackdrop extends StatelessWidget {
       ),
     );
   }
-}
-
-class _IdentityBackdropPane extends StatelessWidget {
-  const _IdentityBackdropPane({
-    required this.color,
-    required this.icon,
-    required this.showDivider,
-  });
-
-  final Color color;
-  final IconData icon;
-  final bool showDivider;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        border: Border(
-          right: BorderSide(
-            color: showDivider
-                ? Colors.white.withValues(alpha: 0.06)
-                : Colors.transparent,
-          ),
-        ),
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            color.withValues(alpha: 0.24),
-            color.withValues(alpha: 0.08),
-            Colors.transparent,
-          ],
-        ),
-      ),
-      child: Align(
-        alignment: Alignment.bottomRight,
-        child: Transform.translate(
-          offset: const Offset(18, 18),
-          child: Icon(icon, size: 104, color: color.withValues(alpha: 0.18)),
-        ),
-      ),
-    );
-  }
-}
-
-class _IdentityPaneData {
-  const _IdentityPaneData({required this.color, required this.icon});
-
-  final Color color;
-  final IconData icon;
 }
 
 String _identityKey(String value) {
@@ -486,60 +439,41 @@ String _identityKey(String value) {
       .replaceAll('ü', 'u');
 }
 
-Color _wowFactionColor(String faction) {
+_FactionBackdropStyle _factionBackdropStyle(String faction) {
   switch (_identityKey(faction)) {
     case 'alliance':
-      return const Color(0xFF2E8CFF);
+      return const _FactionBackdropStyle(
+        gradientColors: [
+          Color(0xFF102445),
+          Color(0xFF172D59),
+          Color(0xFF0C1428),
+        ],
+        accentColor: Color(0xFFE7B84F),
+        emblemColor: Color(0xFF4F8DFF),
+        icon: Icons.shield_outlined,
+      );
     case 'horde':
-      return const Color(0xFFE23B3B);
+      return const _FactionBackdropStyle(
+        gradientColors: [
+          Color(0xFF3A1518),
+          Color(0xFF24131D),
+          Color(0xFF111827),
+        ],
+        accentColor: Color(0xFFE23B3B),
+        emblemColor: Color(0xFFFF5048),
+        icon: Icons.local_fire_department,
+      );
     default:
-      return AppTheme.gold;
-  }
-}
-
-Color _wowRaceColor(String race) {
-  switch (_identityKey(race)) {
-    case 'elfe de sang':
-    case 'blood elf':
-      return const Color(0xFFD6B052);
-    case 'elfe de la nuit':
-    case 'night elf':
-      return const Color(0xFF8B5CF6);
-    case 'elfe du vide':
-    case 'void elf':
-      return const Color(0xFF6D5BFF);
-    case 'draenei':
-    case 'draenei forge-lumiere':
-      return const Color(0xFF75B6FF);
-    case 'orc':
-    case 'orc maghar':
-      return const Color(0xFF64A35F);
-    case 'troll':
-    case 'troll zandalari':
-      return const Color(0xFF3DD5B0);
-    case 'tauren':
-    case 'tauren de haut-roc':
-      return const Color(0xFFC68A57);
-    case 'mort-vivant':
-    case 'undead':
-      return const Color(0xFF7E8A9A);
-    case 'humain':
-    case 'human':
-      return const Color(0xFFE4C39A);
-    case 'nain':
-    case 'dwarf':
-      return const Color(0xFFB86B45);
-    case 'gnome':
-      return const Color(0xFFE879F9);
-    case 'worgen':
-      return const Color(0xFF7C8795);
-    case 'pandaren':
-      return const Color(0xFF2BB673);
-    case 'vulpérin':
-    case 'vulperin':
-      return const Color(0xFFE6A15C);
-    default:
-      return AppTheme.gold;
+      return const _FactionBackdropStyle(
+        gradientColors: [
+          Color(0xFF1E293B),
+          Color(0xFF111827),
+          Color(0xFF0B1120),
+        ],
+        accentColor: AppTheme.gold,
+        emblemColor: AppTheme.gold,
+        icon: Icons.public,
+      );
   }
 }
 
@@ -576,71 +510,18 @@ Color _wowClassColor(String characterClass) {
   }
 }
 
-IconData _factionIcon(String faction) {
-  switch (_identityKey(faction)) {
-    case 'alliance':
-      return Icons.shield_outlined;
-    case 'horde':
-      return Icons.local_fire_department;
-    default:
-      return Icons.public;
-  }
-}
+class _FactionBackdropStyle {
+  const _FactionBackdropStyle({
+    required this.gradientColors,
+    required this.accentColor,
+    required this.emblemColor,
+    required this.icon,
+  });
 
-IconData _raceIcon(String race) {
-  switch (_identityKey(race)) {
-    case 'elfe de sang':
-    case 'blood elf':
-      return Icons.auto_awesome;
-    case 'elfe de la nuit':
-    case 'night elf':
-    case 'elfe du vide':
-    case 'void elf':
-      return Icons.nightlight_round;
-    case 'draenei':
-    case 'draenei forge-lumiere':
-      return Icons.flare;
-    case 'orc':
-    case 'orc maghar':
-    case 'tauren':
-    case 'tauren de haut-roc':
-      return Icons.terrain_outlined;
-    default:
-      return Icons.person_outline;
-  }
-}
-
-IconData _classIcon(String characterClass) {
-  switch (_identityKey(characterClass)) {
-    case 'chevalier de la mort':
-      return Icons.ac_unit;
-    case 'chasseur de demons':
-      return Icons.visibility_outlined;
-    case 'druide':
-      return Icons.spa_outlined;
-    case 'evocateur':
-      return Icons.air;
-    case 'chasseur':
-      return Icons.track_changes;
-    case 'mage':
-      return Icons.auto_fix_high;
-    case 'moine':
-      return Icons.self_improvement;
-    case 'paladin':
-      return Icons.wb_sunny_outlined;
-    case 'pretre':
-      return Icons.healing;
-    case 'voleur':
-      return Icons.flash_on;
-    case 'chaman':
-      return Icons.thunderstorm_outlined;
-    case 'demoniste':
-      return Icons.blur_on;
-    case 'guerrier':
-      return Icons.construction;
-    default:
-      return Icons.stars;
-  }
+  final List<Color> gradientColors;
+  final Color accentColor;
+  final Color emblemColor;
+  final IconData icon;
 }
 
 class _TotalProgressSummary extends StatelessWidget {

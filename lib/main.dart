@@ -13,19 +13,52 @@ class WoW100App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final uri = Uri.base;
-    final isCallback = uri.path == '/callback';
-
     return MaterialApp(
       title: 'WoW100%',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
-      home: isCallback
-          ? AuthCallbackPage(
-              code: uri.queryParameters['code'],
-              error: uri.queryParameters['error'],
-            )
-          : const DashboardPage(),
+      initialRoute: _initialRouteName(),
+      onGenerateRoute: _buildRoute,
     );
+  }
+
+  String _initialRouteName() {
+    final platformRoute =
+        WidgetsBinding.instance.platformDispatcher.defaultRouteName;
+
+    if (_isCallbackRoute(platformRoute)) {
+      return platformRoute;
+    }
+
+    if (Uri.base.path == '/callback') {
+      return Uri.base.toString();
+    }
+
+    return '/';
+  }
+
+  Route<void> _buildRoute(RouteSettings settings) {
+    final routeName = settings.name ?? '/';
+    final uri = Uri.tryParse(routeName);
+
+    if (uri != null && uri.path == '/callback') {
+      return MaterialPageRoute(
+        settings: settings,
+        builder: (_) => AuthCallbackPage(
+          code: uri.queryParameters['code'],
+          error: uri.queryParameters['error'],
+        ),
+      );
+    }
+
+    return MaterialPageRoute(
+      settings: settings,
+      builder: (_) => const DashboardPage(),
+    );
+  }
+
+  bool _isCallbackRoute(String routeName) {
+    final uri = Uri.tryParse(routeName);
+    return uri != null && uri.path == '/callback';
   }
 }

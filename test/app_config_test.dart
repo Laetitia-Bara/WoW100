@@ -29,4 +29,34 @@ void main() {
       expect(AppConfig.normalizeApiBaseUrl('file:///tmp/api'), '/api');
     });
   });
+
+  group('AppConfig.normalizeAppBaseUrl', () {
+    test('keeps absolute http URLs without trailing slash', () {
+      expect(
+        AppConfig.normalizeAppBaseUrl('https://wow100.cosmos-lty.fr/'),
+        'https://wow100.cosmos-lty.fr',
+      );
+    });
+
+    test('rejects relative URLs', () {
+      expect(AppConfig.normalizeAppBaseUrl('/callback'), isNull);
+    });
+
+    test('rejects file URLs', () {
+      expect(AppConfig.normalizeAppBaseUrl('file:///'), isNull);
+    });
+  });
+
+  group('AppConfig runtime defaults', () {
+    test('uses an absolute API URL outside Flutter Web', () {
+      expect(AppConfig.apiBaseUrl, 'https://wow100.pages.dev/api');
+    });
+
+    test('uses an HTTPS Battle.net redirect URL', () {
+      expect(
+        AppConfig.battleNetRedirectUri,
+        'https://wow100.pages.dev/callback',
+      );
+    });
+  });
 }
