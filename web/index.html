@@ -31,6 +31,28 @@
 
   <title>WoW100%</title>
   <link rel="manifest" href="manifest.json">
+  <script>
+    (function () {
+      var isAndroid = /Android/i.test(navigator.userAgent);
+      var isCallback = window.location.pathname === '/callback';
+      var query = window.location.search || '';
+      var hasOAuthResult = /[?&](code|error)=/.test(query);
+
+      if (!isAndroid || !isCallback || !hasOAuthResult) {
+        return;
+      }
+
+      var fallback = encodeURIComponent(window.location.href);
+      window.location.replace(
+        'intent://callback' +
+        query +
+        '#Intent;scheme=wow100;package=com.example.wow100;' +
+        'S.browser_fallback_url=' +
+        fallback +
+        ';end'
+      );
+    })();
+  </script>
 </head>
 <body>
   <!--

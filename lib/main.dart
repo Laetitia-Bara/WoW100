@@ -30,7 +30,7 @@ class WoW100App extends StatelessWidget {
       return platformRoute;
     }
 
-    if (Uri.base.path == '/callback') {
+    if (_isCallbackUri(Uri.base)) {
       return Uri.base.toString();
     }
 
@@ -41,7 +41,7 @@ class WoW100App extends StatelessWidget {
     final routeName = settings.name ?? '/';
     final uri = Uri.tryParse(routeName);
 
-    if (uri != null && uri.path == '/callback') {
+    if (uri != null && _isCallbackUri(uri)) {
       return MaterialPageRoute(
         settings: settings,
         builder: (_) => AuthCallbackPage(
@@ -59,6 +59,11 @@ class WoW100App extends StatelessWidget {
 
   bool _isCallbackRoute(String routeName) {
     final uri = Uri.tryParse(routeName);
-    return uri != null && uri.path == '/callback';
+    return uri != null && _isCallbackUri(uri);
+  }
+
+  bool _isCallbackUri(Uri uri) {
+    return uri.path == '/callback' ||
+        (uri.scheme == 'wow100' && uri.host == 'callback');
   }
 }
