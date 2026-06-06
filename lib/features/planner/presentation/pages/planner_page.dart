@@ -5,6 +5,7 @@ import 'package:wow100/data/models/tracking_category.dart';
 import 'package:wow100/data/repositories/battle_net_repository.dart';
 
 import '../../../../core/services/local_check_service.dart';
+import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/tracking_item.dart';
@@ -28,6 +29,8 @@ class PlannerPage extends StatefulWidget {
 class _PlannerPageState extends State<PlannerPage> {
   final PlannerRepository _repository = JsonPlannerRepository();
   final LocalCheckService _localCheckService = LocalCheckService();
+  final SelectedCharacterService _selectedCharacterService =
+      SelectedCharacterService();
   final Set<String> _collapsedGroups = {};
 
   static const List<String> _preferredMountGroups = [
@@ -64,13 +67,30 @@ class _PlannerPageState extends State<PlannerPage> {
       widget.category == TrackingCategory.pets ||
       widget.extension == WowExpansion.allPets;
 
-  String get _collectionName => _isPetsPlanner ? 'mascottes' : 'montures';
+  bool get _isAchievementsPlanner =>
+      widget.category == TrackingCategory.achievements ||
+      widget.extension == WowExpansion.allAchievements;
 
-  String get _allCollectionTitle =>
-      _isPetsPlanner ? 'Toutes les mascottes' : 'Toutes les montures';
+  String get _collectionName {
+    if (_isAchievementsPlanner) return 'hauts faits';
+    if (_isPetsPlanner) return 'mascottes';
 
-  String get _plannerTitle =>
-      _isPetsPlanner ? 'Mascottes à récupérer' : 'Montures à récupérer';
+    return 'montures';
+  }
+
+  String get _allCollectionTitle {
+    if (_isAchievementsPlanner) return 'Tous les hauts faits';
+    if (_isPetsPlanner) return 'Toutes les mascottes';
+
+    return 'Toutes les montures';
+  }
+
+  String get _plannerTitle {
+    if (_isAchievementsPlanner) return 'Hauts faits a terminer';
+    if (_isPetsPlanner) return 'Mascottes à récupérer';
+
+    return 'Montures à récupérer';
+  }
 
   @override
   void initState() {
@@ -87,9 +107,23 @@ class _PlannerPageState extends State<PlannerPage> {
       final token = await BattleNetTokenService().loadToken();
       final ownedMountIds = <int>{};
       final ownedPetIds = <int>{};
+      final ownedAchievementIds = <int>{};
 
       if (token != null) {
-        if (_isPetsPlanner) {
+        if (_isAchievementsPlanner) {
+          final character = await _selectedCharacterService.loadCharacter();
+
+          if (character != null) {
+            final achievements = await BattleNetRepository().getAchievements(
+              token,
+              character.realmSlug,
+              character.name,
+            );
+            ownedAchievementIds.addAll(
+              achievements.map((achievement) => achievement.id),
+            );
+          }
+        } else if (_isPetsPlanner) {
           final pets = await BattleNetRepository().getPets(token);
           ownedPetIds.addAll(pets.map((pet) => pet.id));
         } else {
@@ -110,9 +144,15 @@ class _PlannerPageState extends State<PlannerPage> {
             item.category == TrackingCategory.pets &&
             item.blizzardId != null &&
             ownedPetIds.contains(item.blizzardId);
+        final ownedAchievement =
+            item.category == TrackingCategory.achievements &&
+            item.blizzardId != null &&
+            ownedAchievementIds.contains(item.blizzardId);
 
         updatedItems.add(
-          item.copyWith(obtained: checked || ownedMount || ownedPet),
+          item.copyWith(
+            obtained: checked || ownedMount || ownedPet || ownedAchievement,
+          ),
         );
       }
 
@@ -308,12 +348,13 @@ class _PlannerPageState extends State<PlannerPage> {
               children: [
                 Text(
                   widget.extension == WowExpansion.allMounts ||
-                          widget.extension == WowExpansion.allPets
+                          widget.extension == WowExpansion.allPets ||
+                          widget.extension == WowExpansion.allAchievements
                       ? _allCollectionTitle
                       : _plannerTitle,
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.w800,
-                  ),
+                  style: Theme.of(
+                    context,
+                  ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800),
                 ),
                 const SizedBox(height: 16),
                 TextField(
@@ -659,7 +700,9 @@ class _PlannerItemCard extends StatelessWidget {
           children: [
             Checkbox(value: item.obtained, onChanged: onChanged),
             IconButton(
-              tooltip: item.wowheadItemId != null
+              tooltip:
+                  item.wowheadItemId != null ||
+                      item.wowheadAchievementId != null
                   ? 'Ouvrir sur Wowhead'
                   : 'Ouvrir la fiche',
               icon: const Icon(Icons.open_in_new),

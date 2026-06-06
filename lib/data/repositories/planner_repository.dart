@@ -18,11 +18,19 @@ class JsonPlannerRepository implements PlannerRepository {
     WowExpansion expansion, {
     TrackingCategory category = TrackingCategory.mounts,
   }) async {
-    if (category == TrackingCategory.pets || expansion == WowExpansion.allPets) {
+    if (category == TrackingCategory.achievements ||
+        expansion == WowExpansion.allAchievements) {
+      return _source.loadAchievementItems(expansion);
+    }
+
+    if (category == TrackingCategory.pets ||
+        expansion == WowExpansion.allPets) {
       return _source.loadPetItems(expansion);
     }
 
     switch (expansion) {
+      case WowExpansion.allAchievements:
+        return _source.loadAchievementItems(WowExpansion.allAchievements);
       case WowExpansion.allMounts:
         return _source.loadMountItems(WowExpansion.allMounts);
       case WowExpansion.vanilla:

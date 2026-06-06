@@ -99,9 +99,11 @@ class BattleNetRepository {
     final achievements = data['achievements'] as List;
 
     return achievements.map((entry) {
+      final achievement = entry['achievement'] as Map<String, dynamic>? ?? {};
+
       return WowAchievement.fromJson({
-        'id': entry['id'],
-        'name': entry['achievement']['name'],
+        'id': entry['id'] ?? achievement['id'],
+        'name': achievement['name'],
       });
     }).toList();
   }
@@ -111,9 +113,9 @@ class BattleNetRepository {
         ? AppConfig.apiBaseUrl.substring(0, AppConfig.apiBaseUrl.length - 1)
         : AppConfig.apiBaseUrl;
 
-    return Uri.parse('$baseUrl/$path').replace(
-      queryParameters: queryParameters,
-    );
+    return Uri.parse(
+      '$baseUrl/$path',
+    ).replace(queryParameters: queryParameters);
   }
 
   Map<String, String> _authHeaders(String token) {

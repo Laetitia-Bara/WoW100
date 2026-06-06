@@ -104,9 +104,8 @@ class _DashboardPageState extends State<DashboardPage> {
     final result = await showModalBottomSheet<Set<TrackingCategory>>(
       context: context,
       isScrollControlled: true,
-      builder: (_) => _CategoryFilterSheet(
-        selectedCategories: _visibleCategories,
-      ),
+      builder: (_) =>
+          _CategoryFilterSheet(selectedCategories: _visibleCategories),
     );
 
     if (result == null || !mounted) return;
@@ -184,10 +183,7 @@ class _DashboardPageState extends State<DashboardPage> {
             const SizedBox(width: 6),
             IconButton(
               tooltip: 'Informations légales',
-              constraints: const BoxConstraints.tightFor(
-                width: 36,
-                height: 36,
-              ),
+              constraints: const BoxConstraints.tightFor(width: 36, height: 36),
               padding: EdgeInsets.zero,
               visualDensity: VisualDensity.compact,
               icon: const Icon(Icons.info_outline),
@@ -235,6 +231,10 @@ class _DashboardPageState extends State<DashboardPage> {
                   const SizedBox(height: 20),
                   _DashboardActionBar(
                     newestFirst: _newestFirst,
+                    onAchievementsTap: () => _openPlanner(
+                      WowExpansion.allAchievements,
+                      category: TrackingCategory.achievements,
+                    ),
                     onMountsTap: () => _openPlanner(WowExpansion.allMounts),
                     onPetsTap: () => _openPlanner(
                       WowExpansion.allPets,
@@ -267,6 +267,10 @@ class _DashboardPageState extends State<DashboardPage> {
                           ),
                           onToggleCollapse: () =>
                               _toggleCollapse(progress.expansion),
+                          onAchievementsTap: () => _openPlanner(
+                            progress.expansion,
+                            category: TrackingCategory.achievements,
+                          ),
                           onMountsTap: () => _openPlanner(progress.expansion),
                           onPetsTap: () => _openPlanner(
                             progress.expansion,
@@ -287,6 +291,10 @@ class _DashboardPageState extends State<DashboardPage> {
                           ),
                           onToggleCollapse: () =>
                               _toggleCollapse(progress.expansion),
+                          onAchievementsTap: () => _openPlanner(
+                            progress.expansion,
+                            category: TrackingCategory.achievements,
+                          ),
                           onMountsTap: () => _openPlanner(progress.expansion),
                           onPetsTap: () => _openPlanner(
                             progress.expansion,
@@ -411,6 +419,7 @@ class _TotalProgressSummary extends StatelessWidget {
 class _DashboardActionBar extends StatelessWidget {
   const _DashboardActionBar({
     required this.newestFirst,
+    required this.onAchievementsTap,
     required this.onMountsTap,
     required this.onPetsTap,
     required this.onFilterTap,
@@ -418,22 +427,17 @@ class _DashboardActionBar extends StatelessWidget {
   });
 
   final bool newestFirst;
+  final VoidCallback onAchievementsTap;
   final VoidCallback onMountsTap;
   final VoidCallback onPetsTap;
   final VoidCallback onFilterTap;
   final VoidCallback onSortTap;
 
-  void _showComingSoon(BuildContext context, String label) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('$label arrive dans une prochaine étape')),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     final collectableButtons = [
       OutlinedButton.icon(
-        onPressed: () => _showComingSoon(context, 'Hauts faits'),
+        onPressed: onAchievementsTap,
         icon: const Icon(Icons.emoji_events_outlined),
         label: const Text('HF'),
       ),
@@ -461,9 +465,7 @@ class _DashboardActionBar extends StatelessWidget {
             : 'Extensions récentes en premier',
         onPressed: onSortTap,
         icon: Icon(
-          newestFirst
-              ? Icons.vertical_align_bottom
-              : Icons.vertical_align_top,
+          newestFirst ? Icons.vertical_align_bottom : Icons.vertical_align_top,
         ),
       ),
     ];
@@ -481,7 +483,11 @@ class _DashboardActionBar extends StatelessWidget {
         return Row(
           children: [
             Expanded(
-              child: Wrap(spacing: 10, runSpacing: 10, children: collectableButtons),
+              child: Wrap(
+                spacing: 10,
+                runSpacing: 10,
+                children: collectableButtons,
+              ),
             ),
             Wrap(spacing: 8, children: toolButtons),
           ],
@@ -494,6 +500,7 @@ class _DashboardActionBar extends StatelessWidget {
 class _ExpansionCard extends StatelessWidget {
   const _ExpansionCard({
     required this.progress,
+    required this.onAchievementsTap,
     required this.onMountsTap,
     required this.onPetsTap,
     required this.isCollapsed,
@@ -502,6 +509,7 @@ class _ExpansionCard extends StatelessWidget {
   });
 
   final ExpansionProgress progress;
+  final VoidCallback onAchievementsTap;
   final VoidCallback onMountsTap;
   final VoidCallback onPetsTap;
   final bool isCollapsed;
@@ -581,6 +589,7 @@ class _ExpansionCard extends StatelessWidget {
                           label: category.shortLabel,
                           value: '$completed/$total',
                           onTap: switch (category) {
+                            TrackingCategory.achievements => onAchievementsTap,
                             TrackingCategory.mounts => onMountsTap,
                             TrackingCategory.pets => onPetsTap,
                             _ => null,

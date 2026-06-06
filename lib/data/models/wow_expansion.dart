@@ -1,5 +1,6 @@
 enum WowExpansion {
   total,
+  allAchievements,
   allMounts,
   allPets,
   vanilla,
@@ -21,6 +22,8 @@ extension WowExpansionLabel on WowExpansion {
     switch (this) {
       case WowExpansion.total:
         return 'Vue totale';
+      case WowExpansion.allAchievements:
+        return 'Tous les hauts faits';
       case WowExpansion.allMounts:
         return 'Toutes les montures';
       case WowExpansion.allPets:

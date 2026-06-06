@@ -7,6 +7,26 @@ import '../models/tracking_category.dart';
 import '../models/wow_expansion.dart';
 
 class JsonPlannerSource {
+  static const Map<WowExpansion, String> _achievementAssetPaths = {
+    WowExpansion.vanilla: 'assets/data/achievements/vanilla_achievements.json',
+    WowExpansion.tbc: 'assets/data/achievements/tbc_achievements.json',
+    WowExpansion.wrath: 'assets/data/achievements/wrath_achievements.json',
+    WowExpansion.cataclysm:
+        'assets/data/achievements/cataclysm_achievements.json',
+    WowExpansion.mop: 'assets/data/achievements/mop_achievements.json',
+    WowExpansion.wod: 'assets/data/achievements/wod_achievements.json',
+    WowExpansion.legion: 'assets/data/achievements/legion_achievements.json',
+    WowExpansion.bfa: 'assets/data/achievements/bfa_achievements.json',
+    WowExpansion.shadowlands:
+        'assets/data/achievements/shadowlands_achievements.json',
+    WowExpansion.dragonflight:
+        'assets/data/achievements/dragonflight_achievements.json',
+    WowExpansion.warWithin:
+        'assets/data/achievements/warWithin_achievements.json',
+    WowExpansion.midnight:
+        'assets/data/achievements/midnight_achievements.json',
+  };
+
   static const Map<WowExpansion, String> _petAssetPaths = {
     WowExpansion.vanilla: 'assets/data/pets/vanilla_pets.json',
     WowExpansion.tbc: 'assets/data/pets/tbc_pets.json',
@@ -79,8 +99,8 @@ class JsonPlannerSource {
       final sourceName = (manualSource?.isNotEmpty ?? false)
           ? manualSource!
           : (mamytwinkSource?.isNotEmpty ?? false)
-              ? mamytwinkSource!
-              : _sourceNameFromBlizzard(mount);
+          ? mamytwinkSource!
+          : _sourceNameFromBlizzard(mount);
       final status = _mountStatus(
         sourceName: sourceName,
         difficulty:
@@ -155,6 +175,64 @@ class JsonPlannerSource {
     });
 
     return items;
+  }
+
+  Future<List<TrackingItem>> loadAchievementItems(
+    WowExpansion expansion,
+  ) async {
+    if (expansion == WowExpansion.allAchievements) {
+      final generated = await _tryLoadItemsFromAsset(
+        'assets/generated/achievements_wow100_draft.json',
+      );
+
+      if (generated.isNotEmpty) {
+        return generated;
+      }
+
+      return _loadAllAchievementAssets();
+    }
+
+    final assetPath = _achievementAssetPaths[expansion];
+    if (assetPath == null) return [];
+
+    final items = await _tryLoadItemsFromAsset(assetPath);
+
+    items.sort((a, b) {
+      final instanceCompare = a.instance.compareTo(b.instance);
+      if (instanceCompare != 0) return instanceCompare;
+
+      return a.name.compareTo(b.name);
+    });
+
+    return items;
+  }
+
+  Future<List<TrackingItem>> _loadAllAchievementAssets() async {
+    final items = <TrackingItem>[];
+
+    for (final assetPath in _achievementAssetPaths.values) {
+      items.addAll(await _tryLoadItemsFromAsset(assetPath));
+    }
+
+    items.sort((a, b) {
+      final expansionCompare = a.expansion.index.compareTo(b.expansion.index);
+      if (expansionCompare != 0) return expansionCompare;
+
+      final instanceCompare = a.instance.compareTo(b.instance);
+      if (instanceCompare != 0) return instanceCompare;
+
+      return a.name.compareTo(b.name);
+    });
+
+    return items;
+  }
+
+  Future<List<TrackingItem>> _tryLoadItemsFromAsset(String assetPath) async {
+    try {
+      return await loadItemsFromAsset(assetPath);
+    } catch (_) {
+      return [];
+    }
   }
 
   Future<List<Map<String, dynamic>>> _loadJsonList(String assetPath) async {
