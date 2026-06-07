@@ -34,6 +34,7 @@ cloudflare/.wrangler/
 .dart_tool/
 .dart_appdata/
 .dart_localappdata/
+.gradle/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
