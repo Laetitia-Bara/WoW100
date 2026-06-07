@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-06-07T18:49:04.852Z",
+  "pets": {
+    "total": 2133,
+    "wowheadIndexRows": 2923,
+    "classified": 2133,
+    "unclassified": 0,
+    "mismatches": [],
+    "missingFromWowheadIndex": []
+  },
+  "achievements": {
+    "total": 8792,
+    "wowheadIndexRows": 1000,
+    "rowsWithWowheadIndex": 992,
+    "rowsWithWowheadExpansion": 0,
+    "classified": 4577,
+    "unclassified": 4215,
+    "mismatches": [],
+    "limitation": "L'index Wowhead local des hauts faits ne contient que les 1000 premiers résultats et aucun champ expansion exploitable. Utiliser wowhead_patch_audit_report.json pour l'audit par page quand Wowhead ne bloque pas les requêtes."
+  },
+  "mountsPatchAuditSummary": {
+    "audited": 1608,
+    "byStatus": {
+      "ok": 1175,
+      "unclassified": 232,
+      "patch_missing": 17,
+      "availability_override": 2,
+      "mismatch": 57,
+      "fetch_failed": 125
+    },
+    "byKind": {
+      "mount": {
+        "ok": 1175,
+        "unclassified": 232,
+        "patch_missing": 17,
+        "availability_override": 2,
+        "mismatch": 57,
+        "fetch_failed": 125
+      }
+    },
+    "mismatches": 57,
+    "unclassifiedWithPatch": 232,
+    "availabilityOverrides": 2,
+    "patchMissing": 17,
+    "fetchFailed": 125
+  }
+}

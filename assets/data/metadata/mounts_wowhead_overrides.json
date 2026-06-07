@@ -1,0 +1,57 @@
+[
+  {
+    "blizzardId": 110,
+    "wowheadItemId": 19872,
+    "expansion": "mop",
+    "category": "black_market",
+    "zone": "Marché noir",
+    "instance": "Hôtel des ventes au marché noir",
+    "source": "Marché noir",
+    "difficulty": "Indisponible",
+    "boss": "",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "externalUrl": "https://www.wowhead.com/fr/item=19872/raptor-razzashi-rapide",
+    "verification": {
+      "source": "Wowhead",
+      "note": "Ancien butin de Zul'Gurub retiré; disponible via le marché noir sur le jeu moderne."
+    }
+  },
+  {
+    "blizzardId": 111,
+    "wowheadItemId": 19902,
+    "expansion": "mop",
+    "category": "black_market",
+    "zone": "Marché noir",
+    "instance": "Hôtel des ventes au marché noir",
+    "source": "Marché noir",
+    "difficulty": "Indisponible",
+    "boss": "",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "externalUrl": "https://www.wowhead.com/fr/item=19902/tigre-zulien-rapide",
+    "verification": {
+      "source": "Wowhead",
+      "note": "Ancien butin de Zul'Gurub retiré; disponible via le marché noir sur le jeu moderne."
+    }
+  },
+  {
+    "blizzardId": 1528,
+    "wowheadItemId": 187641,
+    "expansion": "shadowlands",
+    "category": "profession",
+    "zone": "Zereth Mortis",
+    "instance": "Synthèse de protoforme",
+    "source": "Métier",
+    "difficulty": "Facile",
+    "boss": "",
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "externalUrl": "https://www.wowhead.com/fr/item=187641/r%C3%AAnes-du-destrier-de-zereth-scind%C3%A9",
+    "verification": {
+      "source": "Wowhead",
+      "patch": "9.2.0",
+      "note": "Ajouté dans la mise à jour 9.2.0, Eternity's End."
+    }
+  }
+]

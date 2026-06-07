@@ -65,10 +65,14 @@ class JsonPlannerSource {
     final mamytwinkDraft = await _loadJsonList(
       'assets/generated/mounts_metadata_mamytwink_draft.json',
     );
+    final wowheadOverrides = await _loadJsonList(
+      'assets/data/metadata/mounts_wowhead_overrides.json',
+    );
     final mamytwinkCandidates = await _loadCandidates();
 
     final manualById = _byBlizzardId(manualMetadata);
     final draftById = _byBlizzardId(mamytwinkDraft);
+    final wowheadById = _byBlizzardId(wowheadOverrides);
 
     final items = <TrackingItem>[];
 
@@ -77,9 +81,11 @@ class JsonPlannerSource {
       if (blizzardId == null) continue;
 
       final manual = manualById[blizzardId];
+      final wowhead = wowheadById[blizzardId];
       final draft = draftById[blizzardId];
       final mamytwink = mamytwinkCandidates[blizzardId];
       final expansionKey =
+          wowhead?['expansion'] ??
           manual?['expansion'] ??
           draft?['expansion'] ??
           mamytwink?['expansion'];
@@ -94,9 +100,14 @@ class JsonPlannerSource {
           : WowExpansion.allMounts;
       final manualSource =
           manual?['source'] as String? ?? manual?['sourceName'] as String?;
+      final wowheadSource =
+          wowhead?['source'] as String? ?? wowhead?['sourceName'] as String?;
       final mamytwinkSource = mamytwink?['source'] as String?;
-      final manualInstance = manual?['instance'] as String?;
-      final sourceName = (manualSource?.isNotEmpty ?? false)
+      final manualInstance =
+          wowhead?['instance'] as String? ?? manual?['instance'] as String?;
+      final sourceName = (wowheadSource?.isNotEmpty ?? false)
+          ? wowheadSource!
+          : (manualSource?.isNotEmpty ?? false)
           ? manualSource!
           : (mamytwinkSource?.isNotEmpty ?? false)
           ? mamytwinkSource!
@@ -104,6 +115,7 @@ class JsonPlannerSource {
       final status = _mountStatus(
         sourceName: sourceName,
         difficulty:
+            wowhead?['difficulty'] as String? ??
             manual?['difficulty'] as String? ??
             mamytwink?['difficulty'] as String?,
         hasClassification: expansionKey is String,
@@ -118,20 +130,29 @@ class JsonPlannerSource {
           name: mount['name'] ?? mamytwink?['mamytwinkName'] ?? '',
           category: TrackingCategory.mounts,
           expansion: itemExpansion,
-          zone: manual?['zone'] ?? mamytwink?['extensionName'] ?? 'Non classe',
+          zone:
+              wowhead?['zone'] ??
+              manual?['zone'] ??
+              mamytwink?['extensionName'] ??
+              'Non classe',
           instance: expansion == WowExpansion.allMounts
               ? status
               : instance.isEmpty
               ? 'Source a verifier'
               : instance,
           source: sourceName,
-          groupRequired: manual?['groupRequired'] ?? false,
+          groupRequired:
+              wowhead?['groupRequired'] ?? manual?['groupRequired'] ?? false,
           weeklyLockout:
-              manual?['weeklyLockout'] ?? _isWeeklyMountSource(sourceName),
+              wowhead?['weeklyLockout'] ??
+              manual?['weeklyLockout'] ??
+              _isWeeklyMountSource(sourceName),
           obtained: false,
           blizzardId: blizzardId,
-          boss: manual?['boss'] ?? '',
-          externalUrl: mamytwink?['mamytwinkUrl'] ?? '',
+          wowheadItemId: wowhead?['wowheadItemId'] as int?,
+          boss: wowhead?['boss'] ?? manual?['boss'] ?? '',
+          externalUrl:
+              wowhead?['externalUrl'] ?? mamytwink?['mamytwinkUrl'] ?? '',
         ),
       );
     }
