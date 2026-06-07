@@ -20,20 +20,14 @@ foreach ($dir in $requiredDirs) {
     New-Item -ItemType Directory -Force -Path $dir | Out-Null
 }
 
-$oldPubCache = Join-Path $projectRoot ".pub-cache"
-if (Test-Path $oldPubCache) {
-    robocopy $oldPubCache $env:PUB_CACHE /E /R:1 /W:1 /NFL /NDL /NJH /NJS /NP
-    if ($LASTEXITCODE -gt 7) {
-        throw "robocopy failed while copying Pub cache with exit code $LASTEXITCODE"
-    }
-}
-
-$oldGradleCache = Join-Path $projectRoot ".gradle"
-if (Test-Path $oldGradleCache) {
-    robocopy $oldGradleCache $env:GRADLE_USER_HOME /E /XF "*.lock" /R:1 /W:1 /NFL /NDL /NJH /NJS /NP
-    if ($LASTEXITCODE -gt 7) {
-        throw "robocopy failed while copying Gradle cache with exit code $LASTEXITCODE"
-    }
+$flutterGradleSettings = Join-Path $flutterRoot "packages\flutter_tools\gradle\settings.gradle.kts"
+if (Test-Path $flutterGradleSettings) {
+    $settingsText = Get-Content $flutterGradleSettings -Raw
+    $settingsText = $settingsText.Replace(
+        "repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)",
+        "repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)"
+    )
+    Set-Content -Path $flutterGradleSettings -Value $settingsText -NoNewline
 }
 
 Set-Location $projectRoot
