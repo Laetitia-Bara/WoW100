@@ -39,6 +39,9 @@ class TrackingItem {
   /// Obtenu par le joueur
   final bool obtained;
 
+  /// N'est plus possible a obtenir en jeu.
+  final bool unavailable;
+
   final int? blizzardId;
 
   final String boss;
@@ -58,6 +61,7 @@ class TrackingItem {
     required this.groupRequired,
     required this.weeklyLockout,
     required this.obtained,
+    this.unavailable = false,
     this.blizzardId,
     required this.boss,
     this.externalUrl = '',
@@ -77,6 +81,7 @@ class TrackingItem {
       groupRequired: groupRequired,
       weeklyLockout: weeklyLockout,
       obtained: obtained ?? this.obtained,
+      unavailable: unavailable,
       blizzardId: blizzardId,
       boss: boss,
       externalUrl: externalUrl,
@@ -98,9 +103,59 @@ class TrackingItem {
       groupRequired: json['groupRequired'] ?? false,
       weeklyLockout: json['weeklyLockout'] ?? false,
       obtained: false,
+      unavailable: json['unavailable'] ?? _looksUnavailable(json),
       blizzardId: json['blizzardId'],
       boss: json['boss'] ?? '',
       externalUrl: json['externalUrl'] ?? json['mamytwinkUrl'] ?? '',
     );
+  }
+
+  static bool _looksUnavailable(Map<String, dynamic> json) {
+    final values = [
+      json['availability'],
+      json['status'],
+      json['difficulty'],
+      json['categoryType'],
+      json['instance'],
+      json['source'],
+      json['sourceName'],
+      json['note'],
+    ];
+
+    return values.whereType<String>().any((value) {
+      final normalized = _normalizeAvailabilityText(value);
+
+      return normalized.contains('indisponible') ||
+          normalized.contains('plus accessible') ||
+          normalized.contains('plus disponible') ||
+          RegExp(
+            r'\b(retire|retiree|retirees|retired)\b',
+          ).hasMatch(normalized) ||
+          normalized.contains('removed') ||
+          normalized.contains('unavailable');
+    });
+  }
+
+  static String _normalizeAvailabilityText(String value) {
+    return value
+        .toLowerCase()
+        .replaceAll(RegExp(r"['’´`\-/]"), ' ')
+        .replaceAll('à', 'a')
+        .replaceAll('â', 'a')
+        .replaceAll('ä', 'a')
+        .replaceAll('é', 'e')
+        .replaceAll('è', 'e')
+        .replaceAll('ê', 'e')
+        .replaceAll('ë', 'e')
+        .replaceAll('î', 'i')
+        .replaceAll('ï', 'i')
+        .replaceAll('ô', 'o')
+        .replaceAll('ö', 'o')
+        .replaceAll('ù', 'u')
+        .replaceAll('û', 'u')
+        .replaceAll('ü', 'u')
+        .replaceAll('ç', 'c')
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
   }
 }

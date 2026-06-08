@@ -1,4 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:wow100/data/models/tracking_item.dart';
 import 'package:wow100/data/models/wow_expansion.dart';
 import 'package:wow100/data/sources/json_planner_source.dart';
 
@@ -29,6 +30,12 @@ void main() {
           vanillaMounts.map((item) => item.blizzardId),
           isNot(contains(1528)),
         );
+        expect(
+          vanillaMounts
+              .singleWhere((item) => item.blizzardId == 46)
+              .unavailable,
+          isTrue,
+        );
 
         expect(
           mopMounts.singleWhere((item) => item.blizzardId == 110).source,
@@ -46,5 +53,24 @@ void main() {
         expect(zerethsteed.instance, 'Synthèse de protoforme');
       },
     );
+  });
+
+  group('TrackingItem.fromJson', () {
+    test('does not mark normal retirer text as unavailable', () {
+      final item = TrackingItem.fromJson({
+        'id': 'achievement_1',
+        'name': 'Quel Delar',
+        'category': 'achievements',
+        'expansion': 'wrath',
+        'zone': 'Quete',
+        'instance': 'Quete',
+        'source': 'Retrouver la poignee, retirer la lame et reforger l arme.',
+        'groupRequired': false,
+        'weeklyLockout': false,
+        'boss': '',
+      });
+
+      expect(item.unavailable, isFalse);
+    });
   });
 }

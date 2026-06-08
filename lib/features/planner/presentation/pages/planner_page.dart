@@ -56,6 +56,7 @@ class _PlannerPageState extends State<PlannerPage> {
   List<TrackingItem> _items = [];
   bool _isLoading = true;
   bool _missingOnly = false;
+  bool _hideUnavailable = false;
   String _searchQuery = '';
   final Set<TrackingCategory> _selectedCategories = {};
   final Set<String> _selectedGroups = {};
@@ -378,11 +379,13 @@ class _PlannerPageState extends State<PlannerPage> {
           item.source.toLowerCase().contains(query);
 
       final matchesMissingOnly = !_missingOnly || !item.obtained;
+      final matchesAvailability = !_hideUnavailable || !item.unavailable;
 
       return matchesCategory &&
           matchesGroup &&
           matchesSearch &&
-          matchesMissingOnly;
+          matchesMissingOnly &&
+          matchesAvailability;
     }).toList();
 
     final groupedItems = _groupedItems(filteredItems);
@@ -455,29 +458,30 @@ class _PlannerPageState extends State<PlannerPage> {
                   onTap: () => _openGroupSelector(groupOptions),
                 ),
                 const SizedBox(height: 12),
-                Row(
+                Wrap(
+                  spacing: 24,
+                  runSpacing: 12,
                   children: [
-                    Switch(
+                    _PlannerFilterSwitch(
                       value: _missingOnly,
+                      title: 'Afficher uniquement les manquants',
+                      subtitle: 'Masquer les $_collectionName déjà obtenues',
                       onChanged: (value) {
                         setState(() {
                           _missingOnly = value;
                         });
                       },
                     ),
-                    const SizedBox(width: 10),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text('Afficher uniquement les manquants'),
-                          const SizedBox(height: 2),
-                          Text(
-                            'Masquer les $_collectionName déjà obtenues',
-                            style: const TextStyle(color: AppTheme.mutedText),
-                          ),
-                        ],
-                      ),
+                    _PlannerFilterSwitch(
+                      value: _hideUnavailable,
+                      title: 'Masquer les indisponibles',
+                      subtitle:
+                          'Retirer les sources qui ne sont plus obtenables',
+                      onChanged: (value) {
+                        setState(() {
+                          _hideUnavailable = value;
+                        });
+                      },
                     ),
                   ],
                 ),
@@ -566,6 +570,46 @@ class _PlannerGroupHeader extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _PlannerFilterSwitch extends StatelessWidget {
+  const _PlannerFilterSwitch({
+    required this.value,
+    required this.title,
+    required this.subtitle,
+    required this.onChanged,
+  });
+
+  final bool value;
+  final String title;
+  final String subtitle;
+  final ValueChanged<bool> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 360),
+      child: Row(
+        children: [
+          Switch(value: value, onChanged: onChanged),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(title),
+                const SizedBox(height: 2),
+                Text(
+                  subtitle,
+                  style: const TextStyle(color: AppTheme.mutedText),
+                ),
+              ],
             ),
           ),
         ],
@@ -941,6 +985,12 @@ class _PlannerItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final tags = [
+      if (item.unavailable)
+        const _PlannerTag(
+          label: 'Indisponible',
+          backgroundColor: Color(0xFF7F1D1D),
+          foregroundColor: Color(0xFFFEE2E2),
+        ),
       _PlannerTag(label: item.category.label),
       _PlannerTag(label: item.weeklyLockout ? 'Hebdomadaire' : 'Farm libre'),
       _PlannerTag(
@@ -1010,16 +1060,25 @@ class _PlannerItemCard extends StatelessWidget {
 }
 
 class _PlannerTag extends StatelessWidget {
-  const _PlannerTag({required this.label});
+  const _PlannerTag({
+    required this.label,
+    this.backgroundColor = Colors.white10,
+    this.foregroundColor,
+  });
 
   final String label;
+  final Color backgroundColor;
+  final Color? foregroundColor;
 
   @override
   Widget build(BuildContext context) {
     return Chip(
       label: Text(label),
+      labelStyle: foregroundColor == null
+          ? null
+          : TextStyle(color: foregroundColor),
       visualDensity: VisualDensity.compact,
-      backgroundColor: Colors.white10,
+      backgroundColor: backgroundColor,
       side: BorderSide.none,
     );
   }

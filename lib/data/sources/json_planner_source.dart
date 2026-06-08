@@ -105,6 +105,11 @@ class JsonPlannerSource {
       final mamytwinkSource = mamytwink?['source'] as String?;
       final manualInstance =
           wowhead?['instance'] as String? ?? manual?['instance'] as String?;
+      final difficulty =
+          _metadataString(wowhead, 'difficulty') ??
+          _metadataString(manual, 'difficulty') ??
+          _metadataString(draft, 'difficulty') ??
+          _metadataString(mamytwink, 'difficulty');
       final sourceName = (wowheadSource?.isNotEmpty ?? false)
           ? wowheadSource!
           : (manualSource?.isNotEmpty ?? false)
@@ -114,11 +119,13 @@ class JsonPlannerSource {
           : _sourceNameFromBlizzard(mount);
       final status = _mountStatus(
         sourceName: sourceName,
-        difficulty:
-            wowhead?['difficulty'] as String? ??
-            manual?['difficulty'] as String? ??
-            mamytwink?['difficulty'] as String?,
+        difficulty: difficulty,
         hasClassification: expansionKey is String,
+      );
+      final unavailable = _isUnavailableMount(
+        sourceName: sourceName,
+        difficulty: difficulty,
+        metadata: [wowhead, manual, draft, mamytwink],
       );
       final instance = (manualInstance?.isNotEmpty ?? false)
           ? manualInstance!
@@ -148,6 +155,7 @@ class JsonPlannerSource {
               manual?['weeklyLockout'] ??
               _isWeeklyMountSource(sourceName),
           obtained: false,
+          unavailable: unavailable,
           blizzardId: blizzardId,
           wowheadItemId: wowhead?['wowheadItemId'] as int?,
           boss: wowhead?['boss'] ?? manual?['boss'] ?? '',
@@ -289,6 +297,59 @@ class JsonPlannerSource {
     return mount['sourceType'] ?? 'Source à vérifier';
   }
 
+  String? _metadataString(Map<String, dynamic>? metadata, String key) {
+    if (metadata == null) return null;
+
+    final direct = metadata[key];
+    if (direct is String && direct.isNotEmpty) return direct;
+
+    final mamytwink = metadata['mamytwink'];
+    if (mamytwink is Map<String, dynamic>) {
+      final nested = mamytwink[key];
+      if (nested is String && nested.isNotEmpty) return nested;
+    }
+
+    return null;
+  }
+
+  bool _isUnavailableMount({
+    required String sourceName,
+    required String? difficulty,
+    required List<Map<String, dynamic>?> metadata,
+  }) {
+    final values = <String>[sourceName, ?difficulty];
+
+    for (final item in metadata.whereType<Map<String, dynamic>>()) {
+      for (final key in [
+        'availability',
+        'category',
+        'categoryType',
+        'status',
+      ]) {
+        final value = item[key];
+        if (value is String) values.add(value);
+      }
+
+      final mamytwink = item['mamytwink'];
+      if (mamytwink is Map<String, dynamic>) {
+        for (final key in ['difficulty', 'source', 'category', 'status']) {
+          final value = mamytwink[key];
+          if (value is String) values.add(value);
+        }
+      }
+    }
+
+    return values.map(_normalizeMountStatusText).any((value) {
+      return value.contains('indisponible') ||
+          value.contains('plus accessible') ||
+          value.contains('plus disponible') ||
+          RegExp(r'\b(retire|retiree|retirees|retired)\b').hasMatch(value) ||
+          value.contains('removed') ||
+          value.contains('unavailable') ||
+          value == 'retired';
+    });
+  }
+
   bool _isWeeklyMountSource(String sourceName) {
     final normalized = sourceName.toLowerCase();
 
@@ -305,7 +366,8 @@ class JsonPlannerSource {
     final source = _normalizeMountStatusText(sourceName);
     final difficultyText = _normalizeMountStatusText(difficulty ?? '');
 
-    if (source.contains('retire') || difficultyText.contains('indisponible')) {
+    if (RegExp(r'\b(retire|retiree|retirees|retired)\b').hasMatch(source) ||
+        difficultyText.contains('indisponible')) {
       return 'Retirées / indisponibles';
     }
 
