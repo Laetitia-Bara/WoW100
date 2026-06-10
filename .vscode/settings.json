@@ -1,24 +1,4 @@
 {
-  "dart.flutterSdkPath": "D:\\flutter",
-  "dart.flutterSdkPaths": [
-    "D:\\flutter"
-  ],
-  "dart.sdkPath": "D:\\flutter\\bin\\cache\\dart-sdk",
-  "dart.env": {
-    "FLUTTER_ROOT": "D:\\flutter",
-    "PUB_CACHE": "D:\\flutter\\.pub-cache",
-    "GRADLE_USER_HOME": "D:\\flutter\\.gradle",
-    "APPDATA": "D:\\flutter\\.dart_appdata",
-    "LOCALAPPDATA": "D:\\flutter\\.dart_localappdata"
-  },
-  "terminal.integrated.env.windows": {
-    "FLUTTER_ROOT": "D:\\flutter",
-    "PUB_CACHE": "D:\\flutter\\.pub-cache",
-    "GRADLE_USER_HOME": "D:\\flutter\\.gradle",
-    "APPDATA": "D:\\flutter\\.dart_appdata",
-    "LOCALAPPDATA": "D:\\flutter\\.dart_localappdata",
-    "PATH": "D:\\flutter\\bin;${env:PATH}"
-  },
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.automationProfile.windows": {
     "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
