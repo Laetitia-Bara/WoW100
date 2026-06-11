@@ -35,6 +35,8 @@ flutter:
     - assets/data/pets/
     - assets/images/expansions/
     - assets/images/
+    - assets/images/bann/
+    - assets/images/icones/
     - assets/data/achievements/
     - assets/generated/
     - assets/app_icon/
