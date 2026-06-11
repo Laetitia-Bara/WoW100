@@ -178,8 +178,8 @@ class _DashboardPageState extends State<DashboardPage> {
           children: [
             Image.asset(
               'assets/images/icones/icone_app_dash.png',
-              height: 150,
-              width: 150,
+              height: 42,
+              fit: BoxFit.contain,
             ),
             const SizedBox(width: 6),
             IconButton(
