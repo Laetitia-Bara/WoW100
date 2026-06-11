@@ -67,7 +67,7 @@ class _CharacterSwitchPageState extends State<CharacterSwitchPage> {
 
     if (_error != null) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Changer de personnage')),
+        appBar: AppBar(title: const Text('Mes personnage')),
         body: Padding(
           padding: const EdgeInsets.all(18),
           child: Card(
