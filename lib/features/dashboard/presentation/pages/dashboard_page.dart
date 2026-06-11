@@ -176,7 +176,11 @@ class _DashboardPageState extends State<DashboardPage> {
         title: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Image.asset('assets/images/icon_app.png', height: 40, width: 40),
+            Image.asset(
+              'assets/images/icones/icon_app.png',
+              height: 40,
+              width: 40,
+            ),
             const SizedBox(width: 6),
             IconButton(
               tooltip: 'Informations légales',
