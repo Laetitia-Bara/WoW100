@@ -128,12 +128,13 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
     final characters = _sortedCharacters();
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Choisir un personnage')),
+      appBar: AppBar(title: const Text('')),
       body: LayoutBuilder(
         builder: (context, constraints) {
           final columns = constraints.maxWidth >= 900 ? 2 : 1;
-          final contentWidth =
-              constraints.maxWidth >= 900 ? 1180.0 : double.infinity;
+          final contentWidth = constraints.maxWidth >= 900
+              ? 1180.0
+              : double.infinity;
 
           return Center(
             child: ConstrainedBox(
@@ -243,10 +244,9 @@ class _CharacterCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             IconButton(
-              tooltip:
-                  isMainCharacter
-                      ? 'Personnage principal'
-                      : 'Définir comme personnage principal',
+              tooltip: isMainCharacter
+                  ? 'Personnage principal'
+                  : 'Définir comme personnage principal',
               icon: Icon(
                 isMainCharacter ? Icons.star : Icons.star_border,
                 color: isMainCharacter ? AppTheme.gold : AppTheme.mutedText,
