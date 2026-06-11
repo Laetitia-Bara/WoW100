@@ -177,7 +177,7 @@ class _DashboardPageState extends State<DashboardPage> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
-              'assets/images/icones/icon_app.png',
+              'assets/images/icones/icone_app.png',
               height: 40,
               width: 40,
             ),
@@ -372,15 +372,15 @@ class _CharacterIdentityBackdrop extends StatelessWidget {
 
     switch (faction) {
       case 'alliance':
-        bannerAsset = 'assets/images/bann_perso_alliance.png';
+        bannerAsset = 'assets/images/bann/bann_perso_alliance.png';
         break;
 
       case 'horde':
-        bannerAsset = 'assets/images/bann_perso_horde.png';
+        bannerAsset = 'assets/images/bann/bann_perso_horde.png';
         break;
 
       default:
-        bannerAsset = 'assets/images/bann_perso_horde.png';
+        bannerAsset = 'assets/images/bann/bann_perso_horde.png';
     }
 
     return Positioned.fill(child: Image.asset(bannerAsset, fit: BoxFit.cover));
