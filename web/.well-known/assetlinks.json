@@ -3,7 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.example.wow100",
+      "package_name": "fr.cosmoslty.wow100",
       "sha256_cert_fingerprints": [
         "CB:81:9C:E1:2F:D4:44:0A:85:29:D0:EE:FA:7B:6F:EA:B4:D2:17:C2:7E:4B:83:C2:E1:04:75:E3:90:0B:61:1B"
       ]

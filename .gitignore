@@ -11,11 +11,6 @@
 .svn/
 .swiftpm/
 migrate_working_dir/
-.env
-.dev.vars
-.pages-deploy/
-cloudflare/.dev.vars
-cloudflare/.wrangler/
 
 # IntelliJ related
 *.iml
@@ -32,9 +27,6 @@ cloudflare/.wrangler/
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
-.dart_appdata/
-.dart_localappdata/
-.gradle/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
@@ -51,9 +43,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-
-# wrangler files
-.wrangler
-.dev.vars*
-!.dev.vars.example
-!.env.example

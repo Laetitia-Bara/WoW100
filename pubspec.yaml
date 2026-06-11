@@ -18,6 +18,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  ios: true
+  android: true
+  image_path: "assets/app_icon/Icon-App-1024x1024@1x.png"
+  remove_alpha_ios: true
 
 flutter:
   uses-material-design: true
@@ -30,3 +37,4 @@ flutter:
     - assets/images/
     - assets/data/achievements/
     - assets/generated/
+    - assets/app_icon/
