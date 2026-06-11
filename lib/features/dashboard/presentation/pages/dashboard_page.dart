@@ -469,7 +469,7 @@ class _TotalProgressSummary extends StatelessWidget {
             Text(
               '$percent%',
               style: const TextStyle(
-                color: AppTheme.gold,
+                color: Color.fromARGB(255, 248, 246, 243),
                 fontWeight: FontWeight.w800,
               ),
             ),
