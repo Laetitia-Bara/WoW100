@@ -128,7 +128,7 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
     final characters = _sortedCharacters();
 
     return Scaffold(
-      appBar: AppBar(title: const Text('')),
+      appBar: AppBar(title: const Text('Mes personnages...')),
       body: LayoutBuilder(
         builder: (context, constraints) {
           final columns = constraints.maxWidth >= 900 ? 2 : 1;
