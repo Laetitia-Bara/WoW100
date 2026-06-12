@@ -3,15 +3,16 @@ import 'package:flutter/material.dart';
 import '../../../../core/theme/app_theme.dart';
 
 class LegalPage extends StatelessWidget {
-  const LegalPage({super.key});
+  const LegalPage({super.key, this.title = 'Informations légales'});
 
   static const String owner = 'cosmos-lty';
   static const String contactEmail = 'contact@cosmos-lty.fr';
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Informations légales')),
+      appBar: AppBar(title: Text(title)),
       body: LayoutBuilder(
         builder: (context, constraints) {
           final isWide = constraints.maxWidth >= 900;
@@ -93,9 +94,9 @@ class _LegalHero extends StatelessWidget {
           children: [
             Text(
               'WoW100%',
-              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                fontWeight: FontWeight.w900,
-              ),
+              style: Theme.of(
+                context,
+              ).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.w900),
             ),
             const SizedBox(height: 8),
             const Text(

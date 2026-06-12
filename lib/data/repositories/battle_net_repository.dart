@@ -16,7 +16,7 @@ class BattleNetRepository {
     final response = await http.get(uri);
 
     if (response.statusCode != 200) {
-      throw Exception(response.body);
+      _throwApiException(response);
     }
 
     final data = jsonDecode(response.body);
@@ -120,5 +120,31 @@ class BattleNetRepository {
 
   Map<String, String> _authHeaders(String token) {
     return {'Authorization': 'Bearer $token'};
+  }
+
+  Never _throwApiException(http.Response response) {
+    final message = _friendlyApiError(response);
+    throw Exception(message);
+  }
+
+  String _friendlyApiError(http.Response response) {
+    try {
+      final data = jsonDecode(response.body);
+      final responseData = data is Map<String, dynamic> ? data['data'] : null;
+      final error = responseData is Map<String, dynamic>
+          ? responseData['error']
+          : null;
+
+      if (error == 'invalid_redirect_uri') {
+        return 'Redirect URI non autorisée côté Cloudflare. '
+            'Ajoute ${AppConfig.battleNetRedirectUri} dans '
+            'BATTLENET_ALLOWED_REDIRECT_URIS, et aussi dans les redirect URLs '
+            'Battle.net si nécessaire.';
+      }
+    } catch (_) {
+      // Keep the raw body below if the server did not return JSON.
+    }
+
+    return response.body;
   }
 }

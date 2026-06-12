@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 class AppConfig {
   static const battleNetClientId = 'd1a63c10c180407c9ce681b2faee7b5d';
   static const _defaultApiBaseUrl = '/api';
+  static const _defaultRemoteApiBaseUrl = 'https://wow100.cosmos-lty.fr/api';
   static const _defaultAppBaseUrl = 'https://wow100.cosmos-lty.fr';
 
   static const _apiBaseUrl = String.fromEnvironment(
@@ -17,6 +18,10 @@ class AppConfig {
 
   static String get apiBaseUrl {
     final normalized = normalizeApiBaseUrl(_apiBaseUrl);
+
+    if (kIsWeb && normalized.startsWith('/') && _isFlutterLocalDevHost()) {
+      return _defaultRemoteApiBaseUrl;
+    }
 
     if (!kIsWeb && normalized.startsWith('/')) {
       return '$appBaseUrl$normalized';
@@ -90,6 +95,19 @@ class AppConfig {
     final normalized = value.replaceAll('\\', '/');
     return RegExp(r'^[a-zA-Z]:/').hasMatch(normalized) ||
         normalized.startsWith('file:/');
+  }
+
+  static bool _isFlutterLocalDevHost() {
+    final uri = Uri.base;
+    final host = uri.host.toLowerCase();
+    final isLocalHost =
+        host == 'localhost' || host == '127.0.0.1' || host == '::1';
+
+    if (!isLocalHost) {
+      return false;
+    }
+
+    return uri.port != 8788;
   }
 
   static String _withoutTrailingSlash(String value) {
