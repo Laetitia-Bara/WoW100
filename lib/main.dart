@@ -67,7 +67,7 @@ class WoW100App extends StatelessWidget {
     if (uri != null && _isPrivacyUri(uri)) {
       return MaterialPageRoute(
         settings: settings,
-        builder: (_) => const LegalPage(title: 'Politique de confidentialité'),
+        builder: (_) => const LegalPage.privacy(),
       );
     }
 

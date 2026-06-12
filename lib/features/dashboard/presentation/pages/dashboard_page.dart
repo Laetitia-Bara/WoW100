@@ -785,8 +785,8 @@ class _DualProgressBars extends StatelessWidget {
         ),
         const SizedBox(height: 4),
         const Text(
-          'Obtenable : hors items indisponibles',
-          style: TextStyle(color: AppTheme.mutedText, fontSize: 11),
+          'Obtenables : Hors items indisponibles',
+          style: TextStyle(color: Color(0xFF34D399), fontSize: 11),
         ),
       ],
     );
