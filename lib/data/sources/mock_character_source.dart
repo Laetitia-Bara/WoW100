@@ -12,6 +12,7 @@ class MockCharacterSource {
       characterClass: 'Démoniste',
       race: 'Elfe de sang',
       realmSlug: '',
+      professions: ['Enchantement', 'Couture'],
     );
   }
 }

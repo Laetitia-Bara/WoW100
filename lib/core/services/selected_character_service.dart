@@ -20,6 +20,7 @@ class SelectedCharacterService {
         'characterClass': character.characterClass,
         'faction': character.faction,
         'realmSlug': character.realmSlug,
+        'professions': character.professions,
       }),
     );
   }

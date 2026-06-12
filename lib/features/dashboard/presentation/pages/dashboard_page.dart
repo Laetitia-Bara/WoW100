@@ -179,7 +179,15 @@ class _DashboardPageState extends State<DashboardPage> {
             Image.asset(
               'assets/images/icones/icone_app_dash.png',
               height: 42,
+              width: 96,
               fit: BoxFit.contain,
+              errorBuilder: (_, _, _) => const Text(
+                'WoW100%',
+                style: TextStyle(
+                  color: AppTheme.gold,
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
             ),
             const SizedBox(width: 6),
             IconButton(

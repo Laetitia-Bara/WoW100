@@ -25,6 +25,46 @@ async function getBattleNetServerToken(): Promise<string> {
   return result.data.access_token;
 }
 
+async function fetchCharacterProfessions(
+  token: string,
+  character: {name?: string; realmSlug?: string},
+): Promise<string[]> {
+  if (!character.realmSlug || !character.name) {
+    return [];
+  }
+
+  try {
+    const characterSlug = encodeURIComponent(character.name.toLowerCase());
+    const result = await axios.get(
+      `https://eu.api.blizzard.com/profile/wow/character/${character.realmSlug}/${characterSlug}/professions`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+        params: {
+          namespace: "profile-eu",
+          locale: "fr_FR",
+        },
+      },
+    );
+
+    const entries = [
+      ...(result.data.primaries ?? []),
+      ...(result.data.secondaries ?? []),
+    ];
+
+    return [
+      ...new Set(
+        entries
+          .map((entry: any) => entry.profession?.name)
+          .filter(Boolean),
+      ),
+    ] as string[];
+  } catch (_) {
+    return [];
+  }
+}
+
 export const exchangeBattleNetCode = onRequest(
   async (request, response) => {
     try {
@@ -127,13 +167,13 @@ export const getWowCharacters = onRequest(
 
       const accounts = result.data.wow_accounts ?? [];
 
-      const finalCharacters: any[] = [];
+      const characterSummaries: any[] = [];
 
       for (const account of accounts) {
         const characters = account.characters ?? [];
 
         for (const character of characters) {
-          finalCharacters.push({
+          characterSummaries.push({
             name: character.name,
             level: character.level,
             realm: character.realm?.name,
@@ -144,6 +184,13 @@ export const getWowCharacters = onRequest(
           });
         }
       }
+
+      const finalCharacters = await Promise.all(
+        characterSummaries.map(async (character) => ({
+          ...character,
+          professions: await fetchCharacterProfessions(token, character),
+        }))
+      );
 
       finalCharacters.sort((a, b) => b.level - a.level);
 

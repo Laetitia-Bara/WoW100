@@ -1,9 +1,111 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/wow_character.dart';
 import '../../../dashboard/presentation/pages/dashboard_page.dart';
+
+const _playableRaces = <_CollectionEntry>[
+  _CollectionEntry('Humain', tag: 'A'),
+  _CollectionEntry('Nain', tag: 'A'),
+  _CollectionEntry('Elfe de la nuit', tag: 'A'),
+  _CollectionEntry('Gnome', tag: 'A'),
+  _CollectionEntry('Draeneï', tag: 'A'),
+  _CollectionEntry('Worgen', tag: 'A'),
+  _CollectionEntry('Elfe du Vide', tag: 'A'),
+  _CollectionEntry('Draeneï sancteforge', tag: 'A'),
+  _CollectionEntry('Nain sombrefer', tag: 'A'),
+  _CollectionEntry('Kultirassien', tag: 'A', aliases: ['Humain de Kul Tiras']),
+  _CollectionEntry('Mécagnome', tag: 'A'),
+  _CollectionEntry('Orc', tag: 'H'),
+  _CollectionEntry('Mort-vivant', tag: 'H', aliases: ['Réprouvé']),
+  _CollectionEntry('Tauren', tag: 'H'),
+  _CollectionEntry('Troll', tag: 'H'),
+  _CollectionEntry('Elfe de sang', tag: 'H'),
+  _CollectionEntry('Gobelin', tag: 'H'),
+  _CollectionEntry('Sacrenuit', tag: 'H'),
+  _CollectionEntry('Tauren de Haut-Roc', tag: 'H'),
+  _CollectionEntry('Troll zandalari', tag: 'H'),
+  _CollectionEntry('Orc mag’har', tag: 'H', aliases: ["Orc mag'har"]),
+  _CollectionEntry('Vulperin', tag: 'H'),
+  _CollectionEntry('Pandaren', tag: 'A/H'),
+  _CollectionEntry('Dracthyr', tag: 'A/H'),
+  _CollectionEntry('Terrestre', tag: 'A/H'),
+  _CollectionEntry('Haranir', tag: 'A/H'),
+];
+
+const _playableClasses = <_CollectionEntry>[
+  _CollectionEntry('Chevalier de la mort'),
+  _CollectionEntry('Chasseur de démons'),
+  _CollectionEntry('Druide'),
+  _CollectionEntry('Évocateur'),
+  _CollectionEntry('Chasseur'),
+  _CollectionEntry('Mage'),
+  _CollectionEntry('Moine'),
+  _CollectionEntry('Paladin'),
+  _CollectionEntry('Prêtre'),
+  _CollectionEntry('Voleur'),
+  _CollectionEntry('Chaman'),
+  _CollectionEntry('Démoniste'),
+  _CollectionEntry('Guerrier'),
+];
+
+const _playableProfessions = <_CollectionEntry>[
+  _CollectionEntry('Alchimie'),
+  _CollectionEntry('Calligraphie'),
+  _CollectionEntry('Couture'),
+  _CollectionEntry('Dépeçage'),
+  _CollectionEntry('Enchantement'),
+  _CollectionEntry('Forge'),
+  _CollectionEntry('Herboristerie'),
+  _CollectionEntry('Ingénierie'),
+  _CollectionEntry('Joaillerie'),
+  _CollectionEntry('Minage'),
+  _CollectionEntry('Travail du cuir'),
+  _CollectionEntry('Cuisine'),
+  _CollectionEntry('Pêche'),
+  _CollectionEntry('Archéologie'),
+];
+
+class _CollectionEntry {
+  const _CollectionEntry(this.name, {this.tag, this.aliases = const []});
+
+  final String name;
+  final String? tag;
+  final List<String> aliases;
+
+  bool isOwnedBy(Set<String> ownedKeys) {
+    return ownedKeys.contains(_collectionKey(name)) ||
+        aliases.any((alias) => ownedKeys.contains(_collectionKey(alias)));
+  }
+}
+
+String _collectionKey(String value) {
+  return value
+      .trim()
+      .toLowerCase()
+      .replaceAll('à', 'a')
+      .replaceAll('â', 'a')
+      .replaceAll('ä', 'a')
+      .replaceAll('ç', 'c')
+      .replaceAll('é', 'e')
+      .replaceAll('è', 'e')
+      .replaceAll('ê', 'e')
+      .replaceAll('ë', 'e')
+      .replaceAll('î', 'i')
+      .replaceAll('ï', 'i')
+      .replaceAll('ô', 'o')
+      .replaceAll('ö', 'o')
+      .replaceAll('ù', 'u')
+      .replaceAll('û', 'u')
+      .replaceAll('ü', 'u')
+      .replaceAll('’', "'")
+      .replaceAll(RegExp(r"[^a-z0-9']+"), ' ')
+      .replaceAll(RegExp(r'\s+'), ' ')
+      .trim();
+}
 
 class CharacterSelectionPage extends StatefulWidget {
   const CharacterSelectionPage({super.key, required this.characters});
@@ -126,6 +228,19 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
   @override
   Widget build(BuildContext context) {
     final characters = _sortedCharacters();
+    final ownedRaceKeys = characters
+        .map((character) => _collectionKey(character.race))
+        .where((key) => key.isNotEmpty)
+        .toSet();
+    final ownedClassKeys = characters
+        .map((character) => _collectionKey(character.characterClass))
+        .where((key) => key.isNotEmpty)
+        .toSet();
+    final ownedProfessionKeys = characters
+        .expand((character) => character.professions)
+        .map(_collectionKey)
+        .where((key) => key.isNotEmpty)
+        .toSet();
 
     return Scaffold(
       appBar: AppBar(title: const Text('Mes personnages...')),
@@ -150,6 +265,16 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
                           color: AppTheme.mutedText,
                           fontWeight: FontWeight.w700,
                         ),
+                      ),
+                    ),
+                  ),
+                  SliverPadding(
+                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                    sliver: SliverToBoxAdapter(
+                      child: _CharacterCollectionOverview(
+                        ownedRaceKeys: ownedRaceKeys,
+                        ownedClassKeys: ownedClassKeys,
+                        ownedProfessionKeys: ownedProfessionKeys,
                       ),
                     ),
                   ),
@@ -182,6 +307,276 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
             ),
           );
         },
+      ),
+    );
+  }
+}
+
+class _CharacterCollectionOverview extends StatelessWidget {
+  const _CharacterCollectionOverview({
+    required this.ownedRaceKeys,
+    required this.ownedClassKeys,
+    required this.ownedProfessionKeys,
+  });
+
+  final Set<String> ownedRaceKeys;
+  final Set<String> ownedClassKeys;
+  final Set<String> ownedProfessionKeys;
+
+  @override
+  Widget build(BuildContext context) {
+    final cards = [
+      _CollectionCard(
+        title: 'Races',
+        icon: Icons.groups,
+        accentColor: const Color(0xFF38BDF8),
+        entries: _playableRaces,
+        ownedKeys: ownedRaceKeys,
+      ),
+      _CollectionCard(
+        title: 'Classes',
+        icon: Icons.auto_awesome,
+        accentColor: AppTheme.gold,
+        entries: _playableClasses,
+        ownedKeys: ownedClassKeys,
+      ),
+      _CollectionCard(
+        title: 'Métiers',
+        icon: Icons.handyman,
+        accentColor: const Color(0xFF34D399),
+        entries: _playableProfessions,
+        ownedKeys: ownedProfessionKeys,
+      ),
+    ];
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth >= 900) {
+          return SizedBox(
+            height: 282,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                for (var index = 0; index < cards.length; index++) ...[
+                  Expanded(child: cards[index]),
+                  if (index < cards.length - 1) const SizedBox(width: 12),
+                ],
+              ],
+            ),
+          );
+        }
+
+        final cardWidth = math.min(340.0, constraints.maxWidth * 0.88);
+
+        return SizedBox(
+          height: 262,
+          child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            itemCount: cards.length,
+            separatorBuilder: (_, _) => const SizedBox(width: 12),
+            itemBuilder: (context, index) {
+              return SizedBox(width: cardWidth, child: cards[index]);
+            },
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _CollectionCard extends StatelessWidget {
+  const _CollectionCard({
+    required this.title,
+    required this.icon,
+    required this.accentColor,
+    required this.entries,
+    required this.ownedKeys,
+  });
+
+  final String title;
+  final IconData icon;
+  final Color accentColor;
+  final List<_CollectionEntry> entries;
+  final Set<String> ownedKeys;
+
+  @override
+  Widget build(BuildContext context) {
+    final ownedCount = entries
+        .where((entry) => entry.isOwnedBy(ownedKeys))
+        .length;
+
+    return Card(
+      margin: EdgeInsets.zero,
+      child: Padding(
+        padding: const EdgeInsets.all(14),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Container(
+                  width: 34,
+                  height: 34,
+                  decoration: BoxDecoration(
+                    color: Color.alphaBlend(
+                      accentColor.withAlpha(38),
+                      AppTheme.card,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Icon(icon, color: accentColor, size: 19),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Text(
+                    title,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                _CollectionCountBadge(
+                  value: '$ownedCount/${entries.length}',
+                  color: accentColor,
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: [
+                    for (final entry in entries)
+                      _CollectionChip(
+                        entry: entry,
+                        isOwned: entry.isOwnedBy(ownedKeys),
+                      ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _CollectionCountBadge extends StatelessWidget {
+  const _CollectionCountBadge({required this.value, required this.color});
+
+  final String value;
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+      decoration: BoxDecoration(
+        color: Color.alphaBlend(color.withAlpha(32), AppTheme.card),
+        border: Border.all(color: color.withAlpha(170)),
+        borderRadius: BorderRadius.circular(999),
+      ),
+      child: Text(
+        value,
+        style: TextStyle(
+          color: color,
+          fontSize: 12,
+          fontWeight: FontWeight.w900,
+        ),
+      ),
+    );
+  }
+}
+
+class _CollectionChip extends StatelessWidget {
+  const _CollectionChip({required this.entry, required this.isOwned});
+
+  final _CollectionEntry entry;
+  final bool isOwned;
+
+  @override
+  Widget build(BuildContext context) {
+    final color = isOwned ? const Color(0xFF34D399) : AppTheme.mutedText;
+    final background = isOwned
+        ? Color.alphaBlend(color.withAlpha(36), AppTheme.card)
+        : const Color(0xFF0B1220);
+
+    return Tooltip(
+      message: isOwned ? '${entry.name} présent' : '${entry.name} manquant',
+      child: Container(
+        constraints: const BoxConstraints(maxWidth: 176),
+        padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 7),
+        decoration: BoxDecoration(
+          color: background,
+          border: Border.all(
+            color: isOwned ? color.withAlpha(190) : const Color(0xFF243044),
+          ),
+          borderRadius: BorderRadius.circular(999),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (entry.tag != null) ...[
+              _FactionTag(label: entry.tag!, isOwned: isOwned),
+              const SizedBox(width: 6),
+            ],
+            Flexible(
+              child: Text(
+                entry.name,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  color: isOwned ? color : AppTheme.mutedText,
+                  fontSize: 12,
+                  fontWeight: isOwned ? FontWeight.w800 : FontWeight.w600,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _FactionTag extends StatelessWidget {
+  const _FactionTag({required this.label, required this.isOwned});
+
+  final String label;
+  final bool isOwned;
+
+  @override
+  Widget build(BuildContext context) {
+    final allianceColor = const Color(0xFF2E8CFF);
+    final hordeColor = const Color(0xFFE23B3B);
+    final color = label == 'A'
+        ? allianceColor
+        : label == 'H'
+        ? hordeColor
+        : AppTheme.gold;
+
+    return Container(
+      constraints: const BoxConstraints(minWidth: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+      decoration: BoxDecoration(
+        color: isOwned ? color.withAlpha(42) : const Color(0xFF111827),
+        borderRadius: BorderRadius.circular(999),
+      ),
+      child: Text(
+        label,
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          color: isOwned ? color : AppTheme.mutedText,
+          fontSize: 9,
+          fontWeight: FontWeight.w900,
+        ),
       ),
     );
   }
