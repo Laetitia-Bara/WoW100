@@ -7,6 +7,7 @@ class WowCharacter {
   final String faction;
   final String realmSlug;
   final List<String> professions;
+  final int achievementPoints;
 
   const WowCharacter({
     required this.name,
@@ -17,6 +18,7 @@ class WowCharacter {
     required this.faction,
     required this.realmSlug,
     this.professions = const [],
+    this.achievementPoints = 0,
   });
 
   factory WowCharacter.fromJson(Map<String, dynamic> json) {
@@ -33,6 +35,7 @@ class WowCharacter {
               ?.whereType<String>()
               .toList() ??
           const [],
+      achievementPoints: json['achievementPoints'] ?? 0,
     );
   }
 }

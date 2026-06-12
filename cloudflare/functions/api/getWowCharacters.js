@@ -47,10 +47,18 @@ export async function onRequest({request}) {
     }
 
     const finalCharacters = await Promise.all(
-      characterSummaries.map(async (character) => ({
-        ...character,
-        professions: await fetchCharacterProfessions(token, character),
-      })),
+      characterSummaries.map(async (character) => {
+        const [professions, profile] = await Promise.all([
+          fetchCharacterProfessions(token, character),
+          fetchCharacterProfile(token, character),
+        ]);
+
+        return {
+          ...character,
+          professions,
+          achievementPoints: profile.achievement_points ?? 0,
+        };
+      }),
     );
 
     finalCharacters.sort((a, b) => b.level - a.level);
@@ -58,6 +66,29 @@ export async function onRequest({request}) {
     return json(finalCharacters);
   } catch (error) {
     return toErrorResponse(error);
+  }
+}
+
+async function fetchCharacterProfile(token, character) {
+  if (!character.realmSlug || !character.name) {
+    return {};
+  }
+
+  try {
+    const characterSlug = encodeURIComponent(character.name.toLowerCase());
+
+    return await fetchBattleNetJson(
+      `https://eu.api.blizzard.com/profile/wow/character/${character.realmSlug}/${characterSlug}`,
+      {
+        token,
+        params: {
+          namespace: "profile-eu",
+          locale: "fr_FR",
+        },
+      },
+    );
+  } catch (_) {
+    return {};
   }
 }
 

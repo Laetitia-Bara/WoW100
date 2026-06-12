@@ -140,6 +140,12 @@ class JsonProgressRepository implements ProgressRepository {
     var totalAchievements = 0;
     var totalMounts = 0;
     var totalPets = 0;
+    var completedObtainableAchievements = 0;
+    var completedObtainableMounts = 0;
+    var completedObtainablePets = 0;
+    var obtainableAchievements = 0;
+    var obtainableMounts = 0;
+    var obtainablePets = 0;
 
     for (final item in items) {
       final checked = await _localCheckService.isChecked(item.id);
@@ -154,20 +160,26 @@ class JsonProgressRepository implements ProgressRepository {
 
       if (item.category == TrackingCategory.achievements) {
         totalAchievements += 1;
+        if (!item.unavailable) obtainableAchievements += 1;
       } else if (item.category == TrackingCategory.mounts) {
         totalMounts += 1;
+        if (!item.unavailable) obtainableMounts += 1;
       } else if (item.category == TrackingCategory.pets) {
         totalPets += 1;
+        if (!item.unavailable) obtainablePets += 1;
       }
 
       if ((checked || owned) &&
           item.category == TrackingCategory.achievements) {
         completedAchievements += 1;
+        if (!item.unavailable) completedObtainableAchievements += 1;
       } else if ((checked || owned) &&
           item.category == TrackingCategory.mounts) {
         completedMounts += 1;
+        if (!item.unavailable) completedObtainableMounts += 1;
       } else if ((checked || owned) && item.category == TrackingCategory.pets) {
         completedPets += 1;
+        if (!item.unavailable) completedObtainablePets += 1;
       }
     }
 
@@ -182,6 +194,16 @@ class JsonProgressRepository implements ProgressRepository {
         TrackingCategory.achievements: totalAchievements,
         TrackingCategory.mounts: totalMounts,
         TrackingCategory.pets: totalPets,
+      },
+      completedObtainable: {
+        TrackingCategory.achievements: completedObtainableAchievements,
+        TrackingCategory.mounts: completedObtainableMounts,
+        TrackingCategory.pets: completedObtainablePets,
+      },
+      obtainableTotal: {
+        TrackingCategory.achievements: obtainableAchievements,
+        TrackingCategory.mounts: obtainableMounts,
+        TrackingCategory.pets: obtainablePets,
       },
     );
   }

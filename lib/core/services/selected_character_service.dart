@@ -21,6 +21,7 @@ class SelectedCharacterService {
         'faction': character.faction,
         'realmSlug': character.realmSlug,
         'professions': character.professions,
+        'achievementPoints': character.achievementPoints,
       }),
     );
   }

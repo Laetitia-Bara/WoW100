@@ -65,6 +65,35 @@ async function fetchCharacterProfessions(
   }
 }
 
+async function fetchCharacterProfile(
+  token: string,
+  character: {name?: string; realmSlug?: string},
+): Promise<any> {
+  if (!character.realmSlug || !character.name) {
+    return {};
+  }
+
+  try {
+    const characterSlug = encodeURIComponent(character.name.toLowerCase());
+    const result = await axios.get(
+      `https://eu.api.blizzard.com/profile/wow/character/${character.realmSlug}/${characterSlug}`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+        params: {
+          namespace: "profile-eu",
+          locale: "fr_FR",
+        },
+      },
+    );
+
+    return result.data;
+  } catch (_) {
+    return {};
+  }
+}
+
 export const exchangeBattleNetCode = onRequest(
   async (request, response) => {
     try {
@@ -186,10 +215,18 @@ export const getWowCharacters = onRequest(
       }
 
       const finalCharacters = await Promise.all(
-        characterSummaries.map(async (character) => ({
-          ...character,
-          professions: await fetchCharacterProfessions(token, character),
-        }))
+        characterSummaries.map(async (character) => {
+          const [professions, profile] = await Promise.all([
+            fetchCharacterProfessions(token, character),
+            fetchCharacterProfile(token, character),
+          ]);
+
+          return {
+            ...character,
+            professions,
+            achievementPoints: profile.achievement_points ?? 0,
+          };
+        })
       );
 
       finalCharacters.sort((a, b) => b.level - a.level);

@@ -13,6 +13,7 @@ class MockCharacterSource {
       race: 'Elfe de sang',
       realmSlug: '',
       professions: ['Enchantement', 'Couture'],
+      achievementPoints: 37390,
     );
   }
 }
