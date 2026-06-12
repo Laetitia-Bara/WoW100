@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../../../../core/services/battle_net_token_service.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/wow_character.dart';
@@ -161,6 +162,18 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
     );
   }
 
+  Future<void> _disconnectBattleNet() async {
+    await BattleNetTokenService().clearToken();
+    await _service.clearCharacter();
+
+    if (!mounted) return;
+
+    Navigator.of(context).pushAndRemoveUntil(
+      MaterialPageRoute(builder: (_) => const DashboardPage()),
+      (route) => false,
+    );
+  }
+
   List<WowCharacter> _sortedCharacters() {
     return [...widget.characters]..sort((a, b) {
       final levelCompare = b.level.compareTo(a.level);
@@ -243,7 +256,16 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
         .toSet();
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Mes personnages...')),
+      appBar: AppBar(
+        title: const Text('Mes personnages...'),
+        actions: [
+          IconButton(
+            tooltip: 'Déconnexion Battle.net',
+            icon: const Icon(Icons.logout),
+            onPressed: _disconnectBattleNet,
+          ),
+        ],
+      ),
       body: LayoutBuilder(
         builder: (context, constraints) {
           final columns = constraints.maxWidth >= 900 ? 2 : 1;
@@ -329,21 +351,18 @@ class _CharacterCollectionOverview extends StatelessWidget {
       _CollectionCard(
         title: 'Races',
         icon: Icons.groups,
-        accentColor: const Color(0xFF38BDF8),
         entries: _playableRaces,
         ownedKeys: ownedRaceKeys,
       ),
       _CollectionCard(
         title: 'Classes',
         icon: Icons.auto_awesome,
-        accentColor: AppTheme.gold,
         entries: _playableClasses,
         ownedKeys: ownedClassKeys,
       ),
       _CollectionCard(
         title: 'Métiers',
         icon: Icons.handyman,
-        accentColor: const Color(0xFF34D399),
         entries: _playableProfessions,
         ownedKeys: ownedProfessionKeys,
       ),
@@ -388,14 +407,12 @@ class _CollectionCard extends StatelessWidget {
   const _CollectionCard({
     required this.title,
     required this.icon,
-    required this.accentColor,
     required this.entries,
     required this.ownedKeys,
   });
 
   final String title;
   final IconData icon;
-  final Color accentColor;
   final List<_CollectionEntry> entries;
   final Set<String> ownedKeys;
 
@@ -404,6 +421,7 @@ class _CollectionCard extends StatelessWidget {
     final ownedCount = entries
         .where((entry) => entry.isOwnedBy(ownedKeys))
         .length;
+    final statusColor = _collectionStatusColor(ownedCount, entries.length);
 
     return Card(
       margin: EdgeInsets.zero,
@@ -419,12 +437,12 @@ class _CollectionCard extends StatelessWidget {
                   height: 34,
                   decoration: BoxDecoration(
                     color: Color.alphaBlend(
-                      accentColor.withAlpha(38),
+                      statusColor.withAlpha(28),
                       AppTheme.card,
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Icon(icon, color: accentColor, size: 19),
+                  child: Icon(icon, color: statusColor, size: 19),
                 ),
                 const SizedBox(width: 10),
                 Expanded(
@@ -441,7 +459,7 @@ class _CollectionCard extends StatelessWidget {
                 const SizedBox(width: 8),
                 _CollectionCountBadge(
                   value: '$ownedCount/${entries.length}',
-                  color: accentColor,
+                  color: statusColor,
                 ),
               ],
             ),
@@ -466,6 +484,18 @@ class _CollectionCard extends StatelessWidget {
       ),
     );
   }
+}
+
+Color _collectionStatusColor(int ownedCount, int totalCount) {
+  if (ownedCount <= 0) {
+    return AppTheme.text;
+  }
+
+  if (ownedCount >= totalCount) {
+    return const Color(0xFF34D399);
+  }
+
+  return AppTheme.gold;
 }
 
 class _CollectionCountBadge extends StatelessWidget {
@@ -504,28 +534,17 @@ class _CollectionChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = isOwned ? const Color(0xFF34D399) : AppTheme.mutedText;
-    final background = isOwned
-        ? Color.alphaBlend(color.withAlpha(36), AppTheme.card)
-        : const Color(0xFF0B1220);
 
     return Tooltip(
       message: isOwned ? '${entry.name} présent' : '${entry.name} manquant',
-      child: Container(
-        constraints: const BoxConstraints(maxWidth: 176),
-        padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 7),
-        decoration: BoxDecoration(
-          color: background,
-          border: Border.all(
-            color: isOwned ? color.withAlpha(190) : const Color(0xFF243044),
-          ),
-          borderRadius: BorderRadius.circular(999),
-        ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 3),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             if (entry.tag != null) ...[
               _FactionTag(label: entry.tag!, isOwned: isOwned),
-              const SizedBox(width: 6),
+              const SizedBox(width: 5),
             ],
             Flexible(
               child: Text(
@@ -533,7 +552,7 @@ class _CollectionChip extends StatelessWidget {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
-                  color: isOwned ? color : AppTheme.mutedText,
+                  color: color,
                   fontSize: 12,
                   fontWeight: isOwned ? FontWeight.w800 : FontWeight.w600,
                 ),
@@ -554,29 +573,15 @@ class _FactionTag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final allianceColor = const Color(0xFF2E8CFF);
-    final hordeColor = const Color(0xFFE23B3B);
-    final color = label == 'A'
-        ? allianceColor
-        : label == 'H'
-        ? hordeColor
-        : AppTheme.gold;
+    final color = isOwned ? const Color(0xFF34D399) : AppTheme.mutedText;
 
-    return Container(
-      constraints: const BoxConstraints(minWidth: 20),
-      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-      decoration: BoxDecoration(
-        color: isOwned ? color.withAlpha(42) : const Color(0xFF111827),
-        borderRadius: BorderRadius.circular(999),
-      ),
-      child: Text(
-        label,
-        textAlign: TextAlign.center,
-        style: TextStyle(
-          color: isOwned ? color : AppTheme.mutedText,
-          fontSize: 9,
-          fontWeight: FontWeight.w900,
-        ),
+    return Text(
+      label,
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        color: color.withAlpha(isOwned ? 210 : 150),
+        fontSize: 9,
+        fontWeight: FontWeight.w900,
       ),
     );
   }
