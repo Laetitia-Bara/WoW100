@@ -1,7 +1,7 @@
 name: wow100
 description: "WoW100 is a Flutter application that helps users track their progress in World of Warcraft. It provides features for tracking various in-game activities, such as quests, achievements, and character progression. The app is designed to be user-friendly and visually appealing, making it easy for players to stay organized and motivated in their WoW journey."
 publish_to: "none"
-version: 1.0.0+2
+version: 1.0.0+3
 
 environment:
   sdk: ^3.12.0
