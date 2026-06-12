@@ -265,7 +265,7 @@ class _DashboardPageState extends State<DashboardPage> {
                             crossAxisCount: 2,
                             crossAxisSpacing: 14,
                             mainAxisSpacing: 14,
-                            mainAxisExtent: 282,
+                            mainAxisExtent: 298,
                           ),
                       itemCount: extensionProgresses.length,
                       itemBuilder: (context, index) {
@@ -751,6 +751,7 @@ class _DualProgressBars extends StatelessWidget {
         .toDouble();
 
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         LinearProgressIndicator(
           value: safeCompletionRate,
@@ -781,6 +782,11 @@ class _DualProgressBars extends StatelessWidget {
               ),
             ),
           ],
+        ),
+        const SizedBox(height: 4),
+        const Text(
+          'Obtenable : hors items indisponibles',
+          style: TextStyle(color: AppTheme.mutedText, fontSize: 11),
         ),
       ],
     );
