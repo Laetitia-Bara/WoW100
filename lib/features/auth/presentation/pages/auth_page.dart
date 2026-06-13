@@ -3,15 +3,35 @@ import 'package:flutter/material.dart';
 import '../../../../core/services/battle_net_auth_service.dart';
 import '../../../../core/services/battle_net_session_service.dart';
 import '../../../../core/theme/app_theme.dart';
+import 'auth_callback_page.dart';
 
-class AuthPage extends StatelessWidget {
+class AuthPage extends StatefulWidget {
   const AuthPage({super.key});
 
+  @override
+  State<AuthPage> createState() => _AuthPageState();
+}
+
+class _AuthPageState extends State<AuthPage> {
   Future<void> _openBattleNetLogin() async {
     await BattleNetSessionService().clearSession();
 
     final service = BattleNetAuthService();
-    await service.openAuthorization(forceLogin: true);
+    final callbackUri = await service.openAuthorization(forceLogin: true);
+
+    if (callbackUri == null || !mounted) {
+      return;
+    }
+
+    await Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+        builder: (_) => AuthCallbackPage(
+          code: callbackUri.queryParameters['code'],
+          error: callbackUri.queryParameters['error'],
+        ),
+      ),
+    );
   }
 
   @override

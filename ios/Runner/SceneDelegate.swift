@@ -1,9 +1,12 @@
+import AuthenticationServices
 import Flutter
 import UIKit
 
-class SceneDelegate: FlutterSceneDelegate {
+class SceneDelegate: FlutterSceneDelegate, ASWebAuthenticationPresentationContextProviding {
   private static var initialLink: String?
   private var deepLinkChannel: FlutterMethodChannel?
+  private var oauthChannel: FlutterMethodChannel?
+  private var authSession: ASWebAuthenticationSession?
 
   override func scene(
     _ scene: UIScene,
@@ -18,6 +21,7 @@ class SceneDelegate: FlutterSceneDelegate {
 
     super.scene(scene, willConnectTo: session, options: connectionOptions)
     configureDeepLinkChannel()
+    configureOAuthChannel()
   }
 
   override func scene(
@@ -64,10 +68,101 @@ class SceneDelegate: FlutterSceneDelegate {
     deepLinkChannel = channel
   }
 
+  private func configureOAuthChannel() {
+    guard oauthChannel == nil,
+          let controller = window?.rootViewController as? FlutterViewController
+    else {
+      return
+    }
+
+    let channel = FlutterMethodChannel(
+      name: "fr.cosmoslty.wow100/oauth",
+      binaryMessenger: controller.binaryMessenger
+    )
+
+    channel.setMethodCallHandler { [weak self] call, result in
+      guard call.method == "authenticate" else {
+        result(FlutterMethodNotImplemented)
+        return
+      }
+
+      guard let self,
+            let arguments = call.arguments as? [String: Any],
+            let urlString = arguments["url"] as? String,
+            let url = URL(string: urlString),
+            let callbackScheme = arguments["callbackScheme"] as? String
+      else {
+        result(FlutterError(
+          code: "invalid_arguments",
+          message: "OAuth URL ou callbackScheme manquant.",
+          details: nil
+        ))
+        return
+      }
+
+      self.startAuthenticationSession(
+        url: url,
+        callbackScheme: callbackScheme,
+        result: result
+      )
+    }
+
+    oauthChannel = channel
+  }
+
+  private func startAuthenticationSession(
+    url: URL,
+    callbackScheme: String,
+    result: @escaping FlutterResult
+  ) {
+    authSession?.cancel()
+
+    let session = ASWebAuthenticationSession(
+      url: url,
+      callbackURLScheme: callbackScheme
+    ) { callbackURL, error in
+      if let callbackURL {
+        result(callbackURL.absoluteString)
+        return
+      }
+
+      if let error {
+        result(FlutterError(
+          code: "authentication_failed",
+          message: error.localizedDescription,
+          details: nil
+        ))
+        return
+      }
+
+      result(FlutterError(
+        code: "authentication_failed",
+        message: "Aucun callback OAuth reçu.",
+        details: nil
+      ))
+    }
+
+    session.presentationContextProvider = self
+    session.prefersEphemeralWebBrowserSession = true
+    authSession = session
+
+    if !session.start() {
+      result(FlutterError(
+        code: "authentication_failed",
+        message: "Impossible de lancer la session OAuth.",
+        details: nil
+      ))
+    }
+  }
+
   private func publishDeepLink(_ url: URL) {
     let link = url.absoluteString
     Self.initialLink = link
     configureDeepLinkChannel()
     deepLinkChannel?.invokeMethod("onLink", arguments: link)
+  }
+
+  func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor {
+    return window ?? ASPresentationAnchor()
   }
 }

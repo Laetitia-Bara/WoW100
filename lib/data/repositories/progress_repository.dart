@@ -3,7 +3,6 @@ import 'package:flutter/foundation.dart';
 
 import '../../core/services/battle_net_token_service.dart';
 import '../../core/services/local_check_service.dart';
-import '../../core/services/selected_character_service.dart';
 import '../models/expansion_progress.dart';
 import '../models/tracking_category.dart';
 import '../models/wow_expansion.dart';
@@ -18,8 +17,6 @@ class JsonProgressRepository implements ProgressRepository {
   final JsonPlannerSource _source = JsonPlannerSource();
   final LocalCheckService _localCheckService = LocalCheckService();
   final BattleNetTokenService _tokenService = BattleNetTokenService();
-  final SelectedCharacterService _selectedCharacterService =
-      SelectedCharacterService();
   final BattleNetRepository _battleNetRepository = BattleNetRepository();
 
   @override
@@ -69,18 +66,12 @@ class JsonProgressRepository implements ProgressRepository {
       }
 
       try {
-        final character = await _selectedCharacterService.loadCharacter();
-
-        if (character != null) {
-          final achievements = await _battleNetRepository.getAchievements(
-            token,
-            character.realmSlug,
-            character.name,
-          );
-          ownedAchievementIds.addAll(
-            achievements.map((achievement) => achievement.id),
-          );
-        }
+        final achievements = await _battleNetRepository.getAccountAchievements(
+          token,
+        );
+        ownedAchievementIds.addAll(
+          achievements.map((achievement) => achievement.id),
+        );
       } catch (e, stack) {
         debugPrint('BATTLE.NET ACHIEVEMENTS ERROR: $e');
         debugPrint('$stack');

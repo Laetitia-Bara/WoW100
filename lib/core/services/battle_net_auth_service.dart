@@ -1,8 +1,12 @@
+import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../config/app_config.dart';
 
 class BattleNetAuthService {
+  static const _oauthChannel = MethodChannel('fr.cosmoslty.wow100/oauth');
+
   String buildAuthorizationUrl({bool forceLogin = false}) {
     const region = 'eu';
 
@@ -24,8 +28,17 @@ class BattleNetAuthService {
     return uri.toString();
   }
 
-  Future<void> openAuthorization({bool forceLogin = false}) async {
+  Future<Uri?> openAuthorization({bool forceLogin = false}) async {
     final uri = Uri.parse(buildAuthorizationUrl(forceLogin: forceLogin));
+
+    if (!kIsWeb && defaultTargetPlatform == TargetPlatform.iOS) {
+      final callback = await _oauthChannel.invokeMethod<String>(
+        'authenticate',
+        {'url': uri.toString(), 'callbackScheme': 'wow100'},
+      );
+
+      return callback == null ? null : Uri.tryParse(callback);
+    }
 
     final didLaunch = await launchUrl(
       uri,
@@ -36,5 +49,7 @@ class BattleNetAuthService {
     if (!didLaunch) {
       throw Exception('Impossible d’ouvrir la connexion Battle.net.');
     }
+
+    return null;
   }
 }

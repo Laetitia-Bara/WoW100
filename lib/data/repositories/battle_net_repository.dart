@@ -109,6 +109,28 @@ class BattleNetRepository {
     }).toList();
   }
 
+  Future<List<WowAchievement>> getAccountAchievements(String token) async {
+    final uri = _apiUri('getWowAchievements');
+
+    final response = await http.get(uri, headers: _authHeaders(token));
+
+    if (response.statusCode != 200) {
+      throw Exception(response.body);
+    }
+
+    final data = jsonDecode(response.body);
+    final achievements = data['achievements'] as List? ?? [];
+
+    return achievements.map((entry) {
+      final achievement = entry['achievement'] as Map<String, dynamic>? ?? {};
+
+      return WowAchievement.fromJson({
+        'id': entry['id'] ?? achievement['id'],
+        'name': entry['name'] ?? achievement['name'],
+      });
+    }).toList();
+  }
+
   Uri _apiUri(String path, [Map<String, String>? queryParameters]) {
     final baseUrl = AppConfig.apiBaseUrl.endsWith('/')
         ? AppConfig.apiBaseUrl.substring(0, AppConfig.apiBaseUrl.length - 1)

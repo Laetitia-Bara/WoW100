@@ -10,6 +10,7 @@ import '../../../../data/models/wow_character.dart';
 import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/repositories/progress_repository.dart';
 import '../../../../data/sources/wow_expansion_catalog.dart';
+import '../../../auth/presentation/pages/auth_callback_page.dart';
 import '../../../auth/presentation/pages/character_switch_page.dart';
 import '../../../legal/presentation/pages/legal_page.dart';
 import '../../../planner/presentation/pages/planner_page.dart';
@@ -94,7 +95,22 @@ class _DashboardPageState extends State<DashboardPage> {
     await _battleNetSessionService.clearSession();
 
     final service = BattleNetAuthService();
-    await service.openAuthorization(forceLogin: true);
+    final callbackUri = await service.openAuthorization(forceLogin: true);
+
+    if (callbackUri == null || !mounted) {
+      return;
+    }
+
+    await Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(
+        builder: (_) => AuthCallbackPage(
+          code: callbackUri.queryParameters['code'],
+          error: callbackUri.queryParameters['error'],
+        ),
+      ),
+      (_) => false,
+    );
   }
 
   Future<void> _openCharacterSwitch() async {

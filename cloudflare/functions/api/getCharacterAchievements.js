@@ -19,8 +19,10 @@ export async function onRequest({request}) {
       return json({error: "missing_parameters"}, {status: 400});
     }
 
+    const characterSlug = encodeURIComponent(characterName.toLowerCase());
+
     const data = await fetchBattleNetJson(
-      `https://eu.api.blizzard.com/profile/wow/character/${realmSlug}/${characterName.toLowerCase()}/achievements`,
+      `https://eu.api.blizzard.com/profile/wow/character/${realmSlug}/${characterSlug}/achievements`,
       {
         token,
         params: {
