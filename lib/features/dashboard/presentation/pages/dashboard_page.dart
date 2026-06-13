@@ -58,6 +58,16 @@ class _DashboardPageState extends State<DashboardPage> {
   }
 
   Future<void> _loadCharacter() async {
+    final hasValidSession = await _battleNetSessionService.hasValidSession();
+    if (!hasValidSession) {
+      if (!mounted) return;
+
+      setState(() {
+        _mainCharacter = null;
+      });
+      return;
+    }
+
     final character = await _selectedCharacterService.loadCharacter();
 
     if (!mounted) return;

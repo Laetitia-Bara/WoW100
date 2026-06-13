@@ -39,9 +39,11 @@ class _AuthCallbackPageState extends State<AuthCallbackPage> {
         throw Exception('Aucun code OAuth reçu.');
       }
 
-      final token = await _repository.exchangeCodeForToken(code);
-      await BattleNetTokenService().saveToken(token);
-      final characters = await _repository.getCharacters(token);
+      final authResult = await _repository.exchangeCodeForToken(code);
+      await BattleNetTokenService().saveAuthResult(authResult);
+      final characters = await _repository.getCharacters(
+        authResult.accessToken,
+      );
 
       setState(() {
         _characters = characters;

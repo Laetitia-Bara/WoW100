@@ -1,13 +1,14 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:wow100/core/config/app_config.dart';
+import '../models/battle_net_auth_result.dart';
 import '../models/wow_character.dart';
 import '../models/wow_mount.dart';
 import '../models/wow_pet.dart';
 import '../models/wow_achievement.dart';
 
 class BattleNetRepository {
-  Future<String> exchangeCodeForToken(String code) async {
+  Future<BattleNetAuthResult> exchangeCodeForToken(String code) async {
     final uri = _apiUri('exchangeBattleNetCode', {
       'code': code,
       'redirectUri': AppConfig.battleNetRedirectUri,
@@ -19,8 +20,8 @@ class BattleNetRepository {
       _throwApiException(response);
     }
 
-    final data = jsonDecode(response.body);
-    return data['access_token'];
+    final data = jsonDecode(response.body) as Map<String, dynamic>;
+    return BattleNetAuthResult.fromJson(data);
   }
 
   Future<List<WowCharacter>> getCharacters(String token) async {

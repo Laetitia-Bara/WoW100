@@ -12,6 +12,17 @@ class BattleNetSessionService {
   final BattleNetTokenService _tokenService;
   final SelectedCharacterService _selectedCharacterService;
 
+  Future<bool> hasValidSession() async {
+    final token = await _tokenService.loadToken();
+
+    if (token == null) {
+      await _selectedCharacterService.clearCharacter();
+      return false;
+    }
+
+    return true;
+  }
+
   Future<void> clearSession() async {
     await _tokenService.clearToken();
     await _selectedCharacterService.clearCharacter();

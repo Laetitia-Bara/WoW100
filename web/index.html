@@ -59,7 +59,6 @@
 
       if (isIOS) {
         window.wow100NativeCallbackUrl = 'wow100://callback' + query;
-        window.location.replace(window.wow100NativeCallbackUrl);
       }
     })();
   </script>
@@ -131,7 +130,7 @@
 
       window.setTimeout(function () {
         window.location.href = nativeCallbackUrl;
-      }, 800);
+      }, 250);
     })();
   </script>
 </body>
