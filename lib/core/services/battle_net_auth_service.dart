@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../config/app_config.dart';
@@ -30,9 +29,7 @@ class BattleNetAuthService {
 
     final didLaunch = await launchUrl(
       uri,
-      mode: kIsWeb
-          ? LaunchMode.platformDefault
-          : LaunchMode.externalApplication,
+      mode: LaunchMode.platformDefault,
       webOnlyWindowName: '_self',
     );
 
