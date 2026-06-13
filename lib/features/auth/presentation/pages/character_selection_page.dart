@@ -2,7 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
-import '../../../../core/services/battle_net_token_service.dart';
+import '../../../../core/services/battle_net_session_service.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/wow_character.dart';
@@ -163,8 +163,9 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
   }
 
   Future<void> _disconnectBattleNet() async {
-    await BattleNetTokenService().clearToken();
-    await _service.clearCharacter();
+    await BattleNetSessionService(
+      selectedCharacterService: _service,
+    ).clearSession();
 
     if (!mounted) return;
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wow100/core/services/battle_net_auth_service.dart';
-import 'package:wow100/core/services/battle_net_token_service.dart';
+import 'package:wow100/core/services/battle_net_session_service.dart';
 
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/theme/app_theme.dart';
@@ -31,6 +31,8 @@ class _DashboardPageState extends State<DashboardPage> {
   final ProgressRepository _repository = JsonProgressRepository();
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
+  final BattleNetSessionService _battleNetSessionService =
+      BattleNetSessionService();
 
   bool _newestFirst = false;
   bool _isLoading = true;
@@ -66,8 +68,7 @@ class _DashboardPageState extends State<DashboardPage> {
   }
 
   Future<void> _disconnectBattleNet() async {
-    await BattleNetTokenService().clearToken();
-    await _selectedCharacterService.clearCharacter();
+    await _battleNetSessionService.clearSession();
 
     if (!mounted) return;
 
@@ -80,11 +81,10 @@ class _DashboardPageState extends State<DashboardPage> {
   }
 
   Future<void> _openBattleNetLogin() async {
-    await BattleNetTokenService().clearToken();
-    await _selectedCharacterService.clearCharacter();
+    await _battleNetSessionService.clearSession();
 
     final service = BattleNetAuthService();
-    await service.openAuthorization();
+    await service.openAuthorization(forceLogin: true);
   }
 
   Future<void> _openCharacterSwitch() async {
@@ -703,6 +703,7 @@ class _ExpansionCard extends StatelessWidget {
                       completionRate: completionRate,
                       obtainableCompletionRate: obtainableCompletionRate,
                       obtainablePercent: obtainablePercent,
+                      obtainableLabel: 'Obtenables',
                     ),
                     const SizedBox(height: 14),
                     Row(
@@ -737,11 +738,13 @@ class _DualProgressBars extends StatelessWidget {
     required this.completionRate,
     required this.obtainableCompletionRate,
     required this.obtainablePercent,
+    this.obtainableLabel = 'Obtenables : Hors items indisponibles',
   });
 
   final double completionRate;
   final double obtainableCompletionRate;
   final int obtainablePercent;
+  final String obtainableLabel;
 
   @override
   Widget build(BuildContext context) {
@@ -784,9 +787,9 @@ class _DualProgressBars extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 4),
-        const Text(
-          'Obtenables : Hors items indisponibles',
-          style: TextStyle(color: Color(0xFF34D399), fontSize: 11),
+        Text(
+          obtainableLabel,
+          style: const TextStyle(color: Color(0xFF34D399), fontSize: 11),
         ),
       ],
     );

@@ -35,23 +35,31 @@
   <script>
     (function () {
       var isAndroid = /Android/i.test(navigator.userAgent);
+      var isIOS = /iPad|iPhone|iPod/i.test(navigator.userAgent);
       var isCallback = window.location.pathname === '/callback';
       var query = window.location.search || '';
       var hasOAuthResult = /[?&](code|error)=/.test(query);
 
-      if (!isAndroid || !isCallback || !hasOAuthResult) {
+      if (!isCallback || !hasOAuthResult) {
         return;
       }
 
-      var fallback = encodeURIComponent(window.location.href);
-      window.location.replace(
-        'intent://callback' +
-        query +
-        '#Intent;scheme=wow100;package=fr.cosmoslty.wow100;' +
-        'S.browser_fallback_url=' +
-        fallback +
-        ';end'
-      );
+      if (isAndroid) {
+        var fallback = encodeURIComponent(window.location.href);
+        window.location.replace(
+          'intent://callback' +
+          query +
+          '#Intent;scheme=wow100;package=fr.cosmoslty.wow100;' +
+          'S.browser_fallback_url=' +
+          fallback +
+          ';end'
+        );
+        return;
+      }
+
+      if (isIOS) {
+        window.location.replace('wow100://callback' + query);
+      }
     })();
   </script>
 </head>

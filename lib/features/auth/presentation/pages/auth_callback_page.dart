@@ -41,7 +41,6 @@ class _AuthCallbackPageState extends State<AuthCallbackPage> {
 
       final token = await _repository.exchangeCodeForToken(code);
       await BattleNetTokenService().saveToken(token);
-      debugPrint('BATTLE_NET_TOKEN: $token');
       final characters = await _repository.getCharacters(token);
 
       setState(() {

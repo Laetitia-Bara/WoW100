@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/services/battle_net_auth_service.dart';
+import '../../../../core/services/battle_net_session_service.dart';
 import '../../../../core/theme/app_theme.dart';
 
 class AuthPage extends StatelessWidget {
   const AuthPage({super.key});
 
   Future<void> _openBattleNetLogin() async {
+    await BattleNetSessionService().clearSession();
+
     final service = BattleNetAuthService();
-    await service.openAuthorization();
+    await service.openAuthorization(forceLogin: true);
   }
 
   @override

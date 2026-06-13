@@ -3,22 +3,29 @@ import 'package:url_launcher/url_launcher.dart';
 import '../config/app_config.dart';
 
 class BattleNetAuthService {
-  String buildAuthorizationUrl() {
+  String buildAuthorizationUrl({bool forceLogin = false}) {
     const region = 'eu';
 
-    final uri = Uri.https('$region.battle.net', '/oauth/authorize', {
+    final queryParameters = {
       'client_id': AppConfig.battleNetClientId,
       'redirect_uri': AppConfig.battleNetRedirectUri,
       'response_type': 'code',
       'scope': 'wow.profile',
-      'state': 'wow100-dev',
-    });
+      'state': 'wow100-${DateTime.now().millisecondsSinceEpoch}',
+      if (forceLogin) 'prompt': 'login',
+    };
+
+    final uri = Uri.https(
+      '$region.battle.net',
+      '/oauth/authorize',
+      queryParameters,
+    );
 
     return uri.toString();
   }
 
-  Future<void> openAuthorization() async {
-    final uri = Uri.parse(buildAuthorizationUrl());
+  Future<void> openAuthorization({bool forceLogin = false}) async {
+    final uri = Uri.parse(buildAuthorizationUrl(forceLogin: forceLogin));
 
     await launchUrl(
       uri,
