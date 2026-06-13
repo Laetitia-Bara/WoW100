@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../config/app_config.dart';
@@ -27,10 +28,16 @@ class BattleNetAuthService {
   Future<void> openAuthorization({bool forceLogin = false}) async {
     final uri = Uri.parse(buildAuthorizationUrl(forceLogin: forceLogin));
 
-    await launchUrl(
+    final didLaunch = await launchUrl(
       uri,
-      mode: LaunchMode.platformDefault,
+      mode: kIsWeb
+          ? LaunchMode.platformDefault
+          : LaunchMode.externalApplication,
       webOnlyWindowName: '_self',
     );
+
+    if (!didLaunch) {
+      throw Exception('Impossible d’ouvrir la connexion Battle.net.');
+    }
   }
 }
