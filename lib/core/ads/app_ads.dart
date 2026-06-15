@@ -94,17 +94,24 @@ class _AppBannerAdState extends State<AppBannerAd> {
       return const SizedBox.shrink();
     }
 
-    return SafeArea(
-      top: false,
-      child: Container(
-        width: double.infinity,
-        padding: const EdgeInsets.symmetric(vertical: 6),
+    final bottomInset = MediaQuery.viewPaddingOf(context).bottom;
+    final verticalPadding = 12.0;
+    final adHeight = ad.size.height.toDouble();
+
+    return SizedBox(
+      width: double.infinity,
+      height: adHeight + verticalPadding + bottomInset,
+      child: ColoredBox(
         color: AppTheme.background.withAlpha(242),
-        alignment: Alignment.center,
-        child: SizedBox(
-          width: ad.size.width.toDouble(),
-          height: ad.size.height.toDouble(),
-          child: AdWidget(ad: ad),
+        child: Padding(
+          padding: EdgeInsets.fromLTRB(0, 6, 0, 6 + bottomInset),
+          child: Center(
+            child: SizedBox(
+              width: ad.size.width.toDouble(),
+              height: adHeight,
+              child: AdWidget(ad: ad),
+            ),
+          ),
         ),
       ),
     );
