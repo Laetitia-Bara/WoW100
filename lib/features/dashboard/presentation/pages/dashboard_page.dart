@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wow100/core/services/battle_net_auth_service.dart';
 import 'package:wow100/core/services/battle_net_session_service.dart';
 
+import '../../../../core/ads/app_ads.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/expansion_progress.dart';
@@ -341,6 +342,7 @@ class _DashboardPageState extends State<DashboardPage> {
           );
         },
       ),
+      bottomNavigationBar: const AppBannerAd(),
     );
   }
 }

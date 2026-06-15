@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'core/ads/app_ads.dart';
 import 'core/theme/app_textured_background.dart';
 import 'core/theme/app_theme.dart';
 import 'features/dashboard/presentation/pages/dashboard_page.dart';
 import 'features/auth/presentation/pages/auth_callback_page.dart';
 import 'features/legal/presentation/pages/legal_page.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await AppAds.initialize();
   runApp(const WoW100App());
 }
 

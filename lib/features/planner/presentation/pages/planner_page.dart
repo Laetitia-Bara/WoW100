@@ -4,6 +4,7 @@ import 'package:wow100/core/services/battle_net_token_service.dart';
 import 'package:wow100/data/models/tracking_category.dart';
 import 'package:wow100/data/repositories/battle_net_repository.dart';
 
+import '../../../../core/ads/app_ads.dart';
 import '../../../../core/services/local_check_service.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/services/wowhead_url_builder.dart';
@@ -497,6 +498,7 @@ class _PlannerPageState extends State<PlannerPage> {
                   borderRadius: BorderRadius.circular(999),
                 ),
                 const SizedBox(height: 20),
+                const AppNativeAd(),
                 if (filteredItems.isEmpty)
                   Card(
                     child: Padding(

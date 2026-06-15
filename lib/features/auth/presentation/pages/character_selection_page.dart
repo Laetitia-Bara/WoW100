@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../../../../core/ads/app_ads.dart';
 import '../../../../core/services/battle_net_session_service.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/theme/app_theme.dart';
@@ -331,6 +332,7 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
           );
         },
       ),
+      bottomNavigationBar: const AppBannerAd(),
     );
   }
 }
