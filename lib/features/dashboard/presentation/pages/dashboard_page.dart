@@ -79,7 +79,8 @@ class _DashboardPageState extends State<DashboardPage> {
   }
 
   Future<void> _disconnectBattleNet() async {
-    await _battleNetSessionService.clearSession();
+    final didOpenBattleNetLogout = await _battleNetSessionService
+        .clearSessionAndOpenBattleNetLogout();
 
     if (!mounted) return;
 
@@ -89,6 +90,16 @@ class _DashboardPageState extends State<DashboardPage> {
     });
 
     await _loadProgress();
+
+    if (!mounted || !didOpenBattleNetLogout) return;
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text(
+          'Session locale effacée. Battle.net a été ouvert pour terminer la déconnexion.',
+        ),
+      ),
+    );
   }
 
   Future<void> _openBattleNetLogin() async {

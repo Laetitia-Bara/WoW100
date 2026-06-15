@@ -6,10 +6,9 @@ import '../config/app_config.dart';
 
 class BattleNetAuthService {
   static const _oauthChannel = MethodChannel('fr.cosmoslty.wow100/oauth');
+  static const _region = 'eu';
 
   String buildAuthorizationUrl({bool forceLogin = false}) {
-    const region = 'eu';
-
     final queryParameters = {
       'client_id': AppConfig.battleNetClientId,
       'redirect_uri': AppConfig.battleNetRedirectUri,
@@ -20,7 +19,7 @@ class BattleNetAuthService {
     };
 
     final uri = Uri.https(
-      '$region.battle.net',
+      '$_region.battle.net',
       '/oauth/authorize',
       queryParameters,
     );
@@ -51,5 +50,15 @@ class BattleNetAuthService {
     }
 
     return null;
+  }
+
+  Future<bool> openLogout() async {
+    final uri = Uri.https('$_region.battle.net', '/login/logout');
+
+    return launchUrl(
+      uri,
+      mode: LaunchMode.externalApplication,
+      webOnlyWindowName: '_blank',
+    );
   }
 }
