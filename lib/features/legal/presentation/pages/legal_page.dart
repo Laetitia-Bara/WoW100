@@ -26,12 +26,13 @@ class LegalPage extends StatelessWidget {
         builder: (context, constraints) {
           final isWide = constraints.maxWidth >= 900;
           final contentWidth = isWide ? 900.0 : double.infinity;
+          final bottomPadding = 40 + MediaQuery.viewPaddingOf(context).bottom;
 
           return Center(
             child: ConstrainedBox(
               constraints: BoxConstraints(maxWidth: contentWidth),
               child: ListView(
-                padding: const EdgeInsets.all(16),
+                padding: EdgeInsets.fromLTRB(16, 16, 16, bottomPadding),
                 children: [
                   _LegalHero(isPrivacyPolicy: isPrivacyPolicy),
                   const SizedBox(height: 14),
