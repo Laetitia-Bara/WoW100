@@ -18,7 +18,9 @@ class LegalPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final sections = isPrivacyPolicy ? _privacySections : _legalSections;
+    final sections = isPrivacyPolicy
+        ? _privacySections
+        : [..._legalSections, ..._privacySections];
 
     return Scaffold(
       appBar: AppBar(title: Text(title)),
