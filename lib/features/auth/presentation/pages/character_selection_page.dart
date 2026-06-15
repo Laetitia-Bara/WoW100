@@ -335,7 +335,7 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
   }
 }
 
-class _CharacterCollectionOverview extends StatelessWidget {
+class _CharacterCollectionOverview extends StatefulWidget {
   const _CharacterCollectionOverview({
     required this.ownedRaceKeys,
     required this.ownedClassKeys,
@@ -347,33 +347,59 @@ class _CharacterCollectionOverview extends StatelessWidget {
   final Set<String> ownedProfessionKeys;
 
   @override
+  State<_CharacterCollectionOverview> createState() =>
+      _CharacterCollectionOverviewState();
+}
+
+class _CharacterCollectionOverviewState
+    extends State<_CharacterCollectionOverview> {
+  final Set<String> _collapsedCards = {'races', 'classes', 'professions'};
+
+  void _toggleCard(String key) {
+    setState(() {
+      if (_collapsedCards.contains(key)) {
+        _collapsedCards.remove(key);
+      } else {
+        _collapsedCards.add(key);
+      }
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     final cards = [
       _CollectionCard(
         title: 'Races',
         icon: Icons.groups,
         entries: _playableRaces,
-        ownedKeys: ownedRaceKeys,
+        ownedKeys: widget.ownedRaceKeys,
+        isCollapsed: _collapsedCards.contains('races'),
+        onToggleCollapse: () => _toggleCard('races'),
       ),
       _CollectionCard(
         title: 'Classes',
         icon: Icons.auto_awesome,
         entries: _playableClasses,
-        ownedKeys: ownedClassKeys,
+        ownedKeys: widget.ownedClassKeys,
+        isCollapsed: _collapsedCards.contains('classes'),
+        onToggleCollapse: () => _toggleCard('classes'),
       ),
       _CollectionCard(
         title: 'Métiers',
         icon: Icons.handyman,
         entries: _playableProfessions,
-        ownedKeys: ownedProfessionKeys,
+        ownedKeys: widget.ownedProfessionKeys,
+        isCollapsed: _collapsedCards.contains('professions'),
+        onToggleCollapse: () => _toggleCard('professions'),
       ),
     ];
+    final hasExpandedCard = cards.any((card) => !card.isCollapsed);
 
     return LayoutBuilder(
       builder: (context, constraints) {
         if (constraints.maxWidth >= 900) {
           return SizedBox(
-            height: 282,
+            height: hasExpandedCard ? 282 : 78,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -389,7 +415,7 @@ class _CharacterCollectionOverview extends StatelessWidget {
         final cardWidth = math.min(340.0, constraints.maxWidth * 0.88);
 
         return SizedBox(
-          height: 262,
+          height: hasExpandedCard ? 262 : 78,
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
             itemCount: cards.length,
@@ -410,12 +436,16 @@ class _CollectionCard extends StatelessWidget {
     required this.icon,
     required this.entries,
     required this.ownedKeys,
+    required this.isCollapsed,
+    required this.onToggleCollapse,
   });
 
   final String title;
   final IconData icon;
   final List<_CollectionEntry> entries;
   final Set<String> ownedKeys;
+  final bool isCollapsed;
+  final VoidCallback onToggleCollapse;
 
   @override
   Widget build(BuildContext context) {
@@ -433,6 +463,14 @@ class _CollectionCard extends StatelessWidget {
           children: [
             Row(
               children: [
+                IconButton(
+                  onPressed: onToggleCollapse,
+                  icon: Icon(
+                    isCollapsed
+                        ? Icons.keyboard_arrow_right
+                        : Icons.keyboard_arrow_down,
+                  ),
+                ),
                 Container(
                   width: 34,
                   height: 34,
@@ -464,22 +502,24 @@ class _CollectionCard extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 12),
-            Expanded(
-              child: SingleChildScrollView(
-                child: Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  children: [
-                    for (final entry in entries)
-                      _CollectionChip(
-                        entry: entry,
-                        isOwned: entry.isOwnedBy(ownedKeys),
-                      ),
-                  ],
+            if (!isCollapsed) ...[
+              const SizedBox(height: 12),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      for (final entry in entries)
+                        _CollectionChip(
+                          entry: entry,
+                          isOwned: entry.isOwnedBy(ownedKeys),
+                        ),
+                    ],
+                  ),
                 ),
               ),
-            ),
+            ],
           ],
         ),
       ),
