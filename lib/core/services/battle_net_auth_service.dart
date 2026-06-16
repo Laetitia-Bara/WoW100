@@ -3,19 +3,19 @@ import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../config/app_config.dart';
+import 'oauth_launch_context.dart';
 
 class BattleNetAuthService {
   static const _oauthChannel = MethodChannel('fr.cosmoslty.wow100/oauth');
   static const _region = 'eu';
 
   String buildAuthorizationUrl({bool forceLogin = false}) {
-    final platform = kIsWeb ? 'web' : 'native';
     final queryParameters = {
       'client_id': AppConfig.battleNetClientId,
       'redirect_uri': AppConfig.battleNetRedirectUri,
       'response_type': 'code',
       'scope': 'wow.profile',
-      'state': 'wow100-$platform-${DateTime.now().millisecondsSinceEpoch}',
+      'state': 'wow100-${DateTime.now().millisecondsSinceEpoch}',
       if (forceLogin) 'prompt': 'login',
     };
 
@@ -30,6 +30,10 @@ class BattleNetAuthService {
 
   Future<Uri?> openAuthorization({bool forceLogin = false}) async {
     final uri = Uri.parse(buildAuthorizationUrl(forceLogin: forceLogin));
+
+    if (kIsWeb) {
+      markWebOAuthLaunch();
+    }
 
     if (!kIsWeb && defaultTargetPlatform == TargetPlatform.iOS) {
       final callback = await _oauthChannel.invokeMethod<String>(

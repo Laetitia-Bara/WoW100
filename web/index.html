@@ -39,8 +39,17 @@
       var isCallback = window.location.pathname === '/callback';
       var query = window.location.search || '';
       var hasOAuthResult = /[?&](code|error)=/.test(query);
-      var state = new URLSearchParams(query).get('state') || '';
-      var shouldOpenNativeApp = state.indexOf('wow100-web-') !== 0;
+      var wasLaunchedFromWeb = false;
+
+      try {
+        wasLaunchedFromWeb =
+          window.sessionStorage.getItem('wow100_oauth_launch') === 'web';
+        window.sessionStorage.removeItem('wow100_oauth_launch');
+      } catch (_) {
+        wasLaunchedFromWeb = false;
+      }
+
+      var shouldOpenNativeApp = !wasLaunchedFromWeb;
 
       if (!isCallback || !hasOAuthResult) {
         return;
