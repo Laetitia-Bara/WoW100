@@ -41,6 +41,7 @@ class _WoW100AppShellState extends State<_WoW100AppShell> {
   @override
   void initState() {
     super.initState();
+    _markInitialDeepLinksAsHandled();
     _deepLinkChannel.setMethodCallHandler(_handleDeepLinkMethodCall);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _loadInitialDeepLink();
@@ -75,12 +76,12 @@ class _WoW100AppShellState extends State<_WoW100AppShell> {
   }
 
   void _openDeepLink(String link) {
-    if (!_handledDeepLinks.add(link)) {
+    final uri = Uri.tryParse(link);
+    if (uri == null) {
       return;
     }
 
-    final uri = Uri.tryParse(link);
-    if (uri == null) {
+    if (!_markDeepLinkAsHandled(uri)) {
       return;
     }
 
@@ -195,5 +196,53 @@ class _WoW100AppShellState extends State<_WoW100AppShell> {
 
   bool _isPrivacyUri(Uri uri) {
     return uri.path == '/privacy' || uri.path == '/legal';
+  }
+
+  void _markInitialDeepLinksAsHandled() {
+    final platformRoute =
+        WidgetsBinding.instance.platformDispatcher.defaultRouteName;
+
+    _markDeepLinkStringAsHandled(platformRoute);
+
+    if (_isCallbackUri(Uri.base) || _isPrivacyUri(Uri.base)) {
+      _markDeepLinkAsHandled(Uri.base);
+    }
+  }
+
+  bool _markDeepLinkStringAsHandled(String link) {
+    final uri = Uri.tryParse(link);
+    if (uri == null) {
+      return false;
+    }
+
+    return _markDeepLinkAsHandled(uri);
+  }
+
+  bool _markDeepLinkAsHandled(Uri uri) {
+    if (!_isCallbackUri(uri) && !_isPrivacyUri(uri)) {
+      return true;
+    }
+
+    return _handledDeepLinks.add(_deepLinkKey(uri));
+  }
+
+  String _deepLinkKey(Uri uri) {
+    if (_isCallbackUri(uri)) {
+      final code = uri.queryParameters['code'];
+      if (code != null && code.isNotEmpty) {
+        return 'callback-code:$code';
+      }
+
+      final error = uri.queryParameters['error'];
+      if (error != null && error.isNotEmpty) {
+        return 'callback-error:$error';
+      }
+    }
+
+    if (_isPrivacyUri(uri)) {
+      return 'privacy:${uri.path}';
+    }
+
+    return uri.toString();
   }
 }

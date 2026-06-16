@@ -16,7 +16,10 @@ class AuthCallbackPage extends StatefulWidget {
 }
 
 class _AuthCallbackPageState extends State<AuthCallbackPage> {
+  static final Map<String, Future<List<WowCharacter>>> _charactersByCode = {};
+
   final BattleNetRepository _repository = BattleNetRepository();
+  final BattleNetTokenService _tokenService = BattleNetTokenService();
 
   bool _isLoading = true;
   String? _error;
@@ -39,22 +42,55 @@ class _AuthCallbackPageState extends State<AuthCallbackPage> {
         throw Exception('Aucun code OAuth reçu.');
       }
 
-      final authResult = await _repository.exchangeCodeForToken(code);
-      await BattleNetTokenService().saveAuthResult(authResult);
-      final characters = await _repository.getCharacters(
-        authResult.accessToken,
-      );
+      final characters = await _loadCharactersForCode(code);
+
+      if (!mounted) return;
 
       setState(() {
         _characters = characters;
         _isLoading = false;
       });
     } catch (e) {
+      if (!mounted) return;
+
       setState(() {
         _error = e.toString();
         _isLoading = false;
       });
     }
+  }
+
+  Future<List<WowCharacter>> _loadCharactersForCode(String code) {
+    final existingLoad = _charactersByCode[code];
+    if (existingLoad != null) {
+      return existingLoad;
+    }
+
+    final load = _exchangeCodeAndLoadCharacters(code).catchError((error) async {
+      _charactersByCode.remove(code);
+
+      if (_isConsumedAuthorizationCodeError(error)) {
+        final token = await _tokenService.loadToken();
+        if (token != null) {
+          return _repository.getCharacters(token);
+        }
+      }
+
+      throw error;
+    });
+
+    _charactersByCode[code] = load;
+    return load;
+  }
+
+  Future<List<WowCharacter>> _exchangeCodeAndLoadCharacters(String code) async {
+    final authResult = await _repository.exchangeCodeForToken(code);
+    await _tokenService.saveAuthResult(authResult);
+    return _repository.getCharacters(authResult.accessToken);
+  }
+
+  bool _isConsumedAuthorizationCodeError(Object error) {
+    return error.toString().contains('invalid_grant');
   }
 
   @override

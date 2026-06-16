@@ -9,12 +9,13 @@ class BattleNetAuthService {
   static const _region = 'eu';
 
   String buildAuthorizationUrl({bool forceLogin = false}) {
+    final platform = kIsWeb ? 'web' : 'native';
     final queryParameters = {
       'client_id': AppConfig.battleNetClientId,
       'redirect_uri': AppConfig.battleNetRedirectUri,
       'response_type': 'code',
       'scope': 'wow.profile',
-      'state': 'wow100-${DateTime.now().millisecondsSinceEpoch}',
+      'state': 'wow100-$platform-${DateTime.now().millisecondsSinceEpoch}',
       if (forceLogin) 'prompt': 'login',
     };
 

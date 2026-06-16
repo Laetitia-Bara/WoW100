@@ -7,24 +7,43 @@ import '../theme/app_theme.dart';
 class AppAds {
   const AppAds._();
 
-  static const appId = 'ca-app-pub-5057499390168934~3930177735';
-  static const _productionBannerAdUnitId =
+  static const androidAppId = 'ca-app-pub-5057499390168934~3930177735';
+  static const iosAppId = 'ca-app-pub-5057499390168934~4880059647';
+  static const _androidProductionBannerAdUnitId =
       'ca-app-pub-5057499390168934/4065909101';
-  static const _productionNativeAdUnitId =
+  static const _androidProductionNativeAdUnitId =
       'ca-app-pub-5057499390168934/8663629665';
+  static const _iosProductionBannerAdUnitId =
+      'ca-app-pub-5057499390168934/7175050497';
+  static const _iosProductionNativeAdUnitId =
+      'ca-app-pub-5057499390168934/2062324614';
   static const _testBannerAdUnitId = 'ca-app-pub-3940256099942544/6300978111';
   static const _testNativeAdUnitId = 'ca-app-pub-3940256099942544/2247696110';
 
   static String get bannerAdUnitId {
-    return kReleaseMode ? _productionBannerAdUnitId : _testBannerAdUnitId;
+    if (!kReleaseMode) {
+      return _testBannerAdUnitId;
+    }
+
+    return defaultTargetPlatform == TargetPlatform.iOS
+        ? _iosProductionBannerAdUnitId
+        : _androidProductionBannerAdUnitId;
   }
 
   static String get nativeAdUnitId {
-    return kReleaseMode ? _productionNativeAdUnitId : _testNativeAdUnitId;
+    if (!kReleaseMode) {
+      return _testNativeAdUnitId;
+    }
+
+    return defaultTargetPlatform == TargetPlatform.iOS
+        ? _iosProductionNativeAdUnitId
+        : _androidProductionNativeAdUnitId;
   }
 
   static bool get isSupported {
-    return !kIsWeb && defaultTargetPlatform == TargetPlatform.android;
+    return !kIsWeb &&
+        (defaultTargetPlatform == TargetPlatform.android ||
+            defaultTargetPlatform == TargetPlatform.iOS);
   }
 
   static Future<void> initialize() async {

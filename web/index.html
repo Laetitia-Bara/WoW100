@@ -39,12 +39,14 @@
       var isCallback = window.location.pathname === '/callback';
       var query = window.location.search || '';
       var hasOAuthResult = /[?&](code|error)=/.test(query);
+      var state = new URLSearchParams(query).get('state') || '';
+      var shouldOpenNativeApp = state.indexOf('wow100-web-') !== 0;
 
       if (!isCallback || !hasOAuthResult) {
         return;
       }
 
-      if (isAndroid) {
+      if (isAndroid && shouldOpenNativeApp) {
         var fallback = encodeURIComponent(window.location.href);
         window.location.replace(
           'intent://callback' +
@@ -57,7 +59,7 @@
         return;
       }
 
-      if (isIOS) {
+      if (isIOS && shouldOpenNativeApp) {
         window.wow100NativeCallbackUrl = 'wow100://callback' + query;
       }
     })();
