@@ -55,20 +55,20 @@ const _playableClasses = <_CollectionEntry>[
 ];
 
 const _playableProfessions = <_CollectionEntry>[
-  _CollectionEntry('Alchimie'),
-  _CollectionEntry('Calligraphie'),
-  _CollectionEntry('Couture'),
-  _CollectionEntry('Dépeçage'),
-  _CollectionEntry('Enchantement'),
-  _CollectionEntry('Forge'),
-  _CollectionEntry('Herboristerie'),
-  _CollectionEntry('Ingénierie'),
-  _CollectionEntry('Joaillerie'),
-  _CollectionEntry('Minage'),
-  _CollectionEntry('Travail du cuir'),
-  _CollectionEntry('Cuisine'),
-  _CollectionEntry('Pêche'),
-  _CollectionEntry('Archéologie'),
+  _CollectionEntry('Alchimie', aliases: ['Alchemy']),
+  _CollectionEntry('Calligraphie', aliases: ['Inscription']),
+  _CollectionEntry('Couture', aliases: ['Tailoring']),
+  _CollectionEntry('Dépeçage', aliases: ['Skinning']),
+  _CollectionEntry('Enchantement', aliases: ['Enchanting']),
+  _CollectionEntry('Forge', aliases: ['Blacksmithing']),
+  _CollectionEntry('Herboristerie', aliases: ['Herbalism']),
+  _CollectionEntry('Ingénierie', aliases: ['Engineering']),
+  _CollectionEntry('Joaillerie', aliases: ['Jewelcrafting']),
+  _CollectionEntry('Minage', aliases: ['Mining']),
+  _CollectionEntry('Travail du cuir', aliases: ['Leatherworking']),
+  _CollectionEntry('Cuisine', aliases: ['Cooking']),
+  _CollectionEntry('Pêche', aliases: ['Fishing']),
+  _CollectionEntry('Archéologie', aliases: ['Archaeology']),
 ];
 
 class _CollectionEntry {

@@ -48,15 +48,17 @@ export async function onRequest({request}) {
 
     const finalCharacters = await Promise.all(
       characterSummaries.map(async (character) => {
-        const [professions, profile] = await Promise.all([
+        const [professions, profile, portraitUrl] = await Promise.all([
           fetchCharacterProfessions(token, character),
           fetchCharacterProfile(token, character),
+          fetchCharacterPortraitUrl(token, character),
         ]);
 
         return {
           ...character,
           professions,
           achievementPoints: profile.achievement_points ?? 0,
+          portraitUrl,
         };
       }),
     );
@@ -92,6 +94,30 @@ async function fetchCharacterProfile(token, character) {
   }
 }
 
+async function fetchCharacterPortraitUrl(token, character) {
+  if (!character.realmSlug || !character.name) {
+    return null;
+  }
+
+  try {
+    const characterSlug = encodeURIComponent(character.name.toLowerCase());
+    const data = await fetchBattleNetJson(
+      `https://eu.api.blizzard.com/profile/wow/character/${character.realmSlug}/${characterSlug}/character-media`,
+      {
+        token,
+        params: {
+          namespace: "profile-eu",
+          locale: "fr_FR",
+        },
+      },
+    );
+
+    return pickCharacterPortraitUrl(data);
+  } catch (_) {
+    return null;
+  }
+}
+
 async function fetchCharacterProfessions(token, character) {
   if (!character.realmSlug || !character.name) {
     return [];
@@ -110,19 +136,50 @@ async function fetchCharacterProfessions(token, character) {
       },
     );
 
-    const entries = [
-      ...(data.primaries ?? []),
-      ...(data.secondaries ?? []),
-    ];
-
-    return [
-      ...new Set(
-        entries
-          .map((entry) => entry.profession?.name)
-          .filter(Boolean),
-      ),
-    ];
+    return collectProfessionNames(data);
   } catch (_) {
     return [];
   }
+}
+
+function collectProfessionNames(data) {
+  const names = new Set();
+  const entries = [
+    ...(Array.isArray(data?.primaries) ? data.primaries : []),
+    ...(Array.isArray(data?.secondaries) ? data.secondaries : []),
+    ...(Array.isArray(data?.professions) ? data.professions : []),
+  ];
+
+  for (const entry of entries) {
+    addProfessionName(names, entry);
+  }
+
+  return [...names];
+}
+
+function addProfessionName(names, value) {
+  if (!value) return;
+
+  if (typeof value === "string") {
+    const name = value.trim();
+    if (name) names.add(name);
+    return;
+  }
+
+  if (typeof value !== "object") return;
+
+  addProfessionName(names, value.profession);
+  addProfessionName(names, value.name);
+}
+
+function pickCharacterPortraitUrl(media) {
+  const assets = Array.isArray(media?.assets) ? media.assets : [];
+  const preferred =
+    assets.find((asset) => asset.key === "inset") ??
+    assets.find((asset) => asset.key === "avatar") ??
+    assets.find((asset) => asset.key === "main-raw") ??
+    assets.find((asset) => asset.key === "main") ??
+    assets.find((asset) => typeof asset.value === "string");
+
+  return preferred?.value ?? null;
 }

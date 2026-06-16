@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wow100/core/services/battle_net_auth_service.dart';
 import 'package:wow100/core/services/battle_net_session_service.dart';
+import 'package:wow100/core/services/battle_net_token_service.dart';
 
 import '../../../../core/ads/app_ads.dart';
 import '../../../../core/services/selected_character_service.dart';
@@ -9,6 +10,7 @@ import '../../../../data/models/expansion_progress.dart';
 import '../../../../data/models/tracking_category.dart';
 import '../../../../data/models/wow_character.dart';
 import '../../../../data/models/wow_expansion.dart';
+import '../../../../data/repositories/battle_net_repository.dart';
 import '../../../../data/repositories/progress_repository.dart';
 import '../../../../data/sources/wow_expansion_catalog.dart';
 import '../../../auth/presentation/pages/auth_callback_page.dart';
@@ -31,8 +33,10 @@ class _DashboardPageState extends State<DashboardPage> {
     TrackingCategory.pets,
   };
   final ProgressRepository _repository = JsonProgressRepository();
+  final BattleNetRepository _battleNetRepository = BattleNetRepository();
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
+  final BattleNetTokenService _battleNetTokenService = BattleNetTokenService();
   final BattleNetSessionService _battleNetSessionService =
       BattleNetSessionService();
 
@@ -70,13 +74,42 @@ class _DashboardPageState extends State<DashboardPage> {
       return;
     }
 
-    final character = await _selectedCharacterService.loadCharacter();
+    final character = await _loadSelectedCharacterWithPortrait();
 
     if (!mounted) return;
 
     setState(() {
       _mainCharacter = character;
     });
+  }
+
+  Future<WowCharacter?> _loadSelectedCharacterWithPortrait() async {
+    final character = await _selectedCharacterService.loadCharacter();
+
+    if (character == null || character.portraitUrl?.isNotEmpty == true) {
+      return character;
+    }
+
+    try {
+      final token = await _battleNetTokenService.loadToken();
+      if (token == null || token.isEmpty) return character;
+
+      final characters = await _battleNetRepository.getCharacters(token);
+      final refreshedCharacter = characters
+          .where(
+            (candidate) =>
+                candidate.name == character.name &&
+                candidate.realmSlug == character.realmSlug,
+          )
+          .firstOrNull;
+
+      if (refreshedCharacter == null) return character;
+
+      await _selectedCharacterService.saveCharacter(refreshedCharacter);
+      return refreshedCharacter;
+    } catch (_) {
+      return character;
+    }
   }
 
   Future<void> _disconnectBattleNet() async {
@@ -364,57 +397,120 @@ class _HeroCard extends StatelessWidget {
     final characterClassColor = hasCharacter
         ? _wowClassColor(character!.characterClass)
         : AppTheme.text;
+    final portraitUrl = character?.portraitUrl;
+    final hasPortrait = portraitUrl != null && portraitUrl.isNotEmpty;
 
     return Card(
       clipBehavior: Clip.antiAlias,
-      child: Stack(
-        children: [
-          if (hasCharacter) _CharacterIdentityBackdrop(character: character!),
-          Padding(
-            padding: const EdgeInsets.all(18),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  hasCharacter
-                      ? character!.name
-                      : 'Companion de collection WoW',
-                  style: TextStyle(
-                    color: characterClassColor,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w800,
-                  ),
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final showWidePortrait = hasPortrait && constraints.maxWidth >= 760;
+
+          return Stack(
+            children: [
+              if (hasCharacter)
+                _CharacterIdentityBackdrop(character: character!),
+              if (showWidePortrait)
+                Positioned(
+                  top: 0,
+                  right: 0,
+                  bottom: 0,
+                  width: 250,
+                  child: _CharacterPortraitBackdrop(imageUrl: portraitUrl),
                 ),
-                const SizedBox(height: 8),
-                Text(
-                  hasCharacter
-                      ? '${character!.race} ${character!.characterClass} • ${character!.realm} • ${character!.faction} • Niveau ${character!.level}'
-                      : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
-                  style: const TextStyle(
-                    color: AppTheme.mutedText,
-                    height: 1.4,
-                  ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(
+                  18,
+                  18,
+                  showWidePortrait ? 230 : 18,
+                  18,
                 ),
-                if (hasCharacter) ...[
-                  const SizedBox(height: 8),
-                  Text(
-                    'Points de HF : ${_formatNumber(character!.achievementPoints)}',
-                    style: const TextStyle(
-                      color: AppTheme.gold,
-                      fontWeight: FontWeight.w800,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      hasCharacter
+                          ? character!.name
+                          : 'Companion de collection WoW',
+                      style: TextStyle(
+                        color: characterClassColor,
+                        fontSize: 22,
+                        fontWeight: FontWeight.w800,
+                      ),
                     ),
-                  ),
-                ],
-                const SizedBox(height: 18),
-                _TotalProgressSummary(
-                  progress: totalProgress,
-                  visibleCategories: visibleCategories,
+                    const SizedBox(height: 8),
+                    Text(
+                      hasCharacter
+                          ? '${character!.race} ${character!.characterClass} • ${character!.realm} • ${character!.faction} • Niveau ${character!.level}'
+                          : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
+                      style: const TextStyle(
+                        color: AppTheme.mutedText,
+                        height: 1.4,
+                      ),
+                    ),
+                    if (hasCharacter) ...[
+                      const SizedBox(height: 8),
+                      Text(
+                        'Points de HF : ${_formatNumber(character!.achievementPoints)}',
+                        style: const TextStyle(
+                          color: AppTheme.gold,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                    ],
+                    const SizedBox(height: 18),
+                    _TotalProgressSummary(
+                      progress: totalProgress,
+                      visibleCategories: visibleCategories,
+                    ),
+                  ],
                 ),
+              ),
+            ],
+          );
+        },
+      ),
+    );
+  }
+}
+
+class _CharacterPortraitBackdrop extends StatelessWidget {
+  const _CharacterPortraitBackdrop({required this.imageUrl});
+
+  final String imageUrl;
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: [
+                AppTheme.card.withAlpha(0),
+                AppTheme.background.withAlpha(130),
               ],
             ),
           ),
-        ],
-      ),
+        ),
+        Align(
+          alignment: Alignment.bottomRight,
+          child: Image.network(
+            imageUrl,
+            fit: BoxFit.contain,
+            alignment: Alignment.bottomRight,
+            errorBuilder: (_, _, _) => const SizedBox.shrink(),
+            loadingBuilder: (context, child, loadingProgress) {
+              if (loadingProgress == null) return child;
+
+              return const SizedBox.shrink();
+            },
+          ),
+        ),
+      ],
     );
   }
 }

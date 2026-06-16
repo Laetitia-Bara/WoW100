@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:wow100/core/services/battle_net_token_service.dart';
+import 'package:wow100/data/models/achievement_group_hierarchy.dart';
 import 'package:wow100/data/models/tracking_category.dart';
 import 'package:wow100/data/repositories/battle_net_repository.dart';
 
@@ -56,8 +57,8 @@ class _PlannerPageState extends State<PlannerPage> {
 
   List<TrackingItem> _items = [];
   bool _isLoading = true;
-  bool _missingOnly = false;
-  bool _hideUnavailable = false;
+  bool _missingOnly = true;
+  bool _hideUnavailable = true;
   String _searchQuery = '';
   final Set<TrackingCategory> _selectedCategories = {};
   final Set<String> _selectedGroups = {};
@@ -248,6 +249,9 @@ class _PlannerPageState extends State<PlannerPage> {
   }
 
   String _groupLabel(TrackingItem item) {
+    final achievementGroup = AchievementGroupHierarchy.labelFor(item);
+    if (achievementGroup != null) return achievementGroup;
+
     final group = item.instance.trim();
 
     if (group.isEmpty || group == 'A verifier') {
@@ -278,6 +282,9 @@ class _PlannerPageState extends State<PlannerPage> {
   }
 
   int _compareGroups(String left, String right) {
+    final achievementCompare = AchievementGroupHierarchy.compare(left, right);
+    if (achievementCompare != null) return achievementCompare;
+
     final leftIndex = _preferredMountGroups.indexOf(left);
     final rightIndex = _preferredMountGroups.indexOf(right);
 
@@ -393,6 +400,7 @@ class _PlannerPageState extends State<PlannerPage> {
     final obtainedCount = filteredItems.where((item) => item.obtained).length;
     final totalCount = filteredItems.length;
     final progress = totalCount == 0 ? 0.0 : obtainedCount / totalCount;
+    final progressPercent = totalCount == 0 ? 0 : (progress * 100).round();
 
     return Scaffold(
       appBar: AppBar(
@@ -492,10 +500,25 @@ class _PlannerPageState extends State<PlannerPage> {
                   style: const TextStyle(fontWeight: FontWeight.w700),
                 ),
                 const SizedBox(height: 8),
-                LinearProgressIndicator(
-                  value: progress,
-                  minHeight: 10,
-                  borderRadius: BorderRadius.circular(999),
+                Row(
+                  children: [
+                    Expanded(
+                      child: LinearProgressIndicator(
+                        value: progress,
+                        minHeight: 10,
+                        borderRadius: BorderRadius.circular(999),
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Text(
+                      '$progressPercent %',
+                      style: const TextStyle(
+                        color: AppTheme.gold,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ],
                 ),
                 const SizedBox(height: 20),
                 const AppNativeAd(),
@@ -986,6 +1009,8 @@ class _PlannerItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final groupLabel =
+        AchievementGroupHierarchy.labelFor(item) ?? item.instance;
     final tags = [
       if (item.unavailable)
         const _PlannerTag(
@@ -1008,17 +1033,27 @@ class _PlannerItemCard extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Checkbox(value: item.obtained, onChanged: onChanged),
-            IconButton(
-              tooltip:
-                  item.wowheadItemId != null ||
-                      item.wowheadAchievementId != null
-                  ? 'Ouvrir sur Wowhead'
-                  : 'Ouvrir la fiche',
-              icon: const Icon(Icons.open_in_new),
-              onPressed: () => _openExternal(context),
+            SizedBox(
+              width: 42,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Checkbox(value: item.obtained, onChanged: onChanged),
+                  IconButton(
+                    tooltip:
+                        item.wowheadItemId != null ||
+                            item.wowheadAchievementId != null
+                        ? 'Ouvrir sur Wowhead'
+                        : 'Ouvrir la fiche',
+                    icon: const Icon(Icons.open_in_new),
+                    onPressed: () => _openExternal(context),
+                  ),
+                ],
+              ),
             ),
-            const SizedBox(width: 8),
+            const SizedBox(width: 10),
+            _PlannerItemArtwork(item: item),
+            const SizedBox(width: 12),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -1037,7 +1072,7 @@ class _PlannerItemCard extends StatelessWidget {
                     [
                       item.expansion.label,
                       item.zone,
-                      item.instance,
+                      groupLabel,
                       item.source,
                     ].where((value) => value.isNotEmpty).join(' • '),
                     style: const TextStyle(color: AppTheme.mutedText),
@@ -1057,6 +1092,110 @@ class _PlannerItemCard extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _PlannerItemArtwork extends StatelessWidget {
+  const _PlannerItemArtwork({required this.item});
+
+  static final Map<String, Future<String?>> _mediaUrlCache = {};
+
+  final TrackingItem item;
+
+  Future<String?> _mediaUrl() {
+    final blizzardId = item.blizzardId;
+
+    if (blizzardId == null ||
+        (item.category != TrackingCategory.mounts &&
+            item.category != TrackingCategory.pets)) {
+      return Future.value(null);
+    }
+
+    final cacheKey = '${item.category.name}:$blizzardId';
+
+    return _mediaUrlCache.putIfAbsent(
+      cacheKey,
+      () => BattleNetRepository().getCollectibleMediaUrl(
+        item.category,
+        blizzardId,
+      ),
+    );
+  }
+
+  String _fallbackImageUrl() {
+    return switch (item.category) {
+      TrackingCategory.mounts =>
+        'https://render.worldofwarcraft.com/eu/icons/56/ability_mount_ridinghorse.jpg',
+      TrackingCategory.pets =>
+        'https://render.worldofwarcraft.com/eu/icons/56/inv_pet_babyblizzardbear.jpg',
+      TrackingCategory.achievements =>
+        'https://render.worldofwarcraft.com/eu/icons/56/achievement_bg_winwsg.jpg',
+      _ =>
+        'https://render.worldofwarcraft.com/eu/icons/56/inv_misc_questionmark.jpg',
+    };
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox.square(
+      dimension: 64,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(color: AppTheme.gold.withValues(alpha: 0.35)),
+          color: Colors.black26,
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(7),
+          child: FutureBuilder<String?>(
+            future: _mediaUrl(),
+            builder: (context, snapshot) {
+              final imageUrl = snapshot.data ?? _fallbackImageUrl();
+
+              return Image.network(
+                imageUrl,
+                fit: BoxFit.cover,
+                errorBuilder: (context, error, stackTrace) =>
+                    _ArtworkFallbackIcon(item: item),
+                loadingBuilder: (context, child, loadingProgress) {
+                  if (loadingProgress == null) return child;
+
+                  return const Center(
+                    child: SizedBox.square(
+                      dimension: 18,
+                      child: CircularProgressIndicator(strokeWidth: 2),
+                    ),
+                  );
+                },
+              );
+            },
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _ArtworkFallbackIcon extends StatelessWidget {
+  const _ArtworkFallbackIcon({required this.item});
+
+  final TrackingItem item;
+
+  IconData get _icon {
+    return switch (item.category) {
+      TrackingCategory.mounts => Icons.cruelty_free,
+      TrackingCategory.pets => Icons.pets,
+      TrackingCategory.achievements => Icons.emoji_events_outlined,
+      _ => Icons.auto_awesome,
+    };
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ColoredBox(
+      color: Colors.black26,
+      child: Center(child: Icon(_icon, color: AppTheme.gold, size: 28)),
     );
   }
 }

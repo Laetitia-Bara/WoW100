@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:wow100/core/config/app_config.dart';
 import '../models/battle_net_auth_result.dart';
+import '../models/tracking_category.dart';
 import '../models/wow_character.dart';
 import '../models/wow_mount.dart';
 import '../models/wow_pet.dart';
@@ -129,6 +130,36 @@ class BattleNetRepository {
         'name': entry['name'] ?? achievement['name'],
       });
     }).toList();
+  }
+
+  Future<String?> getCollectibleMediaUrl(
+    TrackingCategory category,
+    int blizzardId,
+  ) async {
+    final type = switch (category) {
+      TrackingCategory.mounts => 'mount',
+      TrackingCategory.pets => 'pet',
+      _ => '',
+    };
+
+    if (type.isEmpty) return null;
+
+    final uri = _apiUri('getCollectibleMedia', {
+      'type': type,
+      'id': blizzardId.toString(),
+    });
+
+    try {
+      final response = await http.get(uri);
+      if (response.statusCode != 200) return null;
+
+      final data = jsonDecode(response.body) as Map<String, dynamic>;
+      final url = data['url'];
+
+      return url is String && url.isNotEmpty ? url : null;
+    } catch (_) {
+      return null;
+    }
   }
 
   Uri _apiUri(String path, [Map<String, String>? queryParameters]) {

@@ -17,7 +17,11 @@ const metadataPath = path.join(
 );
 
 const expansions = [
-  { key: "vanilla", name: "Vanilla", aliases: ["classic", "kalimdor", "eastern kingdoms"] },
+  {
+    key: "vanilla",
+    name: "Vanilla",
+    aliases: ["classic", "classique", "kalimdor", "eastern kingdoms", "royaumes de l'est"],
+  },
   { key: "tbc", name: "The Burning Crusade", aliases: ["burning crusade", "outland"] },
   { key: "wrath", name: "Wrath of the Lich King", aliases: ["wrath", "lich king", "northrend"] },
   { key: "cataclysm", name: "Cataclysm", aliases: ["cataclysm"] },

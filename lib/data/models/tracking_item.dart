@@ -30,6 +30,10 @@ class TrackingItem {
   /// ID Wowhead (haut-fait)
   final int? wowheadAchievementId;
 
+  final int? blizzardCategoryId;
+
+  final String blizzardCategoryName;
+
   /// Nécessite un groupe
   final bool groupRequired;
 
@@ -58,6 +62,8 @@ class TrackingItem {
     required this.source,
     this.wowheadItemId,
     this.wowheadAchievementId,
+    this.blizzardCategoryId,
+    this.blizzardCategoryName = '',
     required this.groupRequired,
     required this.weeklyLockout,
     required this.obtained,
@@ -78,6 +84,8 @@ class TrackingItem {
       source: source,
       wowheadItemId: wowheadItemId,
       wowheadAchievementId: wowheadAchievementId,
+      blizzardCategoryId: blizzardCategoryId,
+      blizzardCategoryName: blizzardCategoryName,
       groupRequired: groupRequired,
       weeklyLockout: weeklyLockout,
       obtained: obtained ?? this.obtained,
@@ -100,6 +108,8 @@ class TrackingItem {
       source: json['source'] ?? '',
       wowheadItemId: json['wowheadItemId'],
       wowheadAchievementId: json['wowheadAchievementId'],
+      blizzardCategoryId: json['blizzardCategoryId'],
+      blizzardCategoryName: json['blizzardCategoryName'] ?? '',
       groupRequired: json['groupRequired'] ?? false,
       weeklyLockout: json['weeklyLockout'] ?? false,
       obtained: false,

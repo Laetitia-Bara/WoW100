@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T18:49:04.852Z",
+  "generatedAt": "2026-06-16T13:49:37.346Z",
   "pets": {
     "total": 2133,
     "wowheadIndexRows": 2923,
@@ -13,8 +13,8 @@
     "wowheadIndexRows": 1000,
     "rowsWithWowheadIndex": 992,
     "rowsWithWowheadExpansion": 0,
-    "classified": 4577,
-    "unclassified": 4215,
+    "classified": 4630,
+    "unclassified": 4162,
     "mismatches": [],
     "limitation": "L'index Wowhead local des hauts faits ne contient que les 1000 premiers résultats et aucun champ expansion exploitable. Utiliser wowhead_patch_audit_report.json pour l'audit par page quand Wowhead ne bloque pas les requêtes."
   },

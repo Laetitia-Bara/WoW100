@@ -22,6 +22,7 @@ class SelectedCharacterService {
         'realmSlug': character.realmSlug,
         'professions': character.professions,
         'achievementPoints': character.achievementPoints,
+        'portraitUrl': character.portraitUrl,
       }),
     );
   }

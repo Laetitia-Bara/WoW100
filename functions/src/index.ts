@@ -48,21 +48,40 @@ async function fetchCharacterProfessions(
       },
     );
 
-    const entries = [
-      ...(result.data.primaries ?? []),
-      ...(result.data.secondaries ?? []),
-    ];
-
-    return [
-      ...new Set(
-        entries
-          .map((entry: any) => entry.profession?.name)
-          .filter(Boolean),
-      ),
-    ] as string[];
+    return collectProfessionNames(result.data);
   } catch (_) {
     return [];
   }
+}
+
+function collectProfessionNames(data: any): string[] {
+  const names = new Set<string>();
+  const entries = [
+    ...(Array.isArray(data?.primaries) ? data.primaries : []),
+    ...(Array.isArray(data?.secondaries) ? data.secondaries : []),
+    ...(Array.isArray(data?.professions) ? data.professions : []),
+  ];
+
+  for (const entry of entries) {
+    addProfessionName(names, entry);
+  }
+
+  return [...names];
+}
+
+function addProfessionName(names: Set<string>, value: any): void {
+  if (!value) return;
+
+  if (typeof value === "string") {
+    const name = value.trim();
+    if (name) names.add(name);
+    return;
+  }
+
+  if (typeof value !== "object") return;
+
+  addProfessionName(names, value.profession);
+  addProfessionName(names, value.name);
 }
 
 async function fetchCharacterProfile(
@@ -92,6 +111,47 @@ async function fetchCharacterProfile(
   } catch (_) {
     return {};
   }
+}
+
+async function fetchCharacterPortraitUrl(
+  token: string,
+  character: {name?: string; realmSlug?: string},
+): Promise<string | null> {
+  if (!character.realmSlug || !character.name) {
+    return null;
+  }
+
+  try {
+    const characterSlug = encodeURIComponent(character.name.toLowerCase());
+    const result = await axios.get(
+      `https://eu.api.blizzard.com/profile/wow/character/${character.realmSlug}/${characterSlug}/character-media`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+        params: {
+          namespace: "profile-eu",
+          locale: "fr_FR",
+        },
+      },
+    );
+
+    return pickCharacterPortraitUrl(result.data);
+  } catch (_) {
+    return null;
+  }
+}
+
+function pickCharacterPortraitUrl(media: any): string | null {
+  const assets = Array.isArray(media?.assets) ? media.assets : [];
+  const preferred =
+    assets.find((asset: any) => asset.key === "inset") ??
+    assets.find((asset: any) => asset.key === "avatar") ??
+    assets.find((asset: any) => asset.key === "main-raw") ??
+    assets.find((asset: any) => asset.key === "main") ??
+    assets.find((asset: any) => typeof asset.value === "string");
+
+  return preferred?.value ?? null;
 }
 
 export const exchangeBattleNetCode = onRequest(
@@ -216,15 +276,17 @@ export const getWowCharacters = onRequest(
 
       const finalCharacters = await Promise.all(
         characterSummaries.map(async (character) => {
-          const [professions, profile] = await Promise.all([
+          const [professions, profile, portraitUrl] = await Promise.all([
             fetchCharacterProfessions(token, character),
             fetchCharacterProfile(token, character),
+            fetchCharacterPortraitUrl(token, character),
           ]);
 
           return {
             ...character,
             professions,
             achievementPoints: profile.achievement_points ?? 0,
+            portraitUrl,
           };
         })
       );
