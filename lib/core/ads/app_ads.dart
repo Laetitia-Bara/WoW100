@@ -51,6 +51,13 @@ class AppAds {
       return;
     }
 
+    await MobileAds.instance.updateRequestConfiguration(
+      RequestConfiguration(
+        maxAdContentRating: MaxAdContentRating.t,
+        tagForChildDirectedTreatment: TagForChildDirectedTreatment.no,
+        tagForUnderAgeOfConsent: TagForUnderAgeOfConsent.no,
+      ),
+    );
     await MobileAds.instance.initialize();
   }
 }
@@ -79,7 +86,7 @@ class _AppBannerAdState extends State<AppBannerAd> {
 
     _ad = BannerAd(
       adUnitId: AppAds.bannerAdUnitId,
-      request: const AdRequest(),
+      request: const AdRequest(nonPersonalizedAds: true),
       size: AdSize.banner,
       listener: BannerAdListener(
         onAdLoaded: (ad) {
@@ -161,7 +168,7 @@ class _AppNativeAdState extends State<AppNativeAd> {
 
     _ad = NativeAd(
       adUnitId: AppAds.nativeAdUnitId,
-      request: const AdRequest(),
+      request: const AdRequest(nonPersonalizedAds: true),
       nativeTemplateStyle: NativeTemplateStyle(
         templateType: TemplateType.medium,
         mainBackgroundColor: AppTheme.card,

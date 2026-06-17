@@ -125,10 +125,18 @@ class LegalPage extends StatelessWidget {
       ],
     ),
     _LegalContentSection(
+      title: 'Publicité',
+      paragraphs: [
+        'WoW100% peut afficher des annonces fournies par Google AdMob.',
+        'Les demandes publicitaires sont configurées pour limiter le contenu des annonces à un niveau adapté aux adolescents et exclure les annonces personnalisées.',
+        'Google peut traiter des identifiants publicitaires, des informations sur l’appareil et des données de diffusion publicitaire afin de fournir, mesurer et protéger les annonces.',
+      ],
+    ),
+    _LegalContentSection(
       title: 'Partage et prestataires',
       paragraphs: [
         'Les données nécessaires à la connexion et à la récupération de progression peuvent être transmises aux services Battle.net et Blizzard Entertainment afin d’obtenir les informations demandées par l’utilisateur.',
-        'L’application et son site peuvent s’appuyer sur des prestataires techniques d’hébergement ou d’exécution, notamment Cloudflare et Firebase/Google, pour fournir le service.',
+        'L’application et son site peuvent s’appuyer sur des prestataires techniques d’hébergement, d’exécution ou de diffusion publicitaire, notamment Cloudflare, Firebase/Google et Google AdMob, pour fournir le service.',
       ],
     ),
     _LegalContentSection(
