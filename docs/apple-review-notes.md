@@ -27,6 +27,8 @@ The recording starts with launching the app and demonstrates the main user flow:
 
 The app does not include in-app purchases, subscriptions, paid content, user-generated content, public posting, messaging, account registration inside WoW100%, or App Tracking Transparency prompts.
 
+WoW100% may display non-personalized Google AdMob ads. Ad requests are configured with a teen content rating and without personalized ad targeting.
+
 2. Devices and operating systems tested
 The app was tested before submission on:
 - iPhone [MODEL], iOS [VERSION]
@@ -67,10 +69,11 @@ WoW100% uses the following external services and platforms:
 - Blizzard Battle.net OAuth and World of Warcraft Profile APIs for optional user-authorized character, achievement, mount, and pet data
 - Cloudflare Pages Functions hosted at https://wow100.cosmos-lty.fr/api to securely exchange OAuth codes and proxy Battle.net API requests
 - Wowhead links as external reference pages for World of Warcraft items and achievements
+- Google AdMob to display non-personalized ads
 - Locally bundled catalog data for achievements, mounts, pets, expansions, and metadata
 - Local device storage via Flutter shared_preferences for the Battle.net access token, selected character, and manual checklist state
 
-The app does not use payment processors, advertising networks, analytics SDKs, or AI services.
+The app does not use payment processors, analytics SDKs, or AI services.
 
 6. Regional differences
 The app functions consistently across all regions. There are no region-specific features or region-specific paid content. The current Battle.net integration is configured for the EU Battle.net region.
@@ -85,4 +88,3 @@ Please let us know if any additional information is needed.
 Best regards,
 Laetitia BARA
 ```
-

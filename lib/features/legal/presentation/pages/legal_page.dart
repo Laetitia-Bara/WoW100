@@ -150,7 +150,7 @@ class LegalPage extends StatelessWidget {
       title: 'Vos droits et suppression',
       paragraphs: [
         'Vous pouvez déconnecter votre compte Battle.net depuis l’application afin de supprimer le jeton de connexion et le personnage sélectionné de l’espace local de l’application.',
-        'Vous pouvez également supprimer les données locales de WoW100% depuis les paramètres Android ou en désinstallant l’application.',
+        'Vous pouvez également supprimer les données locales de WoW100% depuis les réglages de votre appareil ou en désinstallant l’application.',
         'Pour toute demande d’accès, de rectification, d’opposition ou de suppression liée aux données personnelles, vous pouvez écrire à contact@cosmos-lty.fr.',
       ],
     ),
