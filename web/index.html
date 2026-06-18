@@ -34,8 +34,38 @@
   <link rel="manifest" href="manifest.json">
   <script>
     (function () {
+      var appStoreUrl = 'https://apps.apple.com/fr/app/wow100/id6778885180';
+      var playStoreUrl =
+        'https://play.google.com/store/apps/details?id=fr.cosmoslty.wow100&hl=fr&gl=FR';
+      var userAgent = navigator.userAgent || '';
+      var platform = navigator.platform || '';
+      var isAndroid = /Android/i.test(userAgent);
+      var isIOS =
+        /iPad|iPhone|iPod/i.test(userAgent) ||
+        (platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      var pathname = window.location.pathname;
+      var isHomePage = pathname === '/' || pathname === '/index.html';
+
+      if (!isHomePage) {
+        return;
+      }
+
+      if (isAndroid) {
+        window.location.replace(playStoreUrl);
+        return;
+      }
+
+      if (isIOS) {
+        window.location.replace(appStoreUrl);
+      }
+    })();
+  </script>
+  <script>
+    (function () {
       var isAndroid = /Android/i.test(navigator.userAgent);
-      var isIOS = /iPad|iPhone|iPod/i.test(navigator.userAgent);
+      var isIOS =
+        /iPad|iPhone|iPod/i.test(navigator.userAgent) ||
+        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
       var isCallback = window.location.pathname === '/callback';
       var query = window.location.search || '';
       var hasOAuthResult = /[?&](code|error)=/.test(query);
