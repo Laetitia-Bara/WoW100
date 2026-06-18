@@ -404,59 +404,66 @@ class _HeroCard extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       child: LayoutBuilder(
         builder: (context, constraints) {
-          final showWidePortrait = hasPortrait && constraints.maxWidth >= 760;
+          final showInlinePortrait = hasPortrait && constraints.maxWidth >= 560;
 
           return Stack(
             children: [
               if (hasCharacter)
                 _CharacterIdentityBackdrop(character: character!),
-              if (showWidePortrait)
-                Positioned(
-                  top: 0,
-                  right: 0,
-                  bottom: 0,
-                  width: 250,
-                  child: _CharacterPortraitBackdrop(imageUrl: portraitUrl),
-                ),
               Padding(
-                padding: EdgeInsets.fromLTRB(
-                  18,
-                  18,
-                  showWidePortrait ? 230 : 18,
-                  18,
-                ),
+                padding: const EdgeInsets.all(18),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      hasCharacter
-                          ? character!.name
-                          : 'Companion de collection WoW',
-                      style: TextStyle(
-                        color: characterClassColor,
-                        fontSize: 22,
-                        fontWeight: FontWeight.w800,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      hasCharacter
-                          ? '${character!.race} ${character!.characterClass} • ${character!.realm} • ${character!.faction} • Niveau ${character!.level}'
-                          : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
-                      style: const TextStyle(
-                        color: AppTheme.mutedText,
-                        height: 1.4,
-                      ),
-                    ),
-                    if (hasCharacter) ...[
-                      const SizedBox(height: 8),
-                      Text(
-                        'Points de HF : ${_formatNumber(character!.achievementPoints)}',
-                        style: const TextStyle(
-                          color: AppTheme.gold,
-                          fontWeight: FontWeight.w800,
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                hasCharacter
+                                    ? character!.name
+                                    : 'Companion de collection WoW',
+                                style: TextStyle(
+                                  color: characterClassColor,
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                              const SizedBox(height: 8),
+                              Text(
+                                hasCharacter
+                                    ? '${character!.race} ${character!.characterClass} • ${character!.realm} • ${character!.faction} • Niveau ${character!.level}'
+                                    : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
+                                style: const TextStyle(
+                                  color: AppTheme.mutedText,
+                                  height: 1.4,
+                                ),
+                              ),
+                              if (hasCharacter) ...[
+                                const SizedBox(height: 8),
+                                Text(
+                                  'Points de HF : ${_formatNumber(character!.achievementPoints)}',
+                                  style: const TextStyle(
+                                    color: AppTheme.gold,
+                                    fontWeight: FontWeight.w800,
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
                         ),
-                      ),
+                        if (showInlinePortrait) ...[
+                          const SizedBox(width: 18),
+                          _CharacterPortraitFrame(imageUrl: portraitUrl),
+                        ],
+                      ],
+                    ),
+                    if (hasPortrait && !showInlinePortrait) ...[
+                      const SizedBox(height: 14),
+                      _CharacterPortraitFrame(imageUrl: portraitUrl),
                     ],
                     const SizedBox(height: 18),
                     _TotalProgressSummary(
@@ -474,34 +481,37 @@ class _HeroCard extends StatelessWidget {
   }
 }
 
-class _CharacterPortraitBackdrop extends StatelessWidget {
-  const _CharacterPortraitBackdrop({required this.imageUrl});
+class _CharacterPortraitFrame extends StatelessWidget {
+  const _CharacterPortraitFrame({required this.imageUrl});
 
   final String imageUrl;
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      fit: StackFit.expand,
-      children: [
-        DecoratedBox(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: [
-                AppTheme.card.withAlpha(0),
-                AppTheme.background.withAlpha(130),
-              ],
-            ),
+    return Container(
+      width: 104,
+      height: 112,
+      padding: const EdgeInsets.all(3),
+      decoration: BoxDecoration(
+        color: AppTheme.background.withAlpha(190),
+        borderRadius: BorderRadius.circular(24),
+        border: Border.all(color: AppTheme.gold.withAlpha(145)),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withAlpha(90),
+            blurRadius: 18,
+            offset: const Offset(0, 8),
           ),
-        ),
-        Align(
-          alignment: Alignment.bottomRight,
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(21),
+        child: DecoratedBox(
+          decoration: BoxDecoration(color: Colors.black.withAlpha(95)),
           child: Image.network(
             imageUrl,
-            fit: BoxFit.contain,
-            alignment: Alignment.bottomRight,
+            fit: BoxFit.cover,
+            alignment: Alignment.topCenter,
             errorBuilder: (_, _, _) => const SizedBox.shrink(),
             loadingBuilder: (context, child, loadingProgress) {
               if (loadingProgress == null) return child;
@@ -510,7 +520,7 @@ class _CharacterPortraitBackdrop extends StatelessWidget {
             },
           ),
         ),
-      ],
+      ),
     );
   }
 }
