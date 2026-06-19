@@ -12,13 +12,23 @@ import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/tracking_item.dart';
 import '../../../../data/models/wow_expansion.dart';
+import '../../../../data/models/wow_region_filter.dart';
 import '../../../../data/repositories/planner_repository.dart';
+import '../widgets/region_selector_sheet.dart';
 
 class PlannerPage extends StatefulWidget {
-  const PlannerPage({super.key, required this.extension, this.category});
+  const PlannerPage({
+    super.key,
+    required this.extension,
+    this.category,
+    this.regionFilter,
+    this.newestFirst = false,
+  });
 
   final WowExpansion extension;
   final TrackingCategory? category;
+  final WowRegionFilter? regionFilter;
+  final bool newestFirst;
 
   @override
   State<PlannerPage> createState() => _PlannerPageState();
@@ -62,6 +72,7 @@ class _PlannerPageState extends State<PlannerPage> {
   String _searchQuery = '';
   final Set<TrackingCategory> _selectedCategories = {};
   final Set<String> _selectedGroups = {};
+  WowRegionFilter? _selectedRegionFilter;
 
   bool get _isPetsPlanner =>
       widget.category == TrackingCategory.pets ||
@@ -102,6 +113,9 @@ class _PlannerPageState extends State<PlannerPage> {
   }
 
   String get _plannerTitle {
+    final regionFilter = _selectedRegionFilter;
+    if (regionFilter != null) return 'Planner de ${regionFilter.zone}';
+
     if (_isExtensionPlanner) return 'Collectables de ${widget.extension.label}';
     if (_isAchievementsPlanner) return 'Hauts Faits';
     if (_isPetsPlanner) return 'Mascottes à récupérer';
@@ -109,9 +123,46 @@ class _PlannerPageState extends State<PlannerPage> {
     return 'Montures à récupérer';
   }
 
+  Future<void> _openRegionSelector() async {
+    final result = await showModalBottomSheet<WowRegionFilter>(
+      context: context,
+      isScrollControlled: true,
+      builder: (_) => RegionSelectorSheet(
+        repository: _repository,
+        newestFirst: widget.newestFirst,
+        selectedRegion: _selectedRegionFilter,
+      ),
+    );
+
+    if (result == null || !mounted) return;
+
+    if (result.expansion != widget.extension || widget.category != null) {
+      await Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (_) => PlannerPage(
+            extension: result.expansion,
+            regionFilter: result,
+            newestFirst: widget.newestFirst,
+          ),
+        ),
+      );
+      return;
+    }
+
+    setState(() {
+      _selectedRegionFilter = result;
+      _searchQuery = '';
+      _selectedCategories.clear();
+      _selectedGroups.clear();
+      _collapsedGroups.clear();
+    });
+  }
+
   @override
   void initState() {
     super.initState();
+    _selectedRegionFilter = widget.regionFilter;
     _loadItems();
   }
 
@@ -377,11 +428,14 @@ class _PlannerPageState extends State<PlannerPage> {
           _selectedCategories.contains(item.category);
       final matchesGroup =
           _selectedGroups.isEmpty || _selectedGroups.contains(group);
+      final matchesRegion =
+          _selectedRegionFilter == null || _selectedRegionFilter!.matches(item);
       final query = _searchQuery.toLowerCase();
 
       final matchesSearch =
           query.isEmpty ||
           item.name.toLowerCase().contains(query) ||
+          item.region.toLowerCase().contains(query) ||
           group.toLowerCase().contains(query) ||
           item.instance.toLowerCase().contains(query) ||
           item.source.toLowerCase().contains(query);
@@ -390,6 +444,7 @@ class _PlannerPageState extends State<PlannerPage> {
       final matchesAvailability = !_hideUnavailable || !item.unavailable;
 
       return matchesCategory &&
+          matchesRegion &&
           matchesGroup &&
           matchesSearch &&
           matchesMissingOnly &&
@@ -404,7 +459,7 @@ class _PlannerPageState extends State<PlannerPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.extension.label),
+        title: Text(_selectedRegionFilter?.zone ?? widget.extension.label),
         actions: [
           IconButton(
             tooltip: 'Tout décocher',
@@ -441,6 +496,13 @@ class _PlannerPageState extends State<PlannerPage> {
                   ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800),
                 ),
                 const SizedBox(height: 16),
+                if (_isExtensionPlanner || _selectedRegionFilter != null) ...[
+                  _RegionFilterField(
+                    selectedRegion: _selectedRegionFilter,
+                    onTap: _openRegionSelector,
+                  ),
+                  const SizedBox(height: 12),
+                ],
                 TextField(
                   decoration: const InputDecoration(
                     labelText:
@@ -638,6 +700,50 @@ class _PlannerFilterSwitch extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _RegionFilterField extends StatelessWidget {
+  const _RegionFilterField({required this.selectedRegion, required this.onTap});
+
+  final WowRegionFilter? selectedRegion;
+  final VoidCallback onTap;
+
+  String get _label {
+    final region = selectedRegion;
+    if (region == null) return 'Toutes les regions';
+
+    return '${region.zone} - ${region.region}';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      borderRadius: BorderRadius.circular(4),
+      onTap: onTap,
+      child: InputDecorator(
+        decoration: const InputDecoration(
+          labelText: 'Region',
+          border: OutlineInputBorder(),
+        ),
+        child: Row(
+          children: [
+            const Icon(Icons.travel_explore, size: 20),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Text(
+                _label,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontWeight: FontWeight.w700),
+              ),
+            ),
+            const SizedBox(width: 8),
+            const Icon(Icons.expand_more),
+          ],
+        ),
       ),
     );
   }
@@ -1071,6 +1177,10 @@ class _PlannerItemCard extends StatelessWidget {
                   Text(
                     [
                       item.expansion.label,
+                      if (item.region.isNotEmpty &&
+                          WowRegionFilter.normalize(item.region) !=
+                              WowRegionFilter.normalize(item.zone))
+                        item.region,
                       item.zone,
                       groupLabel,
                       item.source,

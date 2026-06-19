@@ -10,13 +10,16 @@ import '../../../../data/models/expansion_progress.dart';
 import '../../../../data/models/tracking_category.dart';
 import '../../../../data/models/wow_character.dart';
 import '../../../../data/models/wow_expansion.dart';
+import '../../../../data/models/wow_region_filter.dart';
 import '../../../../data/repositories/battle_net_repository.dart';
+import '../../../../data/repositories/planner_repository.dart';
 import '../../../../data/repositories/progress_repository.dart';
 import '../../../../data/sources/wow_expansion_catalog.dart';
 import '../../../auth/presentation/pages/auth_callback_page.dart';
 import '../../../auth/presentation/pages/character_switch_page.dart';
 import '../../../legal/presentation/pages/legal_page.dart';
 import '../../../planner/presentation/pages/planner_page.dart';
+import '../../../planner/presentation/widgets/region_selector_sheet.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -33,6 +36,7 @@ class _DashboardPageState extends State<DashboardPage> {
     TrackingCategory.pets,
   };
   final ProgressRepository _repository = JsonProgressRepository();
+  final PlannerRepository _plannerRepository = JsonPlannerRepository();
   final BattleNetRepository _battleNetRepository = BattleNetRepository();
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
@@ -185,6 +189,21 @@ class _DashboardPageState extends State<DashboardPage> {
     });
   }
 
+  Future<void> _openRegionSelector() async {
+    final result = await showModalBottomSheet<WowRegionFilter>(
+      context: context,
+      isScrollControlled: true,
+      builder: (_) => RegionSelectorSheet(
+        repository: _plannerRepository,
+        newestFirst: _newestFirst,
+      ),
+    );
+
+    if (result == null || !mounted) return;
+
+    await _openPlanner(result.expansion, regionFilter: result);
+  }
+
   void _toggleSortOrder() {
     setState(() {
       _newestFirst = !_newestFirst;
@@ -204,11 +223,17 @@ class _DashboardPageState extends State<DashboardPage> {
   Future<void> _openPlanner(
     WowExpansion expansion, {
     TrackingCategory? category,
+    WowRegionFilter? regionFilter,
   }) async {
     await Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (_) => PlannerPage(extension: expansion, category: category),
+        builder: (_) => PlannerPage(
+          extension: expansion,
+          category: category,
+          regionFilter: regionFilter,
+          newestFirst: _newestFirst,
+        ),
       ),
     );
 
@@ -311,6 +336,8 @@ class _DashboardPageState extends State<DashboardPage> {
                     totalProgress: totalProgress,
                     visibleCategories: _visibleCategories,
                   ),
+                  const SizedBox(height: 12),
+                  _RegionSearchButton(onTap: _openRegionSelector),
                   const SizedBox(height: 20),
                   _DashboardActionBar(
                     newestFirst: _newestFirst,
@@ -685,6 +712,25 @@ class _TotalProgressSummary extends StatelessWidget {
           }).toList(),
         ),
       ],
+    );
+  }
+}
+
+class _RegionSearchButton extends StatelessWidget {
+  const _RegionSearchButton({required this.onTap});
+
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return OutlinedButton.icon(
+      onPressed: onTap,
+      icon: const Icon(Icons.travel_explore),
+      label: const Text('Chercher par region'),
+      style: OutlinedButton.styleFrom(
+        alignment: Alignment.centerLeft,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+      ),
     );
   }
 }
