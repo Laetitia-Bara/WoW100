@@ -9,7 +9,8 @@
     "source": 345,
     "expansion": 345,
     "mamytwinkUrl": 345,
-    "wowheadItemUrl": 168
+    "wowheadItemUrl": 168,
+    "locationDecision": 77
   },
   "byDifficulty": {
     "Facile": 609,
@@ -121,5 +122,9 @@
     "12.0.5": 9
   },
   "locationCandidateCount": 275,
-  "note": "zone/continent restent a definir tant que l'association avec le referentiel de zones n'est pas validee. locationCandidates ne contient que les correspondances exactes via mots-cles Mamytwink."
+  "locationsAutoAssigned": 197,
+  "locationsManuallyAssigned": 1,
+  "locationsRequiringManualChoice": 77,
+  "locationsWithoutCandidate": 1333,
+  "note": "Les correspondances exactes avec une candidate unique sont affectees automatiquement. Les correspondances multiples restent reservees a la revue manuelle."
 }

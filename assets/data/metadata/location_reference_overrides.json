@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "worlds": [
+    {
+      "key": "azeroth",
+      "name": "Azeroth"
+    },
+    {
+      "key": "outland",
+      "name": "Outreterre"
+    },
+    {
+      "key": "draenor",
+      "name": "Draenor"
+    },
+    {
+      "key": "shadowlands",
+      "name": "Ombreterre"
+    }
+  ],
+  "continents": [
+    {
+      "key": "kalimdor",
+      "name": "Kalimdor",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 1
+    },
+    {
+      "key": "eastern-kingdoms",
+      "name": "Royaumes de l'Est",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 0
+    },
+    {
+      "key": "outland",
+      "name": "Outreterre",
+      "worldKey": "outland",
+      "wowheadCategoryId": 8
+    },
+    {
+      "key": "northrend",
+      "name": "Norfendre",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 10
+    },
+    {
+      "key": "maelstrom",
+      "name": "Le Maelström",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 11
+    },
+    {
+      "key": "pandaria",
+      "name": "Pandarie",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 12
+    },
+    {
+      "key": "draenor",
+      "name": "Draenor",
+      "worldKey": "draenor",
+      "wowheadCategoryId": 13
+    },
+    {
+      "key": "broken-isles",
+      "name": "Îles Brisées",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 14
+    },
+    {
+      "key": "zandalar",
+      "name": "Zandalar",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 15
+    },
+    {
+      "key": "kul-tiras",
+      "name": "Kul Tiras",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 16
+    },
+    {
+      "key": "shadowlands",
+      "name": "Ombreterre",
+      "worldKey": "shadowlands",
+      "wowheadCategoryId": 17
+    },
+    {
+      "key": "dragon-isles",
+      "name": "Îles aux Dragons",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 18
+    },
+    {
+      "key": "khaz-algar",
+      "name": "Khaz Algar",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 19
+    },
+    {
+      "key": "quel-thalas",
+      "name": "Quel'Thalas",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 20
+    }
+  ],
+  "reviewBatches": [
+    {
+      "key": "kalimdor-2026-06-19",
+      "continentKey": "kalimdor",
+      "sourceEntryCount": 43,
+      "defaultReviewStatus": "reviewed",
+      "excludedDefaultZoneIds": [1657, 3557, 1638, 1637],
+      "note": "Les 43 entrées de la liste fournie sont des régions par défaut, puis affinées par les règles ci-dessous. Les quatre capitales hors liste ne sont pas validées automatiquement."
+    },
+    {
+      "key": "eastern-kingdoms-2026-06-19",
+      "continentKey": "eastern-kingdoms",
+      "sourceEntryCount": 259,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [1519, 1537, 1497, 3487],
+      "note": "Les 259 entrées affichées sont conservées comme régions en attente de revue manuelle. Les quatre capitales hors liste restent également en attente."
+    }
+  ],
+  "nameExclusionRules": [
+    {
+      "key": "name_contains_test",
+      "continentKey": "eastern-kingdoms",
+      "match": "test",
+      "matchMode": "contains_case_insensitive",
+      "reason": "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+    },
+    {
+      "key": "name_contains_do_not_disturb",
+      "continentKey": "eastern-kingdoms",
+      "match": "[do not disturb]",
+      "matchMode": "contains_case_insensitive",
+      "reason": "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+    },
+    {
+      "key": "name_contains_ne_pas_deranger",
+      "continentKey": "eastern-kingdoms",
+      "match": "[ne pas déranger]",
+      "matchMode": "contains_case_insensitive",
+      "reason": "Entrée technique marquée [NE PAS DÉRANGER], retirée avant la revue manuelle."
+    },
+    {
+      "key": "name_contains_ne_pas_deranger_ascii",
+      "continentKey": "eastern-kingdoms",
+      "match": "[ne pas deranger]",
+      "matchMode": "contains_case_insensitive",
+      "reason": "Entrée technique marquée [NE PAS DERANGER], retirée avant la revue manuelle."
+    }
+  ],
+  "rules": [
+    {
+      "wowheadZoneId": 876,
+      "action": "exclude",
+      "reason": "Île des MJ supprimée du référentiel public."
+    },
+    {
+      "wowheadZoneId": 10397,
+      "action": "exclude",
+      "reason": "Doublon Battle for Azeroth de la région Mulgore (Vanilla)."
+    },
+    {
+      "wowheadZoneId": 11382,
+      "action": "exclude",
+      "reason": "Entrée technique 8.2.5 War Campaign."
+    },
+    {
+      "wowheadZoneId": 9704,
+      "action": "exclude",
+      "reason": "Entrée technique Allied - Mag'har Orc Unlock."
+    },
+    {
+      "wowheadZoneId": 10625,
+      "action": "exclude",
+      "reason": "Doublon Battle for Azeroth de la région Durotar (Vanilla)."
+    },
+    {
+      "wowheadZoneId": 1637,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:14",
+      "extensionId": 3,
+      "extensionKey": "cataclysm",
+      "extensionName": "Cataclysm",
+      "reviewStatus": "reviewed",
+      "note": "Orgrimmar est rattachée à la région Durotar."
+    },
+    {
+      "wowheadZoneId": 1657,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:141",
+      "reviewStatus": "reviewed",
+      "note": "Darnassus est une région à part entière située dans Teldrassil."
+    },
+    {
+      "wowheadZoneId": 1638,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:215",
+      "reviewStatus": "reviewed",
+      "note": "Les Pitons-du-Tonnerre est une région à part entière située dans Mulgore."
+    },
+    {
+      "wowheadZoneId": 3557,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:3524",
+      "reviewStatus": "reviewed",
+      "note": "L'Exodar est une région à part entière située sur l'Île de Brume-Azur."
+    },
+    {
+      "wowheadZoneId": 5166,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:1637",
+      "reviewStatus": "reviewed",
+      "note": "Faille de l'Ombre est rattachée à Orgrimmar."
+    },
+    {
+      "wowheadZoneId": 6456,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:3524",
+      "reviewStatus": "reviewed",
+      "note": "Val d'Ammen est rattaché à l'Île de Brume-Azur."
+    },
+    {
+      "wowheadZoneId": 6453,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:14",
+      "reviewStatus": "reviewed",
+      "note": "Îles de l'Écho est rattaché à Durotar."
+    },
+    {
+      "wowheadZoneId": 5733,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:616",
+      "reviewStatus": "reviewed",
+      "note": "Front du Magma est rattaché au Mont Hyjal."
+    },
+    {
+      "wowheadZoneId": 6452,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:215",
+      "reviewStatus": "reviewed",
+      "note": "Camp Narache est rattaché à Mulgore."
+    },
+    {
+      "wowheadZoneId": 6450,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:141",
+      "reviewStatus": "reviewed",
+      "note": "Sombrevallon est rattaché à Teldrassil."
+    },
+    {
+      "wowheadZoneId": 6451,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:14",
+      "reviewStatus": "reviewed",
+      "note": "Vallée des Épreuves est rattachée à Durotar."
+    },
+    {
+      "wowheadZoneId": 4821,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:16",
+      "reviewStatus": "reviewed",
+      "note": "Havre Baille-Fonds est rattaché à Azshara."
+    },
+    {
+      "wowheadZoneId": 8091,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:616",
+      "reviewStatus": "reviewed",
+      "note": "Nordrassil est rattaché au Mont Hyjal."
+    },
+    {
+      "wowheadZoneId": 8093,
+      "action": "override",
+      "continentKey": "maelstrom",
+      "kind": "subzone",
+      "parentRef": "continent:maelstrom",
+      "regionRefOverride": "continent:maelstrom",
+      "regionNameOverride": "Le Maelström",
+      "reviewStatus": "reviewed",
+      "note": "La cime du Vortex est déplacée sous Le Maelström."
+    },
+    {
+      "wowheadZoneId": 9310,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:1377",
+      "reviewStatus": "reviewed",
+      "note": "Silithus : la Plaie est rattaché à Silithus."
+    }
+  ]
+}

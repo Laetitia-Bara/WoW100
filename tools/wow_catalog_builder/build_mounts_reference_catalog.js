@@ -16,11 +16,20 @@ const paths = {
     "mamytwink_mount_detail_cache.json",
   ),
   manualMetadata: path.join(metadataDir, "mounts_metadata.json"),
+  locationOverrides: path.join(metadataDir, "mount_location_overrides.json"),
   wowheadOverrides: path.join(metadataDir, "mounts_wowhead_overrides.json"),
   wowheadPatchCache: path.join(generatedDir, "wowhead_patch_audit_cache.json"),
   zonesCatalog: path.join(generatedDir, "zones_wowhead_catalog.json"),
   referenceCatalog: path.join(generatedDir, "mounts_reference_catalog.json"),
   auditReport: path.join(generatedDir, "mounts_reference_audit_report.json"),
+  ambiguousReviewJson: path.join(
+    generatedDir,
+    "mount_location_ambiguous_review.json",
+  ),
+  ambiguousReviewCsv: path.join(
+    generatedDir,
+    "mount_location_ambiguous_review.csv",
+  ),
 };
 
 const TBD = "à définir";
@@ -266,6 +275,7 @@ function buildReferenceMount({
   wowheadOverride,
   wowheadCacheEntry,
   manualMetadata,
+  locationOverride,
   zoneIndex,
 }) {
   const sourceFromWowhead = cleanSource(
@@ -285,6 +295,17 @@ function buildReferenceMount({
     mamytwinkCandidate?.mamytwinkUrl,
   );
   const locationCandidates = findLocationCandidates(mamytwinkDetail, zoneIndex);
+  const uniqueLocation =
+    locationCandidates.length === 1 ? locationCandidates[0] : null;
+  const manualLocation = locationOverride
+    ? zoneIndex.find((zone) => zone.id === locationOverride.zoneId)
+    : null;
+  if (locationOverride && !manualLocation) {
+    throw new Error(
+      `Zone ${locationOverride.zoneId} introuvable pour la monture ${mount.id}`,
+    );
+  }
+  const selectedLocation = manualLocation ?? uniqueLocation;
   const wowheadLink = wowheadUrlFor(mount, wowheadOverride, wowheadCacheEntry);
   const missingFields = [];
   const fieldSources = {
@@ -304,6 +325,16 @@ function buildReferenceMount({
     locationCandidates: locationCandidates.length
       ? "mamytwink_keywords"
       : "manual_required",
+    zone: manualLocation
+      ? "manual_override"
+      : uniqueLocation
+        ? "mamytwink_keywords_unique_match"
+        : "manual_required",
+    continent: manualLocation
+      ? "wowhead_zone_catalog_via_manual_override"
+      : uniqueLocation
+        ? "wowhead_zone_catalog"
+        : "manual_required",
   };
   const values = {
     difficulty: difficultyFromMamytwink || TBD,
@@ -317,7 +348,11 @@ function buildReferenceMount({
   for (const [key, value] of Object.entries(values)) {
     if (!value || value === TBD) missingFields.push(key);
   }
-  if (!locationCandidates.length) missingFields.push("locationCandidates");
+  if (!selectedLocation) {
+    missingFields.push(
+      locationCandidates.length ? "locationDecision" : "locationCandidates",
+    );
+  }
   if (wowheadLink.type !== "item") missingFields.push("wowheadItemUrl");
 
   return {
@@ -355,8 +390,36 @@ function buildReferenceMount({
       },
     ].filter((link) => link.url),
     locationCandidates,
-    zone: TBD,
-    continent: TBD,
+    locationAssignment: selectedLocation
+      ? manualLocation
+        ? {
+            status: "manually_assigned",
+            zoneId: manualLocation.id,
+            zoneName: manualLocation.name,
+            continentName: manualLocation.regionName,
+            source: "manual_override_and_wowhead_zone_catalog",
+            note: locationOverride.note ?? "",
+          }
+        : {
+            status: "auto_assigned_unique_candidate",
+            zoneId: uniqueLocation.zoneId,
+            zoneName: uniqueLocation.zoneName,
+            continentName: uniqueLocation.regionName,
+            source: "mamytwink_keywords_and_wowhead_zone_catalog",
+          }
+      : {
+          status: locationCandidates.length
+            ? "manual_choice_required"
+            : "no_candidate",
+          zoneId: null,
+          zoneName: TBD,
+          continentName: TBD,
+          source: "manual_required",
+        },
+    zoneId: selectedLocation?.zoneId ?? selectedLocation?.id ?? null,
+    zone: selectedLocation?.zoneName ?? selectedLocation?.name ?? TBD,
+    continent:
+      selectedLocation?.regionName ?? TBD,
     instance: manualMetadata?.instance ?? wowheadOverride?.instance ?? TBD,
     boss: manualMetadata?.boss ?? wowheadOverride?.boss ?? "",
     groupRequired:
@@ -403,6 +466,72 @@ function countBy(rows, selector) {
   }, {});
 }
 
+function uniqueJoined(values) {
+  return [...new Set(values.filter(Boolean))].join(" | ");
+}
+
+function buildAmbiguousReview(referenceMounts) {
+  return referenceMounts
+    .filter(
+      (mount) => mount.locationAssignment.status === "manual_choice_required",
+    )
+    .map((mount) => ({
+      blizzardId: mount.blizzardId,
+      monture: mount.name,
+      extensionMonture: mount.expansion,
+      patch: mount.patch,
+      source: mount.source,
+      difficulty: mount.difficulty,
+      motsClesMamytwink: (mount.mamytwink?.keywords ?? []).join(" | "),
+      nombreCandidates: mount.locationCandidates.length,
+      zonesCandidates: uniqueJoined(
+        mount.locationCandidates.map((candidate) => candidate.zoneName),
+      ),
+      regionsCandidates: uniqueJoined(
+        mount.locationCandidates.map((candidate) => candidate.regionName),
+      ),
+      zoneIdsCandidates: uniqueJoined(
+        mount.locationCandidates.map((candidate) => String(candidate.zoneId)),
+      ),
+      extensionsCandidates: uniqueJoined(
+        mount.locationCandidates.map((candidate) => candidate.expansionKey),
+      ),
+      statutRevue: "Plusieurs candidates - choix manuel",
+      mamytwinkUrl: mount.mamytwinkUrl,
+      wowheadUrl: mount.wowheadUrl,
+      decisionManuelle: "",
+      zoneIdRetenue: "",
+      notes: "",
+    }));
+}
+
+function toSemicolonCsv(rows) {
+  if (!rows.length) return "";
+  const headers = Object.keys(rows[0]);
+  const escape = (value) => `"${String(value ?? "").replace(/"/g, '""')}"`;
+  return [
+    headers.map(escape).join(";"),
+    ...rows.map((row) => headers.map((header) => escape(row[header])).join(";")),
+  ].join("\n");
+}
+
+async function writeReviewCsv(content) {
+  try {
+    await fs.writeFile(paths.ambiguousReviewCsv, content, "utf8");
+  } catch (error) {
+    if (error.code !== "EBUSY") throw error;
+
+    const fallbackPath = path.join(
+      generatedDir,
+      "mount_location_ambiguous_review_updated.csv",
+    );
+    await fs.writeFile(fallbackPath, content, "utf8");
+    console.warn(
+      `CSV de revue ouvert : copie actualisee ecrite dans ${fallbackPath}`,
+    );
+  }
+}
+
 function buildAudit(referenceMounts, candidates, cache) {
   const missingByField = {};
   for (const mount of referenceMounts) {
@@ -423,8 +552,21 @@ function buildAudit(referenceMounts, candidates, cache) {
     locationCandidateCount: referenceMounts.filter(
       (mount) => mount.locationCandidates.length,
     ).length,
+    locationsAutoAssigned: referenceMounts.filter(
+      (mount) =>
+        mount.locationAssignment.status === "auto_assigned_unique_candidate",
+    ).length,
+    locationsManuallyAssigned: referenceMounts.filter(
+      (mount) => mount.locationAssignment.status === "manually_assigned",
+    ).length,
+    locationsRequiringManualChoice: referenceMounts.filter(
+      (mount) => mount.locationAssignment.status === "manual_choice_required",
+    ).length,
+    locationsWithoutCandidate: referenceMounts.filter(
+      (mount) => mount.locationAssignment.status === "no_candidate",
+    ).length,
     note:
-      "zone/continent restent a definir tant que l'association avec le referentiel de zones n'est pas validee. locationCandidates ne contient que les correspondances exactes via mots-cles Mamytwink.",
+      "Les correspondances exactes avec une candidate unique sont affectees automatiquement. Les correspondances multiples restent reservees a la revue manuelle.",
   };
 }
 
@@ -434,6 +576,7 @@ async function main() {
     mamytwinkData,
     mamytwinkDetailCache,
     manualMetadata,
+    locationOverrides,
     wowheadOverrides,
     wowheadPatchCache,
     zonesCatalog,
@@ -442,6 +585,7 @@ async function main() {
     loadJson(paths.mamytwinkCandidates, { candidates: [] }),
     loadJson(paths.mamytwinkDetailCache, { details: {} }),
     loadJson(paths.manualMetadata, []),
+    loadJson(paths.locationOverrides, []),
     loadJson(paths.wowheadOverrides, []),
     loadJson(paths.wowheadPatchCache, { entries: {} }),
     loadJson(paths.zonesCatalog, { zones: [] }),
@@ -450,6 +594,7 @@ async function main() {
   const mamytwinkCandidates = mamytwinkData.candidates ?? [];
   const mamytwinkById = byBlizzardId(mamytwinkCandidates);
   const manualById = byBlizzardId(manualMetadata);
+  const locationOverrideById = byBlizzardId(locationOverrides);
   const wowheadById = byBlizzardId(wowheadOverrides);
   const mamytwinkDetailsByUrl = await fetchMamytwinkDetails(
     mamytwinkCandidates,
@@ -472,6 +617,7 @@ async function main() {
         wowheadOverride: wowheadById.get(mount.id),
         wowheadCacheEntry: wowheadPatchCache.entries?.[`mount:${mount.id}`],
         manualMetadata: manualById.get(mount.id),
+        locationOverride: locationOverrideById.get(mount.id),
         zoneIndex,
       });
     })
@@ -497,6 +643,7 @@ async function main() {
     },
     mounts: referenceMounts,
   };
+  const ambiguousReview = buildAmbiguousReview(referenceMounts);
 
   await Promise.all([
     fs.writeFile(
@@ -509,6 +656,16 @@ async function main() {
       `${JSON.stringify(audit, null, 2)}\n`,
       "utf8",
     ),
+    fs.writeFile(
+      paths.ambiguousReviewJson,
+      `${JSON.stringify(
+        { total: ambiguousReview.length, rows: ambiguousReview },
+        null,
+        2,
+      )}\n`,
+      "utf8",
+    ),
+    writeReviewCsv(`${toSemicolonCsv(ambiguousReview)}\n`),
   ]);
 
   console.log(

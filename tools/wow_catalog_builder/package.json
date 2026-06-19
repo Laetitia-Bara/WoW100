@@ -5,6 +5,7 @@
   "scripts": {
     "build:achievements": "node --use-system-ca build_achievements_catalog.js",
     "build:zones": "node --use-system-ca build_zones_catalog.js",
+    "build:locations-reference": "node build_locations_reference.js",
     "build:pets": "node --use-system-ca build_pets_catalog.js",
     "build:mamytwink-candidates": "node --use-system-ca build_mamytwink_mount_candidates.js",
     "build:mounts-reference": "node --use-system-ca build_mounts_reference_catalog.js",
