@@ -355,15 +355,11 @@ class _CharacterCollectionOverview extends StatefulWidget {
 
 class _CharacterCollectionOverviewState
     extends State<_CharacterCollectionOverview> {
-  final Set<String> _collapsedCards = {'races', 'classes', 'professions'};
+  bool _areCollectionCardsCollapsed = true;
 
-  void _toggleCard(String key) {
+  void _toggleCards() {
     setState(() {
-      if (_collapsedCards.contains(key)) {
-        _collapsedCards.remove(key);
-      } else {
-        _collapsedCards.add(key);
-      }
+      _areCollectionCardsCollapsed = !_areCollectionCardsCollapsed;
     });
   }
 
@@ -375,24 +371,24 @@ class _CharacterCollectionOverviewState
         icon: Icons.groups,
         entries: _playableRaces,
         ownedKeys: widget.ownedRaceKeys,
-        isCollapsed: _collapsedCards.contains('races'),
-        onToggleCollapse: () => _toggleCard('races'),
+        isCollapsed: _areCollectionCardsCollapsed,
+        onToggleCollapse: _toggleCards,
       ),
       _CollectionCard(
         title: 'Classes',
         icon: Icons.auto_awesome,
         entries: _playableClasses,
         ownedKeys: widget.ownedClassKeys,
-        isCollapsed: _collapsedCards.contains('classes'),
-        onToggleCollapse: () => _toggleCard('classes'),
+        isCollapsed: _areCollectionCardsCollapsed,
+        onToggleCollapse: _toggleCards,
       ),
       _CollectionCard(
         title: 'Métiers',
         icon: Icons.handyman,
         entries: _playableProfessions,
         ownedKeys: widget.ownedProfessionKeys,
-        isCollapsed: _collapsedCards.contains('professions'),
-        onToggleCollapse: () => _toggleCard('professions'),
+        isCollapsed: _areCollectionCardsCollapsed,
+        onToggleCollapse: _toggleCards,
       ),
     ];
     final hasExpandedCard = cards.any((card) => !card.isCollapsed);
