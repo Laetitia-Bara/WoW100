@@ -137,11 +137,8 @@ class JsonPlannerSource {
           name: mount['name'] ?? mamytwink?['mamytwinkName'] ?? '',
           category: TrackingCategory.mounts,
           expansion: itemExpansion,
-          zone:
-              wowhead?['zone'] ??
-              manual?['zone'] ??
-              mamytwink?['extensionName'] ??
-              'Non classe',
+          zone: TrackingItem.unknownZone,
+          region: TrackingItem.unknownZone,
           instance: expansion == WowExpansion.allMounts
               ? status
               : instance.isEmpty

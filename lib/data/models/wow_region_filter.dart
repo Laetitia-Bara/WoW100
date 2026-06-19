@@ -26,17 +26,26 @@ class WowRegionFilter {
 
   static WowRegionFilter? fromItem(TrackingItem item) {
     final region = item.region.trim();
-    final zone = item.zone.trim();
+    final zone = TrackingItem.canonicalWorldZone(item.zone);
+    final canonicalRegion = TrackingItem.canonicalRegionForZone(zone);
+    final effectiveRegion = zone == TrackingItem.unknownZone
+        ? TrackingItem.unknownZone
+        : canonicalRegion ?? region;
+    final normalizedRegion = normalize(region);
+    final normalizedZone = normalize(zone);
 
-    if (region.isEmpty || zone.isEmpty) return null;
-    if (_genericZones.contains(normalize(zone)) &&
-        normalize(zone) != normalize(region)) {
+    if (effectiveRegion.isEmpty || zone.isEmpty) return null;
+    if (_genericZones.contains(normalizedZone) &&
+        normalizedZone != normalizedRegion) {
+      return null;
+    }
+    if (TrackingItem.isWorldRegion(zone) && normalizedZone == normalizedRegion) {
       return null;
     }
 
     return WowRegionFilter(
       expansion: item.expansion,
-      region: region,
+      region: effectiveRegion,
       zone: zone,
     );
   }
@@ -84,5 +93,16 @@ class WowRegionFilter {
     'raids',
     'reputation',
     'source a verifier',
+    'the burning crusade',
+    'vanilla',
+    'wrath of the lich king',
+    'mists of pandaria',
+    'warlords of draenor',
+    'legion',
+    'battle for azeroth',
+    'shadowlands',
+    'dragonflight',
+    'the war within',
+    'midnight',
   };
 }

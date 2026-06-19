@@ -2,6 +2,8 @@ import 'tracking_category.dart';
 import 'wow_expansion.dart';
 
 class TrackingItem {
+  static const String unknownZone = 'Sans zone';
+
   final String id;
 
   /// Nom affiché
@@ -101,8 +103,7 @@ class TrackingItem {
 
   factory TrackingItem.fromJson(Map<String, dynamic> json) {
     final expansion = WowExpansionParser.fromJson(json['expansion']);
-    final rawZone = _jsonString(json['zone']);
-    final zone = _preferredZone(json, rawZone);
+    final zone = _officialWorldZoneFromJson(json);
 
     return TrackingItem(
       id: json['id'] ?? '',
@@ -110,7 +111,7 @@ class TrackingItem {
       category: TrackingCategoryParser.fromJson(json['category']),
       expansion: expansion,
       zone: zone,
-      region: _preferredRegion(json, expansion, rawZone, zone),
+      region: _officialRegionFromJson(json, zone),
       instance: json['instance'] ?? '',
       source: json['source'] ?? '',
       wowheadItemId: json['wowheadItemId'],
@@ -133,53 +134,43 @@ class TrackingItem {
     return value.trim();
   }
 
-  static String _preferredZone(Map<String, dynamic> json, String rawZone) {
-    final explicitZone = _firstJsonString(json, [
-      'locationZone',
-      'localizedZone',
-      'area',
-    ]);
-    if (explicitZone.isNotEmpty) return explicitZone;
+  static String _officialWorldZoneFromJson(Map<String, dynamic> json) {
+    final candidates = [
+      _firstJsonString(json, [
+        'locationZone',
+        'localizedZone',
+        'area',
+      ]),
+      _jsonString(json['zone']),
+    ];
 
-    final exploredZone =
-        _extractExplorationZone(_jsonString(json['name'])) ??
-        _extractExplorationZone(_jsonString(json['source'])) ??
-        _extractExplorationZone(_jsonString(json['description']));
-    if (exploredZone != null && exploredZone.isNotEmpty) {
-      return exploredZone;
+    for (final candidate in candidates) {
+      if (candidate.isEmpty) continue;
+      if (isKnownWorldZone(candidate)) return candidate.trim();
     }
 
-    return rawZone;
+    return unknownZone;
   }
 
-  static String _preferredRegion(
+  static String _officialRegionFromJson(
     Map<String, dynamic> json,
-    WowExpansion expansion,
-    String rawZone,
     String zone,
   ) {
+    final regionFromZone = canonicalRegionForZone(zone);
+    if (regionFromZone != null) return regionFromZone;
+
+    if (zone == unknownZone) return unknownZone;
+
     final explicitRegion = _firstJsonString(json, [
       'region',
       'worldRegion',
       'continent',
     ]);
-    if (explicitRegion.isNotEmpty) return explicitRegion;
-
-    final candidates = [
-      rawZone,
-      zone,
-      _jsonString(json['blizzardCategoryName']),
-      _jsonString(json['source']),
-      _jsonString(json['description']),
-      _jsonString(json['name']),
-    ];
-
-    for (final candidate in candidates) {
-      final region = _regionFromText(candidate);
-      if (region != null) return region;
+    if (explicitRegion.isNotEmpty && isWorldRegion(explicitRegion)) {
+      return explicitRegion;
     }
 
-    return _defaultRegionForExpansion(expansion);
+    return unknownZone;
   }
 
   static String _firstJsonString(Map<String, dynamic> json, List<String> keys) {
@@ -191,68 +182,44 @@ class TrackingItem {
     return '';
   }
 
-  static String? _extractExplorationZone(String value) {
-    if (value.isEmpty) return null;
-
-    final nameMatch = RegExp(
-      r"^Exploration (?:de|du|des|d')\s*(.+)$",
-      caseSensitive: false,
-    ).firstMatch(value);
-    if (nameMatch != null) {
-      return _cleanExtractedZone(nameMatch.group(1) ?? '');
-    }
-
-    final sourceMatch = RegExp(
-      r"^Explorer\s+(.+?)\s+et\s+",
-      caseSensitive: false,
-    ).firstMatch(value);
-    if (sourceMatch != null) {
-      return _cleanExtractedZone(sourceMatch.group(1) ?? '');
-    }
-
-    return null;
+  static bool isWorldRegion(String value) {
+    return _worldRegionAliases.containsKey(_normalizeAvailabilityText(value));
   }
 
-  static String _cleanExtractedZone(String value) {
-    return value
-        .replaceAll(RegExp(r'\s+'), ' ')
-        .replaceAll(RegExp(r'[.]$'), '')
-        .trim();
+  static bool isKnownWorldZone(String value) {
+    return _worldZoneMap.containsKey(_normalizeAvailabilityText(value));
   }
 
-  static String? _regionFromText(String value) {
-    final normalized = _normalizeAvailabilityText(value);
-    if (normalized.isEmpty) return null;
-
-    final exactMatch = _zoneRegionMap[normalized];
-    if (exactMatch != null) return exactMatch;
-
-    for (final entry in _zoneRegionMap.entries) {
-      if (normalized.contains(entry.key)) return entry.value;
-    }
-
-    return null;
+  static String canonicalWorldZone(String value) {
+    final zone = value.trim();
+    return zone.isEmpty ? unknownZone : zone;
   }
 
-  static String _defaultRegionForExpansion(WowExpansion expansion) {
-    return switch (expansion) {
-      WowExpansion.tbc => 'Outreterre',
-      WowExpansion.wrath => 'Norfendre',
-      WowExpansion.cataclysm => 'Zones du Cataclysme',
-      WowExpansion.mop => 'Pandarie',
-      WowExpansion.wod => 'Draenor',
-      WowExpansion.legion => 'Iles Brisees',
-      WowExpansion.bfa => 'Kul Tiras et Zandalar',
-      WowExpansion.shadowlands => 'Ombreterre',
-      WowExpansion.dragonflight => 'Iles aux Dragons',
-      WowExpansion.warWithin => 'Khaz Algar',
-      WowExpansion.midnight => 'Quel\'Thalas',
-      _ => '',
-    };
+  static String? canonicalRegionForZone(String value) {
+    return _worldZoneMap[_normalizeAvailabilityText(value)];
   }
 
-  static const Map<String, String> _zoneRegionMap = {
+  static const Map<String, String> _worldRegionAliases = {
     'kalimdor': 'Kalimdor',
+    'royaumes de l est': 'Royaumes de l\'Est',
+    'royaumes de lest': 'Royaumes de l\'Est',
+    'outreterre': 'Outreterre',
+    'norfendre': 'Norfendre',
+    'pandarie': 'Pandarie',
+    'draenor': 'Draenor',
+    'iles brisees': 'Iles Brisees',
+    'argus': 'Argus',
+    'kul tiras': 'Kul Tiras',
+    'zandalar': 'Zandalar',
+    'ombreterre': 'Ombreterre',
+    'iles aux dragons': 'Iles aux Dragons',
+    'khaz algar': 'Khaz Algar',
+    'quel thalas': 'Quel\'Thalas',
+  };
+
+  static const Map<String, String> _worldZoneMap = {
+    'iles de l echo': 'Kalimdor',
+    'ile de brume azur': 'Kalimdor',
     'durotar': 'Kalimdor',
     'feralas': 'Kalimdor',
     'gangrebois': 'Kalimdor',
@@ -262,52 +229,148 @@ class TrackingItem {
     'sombrivage': 'Kalimdor',
     'tanaris': 'Kalimdor',
     'tarides': 'Kalimdor',
+    'tarides du nord': 'Kalimdor',
+    'tarides du sud': 'Kalimdor',
     'cratere d un goro': 'Kalimdor',
     'desolace': 'Kalimdor',
     'orneval': 'Kalimdor',
     'azshara': 'Kalimdor',
     'berceau de l hiver': 'Kalimdor',
-    'ile de brume azur': 'Kalimdor',
     'ile de brume sang': 'Kalimdor',
     'mille pointes': 'Kalimdor',
+    'les serres rocheuses': 'Kalimdor',
+    'serres rocheuses': 'Kalimdor',
+    'marecage d aprefange': 'Kalimdor',
+    'ahn qiraj le royaume dechu': 'Kalimdor',
     'mont hyjal': 'Kalimdor',
     'uldum': 'Kalimdor',
-    'royaumes de l est': 'Royaumes de l\'Est',
-    'royaumes de lest': 'Royaumes de l\'Est',
+    'dun morogh': 'Royaumes de l\'Est',
+    'foret d elwynn': 'Royaumes de l\'Est',
+    'bois des chants eternels': 'Royaumes de l\'Est',
+    'bois de chants eternels': 'Royaumes de l\'Est',
+    'clairieres de tirisfal': 'Royaumes de l\'Est',
+    'gilneas': 'Royaumes de l\'Est',
+    'marche de l ouest': 'Royaumes de l\'Est',
+    'terres fantomes': 'Royaumes de l\'Est',
+    'les terres fantomes': 'Royaumes de l\'Est',
+    'loch modan': 'Royaumes de l\'Est',
+    'foret des pins argentes': 'Royaumes de l\'Est',
+    'les carmines': 'Royaumes de l\'Est',
+    'bois de la penombre': 'Royaumes de l\'Est',
+    'contreforts de hautebrande': 'Royaumes de l\'Est',
+    'les paluns': 'Royaumes de l\'Est',
+    'paluns': 'Royaumes de l\'Est',
+    'hautes terres arathi': 'Royaumes de l\'Est',
+    'hautes terres arathies': 'Royaumes de l\'Est',
+    'strangleronce septentrionale': 'Royaumes de l\'Est',
+    'cap strangleronce': 'Royaumes de l\'Est',
     'maleterres de l est': 'Royaumes de l\'Est',
     'maleterres de louest': 'Royaumes de l\'Est',
     'strangleronce': 'Royaumes de l\'Est',
+    'vallee de strangleronce': 'Royaumes de l\'Est',
     'defile de deuillevent': 'Royaumes de l\'Est',
-    'chants eternels': 'Royaumes de l\'Est',
-    'foret d elwynn': 'Royaumes de l\'Est',
-    'dun morogh': 'Royaumes de l\'Est',
-    'clairieres de tirisfal': 'Royaumes de l\'Est',
-    'bois des chants eternels': 'Royaumes de l\'Est',
-    'les carmines': 'Royaumes de l\'Est',
-    'marche de l ouest': 'Royaumes de l\'Est',
-    'bois de la penombre': 'Royaumes de l\'Est',
-    'loch modan': 'Royaumes de l\'Est',
-    'hautes terres arathies': 'Royaumes de l\'Est',
+    'les hinterlands': 'Royaumes de l\'Est',
+    'hinterlands': 'Royaumes de l\'Est',
+    'terres ingrates': 'Royaumes de l\'Est',
+    'gorge des vents brulants': 'Royaumes de l\'Est',
+    'steppes ardentes': 'Royaumes de l\'Est',
+    'marais des chagrins': 'Royaumes de l\'Est',
+    'terres foudroyees': 'Royaumes de l\'Est',
+    'ile de quel danas': 'Royaumes de l\'Est',
+    'foret de varech thar': 'Royaumes de l\'Est',
+    'etendues chatoyantes': 'Royaumes de l\'Est',
+    'profondeurs abyssales': 'Royaumes de l\'Est',
     'hautes terres du crepuscule': 'Royaumes de l\'Est',
-    'outreterre': 'Outreterre',
+    'peninsule de tol barad': 'Royaumes de l\'Est',
+    'tol barad': 'Royaumes de l\'Est',
     'raz de neant': 'Outreterre',
     'nagrand': 'Outreterre',
     'peninsule des flammes infernales': 'Outreterre',
-    'norfendre': 'Norfendre',
+    'marecage de zangar': 'Outreterre',
+    'foret de terokkar': 'Outreterre',
+    'les tranchantes': 'Outreterre',
+    'tranchantes': 'Outreterre',
+    'vallee d ombrelune': 'Outreterre',
+    'toundra boreenne': 'Norfendre',
+    'fjord hurlant': 'Norfendre',
+    'desolation des dragons': 'Norfendre',
+    'les grisonnes': 'Norfendre',
+    'grisonnes': 'Norfendre',
+    'zul drak': 'Norfendre',
+    'bassin de sholazar': 'Norfendre',
+    'les pics foudroyes': 'Norfendre',
+    'pics foudroyes': 'Norfendre',
+    'foret du chant de cristal': 'Norfendre',
+    'accostage de hrothgar': 'Norfendre',
     'couronne de glace': 'Norfendre',
-    'pandarie': 'Pandarie',
-    'draenor': 'Draenor',
-    'iles brisees': 'Iles Brisees',
-    'argus': 'Argus',
+    'la couronne de glace': 'Norfendre',
+    'joug d hiver': 'Norfendre',
+    'kezan': 'Le Maelstrom',
+    'les iles perdues': 'Le Maelstrom',
+    'maelstrom': 'Le Maelstrom',
+    'le trefonds': 'Le Maelstrom',
+    'trefonds': 'Le Maelstrom',
+    'front du magma': 'Zones du Cataclysme',
+    'la foret de jade': 'Pandarie',
+    'foret de jade': 'Pandarie',
+    'vallee des quatre vents': 'Pandarie',
+    'etendues sauvages de krasarang': 'Pandarie',
+    'sommet de kun lai': 'Pandarie',
+    'steppes de tanglong': 'Pandarie',
+    'terres de l angoisse': 'Pandarie',
+    'val de l eternel printemps': 'Pandarie',
+    'escalier derobe': 'Pandarie',
+    'ile du tonnerre': 'Pandarie',
+    'ile des geants': 'Pandarie',
+    'ile du temps fige': 'Pandarie',
+    'crete de givrefeu': 'Draenor',
+    'gorgrond': 'Draenor',
+    'talador': 'Draenor',
+    'fleches d arak': 'Draenor',
+    'jungle de tanaan': 'Draenor',
+    'ashran': 'Draenor',
+    'val sharah': 'Iles Brisees',
+    'tornheim': 'Iles Brisees',
+    'helheim': 'Iles Brisees',
+    'azsuna': 'Iles Brisees',
+    'haut roc': 'Iles Brisees',
+    'suramar': 'Iles Brisees',
+    'rivage brise': 'Iles Brisees',
+    'etendues antoreennes': 'Argus',
+    'krokuun': 'Argus',
+    'mac aree': 'Argus',
     'kul tiras': 'Kul Tiras',
-    'zandalar': 'Zandalar',
+    'drustvar': 'Kul Tiras',
+    'vallee chantorage': 'Kul Tiras',
+    'rade de tiragarde': 'Kul Tiras',
+    'tol dagor': 'Kul Tiras',
+    'zuldazar': 'Zandalar',
+    'nazmir': 'Zandalar',
+    'vol dun': 'Zandalar',
     'nazjatar': 'Nazjatar',
     'mecagone': 'Mechagone',
-    'ombreterre': 'Ombreterre',
+    'bastion': 'Ombreterre',
+    'l antre': 'Ombreterre',
+    'antre': 'Ombreterre',
+    'maldraxxus': 'Ombreterre',
+    'oribos': 'Ombreterre',
+    'revendreth': 'Ombreterre',
+    'sylvarden': 'Ombreterre',
     'zereth mortis': 'Ombreterre',
-    'iles aux dragons': 'Iles aux Dragons',
-    'khaz algar': 'Khaz Algar',
-    'quel thalas': 'Quel\'Thalas',
+    'rivages de l eveil': 'Iles aux Dragons',
+    'plaines d ohn ahra': 'Iles aux Dragons',
+    'traversee d azur': 'Iles aux Dragons',
+    'thaldraszus': 'Iles aux Dragons',
+    'grotte de zaralek': 'Iles aux Dragons',
+    'reve d emeraude': 'Iles aux Dragons',
+    'ile de dorn': 'Khaz Algar',
+    'abimes retentissants': 'Khaz Algar',
+    'sainte chute': 'Khaz Algar',
+    'azj kahet': 'Khaz Algar',
+    'k aresh': 'Khaz Algar',
+    'harandar': 'Quel\'Thalas',
+    'zul aman': 'Quel\'Thalas',
+    'tempete du vide': 'Quel\'Thalas',
   };
 
   static bool _looksUnavailable(Map<String, dynamic> json) {
