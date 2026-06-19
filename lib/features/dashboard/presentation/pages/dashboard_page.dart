@@ -723,14 +723,31 @@ class _RegionSearchButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OutlinedButton.icon(
-      onPressed: onTap,
-      icon: const Icon(Icons.travel_explore),
-      label: const Text('Chercher par region'),
-      style: OutlinedButton.styleFrom(
-        alignment: Alignment.centerLeft,
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-      ),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final buttonWidth = constraints.maxWidth < 364
+            ? constraints.maxWidth
+            : 364.0;
+
+        return Align(
+          alignment: Alignment.centerLeft,
+          child: SizedBox(
+            width: buttonWidth,
+            child: OutlinedButton.icon(
+              onPressed: onTap,
+              icon: const Icon(Icons.travel_explore),
+              label: const Text('Recherche par zone'),
+              style: OutlinedButton.styleFrom(
+                alignment: Alignment.centerLeft,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 14,
+                ),
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 }
