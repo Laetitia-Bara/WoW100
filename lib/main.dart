@@ -1,17 +1,71 @@
+import 'dart:async';
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'core/ads/app_ads.dart';
+import 'core/diagnostics/startup_logger.dart';
 import 'core/theme/app_textured_background.dart';
 import 'core/theme/app_theme.dart';
 import 'features/dashboard/presentation/pages/dashboard_page.dart';
 import 'features/auth/presentation/pages/auth_callback_page.dart';
 import 'features/legal/presentation/pages/legal_page.dart';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await AppAds.initialize();
-  runApp(const WoW100App());
+void main() {
+  runZonedGuarded(
+    () async {
+      StartupLogger.mark('app started');
+      WidgetsFlutterBinding.ensureInitialized();
+      StartupLogger.mark('Flutter initialized');
+      _configureStartupErrorLogging();
+      unawaited(StartupLogger.initializePersistence());
+      await _initializeAdsForStartup();
+      StartupLogger.mark('runApp called');
+      runApp(const WoW100App());
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        StartupLogger.mark('first screen rendered');
+      });
+    },
+    (error, stackTrace) {
+      StartupLogger.recordError('uncaught startup error', error, stackTrace);
+    },
+  );
+}
+
+void _configureStartupErrorLogging() {
+  final previousFlutterErrorHandler = FlutterError.onError;
+  FlutterError.onError = (details) {
+    StartupLogger.recordFlutterError(details);
+    if (previousFlutterErrorHandler != null) {
+      previousFlutterErrorHandler(details);
+    } else {
+      FlutterError.presentError(details);
+    }
+  };
+
+  final previousPlatformErrorHandler = PlatformDispatcher.instance.onError;
+  PlatformDispatcher.instance.onError = (error, stackTrace) {
+    StartupLogger.recordError('uncaught platform error', error, stackTrace);
+    return previousPlatformErrorHandler?.call(error, stackTrace) ?? true;
+  };
+}
+
+Future<void> _initializeAdsForStartup() async {
+  if (!AppAds.isSupported) {
+    StartupLogger.mark('ads init skipped');
+    return;
+  }
+
+  StartupLogger.mark('ads init started');
+  try {
+    await AppAds.initialize().timeout(const Duration(seconds: 8));
+    StartupLogger.mark('ads init finished');
+  } on TimeoutException catch (error, stackTrace) {
+    StartupLogger.recordError('ads init timed out', error, stackTrace);
+  } on Object catch (error, stackTrace) {
+    StartupLogger.recordError('ads init failed', error, stackTrace);
+  }
 }
 
 class WoW100App extends StatelessWidget {
