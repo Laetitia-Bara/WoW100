@@ -736,7 +736,9 @@ class _RegionSearchButton extends StatelessWidget {
             child: OutlinedButton.icon(
               onPressed: onTap,
               icon: const Icon(Icons.travel_explore),
-              label: const Text('Recherche par zone'),
+              label: const Text(
+                'Recherche par zone (🚧 En cours de Travaux 🛠️)',
+              ),
               style: OutlinedButton.styleFrom(
                 alignment: Alignment.centerLeft,
                 padding: const EdgeInsets.symmetric(
