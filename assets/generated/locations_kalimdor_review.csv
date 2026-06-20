@@ -1,4 +1,4 @@
-"wowheadZoneId";"nom";"decision";"monde";"continent";"region";"parent";"typeGeographique";"profondeur";"extension";"typeInstance";"statutRevue";"methodeRevue";"chemin";"note";"wowheadUrl"
+﻿"wowheadZoneId";"nom";"decision";"monde";"continent";"region";"parent";"typeGeographique";"profondeur";"extension";"typeInstance";"statutRevue";"methodeRevue";"chemin";"note";"wowheadUrl"
 "5695";"Ahn’Qiraj : le royaume Déchu";"Conservée";"Azeroth";"Kalimdor";"Ahn’Qiraj : le royaume Déchu";"continent:kalimdor";"region";"1";"Cataclysm";"Zone";"reviewed";"user_default_region";"Azeroth > Kalimdor > Ahn’Qiraj : le royaume Déchu";"";"https://www.wowhead.com/fr/zone=5695"
 "4821";"Havre Baille-Fonds";"Conservée";"Azeroth";"Kalimdor";"Azshara";"wowhead-zone:16";"subzone";"2";"Cataclysm";"Zone";"reviewed";"user_manual_rule";"Azeroth > Kalimdor > Azshara > Havre Baille-Fonds";"Havre Baille-Fonds est rattaché à Azshara.";"https://www.wowhead.com/fr/zone=4821"
 "16";"Azshara";"Conservée";"Azeroth";"Kalimdor";"Azshara";"continent:kalimdor";"region";"1";"Vanilla";"Zone";"reviewed";"user_default_region";"Azeroth > Kalimdor > Azshara";"";"https://www.wowhead.com/fr/zone=16"

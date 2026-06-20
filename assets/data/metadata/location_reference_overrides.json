@@ -120,6 +120,7 @@
       "defaultReviewStatus": "pending",
       "defaultKind": "region",
       "excludedDefaultZoneIds": [1519, 1537, 1497, 3487],
+      "capitalZoneIds": [1519, 1537, 1497, 3487, 15969, 4714],
       "note": "Les 259 entrées affichées sont conservées comme régions en attente de revue manuelle. Les quatre capitales hors liste restent également en attente."
     }
   ],
@@ -151,6 +152,32 @@
       "match": "[ne pas deranger]",
       "matchMode": "contains_case_insensitive",
       "reason": "Entrée technique marquée [NE PAS DERANGER], retirée avant la revue manuelle."
+    },
+    {
+      "key": "name_contains_technical_marker",
+      "continentKey": "eastern-kingdoms",
+      "matches": [
+        "[TEMP]",
+        "BlizzCon",
+        "(copy)",
+        "[TEMP NAME]",
+        "[ZONE DE DEV]",
+        "Carte de dev",
+        "Dev Area",
+        "DemoArea",
+        "UNUSED",
+        "Demo Area",
+        "dev1",
+        "[DEVLAND COPY]",
+        "prototype",
+        "Terrain de jeu",
+        "Terrain de jeux",
+        "DEV LAND",
+        "ZZ_AlexandraDD",
+        "zzOLDBastion"
+      ],
+      "matchMode": "contains_any_case_insensitive",
+      "reason": "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
     }
   ],
   "rules": [

@@ -21,6 +21,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:5695",
       "regionName": "Ahn’Qiraj : le royaume Déchu",
@@ -57,6 +60,9 @@
       "continentKey": "kalimdor",
       "kind": "subzone",
       "parentRef": "wowhead-zone:16",
+      "parentRefs": [
+        "wowhead-zone:16"
+      ],
       "depthBelowContinent": 2,
       "regionRef": "wowhead-zone:16",
       "regionName": "Azshara",
@@ -94,6 +100,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:16",
       "regionName": "Azshara",
@@ -130,6 +139,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:618",
       "regionName": "Berceau-de-l’Hiver",
@@ -166,6 +178,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:490",
       "regionName": "Cratère d’Un’Goro",
@@ -202,6 +217,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:405",
       "regionName": "Désolace",
@@ -238,6 +256,9 @@
       "continentKey": "kalimdor",
       "kind": "subzone",
       "parentRef": "wowhead-zone:14",
+      "parentRefs": [
+        "wowhead-zone:14"
+      ],
       "depthBelowContinent": 2,
       "regionRef": "wowhead-zone:14",
       "regionName": "Durotar",
@@ -275,6 +296,9 @@
       "continentKey": "kalimdor",
       "kind": "subzone",
       "parentRef": "wowhead-zone:1637",
+      "parentRefs": [
+        "wowhead-zone:1637"
+      ],
       "depthBelowContinent": 3,
       "regionRef": "wowhead-zone:1637",
       "regionName": "Orgrimmar",
@@ -313,6 +337,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "wowhead-zone:14",
+      "parentRefs": [
+        "wowhead-zone:14"
+      ],
       "depthBelowContinent": 2,
       "regionRef": "wowhead-zone:1637",
       "regionName": "Orgrimmar",
@@ -350,6 +377,9 @@
       "continentKey": "kalimdor",
       "kind": "subzone",
       "parentRef": "wowhead-zone:14",
+      "parentRefs": [
+        "wowhead-zone:14"
+      ],
       "depthBelowContinent": 2,
       "regionRef": "wowhead-zone:14",
       "regionName": "Durotar",
@@ -387,6 +417,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:14",
       "regionName": "Durotar",
@@ -423,6 +456,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:357",
       "regionName": "Féralas",
@@ -459,6 +495,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:7634",
       "regionName": "Féralas",
@@ -495,6 +534,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:361",
       "regionName": "Gangrebois",
@@ -531,6 +573,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "wowhead-zone:3524",
+      "parentRefs": [
+        "wowhead-zone:3524"
+      ],
       "depthBelowContinent": 2,
       "regionRef": "wowhead-zone:3557",
       "regionName": "L’Exodar",
@@ -568,6 +613,9 @@
       "continentKey": "kalimdor",
       "kind": "subzone",
       "parentRef": "wowhead-zone:3524",
+      "parentRefs": [
+        "wowhead-zone:3524"
+      ],
       "depthBelowContinent": 2,
       "regionRef": "wowhead-zone:3524",
       "regionName": "Île de Brume-Azur",
@@ -605,6 +653,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:3524",
       "regionName": "Île de Brume-Azur",
@@ -641,6 +692,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:3525",
       "regionName": "Île de Brume-Sang",
@@ -677,6 +731,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:457",
       "regionName": "La mer Voilée",
@@ -713,6 +770,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:16668",
       "regionName": "Les Hinterlands",
@@ -749,6 +809,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:406",
       "regionName": "Les Serres-Rocheuses",
@@ -785,6 +848,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:15",
       "regionName": "Marécage d’Âprefange",
@@ -821,6 +887,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:400",
       "regionName": "Mille pointes",
@@ -857,6 +926,9 @@
       "continentKey": "kalimdor",
       "kind": "subzone",
       "parentRef": "wowhead-zone:616",
+      "parentRefs": [
+        "wowhead-zone:616"
+      ],
       "depthBelowContinent": 2,
       "regionRef": "wowhead-zone:616",
       "regionName": "Mont Hyjal",
@@ -894,6 +966,9 @@
       "continentKey": "kalimdor",
       "kind": "subzone",
       "parentRef": "wowhead-zone:616",
+      "parentRefs": [
+        "wowhead-zone:616"
+      ],
       "depthBelowContinent": 2,
       "regionRef": "wowhead-zone:616",
       "regionName": "Mont Hyjal",
@@ -931,6 +1006,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:616",
       "regionName": "Mont Hyjal",
@@ -967,6 +1045,9 @@
       "continentKey": "kalimdor",
       "kind": "subzone",
       "parentRef": "wowhead-zone:215",
+      "parentRefs": [
+        "wowhead-zone:215"
+      ],
       "depthBelowContinent": 2,
       "regionRef": "wowhead-zone:215",
       "regionName": "Mulgore",
@@ -1004,6 +1085,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "wowhead-zone:215",
+      "parentRefs": [
+        "wowhead-zone:215"
+      ],
       "depthBelowContinent": 2,
       "regionRef": "wowhead-zone:1638",
       "regionName": "Les Pitons-du-Tonnerre",
@@ -1041,6 +1125,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:215",
       "regionName": "Mulgore",
@@ -1077,6 +1164,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:331",
       "regionName": "Orneval",
@@ -1113,6 +1203,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:493",
       "regionName": "Reflet-de-Lune",
@@ -1149,6 +1242,9 @@
       "continentKey": "kalimdor",
       "kind": "subzone",
       "parentRef": "wowhead-zone:1377",
+      "parentRefs": [
+        "wowhead-zone:1377"
+      ],
       "depthBelowContinent": 2,
       "regionRef": "wowhead-zone:1377",
       "regionName": "Silithus",
@@ -1186,6 +1282,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:1377",
       "regionName": "Silithus",
@@ -1222,6 +1321,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:148",
       "regionName": "Sombrivage",
@@ -1258,6 +1360,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:440",
       "regionName": "Tanaris",
@@ -1294,6 +1399,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:17",
       "regionName": "Tarides du Nord",
@@ -1330,6 +1438,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:4709",
       "regionName": "Tarides du Sud",
@@ -1366,6 +1477,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "wowhead-zone:141",
+      "parentRefs": [
+        "wowhead-zone:141"
+      ],
       "depthBelowContinent": 2,
       "regionRef": "wowhead-zone:1657",
       "regionName": "Darnassus",
@@ -1403,6 +1517,9 @@
       "continentKey": "kalimdor",
       "kind": "subzone",
       "parentRef": "wowhead-zone:141",
+      "parentRefs": [
+        "wowhead-zone:141"
+      ],
       "depthBelowContinent": 2,
       "regionRef": "wowhead-zone:141",
       "regionName": "Teldrassil",
@@ -1440,6 +1557,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:141",
       "regionName": "Teldrassil",
@@ -1476,6 +1596,9 @@
       "continentKey": "kalimdor",
       "kind": "region",
       "parentRef": "continent:kalimdor",
+      "parentRefs": [
+        "continent:kalimdor"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "wowhead-zone:5034",
       "regionName": "Uldum",
@@ -1512,6 +1635,9 @@
       "continentKey": "maelstrom",
       "kind": "subzone",
       "parentRef": "continent:maelstrom",
+      "parentRefs": [
+        "continent:maelstrom"
+      ],
       "depthBelowContinent": 1,
       "regionRef": "continent:maelstrom",
       "regionName": "Le Maelström",

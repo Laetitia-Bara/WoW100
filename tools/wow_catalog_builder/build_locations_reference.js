@@ -10,6 +10,10 @@ const metadataDir = path.join(repoRoot, "assets/data/metadata");
 const paths = {
   wowheadCatalog: path.join(generatedDir, "zones_wowhead_catalog.json"),
   overrides: path.join(metadataDir, "location_reference_overrides.json"),
+  easternKingdomsManualReview: path.join(
+    metadataDir,
+    "location_eastern_kingdoms_manual_review.json",
+  ),
   output: path.join(generatedDir, "locations_reference_catalog.json"),
   audit: path.join(generatedDir, "locations_reference_audit_report.json"),
   kalimdorReview: path.join(generatedDir, "locations_kalimdor_review.json"),
@@ -21,9 +25,9 @@ const paths = {
     generatedDir,
     "locations_eastern_kingdoms_review.json",
   ),
-  easternKingdomsReviewCsv: path.join(
+  easternKingdomsCatalogCsv: path.join(
     generatedDir,
-    "locations_eastern_kingdoms_review.csv",
+    "locations_eastern_kingdoms_catalog.csv",
   ),
 };
 
@@ -57,6 +61,7 @@ function buildBaseLocation(zone, continent) {
     continentKey: continent.key,
     kind: "region",
     parentRef: `continent:${continent.key}`,
+    parentRefs: [`continent:${continent.key}`],
     depthBelowContinent: 1,
     regionRef: sourceRef(zone.id),
     regionName: zone.name,
@@ -103,6 +108,7 @@ function applyRule(location, rule, continentsByKey) {
     if (rule[field] !== undefined) location[field] = rule[field];
   }
   location.source = "wowhead_zone_catalog_and_manual_review";
+  location.parentRefs = [location.parentRef];
   if (rule.reviewStatus === "reviewed") {
     location.reviewMethod = "user_manual_rule";
   }
@@ -165,6 +171,20 @@ function resolveHierarchy(locations, continentsByKey) {
   }
 
   for (const location of locations) resolve(location);
+  for (const location of locations) {
+    for (const parentRef of location.parentRefs ?? [location.parentRef]) {
+      if (parentRef.startsWith("continent:")) {
+        const continentKey = parentRef.slice("continent:".length);
+        if (!continentsByKey.has(continentKey)) {
+          throw new Error(`Parent continent introuvable: ${parentRef}`);
+        }
+      } else if (!locationsByRef.has(parentRef)) {
+        throw new Error(
+          `Parent secondaire introuvable pour ${location.ref}: ${parentRef}`,
+        );
+      }
+    }
+  }
 }
 
 function buildPath(location, locationsByRef, worldsByKey, continentsByKey) {
@@ -189,23 +209,272 @@ function csvCell(value) {
 function toSemicolonCsv(rows) {
   if (!rows.length) return "";
   const headers = Object.keys(rows[0]);
-  return [
+  return `\uFEFF${[
     headers.map(csvCell).join(";"),
     ...rows.map((row) =>
       headers.map((header) => csvCell(row[header])).join(";"),
     ),
-  ].join("\n");
+  ].join("\n")}`;
 }
 
 function findNameExclusionRule(locationName, continentKey, rules) {
   const normalizedName = locationName.toLocaleLowerCase("fr-FR");
   return (rules ?? []).find((rule) => {
     if (rule.continentKey !== continentKey) return false;
-    if (rule.matchMode !== "contains_case_insensitive") return false;
-    return normalizedName.includes(
-      String(rule.match).toLocaleLowerCase("fr-FR"),
-    );
+    if (rule.matchMode === "contains_case_insensitive") {
+      return normalizedName.includes(
+        String(rule.match).toLocaleLowerCase("fr-FR"),
+      );
+    }
+    if (rule.matchMode === "contains_any_case_insensitive") {
+      return (rule.matches ?? []).some((match) =>
+        normalizedName.includes(String(match).toLocaleLowerCase("fr-FR")),
+      );
+    }
+    return false;
   });
+}
+
+function normalizeLookupName(value) {
+  return String(value ?? "")
+    .toLocaleLowerCase("fr-FR")
+    .replace(/[’`]/g, "'")
+    .replace(/\u00a0/g, " ")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function slugify(value) {
+  return normalizeLookupName(value)
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function reviewDecisionIsDeleted(value) {
+  return normalizeLookupName(value).startsWith("supprim");
+}
+
+function buildExpansionLookup(zones) {
+  const lookup = new Map();
+  for (const zone of zones) {
+    lookup.set(normalizeLookupName(zone.expansionName), {
+      extensionId: zone.expansionId,
+      extensionKey: zone.expansionKey,
+      extensionName: zone.expansionName,
+      expansionBasePatch: zone.expansionBasePatch,
+    });
+  }
+  const burningCrusade = lookup.get("the burning crusade");
+  if (burningCrusade) {
+    lookup.set("the burning crusafe", burningCrusade);
+  }
+  return lookup;
+}
+
+function chooseParentCandidate(candidates, childExtensionId) {
+  return [...candidates].sort((a, b) => {
+    const aSame = a.expansion.extensionId === childExtensionId ? 1 : 0;
+    const bSame = b.expansion.extensionId === childExtensionId ? 1 : 0;
+    if (aSame !== bSame) return bSame - aSame;
+
+    const aBefore = a.expansion.extensionId <= childExtensionId ? 1 : 0;
+    const bBefore = b.expansion.extensionId <= childExtensionId ? 1 : 0;
+    if (aBefore !== bBefore) return bBefore - aBefore;
+    if (aBefore && bBefore) {
+      return b.expansion.extensionId - a.expansion.extensionId;
+    }
+    return (
+      Math.abs(a.expansion.extensionId - childExtensionId) -
+        Math.abs(b.expansion.extensionId - childExtensionId) ||
+      a.wowheadZoneId - b.wowheadZoneId
+    );
+  })[0];
+}
+
+function prepareManualReview({
+  manualReview,
+  sourceZones,
+  continent,
+  expansionLookup,
+  capitalZoneIds = [],
+}) {
+  const sourceById = byKey(sourceZones, (zone) => zone.id);
+  const capitalZoneIdSet = new Set(capitalZoneIds);
+  const decisions = [];
+  const keptRows = [];
+
+  for (const row of manualReview.rows ?? []) {
+    const sourceZone = sourceById.get(row.wowheadZoneId);
+    if (!sourceZone) {
+      throw new Error(
+        `Zone ${row.wowheadZoneId} de la revue manuelle introuvable`,
+      );
+    }
+    if (sourceZone.wowheadCategoryId !== continent.wowheadCategoryId) {
+      throw new Error(
+        `Zone ${row.wowheadZoneId} hors du continent ${continent.key}`,
+      );
+    }
+
+    if (reviewDecisionIsDeleted(row.decision)) {
+      decisions.push({
+        wowheadZoneId: row.wowheadZoneId,
+        action: "exclude",
+        name: row.name,
+        reason: row.note || "Décision Supprimée lors de la revue manuelle.",
+      });
+      continue;
+    }
+
+    const expansion =
+      expansionLookup.get(normalizeLookupName(row.extensionName)) ?? {
+        extensionId: sourceZone.expansionId,
+        extensionKey: sourceZone.expansionKey,
+        extensionName: sourceZone.expansionName,
+        expansionBasePatch: sourceZone.expansionBasePatch,
+      };
+    const prepared = {
+      wowheadZoneId: row.wowheadZoneId,
+      name: row.name,
+      regionName: row.regionName || row.name,
+      extensionNameFromReview: row.extensionName,
+      instanceTypeName: row.instanceTypeName || sourceZone.instanceTypeName,
+      note: row.note || "",
+      expansion,
+    };
+    keptRows.push(prepared);
+  }
+
+  const directRegionsByName = new Map();
+  for (const row of keptRows) {
+    if (
+      normalizeLookupName(row.name) !== normalizeLookupName(row.regionName) &&
+      !capitalZoneIdSet.has(row.wowheadZoneId)
+    ) {
+      continue;
+    }
+    const key = normalizeLookupName(row.name);
+    const candidates = directRegionsByName.get(key) ?? [];
+    candidates.push(row);
+    directRegionsByName.set(key, candidates);
+  }
+
+  const syntheticByName = new Map();
+  function syntheticParent(parentName, child) {
+    const key = normalizeLookupName(parentName);
+    let synthetic = syntheticByName.get(key);
+    if (!synthetic) {
+      const ref = `manual-location:${continent.key}:${slugify(parentName)}`;
+      synthetic = {
+        ref,
+        wowheadZoneId: null,
+        name: parentName,
+        normalizedName: slugify(parentName),
+        worldKey: continent.worldKey,
+        continentKey: continent.key,
+        kind: "region",
+        parentRef: `continent:${continent.key}`,
+        parentRefs: [`continent:${continent.key}`],
+        depthBelowContinent: 1,
+        regionRef: ref,
+        regionName: parentName,
+        extensionId: child.expansion.extensionId,
+        extensionKey: child.expansion.extensionKey,
+        extensionName: child.expansion.extensionName,
+        expansionBasePatch: child.expansion.expansionBasePatch,
+        patch: null,
+        instanceTypeId: null,
+        instanceTypeName: "Zone",
+        territoryId: null,
+        territoryName: "Inconnu",
+        minLevel: null,
+        maxLevel: null,
+        wowheadUrl: "",
+        reviewStatus: "reviewed",
+        reviewMethod: "user_manual_review_synthetic_parent",
+        reviewBatch: "eastern-kingdoms-manual-review",
+        note: "Région parente créée depuis la revue manuelle.",
+        source: "user_manual_review",
+      };
+      syntheticByName.set(key, synthetic);
+    }
+    return synthetic;
+  }
+
+  for (const row of keptRows) {
+    const sameRegion =
+      normalizeLookupName(row.name) === normalizeLookupName(row.regionName);
+    if (sameRegion) {
+      decisions.push({
+        ...row,
+        action: "keep",
+        kind: "region",
+        parentRef: `continent:${continent.key}`,
+        parentRefs: [`continent:${continent.key}`],
+      });
+      continue;
+    }
+
+    let parentNames = [row.regionName];
+    if (!directRegionsByName.has(normalizeLookupName(row.regionName))) {
+      const splitNames = row.regionName
+        .split(",")
+        .map((name) => name.trim())
+        .filter(Boolean);
+      if (splitNames.length > 1) parentNames = splitNames;
+    }
+
+    const parentRefs = parentNames.map((parentName) => {
+      const candidates =
+        directRegionsByName.get(normalizeLookupName(parentName)) ?? [];
+      if (candidates.length) {
+        return sourceRef(
+          chooseParentCandidate(
+            candidates,
+            row.expansion.extensionId,
+          ).wowheadZoneId,
+        );
+      }
+      return syntheticParent(parentName, row).ref;
+    });
+
+    decisions.push({
+      ...row,
+      action: "keep",
+      kind: capitalZoneIdSet.has(row.wowheadZoneId)
+        ? "region"
+        : "subzone",
+      parentRef: parentRefs[0],
+      parentRefs,
+    });
+  }
+
+  return {
+    decisionsByZoneId: byKey(decisions, (decision) => decision.wowheadZoneId),
+    syntheticLocations: [...syntheticByName.values()],
+    sourceRowCount: manualReview.rows?.length ?? 0,
+  };
+}
+
+function applyManualReviewDecision(location, decision) {
+  location.name = decision.name;
+  location.normalizedName = slugify(decision.name);
+  location.kind = decision.kind;
+  location.parentRef = decision.parentRef;
+  location.parentRefs = decision.parentRefs;
+  location.reviewRegionName = decision.regionName;
+  location.extensionId = decision.expansion.extensionId;
+  location.extensionKey = decision.expansion.extensionKey;
+  location.extensionName = decision.expansion.extensionName;
+  location.expansionBasePatch = decision.expansion.expansionBasePatch;
+  location.instanceTypeName = decision.instanceTypeName;
+  location.reviewStatus = "reviewed";
+  location.reviewMethod = "user_manual_review";
+  location.reviewBatch = "eastern-kingdoms-manual-review";
+  location.note = decision.note;
+  location.source = "wowhead_zone_catalog_and_user_manual_review";
 }
 
 function buildReviewRows({
@@ -223,8 +492,8 @@ function buildReviewRows({
       continent:
         continentsByKey.get(location.continentKey)?.name ??
         location.continentKey,
-      region: location.regionName ?? "",
-      parent: location.parentRef,
+      region: location.reviewRegionName ?? location.regionName ?? "",
+      parent: (location.parentRefs ?? [location.parentRef]).join(" | "),
       typeGeographique: location.kind,
       profondeur: location.depthBelowContinent,
       extension: location.extensionName,
@@ -262,10 +531,12 @@ function buildReviewRows({
 }
 
 async function main() {
-  const [wowheadCatalog, config] = await Promise.all([
+  const [wowheadCatalog, config, easternKingdomsManualReview] =
+    await Promise.all([
     loadJson(paths.wowheadCatalog),
     loadJson(paths.overrides),
-  ]);
+      loadJson(paths.easternKingdomsManualReview),
+    ]);
   const worldsByKey = byKey(config.worlds, (world) => world.key);
   const continentsByKey = byKey(
     config.continents,
@@ -280,6 +551,16 @@ async function main() {
     config.reviewBatches,
     (batch) => batch.continentKey,
   );
+  const expansionLookup = buildExpansionLookup(wowheadCatalog.zones ?? []);
+  const easternKingdomsContinent = continentsByKey.get("eastern-kingdoms");
+  const easternKingdomsBatch = batchesByContinent.get("eastern-kingdoms");
+  const easternKingdomsManual = prepareManualReview({
+    manualReview: easternKingdomsManualReview,
+    sourceZones: wowheadCatalog.zones ?? [],
+    continent: easternKingdomsContinent,
+    expansionLookup,
+    capitalZoneIds: easternKingdomsBatch?.capitalZoneIds ?? [],
+  });
 
   for (const continent of config.continents) {
     if (!worldsByKey.has(continent.worldKey)) {
@@ -312,23 +593,34 @@ async function main() {
     }
 
     const rule = rulesByZoneId.get(zone.id);
+    const manualDecision =
+      continent.key === "eastern-kingdoms"
+        ? easternKingdomsManual.decisionsByZoneId.get(zone.id)
+        : null;
     const nameExclusionRule = findNameExclusionRule(
       zone.name,
       continent.key,
       config.nameExclusionRules,
     );
-    if (rule?.action === "exclude" || nameExclusionRule) {
-      const exclusionRule = rule?.action === "exclude" ? rule : nameExclusionRule;
+    if (
+      manualDecision?.action === "exclude" ||
+      (!manualDecision && (rule?.action === "exclude" || nameExclusionRule))
+    ) {
+      const exclusionRule = manualDecision ??
+        (rule?.action === "exclude" ? rule : nameExclusionRule);
       exclusions.push({
         wowheadZoneId: zone.id,
-        name: zone.name,
+        name: manualDecision?.name ?? zone.name,
         worldKey: continent.worldKey,
         worldName: worldsByKey.get(continent.worldKey)?.name ?? continent.worldKey,
         continentKey: continent.key,
         continentName: continent.name,
-        expansionName: zone.expansionName,
-        instanceTypeName: zone.instanceTypeName,
-        exclusionMethod: nameExclusionRule?.key ?? "user_manual_rule",
+        expansionName: manualDecision?.extensionNameFromReview ?? zone.expansionName,
+        instanceTypeName:
+          manualDecision?.instanceTypeName ?? zone.instanceTypeName,
+        exclusionMethod: manualDecision
+          ? "user_manual_review"
+          : nameExclusionRule?.key ?? "user_manual_rule",
         reason: exclusionRule.reason,
       });
       continue;
@@ -336,7 +628,9 @@ async function main() {
 
     const location = buildBaseLocation(zone, continent);
     const batch = batchesByContinent.get(continent.key);
-    if (
+    if (manualDecision?.action === "keep") {
+      applyManualReviewDecision(location, manualDecision);
+    } else if (
       batch &&
       !batch.excludedDefaultZoneIds.includes(zone.id)
     ) {
@@ -349,12 +643,14 @@ async function main() {
       location.reviewBatch = batch.key;
       location.source = "wowhead_zone_catalog_and_user_review";
     }
-    if (rule?.action === "override") {
+    if (!manualDecision && rule?.action === "override") {
       applyRule(location, rule, continentsByKey);
       location.reviewBatch = batch?.key ?? "manual-rule";
     }
     locations.push(location);
   }
+
+  locations.push(...easternKingdomsManual.syntheticLocations);
 
   resolveHierarchy(locations, continentsByKey);
   const locationsByRef = byKey(locations, (location) => location.ref);
@@ -416,6 +712,12 @@ async function main() {
   const easternKingdomsLocations = locations.filter(
     (location) => location.continentKey === "eastern-kingdoms",
   );
+  const easternKingdomsSourceLocations = easternKingdomsLocations.filter(
+    (location) => location.wowheadZoneId !== null,
+  );
+  const easternKingdomsSyntheticLocations = easternKingdomsLocations.filter(
+    (location) => location.wowheadZoneId === null,
+  );
   const easternKingdomsExclusions = exclusions.filter(
     (exclusion) => exclusion.continentKey === "eastern-kingdoms",
   );
@@ -424,7 +726,15 @@ async function main() {
       (zone) => zone.wowheadCategoryId === 0,
     ).length,
     suppliedListEntries: 259,
-    retainedEntries: easternKingdomsLocations.length,
+    retainedEntries: easternKingdomsSourceLocations.length,
+    canonicalLocationNodes: easternKingdomsLocations.length,
+    syntheticRegions: easternKingdomsSyntheticLocations.length,
+    subzones: easternKingdomsSourceLocations.filter(
+      (location) => location.kind === "subzone",
+    ).length,
+    multiParentLocations: easternKingdomsSourceLocations.filter(
+      (location) => (location.parentRefs?.length ?? 1) > 1,
+    ).length,
     excludedEntries: easternKingdomsExclusions.length,
     excludedByTestRule: easternKingdomsExclusions.filter(
       (exclusion) => exclusion.exclusionMethod === "name_contains_test",
@@ -435,6 +745,10 @@ async function main() {
         exclusion.exclusionMethod.startsWith(
           "name_contains_ne_pas_deranger",
         ),
+    ).length,
+    excludedByTechnicalMarkerRule: easternKingdomsExclusions.filter(
+      (exclusion) =>
+        exclusion.exclusionMethod === "name_contains_technical_marker",
     ).length,
     reviewedEntries: easternKingdomsLocations.filter(
       (location) => location.reviewStatus === "reviewed",
@@ -461,8 +775,18 @@ async function main() {
     worlds: config.worlds.length,
     continents: config.continents.length,
     canonicalLocations: locations.length,
+    sourceDerivedLocations: locations.filter(
+      (location) => location.wowheadZoneId !== null,
+    ).length,
+    syntheticLocations: locations.filter(
+      (location) => location.wowheadZoneId === null,
+    ).length,
     exclusions: exclusions.length,
     unassignedSourceEntries: unassignedSourceEntries.length,
+    sourceEntriesReconciled:
+      locations.filter((location) => location.wowheadZoneId !== null).length +
+      exclusions.length +
+      unassignedSourceEntries.length,
     reviewedLocations: locations.filter(
       (location) => location.reviewStatus === "reviewed",
     ).length,
@@ -487,10 +811,17 @@ async function main() {
     easternKingdoms: {
       sourceEntries: easternKingdomsReview.sourceEntriesInWowheadCategory,
       retainedEntries: easternKingdomsReview.retainedEntries,
+      canonicalLocationNodes:
+        easternKingdomsReview.canonicalLocationNodes,
+      syntheticRegions: easternKingdomsReview.syntheticRegions,
+      subzones: easternKingdomsReview.subzones,
+      multiParentLocations: easternKingdomsReview.multiParentLocations,
       excludedEntries: easternKingdomsReview.excludedEntries,
       excludedByTestRule: easternKingdomsReview.excludedByTestRule,
       excludedByDoNotDisturbRule:
         easternKingdomsReview.excludedByDoNotDisturbRule,
+      excludedByTechnicalMarkerRule:
+        easternKingdomsReview.excludedByTechnicalMarkerRule,
       reviewedEntries: easternKingdomsReview.reviewedEntries,
       pendingEntries: easternKingdomsReview.pendingEntries,
     },
@@ -529,7 +860,7 @@ async function main() {
       "utf8",
     ),
     fs.writeFile(
-      paths.easternKingdomsReviewCsv,
+      paths.easternKingdomsCatalogCsv,
       `${toSemicolonCsv(easternKingdomsReviewRows)}\n`,
       "utf8",
     ),
@@ -542,7 +873,7 @@ async function main() {
       `${audit.canonicalLocations} localisations`,
       `${audit.unassignedSourceEntries} entrées à affecter`,
       `Kalimdor: ${kalimdorReview.reviewedEntries} validées, ${kalimdorReview.pendingEntries} à revoir, ${kalimdorReview.excludedEntries} supprimées`,
-      `Royaumes de l'Est: ${easternKingdomsReview.pendingEntries} régions à revoir, ${easternKingdomsReview.excludedByTestRule} tests et ${easternKingdomsReview.excludedByDoNotDisturbRule} marqueurs supprimés`,
+      `Royaumes de l'Est: ${easternKingdomsReview.retainedEntries} entrées retenues, ${easternKingdomsReview.subzones} sous-zones, ${easternKingdomsReview.syntheticRegions} régions créées, ${easternKingdomsReview.excludedEntries} supprimées`,
     ].join(" | "),
   );
 }
