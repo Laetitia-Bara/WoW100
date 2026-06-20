@@ -14,6 +14,10 @@ const paths = {
     metadataDir,
     "location_eastern_kingdoms_manual_review.json",
   ),
+  northrendManualReview: path.join(
+    metadataDir,
+    "location_northrend_manual_review.json",
+  ),
   output: path.join(generatedDir, "locations_reference_catalog.json"),
   audit: path.join(generatedDir, "locations_reference_audit_report.json"),
   kalimdorReview: path.join(generatedDir, "locations_kalimdor_review.json"),
@@ -28,6 +32,27 @@ const paths = {
   easternKingdomsCatalogCsv: path.join(
     generatedDir,
     "locations_eastern_kingdoms_catalog.csv",
+  ),
+  outlandReview: path.join(generatedDir, "locations_outland_review.json"),
+  outlandReviewCsv: path.join(
+    generatedDir,
+    "locations_outland_review.csv",
+  ),
+  northrendReview: path.join(
+    generatedDir,
+    "locations_northrend_review.json",
+  ),
+  northrendCatalogCsv: path.join(
+    generatedDir,
+    "locations_northrend_catalog.csv",
+  ),
+  maelstromReview: path.join(
+    generatedDir,
+    "locations_maelstrom_review.json",
+  ),
+  maelstromReviewCsv: path.join(
+    generatedDir,
+    "locations_maelstrom_review.csv",
   ),
 };
 
@@ -100,6 +125,7 @@ function applyRule(location, rule, continentsByKey) {
     "extensionId",
     "extensionKey",
     "extensionName",
+    "instanceTypeName",
     "regionRefOverride",
     "regionNameOverride",
     "reviewStatus",
@@ -531,11 +557,16 @@ function buildReviewRows({
 }
 
 async function main() {
-  const [wowheadCatalog, config, easternKingdomsManualReview] =
-    await Promise.all([
-    loadJson(paths.wowheadCatalog),
-    loadJson(paths.overrides),
+  const [
+    wowheadCatalog,
+    config,
+    easternKingdomsManualReview,
+    northrendManualReview,
+  ] = await Promise.all([
+      loadJson(paths.wowheadCatalog),
+      loadJson(paths.overrides),
       loadJson(paths.easternKingdomsManualReview),
+      loadJson(paths.northrendManualReview),
     ]);
   const worldsByKey = byKey(config.worlds, (world) => world.key);
   const continentsByKey = byKey(
@@ -561,6 +592,19 @@ async function main() {
     expansionLookup,
     capitalZoneIds: easternKingdomsBatch?.capitalZoneIds ?? [],
   });
+  const northrendContinent = continentsByKey.get("northrend");
+  const northrendBatch = batchesByContinent.get("northrend");
+  const northrendManual = prepareManualReview({
+    manualReview: northrendManualReview,
+    sourceZones: wowheadCatalog.zones ?? [],
+    continent: northrendContinent,
+    expansionLookup,
+    capitalZoneIds: northrendBatch?.capitalZoneIds ?? [],
+  });
+  const manualReviewsByContinent = new Map([
+    ["eastern-kingdoms", easternKingdomsManual],
+    ["northrend", northrendManual],
+  ]);
 
   for (const continent of config.continents) {
     if (!worldsByKey.has(continent.worldKey)) {
@@ -593,10 +637,9 @@ async function main() {
     }
 
     const rule = rulesByZoneId.get(zone.id);
-    const manualDecision =
-      continent.key === "eastern-kingdoms"
-        ? easternKingdomsManual.decisionsByZoneId.get(zone.id)
-        : null;
+    const manualDecision = manualReviewsByContinent
+      .get(continent.key)
+      ?.decisionsByZoneId.get(zone.id);
     const nameExclusionRule = findNameExclusionRule(
       zone.name,
       continent.key,
@@ -651,6 +694,7 @@ async function main() {
   }
 
   locations.push(...easternKingdomsManual.syntheticLocations);
+  locations.push(...northrendManual.syntheticLocations);
 
   resolveHierarchy(locations, continentsByKey);
   const locationsByRef = byKey(locations, (location) => location.ref);
@@ -769,6 +813,124 @@ async function main() {
     worldsByKey,
     continentsByKey,
   });
+  const outlandLocations = locations.filter(
+    (location) => location.continentKey === "outland",
+  );
+  const outlandExclusions = exclusions.filter(
+    (exclusion) => exclusion.continentKey === "outland",
+  );
+  const outlandReview = {
+    sourceEntriesInWowheadCategory: (wowheadCatalog.zones ?? []).filter(
+      (zone) => zone.wowheadCategoryId === 8,
+    ).length,
+    suppliedListEntries: 7,
+    retainedEntries: outlandLocations.length,
+    displayedRegions: outlandLocations.filter(
+      (location) => location.wowheadZoneId !== 3703,
+    ).length,
+    capitalRegions: outlandLocations.filter(
+      (location) => location.wowheadZoneId === 3703,
+    ).length,
+    excludedEntries: outlandExclusions.length,
+    reviewedEntries: outlandLocations.filter(
+      (location) => location.reviewStatus === "reviewed",
+    ).length,
+    pendingEntries: outlandLocations.filter(
+      (location) => location.reviewStatus !== "reviewed",
+    ).length,
+    byKind: countBy(outlandLocations, (location) => location.kind),
+    locations: outlandLocations,
+    exclusions: outlandExclusions,
+  };
+  const outlandReviewRows = buildReviewRows({
+    locations: outlandLocations,
+    exclusions: outlandExclusions,
+    worldsByKey,
+    continentsByKey,
+  });
+  const northrendLocations = locations.filter(
+    (location) => location.continentKey === "northrend",
+  );
+  const northrendExclusions = exclusions.filter(
+    (exclusion) => exclusion.continentKey === "northrend",
+  );
+  const northrendCapitalIds = new Set([4395, 8474]);
+  const northrendReview = {
+    sourceEntriesInWowheadCategory: (wowheadCatalog.zones ?? []).filter(
+      (zone) => zone.wowheadCategoryId === 10,
+    ).length,
+    suppliedListEntries: 18,
+    retainedEntries: northrendLocations.length,
+    syntheticRegions: northrendManual.syntheticLocations.length,
+    subzones: northrendLocations.filter(
+      (location) => location.kind === "subzone",
+    ).length,
+    displayedRegions: northrendLocations.filter(
+      (location) => location.wowheadZoneId !== 4395,
+    ).length,
+    capitalCandidates: northrendLocations.filter((location) =>
+      northrendCapitalIds.has(location.wowheadZoneId),
+    ).length,
+    capitalOutsideDisplayedList: northrendLocations.filter(
+      (location) => location.wowheadZoneId === 4395,
+    ).length,
+    deletedCapitalCandidates: northrendExclusions.filter(
+      (exclusion) => exclusion.wowheadZoneId === 4395,
+    ).length,
+    excludedEntries: northrendExclusions.length,
+    reviewedEntries: northrendLocations.filter(
+      (location) => location.reviewStatus === "reviewed",
+    ).length,
+    pendingEntries: northrendLocations.filter(
+      (location) => location.reviewStatus !== "reviewed",
+    ).length,
+    byKind: countBy(northrendLocations, (location) => location.kind),
+    locations: northrendLocations,
+    exclusions: northrendExclusions,
+  };
+  const northrendReviewRows = buildReviewRows({
+    locations: northrendLocations,
+    exclusions: northrendExclusions,
+    worldsByKey,
+    continentsByKey,
+  });
+  const maelstromLocations = locations.filter(
+    (location) => location.continentKey === "maelstrom",
+  );
+  const maelstromExclusions = exclusions.filter(
+    (exclusion) => exclusion.continentKey === "maelstrom",
+  );
+  const maelstromReview = {
+    sourceEntriesInWowheadCategory: (wowheadCatalog.zones ?? []).filter(
+      (zone) => zone.wowheadCategoryId === 11,
+    ).length,
+    suppliedListEntries: 8,
+    retainedSourceRegions: maelstromLocations.filter(
+      (location) =>
+        location.wowheadZoneId !== 8093 && location.kind === "region",
+    ).length,
+    importedSubzones: maelstromLocations.filter(
+      (location) => location.wowheadZoneId === 8093,
+    ).length,
+    canonicalLocationNodes: maelstromLocations.length,
+    capitalRegions: 0,
+    excludedEntries: maelstromExclusions.length,
+    reviewedEntries: maelstromLocations.filter(
+      (location) => location.reviewStatus === "reviewed",
+    ).length,
+    pendingEntries: maelstromLocations.filter(
+      (location) => location.reviewStatus !== "reviewed",
+    ).length,
+    byKind: countBy(maelstromLocations, (location) => location.kind),
+    locations: maelstromLocations,
+    exclusions: maelstromExclusions,
+  };
+  const maelstromReviewRows = buildReviewRows({
+    locations: maelstromLocations,
+    exclusions: maelstromExclusions,
+    worldsByKey,
+    continentsByKey,
+  });
 
   const audit = {
     sourceEntries: (wowheadCatalog.zones ?? []).length,
@@ -825,6 +987,43 @@ async function main() {
       reviewedEntries: easternKingdomsReview.reviewedEntries,
       pendingEntries: easternKingdomsReview.pendingEntries,
     },
+    outland: {
+      sourceEntries: outlandReview.sourceEntriesInWowheadCategory,
+      suppliedListEntries: outlandReview.suppliedListEntries,
+      retainedEntries: outlandReview.retainedEntries,
+      displayedRegions: outlandReview.displayedRegions,
+      capitalRegions: outlandReview.capitalRegions,
+      excludedEntries: outlandReview.excludedEntries,
+      reviewedEntries: outlandReview.reviewedEntries,
+      pendingEntries: outlandReview.pendingEntries,
+    },
+    northrend: {
+      sourceEntries: northrendReview.sourceEntriesInWowheadCategory,
+      suppliedListEntries: northrendReview.suppliedListEntries,
+      retainedEntries: northrendReview.retainedEntries,
+      syntheticRegions: northrendReview.syntheticRegions,
+      subzones: northrendReview.subzones,
+      displayedRegions: northrendReview.displayedRegions,
+      capitalCandidates: northrendReview.capitalCandidates,
+      capitalOutsideDisplayedList:
+        northrendReview.capitalOutsideDisplayedList,
+      deletedCapitalCandidates:
+        northrendReview.deletedCapitalCandidates,
+      excludedEntries: northrendReview.excludedEntries,
+      reviewedEntries: northrendReview.reviewedEntries,
+      pendingEntries: northrendReview.pendingEntries,
+    },
+    maelstrom: {
+      sourceEntries: maelstromReview.sourceEntriesInWowheadCategory,
+      suppliedListEntries: maelstromReview.suppliedListEntries,
+      retainedSourceRegions: maelstromReview.retainedSourceRegions,
+      importedSubzones: maelstromReview.importedSubzones,
+      canonicalLocationNodes: maelstromReview.canonicalLocationNodes,
+      capitalRegions: maelstromReview.capitalRegions,
+      excludedEntries: maelstromReview.excludedEntries,
+      reviewedEntries: maelstromReview.reviewedEntries,
+      pendingEntries: maelstromReview.pendingEntries,
+    },
   };
 
   const output = {
@@ -864,6 +1063,36 @@ async function main() {
       `${toSemicolonCsv(easternKingdomsReviewRows)}\n`,
       "utf8",
     ),
+    fs.writeFile(
+      paths.outlandReview,
+      `${JSON.stringify(outlandReview, null, 2)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.outlandReviewCsv,
+      `${toSemicolonCsv(outlandReviewRows)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.northrendReview,
+      `${JSON.stringify(northrendReview, null, 2)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.northrendCatalogCsv,
+      `${toSemicolonCsv(northrendReviewRows)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.maelstromReview,
+      `${JSON.stringify(maelstromReview, null, 2)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.maelstromReviewCsv,
+      `${toSemicolonCsv(maelstromReviewRows)}\n`,
+      "utf8",
+    ),
   ]);
 
   console.log(
@@ -874,6 +1103,9 @@ async function main() {
       `${audit.unassignedSourceEntries} entrées à affecter`,
       `Kalimdor: ${kalimdorReview.reviewedEntries} validées, ${kalimdorReview.pendingEntries} à revoir, ${kalimdorReview.excludedEntries} supprimées`,
       `Royaumes de l'Est: ${easternKingdomsReview.retainedEntries} entrées retenues, ${easternKingdomsReview.subzones} sous-zones, ${easternKingdomsReview.syntheticRegions} régions créées, ${easternKingdomsReview.excludedEntries} supprimées`,
+      `Outreterre: ${outlandReview.displayedRegions} régions et ${outlandReview.capitalRegions} capitale validées`,
+      `Norfendre: ${northrendReview.retainedEntries} entrées retenues, ${northrendReview.subzones} sous-zone, ${northrendReview.excludedEntries} supprimées et ${northrendReview.pendingEntries} à revoir`,
+      `Le Maelström: ${maelstromReview.retainedSourceRegions} régions, ${maelstromReview.importedSubzones} sous-zone importée et ${maelstromReview.pendingEntries} à revoir`,
     ].join(" | "),
   );
 }

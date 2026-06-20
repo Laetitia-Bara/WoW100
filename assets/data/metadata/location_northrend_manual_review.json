@@ -1,0 +1,179 @@
+{
+    "schemaVersion":  1,
+    "continentKey":  "northrend",
+    "sourceFile":  "assets/generated/locations_northrend_review.csv",
+    "importedAt":  "2026-06-20T16:03:12.8218996+02:00",
+    "rows":  [
+                 {
+                     "wowheadZoneId":  4742,
+                     "name":  "Accostage de Hrothgar",
+                     "regionName":  "Accostage de Hrothgar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10157,
+                     "name":  "Bassin de Sholazar",
+                     "regionName":  "Bassin de Sholazar",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  3711,
+                     "name":  "Bassin de Sholazar",
+                     "regionName":  "Bassin de Sholazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8474,
+                     "name":  "Dalaran (Norfendre)",
+                     "regionName":  "Forêt du Chant de cristal",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  4395,
+                     "name":  "Dalaran",
+                     "regionName":  "Dalaran",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10154,
+                     "name":  "Désolation des dragons",
+                     "regionName":  "Désolation des dragons",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  65,
+                     "name":  "Désolation des dragons",
+                     "regionName":  "Désolation des dragons",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  495,
+                     "name":  "Fjord Hurlant",
+                     "regionName":  "Fjord Hurlant",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  2817,
+                     "name":  "Forêt du Chant de cristal",
+                     "regionName":  "Forêt du Chant de cristal",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  4197,
+                     "name":  "Joug-d’Hiver",
+                     "regionName":  "Joug-d’Hiver",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "PvP",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10155,
+                     "name":  "La Couronne de glace",
+                     "regionName":  "La Couronne de glace",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  210,
+                     "name":  "La Couronne de glace",
+                     "regionName":  "La Couronne de glace",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10456,
+                     "name":  "Le sanctum Obsidien",
+                     "regionName":  "Le sanctum Obsidien",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  4859,
+                     "name":  "Le Trône de glace",
+                     "regionName":  "La Couronne de glace",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  394,
+                     "name":  "Les Grisonnes",
+                     "regionName":  "Les Grisonnes",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  67,
+                     "name":  "Les pics Foudroyés",
+                     "regionName":  "Les pics Foudroyés",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10156,
+                     "name":  "Toundra Boréenne",
+                     "regionName":  "Toundra Boréenne",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  3537,
+                     "name":  "Toundra Boréenne",
+                     "regionName":  "Toundra Boréenne",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  66,
+                     "name":  "Zul’Drak",
+                     "regionName":  "Zul’Drak",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 }
+             ]
+}

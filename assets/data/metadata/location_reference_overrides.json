@@ -122,6 +122,36 @@
       "excludedDefaultZoneIds": [1519, 1537, 1497, 3487],
       "capitalZoneIds": [1519, 1537, 1497, 3487, 15969, 4714],
       "note": "Les 259 entrées affichées sont conservées comme régions en attente de revue manuelle. Les quatre capitales hors liste restent également en attente."
+    },
+    {
+      "key": "outland-2026-06-20",
+      "continentKey": "outland",
+      "sourceEntryCount": 7,
+      "defaultReviewStatus": "reviewed",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [3703],
+      "capitalZoneIds": [3703],
+      "note": "Les sept entrées affichées sont validées comme régions. Shattrath est traitée séparément comme capitale."
+    },
+    {
+      "key": "northrend-2026-06-20",
+      "continentKey": "northrend",
+      "sourceEntryCount": 18,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [4395],
+      "capitalZoneIds": [4395, 8474],
+      "note": "Les 18 entrées affichées sont classées provisoirement comme régions. Dalaran WotLK, hors liste affichée, est ajoutée comme capitale candidate."
+    },
+    {
+      "key": "maelstrom-2026-06-20",
+      "continentKey": "maelstrom",
+      "sourceEntryCount": 8,
+      "defaultReviewStatus": "reviewed",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [],
+      "capitalZoneIds": [],
+      "note": "Les huit entrées affichées sont validées comme régions. Tol Barad et la Péninsule de Tol Barad restent deux régions sœurs."
     }
   ],
   "nameExclusionRules": [
@@ -181,6 +211,23 @@
     }
   ],
   "rules": [
+    {
+      "wowheadZoneId": 5095,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "continent:maelstrom",
+      "instanceTypeName": "PvP",
+      "reviewStatus": "reviewed",
+      "note": "Tol Barad est une région JcJ distincte de la Péninsule de Tol Barad."
+    },
+    {
+      "wowheadZoneId": 3703,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:3519",
+      "reviewStatus": "reviewed",
+      "note": "Shattrath est une région-capitale autonome située dans la Forêt de Terokkar."
+    },
     {
       "wowheadZoneId": 876,
       "action": "exclude",
@@ -318,9 +365,7 @@
       "action": "override",
       "continentKey": "maelstrom",
       "kind": "subzone",
-      "parentRef": "continent:maelstrom",
-      "regionRefOverride": "continent:maelstrom",
-      "regionNameOverride": "Le Maelström",
+      "parentRef": "wowhead-zone:5416",
       "reviewStatus": "reviewed",
       "note": "La cime du Vortex est déplacée sous Le Maelström."
     },

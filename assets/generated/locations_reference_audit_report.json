@@ -2,16 +2,16 @@
   "sourceEntries": 1254,
   "worlds": 4,
   "continents": 14,
-  "canonicalLocations": 412,
-  "sourceDerivedLocations": 409,
+  "canonicalLocations": 406,
+  "sourceDerivedLocations": 403,
   "syntheticLocations": 3,
-  "exclusions": 196,
+  "exclusions": 202,
   "unassignedSourceEntries": 649,
   "sourceEntriesReconciled": 1254,
-  "reviewedLocations": 117,
-  "pendingLocations": 295,
+  "reviewedLocations": 146,
+  "pendingLocations": 260,
   "byWorld": {
-    "azeroth": 360,
+    "azeroth": 354,
     "draenor": 15,
     "outland": 8,
     "shadowlands": 29
@@ -24,7 +24,7 @@
     "khaz-algar": 24,
     "kul-tiras": 31,
     "maelstrom": 9,
-    "northrend": 19,
+    "northrend": 13,
     "pandaria": 47,
     "quel-thalas": 15,
     "zandalar": 30,
@@ -33,12 +33,12 @@
     "shadowlands": 29
   },
   "byKind": {
-    "region": 375,
-    "subzone": 37
+    "region": 368,
+    "subzone": 38
   },
   "byReviewStatus": {
-    "pending": 295,
-    "reviewed": 117
+    "pending": 260,
+    "reviewed": 146
   },
   "hierarchyErrors": [],
   "kalimdor": {
@@ -60,6 +60,41 @@
     "excludedByDoNotDisturbRule": 0,
     "excludedByTechnicalMarkerRule": 0,
     "reviewedEntries": 75,
+    "pendingEntries": 0
+  },
+  "outland": {
+    "sourceEntries": 8,
+    "suppliedListEntries": 7,
+    "retainedEntries": 8,
+    "displayedRegions": 7,
+    "capitalRegions": 1,
+    "excludedEntries": 0,
+    "reviewedEntries": 8,
+    "pendingEntries": 0
+  },
+  "northrend": {
+    "sourceEntries": 19,
+    "suppliedListEntries": 18,
+    "retainedEntries": 13,
+    "syntheticRegions": 0,
+    "subzones": 1,
+    "displayedRegions": 13,
+    "capitalCandidates": 1,
+    "capitalOutsideDisplayedList": 0,
+    "deletedCapitalCandidates": 1,
+    "excludedEntries": 6,
+    "reviewedEntries": 13,
+    "pendingEntries": 0
+  },
+  "maelstrom": {
+    "sourceEntries": 8,
+    "suppliedListEntries": 8,
+    "retainedSourceRegions": 8,
+    "importedSubzones": 1,
+    "canonicalLocationNodes": 9,
+    "capitalRegions": 0,
+    "excludedEntries": 0,
+    "reviewedEntries": 9,
     "pendingEntries": 0
   }
 }

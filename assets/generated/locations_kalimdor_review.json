@@ -1634,12 +1634,12 @@
       "worldKey": "azeroth",
       "continentKey": "maelstrom",
       "kind": "subzone",
-      "parentRef": "continent:maelstrom",
+      "parentRef": "wowhead-zone:5416",
       "parentRefs": [
-        "continent:maelstrom"
+        "wowhead-zone:5416"
       ],
-      "depthBelowContinent": 1,
-      "regionRef": "continent:maelstrom",
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:5416",
       "regionName": "Le Maelström",
       "extensionId": 6,
       "extensionKey": "legion",
@@ -1661,9 +1661,10 @@
       "path": [
         "Azeroth",
         "Le Maelström",
+        "Le Maelström",
         "La cime du Vortex"
       ],
-      "pathLabel": "Azeroth > Le Maelström > La cime du Vortex"
+      "pathLabel": "Azeroth > Le Maelström > Le Maelström > La cime du Vortex"
     }
   ],
   "exclusions": [
