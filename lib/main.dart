@@ -20,11 +20,11 @@ void main() {
       StartupLogger.mark('Flutter initialized');
       _configureStartupErrorLogging();
       unawaited(StartupLogger.initializePersistence());
-      await _initializeAdsForStartup();
       StartupLogger.mark('runApp called');
       runApp(const WoW100App());
       WidgetsBinding.instance.addPostFrameCallback((_) {
         StartupLogger.mark('first screen rendered');
+        unawaited(_initializeAdsAfterFirstFrame());
       });
     },
     (error, stackTrace) {
@@ -51,7 +51,7 @@ void _configureStartupErrorLogging() {
   };
 }
 
-Future<void> _initializeAdsForStartup() async {
+Future<void> _initializeAdsAfterFirstFrame() async {
   if (!AppAds.isSupported) {
     StartupLogger.mark('ads init skipped');
     return;

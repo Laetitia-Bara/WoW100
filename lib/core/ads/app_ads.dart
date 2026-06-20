@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -6,6 +8,9 @@ import '../theme/app_theme.dart';
 
 class AppAds {
   const AppAds._();
+
+  static const _disabled = bool.fromEnvironment('DISABLE_ADS');
+  static Future<void>? _initialization;
 
   static const androidAppId = 'ca-app-pub-5057499390168934~3930177735';
   static const iosAppId = 'ca-app-pub-5057499390168934~4880059647';
@@ -41,16 +46,21 @@ class AppAds {
   }
 
   static bool get isSupported {
-    return !kIsWeb &&
+    return !_disabled &&
+        !kIsWeb &&
         (defaultTargetPlatform == TargetPlatform.android ||
             defaultTargetPlatform == TargetPlatform.iOS);
   }
 
-  static Future<void> initialize() async {
+  static Future<void> initialize() {
     if (!isSupported) {
-      return;
+      return Future<void>.value();
     }
 
+    return _initialization ??= _initialize();
+  }
+
+  static Future<void> _initialize() async {
     await MobileAds.instance.updateRequestConfiguration(
       RequestConfiguration(
         maxAdContentRating: MaxAdContentRating.t,
@@ -79,8 +89,19 @@ class _AppBannerAdState extends State<AppBannerAd> {
     _loadAd();
   }
 
-  void _loadAd() {
+  Future<void> _loadAd() async {
     if (!AppAds.isSupported) {
+      return;
+    }
+
+    await WidgetsBinding.instance.endOfFrame;
+    try {
+      await AppAds.initialize().timeout(const Duration(seconds: 8));
+    } on Object {
+      return;
+    }
+
+    if (!mounted) {
       return;
     }
 
@@ -161,8 +182,19 @@ class _AppNativeAdState extends State<AppNativeAd> {
     _loadAd();
   }
 
-  void _loadAd() {
+  Future<void> _loadAd() async {
     if (!AppAds.isSupported) {
+      return;
+    }
+
+    await WidgetsBinding.instance.endOfFrame;
+    try {
+      await AppAds.initialize().timeout(const Duration(seconds: 8));
+    } on Object {
+      return;
+    }
+
+    if (!mounted) {
       return;
     }
 

@@ -13,6 +13,7 @@ class SceneDelegate: FlutterSceneDelegate, ASWebAuthenticationPresentationContex
     willConnectTo session: UISceneSession,
     options connectionOptions: UIScene.ConnectionOptions
   ) {
+    NSLog("[startup-native] scene connection started")
     if let url = connectionOptions.urlContexts.first?.url {
       Self.initialLink = url.absoluteString
     } else if let url = connectionOptions.userActivities.first?.webpageURL {
@@ -20,8 +21,10 @@ class SceneDelegate: FlutterSceneDelegate, ASWebAuthenticationPresentationContex
     }
 
     super.scene(scene, willConnectTo: session, options: connectionOptions)
+    NSLog("[startup-native] Flutter scene connected")
     configureDeepLinkChannel()
     configureOAuthChannel()
+    NSLog("[startup-native] scene channels configured")
   }
 
   override func scene(
