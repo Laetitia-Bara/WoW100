@@ -4,6 +4,12 @@ Use this after installing a Release build on a real iPhone or iPad.
 
 ## Prepare The Mac
 
+Do not validate an iOS relaunch from the home-screen icon with the default
+`flutter run` command. That command installs a Debug build, which uses the
+Flutter debugging connection and can request Local Network access on first
+launch. A Debug build closing when launched independently from its icon is not
+representative of the App Store Release build.
+
 If Flutter reports that `iproxy` was built for the wrong architecture on an
 Apple Silicon Mac, install Rosetta once:
 
@@ -17,6 +23,10 @@ Then test a Release build, not the default Debug build:
 flutter devices
 flutter run --release -d <device-id>
 ```
+
+When the Release app is running, press `d` in the Flutter terminal to detach
+without terminating the app. Do not press `q`, which terminates it. Force-close
+the app on the device, then relaunch it from the icon.
 
 For a launch test that does not depend on the Flutter debug connection, also
 install the Release build and launch it from the app icon:
