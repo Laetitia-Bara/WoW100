@@ -152,6 +152,16 @@
       "excludedDefaultZoneIds": [],
       "capitalZoneIds": [],
       "note": "Les huit entrées affichées sont validées comme régions. Tol Barad et la Péninsule de Tol Barad restent deux régions sœurs."
+    },
+    {
+      "key": "pandaria-2026-06-20",
+      "continentKey": "pandaria",
+      "sourceEntryCount": 46,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [6142],
+      "capitalZoneIds": [],
+      "note": "Les 46 entrées affichées sont classées provisoirement comme régions, en attente de la revue manuelle. Le Sanctuaire des Sept-Étoiles, absent de la liste affichée, reste hors de ce lot."
     }
   ],
   "nameExclusionRules": [

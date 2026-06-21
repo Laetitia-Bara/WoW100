@@ -96,5 +96,14 @@
     "excludedEntries": 0,
     "reviewedEntries": 9,
     "pendingEntries": 0
+  },
+  "pandaria": {
+    "sourceEntries": 47,
+    "suppliedListEntries": 46,
+    "unlistedEntries": 1,
+    "retainedEntries": 46,
+    "excludedEntries": 0,
+    "reviewedEntries": 0,
+    "pendingEntries": 46
   }
 }

@@ -6,6 +6,7 @@ import 'package:wow100/core/services/battle_net_token_service.dart';
 import '../../../../core/ads/app_ads.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../../core/widgets/web_sponsor_panel.dart';
 import '../../../../data/models/expansion_progress.dart';
 import '../../../../data/models/tracking_category.dart';
 import '../../../../data/models/wow_character.dart';
@@ -322,82 +323,81 @@ class _DashboardPageState extends State<DashboardPage> {
       ),
       body: LayoutBuilder(
         builder: (context, constraints) {
-          final isWide = constraints.maxWidth >= 1000;
-          final contentWidth = isWide ? 1180.0 : double.infinity;
+          final availableContentWidth = constraints.maxWidth >= 1280
+              ? constraints.maxWidth - 300
+              : constraints.maxWidth;
+          final isWide = availableContentWidth >= 1000;
 
-          return Center(
-            child: ConstrainedBox(
-              constraints: BoxConstraints(maxWidth: contentWidth),
-              child: ListView(
-                padding: const EdgeInsets.all(16),
-                children: [
-                  _HeroCard(
-                    character: _mainCharacter,
-                    totalProgress: totalProgress,
-                    visibleCategories: _visibleCategories,
+          return WebSponsorPageBody(
+            content: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                _HeroCard(
+                  character: _mainCharacter,
+                  totalProgress: totalProgress,
+                  visibleCategories: _visibleCategories,
+                ),
+                const SizedBox(height: 12),
+                _RegionSearchButton(onTap: _openRegionSelector),
+                const SizedBox(height: 20),
+                _DashboardActionBar(
+                  newestFirst: _newestFirst,
+                  onAchievementsTap: () => _openPlanner(
+                    WowExpansion.allAchievements,
+                    category: TrackingCategory.achievements,
                   ),
-                  const SizedBox(height: 12),
-                  _RegionSearchButton(onTap: _openRegionSelector),
-                  const SizedBox(height: 20),
-                  _DashboardActionBar(
-                    newestFirst: _newestFirst,
-                    onAchievementsTap: () => _openPlanner(
-                      WowExpansion.allAchievements,
-                      category: TrackingCategory.achievements,
-                    ),
-                    onMountsTap: () => _openPlanner(WowExpansion.allMounts),
-                    onPetsTap: () => _openPlanner(
-                      WowExpansion.allPets,
-                      category: TrackingCategory.pets,
-                    ),
-                    onFilterTap: _openCategoryFilters,
-                    onSortTap: _toggleSortOrder,
+                  onMountsTap: () => _openPlanner(WowExpansion.allMounts),
+                  onPetsTap: () => _openPlanner(
+                    WowExpansion.allPets,
+                    category: TrackingCategory.pets,
                   ),
-                  const SizedBox(height: 20),
-                  if (isWide)
-                    GridView.builder(
-                      shrinkWrap: true,
-                      physics: const NeverScrollableScrollPhysics(),
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                            crossAxisSpacing: 14,
-                            mainAxisSpacing: 14,
-                            mainAxisExtent: 298,
-                          ),
-                      itemCount: extensionProgresses.length,
-                      itemBuilder: (context, index) {
-                        final progress = extensionProgresses[index];
-
-                        return _ExpansionCard(
-                          progress: progress,
-                          visibleCategories: _visibleCategories,
-                          isCollapsed: _collapsedExpansions.contains(
-                            progress.expansion,
-                          ),
-                          onToggleCollapse: () =>
-                              _toggleCollapse(progress.expansion),
-                          onOpenPlanner: () => _openPlanner(progress.expansion),
-                        );
-                      },
-                    )
-                  else
-                    for (final progress in extensionProgresses)
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 14),
-                        child: _ExpansionCard(
-                          progress: progress,
-                          visibleCategories: _visibleCategories,
-                          isCollapsed: _collapsedExpansions.contains(
-                            progress.expansion,
-                          ),
-                          onToggleCollapse: () =>
-                              _toggleCollapse(progress.expansion),
-                          onOpenPlanner: () => _openPlanner(progress.expansion),
+                  onFilterTap: _openCategoryFilters,
+                  onSortTap: _toggleSortOrder,
+                ),
+                const SizedBox(height: 20),
+                if (isWide)
+                  GridView.builder(
+                    shrinkWrap: true,
+                    physics: const NeverScrollableScrollPhysics(),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          crossAxisSpacing: 14,
+                          mainAxisSpacing: 14,
+                          mainAxisExtent: 298,
                         ),
+                    itemCount: extensionProgresses.length,
+                    itemBuilder: (context, index) {
+                      final progress = extensionProgresses[index];
+
+                      return _ExpansionCard(
+                        progress: progress,
+                        visibleCategories: _visibleCategories,
+                        isCollapsed: _collapsedExpansions.contains(
+                          progress.expansion,
+                        ),
+                        onToggleCollapse: () =>
+                            _toggleCollapse(progress.expansion),
+                        onOpenPlanner: () => _openPlanner(progress.expansion),
+                      );
+                    },
+                  )
+                else
+                  for (final progress in extensionProgresses)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 14),
+                      child: _ExpansionCard(
+                        progress: progress,
+                        visibleCategories: _visibleCategories,
+                        isCollapsed: _collapsedExpansions.contains(
+                          progress.expansion,
+                        ),
+                        onToggleCollapse: () =>
+                            _toggleCollapse(progress.expansion),
+                        onOpenPlanner: () => _openPlanner(progress.expansion),
                       ),
-                ],
-              ),
+                    ),
+              ],
             ),
           );
         },

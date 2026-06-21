@@ -10,6 +10,7 @@ import '../../../../core/services/local_check_service.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../../core/widgets/web_sponsor_panel.dart';
 import '../../../../data/models/tracking_item.dart';
 import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/models/wow_region_filter.dart';
@@ -482,133 +483,136 @@ class _PlannerPageState extends State<PlannerPage> {
       ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
-          : ListView(
-              padding: const EdgeInsets.all(16),
-              children: [
-                Text(
-                  widget.extension == WowExpansion.allMounts ||
-                          widget.extension == WowExpansion.allPets ||
-                          widget.extension == WowExpansion.allAchievements
-                      ? _allCollectionTitle
-                      : _plannerTitle,
-                  style: Theme.of(
-                    context,
-                  ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800),
-                ),
-                const SizedBox(height: 16),
-                if (_isExtensionPlanner || _selectedRegionFilter != null) ...[
-                  _RegionFilterField(
-                    selectedRegion: _selectedRegionFilter,
-                    onTap: _openRegionSelector,
+          : WebSponsorPageBody(
+              content: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(
+                    widget.extension == WowExpansion.allMounts ||
+                            widget.extension == WowExpansion.allPets ||
+                            widget.extension == WowExpansion.allAchievements
+                        ? _allCollectionTitle
+                        : _plannerTitle,
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  if (_isExtensionPlanner || _selectedRegionFilter != null) ...[
+                    _RegionFilterField(
+                      selectedRegion: _selectedRegionFilter,
+                      onTap: _openRegionSelector,
+                    ),
+                    const SizedBox(height: 12),
+                  ],
+                  TextField(
+                    decoration: const InputDecoration(
+                      labelText:
+                          'Rechercher (ex : extension, nom, réputation, etc ...)',
+                      prefixIcon: Icon(Icons.search),
+                      border: OutlineInputBorder(),
+                    ),
+                    onChanged: (value) {
+                      setState(() {
+                        _searchQuery = value;
+                      });
+                    },
                   ),
                   const SizedBox(height: 12),
-                ],
-                TextField(
-                  decoration: const InputDecoration(
-                    labelText:
-                        'Rechercher (ex : extension, nom, réputation, etc ...)',
-                    prefixIcon: Icon(Icons.search),
-                    border: OutlineInputBorder(),
-                  ),
-                  onChanged: (value) {
-                    setState(() {
-                      _searchQuery = value;
-                    });
-                  },
-                ),
-                const SizedBox(height: 12),
-                if (_isExtensionPlanner) ...[
-                  _CategoryFilterField(
-                    selectedCategories: _selectedCategories,
-                    onTap: () => _openCategorySelector(categoryOptions),
+                  if (_isExtensionPlanner) ...[
+                    _CategoryFilterField(
+                      selectedCategories: _selectedCategories,
+                      onTap: () => _openCategorySelector(categoryOptions),
+                    ),
+                    const SizedBox(height: 12),
+                  ],
+                  _GroupFilterField(
+                    selectedGroups: _selectedGroups,
+                    onTap: () => _openGroupSelector(groupOptions),
                   ),
                   const SizedBox(height: 12),
-                ],
-                _GroupFilterField(
-                  selectedGroups: _selectedGroups,
-                  onTap: () => _openGroupSelector(groupOptions),
-                ),
-                const SizedBox(height: 12),
-                Wrap(
-                  spacing: 24,
-                  runSpacing: 12,
-                  children: [
-                    _PlannerFilterSwitch(
-                      value: _missingOnly,
-                      title: 'Afficher uniquement les manquants',
-                      subtitle: 'Masquer les $_collectionName déjà obtenues',
-                      onChanged: (value) {
-                        setState(() {
-                          _missingOnly = value;
-                        });
-                      },
-                    ),
-                    _PlannerFilterSwitch(
-                      value: _hideUnavailable,
-                      title: 'Masquer les indisponibles',
-                      subtitle:
-                          'Retirer les sources qui ne sont plus obtenables',
-                      onChanged: (value) {
-                        setState(() {
-                          _hideUnavailable = value;
-                        });
-                      },
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 20),
-                Text(
-                  '$obtainedCount / $totalCount obtenus',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
-                ),
-                const SizedBox(height: 8),
-                Row(
-                  children: [
-                    Expanded(
-                      child: LinearProgressIndicator(
-                        value: progress,
-                        minHeight: 10,
-                        borderRadius: BorderRadius.circular(999),
+                  Wrap(
+                    spacing: 24,
+                    runSpacing: 12,
+                    children: [
+                      _PlannerFilterSwitch(
+                        value: _missingOnly,
+                        title: 'Afficher uniquement les manquants',
+                        subtitle: 'Masquer les $_collectionName déjà obtenues',
+                        onChanged: (value) {
+                          setState(() {
+                            _missingOnly = value;
+                          });
+                        },
                       ),
-                    ),
-                    const SizedBox(width: 12),
-                    Text(
-                      '$progressPercent %',
-                      style: const TextStyle(
-                        color: AppTheme.gold,
-                        fontSize: 12,
-                        fontWeight: FontWeight.w800,
+                      _PlannerFilterSwitch(
+                        value: _hideUnavailable,
+                        title: 'Masquer les indisponibles',
+                        subtitle:
+                            'Retirer les sources qui ne sont plus obtenables',
+                        onChanged: (value) {
+                          setState(() {
+                            _hideUnavailable = value;
+                          });
+                        },
                       ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 20),
-                const AppNativeAd(),
-                if (filteredItems.isEmpty)
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(18),
-                      child: Text(
-                        'Aucune $_collectionName ne correspond à cette recherche.',
-                        style: const TextStyle(color: AppTheme.mutedText),
-                      ),
-                    ),
+                    ],
                   ),
-                for (final entry in groupedItems.entries) ...[
-                  _PlannerGroupHeader(
-                    title: entry.key,
-                    count: entry.value.length,
-                    isCollapsed: _collapsedGroups.contains(entry.key),
-                    onToggle: () => _toggleGroup(entry.key),
+                  const SizedBox(height: 20),
+                  Text(
+                    '$obtainedCount / $totalCount obtenus',
+                    style: const TextStyle(fontWeight: FontWeight.w700),
                   ),
-                  if (!_collapsedGroups.contains(entry.key))
-                    for (final item in entry.value)
-                      _PlannerItemCard(
-                        item: item,
-                        onChanged: (value) => _setChecked(item, value ?? false),
+                  const SizedBox(height: 8),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: LinearProgressIndicator(
+                          value: progress,
+                          minHeight: 10,
+                          borderRadius: BorderRadius.circular(999),
+                        ),
                       ),
+                      const SizedBox(width: 12),
+                      Text(
+                        '$progressPercent %',
+                        style: const TextStyle(
+                          color: AppTheme.gold,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+                  const AppNativeAd(),
+                  if (filteredItems.isEmpty)
+                    Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(18),
+                        child: Text(
+                          'Aucune $_collectionName ne correspond à cette recherche.',
+                          style: const TextStyle(color: AppTheme.mutedText),
+                        ),
+                      ),
+                    ),
+                  for (final entry in groupedItems.entries) ...[
+                    _PlannerGroupHeader(
+                      title: entry.key,
+                      count: entry.value.length,
+                      isCollapsed: _collapsedGroups.contains(entry.key),
+                      onToggle: () => _toggleGroup(entry.key),
+                    ),
+                    if (!_collapsedGroups.contains(entry.key))
+                      for (final item in entry.value)
+                        _PlannerItemCard(
+                          item: item,
+                          onChanged: (value) =>
+                              _setChecked(item, value ?? false),
+                        ),
+                  ],
                 ],
-              ],
+              ),
             ),
     );
   }

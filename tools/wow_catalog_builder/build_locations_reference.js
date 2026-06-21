@@ -54,6 +54,14 @@ const paths = {
     generatedDir,
     "locations_maelstrom_review.csv",
   ),
+  pandariaReview: path.join(
+    generatedDir,
+    "locations_pandaria_review.json",
+  ),
+  pandariaReviewCsv: path.join(
+    generatedDir,
+    "locations_pandaria_review.csv",
+  ),
 };
 
 async function loadJson(filePath) {
@@ -931,6 +939,42 @@ async function main() {
     worldsByKey,
     continentsByKey,
   });
+  const pandariaUnlistedZoneIds = new Set([6142]);
+  const pandariaLocations = locations.filter(
+    (location) =>
+      location.continentKey === "pandaria" &&
+      !pandariaUnlistedZoneIds.has(location.wowheadZoneId),
+  );
+  const pandariaExclusions = exclusions.filter(
+    (exclusion) =>
+      exclusion.continentKey === "pandaria" &&
+      !pandariaUnlistedZoneIds.has(exclusion.wowheadZoneId),
+  );
+  const pandariaReview = {
+    sourceEntriesInWowheadCategory: (wowheadCatalog.zones ?? []).filter(
+      (zone) => zone.wowheadCategoryId === 12,
+    ).length,
+    suppliedListEntries: 46,
+    unlistedEntries: pandariaUnlistedZoneIds.size,
+    unlistedZoneIds: [...pandariaUnlistedZoneIds],
+    retainedEntries: pandariaLocations.length,
+    excludedEntries: pandariaExclusions.length,
+    reviewedEntries: pandariaLocations.filter(
+      (location) => location.reviewStatus === "reviewed",
+    ).length,
+    pendingEntries: pandariaLocations.filter(
+      (location) => location.reviewStatus !== "reviewed",
+    ).length,
+    byKind: countBy(pandariaLocations, (location) => location.kind),
+    locations: pandariaLocations,
+    exclusions: pandariaExclusions,
+  };
+  const pandariaReviewRows = buildReviewRows({
+    locations: pandariaLocations,
+    exclusions: pandariaExclusions,
+    worldsByKey,
+    continentsByKey,
+  });
 
   const audit = {
     sourceEntries: (wowheadCatalog.zones ?? []).length,
@@ -1024,6 +1068,15 @@ async function main() {
       reviewedEntries: maelstromReview.reviewedEntries,
       pendingEntries: maelstromReview.pendingEntries,
     },
+    pandaria: {
+      sourceEntries: pandariaReview.sourceEntriesInWowheadCategory,
+      suppliedListEntries: pandariaReview.suppliedListEntries,
+      unlistedEntries: pandariaReview.unlistedEntries,
+      retainedEntries: pandariaReview.retainedEntries,
+      excludedEntries: pandariaReview.excludedEntries,
+      reviewedEntries: pandariaReview.reviewedEntries,
+      pendingEntries: pandariaReview.pendingEntries,
+    },
   };
 
   const output = {
@@ -1093,6 +1146,16 @@ async function main() {
       `${toSemicolonCsv(maelstromReviewRows)}\n`,
       "utf8",
     ),
+    fs.writeFile(
+      paths.pandariaReview,
+      `${JSON.stringify(pandariaReview, null, 2)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.pandariaReviewCsv,
+      `${toSemicolonCsv(pandariaReviewRows)}\n`,
+      "utf8",
+    ),
   ]);
 
   console.log(
@@ -1106,6 +1169,7 @@ async function main() {
       `Outreterre: ${outlandReview.displayedRegions} régions et ${outlandReview.capitalRegions} capitale validées`,
       `Norfendre: ${northrendReview.retainedEntries} entrées retenues, ${northrendReview.subzones} sous-zone, ${northrendReview.excludedEntries} supprimées et ${northrendReview.pendingEntries} à revoir`,
       `Le Maelström: ${maelstromReview.retainedSourceRegions} régions, ${maelstromReview.importedSubzones} sous-zone importée et ${maelstromReview.pendingEntries} à revoir`,
+      `Pandarie: ${pandariaReview.retainedEntries} régions à revoir`,
     ].join(" | "),
   );
 }
