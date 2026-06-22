@@ -2,23 +2,23 @@
   "sourceEntries": 1254,
   "worlds": 4,
   "continents": 14,
-  "canonicalLocations": 356,
-  "sourceDerivedLocations": 348,
+  "canonicalLocations": 347,
+  "sourceDerivedLocations": 339,
   "syntheticLocations": 8,
-  "exclusions": 257,
+  "exclusions": 266,
   "unassignedSourceEntries": 649,
   "sourceEntriesReconciled": 1254,
-  "reviewedLocations": 271,
-  "pendingLocations": 85,
+  "reviewedLocations": 305,
+  "pendingLocations": 42,
   "byWorld": {
-    "azeroth": 305,
+    "azeroth": 303,
     "draenor": 14,
     "outland": 8,
-    "shadowlands": 29
+    "shadowlands": 22
   },
   "byContinent": {
     "broken-isles": 32,
-    "dragon-isles": 14,
+    "dragon-isles": 12,
     "eastern-kingdoms": 75,
     "kalimdor": 41,
     "khaz-algar": 24,
@@ -30,15 +30,15 @@
     "zandalar": 26,
     "draenor": 14,
     "outland": 8,
-    "shadowlands": 29
+    "shadowlands": 22
   },
   "byKind": {
-    "region": 243,
-    "subzone": 113
+    "region": 218,
+    "subzone": 129
   },
   "byReviewStatus": {
-    "reviewed": 271,
-    "pending": 85
+    "reviewed": 305,
+    "pending": 42
   },
   "hierarchyErrors": [],
   "kalimdor": {
@@ -159,6 +159,34 @@
     "capitalOutsideDisplayedList": 1,
     "excludedEntries": 7,
     "reviewedEntries": 24,
+    "pendingEntries": 0
+  },
+  "shadowlands": {
+    "sourceEntries": 29,
+    "suppliedListEntries": 28,
+    "retainedEntries": 22,
+    "canonicalLocationNodes": 22,
+    "syntheticRegions": 0,
+    "subzones": 13,
+    "displayedEntries": 21,
+    "capitalCandidates": 1,
+    "capitalOutsideDisplayedList": 1,
+    "excludedEntries": 7,
+    "reviewedEntries": 22,
+    "pendingEntries": 0
+  },
+  "dragonIsles": {
+    "sourceEntries": 14,
+    "suppliedListEntries": 13,
+    "retainedEntries": 12,
+    "canonicalLocationNodes": 12,
+    "syntheticRegions": 0,
+    "subzones": 3,
+    "displayedEntries": 11,
+    "capitalCandidates": 1,
+    "capitalOutsideDisplayedList": 1,
+    "excludedEntries": 2,
+    "reviewedEntries": 12,
     "pendingEntries": 0
   }
 }

@@ -38,6 +38,14 @@ const paths = {
     metadataDir,
     "location_kul_tiras_manual_review.json",
   ),
+  shadowlandsManualReview: path.join(
+    metadataDir,
+    "location_shadowlands_manual_review.json",
+  ),
+  dragonIslesManualReview: path.join(
+    metadataDir,
+    "location_dragon_isles_manual_review.json",
+  ),
   output: path.join(generatedDir, "locations_reference_catalog.json"),
   audit: path.join(generatedDir, "locations_reference_audit_report.json"),
   kalimdorReview: path.join(generatedDir, "locations_kalimdor_review.json"),
@@ -113,6 +121,22 @@ const paths = {
   kulTirasReviewCsv: path.join(
     generatedDir,
     "locations_kul_tiras_review.csv",
+  ),
+  shadowlandsReview: path.join(
+    generatedDir,
+    "locations_shadowlands_review.json",
+  ),
+  shadowlandsReviewCsv: path.join(
+    generatedDir,
+    "locations_shadowlands_review.csv",
+  ),
+  dragonIslesReview: path.join(
+    generatedDir,
+    "locations_dragon_isles_review.json",
+  ),
+  dragonIslesReviewCsv: path.join(
+    generatedDir,
+    "locations_dragon_isles_review.csv",
   ),
 };
 
@@ -641,6 +665,8 @@ async function main() {
     brokenIslesManualReview,
     zandalarManualReview,
     kulTirasManualReview,
+    shadowlandsManualReview,
+    dragonIslesManualReview,
   ] = await Promise.all([
       loadJson(paths.wowheadCatalog),
       loadJson(paths.overrides),
@@ -651,6 +677,8 @@ async function main() {
       loadJson(paths.brokenIslesManualReview),
       loadJson(paths.zandalarManualReview),
       loadJson(paths.kulTirasManualReview),
+      loadJson(paths.shadowlandsManualReview),
+      loadJson(paths.dragonIslesManualReview),
     ]);
   const worldsByKey = byKey(config.worlds, (world) => world.key);
   const continentsByKey = byKey(
@@ -730,6 +758,24 @@ async function main() {
     expansionLookup,
     capitalZoneIds: kulTirasBatch?.capitalZoneIds ?? [],
   });
+  const shadowlandsContinent = continentsByKey.get("shadowlands");
+  const shadowlandsBatch = batchesByContinent.get("shadowlands");
+  const shadowlandsManual = prepareManualReview({
+    manualReview: shadowlandsManualReview,
+    sourceZones: wowheadCatalog.zones ?? [],
+    continent: shadowlandsContinent,
+    expansionLookup,
+    capitalZoneIds: shadowlandsBatch?.capitalZoneIds ?? [],
+  });
+  const dragonIslesContinent = continentsByKey.get("dragon-isles");
+  const dragonIslesBatch = batchesByContinent.get("dragon-isles");
+  const dragonIslesManual = prepareManualReview({
+    manualReview: dragonIslesManualReview,
+    sourceZones: wowheadCatalog.zones ?? [],
+    continent: dragonIslesContinent,
+    expansionLookup,
+    capitalZoneIds: dragonIslesBatch?.capitalZoneIds ?? [],
+  });
   const manualReviewsByContinent = new Map([
     ["eastern-kingdoms", easternKingdomsManual],
     ["northrend", northrendManual],
@@ -738,6 +784,8 @@ async function main() {
     ["broken-isles", brokenIslesManual],
     ["zandalar", zandalarManual],
     ["kul-tiras", kulTirasManual],
+    ["shadowlands", shadowlandsManual],
+    ["dragon-isles", dragonIslesManual],
   ]);
 
   for (const continent of config.continents) {
@@ -834,6 +882,8 @@ async function main() {
   locations.push(...brokenIslesManual.syntheticLocations);
   locations.push(...zandalarManual.syntheticLocations);
   locations.push(...kulTirasManual.syntheticLocations);
+  locations.push(...shadowlandsManual.syntheticLocations);
+  locations.push(...dragonIslesManual.syntheticLocations);
 
   resolveHierarchy(locations, continentsByKey);
   const locationsByRef = byKey(locations, (location) => location.ref);
@@ -1311,6 +1361,106 @@ async function main() {
     worldsByKey,
     continentsByKey,
   });
+  const shadowlandsCapitalZoneIds = new Set([10565]);
+  const shadowlandsLocations = locations.filter(
+    (location) => location.continentKey === "shadowlands",
+  );
+  const shadowlandsSourceLocations = shadowlandsLocations.filter(
+    (location) => location.wowheadZoneId !== null,
+  );
+  const shadowlandsSyntheticLocations = shadowlandsLocations.filter(
+    (location) => location.wowheadZoneId === null,
+  );
+  const shadowlandsExclusions = exclusions.filter(
+    (exclusion) => exclusion.continentKey === "shadowlands",
+  );
+  const shadowlandsReview = {
+    sourceEntriesInWowheadCategory: (wowheadCatalog.zones ?? []).filter(
+      (zone) => zone.wowheadCategoryId === 17,
+    ).length,
+    suppliedListEntries: 28,
+    retainedEntries: shadowlandsSourceLocations.length,
+    canonicalLocationNodes: shadowlandsLocations.length,
+    syntheticRegions: shadowlandsSyntheticLocations.length,
+    subzones: shadowlandsSourceLocations.filter(
+      (location) => location.kind === "subzone",
+    ).length,
+    displayedEntries: shadowlandsSourceLocations.filter(
+      (location) => !shadowlandsCapitalZoneIds.has(location.wowheadZoneId),
+    ).length,
+    capitalCandidates: shadowlandsLocations.filter((location) =>
+      shadowlandsCapitalZoneIds.has(location.wowheadZoneId),
+    ).length,
+    capitalOutsideDisplayedList: shadowlandsLocations.filter(
+      (location) => location.wowheadZoneId === 10565,
+    ).length,
+    excludedEntries: shadowlandsExclusions.length,
+    reviewedEntries: shadowlandsLocations.filter(
+      (location) => location.reviewStatus === "reviewed",
+    ).length,
+    pendingEntries: shadowlandsLocations.filter(
+      (location) => location.reviewStatus !== "reviewed",
+    ).length,
+    byKind: countBy(shadowlandsLocations, (location) => location.kind),
+    locations: shadowlandsLocations,
+    exclusions: shadowlandsExclusions,
+  };
+  const shadowlandsReviewRows = buildReviewRows({
+    locations: shadowlandsSourceLocations,
+    exclusions: shadowlandsExclusions,
+    worldsByKey,
+    continentsByKey,
+  });
+  const dragonIslesCapitalZoneIds = new Set([13862]);
+  const dragonIslesLocations = locations.filter(
+    (location) => location.continentKey === "dragon-isles",
+  );
+  const dragonIslesSourceLocations = dragonIslesLocations.filter(
+    (location) => location.wowheadZoneId !== null,
+  );
+  const dragonIslesSyntheticLocations = dragonIslesLocations.filter(
+    (location) => location.wowheadZoneId === null,
+  );
+  const dragonIslesExclusions = exclusions.filter(
+    (exclusion) => exclusion.continentKey === "dragon-isles",
+  );
+  const dragonIslesReview = {
+    sourceEntriesInWowheadCategory: (wowheadCatalog.zones ?? []).filter(
+      (zone) => zone.wowheadCategoryId === 18,
+    ).length,
+    suppliedListEntries: 13,
+    retainedEntries: dragonIslesSourceLocations.length,
+    canonicalLocationNodes: dragonIslesLocations.length,
+    syntheticRegions: dragonIslesSyntheticLocations.length,
+    subzones: dragonIslesSourceLocations.filter(
+      (location) => location.kind === "subzone",
+    ).length,
+    displayedEntries: dragonIslesSourceLocations.filter(
+      (location) => !dragonIslesCapitalZoneIds.has(location.wowheadZoneId),
+    ).length,
+    capitalCandidates: dragonIslesLocations.filter((location) =>
+      dragonIslesCapitalZoneIds.has(location.wowheadZoneId),
+    ).length,
+    capitalOutsideDisplayedList: dragonIslesLocations.filter(
+      (location) => location.wowheadZoneId === 13862,
+    ).length,
+    excludedEntries: dragonIslesExclusions.length,
+    reviewedEntries: dragonIslesLocations.filter(
+      (location) => location.reviewStatus === "reviewed",
+    ).length,
+    pendingEntries: dragonIslesLocations.filter(
+      (location) => location.reviewStatus !== "reviewed",
+    ).length,
+    byKind: countBy(dragonIslesLocations, (location) => location.kind),
+    locations: dragonIslesLocations,
+    exclusions: dragonIslesExclusions,
+  };
+  const dragonIslesReviewRows = buildReviewRows({
+    locations: dragonIslesSourceLocations,
+    exclusions: dragonIslesExclusions,
+    worldsByKey,
+    continentsByKey,
+  });
 
   const audit = {
     sourceEntries: (wowheadCatalog.zones ?? []).length,
@@ -1470,6 +1620,36 @@ async function main() {
       reviewedEntries: kulTirasReview.reviewedEntries,
       pendingEntries: kulTirasReview.pendingEntries,
     },
+    shadowlands: {
+      sourceEntries: shadowlandsReview.sourceEntriesInWowheadCategory,
+      suppliedListEntries: shadowlandsReview.suppliedListEntries,
+      retainedEntries: shadowlandsReview.retainedEntries,
+      canonicalLocationNodes: shadowlandsReview.canonicalLocationNodes,
+      syntheticRegions: shadowlandsReview.syntheticRegions,
+      subzones: shadowlandsReview.subzones,
+      displayedEntries: shadowlandsReview.displayedEntries,
+      capitalCandidates: shadowlandsReview.capitalCandidates,
+      capitalOutsideDisplayedList:
+        shadowlandsReview.capitalOutsideDisplayedList,
+      excludedEntries: shadowlandsReview.excludedEntries,
+      reviewedEntries: shadowlandsReview.reviewedEntries,
+      pendingEntries: shadowlandsReview.pendingEntries,
+    },
+    dragonIsles: {
+      sourceEntries: dragonIslesReview.sourceEntriesInWowheadCategory,
+      suppliedListEntries: dragonIslesReview.suppliedListEntries,
+      retainedEntries: dragonIslesReview.retainedEntries,
+      canonicalLocationNodes: dragonIslesReview.canonicalLocationNodes,
+      syntheticRegions: dragonIslesReview.syntheticRegions,
+      subzones: dragonIslesReview.subzones,
+      displayedEntries: dragonIslesReview.displayedEntries,
+      capitalCandidates: dragonIslesReview.capitalCandidates,
+      capitalOutsideDisplayedList:
+        dragonIslesReview.capitalOutsideDisplayedList,
+      excludedEntries: dragonIslesReview.excludedEntries,
+      reviewedEntries: dragonIslesReview.reviewedEntries,
+      pendingEntries: dragonIslesReview.pendingEntries,
+    },
   };
 
   const output = {
@@ -1589,6 +1769,26 @@ async function main() {
       `${toSemicolonCsv(kulTirasReviewRows)}\n`,
       "utf8",
     ),
+    fs.writeFile(
+      paths.shadowlandsReview,
+      `${JSON.stringify(shadowlandsReview, null, 2)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.shadowlandsReviewCsv,
+      `${toSemicolonCsv(shadowlandsReviewRows)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.dragonIslesReview,
+      `${JSON.stringify(dragonIslesReview, null, 2)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.dragonIslesReviewCsv,
+      `${toSemicolonCsv(dragonIslesReviewRows)}\n`,
+      "utf8",
+    ),
   ]);
 
   console.log(
@@ -1607,6 +1807,8 @@ async function main() {
       `Îles Brisées: ${brokenIslesReview.retainedEntries} entrées conservées, ${brokenIslesReview.subzones} sous-zones, ${brokenIslesReview.syntheticRegions} régions créées, ${brokenIslesReview.excludedEntries} supprimées et ${brokenIslesReview.pendingEntries} à revoir`,
       `Zandalar: ${zandalarReview.retainedEntries} entrées conservées, ${zandalarReview.subzones} sous-zones, ${zandalarReview.capitalCandidates} capitale, ${zandalarReview.excludedEntries} supprimées et ${zandalarReview.pendingEntries} à revoir`,
       `Kul Tiras: ${kulTirasReview.retainedEntries} entrées conservées, ${kulTirasReview.subzones} sous-zones, ${kulTirasReview.capitalCandidates} capitale, ${kulTirasReview.excludedEntries} supprimées et ${kulTirasReview.pendingEntries} à revoir`,
+      `Ombreterre: ${shadowlandsReview.retainedEntries} entrées conservées, ${shadowlandsReview.subzones} sous-zones, ${shadowlandsReview.capitalCandidates} capitale, ${shadowlandsReview.excludedEntries} supprimées et ${shadowlandsReview.pendingEntries} à revoir`,
+      `Îles aux Dragons: ${dragonIslesReview.retainedEntries} entrées conservées, ${dragonIslesReview.subzones} sous-zones, ${dragonIslesReview.capitalCandidates} capitale, ${dragonIslesReview.excludedEntries} supprimées et ${dragonIslesReview.pendingEntries} à revoir`,
     ].join(" | "),
   );
 }

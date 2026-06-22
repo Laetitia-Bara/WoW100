@@ -1,0 +1,139 @@
+{
+    "schemaVersion":  1,
+    "continentKey":  "dragon-isles",
+    "reviewBatch":  "dragon-isles-manual-review",
+    "sourceFile":  "assets/generated/locations_dragon_isles_review.csv",
+    "importedAt":  "2026-06-22T19:17:51.1397389+02:00",
+    "suppliedListRows":  13,
+    "capitalZoneIds":  [
+                           13862
+                       ],
+    "rows":  [
+                 {
+                     "wowheadZoneId":  15105,
+                     "name":  "Amirdrassil",
+                     "regionName":  "Amirdrassil",
+                     "decision":  "Conservée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14620,
+                     "name":  "Choix de Dragon bleu",
+                     "regionName":  "Travée d’Azur",
+                     "decision":  "Conservée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14433,
+                     "name":  "Confins Interdits",
+                     "regionName":  "Confins Interdits",
+                     "decision":  "Conservée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13643,
+                     "name":  "Grande mer",
+                     "regionName":  "Grande mer",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14022,
+                     "name":  "Grotte de Zaralek",
+                     "regionName":  "Grotte de Zaralek",
+                     "decision":  "Conservée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13642,
+                     "name":  "Îles aux Dragons",
+                     "regionName":  "Îles aux Dragons",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13645,
+                     "name":  "Plaines d’Ohn’ahra",
+                     "regionName":  "Plaines d’Ohn’ahra",
+                     "decision":  "Conservée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13844,
+                     "name":  "Repos du Traître",
+                     "regionName":  "Travée d’Azur",
+                     "decision":  "Conservée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13802,
+                     "name":  "Réservoir du Bastion de Tyr",
+                     "regionName":  "Thaldraszus",
+                     "decision":  "Conservée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14529,
+                     "name":  "Rêve d’émeraude",
+                     "regionName":  "Rêve d’émeraude",
+                     "decision":  "Conservée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13644,
+                     "name":  "Rivages de l’Éveil",
+                     "regionName":  "Rivages de l’Éveil",
+                     "decision":  "Conservée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13862,
+                     "name":  "Valdrakken",
+                     "regionName":  "Thaldraszus, Valdrakken",
+                     "decision":  "Conservée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Valdrakken est une région-capitale autonome située géographiquement dans Thaldraszus."
+                 },
+                 {
+                     "wowheadZoneId":  13647,
+                     "name":  "Thaldraszus",
+                     "regionName":  "Thaldraszus",
+                     "decision":  "Conservée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13646,
+                     "name":  "Travée d’Azur",
+                     "regionName":  "Travée d’Azur",
+                     "decision":  "Conservée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 }
+             ]
+}

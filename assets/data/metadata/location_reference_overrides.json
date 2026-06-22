@@ -202,6 +202,26 @@
       "excludedDefaultZoneIds": [8568],
       "capitalZoneIds": [8568],
       "note": "Les 30 entrées affichées sont classées provisoirement comme régions. Boralus, absente de la liste affichée, est ajoutée comme capitale candidate rattachée géographiquement à la Rade de Tiragarde."
+    },
+    {
+      "key": "shadowlands-2026-06-22",
+      "continentKey": "shadowlands",
+      "sourceEntryCount": 28,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [10565],
+      "capitalZoneIds": [10565],
+      "note": "Les 28 entrées affichées sont classées provisoirement comme régions. Oribos, absente de la liste affichée, est ajoutée comme capitale candidate directement rattachée au continent Ombreterre."
+    },
+    {
+      "key": "dragon-isles-2026-06-22",
+      "continentKey": "dragon-isles",
+      "sourceEntryCount": 13,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [13862],
+      "capitalZoneIds": [13862],
+      "note": "Les 13 entrées affichées sont classées provisoirement comme régions. Valdrakken, absente de la liste affichée, est ajoutée comme capitale candidate rattachée géographiquement à Thaldraszus."
     }
   ],
   "nameExclusionRules": [
@@ -261,6 +281,24 @@
     }
   ],
   "rules": [
+    {
+      "wowheadZoneId": 13862,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:13647",
+      "reviewRegionName": "Thaldraszus",
+      "reviewStatus": "pending",
+      "note": "Valdrakken est une région-capitale autonome située géographiquement dans Thaldraszus."
+    },
+    {
+      "wowheadZoneId": 10565,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "continent:shadowlands",
+      "reviewRegionName": "Oribos",
+      "reviewStatus": "pending",
+      "note": "Oribos est une région-capitale autonome directement rattachée au continent Ombreterre."
+    },
     {
       "wowheadZoneId": 8568,
       "action": "override",
