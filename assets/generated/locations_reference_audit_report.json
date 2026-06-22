@@ -108,5 +108,14 @@
     "excludedEntries": 17,
     "reviewedEntries": 31,
     "pendingEntries": 0
+  },
+  "draenor": {
+    "sourceEntries": 15,
+    "suppliedListEntries": 13,
+    "unlistedEntries": 2,
+    "retainedEntries": 13,
+    "excludedEntries": 0,
+    "reviewedEntries": 0,
+    "pendingEntries": 13
   }
 }

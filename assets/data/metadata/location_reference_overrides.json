@@ -162,6 +162,16 @@
       "excludedDefaultZoneIds": [6142],
       "capitalZoneIds": [],
       "note": "Les 46 entrées affichées sont classées provisoirement comme régions, en attente de la revue manuelle. Le Sanctuaire des Sept-Étoiles, absent de la liste affichée, reste hors de ce lot."
+    },
+    {
+      "key": "draenor-2026-06-22",
+      "continentKey": "draenor",
+      "sourceEntryCount": 13,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [7332, 7333],
+      "capitalZoneIds": [],
+      "note": "Les 13 entrées affichées sont classées provisoirement comme régions, en attente de la revue manuelle. Bouclier-des-Tempêtes et Fer-de-Lance, absentes de la liste affichée, restent hors de ce lot."
     }
   ],
   "nameExclusionRules": [

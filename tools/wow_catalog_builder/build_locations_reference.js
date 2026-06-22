@@ -22,6 +22,10 @@ const paths = {
     metadataDir,
     "location_pandaria_manual_review.json",
   ),
+  draenorManualReview: path.join(
+    metadataDir,
+    "location_draenor_manual_review.json",
+  ),
   output: path.join(generatedDir, "locations_reference_catalog.json"),
   audit: path.join(generatedDir, "locations_reference_audit_report.json"),
   kalimdorReview: path.join(generatedDir, "locations_kalimdor_review.json"),
@@ -65,6 +69,14 @@ const paths = {
   pandariaReviewCsv: path.join(
     generatedDir,
     "locations_pandaria_review.csv",
+  ),
+  draenorReview: path.join(
+    generatedDir,
+    "locations_draenor_review.json",
+  ),
+  draenorReviewCsv: path.join(
+    generatedDir,
+    "locations_draenor_review.csv",
   ),
 };
 
@@ -579,12 +591,14 @@ async function main() {
     easternKingdomsManualReview,
     northrendManualReview,
     pandariaManualReview,
+    draenorManualReview,
   ] = await Promise.all([
       loadJson(paths.wowheadCatalog),
       loadJson(paths.overrides),
       loadJson(paths.easternKingdomsManualReview),
       loadJson(paths.northrendManualReview),
       loadJson(paths.pandariaManualReview),
+      loadJson(paths.draenorManualReview),
     ]);
   const worldsByKey = byKey(config.worlds, (world) => world.key);
   const continentsByKey = byKey(
@@ -628,10 +642,20 @@ async function main() {
     expansionLookup,
     capitalZoneIds: pandariaBatch?.capitalZoneIds ?? [],
   });
+  const draenorContinent = continentsByKey.get("draenor");
+  const draenorBatch = batchesByContinent.get("draenor");
+  const draenorManual = prepareManualReview({
+    manualReview: draenorManualReview,
+    sourceZones: wowheadCatalog.zones ?? [],
+    continent: draenorContinent,
+    expansionLookup,
+    capitalZoneIds: draenorBatch?.capitalZoneIds ?? [],
+  });
   const manualReviewsByContinent = new Map([
     ["eastern-kingdoms", easternKingdomsManual],
     ["northrend", northrendManual],
     ["pandaria", pandariaManual],
+    ["draenor", draenorManual],
   ]);
 
   for (const continent of config.continents) {
@@ -724,6 +748,7 @@ async function main() {
   locations.push(...easternKingdomsManual.syntheticLocations);
   locations.push(...northrendManual.syntheticLocations);
   locations.push(...pandariaManual.syntheticLocations);
+  locations.push(...draenorManual.syntheticLocations);
 
   resolveHierarchy(locations, continentsByKey);
   const locationsByRef = byKey(locations, (location) => location.ref);
@@ -1007,6 +1032,53 @@ async function main() {
     worldsByKey,
     continentsByKey,
   });
+  const draenorUnlistedZoneIds = new Set([7332, 7333]);
+  const draenorLocations = locations.filter(
+    (location) =>
+      location.continentKey === "draenor" &&
+      !draenorUnlistedZoneIds.has(location.wowheadZoneId),
+  );
+  const draenorSourceLocations = draenorLocations.filter(
+    (location) => location.wowheadZoneId !== null,
+  );
+  const draenorSyntheticLocations = draenorLocations.filter(
+    (location) => location.wowheadZoneId === null,
+  );
+  const draenorExclusions = exclusions.filter(
+    (exclusion) =>
+      exclusion.continentKey === "draenor" &&
+      !draenorUnlistedZoneIds.has(exclusion.wowheadZoneId),
+  );
+  const draenorReview = {
+    sourceEntriesInWowheadCategory: (wowheadCatalog.zones ?? []).filter(
+      (zone) => zone.wowheadCategoryId === 13,
+    ).length,
+    suppliedListEntries: 13,
+    unlistedEntries: draenorUnlistedZoneIds.size,
+    unlistedZoneIds: [...draenorUnlistedZoneIds],
+    retainedEntries: draenorSourceLocations.length,
+    canonicalLocationNodes: draenorLocations.length,
+    syntheticRegions: draenorSyntheticLocations.length,
+    subzones: draenorSourceLocations.filter(
+      (location) => location.kind === "subzone",
+    ).length,
+    excludedEntries: draenorExclusions.length,
+    reviewedEntries: draenorLocations.filter(
+      (location) => location.reviewStatus === "reviewed",
+    ).length,
+    pendingEntries: draenorLocations.filter(
+      (location) => location.reviewStatus !== "reviewed",
+    ).length,
+    byKind: countBy(draenorLocations, (location) => location.kind),
+    locations: draenorLocations,
+    exclusions: draenorExclusions,
+  };
+  const draenorReviewRows = buildReviewRows({
+    locations: draenorSourceLocations,
+    exclusions: draenorExclusions,
+    worldsByKey,
+    continentsByKey,
+  });
 
   const audit = {
     sourceEntries: (wowheadCatalog.zones ?? []).length,
@@ -1112,6 +1184,18 @@ async function main() {
       reviewedEntries: pandariaReview.reviewedEntries,
       pendingEntries: pandariaReview.pendingEntries,
     },
+    draenor: {
+      sourceEntries: draenorReview.sourceEntriesInWowheadCategory,
+      suppliedListEntries: draenorReview.suppliedListEntries,
+      unlistedEntries: draenorReview.unlistedEntries,
+      retainedEntries: draenorReview.retainedEntries,
+      canonicalLocationNodes: draenorReview.canonicalLocationNodes,
+      syntheticRegions: draenorReview.syntheticRegions,
+      subzones: draenorReview.subzones,
+      excludedEntries: draenorReview.excludedEntries,
+      reviewedEntries: draenorReview.reviewedEntries,
+      pendingEntries: draenorReview.pendingEntries,
+    },
   };
 
   const output = {
@@ -1191,6 +1275,16 @@ async function main() {
       `${toSemicolonCsv(pandariaReviewRows)}\n`,
       "utf8",
     ),
+    fs.writeFile(
+      paths.draenorReview,
+      `${JSON.stringify(draenorReview, null, 2)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.draenorReviewCsv,
+      `${toSemicolonCsv(draenorReviewRows)}\n`,
+      "utf8",
+    ),
   ]);
 
   console.log(
@@ -1205,6 +1299,7 @@ async function main() {
       `Norfendre: ${northrendReview.retainedEntries} entrées retenues, ${northrendReview.subzones} sous-zone, ${northrendReview.excludedEntries} supprimées et ${northrendReview.pendingEntries} à revoir`,
       `Le Maelström: ${maelstromReview.retainedSourceRegions} régions, ${maelstromReview.importedSubzones} sous-zone importée et ${maelstromReview.pendingEntries} à revoir`,
       `Pandarie: ${pandariaReview.retainedEntries} entrées conservées, ${pandariaReview.subzones} sous-zones, ${pandariaReview.syntheticRegions} régions créées, ${pandariaReview.excludedEntries} supprimées et ${pandariaReview.pendingEntries} à revoir`,
+      `Draenor: ${draenorReview.retainedEntries} entrées conservées, ${draenorReview.subzones} sous-zones, ${draenorReview.syntheticRegions} régions créées, ${draenorReview.excludedEntries} supprimées et ${draenorReview.pendingEntries} à revoir`,
     ].join(" | "),
   );
 }
