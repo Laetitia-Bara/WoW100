@@ -34,6 +34,10 @@ const paths = {
     metadataDir,
     "location_zandalar_manual_review.json",
   ),
+  kulTirasManualReview: path.join(
+    metadataDir,
+    "location_kul_tiras_manual_review.json",
+  ),
   output: path.join(generatedDir, "locations_reference_catalog.json"),
   audit: path.join(generatedDir, "locations_reference_audit_report.json"),
   kalimdorReview: path.join(generatedDir, "locations_kalimdor_review.json"),
@@ -101,6 +105,14 @@ const paths = {
   zandalarReviewCsv: path.join(
     generatedDir,
     "locations_zandalar_review.csv",
+  ),
+  kulTirasReview: path.join(
+    generatedDir,
+    "locations_kul_tiras_review.json",
+  ),
+  kulTirasReviewCsv: path.join(
+    generatedDir,
+    "locations_kul_tiras_review.csv",
   ),
 };
 
@@ -628,6 +640,7 @@ async function main() {
     draenorManualReview,
     brokenIslesManualReview,
     zandalarManualReview,
+    kulTirasManualReview,
   ] = await Promise.all([
       loadJson(paths.wowheadCatalog),
       loadJson(paths.overrides),
@@ -637,6 +650,7 @@ async function main() {
       loadJson(paths.draenorManualReview),
       loadJson(paths.brokenIslesManualReview),
       loadJson(paths.zandalarManualReview),
+      loadJson(paths.kulTirasManualReview),
     ]);
   const worldsByKey = byKey(config.worlds, (world) => world.key);
   const continentsByKey = byKey(
@@ -707,6 +721,15 @@ async function main() {
     expansionLookup,
     capitalZoneIds: zandalarBatch?.capitalZoneIds ?? [],
   });
+  const kulTirasContinent = continentsByKey.get("kul-tiras");
+  const kulTirasBatch = batchesByContinent.get("kul-tiras");
+  const kulTirasManual = prepareManualReview({
+    manualReview: kulTirasManualReview,
+    sourceZones: wowheadCatalog.zones ?? [],
+    continent: kulTirasContinent,
+    expansionLookup,
+    capitalZoneIds: kulTirasBatch?.capitalZoneIds ?? [],
+  });
   const manualReviewsByContinent = new Map([
     ["eastern-kingdoms", easternKingdomsManual],
     ["northrend", northrendManual],
@@ -714,6 +737,7 @@ async function main() {
     ["draenor", draenorManual],
     ["broken-isles", brokenIslesManual],
     ["zandalar", zandalarManual],
+    ["kul-tiras", kulTirasManual],
   ]);
 
   for (const continent of config.continents) {
@@ -809,6 +833,7 @@ async function main() {
   locations.push(...draenorManual.syntheticLocations);
   locations.push(...brokenIslesManual.syntheticLocations);
   locations.push(...zandalarManual.syntheticLocations);
+  locations.push(...kulTirasManual.syntheticLocations);
 
   resolveHierarchy(locations, continentsByKey);
   const locationsByRef = byKey(locations, (location) => location.ref);
@@ -1236,6 +1261,56 @@ async function main() {
     worldsByKey,
     continentsByKey,
   });
+  const kulTirasCapitalZoneIds = new Set([8568]);
+  const kulTirasLocations = locations.filter(
+    (location) => location.continentKey === "kul-tiras",
+  );
+  const kulTirasSourceLocations = kulTirasLocations.filter(
+    (location) => location.wowheadZoneId !== null,
+  );
+  const kulTirasSyntheticLocations = kulTirasLocations.filter(
+    (location) => location.wowheadZoneId === null,
+  );
+  const kulTirasExclusions = exclusions.filter(
+    (exclusion) => exclusion.continentKey === "kul-tiras",
+  );
+  const kulTirasReview = {
+    sourceEntriesInWowheadCategory: (wowheadCatalog.zones ?? []).filter(
+      (zone) => zone.wowheadCategoryId === 16,
+    ).length,
+    suppliedListEntries: 30,
+    retainedEntries: kulTirasSourceLocations.length,
+    canonicalLocationNodes: kulTirasLocations.length,
+    syntheticRegions: kulTirasSyntheticLocations.length,
+    subzones: kulTirasSourceLocations.filter(
+      (location) => location.kind === "subzone",
+    ).length,
+    displayedEntries: kulTirasSourceLocations.filter(
+      (location) => !kulTirasCapitalZoneIds.has(location.wowheadZoneId),
+    ).length,
+    capitalCandidates: kulTirasLocations.filter((location) =>
+      kulTirasCapitalZoneIds.has(location.wowheadZoneId),
+    ).length,
+    capitalOutsideDisplayedList: kulTirasLocations.filter(
+      (location) => location.wowheadZoneId === 8568,
+    ).length,
+    excludedEntries: kulTirasExclusions.length,
+    reviewedEntries: kulTirasLocations.filter(
+      (location) => location.reviewStatus === "reviewed",
+    ).length,
+    pendingEntries: kulTirasLocations.filter(
+      (location) => location.reviewStatus !== "reviewed",
+    ).length,
+    byKind: countBy(kulTirasLocations, (location) => location.kind),
+    locations: kulTirasLocations,
+    exclusions: kulTirasExclusions,
+  };
+  const kulTirasReviewRows = buildReviewRows({
+    locations: kulTirasSourceLocations,
+    exclusions: kulTirasExclusions,
+    worldsByKey,
+    continentsByKey,
+  });
 
   const audit = {
     sourceEntries: (wowheadCatalog.zones ?? []).length,
@@ -1380,6 +1455,21 @@ async function main() {
       reviewedEntries: zandalarReview.reviewedEntries,
       pendingEntries: zandalarReview.pendingEntries,
     },
+    kulTiras: {
+      sourceEntries: kulTirasReview.sourceEntriesInWowheadCategory,
+      suppliedListEntries: kulTirasReview.suppliedListEntries,
+      retainedEntries: kulTirasReview.retainedEntries,
+      canonicalLocationNodes: kulTirasReview.canonicalLocationNodes,
+      syntheticRegions: kulTirasReview.syntheticRegions,
+      subzones: kulTirasReview.subzones,
+      displayedEntries: kulTirasReview.displayedEntries,
+      capitalCandidates: kulTirasReview.capitalCandidates,
+      capitalOutsideDisplayedList:
+        kulTirasReview.capitalOutsideDisplayedList,
+      excludedEntries: kulTirasReview.excludedEntries,
+      reviewedEntries: kulTirasReview.reviewedEntries,
+      pendingEntries: kulTirasReview.pendingEntries,
+    },
   };
 
   const output = {
@@ -1489,6 +1579,16 @@ async function main() {
       `${toSemicolonCsv(zandalarReviewRows)}\n`,
       "utf8",
     ),
+    fs.writeFile(
+      paths.kulTirasReview,
+      `${JSON.stringify(kulTirasReview, null, 2)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.kulTirasReviewCsv,
+      `${toSemicolonCsv(kulTirasReviewRows)}\n`,
+      "utf8",
+    ),
   ]);
 
   console.log(
@@ -1506,6 +1606,7 @@ async function main() {
       `Draenor: ${draenorReview.retainedEntries} entrées conservées, ${draenorReview.subzones} sous-zones, ${draenorReview.syntheticRegions} régions créées, ${draenorReview.excludedEntries} supprimées et ${draenorReview.pendingEntries} à revoir`,
       `Îles Brisées: ${brokenIslesReview.retainedEntries} entrées conservées, ${brokenIslesReview.subzones} sous-zones, ${brokenIslesReview.syntheticRegions} régions créées, ${brokenIslesReview.excludedEntries} supprimées et ${brokenIslesReview.pendingEntries} à revoir`,
       `Zandalar: ${zandalarReview.retainedEntries} entrées conservées, ${zandalarReview.subzones} sous-zones, ${zandalarReview.capitalCandidates} capitale, ${zandalarReview.excludedEntries} supprimées et ${zandalarReview.pendingEntries} à revoir`,
+      `Kul Tiras: ${kulTirasReview.retainedEntries} entrées conservées, ${kulTirasReview.subzones} sous-zones, ${kulTirasReview.capitalCandidates} capitale, ${kulTirasReview.excludedEntries} supprimées et ${kulTirasReview.pendingEntries} à revoir`,
     ].join(" | "),
   );
 }

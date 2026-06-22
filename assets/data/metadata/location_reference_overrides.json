@@ -192,6 +192,16 @@
       "excludedDefaultZoneIds": [8670],
       "capitalZoneIds": [8670],
       "note": "Les 29 entrées affichées sont classées provisoirement comme régions. Dazar’alor, absente de la liste affichée, est ajoutée comme capitale candidate rattachée géographiquement à Zuldazar."
+    },
+    {
+      "key": "kul-tiras-2026-06-22",
+      "continentKey": "kul-tiras",
+      "sourceEntryCount": 30,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [8568],
+      "capitalZoneIds": [8568],
+      "note": "Les 30 entrées affichées sont classées provisoirement comme régions. Boralus, absente de la liste affichée, est ajoutée comme capitale candidate rattachée géographiquement à la Rade de Tiragarde."
     }
   ],
   "nameExclusionRules": [
@@ -251,6 +261,15 @@
     }
   ],
   "rules": [
+    {
+      "wowheadZoneId": 8568,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:8567",
+      "reviewRegionName": "Rade de Tiragarde",
+      "reviewStatus": "pending",
+      "note": "Boralus est une région-capitale autonome située géographiquement dans la Rade de Tiragarde."
+    },
     {
       "wowheadZoneId": 8670,
       "action": "override",
