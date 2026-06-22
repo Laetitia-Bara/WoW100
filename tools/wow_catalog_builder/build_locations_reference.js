@@ -30,6 +30,10 @@ const paths = {
     metadataDir,
     "location_broken_isles_manual_review.json",
   ),
+  zandalarManualReview: path.join(
+    metadataDir,
+    "location_zandalar_manual_review.json",
+  ),
   output: path.join(generatedDir, "locations_reference_catalog.json"),
   audit: path.join(generatedDir, "locations_reference_audit_report.json"),
   kalimdorReview: path.join(generatedDir, "locations_kalimdor_review.json"),
@@ -89,6 +93,14 @@ const paths = {
   brokenIslesReviewCsv: path.join(
     generatedDir,
     "locations_broken_isles_review.csv",
+  ),
+  zandalarReview: path.join(
+    generatedDir,
+    "locations_zandalar_review.json",
+  ),
+  zandalarReviewCsv: path.join(
+    generatedDir,
+    "locations_zandalar_review.csv",
   ),
 };
 
@@ -164,6 +176,7 @@ function applyRule(location, rule, continentsByKey) {
     "instanceTypeName",
     "regionRefOverride",
     "regionNameOverride",
+    "reviewRegionName",
     "reviewStatus",
     "note",
   ]) {
@@ -173,6 +186,8 @@ function applyRule(location, rule, continentsByKey) {
   location.parentRefs = [location.parentRef];
   if (rule.reviewStatus === "reviewed") {
     location.reviewMethod = "user_manual_rule";
+  } else if (rule.reviewStatus === "pending") {
+    location.reviewMethod = "awaiting_manual_review";
   }
 }
 
@@ -470,6 +485,7 @@ function prepareManualReview({
   for (const row of keptRows) {
     const sameRegion =
       normalizeLookupName(row.name) === normalizeLookupName(row.regionName);
+    const isCapital = capitalZoneIdSet.has(row.wowheadZoneId);
     if (sameRegion) {
       decisions.push({
         ...row,
@@ -490,6 +506,12 @@ function prepareManualReview({
         .filter(Boolean);
       if (splitNames.length > 1) parentNames = splitNames;
     }
+    if (isCapital) {
+      parentNames = parentNames.filter(
+        (parentName) =>
+          normalizeLookupName(parentName) !== normalizeLookupName(row.name),
+      );
+    }
 
     const parentRefs = parentNames.map((parentName) => {
       const candidates =
@@ -509,11 +531,11 @@ function prepareManualReview({
       ...row,
       reviewBatch,
       action: "keep",
-      kind: capitalZoneIdSet.has(row.wowheadZoneId)
-        ? "region"
-        : "subzone",
-      parentRef: parentRefs[0],
-      parentRefs,
+      kind: isCapital ? "region" : "subzone",
+      parentRef: parentRefs[0] ?? `continent:${continent.key}`,
+      parentRefs: parentRefs.length
+        ? parentRefs
+        : [`continent:${continent.key}`],
     });
   }
 
@@ -605,6 +627,7 @@ async function main() {
     pandariaManualReview,
     draenorManualReview,
     brokenIslesManualReview,
+    zandalarManualReview,
   ] = await Promise.all([
       loadJson(paths.wowheadCatalog),
       loadJson(paths.overrides),
@@ -613,6 +636,7 @@ async function main() {
       loadJson(paths.pandariaManualReview),
       loadJson(paths.draenorManualReview),
       loadJson(paths.brokenIslesManualReview),
+      loadJson(paths.zandalarManualReview),
     ]);
   const worldsByKey = byKey(config.worlds, (world) => world.key);
   const continentsByKey = byKey(
@@ -674,12 +698,22 @@ async function main() {
     expansionLookup,
     capitalZoneIds: brokenIslesBatch?.capitalZoneIds ?? [],
   });
+  const zandalarContinent = continentsByKey.get("zandalar");
+  const zandalarBatch = batchesByContinent.get("zandalar");
+  const zandalarManual = prepareManualReview({
+    manualReview: zandalarManualReview,
+    sourceZones: wowheadCatalog.zones ?? [],
+    continent: zandalarContinent,
+    expansionLookup,
+    capitalZoneIds: zandalarBatch?.capitalZoneIds ?? [],
+  });
   const manualReviewsByContinent = new Map([
     ["eastern-kingdoms", easternKingdomsManual],
     ["northrend", northrendManual],
     ["pandaria", pandariaManual],
     ["draenor", draenorManual],
     ["broken-isles", brokenIslesManual],
+    ["zandalar", zandalarManual],
   ]);
 
   for (const continent of config.continents) {
@@ -774,6 +808,7 @@ async function main() {
   locations.push(...pandariaManual.syntheticLocations);
   locations.push(...draenorManual.syntheticLocations);
   locations.push(...brokenIslesManual.syntheticLocations);
+  locations.push(...zandalarManual.syntheticLocations);
 
   resolveHierarchy(locations, continentsByKey);
   const locationsByRef = byKey(locations, (location) => location.ref);
@@ -1151,6 +1186,56 @@ async function main() {
     worldsByKey,
     continentsByKey,
   });
+  const zandalarCapitalZoneIds = new Set([8670]);
+  const zandalarLocations = locations.filter(
+    (location) => location.continentKey === "zandalar",
+  );
+  const zandalarSourceLocations = zandalarLocations.filter(
+    (location) => location.wowheadZoneId !== null,
+  );
+  const zandalarSyntheticLocations = zandalarLocations.filter(
+    (location) => location.wowheadZoneId === null,
+  );
+  const zandalarExclusions = exclusions.filter(
+    (exclusion) => exclusion.continentKey === "zandalar",
+  );
+  const zandalarReview = {
+    sourceEntriesInWowheadCategory: (wowheadCatalog.zones ?? []).filter(
+      (zone) => zone.wowheadCategoryId === 15,
+    ).length,
+    suppliedListEntries: 29,
+    retainedEntries: zandalarSourceLocations.length,
+    canonicalLocationNodes: zandalarLocations.length,
+    syntheticRegions: zandalarSyntheticLocations.length,
+    subzones: zandalarSourceLocations.filter(
+      (location) => location.kind === "subzone",
+    ).length,
+    displayedEntries: zandalarSourceLocations.filter(
+      (location) => !zandalarCapitalZoneIds.has(location.wowheadZoneId),
+    ).length,
+    capitalCandidates: zandalarLocations.filter((location) =>
+      zandalarCapitalZoneIds.has(location.wowheadZoneId),
+    ).length,
+    capitalOutsideDisplayedList: zandalarLocations.filter(
+      (location) => location.wowheadZoneId === 8670,
+    ).length,
+    excludedEntries: zandalarExclusions.length,
+    reviewedEntries: zandalarLocations.filter(
+      (location) => location.reviewStatus === "reviewed",
+    ).length,
+    pendingEntries: zandalarLocations.filter(
+      (location) => location.reviewStatus !== "reviewed",
+    ).length,
+    byKind: countBy(zandalarLocations, (location) => location.kind),
+    locations: zandalarLocations,
+    exclusions: zandalarExclusions,
+  };
+  const zandalarReviewRows = buildReviewRows({
+    locations: zandalarSourceLocations,
+    exclusions: zandalarExclusions,
+    worldsByKey,
+    continentsByKey,
+  });
 
   const audit = {
     sourceEntries: (wowheadCatalog.zones ?? []).length,
@@ -1280,6 +1365,21 @@ async function main() {
       reviewedEntries: brokenIslesReview.reviewedEntries,
       pendingEntries: brokenIslesReview.pendingEntries,
     },
+    zandalar: {
+      sourceEntries: zandalarReview.sourceEntriesInWowheadCategory,
+      suppliedListEntries: zandalarReview.suppliedListEntries,
+      retainedEntries: zandalarReview.retainedEntries,
+      canonicalLocationNodes: zandalarReview.canonicalLocationNodes,
+      syntheticRegions: zandalarReview.syntheticRegions,
+      subzones: zandalarReview.subzones,
+      displayedEntries: zandalarReview.displayedEntries,
+      capitalCandidates: zandalarReview.capitalCandidates,
+      capitalOutsideDisplayedList:
+        zandalarReview.capitalOutsideDisplayedList,
+      excludedEntries: zandalarReview.excludedEntries,
+      reviewedEntries: zandalarReview.reviewedEntries,
+      pendingEntries: zandalarReview.pendingEntries,
+    },
   };
 
   const output = {
@@ -1379,6 +1479,16 @@ async function main() {
       `${toSemicolonCsv(brokenIslesReviewRows)}\n`,
       "utf8",
     ),
+    fs.writeFile(
+      paths.zandalarReview,
+      `${JSON.stringify(zandalarReview, null, 2)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.zandalarReviewCsv,
+      `${toSemicolonCsv(zandalarReviewRows)}\n`,
+      "utf8",
+    ),
   ]);
 
   console.log(
@@ -1395,6 +1505,7 @@ async function main() {
       `Pandarie: ${pandariaReview.retainedEntries} entrées conservées, ${pandariaReview.subzones} sous-zones, ${pandariaReview.syntheticRegions} régions créées, ${pandariaReview.excludedEntries} supprimées et ${pandariaReview.pendingEntries} à revoir`,
       `Draenor: ${draenorReview.retainedEntries} entrées conservées, ${draenorReview.subzones} sous-zones, ${draenorReview.syntheticRegions} régions créées, ${draenorReview.excludedEntries} supprimées et ${draenorReview.pendingEntries} à revoir`,
       `Îles Brisées: ${brokenIslesReview.retainedEntries} entrées conservées, ${brokenIslesReview.subzones} sous-zones, ${brokenIslesReview.syntheticRegions} régions créées, ${brokenIslesReview.excludedEntries} supprimées et ${brokenIslesReview.pendingEntries} à revoir`,
+      `Zandalar: ${zandalarReview.retainedEntries} entrées conservées, ${zandalarReview.subzones} sous-zones, ${zandalarReview.capitalCandidates} capitale, ${zandalarReview.excludedEntries} supprimées et ${zandalarReview.pendingEntries} à revoir`,
     ].join(" | "),
   );
 }

@@ -182,6 +182,16 @@
       "excludedDefaultZoneIds": [7502],
       "capitalZoneIds": [],
       "note": "Les 54 entrées affichées sont classées provisoirement comme régions, en attente de la revue manuelle. Dalaran (ID 7502), absent de la liste affichée, reste hors de ce lot."
+    },
+    {
+      "key": "zandalar-2026-06-22",
+      "continentKey": "zandalar",
+      "sourceEntryCount": 29,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [8670],
+      "capitalZoneIds": [8670],
+      "note": "Les 29 entrées affichées sont classées provisoirement comme régions. Dazar’alor, absente de la liste affichée, est ajoutée comme capitale candidate rattachée géographiquement à Zuldazar."
     }
   ],
   "nameExclusionRules": [
@@ -241,6 +251,15 @@
     }
   ],
   "rules": [
+    {
+      "wowheadZoneId": 8670,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:8499",
+      "reviewRegionName": "Zuldazar",
+      "reviewStatus": "pending",
+      "note": "Dazar’alor est une région-capitale autonome située géographiquement dans Zuldazar."
+    },
     {
       "wowheadZoneId": 5095,
       "action": "override",
