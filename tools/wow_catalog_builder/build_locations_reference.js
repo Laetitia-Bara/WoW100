@@ -26,6 +26,10 @@ const paths = {
     metadataDir,
     "location_draenor_manual_review.json",
   ),
+  brokenIslesManualReview: path.join(
+    metadataDir,
+    "location_broken_isles_manual_review.json",
+  ),
   output: path.join(generatedDir, "locations_reference_catalog.json"),
   audit: path.join(generatedDir, "locations_reference_audit_report.json"),
   kalimdorReview: path.join(generatedDir, "locations_kalimdor_review.json"),
@@ -77,6 +81,14 @@ const paths = {
   draenorReviewCsv: path.join(
     generatedDir,
     "locations_draenor_review.csv",
+  ),
+  brokenIslesReview: path.join(
+    generatedDir,
+    "locations_broken_isles_review.json",
+  ),
+  brokenIslesReviewCsv: path.join(
+    generatedDir,
+    "locations_broken_isles_review.csv",
   ),
 };
 
@@ -592,6 +604,7 @@ async function main() {
     northrendManualReview,
     pandariaManualReview,
     draenorManualReview,
+    brokenIslesManualReview,
   ] = await Promise.all([
       loadJson(paths.wowheadCatalog),
       loadJson(paths.overrides),
@@ -599,6 +612,7 @@ async function main() {
       loadJson(paths.northrendManualReview),
       loadJson(paths.pandariaManualReview),
       loadJson(paths.draenorManualReview),
+      loadJson(paths.brokenIslesManualReview),
     ]);
   const worldsByKey = byKey(config.worlds, (world) => world.key);
   const continentsByKey = byKey(
@@ -651,11 +665,21 @@ async function main() {
     expansionLookup,
     capitalZoneIds: draenorBatch?.capitalZoneIds ?? [],
   });
+  const brokenIslesContinent = continentsByKey.get("broken-isles");
+  const brokenIslesBatch = batchesByContinent.get("broken-isles");
+  const brokenIslesManual = prepareManualReview({
+    manualReview: brokenIslesManualReview,
+    sourceZones: wowheadCatalog.zones ?? [],
+    continent: brokenIslesContinent,
+    expansionLookup,
+    capitalZoneIds: brokenIslesBatch?.capitalZoneIds ?? [],
+  });
   const manualReviewsByContinent = new Map([
     ["eastern-kingdoms", easternKingdomsManual],
     ["northrend", northrendManual],
     ["pandaria", pandariaManual],
     ["draenor", draenorManual],
+    ["broken-isles", brokenIslesManual],
   ]);
 
   for (const continent of config.continents) {
@@ -749,6 +773,7 @@ async function main() {
   locations.push(...northrendManual.syntheticLocations);
   locations.push(...pandariaManual.syntheticLocations);
   locations.push(...draenorManual.syntheticLocations);
+  locations.push(...brokenIslesManual.syntheticLocations);
 
   resolveHierarchy(locations, continentsByKey);
   const locationsByRef = byKey(locations, (location) => location.ref);
@@ -1079,6 +1104,53 @@ async function main() {
     worldsByKey,
     continentsByKey,
   });
+  const brokenIslesUnlistedZoneIds = new Set([7502]);
+  const brokenIslesLocations = locations.filter(
+    (location) =>
+      location.continentKey === "broken-isles" &&
+      !brokenIslesUnlistedZoneIds.has(location.wowheadZoneId),
+  );
+  const brokenIslesSourceLocations = brokenIslesLocations.filter(
+    (location) => location.wowheadZoneId !== null,
+  );
+  const brokenIslesSyntheticLocations = brokenIslesLocations.filter(
+    (location) => location.wowheadZoneId === null,
+  );
+  const brokenIslesExclusions = exclusions.filter(
+    (exclusion) =>
+      exclusion.continentKey === "broken-isles" &&
+      !brokenIslesUnlistedZoneIds.has(exclusion.wowheadZoneId),
+  );
+  const brokenIslesReview = {
+    sourceEntriesInWowheadCategory: (wowheadCatalog.zones ?? []).filter(
+      (zone) => zone.wowheadCategoryId === 14,
+    ).length,
+    suppliedListEntries: 54,
+    unlistedEntries: brokenIslesUnlistedZoneIds.size,
+    unlistedZoneIds: [...brokenIslesUnlistedZoneIds],
+    retainedEntries: brokenIslesSourceLocations.length,
+    canonicalLocationNodes: brokenIslesLocations.length,
+    syntheticRegions: brokenIslesSyntheticLocations.length,
+    subzones: brokenIslesSourceLocations.filter(
+      (location) => location.kind === "subzone",
+    ).length,
+    excludedEntries: brokenIslesExclusions.length,
+    reviewedEntries: brokenIslesLocations.filter(
+      (location) => location.reviewStatus === "reviewed",
+    ).length,
+    pendingEntries: brokenIslesLocations.filter(
+      (location) => location.reviewStatus !== "reviewed",
+    ).length,
+    byKind: countBy(brokenIslesLocations, (location) => location.kind),
+    locations: brokenIslesLocations,
+    exclusions: brokenIslesExclusions,
+  };
+  const brokenIslesReviewRows = buildReviewRows({
+    locations: brokenIslesSourceLocations,
+    exclusions: brokenIslesExclusions,
+    worldsByKey,
+    continentsByKey,
+  });
 
   const audit = {
     sourceEntries: (wowheadCatalog.zones ?? []).length,
@@ -1196,6 +1268,18 @@ async function main() {
       reviewedEntries: draenorReview.reviewedEntries,
       pendingEntries: draenorReview.pendingEntries,
     },
+    brokenIsles: {
+      sourceEntries: brokenIslesReview.sourceEntriesInWowheadCategory,
+      suppliedListEntries: brokenIslesReview.suppliedListEntries,
+      unlistedEntries: brokenIslesReview.unlistedEntries,
+      retainedEntries: brokenIslesReview.retainedEntries,
+      canonicalLocationNodes: brokenIslesReview.canonicalLocationNodes,
+      syntheticRegions: brokenIslesReview.syntheticRegions,
+      subzones: brokenIslesReview.subzones,
+      excludedEntries: brokenIslesReview.excludedEntries,
+      reviewedEntries: brokenIslesReview.reviewedEntries,
+      pendingEntries: brokenIslesReview.pendingEntries,
+    },
   };
 
   const output = {
@@ -1285,6 +1369,16 @@ async function main() {
       `${toSemicolonCsv(draenorReviewRows)}\n`,
       "utf8",
     ),
+    fs.writeFile(
+      paths.brokenIslesReview,
+      `${JSON.stringify(brokenIslesReview, null, 2)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.brokenIslesReviewCsv,
+      `${toSemicolonCsv(brokenIslesReviewRows)}\n`,
+      "utf8",
+    ),
   ]);
 
   console.log(
@@ -1300,6 +1394,7 @@ async function main() {
       `Le Maelström: ${maelstromReview.retainedSourceRegions} régions, ${maelstromReview.importedSubzones} sous-zone importée et ${maelstromReview.pendingEntries} à revoir`,
       `Pandarie: ${pandariaReview.retainedEntries} entrées conservées, ${pandariaReview.subzones} sous-zones, ${pandariaReview.syntheticRegions} régions créées, ${pandariaReview.excludedEntries} supprimées et ${pandariaReview.pendingEntries} à revoir`,
       `Draenor: ${draenorReview.retainedEntries} entrées conservées, ${draenorReview.subzones} sous-zones, ${draenorReview.syntheticRegions} régions créées, ${draenorReview.excludedEntries} supprimées et ${draenorReview.pendingEntries} à revoir`,
+      `Îles Brisées: ${brokenIslesReview.retainedEntries} entrées conservées, ${brokenIslesReview.subzones} sous-zones, ${brokenIslesReview.syntheticRegions} régions créées, ${brokenIslesReview.excludedEntries} supprimées et ${brokenIslesReview.pendingEntries} à revoir`,
     ].join(" | "),
   );
 }

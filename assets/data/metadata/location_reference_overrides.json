@@ -172,6 +172,16 @@
       "excludedDefaultZoneIds": [7332, 7333],
       "capitalZoneIds": [],
       "note": "Les 13 entrées affichées sont classées provisoirement comme régions, en attente de la revue manuelle. Bouclier-des-Tempêtes et Fer-de-Lance, absentes de la liste affichée, restent hors de ce lot."
+    },
+    {
+      "key": "broken-isles-2026-06-22",
+      "continentKey": "broken-isles",
+      "sourceEntryCount": 54,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [7502],
+      "capitalZoneIds": [],
+      "note": "Les 54 entrées affichées sont classées provisoirement comme régions, en attente de la revue manuelle. Dalaran (ID 7502), absent de la liste affichée, reste hors de ce lot."
     }
   ],
   "nameExclusionRules": [
