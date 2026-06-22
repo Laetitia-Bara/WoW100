@@ -1,0 +1,145 @@
+{
+    "schemaVersion":  1,
+    "continentKey":  "quel-thalas",
+    "reviewBatch":  "quel-thalas-manual-review",
+    "sourceFile":  "assets/generated/locations_quel_thalas_review.csv",
+    "importedAt":  "2026-06-22T19:52:13.3817367+02:00",
+    "suppliedListRows":  15,
+    "rows":  [
+                 {
+                     "wowheadZoneId":  15968,
+                     "name":  "Bois des Chants éternels",
+                     "regionName":  "Bois des Chants éternels",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15959,
+                     "name":  "Colline Meurtrière",
+                     "regionName":  "Tempête du Vide",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15355,
+                     "name":  "Harandar",
+                     "regionName":  "Harandar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16182,
+                     "name":  "Île de Quel’Danas",
+                     "regionName":  "Île de Quel’Danas",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16215,
+                     "name":  "Île de Quel’Danas",
+                     "regionName":  "Île de Quel’Danas",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15921,
+                     "name":  "La Tanière",
+                     "regionName":  "Harandar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15958,
+                     "name":  "Perchoir des Maîtres",
+                     "regionName":  "Tempête du Vide",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16211,
+                     "name":  "Place Parhélion",
+                     "regionName":  "Île de Quel’Danas",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15954,
+                     "name":  "Point-nexus Xenas",
+                     "regionName":  "Tempête du Vide",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15469,
+                     "name":  "Région des devs – Harandar",
+                     "regionName":  "Région des devs – Harandar",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16534,
+                     "name":  "Repaire de Prédaxas",
+                     "regionName":  "Tempête du Vide",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15458,
+                     "name":  "Tempête du Vide",
+                     "regionName":  "Tempête du Vide",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16648,
+                     "name":  "Tempête du Vide",
+                     "regionName":  "Tempête du Vide",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16581,
+                     "name":  "Terrier du Vide de l’Abondance",
+                     "regionName":  "Tempête du Vide",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15947,
+                     "name":  "Zul’Aman",
+                     "regionName":  "Zul’Aman",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 }
+             ]
+}

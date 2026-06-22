@@ -46,6 +46,14 @@ const paths = {
     metadataDir,
     "location_dragon_isles_manual_review.json",
   ),
+  khazAlgarManualReview: path.join(
+    metadataDir,
+    "location_khaz_algar_manual_review.json",
+  ),
+  quelThalasManualReview: path.join(
+    metadataDir,
+    "location_quel_thalas_manual_review.json",
+  ),
   output: path.join(generatedDir, "locations_reference_catalog.json"),
   audit: path.join(generatedDir, "locations_reference_audit_report.json"),
   kalimdorReview: path.join(generatedDir, "locations_kalimdor_review.json"),
@@ -137,6 +145,22 @@ const paths = {
   dragonIslesReviewCsv: path.join(
     generatedDir,
     "locations_dragon_isles_review.csv",
+  ),
+  khazAlgarReview: path.join(
+    generatedDir,
+    "locations_khaz_algar_review.json",
+  ),
+  khazAlgarReviewCsv: path.join(
+    generatedDir,
+    "locations_khaz_algar_review.csv",
+  ),
+  quelThalasReview: path.join(
+    generatedDir,
+    "locations_quel_thalas_review.json",
+  ),
+  quelThalasReviewCsv: path.join(
+    generatedDir,
+    "locations_quel_thalas_review.csv",
   ),
 };
 
@@ -300,9 +324,31 @@ function resolveHierarchy(locations, continentsByKey) {
   }
 }
 
+function buildContinentPath(continent, continentsByKey) {
+  const names = [];
+  const visited = new Set();
+  let cursor = continent;
+  while (cursor) {
+    if (visited.has(cursor.key)) {
+      throw new Error(`Cycle de continents détecté: ${cursor.key}`);
+    }
+    visited.add(cursor.key);
+    names.unshift(cursor.name);
+    if (!cursor.parentContinentKey) break;
+    cursor = continentsByKey.get(cursor.parentContinentKey);
+    if (!cursor) {
+      throw new Error(
+        `Continent parent introuvable: ${continent.parentContinentKey}`,
+      );
+    }
+  }
+  return names;
+}
+
 function buildPath(location, locationsByRef, worldsByKey, continentsByKey) {
   const world = worldsByKey.get(location.worldKey);
   const continent = continentsByKey.get(location.continentKey);
+  const continentNames = buildContinentPath(continent, continentsByKey);
   const locationNames = [];
   let cursor = location;
 
@@ -312,7 +358,7 @@ function buildPath(location, locationsByRef, worldsByKey, continentsByKey) {
     cursor = locationsByRef.get(cursor.parentRef);
   }
 
-  return [world?.name, continent?.name, ...locationNames].filter(Boolean);
+  return [world?.name, ...continentNames, ...locationNames].filter(Boolean);
 }
 
 function csvCell(value) {
@@ -667,6 +713,8 @@ async function main() {
     kulTirasManualReview,
     shadowlandsManualReview,
     dragonIslesManualReview,
+    khazAlgarManualReview,
+    quelThalasManualReview,
   ] = await Promise.all([
       loadJson(paths.wowheadCatalog),
       loadJson(paths.overrides),
@@ -679,6 +727,8 @@ async function main() {
       loadJson(paths.kulTirasManualReview),
       loadJson(paths.shadowlandsManualReview),
       loadJson(paths.dragonIslesManualReview),
+      loadJson(paths.khazAlgarManualReview),
+      loadJson(paths.quelThalasManualReview),
     ]);
   const worldsByKey = byKey(config.worlds, (world) => world.key);
   const continentsByKey = byKey(
@@ -776,6 +826,24 @@ async function main() {
     expansionLookup,
     capitalZoneIds: dragonIslesBatch?.capitalZoneIds ?? [],
   });
+  const khazAlgarContinent = continentsByKey.get("khaz-algar");
+  const khazAlgarBatch = batchesByContinent.get("khaz-algar");
+  const khazAlgarManual = prepareManualReview({
+    manualReview: khazAlgarManualReview,
+    sourceZones: wowheadCatalog.zones ?? [],
+    continent: khazAlgarContinent,
+    expansionLookup,
+    capitalZoneIds: khazAlgarBatch?.capitalZoneIds ?? [],
+  });
+  const quelThalasContinent = continentsByKey.get("quel-thalas");
+  const quelThalasBatch = batchesByContinent.get("quel-thalas");
+  const quelThalasManual = prepareManualReview({
+    manualReview: quelThalasManualReview,
+    sourceZones: wowheadCatalog.zones ?? [],
+    continent: quelThalasContinent,
+    expansionLookup,
+    capitalZoneIds: quelThalasBatch?.capitalZoneIds ?? [],
+  });
   const manualReviewsByContinent = new Map([
     ["eastern-kingdoms", easternKingdomsManual],
     ["northrend", northrendManual],
@@ -786,6 +854,8 @@ async function main() {
     ["kul-tiras", kulTirasManual],
     ["shadowlands", shadowlandsManual],
     ["dragon-isles", dragonIslesManual],
+    ["khaz-algar", khazAlgarManual],
+    ["quel-thalas", quelThalasManual],
   ]);
 
   for (const continent of config.continents) {
@@ -793,6 +863,22 @@ async function main() {
       throw new Error(
         `Monde ${continent.worldKey} introuvable pour ${continent.key}`,
       );
+    }
+    if (continent.parentContinentKey) {
+      const parentContinent = continentsByKey.get(
+        continent.parentContinentKey,
+      );
+      if (!parentContinent) {
+        throw new Error(
+          `Continent parent ${continent.parentContinentKey} introuvable pour ${continent.key}`,
+        );
+      }
+      if (parentContinent.worldKey !== continent.worldKey) {
+        throw new Error(
+          `Les continents ${continent.key} et ${parentContinent.key} ne partagent pas le même monde`,
+        );
+      }
+      buildContinentPath(continent, continentsByKey);
     }
   }
 
@@ -884,6 +970,8 @@ async function main() {
   locations.push(...kulTirasManual.syntheticLocations);
   locations.push(...shadowlandsManual.syntheticLocations);
   locations.push(...dragonIslesManual.syntheticLocations);
+  locations.push(...khazAlgarManual.syntheticLocations);
+  locations.push(...quelThalasManual.syntheticLocations);
 
   resolveHierarchy(locations, continentsByKey);
   const locationsByRef = byKey(locations, (location) => location.ref);
@@ -1461,6 +1549,97 @@ async function main() {
     worldsByKey,
     continentsByKey,
   });
+  const khazAlgarCapitalZoneIds = new Set([14771]);
+  const khazAlgarLocations = locations.filter(
+    (location) => location.continentKey === "khaz-algar",
+  );
+  const khazAlgarSourceLocations = khazAlgarLocations.filter(
+    (location) => location.wowheadZoneId !== null,
+  );
+  const khazAlgarSyntheticLocations = khazAlgarLocations.filter(
+    (location) => location.wowheadZoneId === null,
+  );
+  const khazAlgarExclusions = exclusions.filter(
+    (exclusion) => exclusion.continentKey === "khaz-algar",
+  );
+  const khazAlgarReview = {
+    sourceEntriesInWowheadCategory: (wowheadCatalog.zones ?? []).filter(
+      (zone) => zone.wowheadCategoryId === 19,
+    ).length,
+    suppliedListEntries: 23,
+    retainedEntries: khazAlgarSourceLocations.length,
+    canonicalLocationNodes: khazAlgarLocations.length,
+    syntheticRegions: khazAlgarSyntheticLocations.length,
+    subzones: khazAlgarSourceLocations.filter(
+      (location) => location.kind === "subzone",
+    ).length,
+    displayedEntries: khazAlgarSourceLocations.filter(
+      (location) => !khazAlgarCapitalZoneIds.has(location.wowheadZoneId),
+    ).length,
+    capitalCandidates: khazAlgarLocations.filter((location) =>
+      khazAlgarCapitalZoneIds.has(location.wowheadZoneId),
+    ).length,
+    capitalOutsideDisplayedList: khazAlgarLocations.filter(
+      (location) => location.wowheadZoneId === 14771,
+    ).length,
+    excludedEntries: khazAlgarExclusions.length,
+    reviewedEntries: khazAlgarLocations.filter(
+      (location) => location.reviewStatus === "reviewed",
+    ).length,
+    pendingEntries: khazAlgarLocations.filter(
+      (location) => location.reviewStatus !== "reviewed",
+    ).length,
+    byKind: countBy(khazAlgarLocations, (location) => location.kind),
+    locations: khazAlgarLocations,
+    exclusions: khazAlgarExclusions,
+  };
+  const khazAlgarReviewRows = buildReviewRows({
+    locations: khazAlgarSourceLocations,
+    exclusions: khazAlgarExclusions,
+    worldsByKey,
+    continentsByKey,
+  });
+  const quelThalasLocations = locations.filter(
+    (location) => location.continentKey === "quel-thalas",
+  );
+  const quelThalasSourceLocations = quelThalasLocations.filter(
+    (location) => location.wowheadZoneId !== null,
+  );
+  const quelThalasSyntheticLocations = quelThalasLocations.filter(
+    (location) => location.wowheadZoneId === null,
+  );
+  const quelThalasExclusions = exclusions.filter(
+    (exclusion) => exclusion.continentKey === "quel-thalas",
+  );
+  const quelThalasReview = {
+    sourceEntriesInWowheadCategory: (wowheadCatalog.zones ?? []).filter(
+      (zone) => zone.wowheadCategoryId === 20,
+    ).length,
+    suppliedListEntries: 15,
+    parentContinentKey: "eastern-kingdoms",
+    retainedEntries: quelThalasSourceLocations.length,
+    canonicalLocationNodes: quelThalasLocations.length,
+    syntheticRegions: quelThalasSyntheticLocations.length,
+    subzones: quelThalasSourceLocations.filter(
+      (location) => location.kind === "subzone",
+    ).length,
+    excludedEntries: quelThalasExclusions.length,
+    reviewedEntries: quelThalasLocations.filter(
+      (location) => location.reviewStatus === "reviewed",
+    ).length,
+    pendingEntries: quelThalasLocations.filter(
+      (location) => location.reviewStatus !== "reviewed",
+    ).length,
+    byKind: countBy(quelThalasLocations, (location) => location.kind),
+    locations: quelThalasLocations,
+    exclusions: quelThalasExclusions,
+  };
+  const quelThalasReviewRows = buildReviewRows({
+    locations: quelThalasSourceLocations,
+    exclusions: quelThalasExclusions,
+    worldsByKey,
+    continentsByKey,
+  });
 
   const audit = {
     sourceEntries: (wowheadCatalog.zones ?? []).length,
@@ -1650,6 +1829,33 @@ async function main() {
       reviewedEntries: dragonIslesReview.reviewedEntries,
       pendingEntries: dragonIslesReview.pendingEntries,
     },
+    khazAlgar: {
+      sourceEntries: khazAlgarReview.sourceEntriesInWowheadCategory,
+      suppliedListEntries: khazAlgarReview.suppliedListEntries,
+      retainedEntries: khazAlgarReview.retainedEntries,
+      canonicalLocationNodes: khazAlgarReview.canonicalLocationNodes,
+      syntheticRegions: khazAlgarReview.syntheticRegions,
+      subzones: khazAlgarReview.subzones,
+      displayedEntries: khazAlgarReview.displayedEntries,
+      capitalCandidates: khazAlgarReview.capitalCandidates,
+      capitalOutsideDisplayedList:
+        khazAlgarReview.capitalOutsideDisplayedList,
+      excludedEntries: khazAlgarReview.excludedEntries,
+      reviewedEntries: khazAlgarReview.reviewedEntries,
+      pendingEntries: khazAlgarReview.pendingEntries,
+    },
+    quelThalas: {
+      sourceEntries: quelThalasReview.sourceEntriesInWowheadCategory,
+      suppliedListEntries: quelThalasReview.suppliedListEntries,
+      parentContinentKey: quelThalasReview.parentContinentKey,
+      retainedEntries: quelThalasReview.retainedEntries,
+      canonicalLocationNodes: quelThalasReview.canonicalLocationNodes,
+      syntheticRegions: quelThalasReview.syntheticRegions,
+      subzones: quelThalasReview.subzones,
+      excludedEntries: quelThalasReview.excludedEntries,
+      reviewedEntries: quelThalasReview.reviewedEntries,
+      pendingEntries: quelThalasReview.pendingEntries,
+    },
   };
 
   const output = {
@@ -1789,6 +1995,26 @@ async function main() {
       `${toSemicolonCsv(dragonIslesReviewRows)}\n`,
       "utf8",
     ),
+    fs.writeFile(
+      paths.khazAlgarReview,
+      `${JSON.stringify(khazAlgarReview, null, 2)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.khazAlgarReviewCsv,
+      `${toSemicolonCsv(khazAlgarReviewRows)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.quelThalasReview,
+      `${JSON.stringify(quelThalasReview, null, 2)}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.quelThalasReviewCsv,
+      `${toSemicolonCsv(quelThalasReviewRows)}\n`,
+      "utf8",
+    ),
   ]);
 
   console.log(
@@ -1809,6 +2035,8 @@ async function main() {
       `Kul Tiras: ${kulTirasReview.retainedEntries} entrées conservées, ${kulTirasReview.subzones} sous-zones, ${kulTirasReview.capitalCandidates} capitale, ${kulTirasReview.excludedEntries} supprimées et ${kulTirasReview.pendingEntries} à revoir`,
       `Ombreterre: ${shadowlandsReview.retainedEntries} entrées conservées, ${shadowlandsReview.subzones} sous-zones, ${shadowlandsReview.capitalCandidates} capitale, ${shadowlandsReview.excludedEntries} supprimées et ${shadowlandsReview.pendingEntries} à revoir`,
       `Îles aux Dragons: ${dragonIslesReview.retainedEntries} entrées conservées, ${dragonIslesReview.subzones} sous-zones, ${dragonIslesReview.capitalCandidates} capitale, ${dragonIslesReview.excludedEntries} supprimées et ${dragonIslesReview.pendingEntries} à revoir`,
+      `Khaz Algar: ${khazAlgarReview.retainedEntries} entrées conservées, ${khazAlgarReview.subzones} sous-zones, ${khazAlgarReview.capitalCandidates} capitale, ${khazAlgarReview.excludedEntries} supprimées et ${khazAlgarReview.pendingEntries} à revoir`,
+      `Quel'Thalas: ${quelThalasReview.retainedEntries} entrées conservées, ${quelThalasReview.subzones} sous-zones, ${quelThalasReview.excludedEntries} supprimées et ${quelThalasReview.pendingEntries} à revoir, sous les Royaumes de l'Est`,
     ].join(" | "),
   );
 }

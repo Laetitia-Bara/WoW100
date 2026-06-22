@@ -2,16 +2,16 @@
   "sourceEntries": 1254,
   "worlds": 4,
   "continents": 14,
-  "canonicalLocations": 347,
-  "sourceDerivedLocations": 339,
+  "canonicalLocations": 336,
+  "sourceDerivedLocations": 328,
   "syntheticLocations": 8,
-  "exclusions": 266,
+  "exclusions": 277,
   "unassignedSourceEntries": 649,
   "sourceEntriesReconciled": 1254,
-  "reviewedLocations": 305,
-  "pendingLocations": 42,
+  "reviewedLocations": 333,
+  "pendingLocations": 3,
   "byWorld": {
-    "azeroth": 303,
+    "azeroth": 292,
     "draenor": 14,
     "outland": 8,
     "shadowlands": 22
@@ -21,24 +21,24 @@
     "dragon-isles": 12,
     "eastern-kingdoms": 75,
     "kalimdor": 41,
-    "khaz-algar": 24,
+    "khaz-algar": 16,
     "kul-tiras": 24,
     "maelstrom": 9,
     "northrend": 13,
     "pandaria": 32,
-    "quel-thalas": 15,
+    "quel-thalas": 12,
     "zandalar": 26,
     "draenor": 14,
     "outland": 8,
     "shadowlands": 22
   },
   "byKind": {
-    "region": 218,
-    "subzone": 129
+    "region": 192,
+    "subzone": 144
   },
   "byReviewStatus": {
-    "reviewed": 305,
-    "pending": 42
+    "reviewed": 333,
+    "pending": 3
   },
   "hierarchyErrors": [],
   "kalimdor": {
@@ -186,6 +186,32 @@
     "capitalCandidates": 1,
     "capitalOutsideDisplayedList": 1,
     "excludedEntries": 2,
+    "reviewedEntries": 12,
+    "pendingEntries": 0
+  },
+  "khazAlgar": {
+    "sourceEntries": 24,
+    "suppliedListEntries": 23,
+    "retainedEntries": 16,
+    "canonicalLocationNodes": 16,
+    "syntheticRegions": 0,
+    "subzones": 8,
+    "displayedEntries": 15,
+    "capitalCandidates": 1,
+    "capitalOutsideDisplayedList": 1,
+    "excludedEntries": 8,
+    "reviewedEntries": 16,
+    "pendingEntries": 0
+  },
+  "quelThalas": {
+    "sourceEntries": 15,
+    "suppliedListEntries": 15,
+    "parentContinentKey": "eastern-kingdoms",
+    "retainedEntries": 12,
+    "canonicalLocationNodes": 12,
+    "syntheticRegions": 0,
+    "subzones": 7,
+    "excludedEntries": 3,
     "reviewedEntries": 12,
     "pendingEntries": 0
   }

@@ -101,6 +101,7 @@
       "key": "quel-thalas",
       "name": "Quel'Thalas",
       "worldKey": "azeroth",
+      "parentContinentKey": "eastern-kingdoms",
       "wowheadCategoryId": 20
     }
   ],
@@ -222,6 +223,26 @@
       "excludedDefaultZoneIds": [13862],
       "capitalZoneIds": [13862],
       "note": "Les 13 entrées affichées sont classées provisoirement comme régions. Valdrakken, absente de la liste affichée, est ajoutée comme capitale candidate rattachée géographiquement à Thaldraszus."
+    },
+    {
+      "key": "khaz-algar-2026-06-22",
+      "continentKey": "khaz-algar",
+      "sourceEntryCount": 23,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [14771],
+      "capitalZoneIds": [14771],
+      "note": "Les 23 entrées affichées sont classées provisoirement comme régions. Dornogal, absente de la liste affichée, est ajoutée comme capitale candidate rattachée géographiquement à l’Île de Dorn."
+    },
+    {
+      "key": "quel-thalas-2026-06-22",
+      "continentKey": "quel-thalas",
+      "sourceEntryCount": 15,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [],
+      "capitalZoneIds": [],
+      "note": "Les 15 entrées affichées sont classées provisoirement comme régions. Quel’Thalas est rattaché au continent parent des Royaumes de l’Est."
     }
   ],
   "nameExclusionRules": [
@@ -281,6 +302,15 @@
     }
   ],
   "rules": [
+    {
+      "wowheadZoneId": 14771,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:14717",
+      "reviewRegionName": "Île de Dorn",
+      "reviewStatus": "pending",
+      "note": "Dornogal est une région-capitale autonome située géographiquement sur l’Île de Dorn."
+    },
     {
       "wowheadZoneId": 13862,
       "action": "override",
