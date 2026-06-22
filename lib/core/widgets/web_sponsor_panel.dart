@@ -28,33 +28,43 @@ class WebSponsorPageBody extends StatelessWidget {
             ? contentMaxWidth + _sidebarGap + _sidebarWidth
             : contentMaxWidth;
 
+        if (showSidebar) {
+          return Padding(
+            padding: const EdgeInsets.all(16),
+            child: Center(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(maxWidth: maxWidth),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(child: SingleChildScrollView(child: content)),
+                    const SizedBox(width: _sidebarGap),
+                    const SizedBox(
+                      width: _sidebarWidth,
+                      child: WebSponsorPanel(),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        }
+
         return SingleChildScrollView(
           padding: const EdgeInsets.all(16),
           child: Center(
             child: ConstrainedBox(
               constraints: BoxConstraints(maxWidth: maxWidth),
-              child: showSidebar
-                  ? Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Expanded(child: content),
-                        const SizedBox(width: _sidebarGap),
-                        const SizedBox(
-                          width: _sidebarWidth,
-                          child: WebSponsorPanel(),
-                        ),
-                      ],
-                    )
-                  : Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        if (kIsWeb) ...[
-                          const WebSponsorPanel(compact: true),
-                          const SizedBox(height: 20),
-                        ],
-                        content,
-                      ],
-                    ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  if (kIsWeb) ...[
+                    const WebSponsorPanel(compact: true),
+                    const SizedBox(height: 20),
+                  ],
+                  content,
+                ],
+              ),
             ),
           ),
         );

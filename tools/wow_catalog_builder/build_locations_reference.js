@@ -18,6 +18,10 @@ const paths = {
     metadataDir,
     "location_northrend_manual_review.json",
   ),
+  pandariaManualReview: path.join(
+    metadataDir,
+    "location_pandaria_manual_review.json",
+  ),
   output: path.join(generatedDir, "locations_reference_catalog.json"),
   audit: path.join(generatedDir, "locations_reference_audit_report.json"),
   kalimdorReview: path.join(generatedDir, "locations_kalimdor_review.json"),
@@ -334,6 +338,8 @@ function prepareManualReview({
   expansionLookup,
   capitalZoneIds = [],
 }) {
+  const reviewBatch =
+    manualReview.reviewBatch ?? "eastern-kingdoms-manual-review";
   const sourceById = byKey(sourceZones, (zone) => zone.id);
   const capitalZoneIdSet = new Set(capitalZoneIds);
   const decisions = [];
@@ -428,7 +434,7 @@ function prepareManualReview({
         wowheadUrl: "",
         reviewStatus: "reviewed",
         reviewMethod: "user_manual_review_synthetic_parent",
-        reviewBatch: "eastern-kingdoms-manual-review",
+        reviewBatch,
         note: "Région parente créée depuis la revue manuelle.",
         source: "user_manual_review",
       };
@@ -443,6 +449,7 @@ function prepareManualReview({
     if (sameRegion) {
       decisions.push({
         ...row,
+        reviewBatch,
         action: "keep",
         kind: "region",
         parentRef: `continent:${continent.key}`,
@@ -476,6 +483,7 @@ function prepareManualReview({
 
     decisions.push({
       ...row,
+      reviewBatch,
       action: "keep",
       kind: capitalZoneIdSet.has(row.wowheadZoneId)
         ? "region"
@@ -506,7 +514,7 @@ function applyManualReviewDecision(location, decision) {
   location.instanceTypeName = decision.instanceTypeName;
   location.reviewStatus = "reviewed";
   location.reviewMethod = "user_manual_review";
-  location.reviewBatch = "eastern-kingdoms-manual-review";
+  location.reviewBatch = decision.reviewBatch;
   location.note = decision.note;
   location.source = "wowhead_zone_catalog_and_user_manual_review";
 }
@@ -570,11 +578,13 @@ async function main() {
     config,
     easternKingdomsManualReview,
     northrendManualReview,
+    pandariaManualReview,
   ] = await Promise.all([
       loadJson(paths.wowheadCatalog),
       loadJson(paths.overrides),
       loadJson(paths.easternKingdomsManualReview),
       loadJson(paths.northrendManualReview),
+      loadJson(paths.pandariaManualReview),
     ]);
   const worldsByKey = byKey(config.worlds, (world) => world.key);
   const continentsByKey = byKey(
@@ -609,9 +619,19 @@ async function main() {
     expansionLookup,
     capitalZoneIds: northrendBatch?.capitalZoneIds ?? [],
   });
+  const pandariaContinent = continentsByKey.get("pandaria");
+  const pandariaBatch = batchesByContinent.get("pandaria");
+  const pandariaManual = prepareManualReview({
+    manualReview: pandariaManualReview,
+    sourceZones: wowheadCatalog.zones ?? [],
+    continent: pandariaContinent,
+    expansionLookup,
+    capitalZoneIds: pandariaBatch?.capitalZoneIds ?? [],
+  });
   const manualReviewsByContinent = new Map([
     ["eastern-kingdoms", easternKingdomsManual],
     ["northrend", northrendManual],
+    ["pandaria", pandariaManual],
   ]);
 
   for (const continent of config.continents) {
@@ -703,6 +723,7 @@ async function main() {
 
   locations.push(...easternKingdomsManual.syntheticLocations);
   locations.push(...northrendManual.syntheticLocations);
+  locations.push(...pandariaManual.syntheticLocations);
 
   resolveHierarchy(locations, continentsByKey);
   const locationsByRef = byKey(locations, (location) => location.ref);
@@ -945,6 +966,12 @@ async function main() {
       location.continentKey === "pandaria" &&
       !pandariaUnlistedZoneIds.has(location.wowheadZoneId),
   );
+  const pandariaSourceLocations = pandariaLocations.filter(
+    (location) => location.wowheadZoneId !== null,
+  );
+  const pandariaSyntheticLocations = pandariaLocations.filter(
+    (location) => location.wowheadZoneId === null,
+  );
   const pandariaExclusions = exclusions.filter(
     (exclusion) =>
       exclusion.continentKey === "pandaria" &&
@@ -957,7 +984,12 @@ async function main() {
     suppliedListEntries: 46,
     unlistedEntries: pandariaUnlistedZoneIds.size,
     unlistedZoneIds: [...pandariaUnlistedZoneIds],
-    retainedEntries: pandariaLocations.length,
+    retainedEntries: pandariaSourceLocations.length,
+    canonicalLocationNodes: pandariaLocations.length,
+    syntheticRegions: pandariaSyntheticLocations.length,
+    subzones: pandariaSourceLocations.filter(
+      (location) => location.kind === "subzone",
+    ).length,
     excludedEntries: pandariaExclusions.length,
     reviewedEntries: pandariaLocations.filter(
       (location) => location.reviewStatus === "reviewed",
@@ -970,7 +1002,7 @@ async function main() {
     exclusions: pandariaExclusions,
   };
   const pandariaReviewRows = buildReviewRows({
-    locations: pandariaLocations,
+    locations: pandariaSourceLocations,
     exclusions: pandariaExclusions,
     worldsByKey,
     continentsByKey,
@@ -1073,6 +1105,9 @@ async function main() {
       suppliedListEntries: pandariaReview.suppliedListEntries,
       unlistedEntries: pandariaReview.unlistedEntries,
       retainedEntries: pandariaReview.retainedEntries,
+      canonicalLocationNodes: pandariaReview.canonicalLocationNodes,
+      syntheticRegions: pandariaReview.syntheticRegions,
+      subzones: pandariaReview.subzones,
       excludedEntries: pandariaReview.excludedEntries,
       reviewedEntries: pandariaReview.reviewedEntries,
       pendingEntries: pandariaReview.pendingEntries,
@@ -1169,7 +1204,7 @@ async function main() {
       `Outreterre: ${outlandReview.displayedRegions} régions et ${outlandReview.capitalRegions} capitale validées`,
       `Norfendre: ${northrendReview.retainedEntries} entrées retenues, ${northrendReview.subzones} sous-zone, ${northrendReview.excludedEntries} supprimées et ${northrendReview.pendingEntries} à revoir`,
       `Le Maelström: ${maelstromReview.retainedSourceRegions} régions, ${maelstromReview.importedSubzones} sous-zone importée et ${maelstromReview.pendingEntries} à revoir`,
-      `Pandarie: ${pandariaReview.retainedEntries} régions à revoir`,
+      `Pandarie: ${pandariaReview.retainedEntries} entrées conservées, ${pandariaReview.subzones} sous-zones, ${pandariaReview.syntheticRegions} régions créées, ${pandariaReview.excludedEntries} supprimées et ${pandariaReview.pendingEntries} à revoir`,
     ].join(" | "),
   );
 }
