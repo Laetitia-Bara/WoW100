@@ -2,17 +2,17 @@
   "sourceEntries": 1254,
   "worlds": 4,
   "continents": 14,
-  "canonicalLocations": 391,
-  "sourceDerivedLocations": 386,
+  "canonicalLocations": 390,
+  "sourceDerivedLocations": 385,
   "syntheticLocations": 5,
-  "exclusions": 219,
+  "exclusions": 220,
   "unassignedSourceEntries": 649,
   "sourceEntriesReconciled": 1254,
-  "reviewedLocations": 177,
-  "pendingLocations": 214,
+  "reviewedLocations": 189,
+  "pendingLocations": 201,
   "byWorld": {
     "azeroth": 339,
-    "draenor": 15,
+    "draenor": 14,
     "outland": 8,
     "shadowlands": 29
   },
@@ -28,17 +28,17 @@
     "pandaria": 32,
     "quel-thalas": 15,
     "zandalar": 30,
-    "draenor": 15,
+    "draenor": 14,
     "outland": 8,
     "shadowlands": 29
   },
   "byKind": {
-    "region": 341,
-    "subzone": 50
+    "region": 336,
+    "subzone": 54
   },
   "byReviewStatus": {
-    "pending": 214,
-    "reviewed": 177
+    "pending": 201,
+    "reviewed": 189
   },
   "hierarchyErrors": [],
   "kalimdor": {
@@ -113,9 +113,12 @@
     "sourceEntries": 15,
     "suppliedListEntries": 13,
     "unlistedEntries": 2,
-    "retainedEntries": 13,
-    "excludedEntries": 0,
-    "reviewedEntries": 0,
-    "pendingEntries": 13
+    "retainedEntries": 12,
+    "canonicalLocationNodes": 12,
+    "syntheticRegions": 0,
+    "subzones": 4,
+    "excludedEntries": 1,
+    "reviewedEntries": 12,
+    "pendingEntries": 0
   }
 }
