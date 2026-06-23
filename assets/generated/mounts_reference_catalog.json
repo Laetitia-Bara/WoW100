@@ -50722,23 +50722,55 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:7502",
+        "locationRefs": [
+          "wowhead-zone:7502"
+        ],
+        "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Choix valide dans la revue des localisations ambigues."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
+      "primaryLocationRef": "wowhead-zone:7502",
+      "locationRefs": [
+        "wowhead-zone:7502"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:7502",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:7502",
+        "name": "Dalaran",
+        "kind": "region",
+        "subzoneName": null,
+        "regionRef": "wowhead-zone:7502",
+        "regionName": "Dalaran",
+        "continentKey": "broken-isles",
+        "continentName": "Îles Brisées",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Îles Brisées",
+          "Dalaran"
+        ],
+        "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+        "wowheadZoneIds": [
+          7502
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Îles Brisées",
+      "region": "Dalaran",
       "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "zoneId": 7502,
+      "zone": "Dalaran",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -50779,12 +50811,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 780,
@@ -60819,23 +60849,56 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:8899",
+        "locationRefs": [
+          "wowhead-zone:8899"
+        ],
+        "pathLabel": "Azeroth > Îles Brisées > Argus > Étendues Antoréennes",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Choix valide dans la revue des localisations ambigues."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
-      "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "primaryLocationRef": "wowhead-zone:8899",
+      "locationRefs": [
+        "wowhead-zone:8899"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:8899",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:8899",
+        "name": "Étendues Antoréennes",
+        "kind": "subzone",
+        "subzoneName": "Étendues Antoréennes",
+        "regionRef": "manual-location:broken-isles:argus",
+        "regionName": "Argus",
+        "continentKey": "broken-isles",
+        "continentName": "Îles Brisées",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Îles Brisées",
+          "Argus",
+          "Étendues Antoréennes"
+        ],
+        "pathLabel": "Azeroth > Îles Brisées > Argus > Étendues Antoréennes",
+        "wowheadZoneIds": [
+          8899
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Îles Brisées",
+      "region": "Argus",
+      "subzone": "Étendues Antoréennes",
+      "zoneId": 8899,
+      "zone": "Étendues Antoréennes",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -60873,12 +60936,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 956,
@@ -63458,23 +63519,56 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:8899",
+        "locationRefs": [
+          "wowhead-zone:8899"
+        ],
+        "pathLabel": "Azeroth > Îles Brisées > Argus > Étendues Antoréennes",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Choix valide dans la revue des localisations ambigues."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
-      "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "primaryLocationRef": "wowhead-zone:8899",
+      "locationRefs": [
+        "wowhead-zone:8899"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:8899",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:8899",
+        "name": "Étendues Antoréennes",
+        "kind": "subzone",
+        "subzoneName": "Étendues Antoréennes",
+        "regionRef": "manual-location:broken-isles:argus",
+        "regionName": "Argus",
+        "continentKey": "broken-isles",
+        "continentName": "Îles Brisées",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Îles Brisées",
+          "Argus",
+          "Étendues Antoréennes"
+        ],
+        "pathLabel": "Azeroth > Îles Brisées > Argus > Étendues Antoréennes",
+        "wowheadZoneIds": [
+          8899
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Îles Brisées",
+      "region": "Argus",
+      "subzone": "Étendues Antoréennes",
+      "zoneId": 8899,
+      "zone": "Étendues Antoréennes",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -63512,12 +63606,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 980,
@@ -63742,23 +63834,56 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:8899",
+        "locationRefs": [
+          "wowhead-zone:8899"
+        ],
+        "pathLabel": "Azeroth > Îles Brisées > Argus > Étendues Antoréennes",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Choix valide dans la revue des localisations ambigues."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
-      "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "primaryLocationRef": "wowhead-zone:8899",
+      "locationRefs": [
+        "wowhead-zone:8899"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:8899",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:8899",
+        "name": "Étendues Antoréennes",
+        "kind": "subzone",
+        "subzoneName": "Étendues Antoréennes",
+        "regionRef": "manual-location:broken-isles:argus",
+        "regionName": "Argus",
+        "continentKey": "broken-isles",
+        "continentName": "Îles Brisées",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Îles Brisées",
+          "Argus",
+          "Étendues Antoréennes"
+        ],
+        "pathLabel": "Azeroth > Îles Brisées > Argus > Étendues Antoréennes",
+        "wowheadZoneIds": [
+          8899
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Îles Brisées",
+      "region": "Argus",
+      "subzone": "Étendues Antoréennes",
+      "zoneId": 8899,
+      "zone": "Étendues Antoréennes",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -63796,12 +63921,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 982,
@@ -140019,23 +140142,56 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:14771",
+        "locationRefs": [
+          "wowhead-zone:14771"
+        ],
+        "pathLabel": "Azeroth > Khaz Algar > Île de Dorn > Dornogal",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Choix valide dans la revue des localisations ambigues."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
+      "primaryLocationRef": "wowhead-zone:14771",
+      "locationRefs": [
+        "wowhead-zone:14771"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:14771",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:14771",
+        "name": "Dornogal",
+        "kind": "region",
+        "subzoneName": null,
+        "regionRef": "wowhead-zone:14771",
+        "regionName": "Dornogal",
+        "continentKey": "khaz-algar",
+        "continentName": "Khaz Algar",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Khaz Algar",
+          "Île de Dorn",
+          "Dornogal"
+        ],
+        "pathLabel": "Azeroth > Khaz Algar > Île de Dorn > Dornogal",
+        "wowheadZoneIds": [
+          14771
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Khaz Algar",
+      "region": "Dornogal",
       "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "zoneId": 14771,
+      "zone": "Dornogal",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -140073,12 +140229,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 2500,
@@ -152017,23 +152171,56 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:15947",
+        "locationRefs": [
+          "wowhead-zone:15947"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Choix valide dans la revue des localisations ambigues."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
+      "primaryLocationRef": "wowhead-zone:15947",
+      "locationRefs": [
+        "wowhead-zone:15947"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:15947",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:15947",
+        "name": "Zul’Aman",
+        "kind": "region",
+        "subzoneName": null,
+        "regionRef": "wowhead-zone:15947",
+        "regionName": "Zul’Aman",
+        "continentKey": "quel-thalas",
+        "continentName": "Quel'Thalas",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Royaumes de l'Est",
+          "Quel'Thalas",
+          "Zul’Aman"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+        "wowheadZoneIds": [
+          15947
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Quel'Thalas",
+      "region": "Zul’Aman",
       "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "zoneId": 15947,
+      "zone": "Zul’Aman",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -152072,12 +152259,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 2696,
@@ -156194,23 +156379,56 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:15968",
+        "locationRefs": [
+          "wowhead-zone:15968"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Choix valide dans la revue des localisations ambigues."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
+      "primaryLocationRef": "wowhead-zone:15968",
+      "locationRefs": [
+        "wowhead-zone:15968"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:15968",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:15968",
+        "name": "Bois des Chants éternels",
+        "kind": "region",
+        "subzoneName": null,
+        "regionRef": "wowhead-zone:15968",
+        "regionName": "Bois des Chants éternels",
+        "continentKey": "quel-thalas",
+        "continentName": "Quel'Thalas",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Royaumes de l'Est",
+          "Quel'Thalas",
+          "Bois des Chants éternels"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+        "wowheadZoneIds": [
+          15968
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Quel'Thalas",
+      "region": "Bois des Chants éternels",
       "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "zoneId": 15968,
+      "zone": "Bois des Chants éternels",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -156247,12 +156465,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 2760,
@@ -156333,23 +156549,56 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:15947",
+        "locationRefs": [
+          "wowhead-zone:15947"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Choix valide dans la revue des localisations ambigues."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
+      "primaryLocationRef": "wowhead-zone:15947",
+      "locationRefs": [
+        "wowhead-zone:15947"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:15947",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:15947",
+        "name": "Zul’Aman",
+        "kind": "region",
+        "subzoneName": null,
+        "regionRef": "wowhead-zone:15947",
+        "regionName": "Zul’Aman",
+        "continentKey": "quel-thalas",
+        "continentName": "Quel'Thalas",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Royaumes de l'Est",
+          "Quel'Thalas",
+          "Zul’Aman"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+        "wowheadZoneIds": [
+          15947
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Quel'Thalas",
+      "region": "Zul’Aman",
       "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "zoneId": 15947,
+      "zone": "Zul’Aman",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -156386,12 +156635,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 2761,
@@ -156592,23 +156839,56 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:15968",
+        "locationRefs": [
+          "wowhead-zone:15968"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Choix valide dans la revue des localisations ambigues."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
+      "primaryLocationRef": "wowhead-zone:15968",
+      "locationRefs": [
+        "wowhead-zone:15968"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:15968",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:15968",
+        "name": "Bois des Chants éternels",
+        "kind": "region",
+        "subzoneName": null,
+        "regionRef": "wowhead-zone:15968",
+        "regionName": "Bois des Chants éternels",
+        "continentKey": "quel-thalas",
+        "continentName": "Quel'Thalas",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Royaumes de l'Est",
+          "Quel'Thalas",
+          "Bois des Chants éternels"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+        "wowheadZoneIds": [
+          15968
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Quel'Thalas",
+      "region": "Bois des Chants éternels",
       "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "zoneId": 15968,
+      "zone": "Bois des Chants éternels",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -156645,12 +156925,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 2764,
@@ -157035,23 +157313,56 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:15969",
+        "locationRefs": [
+          "wowhead-zone:15969"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Lune-d’Argent",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Choix valide dans la revue des localisations ambigues."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
+      "primaryLocationRef": "wowhead-zone:15969",
+      "locationRefs": [
+        "wowhead-zone:15969"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:15969",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:15969",
+        "name": "Lune-d’Argent",
+        "kind": "region",
+        "subzoneName": null,
+        "regionRef": "wowhead-zone:15969",
+        "regionName": "Lune-d’Argent",
+        "continentKey": "eastern-kingdoms",
+        "continentName": "Royaumes de l'Est",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Royaumes de l'Est",
+          "Bois des Chants éternels",
+          "Lune-d’Argent"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Lune-d’Argent",
+        "wowheadZoneIds": [
+          15969
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Royaumes de l'Est",
+      "region": "Lune-d’Argent",
       "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "zoneId": 15969,
+      "zone": "Lune-d’Argent",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -157090,12 +157401,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 2770,
@@ -157179,23 +157488,56 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:15969",
+        "locationRefs": [
+          "wowhead-zone:15969"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Lune-d’Argent",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Choix valide dans la revue des localisations ambigues."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
+      "primaryLocationRef": "wowhead-zone:15969",
+      "locationRefs": [
+        "wowhead-zone:15969"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:15969",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:15969",
+        "name": "Lune-d’Argent",
+        "kind": "region",
+        "subzoneName": null,
+        "regionRef": "wowhead-zone:15969",
+        "regionName": "Lune-d’Argent",
+        "continentKey": "eastern-kingdoms",
+        "continentName": "Royaumes de l'Est",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Royaumes de l'Est",
+          "Bois des Chants éternels",
+          "Lune-d’Argent"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Lune-d’Argent",
+        "wowheadZoneIds": [
+          15969
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Royaumes de l'Est",
+      "region": "Lune-d’Argent",
       "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "zoneId": 15969,
+      "zone": "Lune-d’Argent",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -157234,12 +157576,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 2771,
@@ -157685,23 +158025,56 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:15947",
+        "locationRefs": [
+          "wowhead-zone:15947"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Choix valide dans la revue des localisations ambigues."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
+      "primaryLocationRef": "wowhead-zone:15947",
+      "locationRefs": [
+        "wowhead-zone:15947"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:15947",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:15947",
+        "name": "Zul’Aman",
+        "kind": "region",
+        "subzoneName": null,
+        "regionRef": "wowhead-zone:15947",
+        "regionName": "Zul’Aman",
+        "continentKey": "quel-thalas",
+        "continentName": "Quel'Thalas",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Royaumes de l'Est",
+          "Quel'Thalas",
+          "Zul’Aman"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+        "wowheadZoneIds": [
+          15947
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Quel'Thalas",
+      "region": "Zul’Aman",
       "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "zoneId": 15947,
+      "zone": "Zul’Aman",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -157740,12 +158113,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 2778,
@@ -157826,23 +158197,56 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:15947",
+        "locationRefs": [
+          "wowhead-zone:15947"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Choix valide dans la revue des localisations ambigues."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
+      "primaryLocationRef": "wowhead-zone:15947",
+      "locationRefs": [
+        "wowhead-zone:15947"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:15947",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:15947",
+        "name": "Zul’Aman",
+        "kind": "region",
+        "subzoneName": null,
+        "regionRef": "wowhead-zone:15947",
+        "regionName": "Zul’Aman",
+        "continentKey": "quel-thalas",
+        "continentName": "Quel'Thalas",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Royaumes de l'Est",
+          "Quel'Thalas",
+          "Zul’Aman"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+        "wowheadZoneIds": [
+          15947
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Quel'Thalas",
+      "region": "Zul’Aman",
       "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "zoneId": 15947,
+      "zone": "Zul’Aman",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -157879,12 +158283,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 2779,
@@ -158141,23 +158543,57 @@
         }
       ],
       "locationAssignment": {
-        "status": "manual_choice_required",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved"
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:16395",
+        "locationRefs": [
+          "wowhead-zone:16395"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman > Cavernes de Maisara",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Cavernes de Maisara rattachee a Zul'Aman pendant la revue."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
-      "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "primaryLocationRef": "wowhead-zone:16395",
+      "locationRefs": [
+        "wowhead-zone:16395"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:16395",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:16395",
+        "name": "Cavernes de Maisara",
+        "kind": "subzone",
+        "subzoneName": "Cavernes de Maisara",
+        "regionRef": "wowhead-zone:15947",
+        "regionName": "Zul’Aman",
+        "continentKey": "quel-thalas",
+        "continentName": "Quel'Thalas",
+        "worldKey": "azeroth",
+        "worldName": "Azeroth",
+        "path": [
+          "Azeroth",
+          "Royaumes de l'Est",
+          "Quel'Thalas",
+          "Zul’Aman",
+          "Cavernes de Maisara"
+        ],
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman > Cavernes de Maisara",
+        "wowheadZoneIds": [
+          16395
+        ]
+      },
+      "world": "Azeroth",
+      "continent": "Quel'Thalas",
+      "region": "Zul’Aman",
+      "subzone": "Cavernes de Maisara",
+      "zoneId": 16395,
+      "zone": "Cavernes de Maisara",
       "instance": "à définir",
       "boss": "",
       "groupRequired": false,
@@ -158194,12 +158630,10 @@
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
         "locationCandidates": "mamytwink_keywords",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
-      "missingFields": [
-        "locationDecision"
-      ]
+      "missingFields": []
     },
     {
       "blizzardId": 2789,

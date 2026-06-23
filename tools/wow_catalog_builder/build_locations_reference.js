@@ -957,9 +957,10 @@ async function main() {
   const locations = [];
 
   for (const zone of wowheadCatalog.zones ?? []) {
-    const continent = continentsByWowheadCategoryId.get(
-      zone.wowheadCategoryId,
-    );
+    const rule = rulesByZoneId.get(zone.id);
+    const continent = rule?.continentKey
+      ? continentsByKey.get(rule.continentKey)
+      : continentsByWowheadCategoryId.get(zone.wowheadCategoryId);
     if (!continent) {
       unassignedSourceEntries.push({
         wowheadZoneId: zone.id,
@@ -974,7 +975,6 @@ async function main() {
       continue;
     }
 
-    const rule = rulesByZoneId.get(zone.id);
     const manualDecision = manualReviewsByContinent
       .get(continent.key)
       ?.decisionsByZoneId.get(zone.id);

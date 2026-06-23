@@ -198,7 +198,7 @@
       "wowheadUrl": "https://www.wowhead.com/fr/zone=8093",
       "reviewStatus": "reviewed",
       "reviewMethod": "user_manual_rule",
-      "reviewBatch": "kalimdor-2026-06-19",
+      "reviewBatch": "maelstrom-2026-06-20",
       "note": "La cime du Vortex est déplacée sous Le Maelström.",
       "source": "wowhead_zone_catalog_and_manual_review",
       "path": [

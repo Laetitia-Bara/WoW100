@@ -9,8 +9,7 @@
     "source": 345,
     "expansion": 345,
     "mamytwinkUrl": 345,
-    "wowheadItemUrl": 168,
-    "locationDecision": 14
+    "wowheadItemUrl": 168
   },
   "byDifficulty": {
     "Facile": 609,
@@ -123,10 +122,10 @@
   },
   "locationCandidateCount": 280,
   "locationsAutoAssigned": 265,
-  "locationsManuallyAssigned": 1,
-  "locationsRequiringManualChoice": 14,
+  "locationsManuallyAssigned": 15,
+  "locationsRequiringManualChoice": 0,
   "locationsWithoutCandidate": 1328,
-  "locationsWithCompleteHierarchy": 266,
-  "assignedLocationRefs": 46,
+  "locationsWithCompleteHierarchy": 280,
+  "assignedLocationRefs": 53,
   "note": "Les correspondances exactes avec une candidate unique sont affectees automatiquement. Les correspondances multiples restent reservees a la revue manuelle."
 }

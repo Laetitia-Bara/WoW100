@@ -10973,7 +10973,7 @@
       "wowheadUrl": "https://www.wowhead.com/fr/zone=8093",
       "reviewStatus": "reviewed",
       "reviewMethod": "user_manual_rule",
-      "reviewBatch": "kalimdor-2026-06-19",
+      "reviewBatch": "maelstrom-2026-06-20",
       "note": "La cime du Vortex est déplacée sous Le Maelström.",
       "source": "wowhead_zone_catalog_and_manual_review",
       "path": [
@@ -14249,6 +14249,60 @@
         "continent:quel-thalas"
       ],
       "canonicalRegionRef": "wowhead-zone:16648"
+    },
+    {
+      "ref": "wowhead-zone:16395",
+      "wowheadZoneId": 16395,
+      "name": "Cavernes de Maisara",
+      "normalizedName": "cavernes-de-maisara",
+      "worldKey": "azeroth",
+      "continentKey": "quel-thalas",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:15947",
+      "parentRefs": [
+        "wowhead-zone:15947"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:15947",
+      "regionName": "Zul’Aman",
+      "extensionId": 11,
+      "extensionKey": "midnight",
+      "extensionName": "Midnight",
+      "expansionBasePatch": "12.0.0",
+      "patch": null,
+      "instanceTypeId": 5,
+      "instanceTypeName": "Donjon",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 80,
+      "maxLevel": 90,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=16395",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_rule",
+      "reviewBatch": "quel-thalas-2026-06-22",
+      "note": "Cavernes de Maisara est un donjon rattaché à Zul’Aman, validé pendant la revue des montures.",
+      "source": "wowhead_zone_catalog_and_manual_review",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Zul’Aman",
+        "Cavernes de Maisara"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman > Cavernes de Maisara",
+      "canonicalRef": "wowhead-zone:16395",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:16395"
+      ],
+      "canonicalWowheadZoneIds": [
+        16395
+      ],
+      "canonicalParentRef": "wowhead-zone:15947",
+      "canonicalParentRefs": [
+        "wowhead-zone:15947"
+      ],
+      "canonicalRegionRef": "wowhead-zone:15947"
     },
     {
       "ref": "wowhead-zone:15947",
@@ -27460,16 +27514,6 @@
       "instanceTypeName": "Donjon",
       "expansionName": "Midnight",
       "wowheadUrl": "https://www.wowhead.com/fr/zone=16368",
-      "reviewStatus": "pending_geographic_assignment"
-    },
-    {
-      "wowheadZoneId": 16395,
-      "name": "Cavernes de Maisara",
-      "wowheadCategoryId": 2,
-      "wowheadCategoryName": "Donjons",
-      "instanceTypeName": "Donjon",
-      "expansionName": "Midnight",
-      "wowheadUrl": "https://www.wowhead.com/fr/zone=16395",
       "reviewStatus": "pending_geographic_assignment"
     },
     {

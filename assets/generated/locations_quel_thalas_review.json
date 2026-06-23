@@ -2,16 +2,16 @@
   "sourceEntriesInWowheadCategory": 15,
   "suppliedListEntries": 15,
   "parentContinentKey": "eastern-kingdoms",
-  "retainedEntries": 12,
-  "canonicalLocationNodes": 12,
+  "retainedEntries": 13,
+  "canonicalLocationNodes": 13,
   "syntheticRegions": 0,
-  "subzones": 7,
+  "subzones": 8,
   "excludedEntries": 3,
-  "reviewedEntries": 12,
+  "reviewedEntries": 13,
   "pendingEntries": 0,
   "byKind": {
     "region": 5,
-    "subzone": 7
+    "subzone": 8
   },
   "locations": [
     {
@@ -614,6 +614,60 @@
         "continent:quel-thalas"
       ],
       "canonicalRegionRef": "wowhead-zone:16648"
+    },
+    {
+      "ref": "wowhead-zone:16395",
+      "wowheadZoneId": 16395,
+      "name": "Cavernes de Maisara",
+      "normalizedName": "cavernes-de-maisara",
+      "worldKey": "azeroth",
+      "continentKey": "quel-thalas",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:15947",
+      "parentRefs": [
+        "wowhead-zone:15947"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:15947",
+      "regionName": "Zul’Aman",
+      "extensionId": 11,
+      "extensionKey": "midnight",
+      "extensionName": "Midnight",
+      "expansionBasePatch": "12.0.0",
+      "patch": null,
+      "instanceTypeId": 5,
+      "instanceTypeName": "Donjon",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 80,
+      "maxLevel": 90,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=16395",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_rule",
+      "reviewBatch": "quel-thalas-2026-06-22",
+      "note": "Cavernes de Maisara est un donjon rattaché à Zul’Aman, validé pendant la revue des montures.",
+      "source": "wowhead_zone_catalog_and_manual_review",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Zul’Aman",
+        "Cavernes de Maisara"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman > Cavernes de Maisara",
+      "canonicalRef": "wowhead-zone:16395",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:16395"
+      ],
+      "canonicalWowheadZoneIds": [
+        16395
+      ],
+      "canonicalParentRef": "wowhead-zone:15947",
+      "canonicalParentRefs": [
+        "wowhead-zone:15947"
+      ],
+      "canonicalRegionRef": "wowhead-zone:15947"
     },
     {
       "ref": "wowhead-zone:15947",

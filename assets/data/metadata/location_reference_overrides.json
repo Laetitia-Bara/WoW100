@@ -512,6 +512,15 @@
       "parentRef": "wowhead-zone:1377",
       "reviewStatus": "reviewed",
       "note": "Silithus : la Plaie est rattaché à Silithus."
+    },
+    {
+      "wowheadZoneId": 16395,
+      "action": "override",
+      "continentKey": "quel-thalas",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:15947",
+      "reviewStatus": "reviewed",
+      "note": "Cavernes de Maisara est un donjon rattaché à Zul’Aman, validé pendant la revue des montures."
     }
   ]
 }
