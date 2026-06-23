@@ -68,11 +68,13 @@ class JsonPlannerSource {
     final wowheadOverrides = await _loadJsonList(
       'assets/data/metadata/mounts_wowhead_overrides.json',
     );
+    final mountReference = await _loadMountReference();
     final mamytwinkCandidates = await _loadCandidates();
 
     final manualById = _byBlizzardId(manualMetadata);
     final draftById = _byBlizzardId(mamytwinkDraft);
     final wowheadById = _byBlizzardId(wowheadOverrides);
+    final referenceById = _byBlizzardId(mountReference);
 
     final items = <TrackingItem>[];
 
@@ -84,6 +86,7 @@ class JsonPlannerSource {
       final wowhead = wowheadById[blizzardId];
       final draft = draftById[blizzardId];
       final mamytwink = mamytwinkCandidates[blizzardId];
+      final reference = referenceById[blizzardId];
       final expansionKey =
           wowhead?['expansion'] ??
           manual?['expansion'] ??
@@ -130,6 +133,17 @@ class JsonPlannerSource {
       final instance = (manualInstance?.isNotEmpty ?? false)
           ? manualInstance!
           : sourceName;
+      final mamytwinkUrl =
+          _metadataString(reference, 'mamytwinkUrl') ??
+          _metadataString(mamytwink, 'mamytwinkUrl') ??
+          '';
+      final wowheadUrl =
+          _metadataString(reference, 'wowheadUrl') ??
+          _metadataString(wowhead, 'externalUrl') ??
+          '';
+      final wowheadItemId =
+          reference?['wowheadItemId'] as int? ??
+          wowhead?['wowheadItemId'] as int?;
 
       items.add(
         TrackingItem(
@@ -154,10 +168,11 @@ class JsonPlannerSource {
           obtained: false,
           unavailable: unavailable,
           blizzardId: blizzardId,
-          wowheadItemId: wowhead?['wowheadItemId'] as int?,
+          wowheadItemId: wowheadItemId,
           boss: wowhead?['boss'] ?? manual?['boss'] ?? '',
-          externalUrl:
-              wowhead?['externalUrl'] ?? mamytwink?['mamytwinkUrl'] ?? '',
+          externalUrl: mamytwinkUrl.isNotEmpty ? mamytwinkUrl : wowheadUrl,
+          mamytwinkUrl: mamytwinkUrl,
+          wowheadUrl: wowheadUrl,
         ),
       );
     }
@@ -266,6 +281,16 @@ class JsonPlannerSource {
     final List<dynamic> data = jsonDecode(jsonString);
 
     return data.cast<Map<String, dynamic>>();
+  }
+
+  Future<List<Map<String, dynamic>>> _loadMountReference() async {
+    final jsonString = await rootBundle.loadString(
+      'assets/generated/mounts_reference_catalog.json',
+    );
+    final data = jsonDecode(jsonString) as Map<String, dynamic>;
+    final mounts = data['mounts'] as List<dynamic>? ?? const [];
+
+    return mounts.cast<Map<String, dynamic>>();
   }
 
   Future<Map<int, Map<String, dynamic>>> _loadCandidates() async {

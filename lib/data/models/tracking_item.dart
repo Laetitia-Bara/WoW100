@@ -55,6 +55,10 @@ class TrackingItem {
 
   final String externalUrl;
 
+  final String mamytwinkUrl;
+
+  final String wowheadUrl;
+
   const TrackingItem({
     required this.id,
     required this.name,
@@ -75,6 +79,8 @@ class TrackingItem {
     this.blizzardId,
     required this.boss,
     this.externalUrl = '',
+    this.mamytwinkUrl = '',
+    this.wowheadUrl = '',
   });
 
   TrackingItem copyWith({bool? obtained}) {
@@ -98,6 +104,8 @@ class TrackingItem {
       blizzardId: blizzardId,
       boss: boss,
       externalUrl: externalUrl,
+      mamytwinkUrl: mamytwinkUrl,
+      wowheadUrl: wowheadUrl,
     );
   }
 
@@ -125,6 +133,8 @@ class TrackingItem {
       blizzardId: json['blizzardId'],
       boss: json['boss'] ?? '',
       externalUrl: json['externalUrl'] ?? json['mamytwinkUrl'] ?? '',
+      mamytwinkUrl: json['mamytwinkUrl'] ?? '',
+      wowheadUrl: json['wowheadUrl'] ?? '',
     );
   }
 
@@ -136,11 +146,7 @@ class TrackingItem {
 
   static String _officialWorldZoneFromJson(Map<String, dynamic> json) {
     final candidates = [
-      _firstJsonString(json, [
-        'locationZone',
-        'localizedZone',
-        'area',
-      ]),
+      _firstJsonString(json, ['locationZone', 'localizedZone', 'area']),
       _jsonString(json['zone']),
     ];
 

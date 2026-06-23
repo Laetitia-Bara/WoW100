@@ -1100,14 +1100,23 @@ class _PlannerItemCard extends StatelessWidget {
   final TrackingItem item;
   final ValueChanged<bool?> onChanged;
 
-  Future<void> _openExternal(BuildContext context) async {
+  String _wowheadUrl(BuildContext context) {
+    if (item.wowheadUrl.isNotEmpty) return item.wowheadUrl;
+
     final locale = WowheadUrlBuilder.preferredLocaleCode(
       WidgetsBinding.instance.platformDispatcher.locales.map(
         (locale) => locale.toLanguageTag(),
       ),
       fallback: Localizations.localeOf(context).languageCode,
     );
-    final url = WowheadUrlBuilder.build(item: item, locale: locale);
+
+    return WowheadUrlBuilder.build(
+      item: item,
+      locale: item.category == TrackingCategory.mounts ? 'fr' : locale,
+    );
+  }
+
+  Future<void> _openUrl(String url) async {
     final uri = Uri.parse(url);
 
     await launchUrl(
@@ -1119,6 +1128,9 @@ class _PlannerItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isMount = item.category == TrackingCategory.mounts;
+    final mamytwinkUrl = item.mamytwinkUrl.trim();
+    final wowheadUrl = _wowheadUrl(context);
     final groupLabel =
         AchievementGroupHierarchy.labelFor(item) ?? item.instance;
     final tags = [
@@ -1144,20 +1156,58 @@ class _PlannerItemCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(
-              width: 42,
+              width: isMount ? 72 : 42,
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Checkbox(value: item.obtained, onChanged: onChanged),
-                  IconButton(
-                    tooltip:
-                        item.wowheadItemId != null ||
-                            item.wowheadAchievementId != null
-                        ? 'Ouvrir sur Wowhead'
-                        : 'Ouvrir la fiche',
-                    icon: const Icon(Icons.open_in_new),
-                    onPressed: () => _openExternal(context),
-                  ),
+                  if (isMount)
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        if (mamytwinkUrl.isNotEmpty)
+                          _MountExternalLinkButton(
+                            tooltip: 'Ouvrir sur Mamytwink',
+                            onPressed: () => _openUrl(mamytwinkUrl),
+                            child: const Text(
+                              'M',
+                              style: TextStyle(
+                                color: Color(0xFF84CC16),
+                                fontWeight: FontWeight.w900,
+                                fontSize: 17,
+                              ),
+                            ),
+                          ),
+                        _MountExternalLinkButton(
+                          tooltip: 'Ouvrir sur Wowhead',
+                          onPressed: () => _openUrl(wowheadUrl),
+                          child: const Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                'WH',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w800,
+                                  fontSize: 9,
+                                ),
+                              ),
+                              SizedBox(width: 1),
+                              Icon(Icons.rocket_launch_rounded, size: 12),
+                            ],
+                          ),
+                        ),
+                      ],
+                    )
+                  else
+                    IconButton(
+                      tooltip:
+                          item.wowheadItemId != null ||
+                              item.wowheadAchievementId != null
+                          ? 'Ouvrir sur Wowhead'
+                          : 'Ouvrir la fiche',
+                      icon: const Icon(Icons.open_in_new),
+                      onPressed: () => _openUrl(wowheadUrl),
+                    ),
                 ],
               ),
             ),
@@ -1206,6 +1256,30 @@ class _PlannerItemCard extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _MountExternalLinkButton extends StatelessWidget {
+  const _MountExternalLinkButton({
+    required this.tooltip,
+    required this.onPressed,
+    required this.child,
+  });
+
+  final String tooltip;
+  final VoidCallback onPressed;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      tooltip: tooltip,
+      onPressed: onPressed,
+      constraints: const BoxConstraints.tightFor(width: 34, height: 34),
+      padding: const EdgeInsets.all(4),
+      visualDensity: VisualDensity.compact,
+      icon: child,
     );
   }
 }
