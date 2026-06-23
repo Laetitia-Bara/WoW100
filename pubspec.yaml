@@ -25,10 +25,11 @@ dev_dependencies:
 flutter_launcher_icons:
   ios: true
   android: true
-  image_path: "assets/app_icon/Icon-App-1024x1024@1x.png"
-  image_path_android: "assets/app_icon/Icon-App-Android-rounded.png"
-  adaptive_icon_background: "#150713"
-  adaptive_icon_foreground: "assets/app_icon/Icon-App-Android-rounded.png"
+  image_path: "assets/app_icon/wow100_app_icon_2026.png"
+  image_path_android: "assets/app_icon/wow100_app_icon_2026.png"
+  adaptive_icon_background: "#642867"
+  adaptive_icon_foreground: "assets/app_icon/wow100_app_icon_2026.png"
+  adaptive_icon_foreground_inset: 0
   remove_alpha_ios: true
 
 flutter:
