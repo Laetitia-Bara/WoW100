@@ -18,8 +18,17 @@ class TrackingItem {
   /// Zone générale
   final String zone;
 
+  /// Sous-zone précise, lorsqu'elle existe.
+  final String subzone;
+
   /// Region de monde / continent parent de la zone.
   final String region;
+
+  /// Monde parent de la localisation.
+  final String world;
+
+  /// Référence stable vers le catalogue de localisation.
+  final String locationRef;
 
   /// Donjon / Raid / Zone précise
   final String instance;
@@ -65,7 +74,10 @@ class TrackingItem {
     required this.category,
     required this.expansion,
     required this.zone,
+    this.subzone = '',
     this.region = '',
+    this.world = '',
+    this.locationRef = '',
     required this.instance,
     required this.source,
     this.wowheadItemId,
@@ -90,7 +102,10 @@ class TrackingItem {
       category: category,
       expansion: expansion,
       zone: zone,
+      subzone: subzone,
       region: region,
+      world: world,
+      locationRef: locationRef,
       instance: instance,
       source: source,
       wowheadItemId: wowheadItemId,
@@ -119,7 +134,10 @@ class TrackingItem {
       category: TrackingCategoryParser.fromJson(json['category']),
       expansion: expansion,
       zone: zone,
+      subzone: json['subzone'] ?? '',
       region: _officialRegionFromJson(json, zone),
+      world: json['world'] ?? '',
+      locationRef: json['primaryLocationRef'] ?? json['locationRef'] ?? '',
       instance: json['instance'] ?? '',
       source: json['source'] ?? '',
       wowheadItemId: json['wowheadItemId'],

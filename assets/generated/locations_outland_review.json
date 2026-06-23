@@ -49,7 +49,20 @@
         "Forêt de Terokkar",
         "Shattrath"
       ],
-      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar > Shattrath"
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar > Shattrath",
+      "canonicalRef": "wowhead-zone:3703",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3703"
+      ],
+      "canonicalWowheadZoneIds": [
+        3703
+      ],
+      "canonicalParentRef": "wowhead-zone:3519",
+      "canonicalParentRefs": [
+        "wowhead-zone:3519"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3703"
     },
     {
       "ref": "wowhead-zone:3519",
@@ -88,7 +101,20 @@
         "Outreterre",
         "Forêt de Terokkar"
       ],
-      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar"
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar",
+      "canonicalRef": "wowhead-zone:3519",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3519"
+      ],
+      "canonicalWowheadZoneIds": [
+        3519
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3519"
     },
     {
       "ref": "wowhead-zone:3522",
@@ -127,7 +153,20 @@
         "Outreterre",
         "Les Tranchantes"
       ],
-      "pathLabel": "Outreterre > Outreterre > Les Tranchantes"
+      "pathLabel": "Outreterre > Outreterre > Les Tranchantes",
+      "canonicalRef": "wowhead-zone:3522",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3522"
+      ],
+      "canonicalWowheadZoneIds": [
+        3522
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3522"
     },
     {
       "ref": "wowhead-zone:3521",
@@ -166,7 +205,20 @@
         "Outreterre",
         "Marécage de Zangar"
       ],
-      "pathLabel": "Outreterre > Outreterre > Marécage de Zangar"
+      "pathLabel": "Outreterre > Outreterre > Marécage de Zangar",
+      "canonicalRef": "wowhead-zone:3521",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3521"
+      ],
+      "canonicalWowheadZoneIds": [
+        3521
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3521"
     },
     {
       "ref": "wowhead-zone:3518",
@@ -205,7 +257,20 @@
         "Outreterre",
         "Nagrand"
       ],
-      "pathLabel": "Outreterre > Outreterre > Nagrand"
+      "pathLabel": "Outreterre > Outreterre > Nagrand",
+      "canonicalRef": "wowhead-zone:3518",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3518"
+      ],
+      "canonicalWowheadZoneIds": [
+        3518
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3518"
     },
     {
       "ref": "wowhead-zone:3483",
@@ -244,7 +309,20 @@
         "Outreterre",
         "Péninsule des Flammes infernales"
       ],
-      "pathLabel": "Outreterre > Outreterre > Péninsule des Flammes infernales"
+      "pathLabel": "Outreterre > Outreterre > Péninsule des Flammes infernales",
+      "canonicalRef": "wowhead-zone:3483",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3483"
+      ],
+      "canonicalWowheadZoneIds": [
+        3483
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3483"
     },
     {
       "ref": "wowhead-zone:3523",
@@ -283,7 +361,20 @@
         "Outreterre",
         "Raz-de-Néant"
       ],
-      "pathLabel": "Outreterre > Outreterre > Raz-de-Néant"
+      "pathLabel": "Outreterre > Outreterre > Raz-de-Néant",
+      "canonicalRef": "wowhead-zone:3523",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3523"
+      ],
+      "canonicalWowheadZoneIds": [
+        3523
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3523"
     },
     {
       "ref": "wowhead-zone:3520",
@@ -322,7 +413,20 @@
         "Outreterre",
         "Vallée d’Ombrelune"
       ],
-      "pathLabel": "Outreterre > Outreterre > Vallée d’Ombrelune"
+      "pathLabel": "Outreterre > Outreterre > Vallée d’Ombrelune",
+      "canonicalRef": "wowhead-zone:3520",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3520"
+      ],
+      "canonicalWowheadZoneIds": [
+        3520
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3520"
     }
   ],
   "exclusions": []

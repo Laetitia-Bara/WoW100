@@ -361,6 +361,76 @@ function buildPath(location, locationsByRef, worldsByKey, continentsByKey) {
   return [world?.name, ...continentNames, ...locationNames].filter(Boolean);
 }
 
+function attachCanonicalReferences(locations) {
+  const groupsByPath = new Map();
+
+  for (const location of locations) {
+    const key = normalizeLookupName(location.pathLabel);
+    const group = groupsByPath.get(key) ?? [];
+    group.push(location);
+    groupsByPath.set(key, group);
+  }
+
+  const aliases = [];
+  for (const group of groupsByPath.values()) {
+    const ordered = [...group].sort((left, right) => {
+      const leftManual = left.ref.startsWith("manual-location:") ? 0 : 1;
+      const rightManual = right.ref.startsWith("manual-location:") ? 0 : 1;
+      if (leftManual !== rightManual) return leftManual - rightManual;
+
+      const leftReviewed = left.reviewStatus === "reviewed" ? 0 : 1;
+      const rightReviewed = right.reviewStatus === "reviewed" ? 0 : 1;
+      if (leftReviewed !== rightReviewed) return leftReviewed - rightReviewed;
+
+      const leftId = left.wowheadZoneId ?? Number.MAX_SAFE_INTEGER;
+      const rightId = right.wowheadZoneId ?? Number.MAX_SAFE_INTEGER;
+      return leftId - rightId || left.ref.localeCompare(right.ref, "fr");
+    });
+    const canonical = ordered[0];
+    const aliasRefs = ordered.map((location) => location.ref);
+    const wowheadZoneIds = ordered
+      .map((location) => location.wowheadZoneId)
+      .filter(Number.isInteger);
+
+    for (const location of group) {
+      location.canonicalRef = canonical.ref;
+      location.isCanonical = location.ref === canonical.ref;
+      location.aliasRefs = aliasRefs;
+      location.canonicalWowheadZoneIds = wowheadZoneIds;
+    }
+
+    if (group.length > 1) {
+      aliases.push({
+        canonicalRef: canonical.ref,
+        pathLabel: canonical.pathLabel,
+        aliasRefs,
+        wowheadZoneIds,
+      });
+    }
+  }
+
+  const canonicalByRef = new Map(
+    locations.map((location) => [location.ref, location.canonicalRef]),
+  );
+  for (const location of locations) {
+    location.canonicalParentRef = location.parentRef.startsWith("continent:")
+      ? location.parentRef
+      : canonicalByRef.get(location.parentRef) ?? location.parentRef;
+    location.canonicalParentRefs = (location.parentRefs ?? [location.parentRef]).map(
+      (parentRef) =>
+        parentRef.startsWith("continent:")
+          ? parentRef
+          : canonicalByRef.get(parentRef) ?? parentRef,
+    );
+    location.canonicalRegionRef =
+      canonicalByRef.get(location.regionRef) ?? location.regionRef;
+  }
+
+  return aliases.sort((left, right) =>
+    left.pathLabel.localeCompare(right.pathLabel, "fr"),
+  );
+}
+
 function csvCell(value) {
   return `"${String(value ?? "").replace(/"/g, '""')}"`;
 }
@@ -984,6 +1054,7 @@ async function main() {
     );
     location.pathLabel = location.path.join(" > ");
   }
+  const canonicalAliases = attachCanonicalReferences(locations);
 
   locations.sort((a, b) =>
     `${a.worldKey}|${a.continentKey}|${a.pathLabel}|${a.wowheadZoneId}`.localeCompare(
@@ -1646,6 +1717,10 @@ async function main() {
     worlds: config.worlds.length,
     continents: config.continents.length,
     canonicalLocations: locations.length,
+    canonicalSemanticLocations: locations.filter(
+      (location) => location.isCanonical,
+    ).length,
+    canonicalAliasGroups: canonicalAliases.length,
     sourceDerivedLocations: locations.filter(
       (location) => location.wowheadZoneId !== null,
     ).length,
@@ -1867,6 +1942,7 @@ async function main() {
     },
     worlds: config.worlds,
     continents: config.continents,
+    canonicalAliases,
     locations,
     exclusions,
     unassignedSourceEntries,

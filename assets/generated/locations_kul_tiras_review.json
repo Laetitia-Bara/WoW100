@@ -54,7 +54,20 @@
         "Kul Tiras",
         "Campagne militaire - Alliance"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Campagne militaire - Alliance"
+      "pathLabel": "Azeroth > Kul Tiras > Campagne militaire - Alliance",
+      "canonicalRef": "wowhead-zone:9663",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9663"
+      ],
+      "canonicalWowheadZoneIds": [
+        9663
+      ],
+      "canonicalParentRef": "continent:kul-tiras",
+      "canonicalParentRefs": [
+        "continent:kul-tiras"
+      ],
+      "canonicalRegionRef": "wowhead-zone:9663"
     },
     {
       "ref": "wowhead-zone:8721",
@@ -94,7 +107,20 @@
         "Kul Tiras",
         "Drustvar"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Drustvar"
+      "pathLabel": "Azeroth > Kul Tiras > Drustvar",
+      "canonicalRef": "wowhead-zone:8721",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8721"
+      ],
+      "canonicalWowheadZoneIds": [
+        8721
+      ],
+      "canonicalParentRef": "continent:kul-tiras",
+      "canonicalParentRefs": [
+        "continent:kul-tiras"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8721"
     },
     {
       "ref": "wowhead-zone:10290",
@@ -134,7 +160,20 @@
         "Kul Tiras",
         "Île de Mécagone"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone"
+      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone",
+      "canonicalRef": "wowhead-zone:10290",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:10290"
+      ],
+      "canonicalWowheadZoneIds": [
+        10290
+      ],
+      "canonicalParentRef": "continent:kul-tiras",
+      "canonicalParentRefs": [
+        "continent:kul-tiras"
+      ],
+      "canonicalRegionRef": "wowhead-zone:10290"
     },
     {
       "ref": "wowhead-zone:9765",
@@ -175,7 +214,20 @@
         "Rade de Tiragarde",
         "Académie Portvaillant"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Académie Portvaillant"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Académie Portvaillant",
+      "canonicalRef": "wowhead-zone:9765",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9765"
+      ],
+      "canonicalWowheadZoneIds": [
+        9765
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:8568",
@@ -216,7 +268,20 @@
         "Rade de Tiragarde",
         "Boralus"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Boralus"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Boralus",
+      "canonicalRef": "wowhead-zone:8568",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8568"
+      ],
+      "canonicalWowheadZoneIds": [
+        8568
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8568"
     },
     {
       "ref": "wowhead-zone:9771",
@@ -257,7 +322,20 @@
         "Rade de Tiragarde",
         "Caserne Portvaillant"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Caserne Portvaillant"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Caserne Portvaillant",
+      "canonicalRef": "wowhead-zone:9771",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9771"
+      ],
+      "canonicalWowheadZoneIds": [
+        9771
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:9407",
@@ -298,7 +376,20 @@
         "Rade de Tiragarde",
         "Chantier naval de la compagnie Corsandre"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Chantier naval de la compagnie Corsandre"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Chantier naval de la compagnie Corsandre",
+      "canonicalRef": "wowhead-zone:9407",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9407"
+      ],
+      "canonicalWowheadZoneIds": [
+        9407
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:9627",
@@ -339,7 +430,20 @@
         "Rade de Tiragarde",
         "Communs de la Croisée des Vents"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Communs de la Croisée des Vents"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Communs de la Croisée des Vents",
+      "canonicalRef": "wowhead-zone:9627",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9627"
+      ],
+      "canonicalWowheadZoneIds": [
+        9627
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:8716",
@@ -380,7 +484,20 @@
         "Rade de Tiragarde",
         "Donjon Portvaillant"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Donjon Portvaillant"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Donjon Portvaillant",
+      "canonicalRef": "wowhead-zone:8716",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8716"
+      ],
+      "canonicalWowheadZoneIds": [
+        8716
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:8956",
@@ -421,7 +538,20 @@
         "Rade de Tiragarde",
         "Gol Thovas"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Gol Thovas"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Gol Thovas",
+      "canonicalRef": "wowhead-zone:8956",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8956"
+      ],
+      "canonicalWowheadZoneIds": [
+        8956
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:10034",
@@ -462,7 +592,20 @@
         "Rade de Tiragarde",
         "Haut-Quartier"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Haut-Quartier"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Haut-Quartier",
+      "canonicalRef": "wowhead-zone:10034",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:10034"
+      ],
+      "canonicalWowheadZoneIds": [
+        10034
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:8718",
@@ -503,7 +646,20 @@
         "Rade de Tiragarde",
         "Marché des Alizés"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Marché des Alizés"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Marché des Alizés",
+      "canonicalRef": "wowhead-zone:8718",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8718"
+      ],
+      "canonicalWowheadZoneIds": [
+        8718
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:9554",
@@ -544,7 +700,20 @@
         "Rade de Tiragarde",
         "Monastère Chantorage"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Monastère Chantorage"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Monastère Chantorage",
+      "canonicalRef": "wowhead-zone:9554",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9554"
+      ],
+      "canonicalWowheadZoneIds": [
+        9554
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:9593",
@@ -585,7 +754,20 @@
         "Rade de Tiragarde",
         "Place de l’Unité"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Place de l’Unité"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Place de l’Unité",
+      "canonicalRef": "wowhead-zone:9593",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9593"
+      ],
+      "canonicalWowheadZoneIds": [
+        9593
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:9588",
@@ -626,7 +808,20 @@
         "Rade de Tiragarde",
         "Pointe du Crochet"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Pointe du Crochet"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Pointe du Crochet",
+      "canonicalRef": "wowhead-zone:9588",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9588"
+      ],
+      "canonicalWowheadZoneIds": [
+        9588
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:8717",
@@ -667,7 +862,20 @@
         "Rade de Tiragarde",
         "Port de Boralus"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Port de Boralus"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Port de Boralus",
+      "canonicalRef": "wowhead-zone:8717",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8717"
+      ],
+      "canonicalWowheadZoneIds": [
+        8717
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:9980",
@@ -708,7 +916,20 @@
         "Rade de Tiragarde",
         "Quais Corsandre"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Quais Corsandre"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Quais Corsandre",
+      "canonicalRef": "wowhead-zone:9980",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9980"
+      ],
+      "canonicalWowheadZoneIds": [
+        9980
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:9979",
@@ -749,7 +970,20 @@
         "Rade de Tiragarde",
         "Quartier de Mèchumide"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Quartier de Mèchumide"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Quartier de Mèchumide",
+      "canonicalRef": "wowhead-zone:9979",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9979"
+      ],
+      "canonicalWowheadZoneIds": [
+        9979
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:9602",
@@ -790,7 +1024,20 @@
         "Rade de Tiragarde",
         "Voie du Marin"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Voie du Marin"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde > Voie du Marin",
+      "canonicalRef": "wowhead-zone:9602",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9602"
+      ],
+      "canonicalWowheadZoneIds": [
+        9602
+      ],
+      "canonicalParentRef": "wowhead-zone:8567",
+      "canonicalParentRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:8567",
@@ -830,7 +1077,20 @@
         "Kul Tiras",
         "Rade de Tiragarde"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde"
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde",
+      "canonicalRef": "wowhead-zone:8567",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8567"
+      ],
+      "canonicalWowheadZoneIds": [
+        8567
+      ],
+      "canonicalParentRef": "continent:kul-tiras",
+      "canonicalParentRefs": [
+        "continent:kul-tiras"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8567"
     },
     {
       "ref": "wowhead-zone:8978",
@@ -870,7 +1130,20 @@
         "Kul Tiras",
         "Tol Dagor"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Tol Dagor"
+      "pathLabel": "Azeroth > Kul Tiras > Tol Dagor",
+      "canonicalRef": "wowhead-zone:8978",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8978"
+      ],
+      "canonicalWowheadZoneIds": [
+        8978
+      ],
+      "canonicalParentRef": "continent:kul-tiras",
+      "canonicalParentRefs": [
+        "continent:kul-tiras"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8978"
     },
     {
       "ref": "wowhead-zone:9562",
@@ -911,7 +1184,20 @@
         "Vallée Chantorage",
         "Cœur-de-Ronces"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage > Cœur-de-Ronces"
+      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage > Cœur-de-Ronces",
+      "canonicalRef": "wowhead-zone:9562",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9562"
+      ],
+      "canonicalWowheadZoneIds": [
+        9562
+      ],
+      "canonicalParentRef": "wowhead-zone:9042",
+      "canonicalParentRefs": [
+        "wowhead-zone:9042"
+      ],
+      "canonicalRegionRef": "wowhead-zone:9042"
     },
     {
       "ref": "wowhead-zone:9698",
@@ -952,7 +1238,20 @@
         "Vallée Chantorage",
         "Mine de sel gemme"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage > Mine de sel gemme"
+      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage > Mine de sel gemme",
+      "canonicalRef": "wowhead-zone:9698",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9698"
+      ],
+      "canonicalWowheadZoneIds": [
+        9698
+      ],
+      "canonicalParentRef": "wowhead-zone:9042",
+      "canonicalParentRefs": [
+        "wowhead-zone:9042"
+      ],
+      "canonicalRegionRef": "wowhead-zone:9042"
     },
     {
       "ref": "wowhead-zone:9042",
@@ -992,7 +1291,20 @@
         "Kul Tiras",
         "Vallée Chantorage"
       ],
-      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage"
+      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage",
+      "canonicalRef": "wowhead-zone:9042",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9042"
+      ],
+      "canonicalWowheadZoneIds": [
+        9042
+      ],
+      "canonicalParentRef": "continent:kul-tiras",
+      "canonicalParentRefs": [
+        "continent:kul-tiras"
+      ],
+      "canonicalRegionRef": "wowhead-zone:9042"
     }
   ],
   "exclusions": [

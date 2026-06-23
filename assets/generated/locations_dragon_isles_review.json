@@ -54,7 +54,20 @@
         "Îles aux Dragons",
         "Amirdrassil"
       ],
-      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil"
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "canonicalRef": "wowhead-zone:15105",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:15105"
+      ],
+      "canonicalWowheadZoneIds": [
+        15105
+      ],
+      "canonicalParentRef": "continent:dragon-isles",
+      "canonicalParentRefs": [
+        "continent:dragon-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:15105"
     },
     {
       "ref": "wowhead-zone:14433",
@@ -94,7 +107,20 @@
         "Îles aux Dragons",
         "Confins Interdits"
       ],
-      "pathLabel": "Azeroth > Îles aux Dragons > Confins Interdits"
+      "pathLabel": "Azeroth > Îles aux Dragons > Confins Interdits",
+      "canonicalRef": "wowhead-zone:14433",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:14433"
+      ],
+      "canonicalWowheadZoneIds": [
+        14433
+      ],
+      "canonicalParentRef": "continent:dragon-isles",
+      "canonicalParentRefs": [
+        "continent:dragon-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:14433"
     },
     {
       "ref": "wowhead-zone:14022",
@@ -134,7 +160,20 @@
         "Îles aux Dragons",
         "Grotte de Zaralek"
       ],
-      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek"
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "canonicalRef": "wowhead-zone:14022",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:14022"
+      ],
+      "canonicalWowheadZoneIds": [
+        14022
+      ],
+      "canonicalParentRef": "continent:dragon-isles",
+      "canonicalParentRefs": [
+        "continent:dragon-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:14022"
     },
     {
       "ref": "wowhead-zone:13645",
@@ -174,7 +213,20 @@
         "Îles aux Dragons",
         "Plaines d’Ohn’ahra"
       ],
-      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra"
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "canonicalRef": "wowhead-zone:13645",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13645"
+      ],
+      "canonicalWowheadZoneIds": [
+        13645
+      ],
+      "canonicalParentRef": "continent:dragon-isles",
+      "canonicalParentRefs": [
+        "continent:dragon-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13645"
     },
     {
       "ref": "wowhead-zone:14529",
@@ -214,7 +266,20 @@
         "Îles aux Dragons",
         "Rêve d’émeraude"
       ],
-      "pathLabel": "Azeroth > Îles aux Dragons > Rêve d’émeraude"
+      "pathLabel": "Azeroth > Îles aux Dragons > Rêve d’émeraude",
+      "canonicalRef": "wowhead-zone:14529",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:14529"
+      ],
+      "canonicalWowheadZoneIds": [
+        14529
+      ],
+      "canonicalParentRef": "continent:dragon-isles",
+      "canonicalParentRefs": [
+        "continent:dragon-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:14529"
     },
     {
       "ref": "wowhead-zone:13644",
@@ -254,7 +319,20 @@
         "Îles aux Dragons",
         "Rivages de l’Éveil"
       ],
-      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil"
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "canonicalRef": "wowhead-zone:13644",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13644"
+      ],
+      "canonicalWowheadZoneIds": [
+        13644
+      ],
+      "canonicalParentRef": "continent:dragon-isles",
+      "canonicalParentRefs": [
+        "continent:dragon-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13644"
     },
     {
       "ref": "wowhead-zone:13802",
@@ -295,7 +373,20 @@
         "Thaldraszus",
         "Réservoir du Bastion de Tyr"
       ],
-      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus > Réservoir du Bastion de Tyr"
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus > Réservoir du Bastion de Tyr",
+      "canonicalRef": "wowhead-zone:13802",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13802"
+      ],
+      "canonicalWowheadZoneIds": [
+        13802
+      ],
+      "canonicalParentRef": "wowhead-zone:13647",
+      "canonicalParentRefs": [
+        "wowhead-zone:13647"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13647"
     },
     {
       "ref": "wowhead-zone:13862",
@@ -336,7 +427,20 @@
         "Thaldraszus",
         "Valdrakken"
       ],
-      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus > Valdrakken"
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus > Valdrakken",
+      "canonicalRef": "wowhead-zone:13862",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13862"
+      ],
+      "canonicalWowheadZoneIds": [
+        13862
+      ],
+      "canonicalParentRef": "wowhead-zone:13647",
+      "canonicalParentRefs": [
+        "wowhead-zone:13647"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13862"
     },
     {
       "ref": "wowhead-zone:13647",
@@ -376,7 +480,20 @@
         "Îles aux Dragons",
         "Thaldraszus"
       ],
-      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus"
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus",
+      "canonicalRef": "wowhead-zone:13647",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13647"
+      ],
+      "canonicalWowheadZoneIds": [
+        13647
+      ],
+      "canonicalParentRef": "continent:dragon-isles",
+      "canonicalParentRefs": [
+        "continent:dragon-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13647"
     },
     {
       "ref": "wowhead-zone:14620",
@@ -417,7 +534,20 @@
         "Travée d’Azur",
         "Choix de Dragon bleu"
       ],
-      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur > Choix de Dragon bleu"
+      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur > Choix de Dragon bleu",
+      "canonicalRef": "wowhead-zone:14620",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:14620"
+      ],
+      "canonicalWowheadZoneIds": [
+        14620
+      ],
+      "canonicalParentRef": "wowhead-zone:13646",
+      "canonicalParentRefs": [
+        "wowhead-zone:13646"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13646"
     },
     {
       "ref": "wowhead-zone:13844",
@@ -458,7 +588,20 @@
         "Travée d’Azur",
         "Repos du Traître"
       ],
-      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur > Repos du Traître"
+      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur > Repos du Traître",
+      "canonicalRef": "wowhead-zone:13844",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13844"
+      ],
+      "canonicalWowheadZoneIds": [
+        13844
+      ],
+      "canonicalParentRef": "wowhead-zone:13646",
+      "canonicalParentRefs": [
+        "wowhead-zone:13646"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13646"
     },
     {
       "ref": "wowhead-zone:13646",
@@ -498,7 +641,20 @@
         "Îles aux Dragons",
         "Travée d’Azur"
       ],
-      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur"
+      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur",
+      "canonicalRef": "wowhead-zone:13646",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13646"
+      ],
+      "canonicalWowheadZoneIds": [
+        13646
+      ],
+      "canonicalParentRef": "continent:dragon-isles",
+      "canonicalParentRefs": [
+        "continent:dragon-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13646"
     }
   ],
   "exclusions": [

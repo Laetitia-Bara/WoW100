@@ -87,6 +87,7 @@ class JsonPlannerSource {
       final draft = draftById[blizzardId];
       final mamytwink = mamytwinkCandidates[blizzardId];
       final reference = referenceById[blizzardId];
+      final location = reference?['location'] as Map<String, dynamic>?;
       final expansionKey =
           wowhead?['expansion'] ??
           manual?['expansion'] ??
@@ -151,8 +152,15 @@ class JsonPlannerSource {
           name: mount['name'] ?? mamytwink?['mamytwinkName'] ?? '',
           category: TrackingCategory.mounts,
           expansion: itemExpansion,
-          zone: TrackingItem.unknownZone,
-          region: TrackingItem.unknownZone,
+          zone:
+              _metadataString(location, 'regionName') ??
+              TrackingItem.unknownZone,
+          subzone: _metadataString(location, 'subzoneName') ?? '',
+          region:
+              _metadataString(location, 'continentName') ??
+              TrackingItem.unknownZone,
+          world: _metadataString(location, 'worldName') ?? '',
+          locationRef: _metadataString(reference, 'primaryLocationRef') ?? '',
           instance: expansion == WowExpansion.allMounts
               ? status
               : instance.isEmpty

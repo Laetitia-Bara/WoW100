@@ -55,7 +55,20 @@
         "Pandarie",
         "Bataille en haute mer"
       ],
-      "pathLabel": "Azeroth > Pandarie > Bataille en haute mer"
+      "pathLabel": "Azeroth > Pandarie > Bataille en haute mer",
+      "canonicalRef": "wowhead-zone:6567",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6567"
+      ],
+      "canonicalWowheadZoneIds": [
+        6567
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6567"
     },
     {
       "ref": "wowhead-zone:6611",
@@ -95,7 +108,20 @@
         "Pandarie",
         "Dalaran"
       ],
-      "pathLabel": "Azeroth > Pandarie > Dalaran"
+      "pathLabel": "Azeroth > Pandarie > Dalaran",
+      "canonicalRef": "wowhead-zone:6611",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6611"
+      ],
+      "canonicalWowheadZoneIds": [
+        6611
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6611"
     },
     {
       "ref": "wowhead-zone:6678",
@@ -135,7 +161,20 @@
         "Pandarie",
         "Dun Morogh"
       ],
-      "pathLabel": "Azeroth > Pandarie > Dun Morogh"
+      "pathLabel": "Azeroth > Pandarie > Dun Morogh",
+      "canonicalRef": "wowhead-zone:6678",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6678"
+      ],
+      "canonicalWowheadZoneIds": [
+        6678
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6678"
     },
     {
       "ref": "wowhead-zone:6616",
@@ -176,7 +215,20 @@
         "Étendues sauvages de Krasarang",
         "Un peu de patience"
       ],
-      "pathLabel": "Azeroth > Pandarie > Étendues sauvages de Krasarang > Un peu de patience"
+      "pathLabel": "Azeroth > Pandarie > Étendues sauvages de Krasarang > Un peu de patience",
+      "canonicalRef": "wowhead-zone:6616",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6616"
+      ],
+      "canonicalWowheadZoneIds": [
+        6616
+      ],
+      "canonicalParentRef": "wowhead-zone:6134",
+      "canonicalParentRefs": [
+        "wowhead-zone:6134"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6134"
     },
     {
       "ref": "wowhead-zone:6309",
@@ -217,7 +269,20 @@
         "Étendues sauvages de Krasarang",
         "Unga Ingou"
       ],
-      "pathLabel": "Azeroth > Pandarie > Étendues sauvages de Krasarang > Unga Ingou"
+      "pathLabel": "Azeroth > Pandarie > Étendues sauvages de Krasarang > Unga Ingou",
+      "canonicalRef": "wowhead-zone:6309",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6309"
+      ],
+      "canonicalWowheadZoneIds": [
+        6309
+      ],
+      "canonicalParentRef": "wowhead-zone:6134",
+      "canonicalParentRefs": [
+        "wowhead-zone:6134"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6134"
     },
     {
       "ref": "wowhead-zone:6134",
@@ -257,7 +322,20 @@
         "Pandarie",
         "Étendues sauvages de Krasarang"
       ],
-      "pathLabel": "Azeroth > Pandarie > Étendues sauvages de Krasarang"
+      "pathLabel": "Azeroth > Pandarie > Étendues sauvages de Krasarang",
+      "canonicalRef": "wowhead-zone:6134",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6134"
+      ],
+      "canonicalWowheadZoneIds": [
+        6134
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6134"
     },
     {
       "ref": "wowhead-zone:6661",
@@ -297,7 +375,20 @@
         "Pandarie",
         "Île des Géants"
       ],
-      "pathLabel": "Azeroth > Pandarie > Île des Géants"
+      "pathLabel": "Azeroth > Pandarie > Île des Géants",
+      "canonicalRef": "wowhead-zone:6661",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6661"
+      ],
+      "canonicalWowheadZoneIds": [
+        6661
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6661"
     },
     {
       "ref": "wowhead-zone:6771",
@@ -338,7 +429,20 @@
         "Île du Temps figé",
         "Tournoi des Astres vénérables"
       ],
-      "pathLabel": "Azeroth > Pandarie > Île du Temps figé > Tournoi des Astres vénérables"
+      "pathLabel": "Azeroth > Pandarie > Île du Temps figé > Tournoi des Astres vénérables",
+      "canonicalRef": "wowhead-zone:6771",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6771"
+      ],
+      "canonicalWowheadZoneIds": [
+        6771
+      ],
+      "canonicalParentRef": "wowhead-zone:6757",
+      "canonicalParentRefs": [
+        "wowhead-zone:6757"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6757"
     },
     {
       "ref": "wowhead-zone:6757",
@@ -378,7 +482,20 @@
         "Pandarie",
         "Île du Temps figé"
       ],
-      "pathLabel": "Azeroth > Pandarie > Île du Temps figé"
+      "pathLabel": "Azeroth > Pandarie > Île du Temps figé",
+      "canonicalRef": "wowhead-zone:6757",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6757"
+      ],
+      "canonicalWowheadZoneIds": [
+        6757
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6757"
     },
     {
       "ref": "wowhead-zone:6716",
@@ -419,7 +536,20 @@
         "Île du Tonnerre",
         "Citadelle du Roi-tonnerre"
       ],
-      "pathLabel": "Azeroth > Pandarie > Île du Tonnerre > Citadelle du Roi-tonnerre"
+      "pathLabel": "Azeroth > Pandarie > Île du Tonnerre > Citadelle du Roi-tonnerre",
+      "canonicalRef": "wowhead-zone:6716",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6716"
+      ],
+      "canonicalWowheadZoneIds": [
+        6716
+      ],
+      "canonicalParentRef": "wowhead-zone:6507",
+      "canonicalParentRefs": [
+        "wowhead-zone:6507"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6507"
     },
     {
       "ref": "wowhead-zone:6507",
@@ -459,7 +589,20 @@
         "Pandarie",
         "Île du Tonnerre"
       ],
-      "pathLabel": "Azeroth > Pandarie > Île du Tonnerre"
+      "pathLabel": "Azeroth > Pandarie > Île du Tonnerre",
+      "canonicalRef": "wowhead-zone:6507",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6507"
+      ],
+      "canonicalWowheadZoneIds": [
+        6507
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6507"
     },
     {
       "ref": "wowhead-zone:6328",
@@ -499,7 +642,20 @@
         "Pandarie",
         "L’assaut de Zan’vess"
       ],
-      "pathLabel": "Azeroth > Pandarie > L’assaut de Zan’vess"
+      "pathLabel": "Azeroth > Pandarie > L’assaut de Zan’vess",
+      "canonicalRef": "wowhead-zone:6328",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6328"
+      ],
+      "canonicalWowheadZoneIds": [
+        6328
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6328"
     },
     {
       "ref": "wowhead-zone:6565",
@@ -540,7 +696,20 @@
         "L’escalier Dérobé",
         "Une dague dans la nuit"
       ],
-      "pathLabel": "Azeroth > Pandarie > L’escalier Dérobé > Une dague dans la nuit"
+      "pathLabel": "Azeroth > Pandarie > L’escalier Dérobé > Une dague dans la nuit",
+      "canonicalRef": "wowhead-zone:6565",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6565"
+      ],
+      "canonicalWowheadZoneIds": [
+        6565
+      ],
+      "canonicalParentRef": "wowhead-zone:6006",
+      "canonicalParentRefs": [
+        "wowhead-zone:6006"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6006"
     },
     {
       "ref": "wowhead-zone:6006",
@@ -580,7 +749,20 @@
         "Pandarie",
         "L’escalier Dérobé"
       ],
-      "pathLabel": "Azeroth > Pandarie > L’escalier Dérobé"
+      "pathLabel": "Azeroth > Pandarie > L’escalier Dérobé",
+      "canonicalRef": "wowhead-zone:6006",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6006"
+      ],
+      "canonicalWowheadZoneIds": [
+        6006
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6006"
     },
     {
       "ref": "wowhead-zone:6101",
@@ -621,7 +803,20 @@
         "La forêt de Jade",
         "Une bière foudroyante"
       ],
-      "pathLabel": "Azeroth > Pandarie > La forêt de Jade > Une bière foudroyante"
+      "pathLabel": "Azeroth > Pandarie > La forêt de Jade > Une bière foudroyante",
+      "canonicalRef": "wowhead-zone:6101",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6101"
+      ],
+      "canonicalWowheadZoneIds": [
+        6101
+      ],
+      "canonicalParentRef": "wowhead-zone:5785",
+      "canonicalParentRefs": [
+        "wowhead-zone:5785"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5785"
     },
     {
       "ref": "wowhead-zone:5785",
@@ -661,7 +856,20 @@
         "Pandarie",
         "La forêt de Jade"
       ],
-      "pathLabel": "Azeroth > Pandarie > La forêt de Jade"
+      "pathLabel": "Azeroth > Pandarie > La forêt de Jade",
+      "canonicalRef": "wowhead-zone:5785",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5785"
+      ],
+      "canonicalWowheadZoneIds": [
+        5785
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5785"
     },
     {
       "ref": "wowhead-zone:6863",
@@ -702,7 +910,20 @@
         "Marché de Micolline",
         "L’ingrédient mystère"
       ],
-      "pathLabel": "Azeroth > Pandarie > Marché de Micolline > L’ingrédient mystère"
+      "pathLabel": "Azeroth > Pandarie > Marché de Micolline > L’ingrédient mystère",
+      "canonicalRef": "wowhead-zone:6863",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6863"
+      ],
+      "canonicalWowheadZoneIds": [
+        6863
+      ],
+      "canonicalParentRef": "manual-location:pandaria:marche-de-micolline",
+      "canonicalParentRefs": [
+        "manual-location:pandaria:marche-de-micolline"
+      ],
+      "canonicalRegionRef": "manual-location:pandaria:marche-de-micolline"
     },
     {
       "ref": "manual-location:pandaria:marche-de-micolline",
@@ -741,7 +962,18 @@
         "Pandarie",
         "Marché de Micolline"
       ],
-      "pathLabel": "Azeroth > Pandarie > Marché de Micolline"
+      "pathLabel": "Azeroth > Pandarie > Marché de Micolline",
+      "canonicalRef": "manual-location:pandaria:marche-de-micolline",
+      "isCanonical": true,
+      "aliasRefs": [
+        "manual-location:pandaria:marche-de-micolline"
+      ],
+      "canonicalWowheadZoneIds": [],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "manual-location:pandaria:marche-de-micolline"
     },
     {
       "ref": "wowhead-zone:6040",
@@ -781,7 +1013,20 @@
         "Pandarie",
         "Marécage d’Âprefange"
       ],
-      "pathLabel": "Azeroth > Pandarie > Marécage d’Âprefange"
+      "pathLabel": "Azeroth > Pandarie > Marécage d’Âprefange",
+      "canonicalRef": "wowhead-zone:6040",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6040"
+      ],
+      "canonicalWowheadZoneIds": [
+        6040
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6040"
     },
     {
       "ref": "wowhead-zone:6731",
@@ -822,7 +1067,20 @@
         "Orgrimmar",
         "Les secrets de Ragefeu"
       ],
-      "pathLabel": "Azeroth > Pandarie > Orgrimmar > Les secrets de Ragefeu"
+      "pathLabel": "Azeroth > Pandarie > Orgrimmar > Les secrets de Ragefeu",
+      "canonicalRef": "wowhead-zone:6731",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6731"
+      ],
+      "canonicalWowheadZoneIds": [
+        6731
+      ],
+      "canonicalParentRef": "manual-location:pandaria:orgrimmar",
+      "canonicalParentRefs": [
+        "manual-location:pandaria:orgrimmar"
+      ],
+      "canonicalRegionRef": "manual-location:pandaria:orgrimmar"
     },
     {
       "ref": "manual-location:pandaria:orgrimmar",
@@ -861,7 +1119,18 @@
         "Pandarie",
         "Orgrimmar"
       ],
-      "pathLabel": "Azeroth > Pandarie > Orgrimmar"
+      "pathLabel": "Azeroth > Pandarie > Orgrimmar",
+      "canonicalRef": "manual-location:pandaria:orgrimmar",
+      "isCanonical": true,
+      "aliasRefs": [
+        "manual-location:pandaria:orgrimmar"
+      ],
+      "canonicalWowheadZoneIds": [],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "manual-location:pandaria:orgrimmar"
     },
     {
       "ref": "wowhead-zone:6219",
@@ -902,7 +1171,20 @@
         "Sommet de Kun-Lai",
         "Arène de l’Annihilation"
       ],
-      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai > Arène de l’Annihilation"
+      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai > Arène de l’Annihilation",
+      "canonicalRef": "wowhead-zone:6219",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6219"
+      ],
+      "canonicalWowheadZoneIds": [
+        6219
+      ],
+      "canonicalParentRef": "wowhead-zone:5841",
+      "canonicalParentRefs": [
+        "wowhead-zone:5841"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5841"
     },
     {
       "ref": "wowhead-zone:6208",
@@ -943,7 +1225,20 @@
         "Sommet de Kun-Lai",
         "Crypte des Rois oubliés"
       ],
-      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai > Crypte des Rois oubliés"
+      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai > Crypte des Rois oubliés",
+      "canonicalRef": "wowhead-zone:6208",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6208"
+      ],
+      "canonicalWowheadZoneIds": [
+        6208
+      ],
+      "canonicalParentRef": "wowhead-zone:5841",
+      "canonicalParentRefs": [
+        "wowhead-zone:5841"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5841"
     },
     {
       "ref": "wowhead-zone:6426",
@@ -984,7 +1279,20 @@
         "Sommet de Kun-Lai",
         "Festival de Brasse-Lune"
       ],
-      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai > Festival de Brasse-Lune"
+      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai > Festival de Brasse-Lune",
+      "canonicalRef": "wowhead-zone:6426",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6426"
+      ],
+      "canonicalWowheadZoneIds": [
+        6426
+      ],
+      "canonicalParentRef": "wowhead-zone:5841",
+      "canonicalParentRefs": [
+        "wowhead-zone:5841"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5841"
     },
     {
       "ref": "wowhead-zone:6852",
@@ -1025,7 +1333,20 @@
         "Sommet de Kun-Lai",
         "Ordalie"
       ],
-      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai > Ordalie"
+      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai > Ordalie",
+      "canonicalRef": "wowhead-zone:6852",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6852"
+      ],
+      "canonicalWowheadZoneIds": [
+        6852
+      ],
+      "canonicalParentRef": "wowhead-zone:5841",
+      "canonicalParentRefs": [
+        "wowhead-zone:5841"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5841"
     },
     {
       "ref": "wowhead-zone:5841",
@@ -1065,7 +1386,20 @@
         "Pandarie",
         "Sommet de Kun-Lai"
       ],
-      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai"
+      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai",
+      "canonicalRef": "wowhead-zone:5841",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5841"
+      ],
+      "canonicalWowheadZoneIds": [
+        5841
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5841"
     },
     {
       "ref": "wowhead-zone:5842",
@@ -1105,7 +1439,20 @@
         "Pandarie",
         "Steppes de Tanglong"
       ],
-      "pathLabel": "Azeroth > Pandarie > Steppes de Tanglong"
+      "pathLabel": "Azeroth > Pandarie > Steppes de Tanglong",
+      "canonicalRef": "wowhead-zone:5842",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5842"
+      ],
+      "canonicalWowheadZoneIds": [
+        5842
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5842"
     },
     {
       "ref": "wowhead-zone:6613",
@@ -1145,7 +1492,20 @@
         "Pandarie",
         "Temple noir"
       ],
-      "pathLabel": "Azeroth > Pandarie > Temple noir"
+      "pathLabel": "Azeroth > Pandarie > Temple noir",
+      "canonicalRef": "wowhead-zone:6613",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6613"
+      ],
+      "canonicalWowheadZoneIds": [
+        6613
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6613"
     },
     {
       "ref": "wowhead-zone:6138",
@@ -1185,7 +1545,20 @@
         "Pandarie",
         "Terres de l’Angoisse"
       ],
-      "pathLabel": "Azeroth > Pandarie > Terres de l’Angoisse"
+      "pathLabel": "Azeroth > Pandarie > Terres de l’Angoisse",
+      "canonicalRef": "wowhead-zone:6138",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6138"
+      ],
+      "canonicalWowheadZoneIds": [
+        6138
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6138"
     },
     {
       "ref": "wowhead-zone:5840",
@@ -1225,7 +1598,20 @@
         "Pandarie",
         "Val de l’Éternel printemps"
       ],
-      "pathLabel": "Azeroth > Pandarie > Val de l’Éternel printemps"
+      "pathLabel": "Azeroth > Pandarie > Val de l’Éternel printemps",
+      "canonicalRef": "wowhead-zone:5840",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5840"
+      ],
+      "canonicalWowheadZoneIds": [
+        5840
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5840"
     },
     {
       "ref": "wowhead-zone:5805",
@@ -1265,7 +1651,20 @@
         "Pandarie",
         "Vallée des Quatre vents"
       ],
-      "pathLabel": "Azeroth > Pandarie > Vallée des Quatre vents"
+      "pathLabel": "Azeroth > Pandarie > Vallée des Quatre vents",
+      "canonicalRef": "wowhead-zone:5805",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5805"
+      ],
+      "canonicalWowheadZoneIds": [
+        5805
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5805"
     }
   ],
   "exclusions": [

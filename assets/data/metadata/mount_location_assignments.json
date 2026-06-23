@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "description": "Associations de localisation confirmees manuellement pour les montures. Les chemins sont derives du catalogue de localisation via primaryLocationRef.",
+  "assignments": [
+    {
+      "blizzardId": 2322,
+      "primaryLocationRef": "wowhead-zone:10416",
+      "locationRefs": [
+        "wowhead-zone:10416"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Conserver Ile aux Sirenes plutot que Chambre Oubliee."
+    }
+  ]
+}

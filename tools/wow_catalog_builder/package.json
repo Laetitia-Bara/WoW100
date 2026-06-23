@@ -9,6 +9,7 @@
     "build:pets": "node --use-system-ca build_pets_catalog.js",
     "build:mamytwink-candidates": "node --use-system-ca build_mamytwink_mount_candidates.js",
     "build:mounts-reference": "node --use-system-ca build_mounts_reference_catalog.js",
+    "validate:mount-locations": "node validate_mount_location_links.js",
     "audit:patches": "node --use-system-ca audit_wowhead_patch_classification.js",
     "audit:distribution": "node audit_catalog_distribution.js"
   },

@@ -436,7 +436,10 @@ class _PlannerPageState extends State<PlannerPage> {
       final matchesSearch =
           query.isEmpty ||
           item.name.toLowerCase().contains(query) ||
+          item.world.toLowerCase().contains(query) ||
           item.region.toLowerCase().contains(query) ||
+          item.zone.toLowerCase().contains(query) ||
+          item.subzone.toLowerCase().contains(query) ||
           group.toLowerCase().contains(query) ||
           item.instance.toLowerCase().contains(query) ||
           item.source.toLowerCase().contains(query);
@@ -1231,11 +1234,13 @@ class _PlannerItemCard extends StatelessWidget {
                   Text(
                     [
                       item.expansion.label,
+                      if (item.world.isNotEmpty) item.world,
                       if (item.region.isNotEmpty &&
                           WowRegionFilter.normalize(item.region) !=
                               WowRegionFilter.normalize(item.zone))
                         item.region,
                       item.zone,
+                      if (item.subzone.isNotEmpty) item.subzone,
                       groupLabel,
                       item.source,
                     ].where((value) => value.isNotEmpty).join(' • '),

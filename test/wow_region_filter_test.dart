@@ -87,26 +87,28 @@ void main() {
     expect(filters.any((filter) => filter.zone == 'Kalimdor'), isFalse);
   });
 
-  test('region filters only expose known world zones or Sans zone', () async {
-    final repository = JsonPlannerRepository();
+  test(
+    'region filters only expose known zones, catalog locations or Sans zone',
+    () async {
+      final repository = JsonPlannerRepository();
 
-    for (final info in WowExpansionCatalog.all) {
-      final expansion = info.expansion;
-      if (expansion == WowExpansion.total) continue;
+      for (final info in WowExpansionCatalog.all) {
+        final expansion = info.expansion;
+        if (expansion == WowExpansion.total) continue;
 
-      final items = await repository.getItems(expansion);
-      final filters = items
-          .map(WowRegionFilter.fromItem)
-          .whereType<WowRegionFilter>();
-
-      for (final filter in filters) {
-        expect(
-          filter.zone == TrackingItem.unknownZone ||
-              TrackingItem.isKnownWorldZone(filter.zone),
-          isTrue,
-          reason: '${info.name}: ${filter.zone}',
-        );
+        final items = await repository.getItems(expansion);
+        for (final item in items) {
+          final filter = WowRegionFilter.fromItem(item);
+          if (filter == null) continue;
+          expect(
+            filter.zone == TrackingItem.unknownZone ||
+                TrackingItem.isKnownWorldZone(filter.zone) ||
+                item.locationRef.isNotEmpty,
+            isTrue,
+            reason: '${info.name}: ${filter.zone}',
+          );
+        }
       }
-    }
-  });
+    },
+  );
 }

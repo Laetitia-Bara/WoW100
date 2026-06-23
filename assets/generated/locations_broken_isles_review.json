@@ -55,7 +55,20 @@
         "Îles Brisées",
         "Achérus : le fort d’Ébène"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Achérus : le fort d’Ébène"
+      "pathLabel": "Azeroth > Îles Brisées > Achérus : le fort d’Ébène",
+      "canonicalRef": "wowhead-zone:7679",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7679"
+      ],
+      "canonicalWowheadZoneIds": [
+        7679
+      ],
+      "canonicalParentRef": "continent:broken-isles",
+      "canonicalParentRefs": [
+        "continent:broken-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7679"
     },
     {
       "ref": "wowhead-zone:8701",
@@ -96,7 +109,20 @@
         "Argus",
         "Érédath"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Argus > Érédath"
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Érédath",
+      "canonicalRef": "wowhead-zone:8701",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8701"
+      ],
+      "canonicalWowheadZoneIds": [
+        8701
+      ],
+      "canonicalParentRef": "manual-location:broken-isles:argus",
+      "canonicalParentRefs": [
+        "manual-location:broken-isles:argus"
+      ],
+      "canonicalRegionRef": "manual-location:broken-isles:argus"
     },
     {
       "ref": "wowhead-zone:8899",
@@ -137,7 +163,20 @@
         "Argus",
         "Étendues Antoréennes"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Argus > Étendues Antoréennes"
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Étendues Antoréennes",
+      "canonicalRef": "wowhead-zone:8899",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8899"
+      ],
+      "canonicalWowheadZoneIds": [
+        8899
+      ],
+      "canonicalParentRef": "manual-location:broken-isles:argus",
+      "canonicalParentRefs": [
+        "manual-location:broken-isles:argus"
+      ],
+      "canonicalRegionRef": "manual-location:broken-isles:argus"
     },
     {
       "ref": "wowhead-zone:8574",
@@ -178,7 +217,20 @@
         "Argus",
         "Krokuun"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Argus > Krokuun"
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Krokuun",
+      "canonicalRef": "wowhead-zone:8574",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8574"
+      ],
+      "canonicalWowheadZoneIds": [
+        8574
+      ],
+      "canonicalParentRef": "manual-location:broken-isles:argus",
+      "canonicalParentRefs": [
+        "manual-location:broken-isles:argus"
+      ],
+      "canonicalRegionRef": "manual-location:broken-isles:argus"
     },
     {
       "ref": "wowhead-zone:8916",
@@ -219,7 +271,20 @@
         "Argus",
         "Le Vindicaar"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Argus > Le Vindicaar"
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Le Vindicaar",
+      "canonicalRef": "wowhead-zone:8916",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8916"
+      ],
+      "canonicalWowheadZoneIds": [
+        8916
+      ],
+      "canonicalParentRef": "manual-location:broken-isles:argus",
+      "canonicalParentRefs": [
+        "manual-location:broken-isles:argus"
+      ],
+      "canonicalRegionRef": "manual-location:broken-isles:argus"
     },
     {
       "ref": "manual-location:broken-isles:argus",
@@ -258,7 +323,18 @@
         "Îles Brisées",
         "Argus"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Argus"
+      "pathLabel": "Azeroth > Îles Brisées > Argus",
+      "canonicalRef": "manual-location:broken-isles:argus",
+      "isCanonical": true,
+      "aliasRefs": [
+        "manual-location:broken-isles:argus"
+      ],
+      "canonicalWowheadZoneIds": [],
+      "canonicalParentRef": "continent:broken-isles",
+      "canonicalParentRefs": [
+        "continent:broken-isles"
+      ],
+      "canonicalRegionRef": "manual-location:broken-isles:argus"
     },
     {
       "ref": "wowhead-zone:7578",
@@ -299,7 +375,20 @@
         "Azsuna",
         "Œil d’Azshara"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Azsuna > Œil d’Azshara"
+      "pathLabel": "Azeroth > Îles Brisées > Azsuna > Œil d’Azshara",
+      "canonicalRef": "wowhead-zone:7578",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7578"
+      ],
+      "canonicalWowheadZoneIds": [
+        7578
+      ],
+      "canonicalParentRef": "wowhead-zone:7334",
+      "canonicalParentRefs": [
+        "wowhead-zone:7334"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7334"
     },
     {
       "ref": "wowhead-zone:7334",
@@ -339,7 +428,20 @@
         "Îles Brisées",
         "Azsuna"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Azsuna"
+      "pathLabel": "Azeroth > Îles Brisées > Azsuna",
+      "canonicalRef": "wowhead-zone:7334",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7334"
+      ],
+      "canonicalWowheadZoneIds": [
+        7334
+      ],
+      "canonicalParentRef": "continent:broken-isles",
+      "canonicalParentRefs": [
+        "continent:broken-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7334"
     },
     {
       "ref": "wowhead-zone:8012",
@@ -380,7 +482,20 @@
         "Dalaran",
         "Chambre des Ombres"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Chambre des Ombres"
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Chambre des Ombres",
+      "canonicalRef": "wowhead-zone:8012",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8012"
+      ],
+      "canonicalWowheadZoneIds": [
+        8012
+      ],
+      "canonicalParentRef": "wowhead-zone:7502",
+      "canonicalParentRefs": [
+        "wowhead-zone:7502"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7502"
     },
     {
       "ref": "wowhead-zone:8392",
@@ -421,7 +536,20 @@
         "Dalaran",
         "Égouts de Dalaran"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Égouts de Dalaran"
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Égouts de Dalaran",
+      "canonicalRef": "wowhead-zone:8392",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8392"
+      ],
+      "canonicalWowheadZoneIds": [
+        8392
+      ],
+      "canonicalParentRef": "wowhead-zone:7502",
+      "canonicalParentRefs": [
+        "wowhead-zone:7502"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7502"
     },
     {
       "ref": "wowhead-zone:7875",
@@ -462,7 +590,20 @@
         "Dalaran",
         "Faille de Scareffroi"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Faille de Scareffroi"
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Faille de Scareffroi",
+      "canonicalRef": "wowhead-zone:7875",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7875"
+      ],
+      "canonicalWowheadZoneIds": [
+        7875
+      ],
+      "canonicalParentRef": "wowhead-zone:7502",
+      "canonicalParentRefs": [
+        "wowhead-zone:7502"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7502"
     },
     {
       "ref": "wowhead-zone:7879",
@@ -503,7 +644,20 @@
         "Dalaran",
         "Hall du Gardien"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Hall du Gardien"
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Hall du Gardien",
+      "canonicalRef": "wowhead-zone:7879",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7879"
+      ],
+      "canonicalWowheadZoneIds": [
+        7879
+      ],
+      "canonicalParentRef": "wowhead-zone:7502",
+      "canonicalParentRefs": [
+        "wowhead-zone:7502"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7502"
     },
     {
       "ref": "wowhead-zone:7745",
@@ -544,7 +698,20 @@
         "Dalaran",
         "Le Maelström"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Le Maelström"
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Le Maelström",
+      "canonicalRef": "wowhead-zone:7745",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7745"
+      ],
+      "canonicalWowheadZoneIds": [
+        7745
+      ],
+      "canonicalParentRef": "wowhead-zone:7502",
+      "canonicalParentRefs": [
+        "wowhead-zone:7502"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7502"
     },
     {
       "ref": "wowhead-zone:8023",
@@ -585,7 +752,20 @@
         "Dalaran",
         "Le Marteau gangrené"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Le Marteau gangrené"
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Le Marteau gangrené",
+      "canonicalRef": "wowhead-zone:8023",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8023"
+      ],
+      "canonicalWowheadZoneIds": [
+        8023
+      ],
+      "canonicalParentRef": "wowhead-zone:7502",
+      "canonicalParentRefs": [
+        "wowhead-zone:7502"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7502"
     },
     {
       "ref": "wowhead-zone:7834",
@@ -626,7 +806,20 @@
         "Dalaran",
         "Temple Halo-du-Néant"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Temple Halo-du-Néant"
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran > Temple Halo-du-Néant",
+      "canonicalRef": "wowhead-zone:7834",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7834"
+      ],
+      "canonicalWowheadZoneIds": [
+        7834
+      ],
+      "canonicalParentRef": "wowhead-zone:7502",
+      "canonicalParentRefs": [
+        "wowhead-zone:7502"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7502"
     },
     {
       "ref": "wowhead-zone:7877",
@@ -667,7 +860,20 @@
         "Haut-Roc",
         "Pavillon du Traqueur"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc > Pavillon du Traqueur"
+      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc > Pavillon du Traqueur",
+      "canonicalRef": "wowhead-zone:7877",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7877"
+      ],
+      "canonicalWowheadZoneIds": [
+        7877
+      ],
+      "canonicalParentRef": "wowhead-zone:7503",
+      "canonicalParentRefs": [
+        "wowhead-zone:7503"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7503"
     },
     {
       "ref": "wowhead-zone:7731",
@@ -708,7 +914,20 @@
         "Haut-Roc",
         "Totem-du-Tonnerre"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc > Totem-du-Tonnerre"
+      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc > Totem-du-Tonnerre",
+      "canonicalRef": "wowhead-zone:7731",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7731"
+      ],
+      "canonicalWowheadZoneIds": [
+        7731
+      ],
+      "canonicalParentRef": "wowhead-zone:7503",
+      "canonicalParentRefs": [
+        "wowhead-zone:7503"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7503"
     },
     {
       "ref": "wowhead-zone:7503",
@@ -748,7 +967,20 @@
         "Îles Brisées",
         "Haut-Roc"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc"
+      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc",
+      "canonicalRef": "wowhead-zone:7503",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7503"
+      ],
+      "canonicalWowheadZoneIds": [
+        7503
+      ],
+      "canonicalParentRef": "continent:broken-isles",
+      "canonicalParentRefs": [
+        "continent:broken-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7503"
     },
     {
       "ref": "wowhead-zone:7903",
@@ -789,7 +1021,20 @@
         "L'île Vagabonde",
         "Temple des Cinq matins"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > L'île Vagabonde > Temple des Cinq matins"
+      "pathLabel": "Azeroth > Îles Brisées > L'île Vagabonde > Temple des Cinq matins",
+      "canonicalRef": "wowhead-zone:7903",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7903"
+      ],
+      "canonicalWowheadZoneIds": [
+        7903
+      ],
+      "canonicalParentRef": "manual-location:broken-isles:l-ile-vagabonde",
+      "canonicalParentRefs": [
+        "manual-location:broken-isles:l-ile-vagabonde"
+      ],
+      "canonicalRegionRef": "manual-location:broken-isles:l-ile-vagabonde"
     },
     {
       "ref": "manual-location:broken-isles:l-ile-vagabonde",
@@ -828,7 +1073,18 @@
         "Îles Brisées",
         "L'île Vagabonde"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > L'île Vagabonde"
+      "pathLabel": "Azeroth > Îles Brisées > L'île Vagabonde",
+      "canonicalRef": "manual-location:broken-isles:l-ile-vagabonde",
+      "isCanonical": true,
+      "aliasRefs": [
+        "manual-location:broken-isles:l-ile-vagabonde"
+      ],
+      "canonicalWowheadZoneIds": [],
+      "canonicalParentRef": "continent:broken-isles",
+      "canonicalParentRefs": [
+        "continent:broken-isles"
+      ],
+      "canonicalRegionRef": "manual-location:broken-isles:l-ile-vagabonde"
     },
     {
       "ref": "wowhead-zone:7638",
@@ -869,7 +1125,20 @@
         "Maleterres de l'Est",
         "Sanctum de la Lumière"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Maleterres de l'Est > Sanctum de la Lumière"
+      "pathLabel": "Azeroth > Îles Brisées > Maleterres de l'Est > Sanctum de la Lumière",
+      "canonicalRef": "wowhead-zone:7638",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7638"
+      ],
+      "canonicalWowheadZoneIds": [
+        7638
+      ],
+      "canonicalParentRef": "manual-location:broken-isles:maleterres-de-l-est",
+      "canonicalParentRefs": [
+        "manual-location:broken-isles:maleterres-de-l-est"
+      ],
+      "canonicalRegionRef": "manual-location:broken-isles:maleterres-de-l-est"
     },
     {
       "ref": "manual-location:broken-isles:maleterres-de-l-est",
@@ -908,7 +1177,18 @@
         "Îles Brisées",
         "Maleterres de l'Est"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Maleterres de l'Est"
+      "pathLabel": "Azeroth > Îles Brisées > Maleterres de l'Est",
+      "canonicalRef": "manual-location:broken-isles:maleterres-de-l-est",
+      "isCanonical": true,
+      "aliasRefs": [
+        "manual-location:broken-isles:maleterres-de-l-est"
+      ],
+      "canonicalWowheadZoneIds": [],
+      "canonicalParentRef": "continent:broken-isles",
+      "canonicalParentRefs": [
+        "continent:broken-isles"
+      ],
+      "canonicalRegionRef": "manual-location:broken-isles:maleterres-de-l-est"
     },
     {
       "ref": "wowhead-zone:16752",
@@ -949,7 +1229,20 @@
         "Rivage Brisé",
         "Navire abandonné de la Légion"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Rivage Brisé > Navire abandonné de la Légion"
+      "pathLabel": "Azeroth > Îles Brisées > Rivage Brisé > Navire abandonné de la Légion",
+      "canonicalRef": "wowhead-zone:16752",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:16752"
+      ],
+      "canonicalWowheadZoneIds": [
+        16752
+      ],
+      "canonicalParentRef": "wowhead-zone:7543",
+      "canonicalParentRefs": [
+        "wowhead-zone:7543"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7543"
     },
     {
       "ref": "wowhead-zone:7543",
@@ -989,7 +1282,20 @@
         "Îles Brisées",
         "Rivage Brisé"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Rivage Brisé"
+      "pathLabel": "Azeroth > Îles Brisées > Rivage Brisé",
+      "canonicalRef": "wowhead-zone:7543",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7543"
+      ],
+      "canonicalWowheadZoneIds": [
+        7543
+      ],
+      "canonicalParentRef": "continent:broken-isles",
+      "canonicalParentRefs": [
+        "continent:broken-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7543"
     },
     {
       "ref": "wowhead-zone:7637",
@@ -1029,7 +1335,20 @@
         "Îles Brisées",
         "Suramar"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Suramar"
+      "pathLabel": "Azeroth > Îles Brisées > Suramar",
+      "canonicalRef": "wowhead-zone:7637",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7637"
+      ],
+      "canonicalWowheadZoneIds": [
+        7637
+      ],
+      "canonicalParentRef": "continent:broken-isles",
+      "canonicalParentRefs": [
+        "continent:broken-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7637"
     },
     {
       "ref": "wowhead-zone:7830",
@@ -1070,7 +1389,20 @@
         "Tornheim",
         "Bas-fonds de l’embouchure de Hel"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Tornheim > Bas-fonds de l’embouchure de Hel"
+      "pathLabel": "Azeroth > Îles Brisées > Tornheim > Bas-fonds de l’embouchure de Hel",
+      "canonicalRef": "wowhead-zone:7830",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7830"
+      ],
+      "canonicalWowheadZoneIds": [
+        7830
+      ],
+      "canonicalParentRef": "wowhead-zone:7541",
+      "canonicalParentRefs": [
+        "wowhead-zone:7541"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7541"
     },
     {
       "ref": "wowhead-zone:7744",
@@ -1111,7 +1443,20 @@
         "Tornheim",
         "Repos du bouclier"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Tornheim > Repos du bouclier"
+      "pathLabel": "Azeroth > Îles Brisées > Tornheim > Repos du bouclier",
+      "canonicalRef": "wowhead-zone:7744",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7744"
+      ],
+      "canonicalWowheadZoneIds": [
+        7744
+      ],
+      "canonicalParentRef": "wowhead-zone:7541",
+      "canonicalParentRefs": [
+        "wowhead-zone:7541"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7541"
     },
     {
       "ref": "wowhead-zone:7813",
@@ -1152,7 +1497,20 @@
         "Tornheim",
         "Séjour céleste"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Tornheim > Séjour céleste"
+      "pathLabel": "Azeroth > Îles Brisées > Tornheim > Séjour céleste",
+      "canonicalRef": "wowhead-zone:7813",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7813"
+      ],
+      "canonicalWowheadZoneIds": [
+        7813
+      ],
+      "canonicalParentRef": "wowhead-zone:7541",
+      "canonicalParentRefs": [
+        "wowhead-zone:7541"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7541"
     },
     {
       "ref": "wowhead-zone:7541",
@@ -1192,7 +1550,20 @@
         "Îles Brisées",
         "Tornheim"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Tornheim"
+      "pathLabel": "Azeroth > Îles Brisées > Tornheim",
+      "canonicalRef": "wowhead-zone:7541",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7541"
+      ],
+      "canonicalWowheadZoneIds": [
+        7541
+      ],
+      "canonicalParentRef": "continent:broken-isles",
+      "canonicalParentRefs": [
+        "continent:broken-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7541"
     },
     {
       "ref": "wowhead-zone:7846",
@@ -1233,7 +1604,20 @@
         "Val’sharah",
         "La Sylverêve"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Val’sharah > La Sylverêve"
+      "pathLabel": "Azeroth > Îles Brisées > Val’sharah > La Sylverêve",
+      "canonicalRef": "wowhead-zone:7846",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7846"
+      ],
+      "canonicalWowheadZoneIds": [
+        7846
+      ],
+      "canonicalParentRef": "wowhead-zone:7558",
+      "canonicalParentRefs": [
+        "wowhead-zone:7558"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7558"
     },
     {
       "ref": "wowhead-zone:7558",
@@ -1273,7 +1657,20 @@
         "Îles Brisées",
         "Val’sharah"
       ],
-      "pathLabel": "Azeroth > Îles Brisées > Val’sharah"
+      "pathLabel": "Azeroth > Îles Brisées > Val’sharah",
+      "canonicalRef": "wowhead-zone:7558",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7558"
+      ],
+      "canonicalWowheadZoneIds": [
+        7558
+      ],
+      "canonicalParentRef": "continent:broken-isles",
+      "canonicalParentRefs": [
+        "continent:broken-isles"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7558"
     }
   ],
   "exclusions": [

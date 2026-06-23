@@ -4,13 +4,13 @@
   "mamytwinkDetailPagesCached": 1271,
   "missingByField": {
     "patch": 674,
-    "locationCandidates": 1333,
+    "locationCandidates": 1328,
     "difficulty": 345,
     "source": 345,
     "expansion": 345,
     "mamytwinkUrl": 345,
     "wowheadItemUrl": 168,
-    "locationDecision": 77
+    "locationDecision": 14
   },
   "byDifficulty": {
     "Facile": 609,
@@ -121,10 +121,12 @@
     "11.2.5": 38,
     "12.0.5": 9
   },
-  "locationCandidateCount": 275,
-  "locationsAutoAssigned": 197,
+  "locationCandidateCount": 280,
+  "locationsAutoAssigned": 265,
   "locationsManuallyAssigned": 1,
-  "locationsRequiringManualChoice": 77,
-  "locationsWithoutCandidate": 1333,
+  "locationsRequiringManualChoice": 14,
+  "locationsWithoutCandidate": 1328,
+  "locationsWithCompleteHierarchy": 266,
+  "assignedLocationRefs": 46,
   "note": "Les correspondances exactes avec une candidate unique sont affectees automatiquement. Les correspondances multiples restent reservees a la revue manuelle."
 }

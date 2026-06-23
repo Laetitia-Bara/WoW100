@@ -53,7 +53,20 @@
         "Quel'Thalas",
         "Bois des Chants éternels"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "canonicalRef": "wowhead-zone:15968",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:15968"
+      ],
+      "canonicalWowheadZoneIds": [
+        15968
+      ],
+      "canonicalParentRef": "continent:quel-thalas",
+      "canonicalParentRefs": [
+        "continent:quel-thalas"
+      ],
+      "canonicalRegionRef": "wowhead-zone:15968"
     },
     {
       "ref": "wowhead-zone:15921",
@@ -95,7 +108,20 @@
         "Harandar",
         "La Tanière"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar > La Tanière"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar > La Tanière",
+      "canonicalRef": "wowhead-zone:15921",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:15921"
+      ],
+      "canonicalWowheadZoneIds": [
+        15921
+      ],
+      "canonicalParentRef": "wowhead-zone:15355",
+      "canonicalParentRefs": [
+        "wowhead-zone:15355"
+      ],
+      "canonicalRegionRef": "wowhead-zone:15355"
     },
     {
       "ref": "wowhead-zone:15355",
@@ -136,7 +162,20 @@
         "Quel'Thalas",
         "Harandar"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "canonicalRef": "wowhead-zone:15355",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:15355"
+      ],
+      "canonicalWowheadZoneIds": [
+        15355
+      ],
+      "canonicalParentRef": "continent:quel-thalas",
+      "canonicalParentRefs": [
+        "continent:quel-thalas"
+      ],
+      "canonicalRegionRef": "wowhead-zone:15355"
     },
     {
       "ref": "wowhead-zone:16211",
@@ -178,7 +217,20 @@
         "Île de Quel’Danas",
         "Place Parhélion"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Île de Quel’Danas > Place Parhélion"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Île de Quel’Danas > Place Parhélion",
+      "canonicalRef": "wowhead-zone:16211",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:16211"
+      ],
+      "canonicalWowheadZoneIds": [
+        16211
+      ],
+      "canonicalParentRef": "wowhead-zone:16182",
+      "canonicalParentRefs": [
+        "wowhead-zone:16182"
+      ],
+      "canonicalRegionRef": "wowhead-zone:16182"
     },
     {
       "ref": "wowhead-zone:16182",
@@ -219,7 +271,20 @@
         "Quel'Thalas",
         "Île de Quel’Danas"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Île de Quel’Danas"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Île de Quel’Danas",
+      "canonicalRef": "wowhead-zone:16182",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:16182"
+      ],
+      "canonicalWowheadZoneIds": [
+        16182
+      ],
+      "canonicalParentRef": "continent:quel-thalas",
+      "canonicalParentRefs": [
+        "continent:quel-thalas"
+      ],
+      "canonicalRegionRef": "wowhead-zone:16182"
     },
     {
       "ref": "wowhead-zone:15959",
@@ -261,7 +326,20 @@
         "Tempête du Vide",
         "Colline Meurtrière"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Colline Meurtrière"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Colline Meurtrière",
+      "canonicalRef": "wowhead-zone:15959",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:15959"
+      ],
+      "canonicalWowheadZoneIds": [
+        15959
+      ],
+      "canonicalParentRef": "wowhead-zone:16648",
+      "canonicalParentRefs": [
+        "wowhead-zone:16648"
+      ],
+      "canonicalRegionRef": "wowhead-zone:16648"
     },
     {
       "ref": "wowhead-zone:15958",
@@ -303,7 +381,20 @@
         "Tempête du Vide",
         "Perchoir des Maîtres"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Perchoir des Maîtres"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Perchoir des Maîtres",
+      "canonicalRef": "wowhead-zone:15958",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:15958"
+      ],
+      "canonicalWowheadZoneIds": [
+        15958
+      ],
+      "canonicalParentRef": "wowhead-zone:16648",
+      "canonicalParentRefs": [
+        "wowhead-zone:16648"
+      ],
+      "canonicalRegionRef": "wowhead-zone:16648"
     },
     {
       "ref": "wowhead-zone:15954",
@@ -345,7 +436,20 @@
         "Tempête du Vide",
         "Point-nexus Xenas"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Point-nexus Xenas"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Point-nexus Xenas",
+      "canonicalRef": "wowhead-zone:15954",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:15954"
+      ],
+      "canonicalWowheadZoneIds": [
+        15954
+      ],
+      "canonicalParentRef": "wowhead-zone:16648",
+      "canonicalParentRefs": [
+        "wowhead-zone:16648"
+      ],
+      "canonicalRegionRef": "wowhead-zone:16648"
     },
     {
       "ref": "wowhead-zone:16534",
@@ -387,7 +491,20 @@
         "Tempête du Vide",
         "Repaire de Prédaxas"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Repaire de Prédaxas"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Repaire de Prédaxas",
+      "canonicalRef": "wowhead-zone:16534",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:16534"
+      ],
+      "canonicalWowheadZoneIds": [
+        16534
+      ],
+      "canonicalParentRef": "wowhead-zone:16648",
+      "canonicalParentRefs": [
+        "wowhead-zone:16648"
+      ],
+      "canonicalRegionRef": "wowhead-zone:16648"
     },
     {
       "ref": "wowhead-zone:16581",
@@ -429,7 +546,20 @@
         "Tempête du Vide",
         "Terrier du Vide de l’Abondance"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Terrier du Vide de l’Abondance"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Terrier du Vide de l’Abondance",
+      "canonicalRef": "wowhead-zone:16581",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:16581"
+      ],
+      "canonicalWowheadZoneIds": [
+        16581
+      ],
+      "canonicalParentRef": "wowhead-zone:16648",
+      "canonicalParentRefs": [
+        "wowhead-zone:16648"
+      ],
+      "canonicalRegionRef": "wowhead-zone:16648"
     },
     {
       "ref": "wowhead-zone:16648",
@@ -470,7 +600,20 @@
         "Quel'Thalas",
         "Tempête du Vide"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide",
+      "canonicalRef": "wowhead-zone:16648",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:16648"
+      ],
+      "canonicalWowheadZoneIds": [
+        16648
+      ],
+      "canonicalParentRef": "continent:quel-thalas",
+      "canonicalParentRefs": [
+        "continent:quel-thalas"
+      ],
+      "canonicalRegionRef": "wowhead-zone:16648"
     },
     {
       "ref": "wowhead-zone:15947",
@@ -511,7 +654,20 @@
         "Quel'Thalas",
         "Zul’Aman"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+      "canonicalRef": "wowhead-zone:15947",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:15947"
+      ],
+      "canonicalWowheadZoneIds": [
+        15947
+      ],
+      "canonicalParentRef": "continent:quel-thalas",
+      "canonicalParentRefs": [
+        "continent:quel-thalas"
+      ],
+      "canonicalRegionRef": "wowhead-zone:15947"
     }
   ],
   "exclusions": [

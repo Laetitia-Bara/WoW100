@@ -50,7 +50,20 @@
         "Le Maelström",
         "Île de Sombrelune"
       ],
-      "pathLabel": "Azeroth > Le Maelström > Île de Sombrelune"
+      "pathLabel": "Azeroth > Le Maelström > Île de Sombrelune",
+      "canonicalRef": "wowhead-zone:5861",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5861"
+      ],
+      "canonicalWowheadZoneIds": [
+        5861
+      ],
+      "canonicalParentRef": "continent:maelstrom",
+      "canonicalParentRefs": [
+        "continent:maelstrom"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5861"
     },
     {
       "ref": "wowhead-zone:4737",
@@ -89,7 +102,20 @@
         "Le Maelström",
         "Kezan"
       ],
-      "pathLabel": "Azeroth > Le Maelström > Kezan"
+      "pathLabel": "Azeroth > Le Maelström > Kezan",
+      "canonicalRef": "wowhead-zone:4737",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:4737"
+      ],
+      "canonicalWowheadZoneIds": [
+        4737
+      ],
+      "canonicalParentRef": "continent:maelstrom",
+      "canonicalParentRefs": [
+        "continent:maelstrom"
+      ],
+      "canonicalRegionRef": "wowhead-zone:4737"
     },
     {
       "ref": "wowhead-zone:5736",
@@ -128,7 +154,20 @@
         "Le Maelström",
         "L’île Vagabonde"
       ],
-      "pathLabel": "Azeroth > Le Maelström > L’île Vagabonde"
+      "pathLabel": "Azeroth > Le Maelström > L’île Vagabonde",
+      "canonicalRef": "wowhead-zone:5736",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5736"
+      ],
+      "canonicalWowheadZoneIds": [
+        5736
+      ],
+      "canonicalParentRef": "continent:maelstrom",
+      "canonicalParentRefs": [
+        "continent:maelstrom"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5736"
     },
     {
       "ref": "wowhead-zone:8093",
@@ -168,7 +207,20 @@
         "Le Maelström",
         "La cime du Vortex"
       ],
-      "pathLabel": "Azeroth > Le Maelström > Le Maelström > La cime du Vortex"
+      "pathLabel": "Azeroth > Le Maelström > Le Maelström > La cime du Vortex",
+      "canonicalRef": "wowhead-zone:8093",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8093"
+      ],
+      "canonicalWowheadZoneIds": [
+        8093
+      ],
+      "canonicalParentRef": "wowhead-zone:5416",
+      "canonicalParentRefs": [
+        "wowhead-zone:5416"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5416"
     },
     {
       "ref": "wowhead-zone:5416",
@@ -207,7 +259,20 @@
         "Le Maelström",
         "Le Maelström"
       ],
-      "pathLabel": "Azeroth > Le Maelström > Le Maelström"
+      "pathLabel": "Azeroth > Le Maelström > Le Maelström",
+      "canonicalRef": "wowhead-zone:5416",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5416"
+      ],
+      "canonicalWowheadZoneIds": [
+        5416
+      ],
+      "canonicalParentRef": "continent:maelstrom",
+      "canonicalParentRefs": [
+        "continent:maelstrom"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5416"
     },
     {
       "ref": "wowhead-zone:5042",
@@ -246,7 +311,20 @@
         "Le Maelström",
         "Le Tréfonds"
       ],
-      "pathLabel": "Azeroth > Le Maelström > Le Tréfonds"
+      "pathLabel": "Azeroth > Le Maelström > Le Tréfonds",
+      "canonicalRef": "wowhead-zone:5042",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5042"
+      ],
+      "canonicalWowheadZoneIds": [
+        5042
+      ],
+      "canonicalParentRef": "continent:maelstrom",
+      "canonicalParentRefs": [
+        "continent:maelstrom"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5042"
     },
     {
       "ref": "wowhead-zone:4720",
@@ -285,7 +363,20 @@
         "Le Maelström",
         "Les îles Perdues"
       ],
-      "pathLabel": "Azeroth > Le Maelström > Les îles Perdues"
+      "pathLabel": "Azeroth > Le Maelström > Les îles Perdues",
+      "canonicalRef": "wowhead-zone:4720",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:4720"
+      ],
+      "canonicalWowheadZoneIds": [
+        4720
+      ],
+      "canonicalParentRef": "continent:maelstrom",
+      "canonicalParentRefs": [
+        "continent:maelstrom"
+      ],
+      "canonicalRegionRef": "wowhead-zone:4720"
     },
     {
       "ref": "wowhead-zone:5389",
@@ -324,7 +415,20 @@
         "Le Maelström",
         "Péninsule de Tol Barad"
       ],
-      "pathLabel": "Azeroth > Le Maelström > Péninsule de Tol Barad"
+      "pathLabel": "Azeroth > Le Maelström > Péninsule de Tol Barad",
+      "canonicalRef": "wowhead-zone:5389",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5389"
+      ],
+      "canonicalWowheadZoneIds": [
+        5389
+      ],
+      "canonicalParentRef": "continent:maelstrom",
+      "canonicalParentRefs": [
+        "continent:maelstrom"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5389"
     },
     {
       "ref": "wowhead-zone:5095",
@@ -363,7 +467,20 @@
         "Le Maelström",
         "Tol Barad"
       ],
-      "pathLabel": "Azeroth > Le Maelström > Tol Barad"
+      "pathLabel": "Azeroth > Le Maelström > Tol Barad",
+      "canonicalRef": "wowhead-zone:5095",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5095"
+      ],
+      "canonicalWowheadZoneIds": [
+        5095
+      ],
+      "canonicalParentRef": "continent:maelstrom",
+      "canonicalParentRefs": [
+        "continent:maelstrom"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5095"
     }
   ],
   "exclusions": []

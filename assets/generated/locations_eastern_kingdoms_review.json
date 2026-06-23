@@ -55,7 +55,20 @@
         "Royaumes de l'Est",
         "Atal’Utek"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Atal’Utek"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Atal’Utek",
+      "canonicalRef": "wowhead-zone:16365",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:16365"
+      ],
+      "canonicalWowheadZoneIds": [
+        16365
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:16365"
     },
     {
       "ref": "wowhead-zone:8526",
@@ -95,7 +108,20 @@
         "Royaumes de l'Est",
         "Bassin Arathi"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Bassin Arathi"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bassin Arathi",
+      "canonicalRef": "wowhead-zone:8526",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8526"
+      ],
+      "canonicalWowheadZoneIds": [
+        8526
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8526"
     },
     {
       "ref": "wowhead-zone:10",
@@ -135,7 +161,20 @@
         "Royaumes de l'Est",
         "Bois de la Pénombre"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Bois de la Pénombre"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bois de la Pénombre",
+      "canonicalRef": "wowhead-zone:10",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:10"
+      ],
+      "canonicalWowheadZoneIds": [
+        10
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:10"
     },
     {
       "ref": "wowhead-zone:3430",
@@ -176,7 +215,20 @@
         "Bois des Chants éternels (The Burning Crusade)",
         "Bois des Chants éternels"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels (The Burning Crusade) > Bois des Chants éternels"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels (The Burning Crusade) > Bois des Chants éternels",
+      "canonicalRef": "wowhead-zone:3430",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3430"
+      ],
+      "canonicalWowheadZoneIds": [
+        3430
+      ],
+      "canonicalParentRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels-the-burning-crusade",
+      "canonicalParentRefs": [
+        "manual-location:eastern-kingdoms:bois-des-chants-eternels-the-burning-crusade"
+      ],
+      "canonicalRegionRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels-the-burning-crusade"
     },
     {
       "ref": "wowhead-zone:3487",
@@ -217,7 +269,20 @@
         "Bois des Chants éternels (The Burning Crusade)",
         "Lune-d’Argent"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels (The Burning Crusade) > Lune-d’Argent"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels (The Burning Crusade) > Lune-d’Argent",
+      "canonicalRef": "wowhead-zone:3487",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3487"
+      ],
+      "canonicalWowheadZoneIds": [
+        3487
+      ],
+      "canonicalParentRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels-the-burning-crusade",
+      "canonicalParentRefs": [
+        "manual-location:eastern-kingdoms:bois-des-chants-eternels-the-burning-crusade"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3487"
     },
     {
       "ref": "manual-location:eastern-kingdoms:bois-des-chants-eternels-the-burning-crusade",
@@ -256,7 +321,18 @@
         "Royaumes de l'Est",
         "Bois des Chants éternels (The Burning Crusade)"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels (The Burning Crusade)"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels (The Burning Crusade)",
+      "canonicalRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels-the-burning-crusade",
+      "isCanonical": true,
+      "aliasRefs": [
+        "manual-location:eastern-kingdoms:bois-des-chants-eternels-the-burning-crusade"
+      ],
+      "canonicalWowheadZoneIds": [],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels-the-burning-crusade"
     },
     {
       "ref": "wowhead-zone:6455",
@@ -297,7 +373,20 @@
         "Bois des Chants éternels",
         "Île de Haut-Soleil"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Île de Haut-Soleil"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Île de Haut-Soleil",
+      "canonicalRef": "wowhead-zone:6455",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6455"
+      ],
+      "canonicalWowheadZoneIds": [
+        6455
+      ],
+      "canonicalParentRef": "wowhead-zone:15173",
+      "canonicalParentRefs": [
+        "wowhead-zone:15173"
+      ],
+      "canonicalRegionRef": "wowhead-zone:15173"
     },
     {
       "ref": "wowhead-zone:15969",
@@ -338,7 +427,20 @@
         "Bois des Chants éternels",
         "Lune-d’Argent"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Lune-d’Argent"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Lune-d’Argent",
+      "canonicalRef": "wowhead-zone:15969",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:15969"
+      ],
+      "canonicalWowheadZoneIds": [
+        15969
+      ],
+      "canonicalParentRef": "wowhead-zone:15173",
+      "canonicalParentRefs": [
+        "wowhead-zone:15173"
+      ],
+      "canonicalRegionRef": "wowhead-zone:15969"
     },
     {
       "ref": "wowhead-zone:15173",
@@ -378,7 +480,20 @@
         "Royaumes de l'Est",
         "Bois des Chants éternels"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels",
+      "canonicalRef": "wowhead-zone:15173",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:15173"
+      ],
+      "canonicalWowheadZoneIds": [
+        15173
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:15173"
     },
     {
       "ref": "wowhead-zone:1497",
@@ -419,7 +534,20 @@
         "Clairières de Tirisfal",
         "Fossoyeuse"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Clairières de Tirisfal > Fossoyeuse"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Clairières de Tirisfal > Fossoyeuse",
+      "canonicalRef": "wowhead-zone:1497",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:1497"
+      ],
+      "canonicalWowheadZoneIds": [
+        1497
+      ],
+      "canonicalParentRef": "wowhead-zone:85",
+      "canonicalParentRefs": [
+        "wowhead-zone:85"
+      ],
+      "canonicalRegionRef": "wowhead-zone:1497"
     },
     {
       "ref": "wowhead-zone:6454",
@@ -460,7 +588,20 @@
         "Clairières de Tirisfal",
         "Le Glas"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Clairières de Tirisfal > Le Glas"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Clairières de Tirisfal > Le Glas",
+      "canonicalRef": "wowhead-zone:6454",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6454"
+      ],
+      "canonicalWowheadZoneIds": [
+        6454
+      ],
+      "canonicalParentRef": "wowhead-zone:85",
+      "canonicalParentRefs": [
+        "wowhead-zone:85"
+      ],
+      "canonicalRegionRef": "wowhead-zone:85"
     },
     {
       "ref": "wowhead-zone:13983",
@@ -500,7 +641,22 @@
         "Royaumes de l'Est",
         "Clairières de Tirisfal"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Clairières de Tirisfal"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Clairières de Tirisfal",
+      "canonicalRef": "wowhead-zone:85",
+      "isCanonical": false,
+      "aliasRefs": [
+        "wowhead-zone:85",
+        "wowhead-zone:13983"
+      ],
+      "canonicalWowheadZoneIds": [
+        85,
+        13983
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:85"
     },
     {
       "ref": "wowhead-zone:85",
@@ -540,7 +696,22 @@
         "Royaumes de l'Est",
         "Clairières de Tirisfal"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Clairières de Tirisfal"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Clairières de Tirisfal",
+      "canonicalRef": "wowhead-zone:85",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:85",
+        "wowhead-zone:13983"
+      ],
+      "canonicalWowheadZoneIds": [
+        85,
+        13983
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:85"
     },
     {
       "ref": "wowhead-zone:36",
@@ -581,7 +752,20 @@
         "Contreforts de Hautebrande",
         "Montagnes d’Alterac"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Contreforts de Hautebrande > Montagnes d’Alterac"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Contreforts de Hautebrande > Montagnes d’Alterac",
+      "canonicalRef": "wowhead-zone:36",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:36"
+      ],
+      "canonicalWowheadZoneIds": [
+        36
+      ],
+      "canonicalParentRef": "wowhead-zone:267",
+      "canonicalParentRefs": [
+        "wowhead-zone:267"
+      ],
+      "canonicalRegionRef": "wowhead-zone:267"
     },
     {
       "ref": "wowhead-zone:267",
@@ -621,7 +805,20 @@
         "Royaumes de l'Est",
         "Contreforts de Hautebrande"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Contreforts de Hautebrande"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Contreforts de Hautebrande",
+      "canonicalRef": "wowhead-zone:267",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:267"
+      ],
+      "canonicalWowheadZoneIds": [
+        267
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:267"
     },
     {
       "ref": "wowhead-zone:14730",
@@ -661,7 +858,20 @@
         "Royaumes de l'Est",
         "Crèche abandonnée"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Crèche abandonnée"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Crèche abandonnée",
+      "canonicalRef": "wowhead-zone:14730",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:14730"
+      ],
+      "canonicalWowheadZoneIds": [
+        14730
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:14730"
     },
     {
       "ref": "wowhead-zone:7888",
@@ -702,7 +912,20 @@
         "Dalaran",
         "La citadelle Pourpre"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > La citadelle Pourpre"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > La citadelle Pourpre",
+      "canonicalRef": "wowhead-zone:7888",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7888"
+      ],
+      "canonicalWowheadZoneIds": [
+        7888
+      ],
+      "canonicalParentRef": "wowhead-zone:7886",
+      "canonicalParentRefs": [
+        "wowhead-zone:7886"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7886"
     },
     {
       "ref": "wowhead-zone:7899",
@@ -743,7 +966,20 @@
         "Dalaran",
         "La halle des mages"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > La halle des mages"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > La halle des mages",
+      "canonicalRef": "wowhead-zone:7899",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7899"
+      ],
+      "canonicalWowheadZoneIds": [
+        7899
+      ],
+      "canonicalParentRef": "wowhead-zone:7886",
+      "canonicalParentRefs": [
+        "wowhead-zone:7886"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7886"
     },
     {
       "ref": "wowhead-zone:7898",
@@ -784,7 +1020,20 @@
         "Dalaran",
         "Le Brunant"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Le Brunant"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Le Brunant",
+      "canonicalRef": "wowhead-zone:7898",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7898"
+      ],
+      "canonicalWowheadZoneIds": [
+        7898
+      ],
+      "canonicalParentRef": "wowhead-zone:7886",
+      "canonicalParentRefs": [
+        "wowhead-zone:7886"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7886"
     },
     {
       "ref": "wowhead-zone:7895",
@@ -825,7 +1074,20 @@
         "Dalaran",
         "Le fort Pourpre"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Le fort Pourpre"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Le fort Pourpre",
+      "canonicalRef": "wowhead-zone:7895",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7895"
+      ],
+      "canonicalWowheadZoneIds": [
+        7895
+      ],
+      "canonicalParentRef": "wowhead-zone:7886",
+      "canonicalParentRefs": [
+        "wowhead-zone:7886"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7886"
     },
     {
       "ref": "wowhead-zone:7897",
@@ -866,7 +1128,20 @@
         "Dalaran",
         "Les Entrailles"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Les Entrailles"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Les Entrailles",
+      "canonicalRef": "wowhead-zone:7897",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7897"
+      ],
+      "canonicalWowheadZoneIds": [
+        7897
+      ],
+      "canonicalParentRef": "wowhead-zone:7886",
+      "canonicalParentRefs": [
+        "wowhead-zone:7886"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7886"
     },
     {
       "ref": "wowhead-zone:7885",
@@ -907,7 +1182,20 @@
         "Dalaran",
         "Monument à Antonidas"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Monument à Antonidas"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Monument à Antonidas",
+      "canonicalRef": "wowhead-zone:7885",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7885"
+      ],
+      "canonicalWowheadZoneIds": [
+        7885
+      ],
+      "canonicalParentRef": "wowhead-zone:7886",
+      "canonicalParentRefs": [
+        "wowhead-zone:7886"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7886"
     },
     {
       "ref": "wowhead-zone:7900",
@@ -948,7 +1236,20 @@
         "Dalaran",
         "Retraite de Vargoth"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Retraite de Vargoth"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Retraite de Vargoth",
+      "canonicalRef": "wowhead-zone:7900",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7900"
+      ],
+      "canonicalWowheadZoneIds": [
+        7900
+      ],
+      "canonicalParentRef": "wowhead-zone:7886",
+      "canonicalParentRefs": [
+        "wowhead-zone:7886"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7886"
     },
     {
       "ref": "wowhead-zone:7892",
@@ -989,7 +1290,20 @@
         "Dalaran",
         "Rochers flottants de Dalaran"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Rochers flottants de Dalaran"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Rochers flottants de Dalaran",
+      "canonicalRef": "wowhead-zone:7892",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7892"
+      ],
+      "canonicalWowheadZoneIds": [
+        7892
+      ],
+      "canonicalParentRef": "wowhead-zone:7886",
+      "canonicalParentRefs": [
+        "wowhead-zone:7886"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7886"
     },
     {
       "ref": "wowhead-zone:7886",
@@ -1029,7 +1343,20 @@
         "Royaumes de l'Est",
         "Dalaran"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran",
+      "canonicalRef": "wowhead-zone:7886",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7886"
+      ],
+      "canonicalWowheadZoneIds": [
+        7886
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7886"
     },
     {
       "ref": "wowhead-zone:41",
@@ -1069,7 +1396,20 @@
         "Royaumes de l'Est",
         "Défilé de Deuillevent"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Défilé de Deuillevent"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Défilé de Deuillevent",
+      "canonicalRef": "wowhead-zone:41",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:41"
+      ],
+      "canonicalWowheadZoneIds": [
+        41
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:41"
     },
     {
       "ref": "wowhead-zone:1537",
@@ -1110,7 +1450,20 @@
         "Dun Morogh",
         "Forgefer"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Forgefer"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Forgefer",
+      "canonicalRef": "wowhead-zone:1537",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:1537"
+      ],
+      "canonicalWowheadZoneIds": [
+        1537
+      ],
+      "canonicalParentRef": "wowhead-zone:1",
+      "canonicalParentRefs": [
+        "wowhead-zone:1"
+      ],
+      "canonicalRegionRef": "wowhead-zone:1537"
     },
     {
       "ref": "wowhead-zone:6457",
@@ -1151,7 +1504,20 @@
         "Dun Morogh",
         "La Nouvelle-Brikabrok"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > La Nouvelle-Brikabrok"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > La Nouvelle-Brikabrok",
+      "canonicalRef": "wowhead-zone:6457",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6457"
+      ],
+      "canonicalWowheadZoneIds": [
+        6457
+      ],
+      "canonicalParentRef": "wowhead-zone:1",
+      "canonicalParentRefs": [
+        "wowhead-zone:1"
+      ],
+      "canonicalRegionRef": "wowhead-zone:1"
     },
     {
       "ref": "wowhead-zone:6176",
@@ -1192,7 +1558,20 @@
         "Dun Morogh",
         "Vallée des Frigères"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Vallée des Frigères"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Vallée des Frigères",
+      "canonicalRef": "wowhead-zone:6176",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6176"
+      ],
+      "canonicalWowheadZoneIds": [
+        6176
+      ],
+      "canonicalParentRef": "wowhead-zone:1",
+      "canonicalParentRefs": [
+        "wowhead-zone:1"
+      ],
+      "canonicalRegionRef": "wowhead-zone:1"
     },
     {
       "ref": "wowhead-zone:1",
@@ -1232,7 +1611,20 @@
         "Royaumes de l'Est",
         "Dun Morogh"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh",
+      "canonicalRef": "wowhead-zone:1",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:1"
+      ],
+      "canonicalWowheadZoneIds": [
+        1
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:1"
     },
     {
       "ref": "wowhead-zone:6170",
@@ -1273,7 +1665,20 @@
         "Forêt d’Elwynn",
         "Comté-du-Nord"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn > Comté-du-Nord"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn > Comté-du-Nord",
+      "canonicalRef": "wowhead-zone:6170",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6170"
+      ],
+      "canonicalWowheadZoneIds": [
+        6170
+      ],
+      "canonicalParentRef": "wowhead-zone:12",
+      "canonicalParentRefs": [
+        "wowhead-zone:12"
+      ],
+      "canonicalRegionRef": "wowhead-zone:12"
     },
     {
       "ref": "wowhead-zone:2257",
@@ -1316,7 +1721,21 @@
         "Hurlevent",
         "Tram des profondeurs"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn > Hurlevent > Tram des profondeurs"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn > Hurlevent > Tram des profondeurs",
+      "canonicalRef": "wowhead-zone:2257",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:2257"
+      ],
+      "canonicalWowheadZoneIds": [
+        2257
+      ],
+      "canonicalParentRef": "wowhead-zone:1519",
+      "canonicalParentRefs": [
+        "wowhead-zone:1519",
+        "wowhead-zone:1537"
+      ],
+      "canonicalRegionRef": "wowhead-zone:1519"
     },
     {
       "ref": "wowhead-zone:1519",
@@ -1357,7 +1776,20 @@
         "Forêt d’Elwynn",
         "Hurlevent"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn > Hurlevent"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn > Hurlevent",
+      "canonicalRef": "wowhead-zone:1519",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:1519"
+      ],
+      "canonicalWowheadZoneIds": [
+        1519
+      ],
+      "canonicalParentRef": "wowhead-zone:12",
+      "canonicalParentRefs": [
+        "wowhead-zone:12"
+      ],
+      "canonicalRegionRef": "wowhead-zone:1519"
     },
     {
       "ref": "wowhead-zone:12",
@@ -1397,7 +1829,20 @@
         "Royaumes de l'Est",
         "Forêt d’Elwynn"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn",
+      "canonicalRef": "wowhead-zone:12",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:12"
+      ],
+      "canonicalWowheadZoneIds": [
+        12
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:12"
     },
     {
       "ref": "wowhead-zone:130",
@@ -1437,7 +1882,20 @@
         "Royaumes de l'Est",
         "Forêt des Pins-Argentés"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt des Pins-Argentés"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt des Pins-Argentés",
+      "canonicalRef": "wowhead-zone:130",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:130"
+      ],
+      "canonicalWowheadZoneIds": [
+        130
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:130"
     },
     {
       "ref": "wowhead-zone:8529",
@@ -1477,7 +1935,20 @@
         "Royaumes de l'Est",
         "Fosse de Saron"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Fosse de Saron"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Fosse de Saron",
+      "canonicalRef": "wowhead-zone:8529",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8529"
+      ],
+      "canonicalWowheadZoneIds": [
+        8529
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8529"
     },
     {
       "ref": "wowhead-zone:4714",
@@ -1518,7 +1989,20 @@
         "Gilnéas (région)",
         "Gilnéas"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Gilnéas (région) > Gilnéas"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Gilnéas (région) > Gilnéas",
+      "canonicalRef": "wowhead-zone:4714",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:4714"
+      ],
+      "canonicalWowheadZoneIds": [
+        4714
+      ],
+      "canonicalParentRef": "manual-location:eastern-kingdoms:gilneas-region",
+      "canonicalParentRefs": [
+        "manual-location:eastern-kingdoms:gilneas-region"
+      ],
+      "canonicalRegionRef": "wowhead-zone:4714"
     },
     {
       "ref": "manual-location:eastern-kingdoms:gilneas-region",
@@ -1557,7 +2041,18 @@
         "Royaumes de l'Est",
         "Gilnéas (région)"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Gilnéas (région)"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Gilnéas (région)",
+      "canonicalRef": "manual-location:eastern-kingdoms:gilneas-region",
+      "isCanonical": true,
+      "aliasRefs": [
+        "manual-location:eastern-kingdoms:gilneas-region"
+      ],
+      "canonicalWowheadZoneIds": [],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "manual-location:eastern-kingdoms:gilneas-region"
     },
     {
       "ref": "wowhead-zone:51",
@@ -1597,7 +2092,20 @@
         "Royaumes de l'Est",
         "Gorge des Vents brûlants"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Gorge des Vents brûlants"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Gorge des Vents brûlants",
+      "canonicalRef": "wowhead-zone:51",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:51"
+      ],
+      "canonicalWowheadZoneIds": [
+        51
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:51"
     },
     {
       "ref": "wowhead-zone:8685",
@@ -1637,7 +2145,20 @@
         "Royaumes de l'Est",
         "Goulet des Chanteguerres"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Goulet des Chanteguerres"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Goulet des Chanteguerres",
+      "canonicalRef": "wowhead-zone:8685",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8685"
+      ],
+      "canonicalWowheadZoneIds": [
+        8685
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8685"
     },
     {
       "ref": "wowhead-zone:45",
@@ -1677,7 +2198,20 @@
         "Royaumes de l'Est",
         "Hautes-terres Arathies"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres Arathies"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres Arathies",
+      "canonicalRef": "wowhead-zone:45",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:45"
+      ],
+      "canonicalWowheadZoneIds": [
+        45
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:45"
     },
     {
       "ref": "wowhead-zone:4922",
@@ -1717,7 +2251,20 @@
         "Royaumes de l'Est",
         "Hautes-terres du Crépuscule"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres du Crépuscule"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres du Crépuscule",
+      "canonicalRef": "wowhead-zone:4922",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:4922"
+      ],
+      "canonicalWowheadZoneIds": [
+        4922
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:4922"
     },
     {
       "ref": "wowhead-zone:7894",
@@ -1757,7 +2304,20 @@
         "Royaumes de l'Est",
         "Île de Dalaran"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Île de Dalaran"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Île de Dalaran",
+      "canonicalRef": "wowhead-zone:7894",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7894"
+      ],
+      "canonicalWowheadZoneIds": [
+        7894
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:7894"
     },
     {
       "ref": "wowhead-zone:9331",
@@ -1797,7 +2357,20 @@
         "Royaumes de l'Est",
         "Île de Gilnéas"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Île de Gilnéas"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Île de Gilnéas",
+      "canonicalRef": "wowhead-zone:9331",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9331"
+      ],
+      "canonicalWowheadZoneIds": [
+        9331
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:9331"
     },
     {
       "ref": "wowhead-zone:17067",
@@ -1838,7 +2411,20 @@
         "Île de Quel’Danas",
         "Le Lycaneum"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Île de Quel’Danas > Le Lycaneum"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Île de Quel’Danas > Le Lycaneum",
+      "canonicalRef": "wowhead-zone:17067",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:17067"
+      ],
+      "canonicalWowheadZoneIds": [
+        17067
+      ],
+      "canonicalParentRef": "wowhead-zone:4080",
+      "canonicalParentRefs": [
+        "wowhead-zone:4080"
+      ],
+      "canonicalRegionRef": "wowhead-zone:4080"
     },
     {
       "ref": "wowhead-zone:4080",
@@ -1878,7 +2464,20 @@
         "Royaumes de l'Est",
         "Île de Quel’Danas"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Île de Quel’Danas"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Île de Quel’Danas",
+      "canonicalRef": "wowhead-zone:4080",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:4080"
+      ],
+      "canonicalWowheadZoneIds": [
+        4080
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:4080"
     },
     {
       "ref": "wowhead-zone:8489",
@@ -1918,7 +2517,20 @@
         "Royaumes de l'Est",
         "Îles"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Îles"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Îles",
+      "canonicalRef": "wowhead-zone:8489",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8489"
+      ],
+      "canonicalWowheadZoneIds": [
+        8489
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8489"
     },
     {
       "ref": "wowhead-zone:4406",
@@ -1958,7 +2570,20 @@
         "Royaumes de l'Est",
         "L’arène des Valeureux"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > L’arène des Valeureux"
+      "pathLabel": "Azeroth > Royaumes de l'Est > L’arène des Valeureux",
+      "canonicalRef": "wowhead-zone:4406",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:4406"
+      ],
+      "canonicalWowheadZoneIds": [
+        4406
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:4406"
     },
     {
       "ref": "wowhead-zone:44",
@@ -1998,7 +2623,20 @@
         "Royaumes de l'Est",
         "Les Carmines"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Les Carmines"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les Carmines",
+      "canonicalRef": "wowhead-zone:44",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:44"
+      ],
+      "canonicalWowheadZoneIds": [
+        44
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:44"
     },
     {
       "ref": "wowhead-zone:47",
@@ -2038,7 +2676,20 @@
         "Royaumes de l'Est",
         "Les Hinterlands"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Les Hinterlands"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les Hinterlands",
+      "canonicalRef": "wowhead-zone:47",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:47"
+      ],
+      "canonicalWowheadZoneIds": [
+        47
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:47"
     },
     {
       "ref": "wowhead-zone:11",
@@ -2078,7 +2729,20 @@
         "Royaumes de l'Est",
         "Les Paluns"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Les Paluns"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les Paluns",
+      "canonicalRef": "wowhead-zone:11",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:11"
+      ],
+      "canonicalWowheadZoneIds": [
+        11
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:11"
     },
     {
       "ref": "wowhead-zone:3433",
@@ -2118,7 +2782,20 @@
         "Royaumes de l'Est",
         "Les terres Fantômes"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Les terres Fantômes"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les terres Fantômes",
+      "canonicalRef": "wowhead-zone:3433",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3433"
+      ],
+      "canonicalWowheadZoneIds": [
+        3433
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3433"
     },
     {
       "ref": "wowhead-zone:8525",
@@ -2158,7 +2835,20 @@
         "Royaumes de l'Est",
         "Les tréfonds Putrides"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Les tréfonds Putrides"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les tréfonds Putrides",
+      "canonicalRef": "wowhead-zone:8525",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8525"
+      ],
+      "canonicalWowheadZoneIds": [
+        8525
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8525"
     },
     {
       "ref": "wowhead-zone:38",
@@ -2198,7 +2888,20 @@
         "Royaumes de l'Est",
         "Loch Modan"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Loch Modan"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Loch Modan",
+      "canonicalRef": "wowhead-zone:38",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:38"
+      ],
+      "canonicalWowheadZoneIds": [
+        38
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:38"
     },
     {
       "ref": "wowhead-zone:4298",
@@ -2238,7 +2941,20 @@
         "Royaumes de l'Est",
         "Maleterres : l’enclave Écarlate"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres : l’enclave Écarlate"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres : l’enclave Écarlate",
+      "canonicalRef": "wowhead-zone:4298",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:4298"
+      ],
+      "canonicalWowheadZoneIds": [
+        4298
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:4298"
     },
     {
       "ref": "wowhead-zone:139",
@@ -2278,7 +2994,20 @@
         "Royaumes de l'Est",
         "Maleterres de l’Est"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est",
+      "canonicalRef": "wowhead-zone:139",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:139"
+      ],
+      "canonicalWowheadZoneIds": [
+        139
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:139"
     },
     {
       "ref": "wowhead-zone:28",
@@ -2318,7 +3047,20 @@
         "Royaumes de l'Est",
         "Maleterres de l’Ouest"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Ouest"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Ouest",
+      "canonicalRef": "wowhead-zone:28",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:28"
+      ],
+      "canonicalWowheadZoneIds": [
+        28
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:28"
     },
     {
       "ref": "wowhead-zone:8",
@@ -2358,7 +3100,20 @@
         "Royaumes de l'Est",
         "Marais des Chagrins"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Marais des Chagrins"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Marais des Chagrins",
+      "canonicalRef": "wowhead-zone:8",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8"
+      ],
+      "canonicalWowheadZoneIds": [
+        8
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8"
     },
     {
       "ref": "wowhead-zone:40",
@@ -2398,7 +3153,20 @@
         "Royaumes de l'Est",
         "Marche de l’Ouest"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Marche de l’Ouest"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Marche de l’Ouest",
+      "canonicalRef": "wowhead-zone:40",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:40"
+      ],
+      "canonicalWowheadZoneIds": [
+        40
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:40"
     },
     {
       "ref": "wowhead-zone:4706",
@@ -2438,7 +3206,20 @@
         "Royaumes de l'Est",
         "Ruines de Gilnéas"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Ruines de Gilnéas"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Ruines de Gilnéas",
+      "canonicalRef": "wowhead-zone:4706",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:4706"
+      ],
+      "canonicalWowheadZoneIds": [
+        4706
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:4706"
     },
     {
       "ref": "wowhead-zone:25",
@@ -2479,7 +3260,20 @@
         "Steppes Ardentes",
         "Mont Rochenoire"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Steppes Ardentes > Mont Rochenoire"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Steppes Ardentes > Mont Rochenoire",
+      "canonicalRef": "wowhead-zone:25",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:25"
+      ],
+      "canonicalWowheadZoneIds": [
+        25
+      ],
+      "canonicalParentRef": "wowhead-zone:46",
+      "canonicalParentRefs": [
+        "wowhead-zone:46"
+      ],
+      "canonicalRegionRef": "wowhead-zone:46"
     },
     {
       "ref": "wowhead-zone:10028",
@@ -2520,7 +3314,20 @@
         "Steppes Ardentes",
         "Profondeurs de Rochenoire"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Steppes Ardentes > Profondeurs de Rochenoire"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Steppes Ardentes > Profondeurs de Rochenoire",
+      "canonicalRef": "wowhead-zone:10028",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:10028"
+      ],
+      "canonicalWowheadZoneIds": [
+        10028
+      ],
+      "canonicalParentRef": "wowhead-zone:46",
+      "canonicalParentRefs": [
+        "wowhead-zone:46"
+      ],
+      "canonicalRegionRef": "wowhead-zone:46"
     },
     {
       "ref": "wowhead-zone:46",
@@ -2560,7 +3367,20 @@
         "Royaumes de l'Est",
         "Steppes Ardentes"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Steppes Ardentes"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Steppes Ardentes",
+      "canonicalRef": "wowhead-zone:46",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:46"
+      ],
+      "canonicalWowheadZoneIds": [
+        46
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:46"
     },
     {
       "ref": "wowhead-zone:4",
@@ -2600,7 +3420,20 @@
         "Royaumes de l'Est",
         "Terres Foudroyées"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Terres Foudroyées"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Terres Foudroyées",
+      "canonicalRef": "wowhead-zone:4",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:4"
+      ],
+      "canonicalWowheadZoneIds": [
+        4
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:4"
     },
     {
       "ref": "wowhead-zone:3",
@@ -2640,7 +3473,20 @@
         "Royaumes de l'Est",
         "Terres Ingrates"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Terres Ingrates"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Terres Ingrates",
+      "canonicalRef": "wowhead-zone:3",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3"
+      ],
+      "canonicalWowheadZoneIds": [
+        3
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3"
     },
     {
       "ref": "wowhead-zone:5287",
@@ -2681,7 +3527,20 @@
         "Vallée de Strangleronce",
         "Cap Strangleronce"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "canonicalRef": "wowhead-zone:5287",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5287"
+      ],
+      "canonicalWowheadZoneIds": [
+        5287
+      ],
+      "canonicalParentRef": "wowhead-zone:5339",
+      "canonicalParentRefs": [
+        "wowhead-zone:5339"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5339"
     },
     {
       "ref": "wowhead-zone:33",
@@ -2722,7 +3581,20 @@
         "Vallée de Strangleronce",
         "Strangleronce septentrionale"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Strangleronce septentrionale"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Strangleronce septentrionale",
+      "canonicalRef": "wowhead-zone:33",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:33"
+      ],
+      "canonicalWowheadZoneIds": [
+        33
+      ],
+      "canonicalParentRef": "wowhead-zone:5339",
+      "canonicalParentRefs": [
+        "wowhead-zone:5339"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5339"
     },
     {
       "ref": "wowhead-zone:5339",
@@ -2762,7 +3634,20 @@
         "Royaumes de l'Est",
         "Vallée de Strangleronce"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce",
+      "canonicalRef": "wowhead-zone:5339",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5339"
+      ],
+      "canonicalWowheadZoneIds": [
+        5339
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5339"
     },
     {
       "ref": "wowhead-zone:5144",
@@ -2803,7 +3688,20 @@
         "Vashj’ir",
         "Étendues Chatoyantes"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir > Étendues Chatoyantes"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir > Étendues Chatoyantes",
+      "canonicalRef": "wowhead-zone:5144",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5144"
+      ],
+      "canonicalWowheadZoneIds": [
+        5144
+      ],
+      "canonicalParentRef": "wowhead-zone:5146",
+      "canonicalParentRefs": [
+        "wowhead-zone:5146"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5146"
     },
     {
       "ref": "wowhead-zone:4815",
@@ -2844,7 +3742,20 @@
         "Vashj’ir",
         "Forêt de Varech’thar"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir > Forêt de Varech’thar"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir > Forêt de Varech’thar",
+      "canonicalRef": "wowhead-zone:4815",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:4815"
+      ],
+      "canonicalWowheadZoneIds": [
+        4815
+      ],
+      "canonicalParentRef": "wowhead-zone:5146",
+      "canonicalParentRefs": [
+        "wowhead-zone:5146"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5146"
     },
     {
       "ref": "wowhead-zone:5145",
@@ -2885,7 +3796,20 @@
         "Vashj’ir",
         "Profondeurs Abyssales"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir > Profondeurs Abyssales"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir > Profondeurs Abyssales",
+      "canonicalRef": "wowhead-zone:5145",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5145"
+      ],
+      "canonicalWowheadZoneIds": [
+        5145
+      ],
+      "canonicalParentRef": "wowhead-zone:5146",
+      "canonicalParentRefs": [
+        "wowhead-zone:5146"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5146"
     },
     {
       "ref": "wowhead-zone:5146",
@@ -2925,7 +3849,20 @@
         "Royaumes de l'Est",
         "Vashj’ir"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir",
+      "canonicalRef": "wowhead-zone:5146",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5146"
+      ],
+      "canonicalWowheadZoneIds": [
+        5146
+      ],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5146"
     },
     {
       "ref": "wowhead-zone:16194",
@@ -2966,7 +3903,20 @@
         "Zul'Aman",
         "Atal’Aman"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman > Atal’Aman"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman > Atal’Aman",
+      "canonicalRef": "wowhead-zone:16194",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:16194"
+      ],
+      "canonicalWowheadZoneIds": [
+        16194
+      ],
+      "canonicalParentRef": "manual-location:eastern-kingdoms:zul-aman",
+      "canonicalParentRefs": [
+        "manual-location:eastern-kingdoms:zul-aman"
+      ],
+      "canonicalRegionRef": "manual-location:eastern-kingdoms:zul-aman"
     },
     {
       "ref": "wowhead-zone:16375",
@@ -3007,7 +3957,20 @@
         "Zul'Aman",
         "Tanière de Tisse-Loa"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman > Tanière de Tisse-Loa"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman > Tanière de Tisse-Loa",
+      "canonicalRef": "wowhead-zone:16375",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:16375"
+      ],
+      "canonicalWowheadZoneIds": [
+        16375
+      ],
+      "canonicalParentRef": "manual-location:eastern-kingdoms:zul-aman",
+      "canonicalParentRefs": [
+        "manual-location:eastern-kingdoms:zul-aman"
+      ],
+      "canonicalRegionRef": "manual-location:eastern-kingdoms:zul-aman"
     },
     {
       "ref": "manual-location:eastern-kingdoms:zul-aman",
@@ -3046,7 +4009,18 @@
         "Royaumes de l'Est",
         "Zul'Aman"
       ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman"
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "canonicalRef": "manual-location:eastern-kingdoms:zul-aman",
+      "isCanonical": true,
+      "aliasRefs": [
+        "manual-location:eastern-kingdoms:zul-aman"
+      ],
+      "canonicalWowheadZoneIds": [],
+      "canonicalParentRef": "continent:eastern-kingdoms",
+      "canonicalParentRefs": [
+        "continent:eastern-kingdoms"
+      ],
+      "canonicalRegionRef": "manual-location:eastern-kingdoms:zul-aman"
     }
   ],
   "exclusions": [

@@ -54,7 +54,20 @@
         "Zandalar",
         "Campagne militaire - Horde"
       ],
-      "pathLabel": "Azeroth > Zandalar > Campagne militaire - Horde"
+      "pathLabel": "Azeroth > Zandalar > Campagne militaire - Horde",
+      "canonicalRef": "wowhead-zone:9664",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9664"
+      ],
+      "canonicalWowheadZoneIds": [
+        9664
+      ],
+      "canonicalParentRef": "continent:zandalar",
+      "canonicalParentRefs": [
+        "continent:zandalar"
+      ],
+      "canonicalRegionRef": "wowhead-zone:9664"
     },
     {
       "ref": "wowhead-zone:8500",
@@ -94,7 +107,20 @@
         "Zandalar",
         "Nazmir"
       ],
-      "pathLabel": "Azeroth > Zandalar > Nazmir"
+      "pathLabel": "Azeroth > Zandalar > Nazmir",
+      "canonicalRef": "wowhead-zone:8500",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8500"
+      ],
+      "canonicalWowheadZoneIds": [
+        8500
+      ],
+      "canonicalParentRef": "continent:zandalar",
+      "canonicalParentRefs": [
+        "continent:zandalar"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8500"
     },
     {
       "ref": "wowhead-zone:8501",
@@ -134,7 +160,20 @@
         "Zandalar",
         "Vol’dun"
       ],
-      "pathLabel": "Azeroth > Zandalar > Vol’dun"
+      "pathLabel": "Azeroth > Zandalar > Vol’dun",
+      "canonicalRef": "wowhead-zone:8501",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8501"
+      ],
+      "canonicalWowheadZoneIds": [
+        8501
+      ],
+      "canonicalParentRef": "continent:zandalar",
+      "canonicalParentRefs": [
+        "continent:zandalar"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8501"
     },
     {
       "ref": "wowhead-zone:9665",
@@ -175,7 +214,20 @@
         "Zuldazar",
         "Atal’Jani"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Atal’Jani"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Atal’Jani",
+      "canonicalRef": "wowhead-zone:9665",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9665"
+      ],
+      "canonicalWowheadZoneIds": [
+        9665
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:9599",
@@ -216,7 +268,20 @@
         "Zuldazar",
         "Au Repos des Esprits"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Au Repos des Esprits"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Au Repos des Esprits",
+      "canonicalRef": "wowhead-zone:9599",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9599"
+      ],
+      "canonicalWowheadZoneIds": [
+        9599
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:9660",
@@ -257,7 +322,20 @@
         "Zuldazar",
         "Au Tambour Ivre"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Au Tambour Ivre"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Au Tambour Ivre",
+      "canonicalRef": "wowhead-zone:9660",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9660"
+      ],
+      "canonicalWowheadZoneIds": [
+        9660
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:9962",
@@ -298,7 +376,20 @@
         "Zuldazar",
         "Auberge de Nage-Défense"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Auberge de Nage-Défense"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Auberge de Nage-Défense",
+      "canonicalRef": "wowhead-zone:9962",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9962"
+      ],
+      "canonicalWowheadZoneIds": [
+        9962
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:9994",
@@ -339,7 +430,20 @@
         "Zuldazar",
         "Chambre de Rezan"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Chambre de Rezan"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Chambre de Rezan",
+      "canonicalRef": "wowhead-zone:9994",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9994"
+      ],
+      "canonicalWowheadZoneIds": [
+        9994
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:8670",
@@ -380,7 +484,20 @@
         "Zuldazar",
         "Dazar’alor"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Dazar’alor"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Dazar’alor",
+      "canonicalRef": "wowhead-zone:8670",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8670"
+      ],
+      "canonicalWowheadZoneIds": [
+        8670
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8670"
     },
     {
       "ref": "wowhead-zone:9662",
@@ -421,7 +538,20 @@
         "Zuldazar",
         "La Serre"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > La Serre"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > La Serre",
+      "canonicalRef": "wowhead-zone:9662",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9662"
+      ],
+      "canonicalWowheadZoneIds": [
+        9662
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:9147",
@@ -462,7 +592,20 @@
         "Zuldazar",
         "La vieille Digue"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > La vieille Digue"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > La vieille Digue",
+      "canonicalRef": "wowhead-zone:9147",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9147"
+      ],
+      "canonicalWowheadZoneIds": [
+        9147
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:8729",
@@ -503,7 +646,20 @@
         "Zuldazar",
         "Le Défilé"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Le Défilé"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Le Défilé",
+      "canonicalRef": "wowhead-zone:8729",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8729"
+      ],
+      "canonicalWowheadZoneIds": [
+        8729
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:8666",
@@ -544,7 +700,20 @@
         "Zuldazar",
         "Le Grand bazar"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Le Grand bazar"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Le Grand bazar",
+      "canonicalRef": "wowhead-zone:8666",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8666"
+      ],
+      "canonicalWowheadZoneIds": [
+        8666
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:9598",
@@ -585,7 +754,20 @@
         "Zuldazar",
         "Le Grand Sceau"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Le Grand Sceau"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Le Grand Sceau",
+      "canonicalRef": "wowhead-zone:9598",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9598"
+      ],
+      "canonicalWowheadZoneIds": [
+        9598
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:9173",
@@ -626,7 +808,20 @@
         "Zuldazar",
         "Le Zocalo"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Le Zocalo"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Le Zocalo",
+      "canonicalRef": "wowhead-zone:9173",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9173"
+      ],
+      "canonicalWowheadZoneIds": [
+        9173
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:8665",
@@ -667,7 +862,20 @@
         "Zuldazar",
         "Port de Zandalar"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Port de Zandalar"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Port de Zandalar",
+      "canonicalRef": "wowhead-zone:8665",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8665"
+      ],
+      "canonicalWowheadZoneIds": [
+        8665
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:9772",
@@ -708,7 +916,20 @@
         "Zuldazar",
         "Puissance de Rastakhan"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Puissance de Rastakhan"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Puissance de Rastakhan",
+      "canonicalRef": "wowhead-zone:9772",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9772"
+      ],
+      "canonicalWowheadZoneIds": [
+        9772
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:9970",
@@ -749,7 +970,20 @@
         "Zuldazar",
         "Salle de la Force"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Salle de la Force"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Salle de la Force",
+      "canonicalRef": "wowhead-zone:9970",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9970"
+      ],
+      "canonicalWowheadZoneIds": [
+        9970
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:9661",
@@ -790,7 +1024,20 @@
         "Zuldazar",
         "Salon des Esprits perdus"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Salon des Esprits perdus"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Salon des Esprits perdus",
+      "canonicalRef": "wowhead-zone:9661",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9661"
+      ],
+      "canonicalWowheadZoneIds": [
+        9661
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:8668",
@@ -831,7 +1078,20 @@
         "Zuldazar",
         "Tal’aman"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Tal’aman"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Tal’aman",
+      "canonicalRef": "wowhead-zone:8668",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8668"
+      ],
+      "canonicalWowheadZoneIds": [
+        8668
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:8667",
@@ -872,7 +1132,20 @@
         "Zuldazar",
         "Tal’farrak"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Tal’farrak"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Tal’farrak",
+      "canonicalRef": "wowhead-zone:8667",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8667"
+      ],
+      "canonicalWowheadZoneIds": [
+        8667
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:9172",
@@ -913,7 +1186,20 @@
         "Zuldazar",
         "Terrasse de l’Élu"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Terrasse de l’Élu"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Terrasse de l’Élu",
+      "canonicalRef": "wowhead-zone:9172",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9172"
+      ],
+      "canonicalWowheadZoneIds": [
+        9172
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:9361",
@@ -954,7 +1240,20 @@
         "Zuldazar",
         "Terrasse des Prédicateurs"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Terrasse des Prédicateurs"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Terrasse des Prédicateurs",
+      "canonicalRef": "wowhead-zone:9361",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9361"
+      ],
+      "canonicalWowheadZoneIds": [
+        9361
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:9355",
@@ -995,7 +1294,20 @@
         "Zuldazar",
         "Tortoga"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Tortoga"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Tortoga",
+      "canonicalRef": "wowhead-zone:9355",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9355"
+      ],
+      "canonicalWowheadZoneIds": [
+        9355
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:8726",
@@ -1036,7 +1348,20 @@
         "Zuldazar",
         "Zanchul"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar > Zanchul"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Zanchul",
+      "canonicalRef": "wowhead-zone:8726",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8726"
+      ],
+      "canonicalWowheadZoneIds": [
+        8726
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     },
     {
       "ref": "wowhead-zone:8499",
@@ -1076,7 +1401,20 @@
         "Zandalar",
         "Zuldazar"
       ],
-      "pathLabel": "Azeroth > Zandalar > Zuldazar"
+      "pathLabel": "Azeroth > Zandalar > Zuldazar",
+      "canonicalRef": "wowhead-zone:8499",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalWowheadZoneIds": [
+        8499
+      ],
+      "canonicalParentRef": "continent:zandalar",
+      "canonicalParentRefs": [
+        "continent:zandalar"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
     }
   ],
   "exclusions": [

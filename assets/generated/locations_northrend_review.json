@@ -54,7 +54,20 @@
         "Norfendre",
         "Accostage de Hrothgar"
       ],
-      "pathLabel": "Azeroth > Norfendre > Accostage de Hrothgar"
+      "pathLabel": "Azeroth > Norfendre > Accostage de Hrothgar",
+      "canonicalRef": "wowhead-zone:4742",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:4742"
+      ],
+      "canonicalWowheadZoneIds": [
+        4742
+      ],
+      "canonicalParentRef": "continent:northrend",
+      "canonicalParentRefs": [
+        "continent:northrend"
+      ],
+      "canonicalRegionRef": "wowhead-zone:4742"
     },
     {
       "ref": "wowhead-zone:3711",
@@ -94,7 +107,20 @@
         "Norfendre",
         "Bassin de Sholazar"
       ],
-      "pathLabel": "Azeroth > Norfendre > Bassin de Sholazar"
+      "pathLabel": "Azeroth > Norfendre > Bassin de Sholazar",
+      "canonicalRef": "wowhead-zone:3711",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3711"
+      ],
+      "canonicalWowheadZoneIds": [
+        3711
+      ],
+      "canonicalParentRef": "continent:northrend",
+      "canonicalParentRefs": [
+        "continent:northrend"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3711"
     },
     {
       "ref": "wowhead-zone:65",
@@ -134,7 +160,20 @@
         "Norfendre",
         "Désolation des dragons"
       ],
-      "pathLabel": "Azeroth > Norfendre > Désolation des dragons"
+      "pathLabel": "Azeroth > Norfendre > Désolation des dragons",
+      "canonicalRef": "wowhead-zone:65",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:65"
+      ],
+      "canonicalWowheadZoneIds": [
+        65
+      ],
+      "canonicalParentRef": "continent:northrend",
+      "canonicalParentRefs": [
+        "continent:northrend"
+      ],
+      "canonicalRegionRef": "wowhead-zone:65"
     },
     {
       "ref": "wowhead-zone:495",
@@ -174,7 +213,20 @@
         "Norfendre",
         "Fjord Hurlant"
       ],
-      "pathLabel": "Azeroth > Norfendre > Fjord Hurlant"
+      "pathLabel": "Azeroth > Norfendre > Fjord Hurlant",
+      "canonicalRef": "wowhead-zone:495",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:495"
+      ],
+      "canonicalWowheadZoneIds": [
+        495
+      ],
+      "canonicalParentRef": "continent:northrend",
+      "canonicalParentRefs": [
+        "continent:northrend"
+      ],
+      "canonicalRegionRef": "wowhead-zone:495"
     },
     {
       "ref": "wowhead-zone:8474",
@@ -215,7 +267,20 @@
         "Forêt du Chant de cristal",
         "Dalaran (Norfendre)"
       ],
-      "pathLabel": "Azeroth > Norfendre > Forêt du Chant de cristal > Dalaran (Norfendre)"
+      "pathLabel": "Azeroth > Norfendre > Forêt du Chant de cristal > Dalaran (Norfendre)",
+      "canonicalRef": "wowhead-zone:8474",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8474"
+      ],
+      "canonicalWowheadZoneIds": [
+        8474
+      ],
+      "canonicalParentRef": "wowhead-zone:2817",
+      "canonicalParentRefs": [
+        "wowhead-zone:2817"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8474"
     },
     {
       "ref": "wowhead-zone:2817",
@@ -255,7 +320,20 @@
         "Norfendre",
         "Forêt du Chant de cristal"
       ],
-      "pathLabel": "Azeroth > Norfendre > Forêt du Chant de cristal"
+      "pathLabel": "Azeroth > Norfendre > Forêt du Chant de cristal",
+      "canonicalRef": "wowhead-zone:2817",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:2817"
+      ],
+      "canonicalWowheadZoneIds": [
+        2817
+      ],
+      "canonicalParentRef": "continent:northrend",
+      "canonicalParentRefs": [
+        "continent:northrend"
+      ],
+      "canonicalRegionRef": "wowhead-zone:2817"
     },
     {
       "ref": "wowhead-zone:4197",
@@ -295,7 +373,20 @@
         "Norfendre",
         "Joug-d’Hiver"
       ],
-      "pathLabel": "Azeroth > Norfendre > Joug-d’Hiver"
+      "pathLabel": "Azeroth > Norfendre > Joug-d’Hiver",
+      "canonicalRef": "wowhead-zone:4197",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:4197"
+      ],
+      "canonicalWowheadZoneIds": [
+        4197
+      ],
+      "canonicalParentRef": "continent:northrend",
+      "canonicalParentRefs": [
+        "continent:northrend"
+      ],
+      "canonicalRegionRef": "wowhead-zone:4197"
     },
     {
       "ref": "wowhead-zone:4859",
@@ -336,7 +427,20 @@
         "La Couronne de glace",
         "Le Trône de glace"
       ],
-      "pathLabel": "Azeroth > Norfendre > La Couronne de glace > Le Trône de glace"
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace > Le Trône de glace",
+      "canonicalRef": "wowhead-zone:4859",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:4859"
+      ],
+      "canonicalWowheadZoneIds": [
+        4859
+      ],
+      "canonicalParentRef": "wowhead-zone:210",
+      "canonicalParentRefs": [
+        "wowhead-zone:210"
+      ],
+      "canonicalRegionRef": "wowhead-zone:210"
     },
     {
       "ref": "wowhead-zone:210",
@@ -376,7 +480,20 @@
         "Norfendre",
         "La Couronne de glace"
       ],
-      "pathLabel": "Azeroth > Norfendre > La Couronne de glace"
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "canonicalRef": "wowhead-zone:210",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:210"
+      ],
+      "canonicalWowheadZoneIds": [
+        210
+      ],
+      "canonicalParentRef": "continent:northrend",
+      "canonicalParentRefs": [
+        "continent:northrend"
+      ],
+      "canonicalRegionRef": "wowhead-zone:210"
     },
     {
       "ref": "wowhead-zone:394",
@@ -416,7 +533,20 @@
         "Norfendre",
         "Les Grisonnes"
       ],
-      "pathLabel": "Azeroth > Norfendre > Les Grisonnes"
+      "pathLabel": "Azeroth > Norfendre > Les Grisonnes",
+      "canonicalRef": "wowhead-zone:394",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:394"
+      ],
+      "canonicalWowheadZoneIds": [
+        394
+      ],
+      "canonicalParentRef": "continent:northrend",
+      "canonicalParentRefs": [
+        "continent:northrend"
+      ],
+      "canonicalRegionRef": "wowhead-zone:394"
     },
     {
       "ref": "wowhead-zone:67",
@@ -456,7 +586,20 @@
         "Norfendre",
         "Les pics Foudroyés"
       ],
-      "pathLabel": "Azeroth > Norfendre > Les pics Foudroyés"
+      "pathLabel": "Azeroth > Norfendre > Les pics Foudroyés",
+      "canonicalRef": "wowhead-zone:67",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:67"
+      ],
+      "canonicalWowheadZoneIds": [
+        67
+      ],
+      "canonicalParentRef": "continent:northrend",
+      "canonicalParentRefs": [
+        "continent:northrend"
+      ],
+      "canonicalRegionRef": "wowhead-zone:67"
     },
     {
       "ref": "wowhead-zone:3537",
@@ -496,7 +639,20 @@
         "Norfendre",
         "Toundra Boréenne"
       ],
-      "pathLabel": "Azeroth > Norfendre > Toundra Boréenne"
+      "pathLabel": "Azeroth > Norfendre > Toundra Boréenne",
+      "canonicalRef": "wowhead-zone:3537",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3537"
+      ],
+      "canonicalWowheadZoneIds": [
+        3537
+      ],
+      "canonicalParentRef": "continent:northrend",
+      "canonicalParentRefs": [
+        "continent:northrend"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3537"
     },
     {
       "ref": "wowhead-zone:66",
@@ -536,7 +692,20 @@
         "Norfendre",
         "Zul’Drak"
       ],
-      "pathLabel": "Azeroth > Norfendre > Zul’Drak"
+      "pathLabel": "Azeroth > Norfendre > Zul’Drak",
+      "canonicalRef": "wowhead-zone:66",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:66"
+      ],
+      "canonicalWowheadZoneIds": [
+        66
+      ],
+      "canonicalParentRef": "continent:northrend",
+      "canonicalParentRefs": [
+        "continent:northrend"
+      ],
+      "canonicalRegionRef": "wowhead-zone:66"
     }
   ],
   "exclusions": [

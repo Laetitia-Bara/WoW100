@@ -54,7 +54,20 @@
         "Ombreterre",
         "Antre"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Antre"
+      "pathLabel": "Ombreterre > Ombreterre > Antre",
+      "canonicalRef": "wowhead-zone:11400",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:11400"
+      ],
+      "canonicalWowheadZoneIds": [
+        11400
+      ],
+      "canonicalParentRef": "continent:shadowlands",
+      "canonicalParentRefs": [
+        "continent:shadowlands"
+      ],
+      "canonicalRegionRef": "wowhead-zone:11400"
     },
     {
       "ref": "wowhead-zone:13570",
@@ -94,7 +107,20 @@
         "Ombreterre",
         "Korthia"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Korthia"
+      "pathLabel": "Ombreterre > Ombreterre > Korthia",
+      "canonicalRef": "wowhead-zone:13570",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13570"
+      ],
+      "canonicalWowheadZoneIds": [
+        13570
+      ],
+      "canonicalParentRef": "continent:shadowlands",
+      "canonicalParentRefs": [
+        "continent:shadowlands"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13570"
     },
     {
       "ref": "wowhead-zone:13390",
@@ -135,7 +161,20 @@
         "Le Bastion",
         "Caveau du Souvenir"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Le Bastion > Caveau du Souvenir"
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion > Caveau du Souvenir",
+      "canonicalRef": "wowhead-zone:13390",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13390"
+      ],
+      "canonicalWowheadZoneIds": [
+        13390
+      ],
+      "canonicalParentRef": "wowhead-zone:10534",
+      "canonicalParentRefs": [
+        "wowhead-zone:10534"
+      ],
+      "canonicalRegionRef": "wowhead-zone:10534"
     },
     {
       "ref": "wowhead-zone:11012",
@@ -176,7 +215,20 @@
         "Le Bastion",
         "Fort Élyséen"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Le Bastion > Fort Élyséen"
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion > Fort Élyséen",
+      "canonicalRef": "wowhead-zone:11012",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:11012"
+      ],
+      "canonicalWowheadZoneIds": [
+        11012
+      ],
+      "canonicalParentRef": "wowhead-zone:10534",
+      "canonicalParentRefs": [
+        "wowhead-zone:10534"
+      ],
+      "canonicalRegionRef": "wowhead-zone:10534"
     },
     {
       "ref": "wowhead-zone:10534",
@@ -216,7 +268,20 @@
         "Ombreterre",
         "Le Bastion"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Le Bastion"
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "canonicalRef": "wowhead-zone:10534",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:10534"
+      ],
+      "canonicalWowheadZoneIds": [
+        10534
+      ],
+      "canonicalParentRef": "continent:shadowlands",
+      "canonicalParentRefs": [
+        "continent:shadowlands"
+      ],
+      "canonicalRegionRef": "wowhead-zone:10534"
     },
     {
       "ref": "wowhead-zone:12876",
@@ -257,7 +322,20 @@
         "Maldraxxus",
         "Siège du Primat"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Maldraxxus > Siège du Primat"
+      "pathLabel": "Ombreterre > Ombreterre > Maldraxxus > Siège du Primat",
+      "canonicalRef": "wowhead-zone:12876",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:12876"
+      ],
+      "canonicalWowheadZoneIds": [
+        12876
+      ],
+      "canonicalParentRef": "wowhead-zone:11462",
+      "canonicalParentRefs": [
+        "wowhead-zone:11462"
+      ],
+      "canonicalRegionRef": "wowhead-zone:11462"
     },
     {
       "ref": "wowhead-zone:11462",
@@ -297,7 +375,20 @@
         "Ombreterre",
         "Maldraxxus"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Maldraxxus"
+      "pathLabel": "Ombreterre > Ombreterre > Maldraxxus",
+      "canonicalRef": "wowhead-zone:11462",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:11462"
+      ],
+      "canonicalWowheadZoneIds": [
+        11462
+      ],
+      "canonicalParentRef": "continent:shadowlands",
+      "canonicalParentRefs": [
+        "continent:shadowlands"
+      ],
+      "canonicalRegionRef": "wowhead-zone:11462"
     },
     {
       "ref": "wowhead-zone:10565",
@@ -337,7 +428,20 @@
         "Ombreterre",
         "Oribos"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Oribos"
+      "pathLabel": "Ombreterre > Ombreterre > Oribos",
+      "canonicalRef": "wowhead-zone:10565",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:10565"
+      ],
+      "canonicalWowheadZoneIds": [
+        10565
+      ],
+      "canonicalParentRef": "continent:shadowlands",
+      "canonicalParentRefs": [
+        "continent:shadowlands"
+      ],
+      "canonicalRegionRef": "wowhead-zone:10565"
     },
     {
       "ref": "wowhead-zone:13329",
@@ -378,7 +482,20 @@
         "Revendreth",
         "Cour des Braises"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Revendreth > Cour des Braises"
+      "pathLabel": "Ombreterre > Ombreterre > Revendreth > Cour des Braises",
+      "canonicalRef": "wowhead-zone:13329",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13329"
+      ],
+      "canonicalWowheadZoneIds": [
+        13329
+      ],
+      "canonicalParentRef": "wowhead-zone:10413",
+      "canonicalParentRefs": [
+        "wowhead-zone:10413"
+      ],
+      "canonicalRegionRef": "wowhead-zone:10413"
     },
     {
       "ref": "wowhead-zone:10986",
@@ -419,7 +536,20 @@
         "Revendreth",
         "Tombe-Vice"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Revendreth > Tombe-Vice"
+      "pathLabel": "Ombreterre > Ombreterre > Revendreth > Tombe-Vice",
+      "canonicalRef": "wowhead-zone:10986",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:10986"
+      ],
+      "canonicalWowheadZoneIds": [
+        10986
+      ],
+      "canonicalParentRef": "wowhead-zone:10413",
+      "canonicalParentRefs": [
+        "wowhead-zone:10413"
+      ],
+      "canonicalRegionRef": "wowhead-zone:10413"
     },
     {
       "ref": "wowhead-zone:10413",
@@ -459,7 +589,20 @@
         "Ombreterre",
         "Revendreth"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Revendreth"
+      "pathLabel": "Ombreterre > Ombreterre > Revendreth",
+      "canonicalRef": "wowhead-zone:10413",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:10413"
+      ],
+      "canonicalWowheadZoneIds": [
+        10413
+      ],
+      "canonicalParentRef": "continent:shadowlands",
+      "canonicalParentRefs": [
+        "continent:shadowlands"
+      ],
+      "canonicalRegionRef": "wowhead-zone:10413"
     },
     {
       "ref": "wowhead-zone:12858",
@@ -500,7 +643,20 @@
         "Sylvarden",
         "Cœur de la Forêt"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Sylvarden > Cœur de la Forêt"
+      "pathLabel": "Ombreterre > Ombreterre > Sylvarden > Cœur de la Forêt",
+      "canonicalRef": "wowhead-zone:12858",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:12858"
+      ],
+      "canonicalWowheadZoneIds": [
+        12858
+      ],
+      "canonicalParentRef": "wowhead-zone:11510",
+      "canonicalParentRefs": [
+        "wowhead-zone:11510"
+      ],
+      "canonicalRegionRef": "wowhead-zone:11510"
     },
     {
       "ref": "wowhead-zone:11510",
@@ -540,7 +696,20 @@
         "Ombreterre",
         "Sylvarden"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Sylvarden"
+      "pathLabel": "Ombreterre > Ombreterre > Sylvarden",
+      "canonicalRef": "wowhead-zone:11510",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:11510"
+      ],
+      "canonicalWowheadZoneIds": [
+        11510
+      ],
+      "canonicalParentRef": "continent:shadowlands",
+      "canonicalParentRefs": [
+        "continent:shadowlands"
+      ],
+      "canonicalRegionRef": "wowhead-zone:11510"
     },
     {
       "ref": "wowhead-zone:13672",
@@ -580,7 +749,20 @@
         "Ombreterre",
         "Tazavesh, le marché dissimulé"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Tazavesh, le marché dissimulé"
+      "pathLabel": "Ombreterre > Ombreterre > Tazavesh, le marché dissimulé",
+      "canonicalRef": "wowhead-zone:13672",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13672"
+      ],
+      "canonicalWowheadZoneIds": [
+        13672
+      ],
+      "canonicalParentRef": "continent:shadowlands",
+      "canonicalParentRefs": [
+        "continent:shadowlands"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13672"
     },
     {
       "ref": "wowhead-zone:13898",
@@ -621,7 +803,20 @@
         "Zereth Mortis",
         "Champs Catalyseurs"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Champs Catalyseurs"
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Champs Catalyseurs",
+      "canonicalRef": "wowhead-zone:13898",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13898"
+      ],
+      "canonicalWowheadZoneIds": [
+        13898
+      ],
+      "canonicalParentRef": "wowhead-zone:13536",
+      "canonicalParentRefs": [
+        "wowhead-zone:13536"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13536"
     },
     {
       "ref": "wowhead-zone:13753",
@@ -662,7 +857,20 @@
         "Zereth Mortis",
         "Cryptes de l’Éternel"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Cryptes de l’Éternel"
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Cryptes de l’Éternel",
+      "canonicalRef": "wowhead-zone:13753",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13753"
+      ],
+      "canonicalWowheadZoneIds": [
+        13753
+      ],
+      "canonicalParentRef": "wowhead-zone:13536",
+      "canonicalParentRefs": [
+        "wowhead-zone:13536"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13536"
     },
     {
       "ref": "wowhead-zone:13952",
@@ -703,7 +911,20 @@
         "Zereth Mortis",
         "Esper locrien"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Esper locrien"
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Esper locrien",
+      "canonicalRef": "wowhead-zone:13952",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13952"
+      ],
+      "canonicalWowheadZoneIds": [
+        13952
+      ],
+      "canonicalParentRef": "wowhead-zone:13536",
+      "canonicalParentRefs": [
+        "wowhead-zone:13536"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13536"
     },
     {
       "ref": "wowhead-zone:13928",
@@ -744,7 +965,20 @@
         "Zereth Mortis",
         "Fonderie de l’Éclosion"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Fonderie de l’Éclosion"
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Fonderie de l’Éclosion",
+      "canonicalRef": "wowhead-zone:13928",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13928"
+      ],
+      "canonicalWowheadZoneIds": [
+        13928
+      ],
+      "canonicalParentRef": "wowhead-zone:13536",
+      "canonicalParentRefs": [
+        "wowhead-zone:13536"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13536"
     },
     {
       "ref": "wowhead-zone:13708",
@@ -785,7 +1019,20 @@
         "Zereth Mortis",
         "Plaine de l’Actualisation"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Plaine de l’Actualisation"
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Plaine de l’Actualisation",
+      "canonicalRef": "wowhead-zone:13708",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13708"
+      ],
+      "canonicalWowheadZoneIds": [
+        13708
+      ],
+      "canonicalParentRef": "wowhead-zone:13536",
+      "canonicalParentRefs": [
+        "wowhead-zone:13536"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13536"
     },
     {
       "ref": "wowhead-zone:13891",
@@ -826,7 +1073,20 @@
         "Zereth Mortis",
         "Repos de la fertilité"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Repos de la fertilité"
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Repos de la fertilité",
+      "canonicalRef": "wowhead-zone:13891",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13891"
+      ],
+      "canonicalWowheadZoneIds": [
+        13891
+      ],
+      "canonicalParentRef": "wowhead-zone:13536",
+      "canonicalParentRefs": [
+        "wowhead-zone:13536"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13536"
     },
     {
       "ref": "wowhead-zone:13409",
@@ -867,7 +1127,20 @@
         "Zereth Mortis",
         "Zone 1 des Progéniteurs"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Zone 1 des Progéniteurs"
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis > Zone 1 des Progéniteurs",
+      "canonicalRef": "wowhead-zone:13409",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13409"
+      ],
+      "canonicalWowheadZoneIds": [
+        13409
+      ],
+      "canonicalParentRef": "wowhead-zone:13536",
+      "canonicalParentRefs": [
+        "wowhead-zone:13536"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13536"
     },
     {
       "ref": "wowhead-zone:13536",
@@ -907,7 +1180,20 @@
         "Ombreterre",
         "Zereth Mortis"
       ],
-      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis"
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "canonicalRef": "wowhead-zone:13536",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:13536"
+      ],
+      "canonicalWowheadZoneIds": [
+        13536
+      ],
+      "canonicalParentRef": "continent:shadowlands",
+      "canonicalParentRefs": [
+        "continent:shadowlands"
+      ],
+      "canonicalRegionRef": "wowhead-zone:13536"
     }
   ],
   "exclusions": [

@@ -56,7 +56,20 @@
         "Draenor",
         "A’shran"
       ],
-      "pathLabel": "Draenor > Draenor > A’shran"
+      "pathLabel": "Draenor > Draenor > A’shran",
+      "canonicalRef": "wowhead-zone:6941",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6941"
+      ],
+      "canonicalWowheadZoneIds": [
+        6941
+      ],
+      "canonicalParentRef": "continent:draenor",
+      "canonicalParentRefs": [
+        "continent:draenor"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6941"
     },
     {
       "ref": "wowhead-zone:7004",
@@ -97,7 +110,20 @@
         "Crête de Givrefeu",
         "Mur-de-Givre"
       ],
-      "pathLabel": "Draenor > Draenor > Crête de Givrefeu > Mur-de-Givre"
+      "pathLabel": "Draenor > Draenor > Crête de Givrefeu > Mur-de-Givre",
+      "canonicalRef": "wowhead-zone:7004",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7004"
+      ],
+      "canonicalWowheadZoneIds": [
+        7004
+      ],
+      "canonicalParentRef": "wowhead-zone:6720",
+      "canonicalParentRefs": [
+        "wowhead-zone:6720"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6720"
     },
     {
       "ref": "wowhead-zone:6720",
@@ -137,7 +163,20 @@
         "Draenor",
         "Crête de Givrefeu"
       ],
-      "pathLabel": "Draenor > Draenor > Crête de Givrefeu"
+      "pathLabel": "Draenor > Draenor > Crête de Givrefeu",
+      "canonicalRef": "wowhead-zone:6720",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6720"
+      ],
+      "canonicalWowheadZoneIds": [
+        6720
+      ],
+      "canonicalParentRef": "continent:draenor",
+      "canonicalParentRefs": [
+        "continent:draenor"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6720"
     },
     {
       "ref": "wowhead-zone:6722",
@@ -177,7 +216,20 @@
         "Draenor",
         "Flèches d’Arak"
       ],
-      "pathLabel": "Draenor > Draenor > Flèches d’Arak"
+      "pathLabel": "Draenor > Draenor > Flèches d’Arak",
+      "canonicalRef": "wowhead-zone:6722",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6722"
+      ],
+      "canonicalWowheadZoneIds": [
+        6722
+      ],
+      "canonicalParentRef": "continent:draenor",
+      "canonicalParentRefs": [
+        "continent:draenor"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6722"
     },
     {
       "ref": "wowhead-zone:6721",
@@ -217,7 +269,20 @@
         "Draenor",
         "Gorgrond"
       ],
-      "pathLabel": "Draenor > Draenor > Gorgrond"
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "canonicalRef": "wowhead-zone:6721",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6721"
+      ],
+      "canonicalWowheadZoneIds": [
+        6721
+      ],
+      "canonicalParentRef": "continent:draenor",
+      "canonicalParentRefs": [
+        "continent:draenor"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6721"
     },
     {
       "ref": "wowhead-zone:6723",
@@ -257,7 +322,20 @@
         "Draenor",
         "Jungle de Tanaan"
       ],
-      "pathLabel": "Draenor > Draenor > Jungle de Tanaan"
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "canonicalRef": "wowhead-zone:6723",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6723"
+      ],
+      "canonicalWowheadZoneIds": [
+        6723
+      ],
+      "canonicalParentRef": "continent:draenor",
+      "canonicalParentRefs": [
+        "continent:draenor"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6723"
     },
     {
       "ref": "wowhead-zone:6755",
@@ -297,7 +375,20 @@
         "Draenor",
         "Nagrand"
       ],
-      "pathLabel": "Draenor > Draenor > Nagrand"
+      "pathLabel": "Draenor > Draenor > Nagrand",
+      "canonicalRef": "wowhead-zone:6755",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6755"
+      ],
+      "canonicalWowheadZoneIds": [
+        6755
+      ],
+      "canonicalParentRef": "continent:draenor",
+      "canonicalParentRefs": [
+        "continent:draenor"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6755"
     },
     {
       "ref": "wowhead-zone:6980",
@@ -338,7 +429,20 @@
         "Talador",
         "Shattrath"
       ],
-      "pathLabel": "Draenor > Draenor > Talador > Shattrath"
+      "pathLabel": "Draenor > Draenor > Talador > Shattrath",
+      "canonicalRef": "wowhead-zone:6980",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6980"
+      ],
+      "canonicalWowheadZoneIds": [
+        6980
+      ],
+      "canonicalParentRef": "wowhead-zone:6662",
+      "canonicalParentRefs": [
+        "wowhead-zone:6662"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6662"
     },
     {
       "ref": "wowhead-zone:6662",
@@ -378,7 +482,20 @@
         "Draenor",
         "Talador"
       ],
-      "pathLabel": "Draenor > Draenor > Talador"
+      "pathLabel": "Draenor > Draenor > Talador",
+      "canonicalRef": "wowhead-zone:6662",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6662"
+      ],
+      "canonicalWowheadZoneIds": [
+        6662
+      ],
+      "canonicalParentRef": "continent:draenor",
+      "canonicalParentRefs": [
+        "continent:draenor"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6662"
     },
     {
       "ref": "wowhead-zone:7078",
@@ -419,7 +536,20 @@
         "Vallée d’Ombrelune",
         "Chutelune"
       ],
-      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune > Chutelune"
+      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune > Chutelune",
+      "canonicalRef": "wowhead-zone:7078",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7078"
+      ],
+      "canonicalWowheadZoneIds": [
+        7078
+      ],
+      "canonicalParentRef": "wowhead-zone:6719",
+      "canonicalParentRefs": [
+        "wowhead-zone:6719"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6719"
     },
     {
       "ref": "wowhead-zone:7083",
@@ -460,7 +590,20 @@
         "Vallée d’Ombrelune",
         "Défense de Karabor"
       ],
-      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune > Défense de Karabor"
+      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune > Défense de Karabor",
+      "canonicalRef": "wowhead-zone:7083",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:7083"
+      ],
+      "canonicalWowheadZoneIds": [
+        7083
+      ],
+      "canonicalParentRef": "wowhead-zone:6719",
+      "canonicalParentRefs": [
+        "wowhead-zone:6719"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6719"
     },
     {
       "ref": "wowhead-zone:6719",
@@ -500,7 +643,20 @@
         "Draenor",
         "Vallée d’Ombrelune"
       ],
-      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune"
+      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune",
+      "canonicalRef": "wowhead-zone:6719",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6719"
+      ],
+      "canonicalWowheadZoneIds": [
+        6719
+      ],
+      "canonicalParentRef": "continent:draenor",
+      "canonicalParentRefs": [
+        "continent:draenor"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6719"
     }
   ],
   "exclusions": [

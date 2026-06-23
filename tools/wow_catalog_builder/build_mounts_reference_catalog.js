@@ -17,9 +17,16 @@ const paths = {
   ),
   manualMetadata: path.join(metadataDir, "mounts_metadata.json"),
   locationOverrides: path.join(metadataDir, "mount_location_overrides.json"),
+  locationAssignments: path.join(
+    metadataDir,
+    "mount_location_assignments.json",
+  ),
   wowheadOverrides: path.join(metadataDir, "mounts_wowhead_overrides.json"),
   wowheadPatchCache: path.join(generatedDir, "wowhead_patch_audit_cache.json"),
-  zonesCatalog: path.join(generatedDir, "zones_wowhead_catalog.json"),
+  locationsCatalog: path.join(
+    generatedDir,
+    "locations_reference_catalog.json",
+  ),
   referenceCatalog: path.join(generatedDir, "mounts_reference_catalog.json"),
   auditReport: path.join(generatedDir, "mounts_reference_audit_report.json"),
   ambiguousReviewJson: path.join(
@@ -30,6 +37,8 @@ const paths = {
     generatedDir,
     "mount_location_ambiguous_review.csv",
   ),
+  locationReviewJson: path.join(generatedDir, "mount_location_review.json"),
+  locationReviewCsv: path.join(generatedDir, "mount_location_review.csv"),
 };
 
 const TBD = "à définir";
@@ -205,40 +214,156 @@ async function fetchMamytwinkDetails(candidates, cache) {
   return byUrl;
 }
 
-function buildZoneIndex(zonesCatalog) {
-  const entries = [];
+function buildLocationIndex(locationsCatalog) {
+  const worldsByKey = new Map(
+    (locationsCatalog.worlds ?? []).map((world) => [world.key, world]),
+  );
+  const continentsByKey = new Map(
+    (locationsCatalog.continents ?? []).map((continent) => [
+      continent.key,
+      continent,
+    ]),
+  );
+  const allByRef = new Map(
+    (locationsCatalog.locations ?? []).map((location) => [
+      location.ref,
+      location,
+    ]),
+  );
+  const byRef = new Map();
+  const byWowheadZoneId = new Map();
+  const byName = new Map();
 
-  for (const zone of zonesCatalog.zones ?? []) {
-    if (!zone.name || !zone.geographicRegionName) continue;
-    entries.push({
-      id: zone.id,
-      name: zone.name,
-      key: normalize(zone.name),
-      regionName: zone.geographicRegionName,
-      expansionKey: zone.expansionKey,
-      instanceTypeName: zone.instanceTypeName,
-    });
+  for (const location of locationsCatalog.locations ?? []) {
+    const canonical =
+      allByRef.get(location.canonicalRef ?? location.ref) ?? location;
+    byRef.set(location.ref, canonical);
+    byRef.set(canonical.ref, canonical);
+    if (Number.isInteger(location.wowheadZoneId)) {
+      byWowheadZoneId.set(location.wowheadZoneId, canonical);
+    }
+    if (location.reviewStatus !== "reviewed") continue;
+
+    const key = normalize(location.name);
+    const matches = byName.get(key) ?? new Map();
+    matches.set(canonical.ref, canonical);
+    byName.set(key, matches);
   }
 
-  return entries;
+  return {
+    worldsByKey,
+    continentsByKey,
+    byRef,
+    byWowheadZoneId,
+    byName,
+  };
 }
 
-function findLocationCandidates(detail, zoneIndex) {
-  const keywordKeys = new Set((detail?.keywords ?? []).map(normalize));
-  const candidates = [];
+function describeLocation(location, locationIndex) {
+  if (!location) return null;
+  const world = locationIndex.worldsByKey.get(location.worldKey);
+  const continent = locationIndex.continentsByKey.get(location.continentKey);
+  const canonicalRef = location.canonicalRef ?? location.ref;
 
-  for (const zone of zoneIndex) {
-    if (!keywordKeys.has(zone.key)) continue;
-    candidates.push({
-      zoneId: zone.id,
-      zoneName: zone.name,
-      regionName: zone.regionName,
-      expansionKey: zone.expansionKey,
-      matchSource: "mamytwink_keywords",
-    });
+  return {
+    ref: canonicalRef,
+    name: location.name,
+    kind: location.kind,
+    subzoneName: location.kind === "subzone" ? location.name : null,
+    regionRef: location.canonicalRegionRef ?? location.regionRef,
+    regionName: location.regionName,
+    continentKey: location.continentKey,
+    continentName: continent?.name ?? location.continentKey,
+    worldKey: location.worldKey,
+    worldName: world?.name ?? location.worldKey,
+    path: location.path ?? [],
+    pathLabel: location.pathLabel ?? "",
+    wowheadZoneIds: location.canonicalWowheadZoneIds ??
+      (Number.isInteger(location.wowheadZoneId)
+        ? [location.wowheadZoneId]
+        : []),
+  };
+}
+
+function findLocationCandidates(detail, locationIndex) {
+  const keywordKeys = new Set((detail?.keywords ?? []).map(normalize));
+  const candidatesByRef = new Map();
+
+  for (const keywordKey of keywordKeys) {
+    for (const location of
+      locationIndex.byName.get(keywordKey)?.values() ?? []) {
+      const description = describeLocation(location, locationIndex);
+      candidatesByRef.set(description.ref, {
+        ...description,
+        matchSource: "mamytwink_keywords",
+      });
+    }
   }
 
-  return candidates;
+  return [...candidatesByRef.values()].sort((left, right) =>
+    left.pathLabel.localeCompare(right.pathLabel, "fr"),
+  );
+}
+
+function resolveManualAssignment({
+  assignment,
+  legacyOverride,
+  locationIndex,
+  mountId,
+}) {
+  if (assignment) {
+    const requestedRefs = [
+      assignment.primaryLocationRef,
+      ...(assignment.locationRefs ?? []),
+    ].filter(Boolean);
+    const locations = requestedRefs.map((ref) => {
+      const location = locationIndex.byRef.get(ref);
+      if (!location) {
+        throw new Error(
+          `Localisation ${ref} introuvable pour la monture ${mountId}`,
+        );
+      }
+      return location;
+    });
+    const uniqueLocations = [
+      ...new Map(
+        locations.map((location) => [
+          location.canonicalRef ?? location.ref,
+          location,
+        ]),
+      ).values(),
+    ];
+    const primary = locationIndex.byRef.get(assignment.primaryLocationRef);
+    if (!primary) {
+      throw new Error(
+        `Localisation principale ${assignment.primaryLocationRef} introuvable pour la monture ${mountId}`,
+      );
+    }
+
+    return {
+      primary,
+      locations: uniqueLocations,
+      status: assignment.status ?? "confirmed",
+      source: assignment.source ?? "manual_review",
+      note: assignment.note ?? "",
+    };
+  }
+
+  if (!legacyOverride) return null;
+  const location = locationIndex.byWowheadZoneId.get(legacyOverride.zoneId);
+  if (!location) {
+    throw new Error(
+      `Zone ${legacyOverride.zoneId} introuvable pour la monture ${mountId}`,
+    );
+  }
+
+  return {
+    primary: location,
+    locations: [location],
+    status: "confirmed",
+    source: "legacy_manual_override",
+    note: legacyOverride.note ?? "",
+  };
 }
 
 function wowheadUrlFor(mount, wowheadOverride, wowheadCacheEntry) {
@@ -275,8 +400,9 @@ function buildReferenceMount({
   wowheadOverride,
   wowheadCacheEntry,
   manualMetadata,
-  locationOverride,
-  zoneIndex,
+  locationAssignment,
+  legacyLocationOverride,
+  locationIndex,
 }) {
   const sourceFromWowhead = cleanSource(
     wowheadOverride?.source ?? wowheadOverride?.sourceName,
@@ -294,18 +420,28 @@ function buildReferenceMount({
     mamytwinkDetail?.url,
     mamytwinkCandidate?.mamytwinkUrl,
   );
-  const locationCandidates = findLocationCandidates(mamytwinkDetail, zoneIndex);
+  const locationCandidates = findLocationCandidates(
+    mamytwinkDetail,
+    locationIndex,
+  );
   const uniqueLocation =
     locationCandidates.length === 1 ? locationCandidates[0] : null;
-  const manualLocation = locationOverride
-    ? zoneIndex.find((zone) => zone.id === locationOverride.zoneId)
+  const manualLocation = resolveManualAssignment({
+    assignment: locationAssignment,
+    legacyOverride: legacyLocationOverride,
+    locationIndex,
+    mountId: mount.id,
+  });
+  const autoLocation = uniqueLocation
+    ? locationIndex.byRef.get(uniqueLocation.ref)
     : null;
-  if (locationOverride && !manualLocation) {
-    throw new Error(
-      `Zone ${locationOverride.zoneId} introuvable pour la monture ${mount.id}`,
-    );
-  }
-  const selectedLocation = manualLocation ?? uniqueLocation;
+  const selectedLocation = manualLocation?.primary ?? autoLocation;
+  const selectedLocationDescription = describeLocation(
+    selectedLocation,
+    locationIndex,
+  );
+  const selectedLocations = manualLocation?.locations ??
+    (selectedLocation ? [selectedLocation] : []);
   const wowheadLink = wowheadUrlFor(mount, wowheadOverride, wowheadCacheEntry);
   const missingFields = [];
   const fieldSources = {
@@ -328,12 +464,12 @@ function buildReferenceMount({
     zone: manualLocation
       ? "manual_override"
       : uniqueLocation
-        ? "mamytwink_keywords_unique_match"
+        ? "mamytwink_keywords_unique_canonical_match"
         : "manual_required",
     continent: manualLocation
-      ? "wowhead_zone_catalog_via_manual_override"
+      ? "locations_reference_catalog_via_manual_override"
       : uniqueLocation
-        ? "wowhead_zone_catalog"
+        ? "locations_reference_catalog"
         : "manual_required",
   };
   const values = {
@@ -394,32 +530,51 @@ function buildReferenceMount({
       ? manualLocation
         ? {
             status: "manually_assigned",
-            zoneId: manualLocation.id,
-            zoneName: manualLocation.name,
-            continentName: manualLocation.regionName,
-            source: "manual_override_and_wowhead_zone_catalog",
-            note: locationOverride.note ?? "",
+            primaryLocationRef: selectedLocationDescription.ref,
+            locationRefs: selectedLocations.map(
+              (location) => location.canonicalRef ?? location.ref,
+            ),
+            pathLabel: selectedLocationDescription.pathLabel,
+            source: manualLocation.source,
+            confidence: manualLocation.status,
+            note: manualLocation.note,
           }
         : {
             status: "auto_assigned_unique_candidate",
-            zoneId: uniqueLocation.zoneId,
-            zoneName: uniqueLocation.zoneName,
-            continentName: uniqueLocation.regionName,
-            source: "mamytwink_keywords_and_wowhead_zone_catalog",
+            primaryLocationRef: selectedLocationDescription.ref,
+            locationRefs: [selectedLocationDescription.ref],
+            pathLabel: selectedLocationDescription.pathLabel,
+            source:
+              "mamytwink_keywords_and_locations_reference_catalog",
+            confidence: "unique_candidate",
           }
       : {
           status: locationCandidates.length
             ? "manual_choice_required"
             : "no_candidate",
-          zoneId: null,
-          zoneName: TBD,
-          continentName: TBD,
+          primaryLocationRef: null,
+          locationRefs: [],
+          pathLabel: "",
           source: "manual_required",
+          confidence: "unresolved",
         },
-    zoneId: selectedLocation?.zoneId ?? selectedLocation?.id ?? null,
-    zone: selectedLocation?.zoneName ?? selectedLocation?.name ?? TBD,
-    continent:
-      selectedLocation?.regionName ?? TBD,
+    primaryLocationRef: selectedLocationDescription?.ref ?? null,
+    locationRefs: selectedLocations.map(
+      (location) => location.canonicalRef ?? location.ref,
+    ),
+    locationAssignments: selectedLocations.map((location, index) => ({
+      locationRef: location.canonicalRef ?? location.ref,
+      role: index === 0 ? "primary_obtainment" : "alternative_obtainment",
+      source: manualLocation?.source ?? "mamytwink_keywords",
+      confidence: manualLocation?.status ?? "unique_candidate",
+    })),
+    location: selectedLocationDescription,
+    world: selectedLocationDescription?.worldName ?? TBD,
+    continent: selectedLocationDescription?.continentName ?? TBD,
+    region: selectedLocationDescription?.regionName ?? TBD,
+    subzone: selectedLocationDescription?.subzoneName ?? "",
+    zoneId: selectedLocationDescription?.wowheadZoneIds?.[0] ?? null,
+    zone: selectedLocationDescription?.name ?? TBD,
     instance: manualMetadata?.instance ?? wowheadOverride?.instance ?? TBD,
     boss: manualMetadata?.boss ?? wowheadOverride?.boss ?? "",
     groupRequired:
@@ -485,34 +640,61 @@ function buildAmbiguousReview(referenceMounts) {
       motsClesMamytwink: (mount.mamytwink?.keywords ?? []).join(" | "),
       nombreCandidates: mount.locationCandidates.length,
       zonesCandidates: uniqueJoined(
-        mount.locationCandidates.map((candidate) => candidate.zoneName),
+        mount.locationCandidates.map((candidate) => candidate.name),
       ),
       regionsCandidates: uniqueJoined(
         mount.locationCandidates.map((candidate) => candidate.regionName),
       ),
-      zoneIdsCandidates: uniqueJoined(
-        mount.locationCandidates.map((candidate) => String(candidate.zoneId)),
+      locationRefsCandidates: uniqueJoined(
+        mount.locationCandidates.map((candidate) => candidate.ref),
       ),
-      extensionsCandidates: uniqueJoined(
-        mount.locationCandidates.map((candidate) => candidate.expansionKey),
+      cheminsCandidates: uniqueJoined(
+        mount.locationCandidates.map((candidate) => candidate.pathLabel),
       ),
       statutRevue: "Plusieurs candidates - choix manuel",
       mamytwinkUrl: mount.mamytwinkUrl,
       wowheadUrl: mount.wowheadUrl,
       decisionManuelle: "",
-      zoneIdRetenue: "",
+      locationRefRetenue: "",
       notes: "",
     }));
+}
+
+function buildLocationReview(referenceMounts) {
+  return referenceMounts.map((mount) => ({
+    blizzardId: mount.blizzardId,
+    monture: mount.name,
+    source: mount.source,
+    extension: mount.expansion,
+    patch: mount.patch,
+    statutLocalisation: mount.locationAssignment.status,
+    nombreCandidates: mount.locationCandidates.length,
+    primaryLocationRef: mount.primaryLocationRef ?? "",
+    cheminRetenu: mount.location?.pathLabel ?? "",
+    candidateRefs: uniqueJoined(
+      mount.locationCandidates.map((candidate) => candidate.ref),
+    ),
+    cheminsCandidates: uniqueJoined(
+      mount.locationCandidates.map((candidate) => candidate.pathLabel),
+    ),
+    preuve: mount.locationAssignment.source,
+    confiance: mount.locationAssignment.confidence,
+    mamytwinkUrl: mount.mamytwinkUrl,
+    wowheadUrl: mount.wowheadUrl,
+    decisionLocationRef: "",
+    decisionStatut: "",
+    notes: mount.locationAssignment.note ?? "",
+  }));
 }
 
 function toSemicolonCsv(rows) {
   if (!rows.length) return "";
   const headers = Object.keys(rows[0]);
   const escape = (value) => `"${String(value ?? "").replace(/"/g, '""')}"`;
-  return [
+  return `\uFEFF${[
     headers.map(escape).join(";"),
     ...rows.map((row) => headers.map((header) => escape(row[header])).join(";")),
-  ].join("\n");
+  ].join("\n")}`;
 }
 
 async function writeReviewCsv(content) {
@@ -565,6 +747,15 @@ function buildAudit(referenceMounts, candidates, cache) {
     locationsWithoutCandidate: referenceMounts.filter(
       (mount) => mount.locationAssignment.status === "no_candidate",
     ).length,
+    locationsWithCompleteHierarchy: referenceMounts.filter(
+      (mount) =>
+        mount.location?.worldName &&
+        mount.location?.continentName &&
+        mount.location?.regionName,
+    ).length,
+    assignedLocationRefs: new Set(
+      referenceMounts.flatMap((mount) => mount.locationRefs),
+    ).size,
     note:
       "Les correspondances exactes avec une candidate unique sont affectees automatiquement. Les correspondances multiples restent reservees a la revue manuelle.",
   };
@@ -576,24 +767,33 @@ async function main() {
     mamytwinkData,
     mamytwinkDetailCache,
     manualMetadata,
+    locationAssignmentsData,
     locationOverrides,
     wowheadOverrides,
     wowheadPatchCache,
-    zonesCatalog,
+    locationsCatalog,
   ] = await Promise.all([
     loadJson(paths.blizzardCatalog, []),
     loadJson(paths.mamytwinkCandidates, { candidates: [] }),
     loadJson(paths.mamytwinkDetailCache, { details: {} }),
     loadJson(paths.manualMetadata, []),
+    loadJson(paths.locationAssignments, { assignments: [] }),
     loadJson(paths.locationOverrides, []),
     loadJson(paths.wowheadOverrides, []),
     loadJson(paths.wowheadPatchCache, { entries: {} }),
-    loadJson(paths.zonesCatalog, { zones: [] }),
+    loadJson(paths.locationsCatalog, {
+      worlds: [],
+      continents: [],
+      locations: [],
+    }),
   ]);
 
   const mamytwinkCandidates = mamytwinkData.candidates ?? [];
   const mamytwinkById = byBlizzardId(mamytwinkCandidates);
   const manualById = byBlizzardId(manualMetadata);
+  const locationAssignmentById = byBlizzardId(
+    locationAssignmentsData.assignments ?? [],
+  );
   const locationOverrideById = byBlizzardId(locationOverrides);
   const wowheadById = byBlizzardId(wowheadOverrides);
   const mamytwinkDetailsByUrl = await fetchMamytwinkDetails(
@@ -603,7 +803,7 @@ async function main() {
   const freshDetailCache = await loadJson(paths.mamytwinkDetailCache, {
     details: {},
   });
-  const zoneIndex = buildZoneIndex(zonesCatalog);
+  const locationIndex = buildLocationIndex(locationsCatalog);
 
   const referenceMounts = blizzardCatalog
     .map((mount) => {
@@ -617,8 +817,9 @@ async function main() {
         wowheadOverride: wowheadById.get(mount.id),
         wowheadCacheEntry: wowheadPatchCache.entries?.[`mount:${mount.id}`],
         manualMetadata: manualById.get(mount.id),
-        locationOverride: locationOverrideById.get(mount.id),
-        zoneIndex,
+        locationAssignment: locationAssignmentById.get(mount.id),
+        legacyLocationOverride: locationOverrideById.get(mount.id),
+        locationIndex,
       });
     })
     .sort((a, b) => a.blizzardId - b.blizzardId);
@@ -640,10 +841,15 @@ async function main() {
       expansion: "Mamytwink, sinon à définir",
       patch: "Fiche detail Mamytwink, sinon à définir",
       links: "Mamytwink en lien principal et Wowhead FR en lien secondaire",
+      locations:
+        "Une primaryLocationRef canonique derive monde, continent, region et sous-zone depuis locations_reference_catalog.json",
+      manualLocationDecisions:
+        "mount_location_assignments.json est prioritaire et conserve les revues humaines",
     },
     mounts: referenceMounts,
   };
   const ambiguousReview = buildAmbiguousReview(referenceMounts);
+  const locationReview = buildLocationReview(referenceMounts);
 
   await Promise.all([
     fs.writeFile(
@@ -666,6 +872,20 @@ async function main() {
       "utf8",
     ),
     writeReviewCsv(`${toSemicolonCsv(ambiguousReview)}\n`),
+    fs.writeFile(
+      paths.locationReviewJson,
+      `${JSON.stringify(
+        { total: locationReview.length, rows: locationReview },
+        null,
+        2,
+      )}\n`,
+      "utf8",
+    ),
+    fs.writeFile(
+      paths.locationReviewCsv,
+      `${toSemicolonCsv(locationReview)}\n`,
+      "utf8",
+    ),
   ]);
 
   console.log(

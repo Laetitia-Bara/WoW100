@@ -3,6 +3,8 @@
   "worlds": 4,
   "continents": 14,
   "canonicalLocations": 336,
+  "canonicalSemanticLocations": 334,
+  "canonicalAliasGroups": 2,
   "sourceDerivedLocations": 328,
   "syntheticLocations": 8,
   "exclusions": 277,
