@@ -1187,13 +1187,13 @@ class _PlannerItemCard extends StatelessWidget {
                           child: const Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              Text(
+                              /*Text(
                                 'WH',
                                 style: TextStyle(
                                   fontWeight: FontWeight.w800,
                                   fontSize: 9,
                                 ),
-                              ),
+                              ),*/
                               SizedBox(width: 1),
                               Icon(Icons.rocket_launch_rounded, size: 12),
                             ],
