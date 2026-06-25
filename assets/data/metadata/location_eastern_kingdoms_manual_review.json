@@ -188,10 +188,10 @@
                      "wowheadZoneId":  15173,
                      "name":  "Bois des Chants éternels",
                      "regionName":  "Bois des Chants éternels",
-                     "decision":  "Conservée",
+                     "decision":  "Supprimée",
                      "extensionName":  "Midnight",
                      "instanceTypeName":  "Zone",
-                     "note":  ""
+                     "note":  "Doublon Midnight: conserver la version Quel'Thalas (15968)."
                  },
                  {
                      "wowheadZoneId":  15915,

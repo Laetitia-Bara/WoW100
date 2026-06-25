@@ -121,7 +121,7 @@
       "defaultReviewStatus": "pending",
       "defaultKind": "region",
       "excludedDefaultZoneIds": [1519, 1537, 1497, 3487],
-      "capitalZoneIds": [1519, 1537, 1497, 3487, 15969, 4714],
+      "capitalZoneIds": [1519, 1537, 1497, 3487, 4714],
       "note": "Les 259 entrées affichées sont conservées comme régions en attente de revue manuelle. Les quatre capitales hors liste restent également en attente."
     },
     {
@@ -241,7 +241,7 @@
       "defaultReviewStatus": "pending",
       "defaultKind": "region",
       "excludedDefaultZoneIds": [],
-      "capitalZoneIds": [],
+      "capitalZoneIds": [15969],
       "note": "Les 15 entrées affichées sont classées provisoirement comme régions. Quel’Thalas est rattaché au continent parent des Royaumes de l’Est."
     }
   ],
@@ -512,6 +512,15 @@
       "parentRef": "wowhead-zone:1377",
       "reviewStatus": "reviewed",
       "note": "Silithus : la Plaie est rattaché à Silithus."
+    },
+    {
+      "wowheadZoneId": 15969,
+      "action": "override",
+      "continentKey": "quel-thalas",
+      "kind": "region",
+      "parentRef": "wowhead-zone:15968",
+      "reviewStatus": "reviewed",
+      "note": "Version Midnight de Lune-d'Argent rattachee a Quel'Thalas > Bois des Chants eternels."
     },
     {
       "wowheadZoneId": 16395,

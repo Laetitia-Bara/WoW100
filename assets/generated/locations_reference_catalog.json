@@ -2810,12 +2810,12 @@
       "worldKey": "azeroth",
       "continentKey": "eastern-kingdoms",
       "kind": "subzone",
-      "parentRef": "wowhead-zone:15173",
+      "parentRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels",
       "parentRefs": [
-        "wowhead-zone:15173"
+        "manual-location:eastern-kingdoms:bois-des-chants-eternels"
       ],
       "depthBelowContinent": 2,
-      "regionRef": "wowhead-zone:15173",
+      "regionRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels",
       "regionName": "Bois des Chants éternels",
       "extensionId": 4,
       "extensionKey": "mists-of-pandaria",
@@ -2850,69 +2850,15 @@
       "canonicalWowheadZoneIds": [
         6455
       ],
-      "canonicalParentRef": "wowhead-zone:15173",
+      "canonicalParentRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels",
       "canonicalParentRefs": [
-        "wowhead-zone:15173"
+        "manual-location:eastern-kingdoms:bois-des-chants-eternels"
       ],
-      "canonicalRegionRef": "wowhead-zone:15173"
+      "canonicalRegionRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels"
     },
     {
-      "ref": "wowhead-zone:15969",
-      "wowheadZoneId": 15969,
-      "name": "Lune-d’Argent",
-      "normalizedName": "lune-d-argent",
-      "worldKey": "azeroth",
-      "continentKey": "eastern-kingdoms",
-      "kind": "region",
-      "parentRef": "wowhead-zone:15173",
-      "parentRefs": [
-        "wowhead-zone:15173"
-      ],
-      "depthBelowContinent": 2,
-      "regionRef": "wowhead-zone:15969",
-      "regionName": "Lune-d’Argent",
-      "extensionId": 11,
-      "extensionKey": "midnight",
-      "extensionName": "Midnight",
-      "expansionBasePatch": "12.0.0",
-      "patch": null,
-      "instanceTypeId": 0,
-      "instanceTypeName": "Zone",
-      "territoryId": 3,
-      "territoryName": "Sanctuaire",
-      "minLevel": 1,
-      "maxLevel": 90,
-      "wowheadUrl": "https://www.wowhead.com/fr/zone=15969",
-      "reviewStatus": "reviewed",
-      "reviewMethod": "user_manual_review",
-      "reviewBatch": "eastern-kingdoms-manual-review",
-      "note": "",
-      "source": "wowhead_zone_catalog_and_user_manual_review",
-      "reviewRegionName": "Bois des Chants éternels",
-      "path": [
-        "Azeroth",
-        "Royaumes de l'Est",
-        "Bois des Chants éternels",
-        "Lune-d’Argent"
-      ],
-      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Lune-d’Argent",
-      "canonicalRef": "wowhead-zone:15969",
-      "isCanonical": true,
-      "aliasRefs": [
-        "wowhead-zone:15969"
-      ],
-      "canonicalWowheadZoneIds": [
-        15969
-      ],
-      "canonicalParentRef": "wowhead-zone:15173",
-      "canonicalParentRefs": [
-        "wowhead-zone:15173"
-      ],
-      "canonicalRegionRef": "wowhead-zone:15969"
-    },
-    {
-      "ref": "wowhead-zone:15173",
-      "wowheadZoneId": 15173,
+      "ref": "manual-location:eastern-kingdoms:bois-des-chants-eternels",
+      "wowheadZoneId": null,
       "name": "Bois des Chants éternels",
       "normalizedName": "bois-des-chants-eternels",
       "worldKey": "azeroth",
@@ -2923,45 +2869,42 @@
         "continent:eastern-kingdoms"
       ],
       "depthBelowContinent": 1,
-      "regionRef": "wowhead-zone:15173",
+      "regionRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels",
       "regionName": "Bois des Chants éternels",
-      "extensionId": 11,
-      "extensionKey": "midnight",
-      "extensionName": "Midnight",
-      "expansionBasePatch": "12.0.0",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
       "patch": null,
-      "instanceTypeId": 0,
+      "instanceTypeId": null,
       "instanceTypeName": "Zone",
-      "territoryId": 1,
-      "territoryName": "Horde",
-      "minLevel": 0,
-      "maxLevel": 0,
-      "wowheadUrl": "https://www.wowhead.com/fr/zone=15173",
+      "territoryId": null,
+      "territoryName": "Inconnu",
+      "minLevel": null,
+      "maxLevel": null,
+      "wowheadUrl": "",
       "reviewStatus": "reviewed",
-      "reviewMethod": "user_manual_review",
+      "reviewMethod": "user_manual_review_synthetic_parent",
       "reviewBatch": "eastern-kingdoms-manual-review",
-      "note": "",
-      "source": "wowhead_zone_catalog_and_user_manual_review",
-      "reviewRegionName": "Bois des Chants éternels",
+      "note": "Région parente créée depuis la revue manuelle.",
+      "source": "user_manual_review",
       "path": [
         "Azeroth",
         "Royaumes de l'Est",
         "Bois des Chants éternels"
       ],
       "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels",
-      "canonicalRef": "wowhead-zone:15173",
+      "canonicalRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels",
       "isCanonical": true,
       "aliasRefs": [
-        "wowhead-zone:15173"
+        "manual-location:eastern-kingdoms:bois-des-chants-eternels"
       ],
-      "canonicalWowheadZoneIds": [
-        15173
-      ],
+      "canonicalWowheadZoneIds": [],
       "canonicalParentRef": "continent:eastern-kingdoms",
       "canonicalParentRefs": [
         "continent:eastern-kingdoms"
       ],
-      "canonicalRegionRef": "wowhead-zone:15173"
+      "canonicalRegionRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels"
     },
     {
       "ref": "wowhead-zone:1497",
@@ -13650,6 +13593,60 @@
       "canonicalRegionRef": "wowhead-zone:5805"
     },
     {
+      "ref": "wowhead-zone:15969",
+      "wowheadZoneId": 15969,
+      "name": "Lune-d’Argent",
+      "normalizedName": "lune-d-argent",
+      "worldKey": "azeroth",
+      "continentKey": "quel-thalas",
+      "kind": "region",
+      "parentRef": "wowhead-zone:15968",
+      "parentRefs": [
+        "wowhead-zone:15968"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:15969",
+      "regionName": "Lune-d’Argent",
+      "extensionId": 11,
+      "extensionKey": "midnight",
+      "extensionName": "Midnight",
+      "expansionBasePatch": "12.0.0",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 3,
+      "territoryName": "Sanctuaire",
+      "minLevel": 1,
+      "maxLevel": 90,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=15969",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_rule",
+      "reviewBatch": "quel-thalas-2026-06-22",
+      "note": "Version Midnight de Lune-d'Argent rattachee a Quel'Thalas > Bois des Chants eternels.",
+      "source": "wowhead_zone_catalog_and_manual_review",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels",
+        "Lune-d’Argent"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels > Lune-d’Argent",
+      "canonicalRef": "wowhead-zone:15969",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:15969"
+      ],
+      "canonicalWowheadZoneIds": [
+        15969
+      ],
+      "canonicalParentRef": "wowhead-zone:15968",
+      "canonicalParentRefs": [
+        "wowhead-zone:15968"
+      ],
+      "canonicalRegionRef": "wowhead-zone:15969"
+    },
+    {
       "ref": "wowhead-zone:15968",
       "wowheadZoneId": 15968,
       "name": "Bois des Chants éternels",
@@ -20811,6 +20808,18 @@
       "instanceTypeName": "Zone",
       "exclusionMethod": "user_manual_review",
       "reason": "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 15173,
+      "name": "Bois des Chants éternels",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "eastern-kingdoms",
+      "continentName": "Royaumes de l'Est",
+      "expansionName": "Midnight",
+      "instanceTypeName": "Zone",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Doublon Midnight: conserver la version Quel'Thalas (15968)."
     },
     {
       "wowheadZoneId": 15334,

@@ -2,18 +2,72 @@
   "sourceEntriesInWowheadCategory": 15,
   "suppliedListEntries": 15,
   "parentContinentKey": "eastern-kingdoms",
-  "retainedEntries": 13,
-  "canonicalLocationNodes": 13,
+  "retainedEntries": 14,
+  "canonicalLocationNodes": 14,
   "syntheticRegions": 0,
   "subzones": 8,
   "excludedEntries": 3,
-  "reviewedEntries": 13,
+  "reviewedEntries": 14,
   "pendingEntries": 0,
   "byKind": {
-    "region": 5,
+    "region": 6,
     "subzone": 8
   },
   "locations": [
+    {
+      "ref": "wowhead-zone:15969",
+      "wowheadZoneId": 15969,
+      "name": "Lune-d’Argent",
+      "normalizedName": "lune-d-argent",
+      "worldKey": "azeroth",
+      "continentKey": "quel-thalas",
+      "kind": "region",
+      "parentRef": "wowhead-zone:15968",
+      "parentRefs": [
+        "wowhead-zone:15968"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:15969",
+      "regionName": "Lune-d’Argent",
+      "extensionId": 11,
+      "extensionKey": "midnight",
+      "extensionName": "Midnight",
+      "expansionBasePatch": "12.0.0",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 3,
+      "territoryName": "Sanctuaire",
+      "minLevel": 1,
+      "maxLevel": 90,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=15969",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_rule",
+      "reviewBatch": "quel-thalas-2026-06-22",
+      "note": "Version Midnight de Lune-d'Argent rattachee a Quel'Thalas > Bois des Chants eternels.",
+      "source": "wowhead_zone_catalog_and_manual_review",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels",
+        "Lune-d’Argent"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels > Lune-d’Argent",
+      "canonicalRef": "wowhead-zone:15969",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:15969"
+      ],
+      "canonicalWowheadZoneIds": [
+        15969
+      ],
+      "canonicalParentRef": "wowhead-zone:15968",
+      "canonicalParentRefs": [
+        "wowhead-zone:15968"
+      ],
+      "canonicalRegionRef": "wowhead-zone:15969"
+    },
     {
       "ref": "wowhead-zone:15968",
       "wowheadZoneId": 15968,

@@ -156310,11 +156310,11 @@
       ],
       "locationCandidates": [
         {
-          "ref": "wowhead-zone:15173",
+          "ref": "manual-location:eastern-kingdoms:bois-des-chants-eternels",
           "name": "Bois des Chants éternels",
           "kind": "region",
           "subzoneName": null,
-          "regionRef": "wowhead-zone:15173",
+          "regionRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels",
           "regionName": "Bois des Chants éternels",
           "continentKey": "eastern-kingdoms",
           "continentName": "Royaumes de l'Est",
@@ -156326,9 +156326,7 @@
             "Bois des Chants éternels"
           ],
           "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels",
-          "wowheadZoneIds": [
-            15173
-          ],
+          "wowheadZoneIds": [],
           "matchSource": "mamytwink_keywords"
         },
         {
@@ -156770,11 +156768,11 @@
       ],
       "locationCandidates": [
         {
-          "ref": "wowhead-zone:15173",
+          "ref": "manual-location:eastern-kingdoms:bois-des-chants-eternels",
           "name": "Bois des Chants éternels",
           "kind": "region",
           "subzoneName": null,
-          "regionRef": "wowhead-zone:15173",
+          "regionRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels",
           "regionName": "Bois des Chants éternels",
           "continentKey": "eastern-kingdoms",
           "continentName": "Royaumes de l'Est",
@@ -156786,9 +156784,7 @@
             "Bois des Chants éternels"
           ],
           "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels",
-          "wowheadZoneIds": [
-            15173
-          ],
+          "wowheadZoneIds": [],
           "matchSource": "mamytwink_keywords"
         },
         {
@@ -157295,17 +157291,18 @@
           "subzoneName": null,
           "regionRef": "wowhead-zone:15969",
           "regionName": "Lune-d’Argent",
-          "continentKey": "eastern-kingdoms",
-          "continentName": "Royaumes de l'Est",
+          "continentKey": "quel-thalas",
+          "continentName": "Quel'Thalas",
           "worldKey": "azeroth",
           "worldName": "Azeroth",
           "path": [
             "Azeroth",
             "Royaumes de l'Est",
+            "Quel'Thalas",
             "Bois des Chants éternels",
             "Lune-d’Argent"
           ],
-          "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Lune-d’Argent",
+          "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels > Lune-d’Argent",
           "wowheadZoneIds": [
             15969
           ],
@@ -157318,7 +157315,7 @@
         "locationRefs": [
           "wowhead-zone:15969"
         ],
-        "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Lune-d’Argent",
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels > Lune-d’Argent",
         "source": "user_manual_review",
         "confidence": "confirmed",
         "note": "Choix valide dans la revue des localisations ambigues."
@@ -157342,23 +157339,24 @@
         "subzoneName": null,
         "regionRef": "wowhead-zone:15969",
         "regionName": "Lune-d’Argent",
-        "continentKey": "eastern-kingdoms",
-        "continentName": "Royaumes de l'Est",
+        "continentKey": "quel-thalas",
+        "continentName": "Quel'Thalas",
         "worldKey": "azeroth",
         "worldName": "Azeroth",
         "path": [
           "Azeroth",
           "Royaumes de l'Est",
+          "Quel'Thalas",
           "Bois des Chants éternels",
           "Lune-d’Argent"
         ],
-        "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Lune-d’Argent",
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels > Lune-d’Argent",
         "wowheadZoneIds": [
           15969
         ]
       },
       "world": "Azeroth",
-      "continent": "Royaumes de l'Est",
+      "continent": "Quel'Thalas",
       "region": "Lune-d’Argent",
       "subzone": "",
       "zoneId": 15969,
@@ -157470,17 +157468,18 @@
           "subzoneName": null,
           "regionRef": "wowhead-zone:15969",
           "regionName": "Lune-d’Argent",
-          "continentKey": "eastern-kingdoms",
-          "continentName": "Royaumes de l'Est",
+          "continentKey": "quel-thalas",
+          "continentName": "Quel'Thalas",
           "worldKey": "azeroth",
           "worldName": "Azeroth",
           "path": [
             "Azeroth",
             "Royaumes de l'Est",
+            "Quel'Thalas",
             "Bois des Chants éternels",
             "Lune-d’Argent"
           ],
-          "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Lune-d’Argent",
+          "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels > Lune-d’Argent",
           "wowheadZoneIds": [
             15969
           ],
@@ -157493,7 +157492,7 @@
         "locationRefs": [
           "wowhead-zone:15969"
         ],
-        "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Lune-d’Argent",
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels > Lune-d’Argent",
         "source": "user_manual_review",
         "confidence": "confirmed",
         "note": "Choix valide dans la revue des localisations ambigues."
@@ -157517,23 +157516,24 @@
         "subzoneName": null,
         "regionRef": "wowhead-zone:15969",
         "regionName": "Lune-d’Argent",
-        "continentKey": "eastern-kingdoms",
-        "continentName": "Royaumes de l'Est",
+        "continentKey": "quel-thalas",
+        "continentName": "Quel'Thalas",
         "worldKey": "azeroth",
         "worldName": "Azeroth",
         "path": [
           "Azeroth",
           "Royaumes de l'Est",
+          "Quel'Thalas",
           "Bois des Chants éternels",
           "Lune-d’Argent"
         ],
-        "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels > Lune-d’Argent",
+        "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels > Lune-d’Argent",
         "wowheadZoneIds": [
           15969
         ]
       },
       "world": "Azeroth",
-      "continent": "Royaumes de l'Est",
+      "continent": "Quel'Thalas",
       "region": "Lune-d’Argent",
       "subzone": "",
       "zoneId": 15969,

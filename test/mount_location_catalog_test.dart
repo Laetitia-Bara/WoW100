@@ -28,6 +28,15 @@ void main() {
       expect(deepSeaCreature.region, 'Îles Brisées');
       expect(deepSeaCreature.zone, 'Azsuna');
       expect(deepSeaCreature.subzone, 'Œil d’Azshara');
+
+      final prideOfTheHunt = items.singleWhere(
+        (item) => item.blizzardId == 2769,
+      );
+      expect(prideOfTheHunt.locationRef, 'wowhead-zone:15969');
+      expect(prideOfTheHunt.world, 'Azeroth');
+      expect(prideOfTheHunt.region, "Quel'Thalas");
+      expect(prideOfTheHunt.zone, contains('Argent'));
+      expect(prideOfTheHunt.subzone, isEmpty);
     },
   );
 }
