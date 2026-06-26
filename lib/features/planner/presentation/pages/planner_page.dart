@@ -502,13 +502,6 @@ class _PlannerPageState extends State<PlannerPage> {
                     ),
                   ),
                   const SizedBox(height: 16),
-                  if (_isExtensionPlanner || _selectedRegionFilter != null) ...[
-                    _RegionFilterField(
-                      selectedRegion: _selectedRegionFilter,
-                      onTap: _openRegionSelector,
-                    ),
-                    const SizedBox(height: 12),
-                  ],
                   TextField(
                     decoration: const InputDecoration(
                       labelText:
@@ -523,6 +516,13 @@ class _PlannerPageState extends State<PlannerPage> {
                     },
                   ),
                   const SizedBox(height: 12),
+                  if (_isExtensionPlanner || _selectedRegionFilter != null) ...[
+                    _RegionFilterField(
+                      selectedRegion: _selectedRegionFilter,
+                      onTap: _openRegionSelector,
+                    ),
+                    const SizedBox(height: 12),
+                  ],
                   if (_isExtensionPlanner) ...[
                     _CategoryFilterField(
                       selectedCategories: _selectedCategories,
