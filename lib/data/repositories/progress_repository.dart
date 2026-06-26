@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import '../../core/services/battle_net_token_service.dart';
 import '../../core/services/local_check_service.dart';
 import '../../core/services/selected_character_service.dart';
+import '../models/achievement_faction_equivalents.dart';
 import '../models/expansion_progress.dart';
 import '../models/tracking_category.dart';
 import '../models/wow_expansion.dart';
@@ -69,22 +70,37 @@ class JsonProgressRepository implements ProgressRepository {
       }
 
       try {
-        final character = await _selectedCharacterService.loadCharacter();
-        final achievements = character == null
-            ? await _battleNetRepository.getAccountAchievements(token)
-            : await _battleNetRepository.getAchievements(
-                token,
-                character.realmSlug,
-                character.name,
-              );
+        final accountAchievements = await _battleNetRepository
+            .getAccountAchievements(token);
         ownedAchievementIds.addAll(
-          achievements.map((achievement) => achievement.id),
+          accountAchievements.map((achievement) => achievement.id),
         );
       } catch (e, stack) {
-        debugPrint('BATTLE.NET ACHIEVEMENTS ERROR: $e');
+        debugPrint('BATTLE.NET ACCOUNT ACHIEVEMENTS ERROR: $e');
+        debugPrint('$stack');
+      }
+
+      try {
+        final character = await _selectedCharacterService.loadCharacter();
+        if (character != null) {
+          final achievements = await _battleNetRepository.getAchievements(
+            token,
+            character.realmSlug,
+            character.name,
+          );
+          ownedAchievementIds.addAll(
+            achievements.map((achievement) => achievement.id),
+          );
+        }
+      } catch (e, stack) {
+        debugPrint('BATTLE.NET CHARACTER ACHIEVEMENTS ERROR: $e');
         debugPrint('$stack');
       }
     }
+
+    final expandedOwnedAchievementIds = AchievementFactionEquivalents.expand(
+      ownedAchievementIds,
+    );
 
     final progresses = <ExpansionProgress>[];
 
@@ -109,7 +125,7 @@ class JsonProgressRepository implements ProgressRepository {
           ],
           ownedMountIds,
           ownedPetIds,
-          ownedAchievementIds,
+          expandedOwnedAchievementIds,
         ),
       );
     }
@@ -120,7 +136,7 @@ class JsonProgressRepository implements ProgressRepository {
         [...allMountItems, ...allPetItems, ...allAchievementItems],
         ownedMountIds,
         ownedPetIds,
-        ownedAchievementIds,
+        expandedOwnedAchievementIds,
       ),
       ...progresses,
     ];
@@ -145,6 +161,21 @@ class JsonProgressRepository implements ProgressRepository {
     var obtainableAchievements = 0;
     var obtainableMounts = 0;
     var obtainablePets = 0;
+    final checkedAchievementIds = <int>{};
+
+    for (final item in items) {
+      if (item.category != TrackingCategory.achievements ||
+          item.blizzardId == null) {
+        continue;
+      }
+
+      final checked = await _localCheckService.isChecked(item.id);
+      if (checked) checkedAchievementIds.add(item.blizzardId!);
+    }
+
+    final expandedCheckedAchievementIds = AchievementFactionEquivalents.expand(
+      checkedAchievementIds,
+    );
 
     for (final item in items) {
       final checked = await _localCheckService.isChecked(item.id);
@@ -156,6 +187,10 @@ class JsonProgressRepository implements ProgressRepository {
                   ownedPetIds.contains(item.blizzardId)) ||
               (item.category == TrackingCategory.achievements &&
                   ownedAchievementIds.contains(item.blizzardId)));
+      final checkedByFactionEquivalent =
+          item.category == TrackingCategory.achievements &&
+          item.blizzardId != null &&
+          expandedCheckedAchievementIds.contains(item.blizzardId);
 
       if (item.category == TrackingCategory.achievements) {
         totalAchievements += 1;
@@ -168,7 +203,7 @@ class JsonProgressRepository implements ProgressRepository {
         if (!item.unavailable) obtainablePets += 1;
       }
 
-      if ((checked || owned) &&
+      if ((checked || checkedByFactionEquivalent || owned) &&
           item.category == TrackingCategory.achievements) {
         completedAchievements += 1;
         if (!item.unavailable) completedObtainableAchievements += 1;

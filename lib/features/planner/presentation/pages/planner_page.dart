@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:wow100/core/services/battle_net_token_service.dart';
+import 'package:wow100/data/models/achievement_faction_equivalents.dart';
 import 'package:wow100/data/models/achievement_group_hierarchy.dart';
 import 'package:wow100/data/models/tracking_category.dart';
 import 'package:wow100/data/repositories/battle_net_repository.dart';
@@ -181,17 +182,33 @@ class _PlannerPageState extends State<PlannerPage> {
 
       if (token != null) {
         if (_tracksAchievements) {
+          try {
+            final accountAchievements = await BattleNetRepository()
+                .getAccountAchievements(token);
+            ownedAchievementIds.addAll(
+              accountAchievements.map((achievement) => achievement.id),
+            );
+          } catch (e, stack) {
+            debugPrint('BATTLE.NET ACCOUNT ACHIEVEMENTS ERROR: $e');
+            debugPrint('$stack');
+          }
+
           final character = await _selectedCharacterService.loadCharacter();
 
           if (character != null) {
-            final achievements = await BattleNetRepository().getAchievements(
-              token,
-              character.realmSlug,
-              character.name,
-            );
-            ownedAchievementIds.addAll(
-              achievements.map((achievement) => achievement.id),
-            );
+            try {
+              final achievements = await BattleNetRepository().getAchievements(
+                token,
+                character.realmSlug,
+                character.name,
+              );
+              ownedAchievementIds.addAll(
+                achievements.map((achievement) => achievement.id),
+              );
+            } catch (e, stack) {
+              debugPrint('BATTLE.NET CHARACTER ACHIEVEMENTS ERROR: $e');
+              debugPrint('$stack');
+            }
           }
         }
 
@@ -206,10 +223,33 @@ class _PlannerPageState extends State<PlannerPage> {
         }
       }
 
-      final updatedItems = <TrackingItem>[];
+      final expandedOwnedAchievementIds = AchievementFactionEquivalents.expand(
+        ownedAchievementIds,
+      );
+      final checkedItemIds = <String>{};
+      final checkedAchievementIds = <int>{};
 
       for (final item in items) {
         final checked = await _localCheckService.isChecked(item.id);
+        if (!checked) continue;
+
+        checkedItemIds.add(item.id);
+        if (item.category == TrackingCategory.achievements &&
+            item.blizzardId != null) {
+          checkedAchievementIds.add(item.blizzardId!);
+        }
+      }
+
+      final expandedCheckedAchievementIds =
+          AchievementFactionEquivalents.expand(checkedAchievementIds);
+      final updatedItems = <TrackingItem>[];
+
+      for (final item in items) {
+        final checked =
+            checkedItemIds.contains(item.id) ||
+            (item.category == TrackingCategory.achievements &&
+                item.blizzardId != null &&
+                expandedCheckedAchievementIds.contains(item.blizzardId));
         final ownedMount =
             item.category == TrackingCategory.mounts &&
             item.blizzardId != null &&
@@ -221,7 +261,7 @@ class _PlannerPageState extends State<PlannerPage> {
         final ownedAchievement =
             item.category == TrackingCategory.achievements &&
             item.blizzardId != null &&
-            ownedAchievementIds.contains(item.blizzardId);
+            expandedOwnedAchievementIds.contains(item.blizzardId);
 
         updatedItems.add(
           item.copyWith(
@@ -352,13 +392,29 @@ class _PlannerPageState extends State<PlannerPage> {
   }
 
   Future<void> _setChecked(TrackingItem item, bool checked) async {
-    await _localCheckService.setChecked(item.id, checked);
+    final affectedItemIds = _items
+        .where(
+          (current) =>
+              current.id == item.id ||
+              (item.category == TrackingCategory.achievements &&
+                  current.category == TrackingCategory.achievements &&
+                  AchievementFactionEquivalents.areEquivalent(
+                    item.blizzardId,
+                    current.blizzardId,
+                  )),
+        )
+        .map((current) => current.id)
+        .toSet();
+
+    for (final itemId in affectedItemIds) {
+      await _localCheckService.setChecked(itemId, checked);
+    }
 
     if (!mounted) return;
 
     setState(() {
       _items = _items.map((current) {
-        if (current.id == item.id) {
+        if (affectedItemIds.contains(current.id)) {
           return current.copyWith(obtained: checked);
         }
 
