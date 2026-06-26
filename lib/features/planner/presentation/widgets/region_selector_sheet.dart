@@ -132,7 +132,7 @@ class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
               padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
               child: TextField(
                 decoration: const InputDecoration(
-                  labelText: 'Rechercher une extension, region ou zone',
+                  labelText: 'Rechercher une région ou zone',
                   prefixIcon: Icon(Icons.search),
                   border: OutlineInputBorder(),
                 ),

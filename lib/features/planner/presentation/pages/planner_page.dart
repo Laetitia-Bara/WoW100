@@ -620,10 +620,10 @@ class _PlannerPageState extends State<PlannerPage> {
                       selectedRegion: _selectedRegionFilter,
                       labelText: _isAllCollectionPlanner
                           ? 'Recherche par régions (en construction)'
-                          : 'Region',
+                          : 'Région',
                       emptyLabel: _isAllCollectionPlanner
                           ? 'Toutes les extensions'
-                          : 'Toutes les regions',
+                          : 'Toutes les régions (En construction ^^)',
                       onTap: _openRegionSelector,
                       onClear: _selectedRegionFilter == null
                           ? null
@@ -825,8 +825,8 @@ class _RegionFilterField extends StatelessWidget {
   const _RegionFilterField({
     required this.selectedRegion,
     required this.onTap,
-    this.labelText = 'Region',
-    this.emptyLabel = 'Toutes les regions',
+    this.labelText = 'Région',
+    this.emptyLabel = 'Toutes les régions (En construction ^^)',
     this.onClear,
   });
 
