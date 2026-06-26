@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_theme.dart';
+import '../../../../data/models/tracking_category.dart';
 import '../../../../data/models/tracking_item.dart';
 import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/models/wow_region_filter.dart';
@@ -15,12 +16,14 @@ class RegionSelectorSheet extends StatefulWidget {
     required this.newestFirst,
     this.selectedRegion,
     this.expansionScope,
+    this.categoryScope,
   });
 
   final PlannerRepository repository;
   final bool newestFirst;
   final WowRegionFilter? selectedRegion;
   final WowExpansion? expansionScope;
+  final TrackingCategory? categoryScope;
 
   @override
   State<RegionSelectorSheet> createState() => _RegionSelectorSheetState();
@@ -62,7 +65,10 @@ class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
     final sections = <_ExpansionRegionSection>[];
 
     for (final expansion in expansions) {
-      final items = await widget.repository.getItems(expansion);
+      final items = await widget.repository.getItems(
+        expansion,
+        category: widget.categoryScope,
+      );
       final catalog = catalogByExpansion[expansion];
       final section = catalog == null
           ? _ExpansionRegionSection.fromItems(expansion, items)

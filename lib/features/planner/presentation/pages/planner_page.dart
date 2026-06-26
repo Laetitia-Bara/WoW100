@@ -90,6 +90,12 @@ class _PlannerPageState extends State<PlannerPage> {
       widget.extension != WowExpansion.allMounts &&
       widget.extension != WowExpansion.allPets;
 
+  bool get _isAllCollectionPlanner =>
+      widget.category == null &&
+      (widget.extension == WowExpansion.allAchievements ||
+          widget.extension == WowExpansion.allMounts ||
+          widget.extension == WowExpansion.allPets);
+
   bool get _tracksAchievements => _isExtensionPlanner || _isAchievementsPlanner;
 
   bool get _tracksMounts =>
@@ -98,6 +104,25 @@ class _PlannerPageState extends State<PlannerPage> {
       widget.extension == WowExpansion.allMounts;
 
   bool get _tracksPets => _isExtensionPlanner || _isPetsPlanner;
+
+  TrackingCategory? get _regionSelectorCategoryScope {
+    if (widget.extension == WowExpansion.allAchievements) {
+      return TrackingCategory.achievements;
+    }
+    if (widget.extension == WowExpansion.allMounts) {
+      return TrackingCategory.mounts;
+    }
+    if (widget.extension == WowExpansion.allPets) {
+      return TrackingCategory.pets;
+    }
+
+    return null;
+  }
+
+  bool get _showsRegionFilter =>
+      _isExtensionPlanner ||
+      _isAllCollectionPlanner ||
+      _selectedRegionFilter != null;
 
   String get _collectionName {
     if (_isExtensionPlanner) return 'collectables';
@@ -134,10 +159,21 @@ class _PlannerPageState extends State<PlannerPage> {
         newestFirst: widget.newestFirst,
         selectedRegion: _selectedRegionFilter,
         expansionScope: _isExtensionPlanner ? widget.extension : null,
+        categoryScope: _regionSelectorCategoryScope,
       ),
     );
 
     if (result == null || !mounted) return;
+
+    if (_isAllCollectionPlanner) {
+      setState(() {
+        _selectedRegionFilter = result;
+        _searchQuery = '';
+        _selectedGroups.clear();
+        _collapsedGroups.clear();
+      });
+      return;
+    }
 
     if (result.expansion != widget.extension || widget.category != null) {
       await Navigator.pushReplacement(
@@ -433,6 +469,13 @@ class _PlannerPageState extends State<PlannerPage> {
     });
   }
 
+  void _clearRegionFilter() {
+    setState(() {
+      _selectedRegionFilter = null;
+      _collapsedGroups.clear();
+    });
+  }
+
   Future<void> _openGroupSelector(List<String> groupOptions) async {
     final result = await showModalBottomSheet<Set<String>>(
       context: context,
@@ -572,10 +615,19 @@ class _PlannerPageState extends State<PlannerPage> {
                     },
                   ),
                   const SizedBox(height: 12),
-                  if (_isExtensionPlanner || _selectedRegionFilter != null) ...[
+                  if (_showsRegionFilter) ...[
                     _RegionFilterField(
                       selectedRegion: _selectedRegionFilter,
+                      labelText: _isAllCollectionPlanner
+                          ? 'Recherche par régions (en construction)'
+                          : 'Region',
+                      emptyLabel: _isAllCollectionPlanner
+                          ? 'Toutes les extensions'
+                          : 'Toutes les regions',
                       onTap: _openRegionSelector,
+                      onClear: _selectedRegionFilter == null
+                          ? null
+                          : _clearRegionFilter,
                     ),
                     const SizedBox(height: 12),
                   ],
@@ -770,14 +822,23 @@ class _PlannerFilterSwitch extends StatelessWidget {
 }
 
 class _RegionFilterField extends StatelessWidget {
-  const _RegionFilterField({required this.selectedRegion, required this.onTap});
+  const _RegionFilterField({
+    required this.selectedRegion,
+    required this.onTap,
+    this.labelText = 'Region',
+    this.emptyLabel = 'Toutes les regions',
+    this.onClear,
+  });
 
   final WowRegionFilter? selectedRegion;
   final VoidCallback onTap;
+  final String labelText;
+  final String emptyLabel;
+  final VoidCallback? onClear;
 
   String get _label {
     final region = selectedRegion;
-    if (region == null) return 'Toutes les regions';
+    if (region == null) return emptyLabel;
 
     return region.fullLabel;
   }
@@ -788,8 +849,8 @@ class _RegionFilterField extends StatelessWidget {
       borderRadius: BorderRadius.circular(4),
       onTap: onTap,
       child: InputDecorator(
-        decoration: const InputDecoration(
-          labelText: 'Region',
+        decoration: InputDecoration(
+          labelText: labelText,
           border: OutlineInputBorder(),
         ),
         child: Row(
@@ -805,6 +866,15 @@ class _RegionFilterField extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 8),
+            if (selectedRegion != null && onClear != null) ...[
+              IconButton(
+                tooltip: 'Retirer le filtre',
+                visualDensity: VisualDensity.compact,
+                onPressed: onClear,
+                icon: const Icon(Icons.close),
+              ),
+              const SizedBox(width: 4),
+            ],
             const Icon(Icons.expand_more),
           ],
         ),
