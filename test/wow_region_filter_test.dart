@@ -4,6 +4,7 @@ import 'package:wow100/data/models/wow_region_filter.dart';
 import 'package:wow100/data/models/wow_expansion.dart';
 import 'package:wow100/data/repositories/planner_repository.dart';
 import 'package:wow100/data/sources/wow_expansion_catalog.dart';
+import 'package:wow100/data/sources/wow_location_catalog.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -111,4 +112,79 @@ void main() {
       }
     },
   );
+
+  test(
+    'location catalog exposes Vanilla regions alphabetically with subzones',
+    () async {
+      final catalogs = await WowLocationCatalog.loadAll();
+      final vanilla = catalogs.singleWhere(
+        (catalog) => catalog.expansion == WowExpansion.vanilla,
+      );
+      final names = vanilla.regions.map((region) => region.name).toList();
+      final sortedNames = [...names]
+        ..sort(
+          (left, right) => WowRegionFilter.normalize(
+            left,
+          ).compareTo(WowRegionFilter.normalize(right)),
+        );
+
+      expect(names, sortedNames);
+      expect(vanilla.regions, hasLength(51));
+      expect(
+        vanilla.regions
+            .singleWhere(
+              (region) => region.name == 'Contreforts de Hautebrande',
+            )
+            .subzones,
+        contains('Montagnes d’Alterac'),
+      );
+      expect(
+        vanilla.regions
+            .singleWhere((region) => region.name == 'Vallée de Strangleronce')
+            .subzones,
+        containsAll(['Cap Strangleronce', 'Strangleronce septentrionale']),
+      );
+      expect(
+        vanilla.regions.any((region) => region.continentName == 'Outreterre'),
+        isFalse,
+      );
+    },
+  );
+
+  test('region filter can target a precise subzone', () {
+    final item = TrackingItem.fromJson({
+      'id': 'achievement_blackrock',
+      'name': 'Mont Rochenoire',
+      'category': 'achievements',
+      'expansion': 'vanilla',
+      'locationZone': 'Steppes Ardentes',
+      'subzone': 'Mont Rochenoire',
+      'instance': 'Exploration',
+      'source': 'Explorer le Mont Rochenoire.',
+      'groupRequired': false,
+      'weeklyLockout': false,
+    });
+
+    final regionFilter = WowRegionFilter(
+      expansion: WowExpansion.vanilla,
+      region: 'Royaumes de l’Est',
+      zone: 'Steppes Ardentes',
+    );
+    final subzoneFilter = WowRegionFilter(
+      expansion: WowExpansion.vanilla,
+      region: 'Royaumes de l’Est',
+      zone: 'Steppes Ardentes',
+      subzone: 'Mont Rochenoire',
+    );
+    final otherSubzoneFilter = WowRegionFilter(
+      expansion: WowExpansion.vanilla,
+      region: 'Royaumes de l’Est',
+      zone: 'Steppes Ardentes',
+      subzone: 'Pic Rochenoire',
+    );
+
+    expect(regionFilter.matches(item), isTrue);
+    expect(subzoneFilter.matches(item), isTrue);
+    expect(otherSubzoneFilter.matches(item), isFalse);
+  });
 }

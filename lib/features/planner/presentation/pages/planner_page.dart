@@ -132,6 +132,7 @@ class _PlannerPageState extends State<PlannerPage> {
         repository: _repository,
         newestFirst: widget.newestFirst,
         selectedRegion: _selectedRegionFilter,
+        expansionScope: _isExtensionPlanner ? widget.extension : null,
       ),
     );
 
@@ -722,7 +723,7 @@ class _RegionFilterField extends StatelessWidget {
     final region = selectedRegion;
     if (region == null) return 'Toutes les regions';
 
-    return '${region.zone} - ${region.region}';
+    return region.fullLabel;
   }
 
   @override

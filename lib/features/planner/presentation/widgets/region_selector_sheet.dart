@@ -6,6 +6,7 @@ import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/models/wow_region_filter.dart';
 import '../../../../data/repositories/planner_repository.dart';
 import '../../../../data/sources/wow_expansion_catalog.dart';
+import '../../../../data/sources/wow_location_catalog.dart';
 
 class RegionSelectorSheet extends StatefulWidget {
   const RegionSelectorSheet({
@@ -13,11 +14,13 @@ class RegionSelectorSheet extends StatefulWidget {
     required this.repository,
     required this.newestFirst,
     this.selectedRegion,
+    this.expansionScope,
   });
 
   final PlannerRepository repository;
   final bool newestFirst;
   final WowRegionFilter? selectedRegion;
+  final WowExpansion? expansionScope;
 
   @override
   State<RegionSelectorSheet> createState() => _RegionSelectorSheetState();
@@ -34,8 +37,16 @@ class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
   }
 
   Future<List<_ExpansionRegionSection>> _loadSections() async {
+    final catalogSections = await WowLocationCatalog.loadAll();
+    final catalogByExpansion = {
+      for (final catalog in catalogSections) catalog.expansion: catalog,
+    };
     final expansions = WowExpansionCatalog.all
-        .where((info) => info.expansion != WowExpansion.total)
+        .where((info) {
+          if (info.expansion == WowExpansion.total) return false;
+          final scope = widget.expansionScope;
+          return scope == null || info.expansion == scope;
+        })
         .map((info) => info.expansion)
         .toList();
 
@@ -52,7 +63,14 @@ class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
 
     for (final expansion in expansions) {
       final items = await widget.repository.getItems(expansion);
-      final section = _ExpansionRegionSection.fromItems(expansion, items);
+      final catalog = catalogByExpansion[expansion];
+      final section = catalog == null
+          ? _ExpansionRegionSection.fromItems(expansion, items)
+          : _ExpansionRegionSection.fromCatalog(
+              expansion,
+              catalog.regions,
+              items,
+            );
       if (section.regions.isNotEmpty) {
         sections.add(section);
       }
@@ -144,6 +162,7 @@ class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
                       return _ExpansionRegionTile(
                         section: sections[index],
                         selectedRegion: widget.selectedRegion,
+                        initiallyExpanded: sections.length == 1,
                       );
                     },
                   );
@@ -161,17 +180,20 @@ class _ExpansionRegionTile extends StatelessWidget {
   const _ExpansionRegionTile({
     required this.section,
     required this.selectedRegion,
+    required this.initiallyExpanded,
   });
 
   final _ExpansionRegionSection section;
   final WowRegionFilter? selectedRegion;
+  final bool initiallyExpanded;
 
   @override
   Widget build(BuildContext context) {
     final info = WowExpansionCatalog.infoOf(section.expansion);
 
     return ExpansionTile(
-      initiallyExpanded: selectedRegion?.expansion == section.expansion,
+      initiallyExpanded:
+          initiallyExpanded || selectedRegion?.expansion == section.expansion,
       title: Text(
         info.name,
         style: const TextStyle(fontWeight: FontWeight.w800),
@@ -182,7 +204,7 @@ class _ExpansionRegionTile extends StatelessWidget {
           ExpansionTile(
             initiallyExpanded:
                 selectedRegion?.expansion == section.expansion &&
-                WowRegionFilter.normalize(selectedRegion?.region ?? '') ==
+                WowRegionFilter.normalize(selectedRegion?.zone ?? '') ==
                     WowRegionFilter.normalize(region.name),
             tilePadding: const EdgeInsets.only(left: 32, right: 16),
             title: Text(region.name),
@@ -199,14 +221,16 @@ class _ExpansionRegionTile extends StatelessWidget {
                         ? AppTheme.gold
                         : null,
                   ),
-                  title: Text(option.filter.zone),
-                  trailing: Text(
-                    option.count.toString(),
-                    style: const TextStyle(
-                      color: AppTheme.gold,
-                      fontWeight: FontWeight.w800,
-                    ),
-                  ),
+                  title: Text(option.filter.label),
+                  trailing: option.count == 0
+                      ? null
+                      : Text(
+                          option.count.toString(),
+                          style: const TextStyle(
+                            color: AppTheme.gold,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
                   onTap: () => Navigator.pop(context, option.filter),
                 ),
             ],
@@ -227,6 +251,55 @@ class _ExpansionRegionSection {
 
   int get zoneCount {
     return regions.fold(0, (count, region) => count + region.options.length);
+  }
+
+  static _ExpansionRegionSection fromCatalog(
+    WowExpansion expansion,
+    List<WowCatalogRegion> catalogRegions,
+    List<TrackingItem> items,
+  ) {
+    final counts = _countFilters(items);
+    final regions = catalogRegions.map((region) {
+      final options = [
+        _RegionOption(
+          filter: region.filter,
+          count: counts[region.filter.key] ?? 0,
+        ),
+        for (final subzone in region.subzones)
+          _RegionOption(
+            filter: region.subzoneFilter(subzone),
+            count: counts[region.subzoneFilter(subzone).key] ?? 0,
+          ),
+      ];
+
+      return _RegionSection(name: region.name, options: options);
+    }).toList();
+
+    return _ExpansionRegionSection(expansion: expansion, regions: regions);
+  }
+
+  static Map<String, int> _countFilters(List<TrackingItem> items) {
+    final counts = <String, int>{};
+
+    for (final item in items) {
+      final filter = WowRegionFilter.fromItem(item);
+      if (filter == null) continue;
+
+      counts.update(filter.key, (count) => count + 1, ifAbsent: () => 1);
+
+      final subzone = item.subzone.trim();
+      if (subzone.isEmpty) continue;
+
+      final subzoneFilter = WowRegionFilter(
+        expansion: filter.expansion,
+        region: filter.region,
+        zone: filter.zone,
+        subzone: subzone,
+      );
+      counts.update(subzoneFilter.key, (count) => count + 1, ifAbsent: () => 1);
+    }
+
+    return counts;
   }
 
   static _ExpansionRegionSection fromItems(
@@ -253,12 +326,21 @@ class _ExpansionRegionSection {
           .add(option);
     }
 
-    final regions = optionsByRegion.entries.map((entry) {
-      final options = entry.value
-        ..sort((left, right) => left.filter.zone.compareTo(right.filter.zone));
+    final regions =
+        optionsByRegion.entries.map((entry) {
+          final options = entry.value
+            ..sort(
+              (left, right) => WowRegionFilter.normalize(
+                left.filter.label,
+              ).compareTo(WowRegionFilter.normalize(right.filter.label)),
+            );
 
-      return _RegionSection(name: entry.key, options: options);
-    }).toList()..sort((left, right) => left.name.compareTo(right.name));
+          return _RegionSection(name: entry.key, options: options);
+        }).toList()..sort(
+          (left, right) => WowRegionFilter.normalize(
+            left.name,
+          ).compareTo(WowRegionFilter.normalize(right.name)),
+        );
 
     return _ExpansionRegionSection(expansion: expansion, regions: regions);
   }
@@ -277,7 +359,8 @@ class _ExpansionRegionSection {
       final options = region.options.where((option) {
         return matchesExpansion ||
             matchesRegion ||
-            WowRegionFilter.normalize(option.filter.zone).contains(query);
+            WowRegionFilter.normalize(option.filter.zone).contains(query) ||
+            WowRegionFilter.normalize(option.filter.subzone).contains(query);
       }).toList();
 
       if (options.isNotEmpty) {
