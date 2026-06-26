@@ -194,48 +194,122 @@ class _ExpansionRegionTile extends StatelessWidget {
     return ExpansionTile(
       initiallyExpanded:
           initiallyExpanded || selectedRegion?.expansion == section.expansion,
-      title: Text(
-        info.name,
+      title: _ZoneCountTitle(
+        label: info.name,
+        count: section.zoneCount,
         style: const TextStyle(fontWeight: FontWeight.w800),
       ),
-      subtitle: Text('${section.zoneCount} zones'),
       children: [
         for (final region in section.regions)
-          ExpansionTile(
-            initiallyExpanded:
-                selectedRegion?.expansion == section.expansion &&
-                WowRegionFilter.normalize(selectedRegion?.zone ?? '') ==
-                    WowRegionFilter.normalize(region.name),
-            tilePadding: const EdgeInsets.only(left: 32, right: 16),
-            title: Text(region.name),
-            subtitle: Text('${region.options.length} zones'),
-            children: [
-              for (final option in region.options)
-                ListTile(
-                  contentPadding: const EdgeInsets.only(left: 48, right: 16),
-                  leading: Icon(
-                    selectedRegion?.key == option.filter.key
-                        ? Icons.check_circle
-                        : Icons.location_on_outlined,
-                    color: selectedRegion?.key == option.filter.key
-                        ? AppTheme.gold
-                        : null,
-                  ),
-                  title: Text(option.filter.label),
-                  trailing: option.count == 0
-                      ? null
-                      : Text(
-                          option.count.toString(),
-                          style: const TextStyle(
-                            color: AppTheme.gold,
-                            fontWeight: FontWeight.w800,
-                          ),
-                        ),
-                  onTap: () => Navigator.pop(context, option.filter),
-                ),
-            ],
+          _RegionTile(
+            section: section,
+            region: region,
+            selectedRegion: selectedRegion,
           ),
       ],
+    );
+  }
+}
+
+class _RegionTile extends StatelessWidget {
+  const _RegionTile({
+    required this.section,
+    required this.region,
+    required this.selectedRegion,
+  });
+
+  final _ExpansionRegionSection section;
+  final _RegionSection region;
+  final WowRegionFilter? selectedRegion;
+
+  @override
+  Widget build(BuildContext context) {
+    final singleOption = region.singleOptionMatchingName;
+
+    if (singleOption != null) {
+      final isSelected = selectedRegion?.key == singleOption.filter.key;
+
+      return ListTile(
+        contentPadding: const EdgeInsets.only(left: 32, right: 16),
+        title: _ZoneCountTitle(
+          label: region.name,
+          count: region.options.length,
+          style: TextStyle(
+            color: isSelected ? AppTheme.gold : null,
+            fontWeight: isSelected ? FontWeight.w800 : FontWeight.w600,
+          ),
+        ),
+        trailing: isSelected
+            ? const Icon(Icons.check_circle, color: AppTheme.gold)
+            : null,
+        onTap: () => Navigator.pop(context, singleOption.filter),
+      );
+    }
+
+    return ExpansionTile(
+      initiallyExpanded:
+          selectedRegion?.expansion == section.expansion &&
+          WowRegionFilter.normalize(selectedRegion?.zone ?? '') ==
+              WowRegionFilter.normalize(region.name),
+      tilePadding: const EdgeInsets.only(left: 32, right: 16),
+      title: _ZoneCountTitle(label: region.name, count: region.options.length),
+      children: [
+        for (final option in region.options)
+          ListTile(
+            contentPadding: const EdgeInsets.only(left: 48, right: 16),
+            leading: Icon(
+              selectedRegion?.key == option.filter.key
+                  ? Icons.check_circle
+                  : Icons.location_on_outlined,
+              color: selectedRegion?.key == option.filter.key
+                  ? AppTheme.gold
+                  : null,
+            ),
+            title: Text(option.filter.label),
+            trailing: option.count == 0
+                ? null
+                : Text(
+                    option.count.toString(),
+                    style: const TextStyle(
+                      color: AppTheme.gold,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+            onTap: () => Navigator.pop(context, option.filter),
+          ),
+      ],
+    );
+  }
+}
+
+class _ZoneCountTitle extends StatelessWidget {
+  const _ZoneCountTitle({required this.label, required this.count, this.style});
+
+  final String label;
+  final int count;
+  final TextStyle? style;
+
+  @override
+  Widget build(BuildContext context) {
+    final baseStyle = DefaultTextStyle.of(context).style.merge(style);
+
+    return Text.rich(
+      TextSpan(
+        text: label,
+        style: baseStyle,
+        children: [
+          TextSpan(
+            text: ' ($count)',
+            style: baseStyle.copyWith(
+              color: AppTheme.mutedText,
+              fontSize: (baseStyle.fontSize ?? 14) - 2,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ],
+      ),
+      maxLines: 2,
+      overflow: TextOverflow.ellipsis,
     );
   }
 }
@@ -384,6 +458,18 @@ class _RegionSection {
 
   final String name;
   final List<_RegionOption> options;
+
+  _RegionOption? get singleOptionMatchingName {
+    if (options.length != 1) return null;
+
+    final option = options.single;
+    if (WowRegionFilter.normalize(option.filter.label) !=
+        WowRegionFilter.normalize(name)) {
+      return null;
+    }
+
+    return option;
+  }
 }
 
 class _RegionOption {
