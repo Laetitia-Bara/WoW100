@@ -56,7 +56,7 @@ class LegalPage extends StatelessWidget {
     _LegalContentSection(
       title: 'Éditeur',
       paragraphs: [
-        'v. 1.0.2',
+        'v. 1.0.3',
         'WoW100% est édité par cosmos-lty.',
         'Contact : contact@cosmos-lty.fr',
       ],
