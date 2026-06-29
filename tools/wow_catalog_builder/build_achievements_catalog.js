@@ -15,6 +15,10 @@ const metadataPath = path.join(
   repoRoot,
   "assets/data/metadata/achievements_metadata.json",
 );
+const locationsCatalogPath = path.join(
+  repoRoot,
+  "assets/generated/locations_reference_catalog.json",
+);
 
 const expansions = [
   {
@@ -63,6 +67,10 @@ function normalize(value) {
 
 function firstNonEmpty(...values) {
   return values.find((value) => typeof value === "string" && value.trim()) ?? "";
+}
+
+function normalizeLocationText(value) {
+  return ` ${normalize(value)} `;
 }
 
 async function getToken() {
@@ -311,6 +319,163 @@ async function loadManualMetadata() {
   return Object.fromEntries(data.map((item) => [item.blizzardId, item]));
 }
 
+async function loadExistingWowheadIndex() {
+  const data = await loadJsonFile(
+    path.join(generatedDir, "achievements_wowhead_index.json"),
+    { achievements: {} },
+  );
+
+  return {
+    byId: new Map(
+      Object.entries(data.achievements ?? {}).map(([id, achievement]) => [
+        Number(id),
+        achievement,
+      ]),
+    ),
+    fetchStats: data.fetchStats ?? [],
+  };
+}
+
+async function loadLocationIndex() {
+  const catalog = await loadJsonFile(locationsCatalogPath, {
+    worlds: [],
+    continents: [],
+    locations: [],
+  });
+  const worldsByKey = new Map(
+    (catalog.worlds ?? []).map((world) => [world.key, world]),
+  );
+  const continentsByKey = new Map(
+    (catalog.continents ?? []).map((continent) => [continent.key, continent]),
+  );
+  const locationsByRef = new Map();
+  const candidates = [];
+
+  for (const location of catalog.locations ?? []) {
+    const name = firstNonEmpty(location.name);
+    const normalizedName = normalize(name);
+
+    if (!name || normalizedName.length < 4) continue;
+
+    const continent = continentsByKey.get(location.continentKey);
+    const world = worldsByKey.get(location.worldKey);
+    const regionName = firstNonEmpty(location.regionName, name);
+    const regionRef = firstNonEmpty(location.regionRef, location.ref);
+    const normalizedRegion = normalize(regionName);
+    const isSubzone =
+      location.kind === "subzone" && normalizedName !== normalizedRegion;
+    const candidate = {
+      ref: location.ref,
+      name,
+      normalizedName,
+      worldName: world?.name ?? "",
+      continentName: continent?.name ?? "",
+      regionName,
+      regionRef,
+      subzoneName: isSubzone ? name : "",
+      extensionKey: location.extensionKey,
+      kind: location.kind,
+    };
+
+    locationsByRef.set(location.ref, candidate);
+    candidates.push(candidate);
+  }
+
+  candidates.sort((left, right) => {
+    const lengthCompare =
+      right.normalizedName.length - left.normalizedName.length;
+    if (lengthCompare !== 0) return lengthCompare;
+
+    return left.name.localeCompare(right.name);
+  });
+
+  return { locationsByRef, candidates };
+}
+
+function expansionKeyMatchesLocation(achievementExpansion, locationExtensionKey) {
+  const locationExpansion = {
+    "the-burning-crusade": "tbc",
+    "wrath-of-the-lich-king": "wrath",
+    cataclysm: "cataclysm",
+    "mists-of-pandaria": "mop",
+    "warlords-of-draenor": "wod",
+    legion: "legion",
+    "battle-for-azeroth": "bfa",
+    shadowlands: "shadowlands",
+    dragonflight: "dragonflight",
+    "the-war-within": "warWithin",
+    midnight: "midnight",
+    vanilla: "vanilla",
+  }[locationExtensionKey];
+
+  return locationExpansion && locationExpansion === achievementExpansion;
+}
+
+function findTextMatch(candidate, weightedTexts, achievementExpansion) {
+  const needle = normalizeLocationText(candidate.name);
+  let bestScore = 0;
+
+  for (const { text, weight } of weightedTexts) {
+    if (!text.includes(needle)) continue;
+
+    let score = weight + candidate.normalizedName.length;
+    if (candidate.kind === "subzone") score += 12;
+    if (
+      expansionKeyMatchesLocation(achievementExpansion, candidate.extensionKey)
+    ) {
+      score += 18;
+    }
+
+    bestScore = Math.max(bestScore, score);
+  }
+
+  return bestScore;
+}
+
+function inferLocation(achievement, manualMetadata, expansion, locationIndex) {
+  const manualRef = firstNonEmpty(
+    manualMetadata.primaryLocationRef,
+    manualMetadata.locationRef,
+  );
+  const manualLocation = locationIndex.locationsByRef.get(manualRef);
+
+  if (manualLocation) {
+    return manualLocation;
+  }
+
+  const weightedTexts = [
+    { text: normalizeLocationText(achievement.name), weight: 90 },
+    { text: normalizeLocationText(achievement.description), weight: 54 },
+    { text: normalizeLocationText(achievement.rewardDescription), weight: 36 },
+    { text: normalizeLocationText(manualMetadata.source), weight: 30 },
+  ].filter((entry) => entry.text.trim());
+
+  let selectedLocation = null;
+  let selectedScore = 0;
+
+  for (const candidate of locationIndex.candidates) {
+    const score = findTextMatch(candidate, weightedTexts, expansion);
+    if (score > selectedScore) {
+      selectedLocation = candidate;
+      selectedScore = score;
+    }
+  }
+
+  return selectedScore >= 60 ? selectedLocation : null;
+}
+
+function locationFields(location) {
+  if (!location) return {};
+
+  return {
+    primaryLocationRef: location.ref,
+    world: location.worldName,
+    region: location.continentName,
+    locationZone: location.regionName,
+    ...(location.subzoneName ? { subzone: location.subzoneName } : {}),
+  };
+}
+
 function inferExpansion(achievement, manualMetadata, wowheadMetadata) {
   if (manualMetadata.expansion) {
     return manualMetadata.expansion;
@@ -349,9 +514,15 @@ function inferGroup(achievement, manualMetadata, wowheadMetadata) {
   return categoryName || "A classer";
 }
 
-function toWow100Item(achievement, manualMetadata, wowheadMetadata) {
+function toWow100Item(achievement, manualMetadata, wowheadMetadata, locationIndex) {
   const expansion = inferExpansion(achievement, manualMetadata, wowheadMetadata);
   const group = inferGroup(achievement, manualMetadata, wowheadMetadata);
+  const location = inferLocation(
+    achievement,
+    manualMetadata,
+    expansion,
+    locationIndex,
+  );
   const source = firstNonEmpty(
     manualMetadata.source,
     achievement.description,
@@ -372,6 +543,7 @@ function toWow100Item(achievement, manualMetadata, wowheadMetadata) {
     category: "achievements",
     expansion,
     zone: firstNonEmpty(manualMetadata.zone, group),
+    ...locationFields(location),
     instance: group,
     source,
     points: achievement.points,
@@ -390,59 +562,20 @@ function toWow100Item(achievement, manualMetadata, wowheadMetadata) {
   };
 }
 
-async function main() {
-  const token = await getToken();
-  const catalog = await fetchBlizzardJson(
-    "https://eu.api.blizzard.com/data/wow/achievement/index",
-    token,
-  );
-
-  console.log(`Hauts faits Blizzard trouves : ${catalog.achievements.length}`);
-
-  await fs.mkdir(generatedDir, { recursive: true });
-  await fs.mkdir(achievementDataDir, { recursive: true });
-
-  await fs.writeFile(
-    path.join(generatedDir, "achievements_catalog_raw.json"),
-    `${JSON.stringify(catalog, null, 2)}\n`,
-    "utf8",
-  );
-
-  const existingEnriched = await loadExistingEnrichedAchievements();
-
-  const [{ enrichedAchievements, failedIds }, wowhead, manualById] =
-    await Promise.all([
-      fetchAchievementDetails(catalog.achievements, token, existingEnriched),
-      fetchWowheadAchievementIndex(),
-      loadManualMetadata(),
-    ]);
-
-  await fs.writeFile(
-    path.join(generatedDir, "achievements_catalog_enriched.json"),
-    `${JSON.stringify(enrichedAchievements, null, 2)}\n`,
-    "utf8",
-  );
-
-  await fs.writeFile(
-    path.join(generatedDir, "achievements_wowhead_index.json"),
-    `${JSON.stringify(
-      {
-        generatedAt: new Date().toISOString(),
-        source: "https://www.wowhead.com/achievements",
-        fetchStats: wowhead.fetchStats,
-        achievements: Object.fromEntries([...wowhead.byId.entries()].sort()),
-      },
-      null,
-      2,
-    )}\n`,
-    "utf8",
-  );
-
+async function writeWow100Catalogs({
+  enrichedAchievements,
+  wowhead,
+  manualById,
+  locationIndex,
+  failedIds = [],
+  blizzardAchievementCount = enrichedAchievements.length,
+}) {
   const wow100Draft = enrichedAchievements.map((achievement) =>
     toWow100Item(
       achievement,
       manualById[achievement.id] ?? {},
       wowhead.byId.get(achievement.id),
+      locationIndex,
     ),
   );
 
@@ -483,21 +616,116 @@ async function main() {
   const unclassified = wow100Draft.filter(
     (achievement) => achievement.expansion === "allAchievements",
   );
+  const localized = wow100Draft.filter(
+    (achievement) => achievement.primaryLocationRef,
+  );
 
   console.log(
     JSON.stringify(
       {
-        blizzardAchievements: catalog.achievements.length,
+        blizzardAchievements: blizzardAchievementCount,
         enrichedAchievements: enrichedAchievements.length,
         failedIds,
         classifiedByMetadata: wow100Draft.length - unclassified.length,
         unclassified: unclassified.length,
+        localized: localized.length,
         wowheadRows: wowhead.byId.size,
       },
       null,
       2,
     ),
   );
+}
+
+async function buildFromLocalCaches() {
+  await fs.mkdir(achievementDataDir, { recursive: true });
+
+  const [enrichedAchievements, wowhead, manualById, locationIndex] =
+    await Promise.all([
+      loadExistingEnrichedAchievements().then((byId) =>
+        [...byId.values()].sort((a, b) => a.id - b.id),
+      ),
+      loadExistingWowheadIndex(),
+      loadManualMetadata(),
+      loadLocationIndex(),
+    ]);
+
+  if (enrichedAchievements.length === 0) {
+    throw new Error(
+      "Cache achievements_catalog_enriched.json introuvable ou vide.",
+    );
+  }
+
+  await writeWow100Catalogs({
+    enrichedAchievements,
+    wowhead,
+    manualById,
+    locationIndex,
+  });
+}
+
+async function main() {
+  if (process.argv.includes("--offline")) {
+    await buildFromLocalCaches();
+    return;
+  }
+
+  const token = await getToken();
+  const catalog = await fetchBlizzardJson(
+    "https://eu.api.blizzard.com/data/wow/achievement/index",
+    token,
+  );
+
+  console.log(`Hauts faits Blizzard trouves : ${catalog.achievements.length}`);
+
+  await fs.mkdir(generatedDir, { recursive: true });
+  await fs.mkdir(achievementDataDir, { recursive: true });
+
+  await fs.writeFile(
+    path.join(generatedDir, "achievements_catalog_raw.json"),
+    `${JSON.stringify(catalog, null, 2)}\n`,
+    "utf8",
+  );
+
+  const existingEnriched = await loadExistingEnrichedAchievements();
+
+  const [{ enrichedAchievements, failedIds }, wowhead, manualById, locationIndex] =
+    await Promise.all([
+      fetchAchievementDetails(catalog.achievements, token, existingEnriched),
+      fetchWowheadAchievementIndex(),
+      loadManualMetadata(),
+      loadLocationIndex(),
+    ]);
+
+  await fs.writeFile(
+    path.join(generatedDir, "achievements_catalog_enriched.json"),
+    `${JSON.stringify(enrichedAchievements, null, 2)}\n`,
+    "utf8",
+  );
+
+  await fs.writeFile(
+    path.join(generatedDir, "achievements_wowhead_index.json"),
+    `${JSON.stringify(
+      {
+        generatedAt: new Date().toISOString(),
+        source: "https://www.wowhead.com/achievements",
+        fetchStats: wowhead.fetchStats,
+        achievements: Object.fromEntries([...wowhead.byId.entries()].sort()),
+      },
+      null,
+      2,
+    )}\n`,
+    "utf8",
+  );
+
+  await writeWow100Catalogs({
+    enrichedAchievements,
+    wowhead,
+    manualById,
+    locationIndex,
+    failedIds,
+    blizzardAchievementCount: catalog.achievements.length,
+  });
 }
 
 main().catch((error) => {

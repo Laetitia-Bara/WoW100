@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build:achievements": "node --use-system-ca build_achievements_catalog.js",
+    "build:achievements:offline": "node build_achievements_catalog.js --offline",
     "build:zones": "node --use-system-ca build_zones_catalog.js",
     "build:locations-reference": "node build_locations_reference.js",
     "build:pets": "node --use-system-ca build_pets_catalog.js",

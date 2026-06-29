@@ -71,22 +71,33 @@ void main() {
     expect(filter?.region, 'Royaumes de l\'Est');
   });
 
-  test('real Vanilla data sends non-official locations to Sans zone', () async {
-    final repository = JsonPlannerRepository();
-    final items = await repository.getItems(WowExpansion.vanilla);
-    final filters = items
-        .map(WowRegionFilter.fromItem)
-        .whereType<WowRegionFilter>()
-        .toList();
+  test(
+    'real Vanilla data keeps catalog locations and rejects continents',
+    () async {
+      final repository = JsonPlannerRepository();
+      final items = await repository.getItems(WowExpansion.vanilla);
+      final filters = items
+          .map(WowRegionFilter.fromItem)
+          .whereType<WowRegionFilter>()
+          .toList();
+      final thousandNeedles = items.singleWhere(
+        (item) => item.id == 'achievement_846',
+      );
 
-    expect(
-      filters.any((filter) => filter.region == TrackingItem.unknownZone),
-      isTrue,
-    );
-    expect(filters.any((filter) => filter.zone == 's Mille pointes'), isFalse);
-    expect(filters.any((filter) => filter.zone == 'Mille pointes'), isFalse);
-    expect(filters.any((filter) => filter.zone == 'Kalimdor'), isFalse);
-  });
+      expect(
+        filters.any((filter) => filter.region == TrackingItem.unknownZone),
+        isTrue,
+      );
+      expect(thousandNeedles.locationRef, isNotEmpty);
+      expect(thousandNeedles.zone, 'Mille pointes');
+      expect(thousandNeedles.region, 'Kalimdor');
+      expect(
+        filters.any((filter) => filter.zone == 's Mille pointes'),
+        isFalse,
+      );
+      expect(filters.any((filter) => filter.zone == 'Kalimdor'), isFalse);
+    },
+  );
 
   test(
     'region filters only expose known zones, catalog locations or Sans zone',
