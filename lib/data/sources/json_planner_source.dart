@@ -175,6 +175,7 @@ class JsonPlannerSource {
               _isWeeklyMountSource(sourceName),
           obtained: false,
           unavailable: unavailable,
+          difficulty: difficulty ?? '',
           blizzardId: blizzardId,
           wowheadItemId: wowheadItemId,
           boss: wowhead?['boss'] ?? manual?['boss'] ?? '',

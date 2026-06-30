@@ -58,6 +58,9 @@ class TrackingItem {
   /// N'est plus possible a obtenir en jeu.
   final bool unavailable;
 
+  /// Niveau de difficulte de recuperation lorsque le catalogue le connait.
+  final String difficulty;
+
   final int? blizzardId;
 
   final String boss;
@@ -88,6 +91,7 @@ class TrackingItem {
     required this.weeklyLockout,
     required this.obtained,
     this.unavailable = false,
+    this.difficulty = '',
     this.blizzardId,
     required this.boss,
     this.externalUrl = '',
@@ -116,6 +120,7 @@ class TrackingItem {
       weeklyLockout: weeklyLockout,
       obtained: obtained ?? this.obtained,
       unavailable: unavailable,
+      difficulty: difficulty,
       blizzardId: blizzardId,
       boss: boss,
       externalUrl: externalUrl,
@@ -148,6 +153,7 @@ class TrackingItem {
       weeklyLockout: json['weeklyLockout'] ?? false,
       obtained: false,
       unavailable: json['unavailable'] ?? _looksUnavailable(json),
+      difficulty: json['difficulty'] ?? '',
       blizzardId: json['blizzardId'],
       boss: json['boss'] ?? '',
       externalUrl: json['externalUrl'] ?? json['mamytwinkUrl'] ?? '',

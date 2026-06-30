@@ -1274,6 +1274,86 @@ class _PlannerItemCard extends StatelessWidget {
     );
   }
 
+  List<_PlannerTag> _metadataTags() {
+    final difficultyTag = _difficultyTag();
+    final extensionLabel = _extensionLabel();
+    final regionLabel = _regionLabel();
+
+    return [
+      ?difficultyTag,
+      if (extensionLabel != null) _PlannerTag(label: extensionLabel),
+      if (regionLabel != null) _PlannerTag(label: regionLabel),
+    ];
+  }
+
+  _PlannerTag? _difficultyTag() {
+    final label = item.difficulty.trim();
+    if (!_hasUsefulMetadataLabel(label)) return null;
+
+    final normalized = WowRegionFilter.normalize(label);
+    if (item.unavailable && normalized == 'indisponible') return null;
+
+    final colors = _difficultyColors(normalized);
+
+    return _PlannerTag(
+      label: label,
+      backgroundColor: colors.$1,
+      foregroundColor: colors.$2,
+    );
+  }
+
+  String? _extensionLabel() {
+    if (item.expansion == WowExpansion.total ||
+        item.expansion == WowExpansion.allMounts ||
+        item.expansion == WowExpansion.allAchievements ||
+        item.expansion == WowExpansion.allPets) {
+      return null;
+    }
+
+    final label = item.expansion.label;
+    return _hasUsefulMetadataLabel(label) ? label : null;
+  }
+
+  String? _regionLabel() {
+    for (final label in [item.zone, item.region]) {
+      final trimmed = label.trim();
+      if (_hasUsefulMetadataLabel(trimmed)) return trimmed;
+    }
+
+    return null;
+  }
+
+  bool _hasUsefulMetadataLabel(String value) {
+    final normalized = WowRegionFilter.normalize(value);
+
+    return normalized.isNotEmpty &&
+        normalized != 'sans zone' &&
+        normalized != 'a definir' &&
+        normalized != 'unknown' &&
+        normalized != 'source a verifier';
+  }
+
+  (Color, Color) _difficultyColors(String normalizedDifficulty) {
+    if (normalizedDifficulty.contains('facile')) {
+      return (const Color(0xFF14532D), const Color(0xFF86EFAC));
+    }
+    if (normalizedDifficulty.contains('moyen')) {
+      return (const Color(0xFF713F12), const Color(0xFFFDE68A));
+    }
+    if (normalizedDifficulty.contains('difficile')) {
+      return (const Color(0xFF7F1D1D), const Color(0xFFFCA5A5));
+    }
+    if (normalizedDifficulty.contains('indisponible')) {
+      return (const Color(0xFF7F1D1D), const Color(0xFFFEE2E2));
+    }
+    if (normalizedDifficulty.contains('reel') ||
+        normalizedDifficulty.contains('argent')) {
+      return (const Color(0xFF312E81), const Color(0xFFC7D2FE));
+    }
+
+    return (const Color(0xFF334155), const Color(0xFFE2E8F0));
+  }
+
   @override
   Widget build(BuildContext context) {
     final isMount = item.category == TrackingCategory.mounts;
@@ -1289,6 +1369,7 @@ class _PlannerItemCard extends StatelessWidget {
           foregroundColor: Color(0xFFFEE2E2),
         ),
       _PlannerTag(label: item.category.label),
+      ..._metadataTags(),
       _PlannerTag(label: item.weeklyLockout ? 'Hebdomadaire' : 'Farm libre'),
       _PlannerTag(
         label: item.groupRequired ? 'Groupe conseillé' : 'Solo possible',

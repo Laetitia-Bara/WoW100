@@ -20,6 +20,7 @@ void main() {
       expect(thrayir.region, 'Khaz Algar');
       expect(thrayir.zone, 'Île aux Sirènes');
       expect(thrayir.subzone, isEmpty);
+      expect(thrayir.difficulty, 'Facile');
 
       final deepSeaCreature = items.singleWhere(
         (item) => item.blizzardId == 838,
@@ -28,6 +29,7 @@ void main() {
       expect(deepSeaCreature.region, 'Îles Brisées');
       expect(deepSeaCreature.zone, 'Azsuna');
       expect(deepSeaCreature.subzone, 'Œil d’Azshara');
+      expect(deepSeaCreature.difficulty, 'Moyen');
 
       final prideOfTheHunt = items.singleWhere(
         (item) => item.blizzardId == 2769,
