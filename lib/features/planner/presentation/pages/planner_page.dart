@@ -11,6 +11,7 @@ import '../../../../core/services/local_check_service.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../../core/theme/expansion_palette.dart';
 import '../../../../core/widgets/web_sponsor_panel.dart';
 import '../../../../data/models/tracking_item.dart';
 import '../../../../data/models/wow_expansion.dart';
@@ -1276,12 +1277,12 @@ class _PlannerItemCard extends StatelessWidget {
 
   List<_PlannerTag> _metadataTags() {
     final difficultyTag = _difficultyTag();
-    final extensionLabel = _extensionLabel();
+    final extensionTag = _extensionTag();
     final regionLabel = _regionLabel();
 
     return [
       ?difficultyTag,
-      if (extensionLabel != null) _PlannerTag(label: extensionLabel),
+      ?extensionTag,
       if (regionLabel != null) _PlannerTag(label: regionLabel),
     ];
   }
@@ -1302,7 +1303,7 @@ class _PlannerItemCard extends StatelessWidget {
     );
   }
 
-  String? _extensionLabel() {
+  _PlannerTag? _extensionTag() {
     if (item.expansion == WowExpansion.total ||
         item.expansion == WowExpansion.allMounts ||
         item.expansion == WowExpansion.allAchievements ||
@@ -1311,7 +1312,14 @@ class _PlannerItemCard extends StatelessWidget {
     }
 
     final label = item.expansion.label;
-    return _hasUsefulMetadataLabel(label) ? label : null;
+    if (!_hasUsefulMetadataLabel(label)) return null;
+
+    final colors = ExpansionPalette.tagColors(item.expansion);
+    return _PlannerTag(
+      label: label,
+      backgroundColor: colors.background,
+      foregroundColor: colors.foreground,
+    );
   }
 
   String? _regionLabel() {
