@@ -96,6 +96,12 @@ class _PlannerPageState extends State<PlannerPage> {
           widget.extension == WowExpansion.allMounts ||
           widget.extension == WowExpansion.allPets);
 
+  bool get _isAllAchievementsPlanner =>
+      widget.extension == WowExpansion.allAchievements;
+
+  bool get _usesInlineRegionFilter =>
+      _isAllCollectionPlanner || _isAllAchievementsPlanner;
+
   bool get _tracksAchievements => _isExtensionPlanner || _isAchievementsPlanner;
 
   bool get _tracksMounts =>
@@ -121,8 +127,24 @@ class _PlannerPageState extends State<PlannerPage> {
 
   bool get _showsRegionFilter =>
       _isExtensionPlanner ||
-      _isAllCollectionPlanner ||
+      _usesInlineRegionFilter ||
       _selectedRegionFilter != null;
+
+  String get _regionFilterLabelText {
+    if (_isAllAchievementsPlanner) return 'Par région (En construction ^^)';
+    if (_isAllCollectionPlanner) {
+      return 'Recherche par régions (en construction)';
+    }
+
+    return 'Région';
+  }
+
+  String get _regionFilterEmptyLabel {
+    if (_isAllAchievementsPlanner) return 'Toutes les régions';
+    if (_isAllCollectionPlanner) return 'Toutes les extensions';
+
+    return 'Toutes les régions (En construction ^^)';
+  }
 
   String get _collectionName {
     if (_isExtensionPlanner) return 'collectables';
@@ -165,7 +187,7 @@ class _PlannerPageState extends State<PlannerPage> {
 
     if (result == null || !mounted) return;
 
-    if (_isAllCollectionPlanner) {
+    if (_usesInlineRegionFilter) {
       setState(() {
         _selectedRegionFilter = result;
         _searchQuery = '';
@@ -618,12 +640,8 @@ class _PlannerPageState extends State<PlannerPage> {
                   if (_showsRegionFilter) ...[
                     _RegionFilterField(
                       selectedRegion: _selectedRegionFilter,
-                      labelText: _isAllCollectionPlanner
-                          ? 'Recherche par régions (en construction)'
-                          : 'Région',
-                      emptyLabel: _isAllCollectionPlanner
-                          ? 'Toutes les extensions'
-                          : 'Toutes les régions (En construction ^^)',
+                      labelText: _regionFilterLabelText,
+                      emptyLabel: _regionFilterEmptyLabel,
                       onTap: _openRegionSelector,
                       onClear: _selectedRegionFilter == null
                           ? null
