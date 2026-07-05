@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:wow100/core/services/battle_net_token_service.dart';
+import 'package:wow100/data/models/achievement_faction_availability.dart';
 import 'package:wow100/data/models/achievement_faction_equivalents.dart';
 import 'package:wow100/data/models/achievement_group_hierarchy.dart';
 import 'package:wow100/data/models/tracking_category.dart';
@@ -73,6 +74,7 @@ class _PlannerPageState extends State<PlannerPage> {
   bool _missingOnly = true;
   bool _hideUnavailable = true;
   String _searchQuery = '';
+  String? _selectedCharacterFaction;
   final Set<TrackingCategory> _selectedCategories = {};
   final Set<String> _selectedGroups = {};
   WowRegionFilter? _selectedRegionFilter;
@@ -238,6 +240,7 @@ class _PlannerPageState extends State<PlannerPage> {
       final ownedMountIds = <int>{};
       final ownedPetIds = <int>{};
       final ownedAchievementIds = <int>{};
+      final character = await _selectedCharacterService.loadCharacter();
 
       if (token != null) {
         if (_tracksAchievements) {
@@ -251,8 +254,6 @@ class _PlannerPageState extends State<PlannerPage> {
             debugPrint('BATTLE.NET ACCOUNT ACHIEVEMENTS ERROR: $e');
             debugPrint('$stack');
           }
-
-          final character = await _selectedCharacterService.loadCharacter();
 
           if (character != null) {
             try {
@@ -333,6 +334,7 @@ class _PlannerPageState extends State<PlannerPage> {
 
       setState(() {
         _items = updatedItems;
+        _selectedCharacterFaction = character?.faction;
         _isLoading = false;
       });
     } catch (e, stack) {
@@ -568,7 +570,13 @@ class _PlannerPageState extends State<PlannerPage> {
           item.source.toLowerCase().contains(query);
 
       final matchesMissingOnly = !_missingOnly || !item.obtained;
-      final matchesAvailability = !_hideUnavailable || !item.unavailable;
+      final unavailableForFaction =
+          AchievementFactionAvailability.isUnavailableForFaction(
+            item,
+            _selectedCharacterFaction,
+          );
+      final matchesAvailability =
+          !_hideUnavailable || (!item.unavailable && !unavailableForFaction);
 
       return matchesCategory &&
           matchesRegion &&
