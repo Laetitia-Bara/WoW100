@@ -11,6 +11,36 @@ import '../../../../data/repositories/battle_net_repository.dart';
 
 const _battleNetBlue = Color(0xFF00AEFF);
 const _regions = ['EU', 'US', 'KR', 'TW'];
+const _realmSuggestions = [
+  'Archimonde',
+  'Chants eternels',
+  'Confrerie du Thorium',
+  'Conseil des Ombres',
+  'Dalaran',
+  'Elune',
+  'Eitrigg',
+  'Hyjal',
+  'Illidan',
+  'Kael\'thas',
+  'Khaz Modan',
+  'Kirin Tor',
+  'La Croisade ecarlate',
+  'Les Clairvoyants',
+  'Les Sentinelles',
+  'Marecage de Zangar',
+  'Medivh',
+  'Naxxramas',
+  'Ner\'zhul',
+  'Rashgarroth',
+  'Sargeras',
+  'Sinstralis',
+  'Suramar',
+  'Temple noir',
+  'Throk\'Feroth',
+  'Uldaman',
+  'Vol\'jin',
+  'Ysondre',
+];
 
 class BattleNetFriendsPage extends StatefulWidget {
   const BattleNetFriendsPage({super.key});
@@ -349,7 +379,7 @@ class _BattleNetFriendsPageState extends State<BattleNetFriendsPage> {
   }
 }
 
-class _GuildLookupCard extends StatelessWidget {
+class _GuildLookupCard extends StatefulWidget {
   const _GuildLookupCard({
     required this.mainCharacter,
     required this.guildName,
@@ -371,13 +401,44 @@ class _GuildLookupCard extends StatelessWidget {
   final ValueChanged<BattleNetFriend> onSaveFriend;
 
   @override
+  State<_GuildLookupCard> createState() => _GuildLookupCardState();
+}
+
+class _GuildLookupCardState extends State<_GuildLookupCard> {
+  final _memberSearchController = TextEditingController();
+
+  @override
+  void didUpdateWidget(covariant _GuildLookupCard oldWidget) {
+    super.didUpdateWidget(oldWidget);
+
+    if (oldWidget.guildName != widget.guildName || widget.members.isEmpty) {
+      _memberSearchController.clear();
+    }
+  }
+
+  @override
+  void dispose() {
+    _memberSearchController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final memberQuery = _identityKey(_memberSearchController.text);
+    final visibleMembers = memberQuery.isEmpty
+        ? widget.members
+        : widget.members
+              .where(
+                (member) => _identityKey(member.name).contains(memberQuery),
+              )
+              .toList();
+
     return _ActionCard(
       icon: Icons.shield_outlined,
       title: 'Guilde',
-      subtitle: mainCharacter == null
+      subtitle: widget.mainCharacter == null
           ? 'Choisis un personnage principal pour charger sa guilde.'
-          : 'Depuis ${mainCharacter!.name} - ${mainCharacter!.realm}.',
+          : 'Depuis ${widget.mainCharacter!.name} - ${widget.mainCharacter!.realm}.',
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -386,23 +447,25 @@ class _GuildLookupCard extends StatelessWidget {
               backgroundColor: AppTheme.gold,
               foregroundColor: AppTheme.background,
             ),
-            onPressed: isLoading ? null : onLoadGuild,
-            icon: isLoading
+            onPressed: widget.isLoading ? null : widget.onLoadGuild,
+            icon: widget.isLoading
                 ? const SizedBox.square(
                     dimension: 18,
                     child: CircularProgressIndicator(strokeWidth: 2),
                   )
                 : const Icon(Icons.groups),
-            label: Text(isLoading ? 'Chargement...' : 'Charger ma guilde'),
+            label: Text(
+              widget.isLoading ? 'Chargement...' : 'Charger ma guilde',
+            ),
           ),
-          if (error != null) ...[
+          if (widget.error != null) ...[
             const SizedBox(height: 10),
-            _InlineMessage(text: error!, isError: true),
+            _InlineMessage(text: widget.error!, isError: true),
           ],
-          if (guildName != null) ...[
+          if (widget.guildName != null) ...[
             const SizedBox(height: 12),
             Text(
-              guildName!,
+              widget.guildName!,
               style: const TextStyle(
                 color: AppTheme.gold,
                 fontWeight: FontWeight.w900,
@@ -410,50 +473,76 @@ class _GuildLookupCard extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              '${members.length} membres trouves',
+              '${widget.members.length} membres trouves',
               style: const TextStyle(color: AppTheme.mutedText),
             ),
           ],
-          if (members.isNotEmpty) ...[
+          if (widget.members.isNotEmpty) ...[
+            const SizedBox(height: 12),
+            TextField(
+              controller: _memberSearchController,
+              decoration: InputDecoration(
+                labelText: 'Rechercher un membre',
+                hintText: 'Nom du personnage',
+                prefixIcon: const Icon(Icons.search),
+                suffixIcon: _memberSearchController.text.isEmpty
+                    ? null
+                    : IconButton(
+                        tooltip: 'Effacer',
+                        icon: const Icon(Icons.clear),
+                        onPressed: () {
+                          setState(_memberSearchController.clear);
+                        },
+                      ),
+              ),
+              onChanged: (_) => setState(() {}),
+            ),
             const SizedBox(height: 12),
             ConstrainedBox(
               constraints: const BoxConstraints(maxHeight: 260),
-              child: ListView.separated(
-                shrinkWrap: true,
-                itemCount: members.length,
-                separatorBuilder: (_, _) => Divider(
-                  color: Colors.white.withValues(alpha: 0.08),
-                  height: 1,
-                ),
-                itemBuilder: (context, index) {
-                  final member = members[index];
-                  final saved = isSaved(member);
+              child: visibleMembers.isEmpty
+                  ? const _InlineMessage(
+                      text: 'Aucun membre trouve avec cette recherche.',
+                      isError: false,
+                    )
+                  : ListView.separated(
+                      shrinkWrap: true,
+                      itemCount: visibleMembers.length,
+                      separatorBuilder: (_, _) => Divider(
+                        color: Colors.white.withValues(alpha: 0.08),
+                        height: 1,
+                      ),
+                      itemBuilder: (context, index) {
+                        final member = visibleMembers[index];
+                        final saved = widget.isSaved(member);
 
-                  return ListTile(
-                    dense: true,
-                    contentPadding: EdgeInsets.zero,
-                    title: Text(
-                      member.name,
-                      style: TextStyle(
-                        color: _wowClassColor(member.characterClass),
-                        fontWeight: FontWeight.w800,
-                      ),
+                        return ListTile(
+                          dense: true,
+                          contentPadding: EdgeInsets.zero,
+                          title: Text(
+                            member.name,
+                            style: TextStyle(
+                              color: _wowClassColor(member.characterClass),
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          subtitle: Text(
+                            '${member.characterClass} ${member.level} - ${member.realm}',
+                            style: const TextStyle(color: AppTheme.mutedText),
+                          ),
+                          trailing: IconButton(
+                            tooltip: saved ? 'Deja ajoute' : 'Ajouter',
+                            icon: Icon(
+                              saved ? Icons.check_circle : Icons.person_add_alt,
+                              color: saved ? AppTheme.gold : _battleNetBlue,
+                            ),
+                            onPressed: saved
+                                ? null
+                                : () => widget.onSaveFriend(member),
+                          ),
+                        );
+                      },
                     ),
-                    subtitle: Text(
-                      '${member.characterClass} ${member.level} - ${member.realm}',
-                      style: const TextStyle(color: AppTheme.mutedText),
-                    ),
-                    trailing: IconButton(
-                      tooltip: saved ? 'Deja ajoute' : 'Ajouter',
-                      icon: Icon(
-                        saved ? Icons.check_circle : Icons.person_add_alt,
-                        color: saved ? AppTheme.gold : _battleNetBlue,
-                      ),
-                      onPressed: saved ? null : () => onSaveFriend(member),
-                    ),
-                  );
-                },
-              ),
             ),
           ],
         ],
@@ -512,12 +601,9 @@ class _ManualLookupCard extends StatelessWidget {
               ),
               const SizedBox(width: 12),
               Expanded(
-                child: TextField(
+                child: _RealmAutocompleteField(
                   controller: realmController,
-                  decoration: const InputDecoration(
-                    labelText: 'Serveur',
-                    hintText: 'ex: Hyjal',
-                  ),
+                  options: _realmSuggestions,
                 ),
               ),
             ],
@@ -544,7 +630,7 @@ class _ManualLookupCard extends StatelessWidget {
                     child: CircularProgressIndicator(strokeWidth: 2),
                   )
                 : const Icon(Icons.search),
-            label: Text(isLoading ? 'Recherche...' : 'Lookup'),
+            label: Text(isLoading ? 'Recherche...' : 'Rechercher'),
           ),
           if (error != null) ...[
             const SizedBox(height: 10),
@@ -567,6 +653,109 @@ class _ManualLookupCard extends StatelessWidget {
           ],
         ],
       ),
+    );
+  }
+}
+
+class _RealmAutocompleteField extends StatefulWidget {
+  const _RealmAutocompleteField({
+    required this.controller,
+    required this.options,
+  });
+
+  final TextEditingController controller;
+  final List<String> options;
+
+  @override
+  State<_RealmAutocompleteField> createState() =>
+      _RealmAutocompleteFieldState();
+}
+
+class _RealmAutocompleteFieldState extends State<_RealmAutocompleteField> {
+  final _focusNode = FocusNode();
+
+  @override
+  void dispose() {
+    _focusNode.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        return RawAutocomplete<String>(
+          textEditingController: widget.controller,
+          focusNode: _focusNode,
+          displayStringForOption: (option) => option,
+          optionsBuilder: (value) {
+            final query = _identityKey(value.text);
+
+            if (query.isEmpty) {
+              return widget.options.take(8);
+            }
+
+            return widget.options
+                .where((option) => _identityKey(option).contains(query))
+                .take(8);
+          },
+          onSelected: (option) {
+            widget.controller.text = option;
+          },
+          fieldViewBuilder: (context, controller, focusNode, onFieldSubmitted) {
+            return TextField(
+              controller: controller,
+              focusNode: focusNode,
+              decoration: const InputDecoration(
+                labelText: 'Serveur',
+                hintText: 'Rechercher un serveur',
+                prefixIcon: Icon(Icons.search),
+              ),
+            );
+          },
+          optionsViewBuilder: (context, onSelected, options) {
+            return Align(
+              alignment: Alignment.topLeft,
+              child: Material(
+                color: AppTheme.card,
+                elevation: 8,
+                borderRadius: BorderRadius.circular(10),
+                child: ConstrainedBox(
+                  constraints: BoxConstraints(
+                    maxWidth: constraints.maxWidth,
+                    maxHeight: 220,
+                  ),
+                  child: ListView.builder(
+                    padding: EdgeInsets.zero,
+                    shrinkWrap: true,
+                    itemCount: options.length,
+                    itemBuilder: (context, index) {
+                      final option = options.elementAt(index);
+
+                      return InkWell(
+                        onTap: () => onSelected(option),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 14,
+                            vertical: 12,
+                          ),
+                          child: Text(
+                            option,
+                            style: const TextStyle(
+                              color: AppTheme.text,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ),
+            );
+          },
+        );
+      },
     );
   }
 }
