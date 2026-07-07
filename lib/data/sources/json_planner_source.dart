@@ -7,6 +7,8 @@ import '../models/tracking_category.dart';
 import '../models/wow_expansion.dart';
 
 class JsonPlannerSource {
+  static final Map<String, Future<List<TrackingItem>>> _itemAssetCache = {};
+
   static const Map<WowExpansion, String> _achievementAssetPaths = {
     WowExpansion.vanilla: 'assets/data/achievements/vanilla_achievements.json',
     WowExpansion.tbc: 'assets/data/achievements/tbc_achievements.json',
@@ -47,6 +49,15 @@ class JsonPlannerSource {
   }
 
   Future<List<TrackingItem>> loadItemsFromAsset(String assetPath) async {
+    final items = await _itemAssetCache.putIfAbsent(
+      assetPath,
+      () => _loadItemsFromAsset(assetPath),
+    );
+
+    return List<TrackingItem>.of(items);
+  }
+
+  Future<List<TrackingItem>> _loadItemsFromAsset(String assetPath) async {
     final jsonString = await rootBundle.loadString(assetPath);
     final List<dynamic> data = jsonDecode(jsonString);
 

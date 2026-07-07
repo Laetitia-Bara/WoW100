@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:wow100/core/services/battle_net_token_service.dart';
@@ -80,6 +82,7 @@ class _PlannerPageState extends State<PlannerPage> {
   final Set<TrackingCategory> _selectedCategories = {};
   final Set<String> _selectedGroups = {};
   WowRegionFilter? _selectedRegionFilter;
+  int _loadGeneration = 0;
 
   bool get _isPetsPlanner =>
       widget.category == TrackingCategory.pets ||
@@ -233,112 +236,29 @@ class _PlannerPageState extends State<PlannerPage> {
   }
 
   Future<void> _loadItems() async {
+    final generation = ++_loadGeneration;
+
     try {
       final items = await _repository.getItems(
         widget.extension,
         category: widget.category,
       );
-      final token = await BattleNetTokenService().loadToken();
-      final ownedMountIds = <int>{};
-      final ownedPetIds = <int>{};
-      final ownedAchievementIds = <int>{};
       final character = await _selectedCharacterService.loadCharacter();
-
-      if (token != null) {
-        if (_tracksAchievements) {
-          try {
-            final accountAchievements = await BattleNetRepository()
-                .getAccountAchievements(token);
-            ownedAchievementIds.addAll(
-              accountAchievements.map((achievement) => achievement.id),
-            );
-          } catch (e, stack) {
-            debugPrint('BATTLE.NET ACCOUNT ACHIEVEMENTS ERROR: $e');
-            debugPrint('$stack');
-          }
-
-          if (character != null) {
-            try {
-              final achievements = await BattleNetRepository().getAchievements(
-                token,
-                character.realmSlug,
-                character.name,
-              );
-              ownedAchievementIds.addAll(
-                achievements.map((achievement) => achievement.id),
-              );
-            } catch (e, stack) {
-              debugPrint('BATTLE.NET CHARACTER ACHIEVEMENTS ERROR: $e');
-              debugPrint('$stack');
-            }
-          }
-        }
-
-        if (_tracksPets) {
-          final pets = await BattleNetRepository().getPets(token);
-          ownedPetIds.addAll(pets.map((pet) => pet.id));
-        }
-
-        if (_tracksMounts) {
-          final mounts = await BattleNetRepository().getMounts(token);
-          ownedMountIds.addAll(mounts.map((mount) => mount.id));
-        }
-      }
-
-      final expandedOwnedAchievementIds = AchievementFactionEquivalents.expand(
-        ownedAchievementIds,
-      );
       final checkedItemIds = await _localCheckService.checkedItemIds(
         items.map((item) => item.id),
       );
-      final checkedAchievementIds = <int>{};
+      final localItems = _applyProgress(items, checkedItemIds: checkedItemIds);
 
-      for (final item in items) {
-        if (checkedItemIds.contains(item.id) &&
-            item.category == TrackingCategory.achievements &&
-            item.blizzardId != null) {
-          checkedAchievementIds.add(item.blizzardId!);
-        }
-      }
-
-      final expandedCheckedAchievementIds =
-          AchievementFactionEquivalents.expand(checkedAchievementIds);
-      final updatedItems = <TrackingItem>[];
-
-      for (final item in items) {
-        final checked =
-            checkedItemIds.contains(item.id) ||
-            (item.category == TrackingCategory.achievements &&
-                item.blizzardId != null &&
-                expandedCheckedAchievementIds.contains(item.blizzardId));
-        final ownedMount =
-            item.category == TrackingCategory.mounts &&
-            item.blizzardId != null &&
-            ownedMountIds.contains(item.blizzardId);
-        final ownedPet =
-            item.category == TrackingCategory.pets &&
-            item.blizzardId != null &&
-            ownedPetIds.contains(item.blizzardId);
-        final ownedAchievement =
-            item.category == TrackingCategory.achievements &&
-            item.blizzardId != null &&
-            expandedOwnedAchievementIds.contains(item.blizzardId);
-
-        updatedItems.add(
-          item.copyWith(
-            obtained: checked || ownedMount || ownedPet || ownedAchievement,
-          ),
-        );
-      }
-
-      if (!mounted) return;
+      if (!mounted || generation != _loadGeneration) return;
 
       setState(() {
-        _items = updatedItems;
+        _items = localItems;
         _selectedCharacter = character;
         _selectedCharacterFaction = character?.faction;
         _isLoading = false;
       });
+
+      unawaited(_loadBattleNetProgress(items, character, generation));
     } catch (e, stack) {
       debugPrint('ERREUR PLANNER: $e');
       debugPrint('$stack');
@@ -350,6 +270,131 @@ class _PlannerPageState extends State<PlannerPage> {
         _isLoading = false;
       });
     }
+  }
+
+  Future<void> _loadBattleNetProgress(
+    List<TrackingItem> items,
+    WowCharacter? character,
+    int generation,
+  ) async {
+    final token = await BattleNetTokenService().loadToken();
+    if (token == null || !mounted || generation != _loadGeneration) return;
+
+    final ownedMountIds = <int>{};
+    final ownedPetIds = <int>{};
+    final ownedAchievementIds = <int>{};
+    final battleNetRepository = BattleNetRepository();
+
+    if (_tracksAchievements) {
+      try {
+        final accountAchievements = await battleNetRepository
+            .getAccountAchievements(token);
+        ownedAchievementIds.addAll(
+          accountAchievements.map((achievement) => achievement.id),
+        );
+      } catch (e, stack) {
+        debugPrint('BATTLE.NET ACCOUNT ACHIEVEMENTS ERROR: $e');
+        debugPrint('$stack');
+      }
+
+      if (character != null) {
+        try {
+          final achievements = await battleNetRepository.getAchievements(
+            token,
+            character.realmSlug,
+            character.name,
+          );
+          ownedAchievementIds.addAll(
+            achievements.map((achievement) => achievement.id),
+          );
+        } catch (e, stack) {
+          debugPrint('BATTLE.NET CHARACTER ACHIEVEMENTS ERROR: $e');
+          debugPrint('$stack');
+        }
+      }
+    }
+
+    if (_tracksPets) {
+      try {
+        final pets = await battleNetRepository.getPets(token);
+        ownedPetIds.addAll(pets.map((pet) => pet.id));
+      } catch (e, stack) {
+        debugPrint('BATTLE.NET PETS ERROR: $e');
+        debugPrint('$stack');
+      }
+    }
+
+    if (_tracksMounts) {
+      try {
+        final mounts = await battleNetRepository.getMounts(token);
+        ownedMountIds.addAll(mounts.map((mount) => mount.id));
+      } catch (e, stack) {
+        debugPrint('BATTLE.NET MOUNTS ERROR: $e');
+        debugPrint('$stack');
+      }
+    }
+
+    final checkedItemIds = await _localCheckService.checkedItemIds(
+      items.map((item) => item.id),
+    );
+    final updatedItems = _applyProgress(
+      items,
+      checkedItemIds: checkedItemIds,
+      ownedMountIds: ownedMountIds,
+      ownedPetIds: ownedPetIds,
+      ownedAchievementIds: ownedAchievementIds,
+    );
+
+    if (!mounted || generation != _loadGeneration) return;
+
+    setState(() {
+      _items = updatedItems;
+    });
+  }
+
+  List<TrackingItem> _applyProgress(
+    List<TrackingItem> items, {
+    required Set<String> checkedItemIds,
+    Set<int> ownedMountIds = const <int>{},
+    Set<int> ownedPetIds = const <int>{},
+    Set<int> ownedAchievementIds = const <int>{},
+  }) {
+    final expandedOwnedAchievementIds = AchievementFactionEquivalents.expand(
+      ownedAchievementIds,
+    );
+    final checkedAchievementIds = <int>{};
+
+    for (final item in items) {
+      if (checkedItemIds.contains(item.id) &&
+          item.category == TrackingCategory.achievements &&
+          item.blizzardId != null) {
+        checkedAchievementIds.add(item.blizzardId!);
+      }
+    }
+
+    final expandedCheckedAchievementIds = AchievementFactionEquivalents.expand(
+      checkedAchievementIds,
+    );
+
+    return [
+      for (final item in items)
+        item.copyWith(
+          obtained:
+              checkedItemIds.contains(item.id) ||
+              (item.category == TrackingCategory.achievements &&
+                  item.blizzardId != null &&
+                  expandedCheckedAchievementIds.contains(item.blizzardId)) ||
+              (item.category == TrackingCategory.mounts &&
+                  item.blizzardId != null &&
+                  ownedMountIds.contains(item.blizzardId)) ||
+              (item.category == TrackingCategory.pets &&
+                  item.blizzardId != null &&
+                  ownedPetIds.contains(item.blizzardId)) ||
+              (item.category == TrackingCategory.achievements &&
+                  item.blizzardId != null &&
+                  expandedOwnedAchievementIds.contains(item.blizzardId)),
+        ),
+    ];
   }
 
   List<String> _groupOptions() {
