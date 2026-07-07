@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -67,6 +69,86 @@ class WebSponsorPageBody extends StatelessWidget {
               ),
             ),
           ),
+        );
+      },
+    );
+  }
+}
+
+class WebSponsorSliverPageBody extends StatelessWidget {
+  const WebSponsorSliverPageBody({
+    super.key,
+    required this.slivers,
+    this.contentMaxWidth = 1180,
+  });
+
+  static const double _sidebarWidth = WebSponsorPageBody._sidebarWidth;
+  static const double _sidebarGap = WebSponsorPageBody._sidebarGap;
+  static const double _sidebarBreakpoint =
+      WebSponsorPageBody._sidebarBreakpoint;
+
+  final List<Widget> slivers;
+  final double contentMaxWidth;
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final showSidebar =
+            kIsWeb && constraints.maxWidth >= _sidebarBreakpoint;
+        final maxWidth = showSidebar
+            ? contentMaxWidth + _sidebarGap + _sidebarWidth
+            : contentMaxWidth;
+
+        if (showSidebar) {
+          return Padding(
+            padding: const EdgeInsets.all(16),
+            child: Center(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(maxWidth: maxWidth),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(child: CustomScrollView(slivers: slivers)),
+                    const SizedBox(width: _sidebarGap),
+                    const SizedBox(
+                      width: _sidebarWidth,
+                      child: WebSponsorPanel(),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        }
+
+        final horizontalPadding = math.max(
+          16.0,
+          (constraints.maxWidth - contentMaxWidth) / 2,
+        );
+
+        return CustomScrollView(
+          slivers: [
+            SliverPadding(
+              padding: EdgeInsets.fromLTRB(
+                horizontalPadding,
+                16,
+                horizontalPadding,
+                16,
+              ),
+              sliver: SliverMainAxisGroup(
+                slivers: [
+                  if (kIsWeb) ...[
+                    const SliverToBoxAdapter(
+                      child: WebSponsorPanel(compact: true),
+                    ),
+                    const SliverToBoxAdapter(child: SizedBox(height: 20)),
+                  ],
+                  ...slivers,
+                ],
+              ),
+            ),
+          ],
         );
       },
     );

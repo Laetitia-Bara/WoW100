@@ -46,6 +46,7 @@ class JsonProgressRepository implements ProgressRepository {
     final allAchievementItems = await _source.loadAchievementItems(
       WowExpansion.allAchievements,
     );
+    final allItems = [...allMountItems, ...allPetItems, ...allAchievementItems];
 
     final token = await _tokenService.loadToken();
 
@@ -102,6 +103,9 @@ class JsonProgressRepository implements ProgressRepository {
     final expandedOwnedAchievementIds = AchievementFactionEquivalents.expand(
       ownedAchievementIds,
     );
+    final checkedItemIds = await _localCheckService.checkedItemIds(
+      allItems.map((item) => item.id),
+    );
 
     final progresses = <ExpansionProgress>[];
 
@@ -127,6 +131,7 @@ class JsonProgressRepository implements ProgressRepository {
           ownedMountIds,
           ownedPetIds,
           expandedOwnedAchievementIds,
+          checkedItemIds,
           character?.faction,
         ),
       );
@@ -135,10 +140,11 @@ class JsonProgressRepository implements ProgressRepository {
     return [
       await _buildProgress(
         WowExpansion.total,
-        [...allMountItems, ...allPetItems, ...allAchievementItems],
+        allItems,
         ownedMountIds,
         ownedPetIds,
         expandedOwnedAchievementIds,
+        checkedItemIds,
         character?.faction,
       ),
       ...progresses,
@@ -151,6 +157,7 @@ class JsonProgressRepository implements ProgressRepository {
     Set<int> ownedMountIds,
     Set<int> ownedPetIds,
     Set<int> ownedAchievementIds,
+    Set<String> checkedItemIds,
     String? selectedCharacterFaction,
   ) async {
     var completedAchievements = 0;
@@ -173,7 +180,7 @@ class JsonProgressRepository implements ProgressRepository {
         continue;
       }
 
-      final checked = await _localCheckService.isChecked(item.id);
+      final checked = checkedItemIds.contains(item.id);
       if (checked) checkedAchievementIds.add(item.blizzardId!);
     }
 
@@ -182,7 +189,7 @@ class JsonProgressRepository implements ProgressRepository {
     );
 
     for (final item in items) {
-      final checked = await _localCheckService.isChecked(item.id);
+      final checked = checkedItemIds.contains(item.id);
       final owned =
           item.blizzardId != null &&
           ((item.category == TrackingCategory.mounts &&
