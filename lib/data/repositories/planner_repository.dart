@@ -8,6 +8,11 @@ abstract class PlannerRepository {
     WowExpansion expansion, {
     TrackingCategory? category,
   });
+
+  Future<void> preloadItems(
+    WowExpansion expansion, {
+    TrackingCategory? category,
+  });
 }
 
 class JsonPlannerRepository implements PlannerRepository {
@@ -69,6 +74,14 @@ class JsonPlannerRepository implements PlannerRepository {
       default:
         return [];
     }
+  }
+
+  @override
+  Future<void> preloadItems(
+    WowExpansion expansion, {
+    TrackingCategory? category,
+  }) async {
+    await getItems(expansion, category: category);
   }
 
   bool _isExtensionExpansion(WowExpansion expansion) {

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:wow100/core/services/battle_net_auth_service.dart';
 import 'package:wow100/core/services/battle_net_session_service.dart';
@@ -55,6 +57,21 @@ class _DashboardPageState extends State<DashboardPage> {
     super.initState();
     _loadCharacter();
     _loadProgress();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      unawaited(_preloadLargePlannerCatalogs());
+    });
+  }
+
+  Future<void> _preloadLargePlannerCatalogs() async {
+    try {
+      await _plannerRepository.preloadItems(
+        WowExpansion.allAchievements,
+        category: TrackingCategory.achievements,
+      );
+    } catch (e, stack) {
+      debugPrint('PRELOAD ALL ACHIEVEMENTS ERROR: $e');
+      debugPrint('$stack');
+    }
   }
 
   Future<void> _loadProgress() async {

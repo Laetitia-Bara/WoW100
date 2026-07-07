@@ -83,6 +83,7 @@ class _PlannerPageState extends State<PlannerPage> {
   final Set<String> _selectedGroups = {};
   WowRegionFilter? _selectedRegionFilter;
   int _loadGeneration = 0;
+  bool _didApplyInitialGroupCollapse = false;
 
   bool get _isPetsPlanner =>
       widget.category == TrackingCategory.pets ||
@@ -248,6 +249,7 @@ class _PlannerPageState extends State<PlannerPage> {
         items.map((item) => item.id),
       );
       final localItems = _applyProgress(items, checkedItemIds: checkedItemIds);
+      _applyInitialGroupCollapse(localItems);
 
       if (!mounted || generation != _loadGeneration) return;
 
@@ -270,6 +272,15 @@ class _PlannerPageState extends State<PlannerPage> {
         _isLoading = false;
       });
     }
+  }
+
+  void _applyInitialGroupCollapse(List<TrackingItem> items) {
+    if (_didApplyInitialGroupCollapse || !_isAllAchievementsPlanner) return;
+
+    _didApplyInitialGroupCollapse = true;
+    _collapsedGroups
+      ..clear()
+      ..addAll(items.map(_groupLabel));
   }
 
   Future<void> _loadBattleNetProgress(
@@ -564,6 +575,7 @@ class _PlannerPageState extends State<PlannerPage> {
       _selectedGroups
         ..clear()
         ..addAll(result);
+      _collapsedGroups.removeAll(result);
     });
   }
 
@@ -703,6 +715,9 @@ class _PlannerPageState extends State<PlannerPage> {
                         onChanged: (value) {
                           setState(() {
                             _searchQuery = value;
+                            if (value.trim().isNotEmpty) {
+                              _collapsedGroups.clear();
+                            }
                           });
                         },
                       ),
