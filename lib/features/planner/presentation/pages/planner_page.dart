@@ -775,7 +775,7 @@ class _PlannerAppBarTitle extends StatelessWidget {
       builder: (context, constraints) {
         final showReminder = character != null && constraints.maxWidth >= 340;
         final titleMaxWidth = showReminder
-            ? ((constraints.maxWidth - 244) / 2).clamp(
+            ? ((constraints.maxWidth - 256) / 2).clamp(
                 72.0,
                 constraints.maxWidth,
               )
@@ -870,14 +870,19 @@ class _FactionFlag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(3),
-      child: SizedBox(
-        width: 22,
-        height: 16,
-        child: Image.asset(
-          asset,
-          fit: BoxFit.cover,
-          alignment: Alignment.center,
+      borderRadius: BorderRadius.circular(5),
+      child: Container(
+        foregroundDecoration: BoxDecoration(
+          border: Border.all(color: AppTheme.gold.withAlpha(120)),
+        ),
+        child: SizedBox(
+          width: 34,
+          height: 22,
+          child: Image.asset(
+            asset,
+            fit: BoxFit.cover,
+            alignment: Alignment.centerRight,
+          ),
         ),
       ),
     );
