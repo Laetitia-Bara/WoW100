@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:wow100/core/config/app_config.dart';
 import '../models/battle_net_auth_result.dart';
+import '../models/battle_net_friend.dart';
 import '../models/tracking_category.dart';
 import '../models/wow_character.dart';
 import '../models/wow_mount.dart';
@@ -37,6 +38,54 @@ class BattleNetRepository {
     final List<dynamic> data = jsonDecode(response.body);
 
     return data.map((item) => WowCharacter.fromJson(item)).toList();
+  }
+
+  Future<BattleNetFriend> lookupCharacterProfile(
+    String token, {
+    required String region,
+    required String realmSlug,
+    required String characterName,
+  }) async {
+    final uri = _apiUri('getWowCharacterProfile', {
+      'region': region,
+      'realmSlug': realmSlug,
+      'characterName': characterName,
+    });
+
+    final response = await http.get(uri, headers: _authHeaders(token));
+
+    if (response.statusCode != 200) {
+      throw Exception(response.body);
+    }
+
+    final data = jsonDecode(response.body) as Map<String, dynamic>;
+
+    return BattleNetFriend.fromJson(data);
+  }
+
+  Future<List<BattleNetFriend>> getGuildRoster(
+    String token, {
+    required String region,
+    required String realmSlug,
+    required String guildName,
+  }) async {
+    final uri = _apiUri('getWowGuildRoster', {
+      'region': region,
+      'realmSlug': realmSlug,
+      'guildName': guildName,
+    });
+
+    final response = await http.get(uri, headers: _authHeaders(token));
+
+    if (response.statusCode != 200) {
+      throw Exception(response.body);
+    }
+
+    final data = jsonDecode(response.body) as List<dynamic>;
+
+    return data
+        .map((item) => BattleNetFriend.fromJson(item as Map<String, dynamic>))
+        .toList();
   }
 
   Future<List<WowMount>> getMounts(String token) async {

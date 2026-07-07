@@ -23,6 +23,7 @@ import '../../../auth/presentation/pages/character_switch_page.dart';
 import '../../../legal/presentation/pages/legal_page.dart';
 import '../../../planner/presentation/pages/planner_page.dart';
 import '../../../planner/presentation/widgets/region_selector_sheet.dart';
+import '../../../social/presentation/pages/battle_net_friends_page.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -190,6 +191,13 @@ class _DashboardPageState extends State<DashboardPage> {
     await _loadProgress();
   }
 
+  void _openBattleNetFriends() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const BattleNetFriendsPage()),
+    );
+  }
+
   Future<void> _openCategoryFilters() async {
     final result = await showModalBottomSheet<Set<TrackingCategory>>(
       context: context,
@@ -330,6 +338,7 @@ class _DashboardPageState extends State<DashboardPage> {
               icon: const Icon(Icons.person),
               label: const Text('Mes personnages'),
             ),
+            _BattleNetFriendsAction(onPressed: _openBattleNetFriends),
             IconButton(
               tooltip: 'Déconnexion',
               icon: const Icon(Icons.logout),
@@ -420,6 +429,33 @@ class _DashboardPageState extends State<DashboardPage> {
         },
       ),
       bottomNavigationBar: const AppBannerAd(),
+    );
+  }
+}
+
+class _BattleNetFriendsAction extends StatelessWidget {
+  const _BattleNetFriendsAction({required this.onPressed});
+
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    final isCompact = MediaQuery.sizeOf(context).width < 720;
+    const battleNetBlue = Color(0xFF00AEFF);
+
+    if (isCompact) {
+      return IconButton(
+        tooltip: 'Mes amis',
+        icon: const Icon(Icons.group, color: battleNetBlue),
+        onPressed: onPressed,
+      );
+    }
+
+    return TextButton.icon(
+      style: TextButton.styleFrom(foregroundColor: battleNetBlue),
+      onPressed: onPressed,
+      icon: const Icon(Icons.group),
+      label: const Text('Mes amis'),
     );
   }
 }
