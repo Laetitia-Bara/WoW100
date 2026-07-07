@@ -15,6 +15,7 @@ import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/expansion_palette.dart';
 import '../../../../core/widgets/web_sponsor_panel.dart';
 import '../../../../data/models/tracking_item.dart';
+import '../../../../data/models/wow_character.dart';
 import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/models/wow_region_filter.dart';
 import '../../../../data/repositories/planner_repository.dart';
@@ -74,6 +75,7 @@ class _PlannerPageState extends State<PlannerPage> {
   bool _missingOnly = true;
   bool _hideUnavailable = true;
   String _searchQuery = '';
+  WowCharacter? _selectedCharacter;
   String? _selectedCharacterFaction;
   final Set<TrackingCategory> _selectedCategories = {};
   final Set<String> _selectedGroups = {};
@@ -334,6 +336,7 @@ class _PlannerPageState extends State<PlannerPage> {
 
       setState(() {
         _items = updatedItems;
+        _selectedCharacter = character;
         _selectedCharacterFaction = character?.faction;
         _isLoading = false;
       });
@@ -594,7 +597,10 @@ class _PlannerPageState extends State<PlannerPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(_selectedRegionFilter?.zone ?? widget.extension.label),
+        title: _PlannerAppBarTitle(
+          title: _selectedRegionFilter?.zone ?? widget.extension.label,
+          character: _selectedCharacter,
+        ),
         actions: [
           IconButton(
             tooltip: 'Tout décocher',
@@ -755,6 +761,148 @@ class _PlannerPageState extends State<PlannerPage> {
             ),
     );
   }
+}
+
+class _PlannerAppBarTitle extends StatelessWidget {
+  const _PlannerAppBarTitle({required this.title, required this.character});
+
+  final String title;
+  final WowCharacter? character;
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final showReminder = character != null && constraints.maxWidth >= 340;
+        final titleMaxWidth = showReminder
+            ? ((constraints.maxWidth - 244) / 2).clamp(
+                72.0,
+                constraints.maxWidth,
+              )
+            : constraints.maxWidth;
+
+        return SizedBox(
+          height: kToolbarHeight,
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Align(
+                alignment: Alignment.centerLeft,
+                child: SizedBox(
+                  width: titleMaxWidth,
+                  child: Text(title, overflow: TextOverflow.ellipsis),
+                ),
+              ),
+              if (showReminder)
+                Center(
+                  child: _SelectedCharacterReminder(character: character!),
+                ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _SelectedCharacterReminder extends StatelessWidget {
+  const _SelectedCharacterReminder({required this.character});
+
+  final WowCharacter character;
+
+  @override
+  Widget build(BuildContext context) {
+    final faction = _plannerIdentityKey(character.faction);
+    final flagAsset = switch (faction) {
+      'alliance' => 'assets/images/bann/bann_perso_alliance.png',
+      'horde' => 'assets/images/bann/bann_perso_horde.png',
+      _ => null,
+    };
+
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 220),
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: AppTheme.background.withAlpha(200),
+          borderRadius: BorderRadius.circular(999),
+          border: Border.all(color: AppTheme.gold.withAlpha(105)),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withAlpha(70),
+              blurRadius: 12,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (flagAsset != null) ...[
+                _FactionFlag(asset: flagAsset),
+                const SizedBox(width: 8),
+              ],
+              Flexible(
+                child: Text(
+                  character.name,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _FactionFlag extends StatelessWidget {
+  const _FactionFlag({required this.asset});
+
+  final String asset;
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(3),
+      child: SizedBox(
+        width: 22,
+        height: 16,
+        child: Image.asset(
+          asset,
+          fit: BoxFit.cover,
+          alignment: Alignment.center,
+        ),
+      ),
+    );
+  }
+}
+
+String _plannerIdentityKey(String value) {
+  return value
+      .trim()
+      .toLowerCase()
+      .replaceAll('Ã ', 'a')
+      .replaceAll('Ã¢', 'a')
+      .replaceAll('Ã¤', 'a')
+      .replaceAll('Ã§', 'c')
+      .replaceAll('Ã©', 'e')
+      .replaceAll('Ã¨', 'e')
+      .replaceAll('Ãª', 'e')
+      .replaceAll('Ã«', 'e')
+      .replaceAll('Ã®', 'i')
+      .replaceAll('Ã¯', 'i')
+      .replaceAll('Ã´', 'o')
+      .replaceAll('Ã¶', 'o')
+      .replaceAll('Ã¹', 'u')
+      .replaceAll('Ã»', 'u')
+      .replaceAll('Ã¼', 'u');
 }
 
 class _PlannerGroupHeader extends StatelessWidget {
