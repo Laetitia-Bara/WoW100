@@ -19,6 +19,7 @@ class AchievementFactionAvailability {
     4929: alliance,
     4932: alliance,
     4933: horde,
+    4936: alliance,
     4937: alliance,
     4976: horde,
     4978: horde,

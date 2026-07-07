@@ -11,6 +11,10 @@ void main() {
       AchievementFactionEquivalents.expand({4925}),
       containsAll([4925, 4976]),
     );
+    expect(
+      AchievementFactionEquivalents.expand({4980}),
+      containsAll([4936, 4980]),
+    );
   });
 
   test('does not change unrelated achievement ids', () {
@@ -19,6 +23,7 @@ void main() {
 
   test('detects equivalent faction achievements', () {
     expect(AchievementFactionEquivalents.areEquivalent(4925, 4976), isTrue);
+    expect(AchievementFactionEquivalents.areEquivalent(4936, 4980), isTrue);
     expect(AchievementFactionEquivalents.areEquivalent(4925, 845), isFalse);
   });
 }

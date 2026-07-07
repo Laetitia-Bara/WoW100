@@ -34,6 +34,19 @@ void main() {
     );
   });
 
+  test('hides Alliance Stonetalon quest achievement for Horde characters', () {
+    final item = _achievement(blizzardId: 4936);
+
+    expect(
+      AchievementFactionAvailability.isUnavailableForFaction(item, 'Horde'),
+      isTrue,
+    );
+    expect(
+      AchievementFactionAvailability.isUnavailableForFaction(item, 'Alliance'),
+      isFalse,
+    );
+  });
+
   test('keeps faction-specific items visible without a selected character', () {
     final item = _achievement(
       blizzardId: 860,
