@@ -111,7 +111,7 @@ class _PlannerPageState extends State<PlannerPage> {
       widget.extension == WowExpansion.allAchievements;
 
   bool get _usesInlineRegionFilter =>
-      _isAllCollectionPlanner || _isAllAchievementsPlanner;
+      _isAllCollectionPlanner || _isAllAchievementsPlanner || _isPetsPlanner;
 
   bool get _tracksAchievements => _isExtensionPlanner || _isAchievementsPlanner;
 
@@ -126,6 +126,9 @@ class _PlannerPageState extends State<PlannerPage> {
       _tracksMounts || _tracksPets || _tracksAchievements;
 
   TrackingCategory? get _regionSelectorCategoryScope {
+    if (_isPetsPlanner) {
+      return TrackingCategory.pets;
+    }
     if (widget.extension == WowExpansion.allAchievements) {
       return TrackingCategory.achievements;
     }
@@ -146,7 +149,7 @@ class _PlannerPageState extends State<PlannerPage> {
 
   String get _regionFilterLabelText {
     if (_isAllAchievementsPlanner) return 'Par région (En construction ^^)';
-    if (_isAllCollectionPlanner) {
+    if (_isAllCollectionPlanner || _isPetsPlanner) {
       return 'Recherche par régions (en construction)';
     }
 
@@ -155,7 +158,7 @@ class _PlannerPageState extends State<PlannerPage> {
 
   String get _regionFilterEmptyLabel {
     if (_isAllAchievementsPlanner) return 'Toutes les régions';
-    if (_isAllCollectionPlanner) return 'Tous les mondes';
+    if (_isAllCollectionPlanner || _isPetsPlanner) return 'Tous les mondes';
 
     return 'Toutes les régions (En construction ^^)';
   }
@@ -286,6 +289,28 @@ class _PlannerPageState extends State<PlannerPage> {
     _collapsedGroups
       ..clear()
       ..addAll(items.map(_groupLabel));
+  }
+
+  void _resetFiltersToDefault() {
+    _missingOnly = true;
+    _hideUnavailable = true;
+    _searchQuery = '';
+    _selectedCategories.clear();
+    _selectedExtensions.clear();
+    _selectedGroups.clear();
+    _selectedDifficulties.clear();
+    _selectedRegionFilter = null;
+    _collapsedGroups.clear();
+    _didApplyInitialGroupCollapse = false;
+  }
+
+  Future<void> _resetFiltersAndRefresh() async {
+    setState(() {
+      _resetFiltersToDefault();
+      _isLoading = true;
+    });
+
+    await _loadItems();
   }
 
   Future<void> _loadBattleNetProgress(
@@ -440,7 +465,7 @@ class _PlannerPageState extends State<PlannerPage> {
 
   List<String> _difficultyOptions() {
     final difficulties = _items
-        .map(_difficultyLabel)
+        .map(_difficultyFilterLabel)
         .whereType<String>()
         .toSet()
         .toList();
@@ -462,6 +487,17 @@ class _PlannerPageState extends State<PlannerPage> {
     }
 
     return label;
+  }
+
+  String? _difficultyFilterLabel(TrackingItem item) {
+    final label = _difficultyLabel(item);
+    if (label != null) return label;
+
+    if (_isPetsPlanner) {
+      return 'Non renseignée';
+    }
+
+    return null;
   }
 
   List<TrackingCategory> _categoryOptions() {
@@ -725,7 +761,7 @@ class _PlannerPageState extends State<PlannerPage> {
 
     final filteredItems = _items.where((item) {
       final group = _groupLabel(item);
-      final difficulty = _difficultyLabel(item);
+      final difficulty = _difficultyFilterLabel(item);
       final matchesCategory =
           !_isExtensionPlanner ||
           _selectedCategories.isEmpty ||
@@ -796,21 +832,9 @@ class _PlannerPageState extends State<PlannerPage> {
         ),
         actions: [
           IconButton(
-            tooltip: 'Tout décocher',
+            tooltip: 'Réinitialiser les filtres et resynchroniser',
             icon: const Icon(Icons.refresh),
-            onPressed: () async {
-              await _localCheckService.clearCheckedItems(
-                _items.map((item) => item.id),
-              );
-
-              if (!mounted) return;
-
-              setState(() {
-                _items = _items
-                    .map((item) => item.copyWith(obtained: false))
-                    .toList();
-              });
-            },
+            onPressed: _resetFiltersAndRefresh,
           ),
         ],
       ),
