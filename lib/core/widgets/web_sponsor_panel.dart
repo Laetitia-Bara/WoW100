@@ -166,11 +166,16 @@ class WebSponsorPanel extends StatelessWidget {
       'body': 'Bonjour,\n\nJe souhaite proposer un partenariat pour WoW100%.',
     },
   );
+  static final Uri _koFiUri = Uri.parse('https://ko-fi.com/cosmoslty');
 
   final bool compact;
 
   Future<void> _openContact() async {
     await launchUrl(_contactUri, mode: LaunchMode.externalApplication);
+  }
+
+  Future<void> _openKoFi() async {
+    await launchUrl(_koFiUri, mode: LaunchMode.externalApplication);
   }
 
   @override
@@ -290,6 +295,25 @@ class WebSponsorPanel extends StatelessWidget {
                     foregroundColor: AppTheme.background,
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     textStyle: const TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 10),
+              Center(
+                child: TextButton.icon(
+                  onPressed: _openKoFi,
+                  icon: const Icon(Icons.local_cafe_rounded, size: 17),
+                  label: const Text('Me soutenir sur Ko-Fi'),
+                  style: TextButton.styleFrom(
+                    foregroundColor: AppTheme.gold,
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 8,
+                    ),
+                    textStyle: const TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                    ),
                   ),
                 ),
               ),
