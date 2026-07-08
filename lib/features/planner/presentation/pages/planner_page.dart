@@ -81,6 +81,7 @@ class _PlannerPageState extends State<PlannerPage> {
   String? _selectedCharacterFaction;
   final Set<TrackingCategory> _selectedCategories = {};
   final Set<String> _selectedGroups = {};
+  final Set<String> _selectedDifficulties = {};
   WowRegionFilter? _selectedRegionFilter;
   int _loadGeneration = 0;
   bool _didApplyInitialGroupCollapse = false;
@@ -415,6 +416,32 @@ class _PlannerPageState extends State<PlannerPage> {
     return groups;
   }
 
+  List<String> _difficultyOptions() {
+    final difficulties = _items
+        .map(_difficultyLabel)
+        .whereType<String>()
+        .toSet()
+        .toList();
+
+    difficulties.sort(_compareDifficulties);
+    return difficulties;
+  }
+
+  String? _difficultyLabel(TrackingItem item) {
+    final label = item.difficulty.trim();
+    if (label.isEmpty) return null;
+
+    final normalized = WowRegionFilter.normalize(label);
+    if (normalized.isEmpty ||
+        normalized == 'a verifier' ||
+        normalized == 'unknown' ||
+        normalized == 'source a verifier') {
+      return null;
+    }
+
+    return label;
+  }
+
   List<TrackingCategory> _categoryOptions() {
     final categories = _items.map((item) => item.category).toSet().toList();
     const preferredCategories = [
@@ -510,6 +537,32 @@ class _PlannerPageState extends State<PlannerPage> {
     return left.compareTo(right);
   }
 
+  int _compareDifficulties(String left, String right) {
+    const preferred = [
+      'Facile',
+      'Moyen',
+      'Difficile',
+      'Indisponible',
+      'Argent reel',
+    ];
+    final leftNormalized = WowRegionFilter.normalize(left);
+    final rightNormalized = WowRegionFilter.normalize(right);
+    final leftIndex = preferred.indexWhere(
+      (value) => WowRegionFilter.normalize(value) == leftNormalized,
+    );
+    final rightIndex = preferred.indexWhere(
+      (value) => WowRegionFilter.normalize(value) == rightNormalized,
+    );
+
+    if (leftIndex != -1 || rightIndex != -1) {
+      return (leftIndex == -1 ? preferred.length : leftIndex).compareTo(
+        rightIndex == -1 ? preferred.length : rightIndex,
+      );
+    }
+
+    return left.compareTo(right);
+  }
+
   Future<void> _setChecked(TrackingItem item, bool checked) async {
     final affectedItemIds = _items
         .where(
@@ -579,6 +632,25 @@ class _PlannerPageState extends State<PlannerPage> {
     });
   }
 
+  Future<void> _openDifficultySelector(List<String> difficultyOptions) async {
+    final result = await showModalBottomSheet<Set<String>>(
+      context: context,
+      isScrollControlled: true,
+      builder: (_) => _DifficultyFilterSheet(
+        options: difficultyOptions,
+        selectedDifficulties: _selectedDifficulties,
+      ),
+    );
+
+    if (result == null || !mounted) return;
+
+    setState(() {
+      _selectedDifficulties
+        ..clear()
+        ..addAll(result);
+    });
+  }
+
   Future<void> _openCategorySelector(
     List<TrackingCategory> categoryOptions,
   ) async {
@@ -603,16 +675,21 @@ class _PlannerPageState extends State<PlannerPage> {
   @override
   Widget build(BuildContext context) {
     final groupOptions = _groupOptions();
+    final difficultyOptions = _difficultyOptions();
     final categoryOptions = _categoryOptions();
 
     final filteredItems = _items.where((item) {
       final group = _groupLabel(item);
+      final difficulty = _difficultyLabel(item);
       final matchesCategory =
           !_isExtensionPlanner ||
           _selectedCategories.isEmpty ||
           _selectedCategories.contains(item.category);
       final matchesGroup =
           _selectedGroups.isEmpty || _selectedGroups.contains(group);
+      final matchesDifficulty =
+          _selectedDifficulties.isEmpty ||
+          (difficulty != null && _selectedDifficulties.contains(difficulty));
       final matchesRegion =
           _selectedRegionFilter == null || _selectedRegionFilter!.matches(item);
       final query = _searchQuery.toLowerCase();
@@ -640,6 +717,7 @@ class _PlannerPageState extends State<PlannerPage> {
       return matchesCategory &&
           matchesRegion &&
           matchesGroup &&
+          matchesDifficulty &&
           matchesSearch &&
           matchesMissingOnly &&
           matchesAvailability;
@@ -746,6 +824,14 @@ class _PlannerPageState extends State<PlannerPage> {
                         onTap: () => _openGroupSelector(groupOptions),
                       ),
                       const SizedBox(height: 12),
+                      if (difficultyOptions.isNotEmpty) ...[
+                        _DifficultyFilterField(
+                          selectedDifficulties: _selectedDifficulties,
+                          onTap: () =>
+                              _openDifficultySelector(difficultyOptions),
+                        ),
+                        const SizedBox(height: 12),
+                      ],
                       Wrap(
                         spacing: 24,
                         runSpacing: 12,
@@ -1209,6 +1295,66 @@ class _GroupFilterField extends StatelessWidget {
   }
 }
 
+class _DifficultyFilterField extends StatelessWidget {
+  const _DifficultyFilterField({
+    required this.selectedDifficulties,
+    required this.onTap,
+  });
+
+  final Set<String> selectedDifficulties;
+  final VoidCallback onTap;
+
+  String get _label {
+    if (selectedDifficulties.isEmpty) {
+      return 'Toutes les difficultés';
+    }
+
+    if (selectedDifficulties.length <= 2) {
+      return selectedDifficulties.join(', ');
+    }
+
+    return '${selectedDifficulties.length} difficultés sélectionnées';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      borderRadius: BorderRadius.circular(4),
+      onTap: onTap,
+      child: InputDecorator(
+        decoration: const InputDecoration(
+          labelText: 'Difficulté',
+          border: OutlineInputBorder(),
+        ),
+        child: Row(
+          children: [
+            Expanded(
+              child: Text(
+                _label,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontWeight: FontWeight.w700),
+              ),
+            ),
+            if (selectedDifficulties.isNotEmpty) ...[
+              const SizedBox(width: 8),
+              Text(
+                selectedDifficulties.length.toString(),
+                style: const TextStyle(
+                  color: AppTheme.gold,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+            ],
+            const SizedBox(width: 8),
+            const Icon(Icons.expand_more),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 class _CategoryFilterField extends StatelessWidget {
   const _CategoryFilterField({
     required this.selectedCategories,
@@ -1493,6 +1639,117 @@ class _GroupFilterSheetState extends State<_GroupFilterSheet> {
   }
 }
 
+class _DifficultyFilterSheet extends StatefulWidget {
+  const _DifficultyFilterSheet({
+    required this.options,
+    required this.selectedDifficulties,
+  });
+
+  final List<String> options;
+  final Set<String> selectedDifficulties;
+
+  @override
+  State<_DifficultyFilterSheet> createState() => _DifficultyFilterSheetState();
+}
+
+class _DifficultyFilterSheetState extends State<_DifficultyFilterSheet> {
+  late final Set<String> _tempSelected;
+
+  @override
+  void initState() {
+    super.initState();
+    _tempSelected = {...widget.selectedDifficulties};
+  }
+
+  void _toggle(String difficulty, bool selected) {
+    setState(() {
+      if (selected) {
+        _tempSelected.add(difficulty);
+      } else {
+        _tempSelected.remove(difficulty);
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: FractionallySizedBox(
+        heightFactor: 0.65,
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      'Difficulté',
+                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      setState(() {
+                        _tempSelected.clear();
+                      });
+                    },
+                    child: const Text('Tout effacer'),
+                  ),
+                ],
+              ),
+            ),
+            CheckboxListTile(
+              value: _tempSelected.isEmpty,
+              title: const Text('Toutes les difficultés'),
+              subtitle: const Text('Aucune difficulté filtrée'),
+              controlAffinity: ListTileControlAffinity.leading,
+              onChanged: (_) {
+                setState(() {
+                  _tempSelected.clear();
+                });
+              },
+            ),
+            const Divider(height: 1),
+            Expanded(
+              child: ListView.builder(
+                itemCount: widget.options.length,
+                itemBuilder: (context, index) {
+                  final difficulty = widget.options[index];
+                  final selected = _tempSelected.contains(difficulty);
+
+                  return CheckboxListTile(
+                    value: selected,
+                    title: Text(difficulty),
+                    controlAffinity: ListTileControlAffinity.leading,
+                    onChanged: (value) => _toggle(difficulty, value ?? false),
+                  );
+                },
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+              child: SizedBox(
+                width: double.infinity,
+                child: FilledButton(
+                  onPressed: () => Navigator.pop(context, _tempSelected),
+                  child: Text(
+                    _tempSelected.isEmpty
+                        ? 'Afficher toutes les difficultés'
+                        : 'Appliquer ${_tempSelected.length} difficulté(s)',
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 class _PlannerItemCard extends StatelessWidget {
   const _PlannerItemCard({required this.item, required this.onChanged});
 
@@ -1679,6 +1936,35 @@ class _PlannerItemCard extends StatelessWidget {
     return (const Color(0xFF7F1D1D), const Color(0xFFFCA5A5));
   }
 
+  String _descriptionText(String groupLabel) {
+    final values = [
+      if (item.category != TrackingCategory.mounts) item.expansion.label,
+      if (item.world.isNotEmpty) item.world,
+      if (item.region.isNotEmpty &&
+          WowRegionFilter.normalize(item.region) !=
+              WowRegionFilter.normalize(item.zone))
+        item.region,
+      item.zone,
+      if (item.subzone.isNotEmpty) item.subzone,
+      groupLabel,
+      item.source,
+    ];
+    final seen = <String>{};
+    final uniqueValues = <String>[];
+
+    for (final value in values) {
+      final trimmed = value.trim();
+      if (trimmed.isEmpty) continue;
+
+      final normalized = WowRegionFilter.normalize(trimmed);
+      if (normalized.isEmpty || !seen.add(normalized)) continue;
+
+      uniqueValues.add(trimmed);
+    }
+
+    return uniqueValues.join(' • ');
+  }
+
   @override
   Widget build(BuildContext context) {
     final isMount = item.category == TrackingCategory.mounts;
@@ -1781,18 +2067,7 @@ class _PlannerItemCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 6),
                   Text(
-                    [
-                      item.expansion.label,
-                      if (item.world.isNotEmpty) item.world,
-                      if (item.region.isNotEmpty &&
-                          WowRegionFilter.normalize(item.region) !=
-                              WowRegionFilter.normalize(item.zone))
-                        item.region,
-                      item.zone,
-                      if (item.subzone.isNotEmpty) item.subzone,
-                      groupLabel,
-                      item.source,
-                    ].where((value) => value.isNotEmpty).join(' • '),
+                    _descriptionText(groupLabel),
                     style: const TextStyle(color: AppTheme.mutedText),
                   ),
                   const SizedBox(height: 8),
