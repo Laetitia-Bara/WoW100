@@ -859,29 +859,106 @@ class _DashboardActionBar extends StatelessWidget {
       ),
     ];
 
+    const adventureButtons = [
+      _AdventurePlannerButton(icon: Icons.explore_outlined, label: 'Solo'),
+      _AdventurePlannerButton(
+        icon: Icons.groups_2_outlined,
+        label: 'Avec des amis',
+      ),
+    ];
+
     return LayoutBuilder(
       builder: (context, constraints) {
         if (constraints.maxWidth < 620) {
           return Wrap(
             spacing: 10,
             runSpacing: 10,
-            children: [...collectableButtons, ...toolButtons],
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [
+              ...collectableButtons,
+              const _AdventurePlannerButtonGroup(children: adventureButtons),
+              ...toolButtons,
+            ],
           );
         }
 
         return Row(
           children: [
-            Expanded(
-              child: Wrap(
-                spacing: 10,
-                runSpacing: 10,
-                children: collectableButtons,
+            Wrap(spacing: 10, runSpacing: 10, children: collectableButtons),
+            const SizedBox(width: 16),
+            const Expanded(
+              child: Align(
+                alignment: Alignment.center,
+                child: _AdventurePlannerButtonGroup(children: adventureButtons),
               ),
             ),
+            const SizedBox(width: 16),
             Wrap(spacing: 8, children: toolButtons),
           ],
         );
       },
+    );
+  }
+}
+
+class _AdventurePlannerButtonGroup extends StatelessWidget {
+  const _AdventurePlannerButtonGroup({required this.children});
+
+  final List<Widget> children;
+
+  @override
+  Widget build(BuildContext context) {
+    final labelStyle = Theme.of(context).textTheme.labelSmall?.copyWith(
+      color: AppTheme.gold,
+      fontWeight: FontWeight.w800,
+      letterSpacing: 0,
+    );
+
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      crossAxisAlignment: WrapCrossAlignment.center,
+      children: [
+        Text('Partir en balade', style: labelStyle),
+        ...children,
+      ],
+    );
+  }
+}
+
+class _AdventurePlannerButton extends StatelessWidget {
+  const _AdventurePlannerButton({required this.icon, required this.label});
+
+  final IconData icon;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    return Tooltip(
+      message: 'Planner en construction',
+      child: OutlinedButton.icon(
+        onPressed: null,
+        icon: Icon(icon, size: 18),
+        label: Text(label),
+        style: ButtonStyle(
+          backgroundColor: WidgetStateProperty.resolveWith((states) {
+            return AppTheme.gold.withValues(alpha: 0.20);
+          }),
+          foregroundColor: WidgetStateProperty.resolveWith((states) {
+            return AppTheme.gold;
+          }),
+          overlayColor: WidgetStateProperty.all(Colors.transparent),
+          side: WidgetStateProperty.resolveWith((states) {
+            return BorderSide(
+              color: AppTheme.gold.withValues(alpha: 0.75),
+              width: 1.2,
+            );
+          }),
+          padding: WidgetStateProperty.all(
+            const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
+          ),
+        ),
+      ),
     );
   }
 }
