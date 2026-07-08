@@ -522,21 +522,17 @@ class _HeroCard extends StatelessWidget {
                                   height: 1.4,
                                 ),
                               ),
-                              if (hasCharacter) ...[
-                                const SizedBox(height: 8),
-                                Text(
-                                  'Points de HF : ${_formatNumber(character!.achievementPoints)}',
-                                  style: const TextStyle(
-                                    color: AppTheme.gold,
-                                    fontWeight: FontWeight.w800,
-                                  ),
-                                ),
-                              ],
                             ],
                           ),
                         ),
+                        if (hasCharacter) ...[
+                          const SizedBox(width: 14),
+                          _AchievementPointsBadge(
+                            points: character!.achievementPoints,
+                          ),
+                        ],
                         if (showInlinePortrait) ...[
-                          const SizedBox(width: 18),
+                          const SizedBox(width: 16),
                           _CharacterPortraitFrame(imageUrl: portraitUrl),
                         ],
                       ],
@@ -559,6 +555,151 @@ class _HeroCard extends StatelessWidget {
       ),
     );
   }
+}
+
+class _AchievementPointsBadge extends StatelessWidget {
+  const _AchievementPointsBadge({required this.points});
+
+  final int points;
+
+  @override
+  Widget build(BuildContext context) {
+    final formattedPoints = _formatNumber(points);
+
+    return Semantics(
+      label: 'Points de hauts faits $formattedPoints',
+      child: SizedBox(
+        width: 140,
+        height: 96,
+        child: Stack(
+          children: [
+            Positioned.fill(
+              child: PhysicalShape(
+                clipper: const _AchievementBadgeClipper(),
+                color: AppTheme.gold,
+                elevation: 8,
+                shadowColor: Colors.black.withAlpha(140),
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        Color(0xFFFFF0A8),
+                        Color(0xFFE6B64D),
+                        Color(0xFF8F5A12),
+                      ],
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.white.withAlpha(75),
+                        blurRadius: 16,
+                        offset: const Offset(-10, -10),
+                      ),
+                    ],
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(14, 11, 14, 14),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(
+                          Icons.workspace_premium,
+                          color: Color(0xFF3F2406),
+                          size: 22,
+                        ),
+                        const SizedBox(height: 3),
+                        FittedBox(
+                          fit: BoxFit.scaleDown,
+                          child: Text(
+                            formattedPoints,
+                            maxLines: 1,
+                            style: const TextStyle(
+                              color: Color(0xFF2A1703),
+                              fontSize: 24,
+                              fontWeight: FontWeight.w900,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 1),
+                        const Text(
+                          'points HF',
+                          maxLines: 1,
+                          style: TextStyle(
+                            color: Color(0xFF4E2E08),
+                            fontSize: 11,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Positioned.fill(
+              child: CustomPaint(painter: _AchievementBadgeBorderPainter()),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _AchievementBadgeClipper extends CustomClipper<Path> {
+  const _AchievementBadgeClipper();
+
+  @override
+  Path getClip(Size size) {
+    return Path()
+      ..moveTo(size.width * 0.12, 0)
+      ..lineTo(size.width * 0.88, 0)
+      ..quadraticBezierTo(size.width, 0, size.width, size.height * 0.15)
+      ..lineTo(size.width * 0.92, size.height * 0.66)
+      ..quadraticBezierTo(
+        size.width * 0.88,
+        size.height * 0.83,
+        size.width * 0.5,
+        size.height,
+      )
+      ..quadraticBezierTo(
+        size.width * 0.12,
+        size.height * 0.83,
+        size.width * 0.08,
+        size.height * 0.66,
+      )
+      ..lineTo(0, size.height * 0.15)
+      ..quadraticBezierTo(0, 0, size.width * 0.12, 0)
+      ..close();
+  }
+
+  @override
+  bool shouldReclip(covariant CustomClipper<Path> oldClipper) => false;
+}
+
+class _AchievementBadgeBorderPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final path = const _AchievementBadgeClipper().getClip(size);
+    final innerPath = const _AchievementBadgeClipper()
+        .getClip(Size(size.width - 12, size.height - 12))
+        .shift(const Offset(6, 6));
+    final outerPaint = Paint()
+      ..color = const Color(0xFFFFE69B)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 2;
+    final innerPaint = Paint()
+      ..color = const Color(0xFF5E3708).withAlpha(120)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1;
+
+    canvas.drawPath(path, outerPaint);
+    canvas.drawPath(innerPath, innerPaint);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
 
 class _CharacterPortraitFrame extends StatelessWidget {
