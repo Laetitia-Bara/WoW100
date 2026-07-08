@@ -1,0 +1,7 @@
+{
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.automationProfile.windows": {
+    "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+  },
+  "cmake.sourceDirectory": "/Users/laetitia/Documents/DEV/WoW100/linux"
+}

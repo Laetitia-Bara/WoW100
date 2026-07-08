@@ -50,6 +50,8 @@ app.*.map.json
 .dart_tool/
 build/
 .gradle/
+node_modules/
+**/node_modules/
 
 # IDE / OS
 .vscode/
