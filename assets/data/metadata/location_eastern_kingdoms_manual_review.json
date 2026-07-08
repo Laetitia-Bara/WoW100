@@ -1,0 +1,2375 @@
+{
+    "schemaVersion":  1,
+    "continentKey":  "eastern-kingdoms",
+    "sourceFile":  "assets/generated/locations_eastern_kingdoms_review.csv",
+    "importedAt":  "2026-06-20T15:26:01.9429353+02:00",
+    "rows":  [
+                 {
+                     "wowheadZoneId":  5,
+                     "name":  "- QA and DVD GLOBAL -",
+                     "regionName":  "- QA and DVD GLOBAL -",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13554,
+                     "name":  "10 Canyon",
+                     "regionName":  "10 Canyon",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13636,
+                     "name":  "10 Highlands",
+                     "regionName":  "10 Highlands",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14484,
+                     "name":  "10.2 Devland",
+                     "regionName":  "10.2 Devland",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14519,
+                     "name":  "10Zone6-Devland",
+                     "regionName":  "10Zone6-Devland",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14523,
+                     "name":  "11 Zone3",
+                     "regionName":  "11 Zone3",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15459,
+                     "name":  "12.0 WB Playground",
+                     "regionName":  "12.0 WB Playground",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15027,
+                     "name":  "2510 galerie Primaire",
+                     "regionName":  "2510 galerie Primaire",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15516,
+                     "name":  "2711- Silvermoon",
+                     "regionName":  "2711- Silvermoon",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9703,
+                     "name":  "Allied - Dark Iron Dwarf Unlock",
+                     "regionName":  "Allied - Dark Iron Dwarf Unlock",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14512,
+                     "name":  "Arbrenouveau",
+                     "regionName":  "Arbrenouveau",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13970,
+                     "name":  "Arène des Énigmes",
+                     "regionName":  "Arène des Énigmes",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16194,
+                     "name":  "Atal’Aman",
+                     "regionName":  "Zul\u0027Aman",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16365,
+                     "name":  "Atal’Utek",
+                     "regionName":  "Atal’Utek",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8591,
+                     "name":  "Auberge de Shwayder",
+                     "regionName":  "Auberge de Shwayder",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7901,
+                     "name":  "Balcon de la citadelle Pourpre",
+                     "regionName":  "Balcon de la citadelle Pourpre",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8526,
+                     "name":  "Bassin Arathi",
+                     "regionName":  "Bassin Arathi",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "PvP",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8597,
+                     "name":  "Bataille pour le mont Rochenoire",
+                     "regionName":  "Bataille pour le mont Rochenoire",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10,
+                     "name":  "Bois de la Pénombre",
+                     "regionName":  "Bois de la Pénombre",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  3430,
+                     "name":  "Bois des Chants éternels",
+                     "regionName":  "Bois des Chants éternels (The Burning Crusade)",
+                     "decision":  "Conservée",
+                     "extensionName":  "The Burning Crusafe",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15173,
+                     "name":  "Bois des Chants éternels",
+                     "regionName":  "Bois des Chants éternels",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Doublon Midnight: conserver la version Quel'Thalas (15968)."
+                 },
+                 {
+                     "wowheadZoneId":  15915,
+                     "name":  "Camp de bataillon",
+                     "regionName":  "Camp de bataillon",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13581,
+                     "name":  "Canopée luxuriante",
+                     "regionName":  "Canopée luxuriante",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  5287,
+                     "name":  "Cap Strangleronce",
+                     "regionName":  "Vallée de Strangleronce",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9043,
+                     "name":  "Choc de Silithus",
+                     "regionName":  "Choc de Silithus",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13975,
+                     "name":  "Clairières de Tirisfal",
+                     "regionName":  "Clairières de Tirisfal",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13983,
+                     "name":  "Clairières de Tirisfal",
+                     "regionName":  "Clairières de Tirisfal",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14045,
+                     "name":  "Clairières de Tirisfal",
+                     "regionName":  "Clairières de Tirisfal",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7976,
+                     "name":  "Clairières de Tirisfal",
+                     "regionName":  "Clairières de Tirisfal",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Acquisition d\u0027Artefact",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  85,
+                     "name":  "Clairières de Tirisfal",
+                     "regionName":  "Clairières de Tirisfal",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6170,
+                     "name":  "Comté-du-Nord",
+                     "regionName":  "Forêt d\u0027Elwynn",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11356,
+                     "name":  "Continent",
+                     "regionName":  "Continent",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  267,
+                     "name":  "Contreforts de Hautebrande",
+                     "regionName":  "Contreforts de Hautebrande",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13583,
+                     "name":  "Cratère de Lug’thun",
+                     "regionName":  "Cratère de Lug’thun",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14730,
+                     "name":  "Crèche abandonnée",
+                     "regionName":  "Crèche abandonnée",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14616,
+                     "name":  "Creux de Sombrelueur",
+                     "regionName":  "Creux de Sombrelueur",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8535,
+                     "name":  "Dalaran (Défilé de Deuillevent)",
+                     "regionName":  "Dalaran (Défilé de Deuillevent)",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7886,
+                     "name":  "Dalaran",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9692,
+                     "name":  "Damarcus_World",
+                     "regionName":  "Damarcus_World",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  41,
+                     "name":  "Défilé de Deuillevent",
+                     "regionName":  "Défilé de Deuillevent",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7674,
+                     "name":  "Donjon de la Légion",
+                     "regionName":  "Donjon de la Légion",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  1,
+                     "name":  "Dun Morogh",
+                     "regionName":  "Dun Morogh",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9552,
+                     "name":  "Entraînement aux quêtes",
+                     "regionName":  "Entraînement aux quêtes",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11476,
+                     "name":  "EnvArtDevMaldraxxus- Pestilence",
+                     "regionName":  "EnvArtDevMaldraxxus- Pestilence",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11477,
+                     "name":  "EnvArtMaldraxxus- Champ de bataille",
+                     "regionName":  "EnvArtMaldraxxus- Champ de bataille",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9489,
+                     "name":  "Éperon rocheux",
+                     "regionName":  "Éperon rocheux",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  5144,
+                     "name":  "Étendues Chatoyantes",
+                     "regionName":  "Vashj’ir",
+                     "decision":  "Conservée",
+                     "extensionName":  "Cataclysm",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13580,
+                     "name":  "Étendues Fongiques",
+                     "regionName":  "Étendues Fongiques",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13946,
+                     "name":  "Ferme pandarène de Marie Lazar",
+                     "regionName":  "Ferme pandarène de Marie Lazar",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9541,
+                     "name":  "Ferme pandarène",
+                     "regionName":  "Ferme pandarène",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13582,
+                     "name":  "Fil des ténèbres",
+                     "regionName":  "Fil des ténèbres",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7889,
+                     "name":  "Fléche de la citadelle Pourpre",
+                     "regionName":  "Fléche de la citadelle Pourpre",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  12,
+                     "name":  "Forêt d’Elwynn",
+                     "regionName":  "Forêt d’Elwynn",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  4815,
+                     "name":  "Forêt de Varech’thar",
+                     "regionName":  "Vashj’ir",
+                     "decision":  "Conservée",
+                     "extensionName":  "Cataclysm",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  130,
+                     "name":  "Forêt des Pins-Argentés",
+                     "regionName":  "Forêt des Pins-Argentés",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  1537,
+                     "name":  "Forgefer",
+                     "regionName":  "Dun Morogh",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8529,
+                     "name":  "Fosse de Saron",
+                     "regionName":  "Fosse de Saron",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  1497,
+                     "name":  "Fossoyeuse",
+                     "regionName":  "Clairières de Tirisfal",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  4714,
+                     "name":  "Gilnéas",
+                     "regionName":  "Gilnéas (région)",
+                     "decision":  "Conservée",
+                     "extensionName":  "Cataclysm",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  4755,
+                     "name":  "Gilnéas",
+                     "regionName":  "Gilnéas",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Cataclysm",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  51,
+                     "name":  "Gorge des Vents brûlants",
+                     "regionName":  "Gorge des Vents brûlants",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8685,
+                     "name":  "Goulet des Chanteguerres",
+                     "regionName":  "Goulet des Chanteguerres",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "PvP",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16860,
+                     "name":  "Grande mer",
+                     "regionName":  "Grande mer",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14357,
+                     "name":  "Hautes-terres Arathies",
+                     "regionName":  "Hautes-terres Arathies",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  45,
+                     "name":  "Hautes-terres Arathies",
+                     "regionName":  "Hautes-terres Arathies",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9168,
+                     "name":  "Hautes-terres Arathies",
+                     "regionName":  "Hautes-terres Arathies",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  4922,
+                     "name":  "Hautes-terres du Crépuscule",
+                     "regionName":  "Hautes-terres du Crépuscule",
+                     "decision":  "Conservée",
+                     "extensionName":  "Cataclysm",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15515,
+                     "name":  "Housing_Plots",
+                     "regionName":  "Housing_Plots",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  1519,
+                     "name":  "Hurlevent",
+                     "regionName":  "Forêt d’Elwynn",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10061,
+                     "name":  "Idéation sous-marine",
+                     "regionName":  "Idéation sous-marine",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7894,
+                     "name":  "Île de Dalaran",
+                     "regionName":  "Île de Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9331,
+                     "name":  "Île de Gilnéas",
+                     "regionName":  "Île de Gilnéas",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6455,
+                     "name":  "Île de Haut-Soleil",
+                     "regionName":  "Bois des Chants éternels",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9483,
+                     "name":  "Île de Katalina",
+                     "regionName":  "Île de Katalina",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  4080,
+                     "name":  "Île de Quel’Danas",
+                     "regionName":  "Île de Quel’Danas",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9029,
+                     "name":  "Île des Hozen",
+                     "regionName":  "Île des Hozen",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9443,
+                     "name":  "Île des Titans",
+                     "regionName":  "Île des Titans",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9488,
+                     "name":  "Île Marécageuse",
+                     "regionName":  "Île Marécageuse",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9467,
+                     "name":  "Îles de Mesa Blanche",
+                     "regionName":  "Îles de Mesa Blanche",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8489,
+                     "name":  "Îles",
+                     "regionName":  "Îles",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14748,
+                     "name":  "Khaz Algar",
+                     "regionName":  "Khaz Algar",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  4406,
+                     "name":  "L’arène des Valeureux",
+                     "regionName":  "L’arène des Valeureux",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "PvP",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7884,
+                     "name":  "L’enclave Argentée",
+                     "regionName":  "L’enclave Argentée",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7888,
+                     "name":  "La citadelle Pourpre",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16217,
+                     "name":  "La Grande mer",
+                     "regionName":  "La Grande mer",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7899,
+                     "name":  "La halle des mages",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6457,
+                     "name":  "La Nouvelle-Brikabrok",
+                     "regionName":  "Dun Morogh",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13955,
+                     "name":  "LDNewHire",
+                     "regionName":  "LDNewHire",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7898,
+                     "name":  "Le Brunant",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7887,
+                     "name":  "Le cercle des Volontés",
+                     "regionName":  "Le cercle des Volontés",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7895,
+                     "name":  "Le fort Pourpre",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6454,
+                     "name":  "Le Glas",
+                     "regionName":  "Clairières de Tirisfal",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  17067,
+                     "name":  "Le Lycaneum",
+                     "regionName":  "Île de Quel’Danas",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  44,
+                     "name":  "Les Carmines",
+                     "regionName":  "Les Carmines",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7897,
+                     "name":  "Les Entrailles",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  47,
+                     "name":  "Les Hinterlands",
+                     "regionName":  "Les Hinterlands",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11,
+                     "name":  "Les Paluns",
+                     "regionName":  "Les Paluns",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  3433,
+                     "name":  "Les terres Fantômes",
+                     "regionName":  "Les terres Fantômes",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8488,
+                     "name":  "Les tréfonds Putrides",
+                     "regionName":  "Les tréfonds Putrides",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8525,
+                     "name":  "Les tréfonds Putrides",
+                     "regionName":  "Les tréfonds Putrides",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  38,
+                     "name":  "Loch Modan",
+                     "regionName":  "Loch Modan",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9486,
+                     "name":  "lost world [ph]",
+                     "regionName":  "lost world [ph]",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  3487,
+                     "name":  "Lune-d’Argent",
+                     "regionName":  "Bois des Chants éternels (The Burning Crusade)",
+                     "decision":  "Conservée",
+                     "extensionName":  "The Burning Crusafe",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15969,
+                     "name":  "Lune-d’Argent",
+                     "regionName":  "Bois des Chants éternels",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13178,
+                     "name":  "Maldraxxus",
+                     "regionName":  "Maldraxxus",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  4298,
+                     "name":  "Maleterres : l’enclave Écarlate",
+                     "regionName":  "Maleterres : l’enclave Écarlate",
+                     "decision":  "Conservée",
+                     "extensionName":  "Wrath of the Lich King",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  139,
+                     "name":  "Maleterres de l’Est",
+                     "regionName":  "Maleterres de l’Est",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  28,
+                     "name":  "Maleterres de l’Ouest",
+                     "regionName":  "Maleterres de l’Ouest",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8,
+                     "name":  "Marais des Chagrins",
+                     "regionName":  "Marais des Chagrins",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  40,
+                     "name":  "Marche de l’Ouest",
+                     "regionName":  "Marche de l’Ouest",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  25,
+                     "name":  "Mont Rochenoire",
+                     "regionName":  "Steppes Ardentes",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  36,
+                     "name":  "Montagnes d’Alterac",
+                     "regionName":  "Contreforts de Hautebrande",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7885,
+                     "name":  "Monument à Antonidas",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10213,
+                     "name":  "N’Zoth",
+                     "regionName":  "N’Zoth",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9010,
+                     "name":  "Ombre d’Azeroth",
+                     "regionName":  "Ombre d’Azeroth",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9485,
+                     "name":  "Pays Merveilleux",
+                     "regionName":  "Pays Merveilleux",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7896,
+                     "name":  "Place Tisserune",
+                     "regionName":  "Place Tisserune",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  5145,
+                     "name":  "Profondeurs Abyssales",
+                     "regionName":  "Vashj’ir",
+                     "decision":  "Conservée",
+                     "extensionName":  "Cataclysm",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10028,
+                     "name":  "Profondeurs de Rochenoire",
+                     "regionName":  "Steppes Ardentes",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7900,
+                     "name":  "Retraite de Vargoth",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7892,
+                     "name":  "Rochers flottants de Dalaran",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9808,
+                     "name":  "Royaumes de l’Est",
+                     "regionName":  "Royaumes de l’Est",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  5351,
+                     "name":  "Ruines de Gilnéas (ville)",
+                     "regionName":  "Ruines de Gilnéas (ville)",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Cataclysm",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  4706,
+                     "name":  "Ruines de Gilnéas",
+                     "regionName":  "Ruines de Gilnéas",
+                     "decision":  "Conservée",
+                     "extensionName":  "Cataclysm",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7893,
+                     "name":  "Sanctuaire de Saccage-Soleil",
+                     "regionName":  "Sanctuaire de Saccage-Soleil",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16945,
+                     "name":  "Site rituel",
+                     "regionName":  "Site rituel",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7691,
+                     "name":  "Small Battleground D",
+                     "regionName":  "Small Battleground D",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  46,
+                     "name":  "Steppes Ardentes",
+                     "regionName":  "Steppes Ardentes",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  33,
+                     "name":  "Strangleronce septentrionale",
+                     "regionName":  "Vallée de Strangleronce",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16375,
+                     "name":  "Tanière de Tisse-Loa",
+                     "regionName":  "Zul\u0027Aman",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14686,
+                     "name":  "Terre des Métiers",
+                     "regionName":  "Terre des Métiers",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13343,
+                     "name":  "Terres de Doug",
+                     "regionName":  "Terres de Doug",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13936,
+                     "name":  "Terres de Marie Lazar",
+                     "regionName":  "Terres de Marie Lazar",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  4,
+                     "name":  "Terres Foudroyées",
+                     "regionName":  "Terres Foudroyées",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  3,
+                     "name":  "Terres Ingrates",
+                     "regionName":  "Terres Ingrates",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10267,
+                     "name":  "Tombequête",
+                     "regionName":  "Tombequête",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  2257,
+                     "name":  "Tram des profondeurs",
+                     "regionName":  "Hurlevent, Forgefer",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Transit",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8473,
+                     "name":  "Traverse du Donjon",
+                     "regionName":  "Traverse du Donjon",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9101,
+                     "name":  "Tropical Isle 8.0",
+                     "regionName":  "Tropical Isle 8.0",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7890,
+                     "name":  "Tunnel de sortie des égouts",
+                     "regionName":  "Tunnel de sortie des égouts",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7891,
+                     "name":  "Tunnel de sortie des égouts",
+                     "regionName":  "Tunnel de sortie des égouts",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  5339,
+                     "name":  "Vallée de Strangleronce",
+                     "regionName":  "Vallée de Strangleronce",
+                     "decision":  "Conservée",
+                     "extensionName":  "Vanilla",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6176,
+                     "name":  "Vallée des Frigères",
+                     "regionName":  "Dun Morogh",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  5146,
+                     "name":  "Vashj’ir",
+                     "regionName":  "Vashj’ir",
+                     "decision":  "Conservée",
+                     "extensionName":  "Cataclysm",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8476,
+                     "name":  "Viperville",
+                     "regionName":  "Viperville",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14657,
+                     "name":  "WB Nouvelles Recrues",
+                     "regionName":  "WB Nouvelles Recrues",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13790,
+                     "name":  "zsewell",
+                     "regionName":  "zsewell",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16381,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16387,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16391,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16392,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16402,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16403,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16404,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16405,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16406,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16407,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16408,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16409,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16410,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16411,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16412,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16413,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16414,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16533,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16540,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16621,
+                     "name":  "[DO NOT DISTURB]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16309,
+                     "name":  "[NE PAS DÉRANGER]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique marquée [NE PAS DÉRANGER], retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8661,
+                     "name":  "[PH] JT Test World",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  9099,
+                     "name":  "[TEMP] CV JulienTest",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8491,
+                     "name":  "[TEMP] CV Kul Tiras Island",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8634,
+                     "name":  "[TEMP] Hackaton CV",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8636,
+                     "name":  "[TEMP] Hackaton Race",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8637,
+                     "name":  "[TEMP] Hackaton Race",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8448,
+                     "name":  "[TEMP] JT Zandalar Swamp",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8330,
+                     "name":  "[TEMP] Placeholder Area - Level Design Land - Wind Test",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8006,
+                     "name":  "[TEMP] Tech Test - Seamless World Transition A (JT)",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8007,
+                     "name":  "[TEMP] Tech Test - Seamless World Transition B (JT)",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  9023,
+                     "name":  "[Test] Environment Art - Tina 01",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14908,
+                     "name":  "11.0 - Underground Test",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  15334,
+                     "name":  "11.2 - Karesh Test",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14517,
+                     "name":  "11Test1",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14615,
+                     "name":  "11Test2",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14658,
+                     "name":  "11Test3",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14661,
+                     "name":  "11Test4",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14662,
+                     "name":  "11Test5",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14723,
+                     "name":  "11Test6",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14855,
+                     "name":  "11Test7",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16541,
+                     "name":  "12DUR_Oasis_TEST_MCarwen",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16396,
+                     "name":  "12test",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16042,
+                     "name":  "13doodadtest",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8480,
+                     "name":  "8DesertCanyonTest",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8684,
+                     "name":  "AI Test Map - Arathi Basin (Debug Version)",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8582,
+                     "name":  "AI Test Map 8 - Arathi Basin",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14707,
+                     "name":  "Amy Test Forest",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14708,
+                     "name":  "Amy Test Town",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16838,
+                     "name":  "Atal\u0027Utek (copy)",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  13506,
+                     "name":  "awood_dev1",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  15529,
+                     "name":  "Azshara_DemoArea",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  9383,
+                     "name":  "BlizzCon 2017",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  7967,
+                     "name":  "Boost Experience [TEMP NAME]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  13469,
+                     "name":  "Carte 2437 [ZONE DE DEV]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14966,
+                     "name":  "Carte de dev – Confins de l’Exil",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14963,
+                     "name":  "Carte de dev – Entraînement aux quêtes",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14968,
+                     "name":  "Carte de dev – Île de Mécagone",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14967,
+                     "name":  "Carte de dev – Zereth Mortis",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8656,
+                     "name":  "CharacterTestSpaceArea_ECannon",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  11419,
+                     "name":  "Cinematic Test Map",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  13494,
+                     "name":  "Conception de niveaux [CARTE DE DEV]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8058,
+                     "name":  "Dev Area - A",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8059,
+                     "name":  "Dev Area - B",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8060,
+                     "name":  "Dev Area - C",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8061,
+                     "name":  "Dev Area - D",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8063,
+                     "name":  "Dev Area - F",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8955,
+                     "name":  "Dev Area - H (copy)",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8957,
+                     "name":  "Dev Area - I",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  10271,
+                     "name":  "Dev Smoketest Area",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14853,
+                     "name":  "Donjon de test",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  15512,
+                     "name":  "Dreg_DemoArea",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  15534,
+                     "name":  "Dreg_DemoArea_Flood",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  15511,
+                     "name":  "Durotar_DemoArea",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8801,
+                     "name":  "Dustwallow Marsh UNUSED",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16107,
+                     "name":  "Elwynn 2 test",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14038,
+                     "name":  "Env Art Land - Detail Doodad Test",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  9535,
+                     "name":  "Francesco test - internal only",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  15011,
+                     "name":  "FX - Test Dungeon",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  9388,
+                     "name":  "Hero Stage LD Demo Area",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8579,
+                     "name":  "Île de la BlizzCon",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  13585,
+                     "name":  "Interactive World - Night Test",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  9462,
+                     "name":  "IsleCVTest",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  9468,
+                     "name":  "IsleCVTest2",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14987,
+                     "name":  "James\u0027s Dynamic Mount Testground",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14023,
+                     "name":  "JrzTest",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  9163,
+                     "name":  "Julien Test Land",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  15343,
+                     "name":  "KVigue Test",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  11463,
+                     "name":  "MalDoodadtest",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  11464,
+                     "name":  "MalPestDoodadTest",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  13870,
+                     "name":  "mesten_dev1",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  9651,
+                     "name":  "Model Test World",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8573,
+                     "name":  "MSandersTest2016",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8699,
+                     "name":  "Nazmir [DEVLAND COPY]",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8979,
+                     "name":  "Principal prototype de front de guerre",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  10348,
+                     "name":  "Prototype",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16103,
+                     "name":  "Prototype de Gouffre",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  9481,
+                     "name":  "Prototype Maudit",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  13574,
+                     "name":  "PTH Test Area",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  16502,
+                     "name":  "PvP POI Dev Land",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  15542,
+                     "name":  "Quartier prototype Logis des PNJ",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  15109,
+                     "name":  "Salle du Son – Test fumée audio",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  13507,
+                     "name":  "sbenyona_dev1",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14709,
+                     "name":  "Shane Test Area",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14014,
+                     "name":  "Terrain de jeu intégré",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8601,
+                     "name":  "Terrain de jeux pour animations",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8713,
+                     "name":  "Terrain de jeux pour animations",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  8639,
+                     "name":  "Test Dungeon",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  10063,
+                     "name":  "Test Dungeon - Gray Area",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  10062,
+                     "name":  "Test Dungeon - White Area",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14747,
+                     "name":  "Zone 4 Dev Land",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  13532,
+                     "name":  "Zone2lDoodadtest",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  13576,
+                     "name":  "Zone2lDoodadtest2",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  13635,
+                     "name":  "Zone4TyrholdTest",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  14668,
+                     "name":  "ZZ_AlexandraDD",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 },
+                 {
+                     "wowheadZoneId":  10292,
+                     "name":  "zzOLDBastion",
+                     "regionName":  "",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+                 }
+             ]
+}

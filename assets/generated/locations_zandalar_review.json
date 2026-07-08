@@ -1,0 +1,1470 @@
+{
+  "sourceEntriesInWowheadCategory": 30,
+  "suppliedListEntries": 29,
+  "retainedEntries": 26,
+  "canonicalLocationNodes": 26,
+  "syntheticRegions": 0,
+  "subzones": 21,
+  "displayedEntries": 25,
+  "capitalCandidates": 1,
+  "capitalOutsideDisplayedList": 1,
+  "excludedEntries": 4,
+  "reviewedEntries": 26,
+  "pendingEntries": 0,
+  "byKind": {
+    "region": 5,
+    "subzone": 21
+  },
+  "locations": [
+    {
+      "ref": "wowhead-zone:9664",
+      "wowheadZoneId": 9664,
+      "name": "Campagne militaire - Horde",
+      "normalizedName": "campagne-militaire-horde",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "region",
+      "parentRef": "continent:zandalar",
+      "parentRefs": [
+        "continent:zandalar"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:9664",
+      "regionName": "Campagne militaire - Horde",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 35,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9664",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Campagne militaire - Horde",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Campagne militaire - Horde"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Campagne militaire - Horde",
+      "canonicalRef": "wowhead-zone:9664",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9664"
+      ],
+      "canonicalWowheadZoneIds": [
+        9664
+      ],
+      "canonicalParentRef": "continent:zandalar",
+      "canonicalParentRefs": [
+        "continent:zandalar"
+      ],
+      "canonicalRegionRef": "wowhead-zone:9664"
+    },
+    {
+      "ref": "wowhead-zone:8500",
+      "wowheadZoneId": 8500,
+      "name": "Nazmir",
+      "normalizedName": "nazmir",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "region",
+      "parentRef": "continent:zandalar",
+      "parentRefs": [
+        "continent:zandalar"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:8500",
+      "regionName": "Nazmir",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 20,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=8500",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Nazmir",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Nazmir"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Nazmir",
+      "canonicalRef": "wowhead-zone:8500",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8500"
+      ],
+      "canonicalWowheadZoneIds": [
+        8500
+      ],
+      "canonicalParentRef": "continent:zandalar",
+      "canonicalParentRefs": [
+        "continent:zandalar"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8500"
+    },
+    {
+      "ref": "wowhead-zone:8501",
+      "wowheadZoneId": 8501,
+      "name": "Vol’dun",
+      "normalizedName": "vol-dun",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "region",
+      "parentRef": "continent:zandalar",
+      "parentRefs": [
+        "continent:zandalar"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:8501",
+      "regionName": "Vol’dun",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 30,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=8501",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Vol’dun",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Vol’dun"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Vol’dun",
+      "canonicalRef": "wowhead-zone:8501",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8501"
+      ],
+      "canonicalWowheadZoneIds": [
+        8501
+      ],
+      "canonicalParentRef": "continent:zandalar",
+      "canonicalParentRefs": [
+        "continent:zandalar"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8501"
+    },
+    {
+      "ref": "wowhead-zone:9665",
+      "wowheadZoneId": 9665,
+      "name": "Atal’Jani",
+      "normalizedName": "atal-jani",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9665",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Atal’Jani"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Atal’Jani",
+      "canonicalRef": "wowhead-zone:9665",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9665"
+      ],
+      "canonicalWowheadZoneIds": [
+        9665
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:9599",
+      "wowheadZoneId": 9599,
+      "name": "Au Repos des Esprits",
+      "normalizedName": "au-repos-des-esprits",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9599",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Au Repos des Esprits"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Au Repos des Esprits",
+      "canonicalRef": "wowhead-zone:9599",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9599"
+      ],
+      "canonicalWowheadZoneIds": [
+        9599
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:9660",
+      "wowheadZoneId": 9660,
+      "name": "Au Tambour Ivre",
+      "normalizedName": "au-tambour-ivre",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9660",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Au Tambour Ivre"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Au Tambour Ivre",
+      "canonicalRef": "wowhead-zone:9660",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9660"
+      ],
+      "canonicalWowheadZoneIds": [
+        9660
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:9962",
+      "wowheadZoneId": 9962,
+      "name": "Auberge de Nage-Défense",
+      "normalizedName": "auberge-de-nage-defense",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9962",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Auberge de Nage-Défense"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Auberge de Nage-Défense",
+      "canonicalRef": "wowhead-zone:9962",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9962"
+      ],
+      "canonicalWowheadZoneIds": [
+        9962
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:9994",
+      "wowheadZoneId": 9994,
+      "name": "Chambre de Rezan",
+      "normalizedName": "chambre-de-rezan",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9994",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Chambre de Rezan"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Chambre de Rezan",
+      "canonicalRef": "wowhead-zone:9994",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9994"
+      ],
+      "canonicalWowheadZoneIds": [
+        9994
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:8670",
+      "wowheadZoneId": 8670,
+      "name": "Dazar’alor",
+      "normalizedName": "dazar-alor",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "region",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8670",
+      "regionName": "Dazar’alor",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 1,
+      "maxLevel": 90,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=8670",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "Dazar’alor est une région-capitale autonome située géographiquement dans Zuldazar.",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar, Dazar’alor",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Dazar’alor"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Dazar’alor",
+      "canonicalRef": "wowhead-zone:8670",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8670"
+      ],
+      "canonicalWowheadZoneIds": [
+        8670
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8670"
+    },
+    {
+      "ref": "wowhead-zone:9662",
+      "wowheadZoneId": 9662,
+      "name": "La Serre",
+      "normalizedName": "la-serre",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9662",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "La Serre"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > La Serre",
+      "canonicalRef": "wowhead-zone:9662",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9662"
+      ],
+      "canonicalWowheadZoneIds": [
+        9662
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:9147",
+      "wowheadZoneId": 9147,
+      "name": "La vieille Digue",
+      "normalizedName": "la-vieille-digue",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9147",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "La vieille Digue"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > La vieille Digue",
+      "canonicalRef": "wowhead-zone:9147",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9147"
+      ],
+      "canonicalWowheadZoneIds": [
+        9147
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:8729",
+      "wowheadZoneId": 8729,
+      "name": "Le Défilé",
+      "normalizedName": "le-defile",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=8729",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Le Défilé"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Le Défilé",
+      "canonicalRef": "wowhead-zone:8729",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8729"
+      ],
+      "canonicalWowheadZoneIds": [
+        8729
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:8666",
+      "wowheadZoneId": 8666,
+      "name": "Le Grand bazar",
+      "normalizedName": "le-grand-bazar",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=8666",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Le Grand bazar"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Le Grand bazar",
+      "canonicalRef": "wowhead-zone:8666",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8666"
+      ],
+      "canonicalWowheadZoneIds": [
+        8666
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:9598",
+      "wowheadZoneId": 9598,
+      "name": "Le Grand Sceau",
+      "normalizedName": "le-grand-sceau",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 1,
+      "territoryName": "Horde",
+      "minLevel": 1,
+      "maxLevel": 90,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9598",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Le Grand Sceau"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Le Grand Sceau",
+      "canonicalRef": "wowhead-zone:9598",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9598"
+      ],
+      "canonicalWowheadZoneIds": [
+        9598
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:9173",
+      "wowheadZoneId": 9173,
+      "name": "Le Zocalo",
+      "normalizedName": "le-zocalo",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9173",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Le Zocalo"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Le Zocalo",
+      "canonicalRef": "wowhead-zone:9173",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9173"
+      ],
+      "canonicalWowheadZoneIds": [
+        9173
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:8665",
+      "wowheadZoneId": 8665,
+      "name": "Port de Zandalar",
+      "normalizedName": "port-de-zandalar",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=8665",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Port de Zandalar"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Port de Zandalar",
+      "canonicalRef": "wowhead-zone:8665",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8665"
+      ],
+      "canonicalWowheadZoneIds": [
+        8665
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:9772",
+      "wowheadZoneId": 9772,
+      "name": "Puissance de Rastakhan",
+      "normalizedName": "puissance-de-rastakhan",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9772",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Puissance de Rastakhan"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Puissance de Rastakhan",
+      "canonicalRef": "wowhead-zone:9772",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9772"
+      ],
+      "canonicalWowheadZoneIds": [
+        9772
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:9970",
+      "wowheadZoneId": 9970,
+      "name": "Salle de la Force",
+      "normalizedName": "salle-de-la-force",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9970",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Salle de la Force"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Salle de la Force",
+      "canonicalRef": "wowhead-zone:9970",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9970"
+      ],
+      "canonicalWowheadZoneIds": [
+        9970
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:9661",
+      "wowheadZoneId": 9661,
+      "name": "Salon des Esprits perdus",
+      "normalizedName": "salon-des-esprits-perdus",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9661",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Salon des Esprits perdus"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Salon des Esprits perdus",
+      "canonicalRef": "wowhead-zone:9661",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9661"
+      ],
+      "canonicalWowheadZoneIds": [
+        9661
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:8668",
+      "wowheadZoneId": 8668,
+      "name": "Tal’aman",
+      "normalizedName": "tal-aman",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=8668",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Tal’aman"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Tal’aman",
+      "canonicalRef": "wowhead-zone:8668",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8668"
+      ],
+      "canonicalWowheadZoneIds": [
+        8668
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:8667",
+      "wowheadZoneId": 8667,
+      "name": "Tal’farrak",
+      "normalizedName": "tal-farrak",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=8667",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Tal’farrak"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Tal’farrak",
+      "canonicalRef": "wowhead-zone:8667",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8667"
+      ],
+      "canonicalWowheadZoneIds": [
+        8667
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:9172",
+      "wowheadZoneId": 9172,
+      "name": "Terrasse de l’Élu",
+      "normalizedName": "terrasse-de-l-elu",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9172",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Terrasse de l’Élu"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Terrasse de l’Élu",
+      "canonicalRef": "wowhead-zone:9172",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9172"
+      ],
+      "canonicalWowheadZoneIds": [
+        9172
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:9361",
+      "wowheadZoneId": 9361,
+      "name": "Terrasse des Prédicateurs",
+      "normalizedName": "terrasse-des-predicateurs",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9361",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Terrasse des Prédicateurs"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Terrasse des Prédicateurs",
+      "canonicalRef": "wowhead-zone:9361",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9361"
+      ],
+      "canonicalWowheadZoneIds": [
+        9361
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:9355",
+      "wowheadZoneId": 9355,
+      "name": "Tortoga",
+      "normalizedName": "tortoga",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=9355",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Tortoga"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Tortoga",
+      "canonicalRef": "wowhead-zone:9355",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:9355"
+      ],
+      "canonicalWowheadZoneIds": [
+        9355
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:8726",
+      "wowheadZoneId": 8726,
+      "name": "Zanchul",
+      "normalizedName": "zanchul",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:8499",
+      "parentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=8726",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Zanchul"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Zanchul",
+      "canonicalRef": "wowhead-zone:8726",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8726"
+      ],
+      "canonicalWowheadZoneIds": [
+        8726
+      ],
+      "canonicalParentRef": "wowhead-zone:8499",
+      "canonicalParentRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    },
+    {
+      "ref": "wowhead-zone:8499",
+      "wowheadZoneId": 8499,
+      "name": "Zuldazar",
+      "normalizedName": "zuldazar",
+      "worldKey": "azeroth",
+      "continentKey": "zandalar",
+      "kind": "region",
+      "parentRef": "continent:zandalar",
+      "parentRefs": [
+        "continent:zandalar"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:8499",
+      "regionName": "Zuldazar",
+      "extensionId": 7,
+      "extensionKey": "battle-for-azeroth",
+      "extensionName": "Battle for Azeroth",
+      "expansionBasePatch": "8.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 60,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=8499",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "zandalar-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Zuldazar",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar",
+      "canonicalRef": "wowhead-zone:8499",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:8499"
+      ],
+      "canonicalWowheadZoneIds": [
+        8499
+      ],
+      "canonicalParentRef": "continent:zandalar",
+      "canonicalParentRefs": [
+        "continent:zandalar"
+      ],
+      "canonicalRegionRef": "wowhead-zone:8499"
+    }
+  ],
+  "exclusions": [
+    {
+      "wowheadZoneId": 8502,
+      "name": "Mers du Sud",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "zandalar",
+      "continentName": "Zandalar",
+      "expansionName": "Battle for Azeroth",
+      "instanceTypeName": "Zone",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 9570,
+      "name": "Zuldazar",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "zandalar",
+      "continentName": "Zandalar",
+      "expansionName": "Battle for Azeroth",
+      "instanceTypeName": "Zone",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 9669,
+      "name": "Mers du Sud",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "zandalar",
+      "continentName": "Zandalar",
+      "expansionName": "Battle for Azeroth",
+      "instanceTypeName": "Zone",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 10088,
+      "name": "Allied - Zandalari Unlock",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "zandalar",
+      "continentName": "Zandalar",
+      "expansionName": "Battle for Azeroth",
+      "instanceTypeName": "Zone",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    }
+  ]
+}

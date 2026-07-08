@@ -1,0 +1,274 @@
+{
+    "schemaVersion":  1,
+    "continentKey":  "shadowlands",
+    "reviewBatch":  "shadowlands-manual-review",
+    "sourceFile":  "assets/generated/locations_shadowlands_review.csv",
+    "importedAt":  "2026-06-22T19:07:09.5380969+02:00",
+    "suppliedListRows":  28,
+    "capitalZoneIds":  [
+                           10565
+                       ],
+    "rows":  [
+                 {
+                     "wowheadZoneId":  11400,
+                     "name":  "Antre",
+                     "regionName":  "Antre",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13332,
+                     "name":  "Antre",
+                     "regionName":  "Antre",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  12848,
+                     "name":  "Bastion - trésors",
+                     "regionName":  "Bastion - trésors",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  12847,
+                     "name":  "Bastion - vignettes",
+                     "regionName":  "Bastion - vignettes",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13633,
+                     "name":  "Campagne de la 9.1",
+                     "regionName":  "Campagne de la 9.1",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13390,
+                     "name":  "Caveau du Souvenir",
+                     "regionName":  "Le Bastion",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13898,
+                     "name":  "Champs Catalyseurs",
+                     "regionName":  "Zereth Mortis",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  12858,
+                     "name":  "Cœur de la Forêt",
+                     "regionName":  "Sylvarden",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13329,
+                     "name":  "Cour des Braises",
+                     "regionName":  "Revendreth",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13753,
+                     "name":  "Cryptes de l’Éternel",
+                     "regionName":  "Zereth Mortis",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13433,
+                     "name":  "Entre-Deux",
+                     "regionName":  "Entre-Deux",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13952,
+                     "name":  "Esper locrien",
+                     "regionName":  "Zereth Mortis",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13553,
+                     "name":  "Évasion de l’Antre",
+                     "regionName":  "Évasion de l’Antre",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13928,
+                     "name":  "Fonderie de l’Éclosion",
+                     "regionName":  "Zereth Mortis",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11012,
+                     "name":  "Fort Élyséen",
+                     "regionName":  "Le Bastion",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13570,
+                     "name":  "Korthia",
+                     "regionName":  "Korthia",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10534,
+                     "name":  "Le Bastion",
+                     "regionName":  "Le Bastion",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11462,
+                     "name":  "Maldraxxus",
+                     "regionName":  "Maldraxxus",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10565,
+                     "name":  "Oribos",
+                     "regionName":  "Oribos",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Oribos est une région-capitale autonome directement rattachée au continent Ombreterre."
+                 },
+                 {
+                     "wowheadZoneId":  13708,
+                     "name":  "Plaine de l’Actualisation",
+                     "regionName":  "Zereth Mortis",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13891,
+                     "name":  "Repos de la fertilité",
+                     "regionName":  "Zereth Mortis",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10413,
+                     "name":  "Revendreth",
+                     "regionName":  "Revendreth",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  12876,
+                     "name":  "Siège du Primat",
+                     "regionName":  "Maldraxxus",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11508,
+                     "name":  "SinewTestArea",
+                     "regionName":  "SinewTestArea",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11510,
+                     "name":  "Sylvarden",
+                     "regionName":  "Sylvarden",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13672,
+                     "name":  "Tazavesh, le marché dissimulé",
+                     "regionName":  "Tazavesh, le marché dissimulé",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10986,
+                     "name":  "Tombe-Vice",
+                     "regionName":  "Revendreth",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13536,
+                     "name":  "Zereth Mortis",
+                     "regionName":  "Zereth Mortis",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13409,
+                     "name":  "Zone 1 des Progéniteurs",
+                     "regionName":  "Zereth Mortis",
+                     "decision":  "Conservée",
+                     "extensionName":  "Shadowlands",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 }
+             ]
+}

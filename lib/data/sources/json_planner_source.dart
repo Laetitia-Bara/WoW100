@@ -1,0 +1,535 @@
+import 'dart:convert';
+
+import 'package:flutter/services.dart';
+
+import '../models/tracking_item.dart';
+import '../models/tracking_category.dart';
+import '../models/wow_expansion.dart';
+
+class JsonPlannerSource {
+  static final Map<String, Future<List<TrackingItem>>> _itemAssetCache = {};
+
+  static const Map<WowExpansion, String> _achievementAssetPaths = {
+    WowExpansion.vanilla: 'assets/data/achievements/vanilla_achievements.json',
+    WowExpansion.tbc: 'assets/data/achievements/tbc_achievements.json',
+    WowExpansion.wrath: 'assets/data/achievements/wrath_achievements.json',
+    WowExpansion.cataclysm:
+        'assets/data/achievements/cataclysm_achievements.json',
+    WowExpansion.mop: 'assets/data/achievements/mop_achievements.json',
+    WowExpansion.wod: 'assets/data/achievements/wod_achievements.json',
+    WowExpansion.legion: 'assets/data/achievements/legion_achievements.json',
+    WowExpansion.bfa: 'assets/data/achievements/bfa_achievements.json',
+    WowExpansion.shadowlands:
+        'assets/data/achievements/shadowlands_achievements.json',
+    WowExpansion.dragonflight:
+        'assets/data/achievements/dragonflight_achievements.json',
+    WowExpansion.warWithin:
+        'assets/data/achievements/warWithin_achievements.json',
+    WowExpansion.midnight:
+        'assets/data/achievements/midnight_achievements.json',
+  };
+
+  static const Map<WowExpansion, String> _petAssetPaths = {
+    WowExpansion.vanilla: 'assets/data/pets/vanilla_pets.json',
+    WowExpansion.tbc: 'assets/data/pets/tbc_pets.json',
+    WowExpansion.wrath: 'assets/data/pets/wrath_pets.json',
+    WowExpansion.cataclysm: 'assets/data/pets/cataclysm_pets.json',
+    WowExpansion.mop: 'assets/data/pets/mop_pets.json',
+    WowExpansion.wod: 'assets/data/pets/wod_pets.json',
+    WowExpansion.legion: 'assets/data/pets/legion_pets.json',
+    WowExpansion.bfa: 'assets/data/pets/bfa_pets.json',
+    WowExpansion.shadowlands: 'assets/data/pets/shadowlands_pets.json',
+    WowExpansion.dragonflight: 'assets/data/pets/dragonflight_pets.json',
+    WowExpansion.warWithin: 'assets/data/pets/warWithin_pets.json',
+    WowExpansion.midnight: 'assets/data/pets/midnight_pets.json',
+  };
+
+  Future<List<TrackingItem>> loadWrathMounts() {
+    return loadItemsFromAsset('assets/data/mounts/wrath_mounts.json');
+  }
+
+  Future<List<TrackingItem>> loadItemsFromAsset(String assetPath) async {
+    final items = await _itemAssetCache.putIfAbsent(
+      assetPath,
+      () => _loadItemsFromAsset(assetPath),
+    );
+
+    return List<TrackingItem>.of(items);
+  }
+
+  Future<List<TrackingItem>> _loadItemsFromAsset(String assetPath) async {
+    final jsonString = await rootBundle.loadString(assetPath);
+    final List<dynamic> data = jsonDecode(jsonString);
+
+    return data
+        .map((e) => TrackingItem.fromJson(e as Map<String, dynamic>))
+        .toList();
+  }
+
+  Future<List<TrackingItem>> loadMountItems(WowExpansion expansion) async {
+    final catalog = await _loadJsonList(
+      'assets/generated/mounts_catalog_enriched.json',
+    );
+    final manualMetadata = await _loadJsonList(
+      'assets/data/metadata/mounts_metadata.json',
+    );
+    final mamytwinkDraft = await _loadJsonList(
+      'assets/generated/mounts_metadata_mamytwink_draft.json',
+    );
+    final wowheadOverrides = await _loadJsonList(
+      'assets/data/metadata/mounts_wowhead_overrides.json',
+    );
+    final mountReference = await _loadMountReference();
+    final mamytwinkCandidates = await _loadCandidates();
+
+    final manualById = _byBlizzardId(manualMetadata);
+    final draftById = _byBlizzardId(mamytwinkDraft);
+    final wowheadById = _byBlizzardId(wowheadOverrides);
+    final referenceById = _byBlizzardId(mountReference);
+
+    final items = <TrackingItem>[];
+
+    for (final mount in catalog) {
+      final blizzardId = mount['id'] as int?;
+      if (blizzardId == null) continue;
+
+      final manual = manualById[blizzardId];
+      final wowhead = wowheadById[blizzardId];
+      final draft = draftById[blizzardId];
+      final mamytwink = mamytwinkCandidates[blizzardId];
+      final reference = referenceById[blizzardId];
+      final location = reference?['location'] as Map<String, dynamic>?;
+      final expansionKey =
+          wowhead?['expansion'] ??
+          manual?['expansion'] ??
+          draft?['expansion'] ??
+          mamytwink?['expansion'];
+
+      if (expansion != WowExpansion.allMounts &&
+          (expansionKey is! String || expansionKey != expansion.name)) {
+        continue;
+      }
+
+      final itemExpansion = expansionKey is String
+          ? WowExpansionParser.fromJson(expansionKey)
+          : WowExpansion.allMounts;
+      final manualSource =
+          manual?['source'] as String? ?? manual?['sourceName'] as String?;
+      final wowheadSource =
+          wowhead?['source'] as String? ?? wowhead?['sourceName'] as String?;
+      final mamytwinkSource = mamytwink?['source'] as String?;
+      final manualInstance =
+          wowhead?['instance'] as String? ?? manual?['instance'] as String?;
+      final difficulty =
+          _metadataString(wowhead, 'difficulty') ??
+          _metadataString(manual, 'difficulty') ??
+          _metadataString(draft, 'difficulty') ??
+          _metadataString(mamytwink, 'difficulty');
+      final sourceName = (wowheadSource?.isNotEmpty ?? false)
+          ? wowheadSource!
+          : (manualSource?.isNotEmpty ?? false)
+          ? manualSource!
+          : (mamytwinkSource?.isNotEmpty ?? false)
+          ? mamytwinkSource!
+          : _sourceNameFromBlizzard(mount);
+      final status = _mountStatus(
+        sourceName: sourceName,
+        difficulty: difficulty,
+        hasClassification: expansionKey is String,
+      );
+      final unavailable = _isUnavailableMount(
+        sourceName: sourceName,
+        difficulty: difficulty,
+        metadata: [wowhead, manual, draft, mamytwink],
+      );
+      final instance = (manualInstance?.isNotEmpty ?? false)
+          ? manualInstance!
+          : sourceName;
+      final mamytwinkUrl =
+          _metadataString(reference, 'mamytwinkUrl') ??
+          _metadataString(mamytwink, 'mamytwinkUrl') ??
+          '';
+      final wowheadUrl =
+          _metadataString(reference, 'wowheadUrl') ??
+          _metadataString(wowhead, 'externalUrl') ??
+          '';
+      final wowheadItemId =
+          reference?['wowheadItemId'] as int? ??
+          wowhead?['wowheadItemId'] as int?;
+
+      items.add(
+        TrackingItem(
+          id: 'mount_$blizzardId',
+          name: mount['name'] ?? mamytwink?['mamytwinkName'] ?? '',
+          category: TrackingCategory.mounts,
+          expansion: itemExpansion,
+          zone:
+              _metadataString(location, 'regionName') ??
+              TrackingItem.unknownZone,
+          subzone: _metadataString(location, 'subzoneName') ?? '',
+          region:
+              _metadataString(location, 'continentName') ??
+              TrackingItem.unknownZone,
+          world: _metadataString(location, 'worldName') ?? '',
+          locationRef: _metadataString(reference, 'primaryLocationRef') ?? '',
+          instance: expansion == WowExpansion.allMounts
+              ? status
+              : instance.isEmpty
+              ? 'Source a verifier'
+              : instance,
+          source: sourceName,
+          groupRequired:
+              wowhead?['groupRequired'] ?? manual?['groupRequired'] ?? false,
+          weeklyLockout:
+              wowhead?['weeklyLockout'] ??
+              manual?['weeklyLockout'] ??
+              _isWeeklyMountSource(sourceName),
+          obtained: false,
+          unavailable: unavailable,
+          difficulty: difficulty ?? '',
+          blizzardId: blizzardId,
+          wowheadItemId: wowheadItemId,
+          boss: wowhead?['boss'] ?? manual?['boss'] ?? '',
+          externalUrl: mamytwinkUrl.isNotEmpty ? mamytwinkUrl : wowheadUrl,
+          mamytwinkUrl: mamytwinkUrl,
+          wowheadUrl: wowheadUrl,
+        ),
+      );
+    }
+
+    items.sort((a, b) {
+      final instanceCompare = a.instance.compareTo(b.instance);
+      if (instanceCompare != 0) return instanceCompare;
+
+      return a.name.compareTo(b.name);
+    });
+
+    return items;
+  }
+
+  Future<List<TrackingItem>> loadPetItems(WowExpansion expansion) async {
+    if (expansion == WowExpansion.allPets) {
+      return loadItemsFromAsset('assets/generated/pets_wow100_draft.json');
+    }
+
+    final assetPaths = <String>[];
+
+    final assetPath = _petAssetPaths[expansion];
+    if (assetPath != null) {
+      assetPaths.add(assetPath);
+    }
+
+    final items = <TrackingItem>[];
+
+    for (final assetPath in assetPaths) {
+      items.addAll(await loadItemsFromAsset(assetPath));
+    }
+
+    items.sort((a, b) {
+      final expansionCompare = a.expansion.index.compareTo(b.expansion.index);
+      if (expansionCompare != 0) return expansionCompare;
+
+      final instanceCompare = a.instance.compareTo(b.instance);
+      if (instanceCompare != 0) return instanceCompare;
+
+      return a.name.compareTo(b.name);
+    });
+
+    return items;
+  }
+
+  Future<List<TrackingItem>> loadAchievementItems(
+    WowExpansion expansion,
+  ) async {
+    if (expansion == WowExpansion.allAchievements) {
+      final generated = await _tryLoadItemsFromAsset(
+        'assets/generated/achievements_wow100_draft.json',
+      );
+
+      if (generated.isNotEmpty) {
+        return generated;
+      }
+
+      return _loadAllAchievementAssets();
+    }
+
+    final assetPath = _achievementAssetPaths[expansion];
+    if (assetPath == null) return [];
+
+    final items = await _tryLoadItemsFromAsset(assetPath);
+
+    items.sort((a, b) {
+      final instanceCompare = a.instance.compareTo(b.instance);
+      if (instanceCompare != 0) return instanceCompare;
+
+      return a.name.compareTo(b.name);
+    });
+
+    return items;
+  }
+
+  Future<List<TrackingItem>> _loadAllAchievementAssets() async {
+    final items = <TrackingItem>[];
+
+    for (final assetPath in _achievementAssetPaths.values) {
+      items.addAll(await _tryLoadItemsFromAsset(assetPath));
+    }
+
+    items.sort((a, b) {
+      final expansionCompare = a.expansion.index.compareTo(b.expansion.index);
+      if (expansionCompare != 0) return expansionCompare;
+
+      final instanceCompare = a.instance.compareTo(b.instance);
+      if (instanceCompare != 0) return instanceCompare;
+
+      return a.name.compareTo(b.name);
+    });
+
+    return items;
+  }
+
+  Future<List<TrackingItem>> _tryLoadItemsFromAsset(String assetPath) async {
+    try {
+      return await loadItemsFromAsset(assetPath);
+    } catch (_) {
+      return [];
+    }
+  }
+
+  Future<List<Map<String, dynamic>>> _loadJsonList(String assetPath) async {
+    final jsonString = await rootBundle.loadString(assetPath);
+    final List<dynamic> data = jsonDecode(jsonString);
+
+    return data.cast<Map<String, dynamic>>();
+  }
+
+  Future<List<Map<String, dynamic>>> _loadMountReference() async {
+    final jsonString = await rootBundle.loadString(
+      'assets/generated/mounts_reference_catalog.json',
+    );
+    final data = jsonDecode(jsonString) as Map<String, dynamic>;
+    final mounts = data['mounts'] as List<dynamic>? ?? const [];
+
+    return mounts.cast<Map<String, dynamic>>();
+  }
+
+  Future<Map<int, Map<String, dynamic>>> _loadCandidates() async {
+    final jsonString = await rootBundle.loadString(
+      'assets/generated/mamytwink_mount_candidates.json',
+    );
+    final data = jsonDecode(jsonString) as Map<String, dynamic>;
+    final candidates = data['candidates'] as List<dynamic>;
+
+    return _byBlizzardId(candidates.cast<Map<String, dynamic>>());
+  }
+
+  Map<int, Map<String, dynamic>> _byBlizzardId(
+    List<Map<String, dynamic>> items,
+  ) {
+    return {
+      for (final item in items)
+        if (item['blizzardId'] is int) item['blizzardId'] as int: item,
+    };
+  }
+
+  String _sourceNameFromBlizzard(Map<String, dynamic> mount) {
+    final sourceName = mount['sourceName'] as String?;
+    if (sourceName != null && sourceName.isNotEmpty) return sourceName;
+
+    return mount['sourceType'] ?? 'Source à vérifier';
+  }
+
+  String? _metadataString(Map<String, dynamic>? metadata, String key) {
+    if (metadata == null) return null;
+
+    final direct = metadata[key];
+    if (direct is String && direct.isNotEmpty) return direct;
+
+    final mamytwink = metadata['mamytwink'];
+    if (mamytwink is Map<String, dynamic>) {
+      final nested = mamytwink[key];
+      if (nested is String && nested.isNotEmpty) return nested;
+    }
+
+    return null;
+  }
+
+  bool _isUnavailableMount({
+    required String sourceName,
+    required String? difficulty,
+    required List<Map<String, dynamic>?> metadata,
+  }) {
+    final values = <String>[sourceName, ?difficulty];
+
+    for (final item in metadata.whereType<Map<String, dynamic>>()) {
+      for (final key in [
+        'availability',
+        'category',
+        'categoryType',
+        'status',
+      ]) {
+        final value = item[key];
+        if (value is String) values.add(value);
+      }
+
+      final mamytwink = item['mamytwink'];
+      if (mamytwink is Map<String, dynamic>) {
+        for (final key in ['difficulty', 'source', 'category', 'status']) {
+          final value = mamytwink[key];
+          if (value is String) values.add(value);
+        }
+      }
+    }
+
+    return values.map(_normalizeMountStatusText).any((value) {
+      return value.contains('indisponible') ||
+          value.contains('plus accessible') ||
+          value.contains('plus disponible') ||
+          RegExp(r'\b(retire|retiree|retirees|retired)\b').hasMatch(value) ||
+          value.contains('removed') ||
+          value.contains('unavailable') ||
+          value == 'retired';
+    });
+  }
+
+  bool _isWeeklyMountSource(String sourceName) {
+    final normalized = sourceName.toLowerCase();
+
+    return normalized.startsWith('butin') ||
+        normalized.contains('raid') ||
+        normalized.contains('hebdomadaire');
+  }
+
+  String _mountStatus({
+    required String sourceName,
+    required String? difficulty,
+    required bool hasClassification,
+  }) {
+    final source = _normalizeMountStatusText(sourceName);
+    final difficultyText = _normalizeMountStatusText(difficulty ?? '');
+
+    if (RegExp(r'\b(retire|retiree|retirees|retired)\b').hasMatch(source) ||
+        difficultyText.contains('indisponible')) {
+      return 'Retirées / indisponibles';
+    }
+
+    if (source.contains('non implemente')) {
+      return 'Non implémenté';
+    }
+
+    if (source.contains('inconnu')) {
+      return 'Inconnu';
+    }
+
+    if (source.contains('butin') || source.contains('drop')) {
+      return 'Butin';
+    }
+
+    if (source.contains('vendeur')) {
+      return 'Vendeur';
+    }
+
+    if (source.contains('reputation')) {
+      return 'Réputation';
+    }
+
+    if (source.contains('quete')) {
+      return 'Quête';
+    }
+
+    if (source.contains('haut fait') || source.contains('haut-fait')) {
+      return 'Haut-fait';
+    }
+
+    if (source.contains('metier') ||
+        source.contains('ingenierie') ||
+        source.contains('joaillerie') ||
+        source.contains('couture') ||
+        source.contains('peche') ||
+        source.contains('archeologie')) {
+      return 'Métier';
+    }
+
+    if (source.contains('evenement mondial') ||
+        source.contains('evenement') ||
+        source.contains('anniversaire') ||
+        source.contains('fete') ||
+        source.contains('amour dans l air') ||
+        source.contains('jardin des nobles') ||
+        source.contains('voile d hiver')) {
+      return 'Événement mondial';
+    }
+
+    if (source.contains('cartes') ||
+        source.contains('tcg') ||
+        source.contains('jeu de cartes')) {
+      return 'Cartes à collectionner';
+    }
+
+    if (source.contains('boutique')) {
+      return 'Boutique';
+    }
+
+    if (source.contains('pvp')) {
+      return 'PvP coté';
+    }
+
+    if (source.contains('promotion')) {
+      return 'Promotion Blizzard';
+    }
+
+    if (source.contains('exploration des iles')) {
+      return 'Exploration des îles';
+    }
+
+    if (source.contains('decouverte')) {
+      return 'Secret';
+    }
+
+    if (source.contains('secret')) {
+      return 'Secret';
+    }
+
+    if (source.contains('congregation')) {
+      return 'Congrégation';
+    }
+
+    if (source.contains('comptoir')) {
+      return 'Comptoir';
+    }
+
+    if (source.contains('source a verifier') ||
+        (source.contains('source') && source.contains('verifier'))) {
+      if (!hasClassification) {
+        return 'A classer';
+      }
+
+      return 'A vérifier';
+    }
+
+    return 'Divers';
+  }
+
+  String _normalizeMountStatusText(String value) {
+    return value
+        .toLowerCase()
+        .replaceAll(RegExp(r"['’´`\-/]"), ' ')
+        .replaceAll('à', 'a')
+        .replaceAll('â', 'a')
+        .replaceAll('ä', 'a')
+        .replaceAll('é', 'e')
+        .replaceAll('è', 'e')
+        .replaceAll('ê', 'e')
+        .replaceAll('ë', 'e')
+        .replaceAll('î', 'i')
+        .replaceAll('ï', 'i')
+        .replaceAll('ô', 'o')
+        .replaceAll('ö', 'o')
+        .replaceAll('ù', 'u')
+        .replaceAll('û', 'u')
+        .replaceAll('ü', 'u')
+        .replaceAll('ç', 'c')
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
+  }
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "blizzardId": 69,
+    "expansion": "vanilla",
+    "category": "raid_drop",
+    "zone": "Maleterres de l'Est",
+    "instance": "Stratholme",
+    "boss": "Baron Vaillefendre",
+    "groupRequired": true,
+    "weeklyLockout": true
+  },
+  {
+    "blizzardId": 110,
+    "expansion": "vanilla",
+    "category": "raid_drop",
+    "zone": "Strangleronce",
+    "instance": "Zul'Gurub",
+    "boss": "Seigneur sanglant Mandokir",
+    "groupRequired": true,
+    "weeklyLockout": true
+  },
+  {
+    "blizzardId": 183,
+    "expansion": "tbc",
+    "category": "raid_drop",
+    "zone": "Raz-de-Néant",
+    "instance": "L'Œil",
+    "boss": "Kael'thas Haut-Soleil",
+    "groupRequired": true,
+    "weeklyLockout": true
+  },
+  {
+    "blizzardId": 168,
+    "expansion": "tbc",
+    "category": "raid_drop",
+    "zone": "Défilé de Deuillevent",
+    "instance": "Karazhan",
+    "boss": "Attumen le Veneur",
+    "groupRequired": true,
+    "weeklyLockout": true
+  },
+  {
+    "blizzardId": 363,
+    "expansion": "wrath",
+    "category": "raid_drop",
+    "zone": "Couronne de glace",
+    "instance": "Citadelle de la Couronne de glace",
+    "boss": "Le Roi-Liche",
+    "groupRequired": true,
+    "weeklyLockout": true
+  },
+  {
+    "blizzardId": 1168,
+    "expansion": "dragonflight",
+    "category": "promotion",
+    "zone": "Hearthstone",
+    "instance": "Promotion Blizzard",
+    "source": "Promotion Blizzard",
+    "difficulty": "Facile",
+    "boss": "Connexion à Hearthstone pendant le 10e anniversaire, offre limitée du 11 mars au 14 mai 2024",
+    "groupRequired": false,
+    "weeklyLockout": false
+  }
+]

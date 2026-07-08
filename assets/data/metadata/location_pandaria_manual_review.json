@@ -1,0 +1,423 @@
+{
+    "schemaVersion":  1,
+    "continentKey":  "pandaria",
+    "reviewBatch":  "pandaria-manual-review",
+    "sourceFile":  "assets/generated/locations_pandaria_review.csv",
+    "importedAt":  "2026-06-21T12:19:34.1159031+02:00",
+    "rows":  [
+                 {
+                     "wowheadZoneId":  6219,
+                     "name":  "Arène de l’Annihilation",
+                     "regionName":  "Sommet de Kun-Lai",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6567,
+                     "name":  "Bataille en haute mer",
+                     "regionName":  "Bataille en haute mer",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6716,
+                     "name":  "Citadelle du Roi-tonnerre",
+                     "regionName":  "Île du Tonnerre",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6208,
+                     "name":  "Crypte des Rois oubliés",
+                     "regionName":  "Sommet de Kun-Lai",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6611,
+                     "name":  "Dalaran",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6678,
+                     "name":  "Dun Morogh",
+                     "regionName":  "Dun Morogh",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6673,
+                     "name":  "En route vers les cieux !",
+                     "regionName":  "En route vers les cieux !",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6134,
+                     "name":  "Étendues sauvages de Krasarang",
+                     "regionName":  "Étendues sauvages de Krasarang",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6575,
+                     "name":  "Étendues sauvages de Krasarang",
+                     "regionName":  "Étendues sauvages de Krasarang",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6615,
+                     "name":  "Étendues sauvages de Krasarang",
+                     "regionName":  "Étendues sauvages de Krasarang",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6426,
+                     "name":  "Festival de Brasse-Lune",
+                     "regionName":  "Sommet de Kun-Lai",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6661,
+                     "name":  "Île des Géants",
+                     "regionName":  "Île des Géants",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6757,
+                     "name":  "Île du Temps figé",
+                     "regionName":  "Île du Temps figé",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6507,
+                     "name":  "Île du Tonnerre",
+                     "regionName":  "Île du Tonnerre",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6675,
+                     "name":  "Île du Tonnerre",
+                     "regionName":  "Île du Tonnerre",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6677,
+                     "name":  "Île du Tonnerre",
+                     "regionName":  "Île du Tonnerre",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6666,
+                     "name":  "Infiltrer le chantier naval",
+                     "regionName":  "Infiltrer le chantier naval",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6328,
+                     "name":  "L’assaut de Zan’vess",
+                     "regionName":  "L’assaut de Zan’vess",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10920,
+                     "name":  "L’escalier Dérobé",
+                     "regionName":  "L’escalier Dérobé",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11054,
+                     "name":  "L’escalier Dérobé",
+                     "regionName":  "L’escalier Dérobé",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6006,
+                     "name":  "L’escalier Dérobé",
+                     "regionName":  "L’escalier Dérobé",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6863,
+                     "name":  "L’ingrédient mystère",
+                     "regionName":  "Marché de Micolline",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11024,
+                     "name":  "La forêt de Jade",
+                     "regionName":  "La forêt de Jade",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  5785,
+                     "name":  "La forêt de Jade",
+                     "regionName":  "La forêt de Jade",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6209,
+                     "name":  "La forêt de Jade",
+                     "regionName":  "La forêt de Jade",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6731,
+                     "name":  "Les secrets de Ragefeu",
+                     "regionName":  "Orgrimmar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6040,
+                     "name":  "Marécage d’Âprefange",
+                     "regionName":  "Marécage d’Âprefange",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6500,
+                     "name":  "Marécage d’Âprefange",
+                     "regionName":  "Marécage d’Âprefange",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6852,
+                     "name":  "Ordalie",
+                     "regionName":  "Sommet de Kun-Lai",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11026,
+                     "name":  "Sommet de Kun-Lai",
+                     "regionName":  "Sommet de Kun-Lai",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  5841,
+                     "name":  "Sommet de Kun-Lai",
+                     "regionName":  "Sommet de Kun-Lai",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6419,
+                     "name":  "Sommet de Kun-Lai",
+                     "regionName":  "Sommet de Kun-Lai",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7952,
+                     "name":  "Sommet de Kun-Lai",
+                     "regionName":  "Sommet de Kun-Lai",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11027,
+                     "name":  "Steppes de Tanglong",
+                     "regionName":  "Steppes de Tanglong",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  5842,
+                     "name":  "Steppes de Tanglong",
+                     "regionName":  "Steppes de Tanglong",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6613,
+                     "name":  "Temple noir",
+                     "regionName":  "Temple noir",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6138,
+                     "name":  "Terres de l’Angoisse",
+                     "regionName":  "Terres de l’Angoisse",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6771,
+                     "name":  "Tournoi des Astres vénérables",
+                     "regionName":  "Île du Temps figé",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6616,
+                     "name":  "Un peu de patience",
+                     "regionName":  "Étendues sauvages de Krasarang",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6101,
+                     "name":  "Une bière foudroyante",
+                     "regionName":  "La forêt de Jade",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6565,
+                     "name":  "Une dague dans la nuit",
+                     "regionName":  "L\u0027escalier dérobé",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6309,
+                     "name":  "Unga Ingou",
+                     "regionName":  "Étendues sauvages de Krasarang",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  5840,
+                     "name":  "Val de l’Éternel printemps",
+                     "regionName":  "Val de l’Éternel printemps",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6733,
+                     "name":  "Val de l’Éternel printemps",
+                     "regionName":  "Val de l’Éternel printemps",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Scénario",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11025,
+                     "name":  "Vallée des Quatre vents",
+                     "regionName":  "Vallée des Quatre vents",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  5805,
+                     "name":  "Vallée des Quatre vents",
+                     "regionName":  "Vallée des Quatre vents",
+                     "decision":  "Conservée",
+                     "extensionName":  "Mists of Pandaria",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 }
+             ]
+}

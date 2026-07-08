@@ -1,0 +1,38 @@
+[
+  {
+    "id": "mount_69",
+    "name": "Destrier de la mort de Vaillefendre",
+    "description": "En devenant le champion du Fléau, le baron Vaillefendre a condamné son cheval favori à le suivre dans la non-mort.",
+    "category": "mounts",
+    "expansion": "vanilla",
+    "zone": "Maleterres de l'Est",
+    "instance": "Stratholme",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "faction": "",
+    "groupRequired": true,
+    "weeklyLockout": true,
+    "blizzardId": 69,
+    "categoryType": "raid_drop",
+    "boss": "Baron Vaillefendre"
+  },
+  {
+    "id": "mount_110",
+    "name": "Raptor razzashi rapide",
+    "description": "Les seuls raptors razzashi connus à ce jour semblent avoir été vus à Zul’Gurub et auraient appartenu au seigneur sanglant Mandokir. Cette espèce de raptor n’a pas été observée depuis des années.",
+    "category": "mounts",
+    "expansion": "vanilla",
+    "zone": "Strangleronce",
+    "instance": "Zul'Gurub",
+    "source": "Butin",
+    "sourceType": "DROP",
+    "sourceName": "Butin",
+    "faction": "",
+    "groupRequired": true,
+    "weeklyLockout": true,
+    "blizzardId": 110,
+    "categoryType": "raid_drop",
+    "boss": "Seigneur sanglant Mandokir"
+  }
+]

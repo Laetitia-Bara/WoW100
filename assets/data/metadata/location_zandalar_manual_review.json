@@ -1,0 +1,283 @@
+{
+    "schemaVersion":  1,
+    "continentKey":  "zandalar",
+    "reviewBatch":  "zandalar-manual-review",
+    "sourceFile":  "assets/generated/locations_zandalar_review.csv",
+    "importedAt":  "2026-06-22T17:59:25.2156002+02:00",
+    "suppliedListRows":  29,
+    "capitalZoneIds":  [
+                           8670
+                       ],
+    "rows":  [
+                 {
+                     "wowheadZoneId":  10088,
+                     "name":  "Allied - Zandalari Unlock",
+                     "regionName":  "Allied - Zandalari Unlock",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9665,
+                     "name":  "Atal’Jani",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9599,
+                     "name":  "Au Repos des Esprits",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9660,
+                     "name":  "Au Tambour Ivre",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9962,
+                     "name":  "Auberge de Nage-Défense",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9664,
+                     "name":  "Campagne militaire - Horde",
+                     "regionName":  "Campagne militaire - Horde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9994,
+                     "name":  "Chambre de Rezan",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9662,
+                     "name":  "La Serre",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9147,
+                     "name":  "La vieille Digue",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8729,
+                     "name":  "Le Défilé",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8666,
+                     "name":  "Le Grand bazar",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9598,
+                     "name":  "Le Grand Sceau",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9173,
+                     "name":  "Le Zocalo",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8502,
+                     "name":  "Mers du Sud",
+                     "regionName":  "Mers du Sud",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9669,
+                     "name":  "Mers du Sud",
+                     "regionName":  "Mers du Sud",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8500,
+                     "name":  "Nazmir",
+                     "regionName":  "Nazmir",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8665,
+                     "name":  "Port de Zandalar",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9772,
+                     "name":  "Puissance de Rastakhan",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9970,
+                     "name":  "Salle de la Force",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9661,
+                     "name":  "Salon des Esprits perdus",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8668,
+                     "name":  "Tal’aman",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8667,
+                     "name":  "Tal’farrak",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9172,
+                     "name":  "Terrasse de l’Élu",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9361,
+                     "name":  "Terrasse des Prédicateurs",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9355,
+                     "name":  "Tortoga",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8501,
+                     "name":  "Vol’dun",
+                     "regionName":  "Vol’dun",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8726,
+                     "name":  "Zanchul",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8670,
+                     "name":  "Dazar’alor",
+                     "regionName":  "Zuldazar, Dazar’alor",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Dazar’alor est une région-capitale autonome située géographiquement dans Zuldazar."
+                 },
+                 {
+                     "wowheadZoneId":  8499,
+                     "name":  "Zuldazar",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9570,
+                     "name":  "Zuldazar",
+                     "regionName":  "Zuldazar",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 }
+             ]
+}

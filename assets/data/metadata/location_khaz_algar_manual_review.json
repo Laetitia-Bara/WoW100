@@ -1,0 +1,229 @@
+{
+    "schemaVersion":  1,
+    "continentKey":  "khaz-algar",
+    "reviewBatch":  "khaz-algar-manual-review",
+    "sourceFile":  "assets/generated/locations_khaz_algar_review.csv",
+    "importedAt":  "2026-06-22T19:36:41.8966847+02:00",
+    "suppliedListRows":  23,
+    "capitalZoneIds":  [
+                           14771
+                       ],
+    "rows":  [
+                 {
+                     "wowheadZoneId":  14752,
+                     "name":  "Azj-Kahet",
+                     "regionName":  "Azj-Kahet",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16505,
+                     "name":  "Caverne de la Cicatrice du Vide",
+                     "regionName":  "K\u0027aresh",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15827,
+                     "name":  "Chambre Oubliée",
+                     "regionName":  "Île aux Sirènes",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14753,
+                     "name":  "Cité des Fils",
+                     "regionName":  "Azj-Kahet",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  13416,
+                     "name":  "DEV Lowlands (DO NOT USE)",
+                     "regionName":  "DEV Lowlands (DO NOT USE)",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Dragonflight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16092,
+                     "name":  "Duos infâmes",
+                     "regionName":  "Île de Dorn",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14765,
+                     "name":  "Gorge Frémissante",
+                     "regionName":  "Azj-Kahet",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15667,
+                     "name":  "Gouffres",
+                     "regionName":  "Gouffres",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10416,
+                     "name":  "Île aux Sirènes",
+                     "regionName":  "Île aux Sirènes",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14771,
+                     "name":  "Dornogal",
+                     "regionName":  "Île de Dorn, Dornogal",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Dornogal est une région-capitale autonome située géographiquement sur l’Île de Dorn."
+                 },
+                 {
+                     "wowheadZoneId":  14717,
+                     "name":  "Île de Dorn",
+                     "regionName":  "Île de Dorn",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15336,
+                     "name":  "K’aresh",
+                     "regionName":  "K’aresh",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16579,
+                     "name":  "K’aresh",
+                     "regionName":  "K’aresh",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14665,
+                     "name":  "Khaz Algar",
+                     "regionName":  "Khaz Algar",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15525,
+                     "name":  "La Grande mer",
+                     "regionName":  "La Grande mer",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16108,
+                     "name":  "La Grande mer",
+                     "regionName":  "La Grande mer",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14776,
+                     "name":  "Le Proscenium",
+                     "regionName":  "Île de Dorn",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14795,
+                     "name":  "Les abîmes Retentissants",
+                     "regionName":  "Les abîmes Retentissants",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14769,
+                     "name":  "Les profondeurs Démentielles",
+                     "regionName":  "Azj-Kahet",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  14838,
+                     "name":  "Sainte-Chute",
+                     "regionName":  "Sainte-Chute",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15781,
+                     "name":  "Tazavesh, le marché dissimulé",
+                     "regionName":  "K\u0027aresh",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  15347,
+                     "name":  "Terremine",
+                     "regionName":  "Terremine",
+                     "decision":  "Conservée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16093,
+                     "name":  "Terremine",
+                     "regionName":  "Terremine",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16077,
+                     "name":  "Test de Dornogal",
+                     "regionName":  "Test de Dornogal",
+                     "decision":  "Supprimée",
+                     "extensionName":  "The War Within",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 }
+             ]
+}

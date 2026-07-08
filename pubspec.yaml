@@ -1,0 +1,48 @@
+name: wow100
+description: "WoW100 is a Flutter application that helps users track their progress in World of Warcraft. It provides features for tracking various in-game activities, such as quests, achievements, and character progression. The app is designed to be user-friendly and visually appealing, making it easy for players to stay organized and motivated in their WoW journey."
+publish_to: "none"
+version: 1.0.4+10
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.3.1
+  cupertino_icons: ^1.0.8
+  google_mobile_ads: ^9.0.0
+  shared_preferences: ^2.3.5
+  http: ^1.2.2
+  web: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  ios: true
+  android: true
+  image_path: "assets/app_icon/wow100_app_icon_2026.png"
+  image_path_android: "assets/app_icon/wow100_app_icon_android_rounded_2026.png"
+  adaptive_icon_background: "#642867"
+  adaptive_icon_foreground: "assets/app_icon/wow100_app_icon_android_rounded_2026.png"
+  adaptive_icon_foreground_inset: 0
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/translations/
+    - assets/data/mounts/
+    - assets/data/metadata/
+    - assets/data/pets/
+    - assets/images/expansions/
+    - assets/images/
+    - assets/images/bann/
+    - assets/images/icones/
+    - assets/data/achievements/
+    - assets/generated/
+    - assets/app_icon/

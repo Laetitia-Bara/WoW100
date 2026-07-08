@@ -1,0 +1,1876 @@
+{
+  "sourceEntriesInWowheadCategory": 47,
+  "suppliedListEntries": 46,
+  "unlistedEntries": 1,
+  "unlistedZoneIds": [
+    6142
+  ],
+  "retainedEntries": 29,
+  "canonicalLocationNodes": 31,
+  "syntheticRegions": 2,
+  "subzones": 12,
+  "excludedEntries": 17,
+  "reviewedEntries": 31,
+  "pendingEntries": 0,
+  "byKind": {
+    "region": 19,
+    "subzone": 12
+  },
+  "locations": [
+    {
+      "ref": "wowhead-zone:6567",
+      "wowheadZoneId": 6567,
+      "name": "Bataille en haute mer",
+      "normalizedName": "bataille-en-haute-mer",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:6567",
+      "regionName": "Bataille en haute mer",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 40,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6567",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Bataille en haute mer",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Bataille en haute mer"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Bataille en haute mer",
+      "canonicalRef": "wowhead-zone:6567",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6567"
+      ],
+      "canonicalWowheadZoneIds": [
+        6567
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6567"
+    },
+    {
+      "ref": "wowhead-zone:6611",
+      "wowheadZoneId": 6611,
+      "name": "Dalaran",
+      "normalizedName": "dalaran",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:6611",
+      "regionName": "Dalaran",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 35,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6611",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Dalaran",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Dalaran"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Dalaran",
+      "canonicalRef": "wowhead-zone:6611",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6611"
+      ],
+      "canonicalWowheadZoneIds": [
+        6611
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6611"
+    },
+    {
+      "ref": "wowhead-zone:6678",
+      "wowheadZoneId": 6678,
+      "name": "Dun Morogh",
+      "normalizedName": "dun-morogh",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:6678",
+      "regionName": "Dun Morogh",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 40,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6678",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Dun Morogh",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Dun Morogh"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Dun Morogh",
+      "canonicalRef": "wowhead-zone:6678",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6678"
+      ],
+      "canonicalWowheadZoneIds": [
+        6678
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6678"
+    },
+    {
+      "ref": "wowhead-zone:6616",
+      "wowheadZoneId": 6616,
+      "name": "Un peu de patience",
+      "normalizedName": "un-peu-de-patience",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:6134",
+      "parentRefs": [
+        "wowhead-zone:6134"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:6134",
+      "regionName": "Étendues sauvages de Krasarang",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 20,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6616",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Étendues sauvages de Krasarang",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Étendues sauvages de Krasarang",
+        "Un peu de patience"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Étendues sauvages de Krasarang > Un peu de patience",
+      "canonicalRef": "wowhead-zone:6616",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6616"
+      ],
+      "canonicalWowheadZoneIds": [
+        6616
+      ],
+      "canonicalParentRef": "wowhead-zone:6134",
+      "canonicalParentRefs": [
+        "wowhead-zone:6134"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6134"
+    },
+    {
+      "ref": "wowhead-zone:6309",
+      "wowheadZoneId": 6309,
+      "name": "Unga Ingou",
+      "normalizedName": "unga-ingou",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:6134",
+      "parentRefs": [
+        "wowhead-zone:6134"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:6134",
+      "regionName": "Étendues sauvages de Krasarang",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 20,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6309",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Étendues sauvages de Krasarang",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Étendues sauvages de Krasarang",
+        "Unga Ingou"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Étendues sauvages de Krasarang > Unga Ingou",
+      "canonicalRef": "wowhead-zone:6309",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6309"
+      ],
+      "canonicalWowheadZoneIds": [
+        6309
+      ],
+      "canonicalParentRef": "wowhead-zone:6134",
+      "canonicalParentRefs": [
+        "wowhead-zone:6134"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6134"
+    },
+    {
+      "ref": "wowhead-zone:6134",
+      "wowheadZoneId": 6134,
+      "name": "Étendues sauvages de Krasarang",
+      "normalizedName": "etendues-sauvages-de-krasarang",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:6134",
+      "regionName": "Étendues sauvages de Krasarang",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 15,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6134",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Étendues sauvages de Krasarang",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Étendues sauvages de Krasarang"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Étendues sauvages de Krasarang",
+      "canonicalRef": "wowhead-zone:6134",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6134"
+      ],
+      "canonicalWowheadZoneIds": [
+        6134
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6134"
+    },
+    {
+      "ref": "wowhead-zone:6661",
+      "wowheadZoneId": 6661,
+      "name": "Île des Géants",
+      "normalizedName": "ile-des-geants",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:6661",
+      "regionName": "Île des Géants",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 35,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6661",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Île des Géants",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Île des Géants"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Île des Géants",
+      "canonicalRef": "wowhead-zone:6661",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6661"
+      ],
+      "canonicalWowheadZoneIds": [
+        6661
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6661"
+    },
+    {
+      "ref": "wowhead-zone:6771",
+      "wowheadZoneId": 6771,
+      "name": "Tournoi des Astres vénérables",
+      "normalizedName": "tournoi-des-astres-venerables",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:6757",
+      "parentRefs": [
+        "wowhead-zone:6757"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:6757",
+      "regionName": "Île du Temps figé",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 1,
+      "maxLevel": 0,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6771",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Île du Temps figé",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Île du Temps figé",
+        "Tournoi des Astres vénérables"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Île du Temps figé > Tournoi des Astres vénérables",
+      "canonicalRef": "wowhead-zone:6771",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6771"
+      ],
+      "canonicalWowheadZoneIds": [
+        6771
+      ],
+      "canonicalParentRef": "wowhead-zone:6757",
+      "canonicalParentRefs": [
+        "wowhead-zone:6757"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6757"
+    },
+    {
+      "ref": "wowhead-zone:6757",
+      "wowheadZoneId": 6757,
+      "name": "Île du Temps figé",
+      "normalizedName": "ile-du-temps-fige",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:6757",
+      "regionName": "Île du Temps figé",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 30,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6757",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Île du Temps figé",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Île du Temps figé"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Île du Temps figé",
+      "canonicalRef": "wowhead-zone:6757",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6757"
+      ],
+      "canonicalWowheadZoneIds": [
+        6757
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6757"
+    },
+    {
+      "ref": "wowhead-zone:6716",
+      "wowheadZoneId": 6716,
+      "name": "Citadelle du Roi-tonnerre",
+      "normalizedName": "citadelle-du-roi-tonnerre",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:6507",
+      "parentRefs": [
+        "wowhead-zone:6507"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:6507",
+      "regionName": "Île du Tonnerre",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 50,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6716",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Île du Tonnerre",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Île du Tonnerre",
+        "Citadelle du Roi-tonnerre"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Île du Tonnerre > Citadelle du Roi-tonnerre",
+      "canonicalRef": "wowhead-zone:6716",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6716"
+      ],
+      "canonicalWowheadZoneIds": [
+        6716
+      ],
+      "canonicalParentRef": "wowhead-zone:6507",
+      "canonicalParentRefs": [
+        "wowhead-zone:6507"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6507"
+    },
+    {
+      "ref": "wowhead-zone:6507",
+      "wowheadZoneId": 6507,
+      "name": "Île du Tonnerre",
+      "normalizedName": "ile-du-tonnerre",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:6507",
+      "regionName": "Île du Tonnerre",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 32,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6507",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Île du Tonnerre",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Île du Tonnerre"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Île du Tonnerre",
+      "canonicalRef": "wowhead-zone:6507",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6507"
+      ],
+      "canonicalWowheadZoneIds": [
+        6507
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6507"
+    },
+    {
+      "ref": "wowhead-zone:6328",
+      "wowheadZoneId": 6328,
+      "name": "L’assaut de Zan’vess",
+      "normalizedName": "l-assaut-de-zan-vess",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:6328",
+      "regionName": "L’assaut de Zan’vess",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 30,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6328",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "L’assaut de Zan’vess",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "L’assaut de Zan’vess"
+      ],
+      "pathLabel": "Azeroth > Pandarie > L’assaut de Zan’vess",
+      "canonicalRef": "wowhead-zone:6328",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6328"
+      ],
+      "canonicalWowheadZoneIds": [
+        6328
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6328"
+    },
+    {
+      "ref": "wowhead-zone:6565",
+      "wowheadZoneId": 6565,
+      "name": "Une dague dans la nuit",
+      "normalizedName": "une-dague-dans-la-nuit",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:6006",
+      "parentRefs": [
+        "wowhead-zone:6006"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:6006",
+      "regionName": "L’escalier Dérobé",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 20,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6565",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "L'escalier dérobé",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "L’escalier Dérobé",
+        "Une dague dans la nuit"
+      ],
+      "pathLabel": "Azeroth > Pandarie > L’escalier Dérobé > Une dague dans la nuit",
+      "canonicalRef": "wowhead-zone:6565",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6565"
+      ],
+      "canonicalWowheadZoneIds": [
+        6565
+      ],
+      "canonicalParentRef": "wowhead-zone:6006",
+      "canonicalParentRefs": [
+        "wowhead-zone:6006"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6006"
+    },
+    {
+      "ref": "wowhead-zone:6006",
+      "wowheadZoneId": 6006,
+      "name": "L’escalier Dérobé",
+      "normalizedName": "l-escalier-derobe",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:6006",
+      "regionName": "L’escalier Dérobé",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 30,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6006",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "L’escalier Dérobé",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "L’escalier Dérobé"
+      ],
+      "pathLabel": "Azeroth > Pandarie > L’escalier Dérobé",
+      "canonicalRef": "wowhead-zone:6006",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6006"
+      ],
+      "canonicalWowheadZoneIds": [
+        6006
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6006"
+    },
+    {
+      "ref": "wowhead-zone:6101",
+      "wowheadZoneId": 6101,
+      "name": "Une bière foudroyante",
+      "normalizedName": "une-biere-foudroyante",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:5785",
+      "parentRefs": [
+        "wowhead-zone:5785"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:5785",
+      "regionName": "La forêt de Jade",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6101",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "La forêt de Jade",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "La forêt de Jade",
+        "Une bière foudroyante"
+      ],
+      "pathLabel": "Azeroth > Pandarie > La forêt de Jade > Une bière foudroyante",
+      "canonicalRef": "wowhead-zone:6101",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6101"
+      ],
+      "canonicalWowheadZoneIds": [
+        6101
+      ],
+      "canonicalParentRef": "wowhead-zone:5785",
+      "canonicalParentRefs": [
+        "wowhead-zone:5785"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5785"
+    },
+    {
+      "ref": "wowhead-zone:5785",
+      "wowheadZoneId": 5785,
+      "name": "La forêt de Jade",
+      "normalizedName": "la-foret-de-jade",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:5785",
+      "regionName": "La forêt de Jade",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=5785",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "La forêt de Jade",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "La forêt de Jade"
+      ],
+      "pathLabel": "Azeroth > Pandarie > La forêt de Jade",
+      "canonicalRef": "wowhead-zone:5785",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5785"
+      ],
+      "canonicalWowheadZoneIds": [
+        5785
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5785"
+    },
+    {
+      "ref": "wowhead-zone:6863",
+      "wowheadZoneId": 6863,
+      "name": "L’ingrédient mystère",
+      "normalizedName": "l-ingredient-mystere",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "subzone",
+      "parentRef": "manual-location:pandaria:marche-de-micolline",
+      "parentRefs": [
+        "manual-location:pandaria:marche-de-micolline"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "manual-location:pandaria:marche-de-micolline",
+      "regionName": "Marché de Micolline",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 20,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6863",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Marché de Micolline",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Marché de Micolline",
+        "L’ingrédient mystère"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Marché de Micolline > L’ingrédient mystère",
+      "canonicalRef": "wowhead-zone:6863",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6863"
+      ],
+      "canonicalWowheadZoneIds": [
+        6863
+      ],
+      "canonicalParentRef": "manual-location:pandaria:marche-de-micolline",
+      "canonicalParentRefs": [
+        "manual-location:pandaria:marche-de-micolline"
+      ],
+      "canonicalRegionRef": "manual-location:pandaria:marche-de-micolline"
+    },
+    {
+      "ref": "manual-location:pandaria:marche-de-micolline",
+      "wowheadZoneId": null,
+      "name": "Marché de Micolline",
+      "normalizedName": "marche-de-micolline",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "manual-location:pandaria:marche-de-micolline",
+      "regionName": "Marché de Micolline",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": null,
+      "instanceTypeName": "Zone",
+      "territoryId": null,
+      "territoryName": "Inconnu",
+      "minLevel": null,
+      "maxLevel": null,
+      "wowheadUrl": "",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review_synthetic_parent",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "Région parente créée depuis la revue manuelle.",
+      "source": "user_manual_review",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Marché de Micolline"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Marché de Micolline",
+      "canonicalRef": "manual-location:pandaria:marche-de-micolline",
+      "isCanonical": true,
+      "aliasRefs": [
+        "manual-location:pandaria:marche-de-micolline"
+      ],
+      "canonicalWowheadZoneIds": [],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "manual-location:pandaria:marche-de-micolline"
+    },
+    {
+      "ref": "wowhead-zone:6040",
+      "wowheadZoneId": 6040,
+      "name": "Marécage d’Âprefange",
+      "normalizedName": "marecage-d-aprefange",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:6040",
+      "regionName": "Marécage d’Âprefange",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 1,
+      "territoryName": "Horde",
+      "minLevel": 10,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6040",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Marécage d’Âprefange",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Marécage d’Âprefange"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Marécage d’Âprefange",
+      "canonicalRef": "wowhead-zone:6040",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6040"
+      ],
+      "canonicalWowheadZoneIds": [
+        6040
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6040"
+    },
+    {
+      "ref": "wowhead-zone:6731",
+      "wowheadZoneId": 6731,
+      "name": "Les secrets de Ragefeu",
+      "normalizedName": "les-secrets-de-ragefeu",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "subzone",
+      "parentRef": "manual-location:pandaria:orgrimmar",
+      "parentRefs": [
+        "manual-location:pandaria:orgrimmar"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "manual-location:pandaria:orgrimmar",
+      "regionName": "Orgrimmar",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 40,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6731",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Orgrimmar",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Orgrimmar",
+        "Les secrets de Ragefeu"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Orgrimmar > Les secrets de Ragefeu",
+      "canonicalRef": "wowhead-zone:6731",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6731"
+      ],
+      "canonicalWowheadZoneIds": [
+        6731
+      ],
+      "canonicalParentRef": "manual-location:pandaria:orgrimmar",
+      "canonicalParentRefs": [
+        "manual-location:pandaria:orgrimmar"
+      ],
+      "canonicalRegionRef": "manual-location:pandaria:orgrimmar"
+    },
+    {
+      "ref": "manual-location:pandaria:orgrimmar",
+      "wowheadZoneId": null,
+      "name": "Orgrimmar",
+      "normalizedName": "orgrimmar",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "manual-location:pandaria:orgrimmar",
+      "regionName": "Orgrimmar",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": null,
+      "instanceTypeName": "Zone",
+      "territoryId": null,
+      "territoryName": "Inconnu",
+      "minLevel": null,
+      "maxLevel": null,
+      "wowheadUrl": "",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review_synthetic_parent",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "Région parente créée depuis la revue manuelle.",
+      "source": "user_manual_review",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Orgrimmar",
+      "canonicalRef": "manual-location:pandaria:orgrimmar",
+      "isCanonical": true,
+      "aliasRefs": [
+        "manual-location:pandaria:orgrimmar"
+      ],
+      "canonicalWowheadZoneIds": [],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "manual-location:pandaria:orgrimmar"
+    },
+    {
+      "ref": "wowhead-zone:6219",
+      "wowheadZoneId": 6219,
+      "name": "Arène de l’Annihilation",
+      "normalizedName": "arene-de-l-annihilation",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:5841",
+      "parentRefs": [
+        "wowhead-zone:5841"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:5841",
+      "regionName": "Sommet de Kun-Lai",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 25,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6219",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Sommet de Kun-Lai",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Sommet de Kun-Lai",
+        "Arène de l’Annihilation"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai > Arène de l’Annihilation",
+      "canonicalRef": "wowhead-zone:6219",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6219"
+      ],
+      "canonicalWowheadZoneIds": [
+        6219
+      ],
+      "canonicalParentRef": "wowhead-zone:5841",
+      "canonicalParentRefs": [
+        "wowhead-zone:5841"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5841"
+    },
+    {
+      "ref": "wowhead-zone:6208",
+      "wowheadZoneId": 6208,
+      "name": "Crypte des Rois oubliés",
+      "normalizedName": "crypte-des-rois-oublies",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:5841",
+      "parentRefs": [
+        "wowhead-zone:5841"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:5841",
+      "regionName": "Sommet de Kun-Lai",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 25,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6208",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Sommet de Kun-Lai",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Sommet de Kun-Lai",
+        "Crypte des Rois oubliés"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai > Crypte des Rois oubliés",
+      "canonicalRef": "wowhead-zone:6208",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6208"
+      ],
+      "canonicalWowheadZoneIds": [
+        6208
+      ],
+      "canonicalParentRef": "wowhead-zone:5841",
+      "canonicalParentRefs": [
+        "wowhead-zone:5841"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5841"
+    },
+    {
+      "ref": "wowhead-zone:6426",
+      "wowheadZoneId": 6426,
+      "name": "Festival de Brasse-Lune",
+      "normalizedName": "festival-de-brasse-lune",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:5841",
+      "parentRefs": [
+        "wowhead-zone:5841"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:5841",
+      "regionName": "Sommet de Kun-Lai",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 25,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6426",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Sommet de Kun-Lai",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Sommet de Kun-Lai",
+        "Festival de Brasse-Lune"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai > Festival de Brasse-Lune",
+      "canonicalRef": "wowhead-zone:6426",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6426"
+      ],
+      "canonicalWowheadZoneIds": [
+        6426
+      ],
+      "canonicalParentRef": "wowhead-zone:5841",
+      "canonicalParentRefs": [
+        "wowhead-zone:5841"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5841"
+    },
+    {
+      "ref": "wowhead-zone:6852",
+      "wowheadZoneId": 6852,
+      "name": "Ordalie",
+      "normalizedName": "ordalie",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:5841",
+      "parentRefs": [
+        "wowhead-zone:5841"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:5841",
+      "regionName": "Sommet de Kun-Lai",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 70,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6852",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Sommet de Kun-Lai",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Sommet de Kun-Lai",
+        "Ordalie"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai > Ordalie",
+      "canonicalRef": "wowhead-zone:6852",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6852"
+      ],
+      "canonicalWowheadZoneIds": [
+        6852
+      ],
+      "canonicalParentRef": "wowhead-zone:5841",
+      "canonicalParentRefs": [
+        "wowhead-zone:5841"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5841"
+    },
+    {
+      "ref": "wowhead-zone:5841",
+      "wowheadZoneId": 5841,
+      "name": "Sommet de Kun-Lai",
+      "normalizedName": "sommet-de-kun-lai",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:5841",
+      "regionName": "Sommet de Kun-Lai",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 20,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=5841",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Sommet de Kun-Lai",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Sommet de Kun-Lai"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai",
+      "canonicalRef": "wowhead-zone:5841",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5841"
+      ],
+      "canonicalWowheadZoneIds": [
+        5841
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5841"
+    },
+    {
+      "ref": "wowhead-zone:5842",
+      "wowheadZoneId": 5842,
+      "name": "Steppes de Tanglong",
+      "normalizedName": "steppes-de-tanglong",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:5842",
+      "regionName": "Steppes de Tanglong",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 25,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=5842",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Steppes de Tanglong",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Steppes de Tanglong"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Steppes de Tanglong",
+      "canonicalRef": "wowhead-zone:5842",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5842"
+      ],
+      "canonicalWowheadZoneIds": [
+        5842
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5842"
+    },
+    {
+      "ref": "wowhead-zone:6613",
+      "wowheadZoneId": 6613,
+      "name": "Temple noir",
+      "normalizedName": "temple-noir",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:6613",
+      "regionName": "Temple noir",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 9,
+      "instanceTypeName": "Scénario",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 35,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6613",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Temple noir",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Temple noir"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Temple noir",
+      "canonicalRef": "wowhead-zone:6613",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6613"
+      ],
+      "canonicalWowheadZoneIds": [
+        6613
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6613"
+    },
+    {
+      "ref": "wowhead-zone:6138",
+      "wowheadZoneId": 6138,
+      "name": "Terres de l’Angoisse",
+      "normalizedName": "terres-de-l-angoisse",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:6138",
+      "regionName": "Terres de l’Angoisse",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 30,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=6138",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Terres de l’Angoisse",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Terres de l’Angoisse"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Terres de l’Angoisse",
+      "canonicalRef": "wowhead-zone:6138",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:6138"
+      ],
+      "canonicalWowheadZoneIds": [
+        6138
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:6138"
+    },
+    {
+      "ref": "wowhead-zone:5840",
+      "wowheadZoneId": 5840,
+      "name": "Val de l’Éternel printemps",
+      "normalizedName": "val-de-l-eternel-printemps",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:5840",
+      "regionName": "Val de l’Éternel printemps",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 30,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=5840",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Val de l’Éternel printemps",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Val de l’Éternel printemps"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Val de l’Éternel printemps",
+      "canonicalRef": "wowhead-zone:5840",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5840"
+      ],
+      "canonicalWowheadZoneIds": [
+        5840
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5840"
+    },
+    {
+      "ref": "wowhead-zone:5805",
+      "wowheadZoneId": 5805,
+      "name": "Vallée des Quatre vents",
+      "normalizedName": "vallee-des-quatre-vents",
+      "worldKey": "azeroth",
+      "continentKey": "pandaria",
+      "kind": "region",
+      "parentRef": "continent:pandaria",
+      "parentRefs": [
+        "continent:pandaria"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:5805",
+      "regionName": "Vallée des Quatre vents",
+      "extensionId": 4,
+      "extensionKey": "mists-of-pandaria",
+      "extensionName": "Mists of Pandaria",
+      "expansionBasePatch": "5.0.4",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 15,
+      "maxLevel": 35,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=5805",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_review",
+      "reviewBatch": "pandaria-manual-review",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_manual_review",
+      "reviewRegionName": "Vallée des Quatre vents",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Vallée des Quatre vents"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Vallée des Quatre vents",
+      "canonicalRef": "wowhead-zone:5805",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:5805"
+      ],
+      "canonicalWowheadZoneIds": [
+        5805
+      ],
+      "canonicalParentRef": "continent:pandaria",
+      "canonicalParentRefs": [
+        "continent:pandaria"
+      ],
+      "canonicalRegionRef": "wowhead-zone:5805"
+    }
+  ],
+  "exclusions": [
+    {
+      "wowheadZoneId": 6209,
+      "name": "La forêt de Jade",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Mists of Pandaria",
+      "instanceTypeName": "Scénario",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 6419,
+      "name": "Sommet de Kun-Lai",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Mists of Pandaria",
+      "instanceTypeName": "Zone",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 6500,
+      "name": "Marécage d’Âprefange",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Mists of Pandaria",
+      "instanceTypeName": "Scénario",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 6575,
+      "name": "Étendues sauvages de Krasarang",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Mists of Pandaria",
+      "instanceTypeName": "Scénario",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 6615,
+      "name": "Étendues sauvages de Krasarang",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Mists of Pandaria",
+      "instanceTypeName": "Scénario",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 6666,
+      "name": "Infiltrer le chantier naval",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Mists of Pandaria",
+      "instanceTypeName": "Scénario",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 6673,
+      "name": "En route vers les cieux !",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Mists of Pandaria",
+      "instanceTypeName": "Scénario",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 6675,
+      "name": "Île du Tonnerre",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Mists of Pandaria",
+      "instanceTypeName": "Scénario",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 6677,
+      "name": "Île du Tonnerre",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Mists of Pandaria",
+      "instanceTypeName": "Scénario",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 6733,
+      "name": "Val de l’Éternel printemps",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Mists of Pandaria",
+      "instanceTypeName": "Scénario",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 7952,
+      "name": "Sommet de Kun-Lai",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Legion",
+      "instanceTypeName": "Zone",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 10920,
+      "name": "L’escalier Dérobé",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Battle for Azeroth",
+      "instanceTypeName": "Zone",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 11024,
+      "name": "La forêt de Jade",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Battle for Azeroth",
+      "instanceTypeName": "Zone",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 11025,
+      "name": "Vallée des Quatre vents",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Battle for Azeroth",
+      "instanceTypeName": "Zone",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 11026,
+      "name": "Sommet de Kun-Lai",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Battle for Azeroth",
+      "instanceTypeName": "Zone",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 11027,
+      "name": "Steppes de Tanglong",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Battle for Azeroth",
+      "instanceTypeName": "Zone",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    },
+    {
+      "wowheadZoneId": 11054,
+      "name": "L’escalier Dérobé",
+      "worldKey": "azeroth",
+      "worldName": "Azeroth",
+      "continentKey": "pandaria",
+      "continentName": "Pandarie",
+      "expansionName": "Battle for Azeroth",
+      "instanceTypeName": "Zone",
+      "exclusionMethod": "user_manual_review",
+      "reason": "Décision Supprimée lors de la revue manuelle."
+    }
+  ]
+}

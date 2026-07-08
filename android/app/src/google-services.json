@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "536516621931",
+    "project_id": "wow100-106c3",
+    "storage_bucket": "wow100-106c3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536516621931:android:951e4d21713dce2b2c232e",
+        "android_client_info": {
+          "package_name": "fr.cosmoslty.wow100"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRoKh-yI8UBFnuezbkbeyc6uec8_raP6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

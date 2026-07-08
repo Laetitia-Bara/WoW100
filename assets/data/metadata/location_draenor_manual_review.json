@@ -1,0 +1,126 @@
+{
+    "schemaVersion":  1,
+    "continentKey":  "draenor",
+    "reviewBatch":  "draenor-manual-review",
+    "sourceFile":  "assets/generated/locations_draenor_review.csv",
+    "importedAt":  "2026-06-22T16:54:55.3665836+02:00",
+    "rows":  [
+                 {
+                     "wowheadZoneId":  6941,
+                     "name":  "A’shran",
+                     "regionName":  "A’shran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Warlords of Draenor",
+                     "instanceTypeName":  "PvP",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7078,
+                     "name":  "Chutelune",
+                     "regionName":  "Vallée d’Ombrelune",
+                     "decision":  "Conservée",
+                     "extensionName":  "Warlords of Draenor",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6720,
+                     "name":  "Crête de Givrefeu",
+                     "regionName":  "Crête de Givrefeu",
+                     "decision":  "Conservée",
+                     "extensionName":  "Warlords of Draenor",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7083,
+                     "name":  "Défense de Karabor",
+                     "regionName":  "Vallée d’Ombrelune",
+                     "decision":  "Conservée",
+                     "extensionName":  "Warlords of Draenor",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6756,
+                     "name":  "Faralohn",
+                     "regionName":  "Faralohn",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Warlords of Draenor",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6722,
+                     "name":  "Flèches d’Arak",
+                     "regionName":  "Flèches d’Arak",
+                     "decision":  "Conservée",
+                     "extensionName":  "Warlords of Draenor",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6721,
+                     "name":  "Gorgrond",
+                     "regionName":  "Gorgrond",
+                     "decision":  "Conservée",
+                     "extensionName":  "Warlords of Draenor",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6723,
+                     "name":  "Jungle de Tanaan",
+                     "regionName":  "Jungle de Tanaan",
+                     "decision":  "Conservée",
+                     "extensionName":  "Warlords of Draenor",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7004,
+                     "name":  "Mur-de-Givre",
+                     "regionName":  "Crête de Givrefeu",
+                     "decision":  "Conservée",
+                     "extensionName":  "Warlords of Draenor",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6755,
+                     "name":  "Nagrand",
+                     "regionName":  "Nagrand",
+                     "decision":  "Conservée",
+                     "extensionName":  "Warlords of Draenor",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6980,
+                     "name":  "Shattrath",
+                     "regionName":  "Talador",
+                     "decision":  "Conservée",
+                     "extensionName":  "Warlords of Draenor",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6662,
+                     "name":  "Talador",
+                     "regionName":  "Talador",
+                     "decision":  "Conservée",
+                     "extensionName":  "Warlords of Draenor",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  6719,
+                     "name":  "Vallée d’Ombrelune",
+                     "regionName":  "Vallée d’Ombrelune",
+                     "decision":  "Conservée",
+                     "extensionName":  "Warlords of Draenor",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 }
+             ]
+}

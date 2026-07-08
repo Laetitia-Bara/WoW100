@@ -1,0 +1,433 @@
+{
+  "sourceEntriesInWowheadCategory": 8,
+  "suppliedListEntries": 7,
+  "retainedEntries": 8,
+  "displayedRegions": 7,
+  "capitalRegions": 1,
+  "excludedEntries": 0,
+  "reviewedEntries": 8,
+  "pendingEntries": 0,
+  "byKind": {
+    "region": 8
+  },
+  "locations": [
+    {
+      "ref": "wowhead-zone:3703",
+      "wowheadZoneId": 3703,
+      "name": "Shattrath",
+      "normalizedName": "shattrath",
+      "worldKey": "outland",
+      "continentKey": "outland",
+      "kind": "region",
+      "parentRef": "wowhead-zone:3519",
+      "parentRefs": [
+        "wowhead-zone:3519"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:3703",
+      "regionName": "Shattrath",
+      "extensionId": 1,
+      "extensionKey": "the-burning-crusade",
+      "extensionName": "The Burning Crusade",
+      "expansionBasePatch": "2.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 3,
+      "territoryName": "Sanctuaire",
+      "minLevel": 1,
+      "maxLevel": 90,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=3703",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_rule",
+      "reviewBatch": "outland-2026-06-20",
+      "note": "Shattrath est une région-capitale autonome située dans la Forêt de Terokkar.",
+      "source": "wowhead_zone_catalog_and_manual_review",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar",
+        "Shattrath"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar > Shattrath",
+      "canonicalRef": "wowhead-zone:3703",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3703"
+      ],
+      "canonicalWowheadZoneIds": [
+        3703
+      ],
+      "canonicalParentRef": "wowhead-zone:3519",
+      "canonicalParentRefs": [
+        "wowhead-zone:3519"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3703"
+    },
+    {
+      "ref": "wowhead-zone:3519",
+      "wowheadZoneId": 3519,
+      "name": "Forêt de Terokkar",
+      "normalizedName": "foret-de-terokkar",
+      "worldKey": "outland",
+      "continentKey": "outland",
+      "kind": "region",
+      "parentRef": "continent:outland",
+      "parentRefs": [
+        "continent:outland"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:3519",
+      "regionName": "Forêt de Terokkar",
+      "extensionId": 1,
+      "extensionKey": "the-burning-crusade",
+      "extensionName": "The Burning Crusade",
+      "expansionBasePatch": "2.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 15,
+      "maxLevel": 30,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=3519",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_default_region",
+      "reviewBatch": "outland-2026-06-20",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_review",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar",
+      "canonicalRef": "wowhead-zone:3519",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3519"
+      ],
+      "canonicalWowheadZoneIds": [
+        3519
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3519"
+    },
+    {
+      "ref": "wowhead-zone:3522",
+      "wowheadZoneId": 3522,
+      "name": "Les Tranchantes",
+      "normalizedName": "les-tranchantes",
+      "worldKey": "outland",
+      "continentKey": "outland",
+      "kind": "region",
+      "parentRef": "continent:outland",
+      "parentRefs": [
+        "continent:outland"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:3522",
+      "regionName": "Les Tranchantes",
+      "extensionId": 1,
+      "extensionKey": "the-burning-crusade",
+      "extensionName": "The Burning Crusade",
+      "expansionBasePatch": "2.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 20,
+      "maxLevel": 30,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=3522",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_default_region",
+      "reviewBatch": "outland-2026-06-20",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_review",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Les Tranchantes"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Les Tranchantes",
+      "canonicalRef": "wowhead-zone:3522",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3522"
+      ],
+      "canonicalWowheadZoneIds": [
+        3522
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3522"
+    },
+    {
+      "ref": "wowhead-zone:3521",
+      "wowheadZoneId": 3521,
+      "name": "Marécage de Zangar",
+      "normalizedName": "marecage-de-zangar",
+      "worldKey": "outland",
+      "continentKey": "outland",
+      "kind": "region",
+      "parentRef": "continent:outland",
+      "parentRefs": [
+        "continent:outland"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:3521",
+      "regionName": "Marécage de Zangar",
+      "extensionId": 1,
+      "extensionKey": "the-burning-crusade",
+      "extensionName": "The Burning Crusade",
+      "expansionBasePatch": "2.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 30,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=3521",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_default_region",
+      "reviewBatch": "outland-2026-06-20",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_review",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Marécage de Zangar"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Marécage de Zangar",
+      "canonicalRef": "wowhead-zone:3521",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3521"
+      ],
+      "canonicalWowheadZoneIds": [
+        3521
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3521"
+    },
+    {
+      "ref": "wowhead-zone:3518",
+      "wowheadZoneId": 3518,
+      "name": "Nagrand",
+      "normalizedName": "nagrand",
+      "worldKey": "outland",
+      "continentKey": "outland",
+      "kind": "region",
+      "parentRef": "continent:outland",
+      "parentRefs": [
+        "continent:outland"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:3518",
+      "regionName": "Nagrand",
+      "extensionId": 1,
+      "extensionKey": "the-burning-crusade",
+      "extensionName": "The Burning Crusade",
+      "expansionBasePatch": "2.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 15,
+      "maxLevel": 30,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=3518",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_default_region",
+      "reviewBatch": "outland-2026-06-20",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_review",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Nagrand"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Nagrand",
+      "canonicalRef": "wowhead-zone:3518",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3518"
+      ],
+      "canonicalWowheadZoneIds": [
+        3518
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3518"
+    },
+    {
+      "ref": "wowhead-zone:3483",
+      "wowheadZoneId": 3483,
+      "name": "Péninsule des Flammes infernales",
+      "normalizedName": "peninsule-des-flammes-infernales",
+      "worldKey": "outland",
+      "continentKey": "outland",
+      "kind": "region",
+      "parentRef": "continent:outland",
+      "parentRefs": [
+        "continent:outland"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:3483",
+      "regionName": "Péninsule des Flammes infernales",
+      "extensionId": 1,
+      "extensionKey": "the-burning-crusade",
+      "extensionName": "The Burning Crusade",
+      "expansionBasePatch": "2.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 10,
+      "maxLevel": 30,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=3483",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_default_region",
+      "reviewBatch": "outland-2026-06-20",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_review",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Péninsule des Flammes infernales"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Péninsule des Flammes infernales",
+      "canonicalRef": "wowhead-zone:3483",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3483"
+      ],
+      "canonicalWowheadZoneIds": [
+        3483
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3483"
+    },
+    {
+      "ref": "wowhead-zone:3523",
+      "wowheadZoneId": 3523,
+      "name": "Raz-de-Néant",
+      "normalizedName": "raz-de-neant",
+      "worldKey": "outland",
+      "continentKey": "outland",
+      "kind": "region",
+      "parentRef": "continent:outland",
+      "parentRefs": [
+        "continent:outland"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:3523",
+      "regionName": "Raz-de-Néant",
+      "extensionId": 1,
+      "extensionKey": "the-burning-crusade",
+      "extensionName": "The Burning Crusade",
+      "expansionBasePatch": "2.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 25,
+      "maxLevel": 30,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=3523",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_default_region",
+      "reviewBatch": "outland-2026-06-20",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_review",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Raz-de-Néant"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Raz-de-Néant",
+      "canonicalRef": "wowhead-zone:3523",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3523"
+      ],
+      "canonicalWowheadZoneIds": [
+        3523
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3523"
+    },
+    {
+      "ref": "wowhead-zone:3520",
+      "wowheadZoneId": 3520,
+      "name": "Vallée d’Ombrelune",
+      "normalizedName": "vallee-d-ombrelune",
+      "worldKey": "outland",
+      "continentKey": "outland",
+      "kind": "region",
+      "parentRef": "continent:outland",
+      "parentRefs": [
+        "continent:outland"
+      ],
+      "depthBelowContinent": 1,
+      "regionRef": "wowhead-zone:3520",
+      "regionName": "Vallée d’Ombrelune",
+      "extensionId": 1,
+      "extensionKey": "the-burning-crusade",
+      "extensionName": "The Burning Crusade",
+      "expansionBasePatch": "2.0.1",
+      "patch": null,
+      "instanceTypeId": 0,
+      "instanceTypeName": "Zone",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 25,
+      "maxLevel": 30,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=3520",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_default_region",
+      "reviewBatch": "outland-2026-06-20",
+      "note": "",
+      "source": "wowhead_zone_catalog_and_user_review",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Vallée d’Ombrelune"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Vallée d’Ombrelune",
+      "canonicalRef": "wowhead-zone:3520",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:3520"
+      ],
+      "canonicalWowheadZoneIds": [
+        3520
+      ],
+      "canonicalParentRef": "continent:outland",
+      "canonicalParentRefs": [
+        "continent:outland"
+      ],
+      "canonicalRegionRef": "wowhead-zone:3520"
+    }
+  ],
+  "exclusions": []
+}

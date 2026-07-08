@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "worlds": [
+    {
+      "key": "azeroth",
+      "name": "Azeroth"
+    },
+    {
+      "key": "outland",
+      "name": "Outreterre"
+    },
+    {
+      "key": "draenor",
+      "name": "Draenor"
+    },
+    {
+      "key": "shadowlands",
+      "name": "Ombreterre"
+    }
+  ],
+  "continents": [
+    {
+      "key": "kalimdor",
+      "name": "Kalimdor",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 1
+    },
+    {
+      "key": "eastern-kingdoms",
+      "name": "Royaumes de l'Est",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 0
+    },
+    {
+      "key": "outland",
+      "name": "Outreterre",
+      "worldKey": "outland",
+      "wowheadCategoryId": 8
+    },
+    {
+      "key": "northrend",
+      "name": "Norfendre",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 10
+    },
+    {
+      "key": "maelstrom",
+      "name": "Le Maelström",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 11
+    },
+    {
+      "key": "pandaria",
+      "name": "Pandarie",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 12
+    },
+    {
+      "key": "draenor",
+      "name": "Draenor",
+      "worldKey": "draenor",
+      "wowheadCategoryId": 13
+    },
+    {
+      "key": "broken-isles",
+      "name": "Îles Brisées",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 14
+    },
+    {
+      "key": "zandalar",
+      "name": "Zandalar",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 15
+    },
+    {
+      "key": "kul-tiras",
+      "name": "Kul Tiras",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 16
+    },
+    {
+      "key": "shadowlands",
+      "name": "Ombreterre",
+      "worldKey": "shadowlands",
+      "wowheadCategoryId": 17
+    },
+    {
+      "key": "dragon-isles",
+      "name": "Îles aux Dragons",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 18
+    },
+    {
+      "key": "khaz-algar",
+      "name": "Khaz Algar",
+      "worldKey": "azeroth",
+      "wowheadCategoryId": 19
+    },
+    {
+      "key": "quel-thalas",
+      "name": "Quel'Thalas",
+      "worldKey": "azeroth",
+      "parentContinentKey": "eastern-kingdoms",
+      "wowheadCategoryId": 20
+    }
+  ],
+  "reviewBatches": [
+    {
+      "key": "kalimdor-2026-06-19",
+      "continentKey": "kalimdor",
+      "sourceEntryCount": 43,
+      "defaultReviewStatus": "reviewed",
+      "excludedDefaultZoneIds": [1657, 3557, 1638, 1637],
+      "note": "Les 43 entrées de la liste fournie sont des régions par défaut, puis affinées par les règles ci-dessous. Les quatre capitales hors liste ne sont pas validées automatiquement."
+    },
+    {
+      "key": "eastern-kingdoms-2026-06-19",
+      "continentKey": "eastern-kingdoms",
+      "sourceEntryCount": 259,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [1519, 1537, 1497, 3487],
+      "capitalZoneIds": [1519, 1537, 1497, 3487, 4714],
+      "note": "Les 259 entrées affichées sont conservées comme régions en attente de revue manuelle. Les quatre capitales hors liste restent également en attente."
+    },
+    {
+      "key": "outland-2026-06-20",
+      "continentKey": "outland",
+      "sourceEntryCount": 7,
+      "defaultReviewStatus": "reviewed",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [3703],
+      "capitalZoneIds": [3703],
+      "note": "Les sept entrées affichées sont validées comme régions. Shattrath est traitée séparément comme capitale."
+    },
+    {
+      "key": "northrend-2026-06-20",
+      "continentKey": "northrend",
+      "sourceEntryCount": 18,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [4395],
+      "capitalZoneIds": [4395, 8474],
+      "note": "Les 18 entrées affichées sont classées provisoirement comme régions. Dalaran WotLK, hors liste affichée, est ajoutée comme capitale candidate."
+    },
+    {
+      "key": "maelstrom-2026-06-20",
+      "continentKey": "maelstrom",
+      "sourceEntryCount": 8,
+      "defaultReviewStatus": "reviewed",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [],
+      "capitalZoneIds": [],
+      "note": "Les huit entrées affichées sont validées comme régions. Tol Barad et la Péninsule de Tol Barad restent deux régions sœurs."
+    },
+    {
+      "key": "pandaria-2026-06-20",
+      "continentKey": "pandaria",
+      "sourceEntryCount": 46,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [6142],
+      "capitalZoneIds": [],
+      "note": "Les 46 entrées affichées sont classées provisoirement comme régions, en attente de la revue manuelle. Le Sanctuaire des Sept-Étoiles, absent de la liste affichée, reste hors de ce lot."
+    },
+    {
+      "key": "draenor-2026-06-22",
+      "continentKey": "draenor",
+      "sourceEntryCount": 13,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [7332, 7333],
+      "capitalZoneIds": [],
+      "note": "Les 13 entrées affichées sont classées provisoirement comme régions, en attente de la revue manuelle. Bouclier-des-Tempêtes et Fer-de-Lance, absentes de la liste affichée, restent hors de ce lot."
+    },
+    {
+      "key": "broken-isles-2026-06-22",
+      "continentKey": "broken-isles",
+      "sourceEntryCount": 54,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [7502],
+      "capitalZoneIds": [],
+      "note": "Les 54 entrées affichées sont classées provisoirement comme régions, en attente de la revue manuelle. Dalaran (ID 7502), absent de la liste affichée, reste hors de ce lot."
+    },
+    {
+      "key": "zandalar-2026-06-22",
+      "continentKey": "zandalar",
+      "sourceEntryCount": 29,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [8670],
+      "capitalZoneIds": [8670],
+      "note": "Les 29 entrées affichées sont classées provisoirement comme régions. Dazar’alor, absente de la liste affichée, est ajoutée comme capitale candidate rattachée géographiquement à Zuldazar."
+    },
+    {
+      "key": "kul-tiras-2026-06-22",
+      "continentKey": "kul-tiras",
+      "sourceEntryCount": 30,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [8568],
+      "capitalZoneIds": [8568],
+      "note": "Les 30 entrées affichées sont classées provisoirement comme régions. Boralus, absente de la liste affichée, est ajoutée comme capitale candidate rattachée géographiquement à la Rade de Tiragarde."
+    },
+    {
+      "key": "shadowlands-2026-06-22",
+      "continentKey": "shadowlands",
+      "sourceEntryCount": 28,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [10565],
+      "capitalZoneIds": [10565],
+      "note": "Les 28 entrées affichées sont classées provisoirement comme régions. Oribos, absente de la liste affichée, est ajoutée comme capitale candidate directement rattachée au continent Ombreterre."
+    },
+    {
+      "key": "dragon-isles-2026-06-22",
+      "continentKey": "dragon-isles",
+      "sourceEntryCount": 13,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [13862],
+      "capitalZoneIds": [13862],
+      "note": "Les 13 entrées affichées sont classées provisoirement comme régions. Valdrakken, absente de la liste affichée, est ajoutée comme capitale candidate rattachée géographiquement à Thaldraszus."
+    },
+    {
+      "key": "khaz-algar-2026-06-22",
+      "continentKey": "khaz-algar",
+      "sourceEntryCount": 23,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [14771],
+      "capitalZoneIds": [14771],
+      "note": "Les 23 entrées affichées sont classées provisoirement comme régions. Dornogal, absente de la liste affichée, est ajoutée comme capitale candidate rattachée géographiquement à l’Île de Dorn."
+    },
+    {
+      "key": "quel-thalas-2026-06-22",
+      "continentKey": "quel-thalas",
+      "sourceEntryCount": 15,
+      "defaultReviewStatus": "pending",
+      "defaultKind": "region",
+      "excludedDefaultZoneIds": [],
+      "capitalZoneIds": [15969],
+      "note": "Les 15 entrées affichées sont classées provisoirement comme régions. Quel’Thalas est rattaché au continent parent des Royaumes de l’Est."
+    }
+  ],
+  "nameExclusionRules": [
+    {
+      "key": "name_contains_test",
+      "continentKey": "eastern-kingdoms",
+      "match": "test",
+      "matchMode": "contains_case_insensitive",
+      "reason": "Entrée technique contenant le mot Test, retirée avant la revue manuelle."
+    },
+    {
+      "key": "name_contains_do_not_disturb",
+      "continentKey": "eastern-kingdoms",
+      "match": "[do not disturb]",
+      "matchMode": "contains_case_insensitive",
+      "reason": "Entrée technique marquée [DO NOT DISTURB], retirée avant la revue manuelle."
+    },
+    {
+      "key": "name_contains_ne_pas_deranger",
+      "continentKey": "eastern-kingdoms",
+      "match": "[ne pas déranger]",
+      "matchMode": "contains_case_insensitive",
+      "reason": "Entrée technique marquée [NE PAS DÉRANGER], retirée avant la revue manuelle."
+    },
+    {
+      "key": "name_contains_ne_pas_deranger_ascii",
+      "continentKey": "eastern-kingdoms",
+      "match": "[ne pas deranger]",
+      "matchMode": "contains_case_insensitive",
+      "reason": "Entrée technique marquée [NE PAS DERANGER], retirée avant la revue manuelle."
+    },
+    {
+      "key": "name_contains_technical_marker",
+      "continentKey": "eastern-kingdoms",
+      "matches": [
+        "[TEMP]",
+        "BlizzCon",
+        "(copy)",
+        "[TEMP NAME]",
+        "[ZONE DE DEV]",
+        "Carte de dev",
+        "Dev Area",
+        "DemoArea",
+        "UNUSED",
+        "Demo Area",
+        "dev1",
+        "[DEVLAND COPY]",
+        "prototype",
+        "Terrain de jeu",
+        "Terrain de jeux",
+        "DEV LAND",
+        "ZZ_AlexandraDD",
+        "zzOLDBastion"
+      ],
+      "matchMode": "contains_any_case_insensitive",
+      "reason": "Entrée technique correspondant à un marqueur de développement retiré avant la revue manuelle."
+    }
+  ],
+  "rules": [
+    {
+      "wowheadZoneId": 14771,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:14717",
+      "reviewRegionName": "Île de Dorn",
+      "reviewStatus": "pending",
+      "note": "Dornogal est une région-capitale autonome située géographiquement sur l’Île de Dorn."
+    },
+    {
+      "wowheadZoneId": 13862,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:13647",
+      "reviewRegionName": "Thaldraszus",
+      "reviewStatus": "pending",
+      "note": "Valdrakken est une région-capitale autonome située géographiquement dans Thaldraszus."
+    },
+    {
+      "wowheadZoneId": 10565,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "continent:shadowlands",
+      "reviewRegionName": "Oribos",
+      "reviewStatus": "pending",
+      "note": "Oribos est une région-capitale autonome directement rattachée au continent Ombreterre."
+    },
+    {
+      "wowheadZoneId": 8568,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:8567",
+      "reviewRegionName": "Rade de Tiragarde",
+      "reviewStatus": "pending",
+      "note": "Boralus est une région-capitale autonome située géographiquement dans la Rade de Tiragarde."
+    },
+    {
+      "wowheadZoneId": 8670,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:8499",
+      "reviewRegionName": "Zuldazar",
+      "reviewStatus": "pending",
+      "note": "Dazar’alor est une région-capitale autonome située géographiquement dans Zuldazar."
+    },
+    {
+      "wowheadZoneId": 5095,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "continent:maelstrom",
+      "instanceTypeName": "PvP",
+      "reviewStatus": "reviewed",
+      "note": "Tol Barad est une région JcJ distincte de la Péninsule de Tol Barad."
+    },
+    {
+      "wowheadZoneId": 3703,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:3519",
+      "reviewStatus": "reviewed",
+      "note": "Shattrath est une région-capitale autonome située dans la Forêt de Terokkar."
+    },
+    {
+      "wowheadZoneId": 876,
+      "action": "exclude",
+      "reason": "Île des MJ supprimée du référentiel public."
+    },
+    {
+      "wowheadZoneId": 10397,
+      "action": "exclude",
+      "reason": "Doublon Battle for Azeroth de la région Mulgore (Vanilla)."
+    },
+    {
+      "wowheadZoneId": 11382,
+      "action": "exclude",
+      "reason": "Entrée technique 8.2.5 War Campaign."
+    },
+    {
+      "wowheadZoneId": 9704,
+      "action": "exclude",
+      "reason": "Entrée technique Allied - Mag'har Orc Unlock."
+    },
+    {
+      "wowheadZoneId": 10625,
+      "action": "exclude",
+      "reason": "Doublon Battle for Azeroth de la région Durotar (Vanilla)."
+    },
+    {
+      "wowheadZoneId": 1637,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:14",
+      "extensionId": 3,
+      "extensionKey": "cataclysm",
+      "extensionName": "Cataclysm",
+      "reviewStatus": "reviewed",
+      "note": "Orgrimmar est rattachée à la région Durotar."
+    },
+    {
+      "wowheadZoneId": 1657,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:141",
+      "reviewStatus": "reviewed",
+      "note": "Darnassus est une région à part entière située dans Teldrassil."
+    },
+    {
+      "wowheadZoneId": 1638,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:215",
+      "reviewStatus": "reviewed",
+      "note": "Les Pitons-du-Tonnerre est une région à part entière située dans Mulgore."
+    },
+    {
+      "wowheadZoneId": 3557,
+      "action": "override",
+      "kind": "region",
+      "parentRef": "wowhead-zone:3524",
+      "reviewStatus": "reviewed",
+      "note": "L'Exodar est une région à part entière située sur l'Île de Brume-Azur."
+    },
+    {
+      "wowheadZoneId": 5166,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:1637",
+      "reviewStatus": "reviewed",
+      "note": "Faille de l'Ombre est rattachée à Orgrimmar."
+    },
+    {
+      "wowheadZoneId": 6456,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:3524",
+      "reviewStatus": "reviewed",
+      "note": "Val d'Ammen est rattaché à l'Île de Brume-Azur."
+    },
+    {
+      "wowheadZoneId": 6453,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:14",
+      "reviewStatus": "reviewed",
+      "note": "Îles de l'Écho est rattaché à Durotar."
+    },
+    {
+      "wowheadZoneId": 5733,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:616",
+      "reviewStatus": "reviewed",
+      "note": "Front du Magma est rattaché au Mont Hyjal."
+    },
+    {
+      "wowheadZoneId": 6452,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:215",
+      "reviewStatus": "reviewed",
+      "note": "Camp Narache est rattaché à Mulgore."
+    },
+    {
+      "wowheadZoneId": 6450,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:141",
+      "reviewStatus": "reviewed",
+      "note": "Sombrevallon est rattaché à Teldrassil."
+    },
+    {
+      "wowheadZoneId": 6451,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:14",
+      "reviewStatus": "reviewed",
+      "note": "Vallée des Épreuves est rattachée à Durotar."
+    },
+    {
+      "wowheadZoneId": 4821,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:16",
+      "reviewStatus": "reviewed",
+      "note": "Havre Baille-Fonds est rattaché à Azshara."
+    },
+    {
+      "wowheadZoneId": 8091,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:616",
+      "reviewStatus": "reviewed",
+      "note": "Nordrassil est rattaché au Mont Hyjal."
+    },
+    {
+      "wowheadZoneId": 8093,
+      "action": "override",
+      "continentKey": "maelstrom",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:5416",
+      "reviewStatus": "reviewed",
+      "note": "La cime du Vortex est déplacée sous Le Maelström."
+    },
+    {
+      "wowheadZoneId": 9310,
+      "action": "override",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:1377",
+      "reviewStatus": "reviewed",
+      "note": "Silithus : la Plaie est rattaché à Silithus."
+    },
+    {
+      "wowheadZoneId": 15969,
+      "action": "override",
+      "continentKey": "quel-thalas",
+      "kind": "region",
+      "parentRef": "wowhead-zone:15968",
+      "reviewStatus": "reviewed",
+      "note": "Version Midnight de Lune-d'Argent rattachee a Quel'Thalas > Bois des Chants eternels."
+    },
+    {
+      "wowheadZoneId": 16395,
+      "action": "override",
+      "continentKey": "quel-thalas",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:15947",
+      "reviewStatus": "reviewed",
+      "note": "Cavernes de Maisara est un donjon rattaché à Zul’Aman, validé pendant la revue des montures."
+    }
+  ]
+}

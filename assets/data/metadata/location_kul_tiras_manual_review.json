@@ -1,0 +1,292 @@
+{
+    "schemaVersion":  1,
+    "continentKey":  "kul-tiras",
+    "reviewBatch":  "kul-tiras-manual-review",
+    "sourceFile":  "assets/generated/locations_kul_tiras_review.csv",
+    "importedAt":  "2026-06-22T18:52:57.8230900+02:00",
+    "suppliedListRows":  30,
+    "capitalZoneIds":  [
+                           8568
+                       ],
+    "rows":  [
+                 {
+                     "wowheadZoneId":  9765,
+                     "name":  "Académie Portvaillant",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10380,
+                     "name":  "Allied - Kul Tiran Unlock",
+                     "regionName":  "Allied - Kul Tiran Unlock",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11539,
+                     "name":  "Alliés - déblocage des Mécagnomes",
+                     "regionName":  "Alliés - déblocage des Mécagnomes",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  11540,
+                     "name":  "Alliés - déblocage des Vulpérins",
+                     "regionName":  "Alliés - déblocage des Vulpérins",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9663,
+                     "name":  "Campagne militaire - Alliance",
+                     "regionName":  "Campagne militaire - Alliance",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9771,
+                     "name":  "Caserne Portvaillant",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9407,
+                     "name":  "Chantier naval de la compagnie Corsandre",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9562,
+                     "name":  "Cœur-de-Ronces",
+                     "regionName":  "Vallée Chantorage",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9627,
+                     "name":  "Communs de la Croisée des Vents",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8716,
+                     "name":  "Donjon Portvaillant",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8721,
+                     "name":  "Drustvar",
+                     "regionName":  "Drustvar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8956,
+                     "name":  "Gol Thovas",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10034,
+                     "name":  "Haut-Quartier",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10290,
+                     "name":  "Île de Mécagone",
+                     "regionName":  "Île de Mécagone",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8566,
+                     "name":  "La Grande mer",
+                     "regionName":  "La Grande mer",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8718,
+                     "name":  "Marché des Alizés",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9698,
+                     "name":  "Mine de sel gemme",
+                     "regionName":  "Vallée Chantorage",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9554,
+                     "name":  "Monastère Chantorage",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9593,
+                     "name":  "Place de l’Unité",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9588,
+                     "name":  "Pointe du Crochet",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8717,
+                     "name":  "Port de Boralus",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9980,
+                     "name":  "Quais Corsandre",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9979,
+                     "name":  "Quartier de Mèchumide",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8568,
+                     "name":  "Boralus",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Boralus est une région-capitale autonome située géographiquement dans la Rade de Tiragarde."
+                 },
+                 {
+                     "wowheadZoneId":  8567,
+                     "name":  "Rade de Tiragarde",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9183,
+                     "name":  "RiverZone_Art",
+                     "regionName":  "RiverZone_Art",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10015,
+                     "name":  "Tol Dagor",
+                     "regionName":  "Tol Dagor",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8978,
+                     "name":  "Tol Dagor",
+                     "regionName":  "Tol Dagor",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9764,
+                     "name":  "Ulterres, les confins Corrompus",
+                     "regionName":  "Ulterres, les confins Corrompus",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9042,
+                     "name":  "Vallée Chantorage",
+                     "regionName":  "Vallée Chantorage",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9602,
+                     "name":  "Voie du Marin",
+                     "regionName":  "Rade de Tiragarde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 }
+             ]
+}

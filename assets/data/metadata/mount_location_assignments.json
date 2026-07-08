@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "description": "Associations de localisation confirmees manuellement pour les montures. Les chemins sont derives du catalogue de localisation via primaryLocationRef.",
+  "assignments": [
+    {
+      "blizzardId": 779,
+      "primaryLocationRef": "wowhead-zone:7502",
+      "locationRefs": ["wowhead-zone:7502"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Choix valide dans la revue des localisations ambigues."
+    },
+    {
+      "blizzardId": 955,
+      "primaryLocationRef": "wowhead-zone:8899",
+      "locationRefs": ["wowhead-zone:8899"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Choix valide dans la revue des localisations ambigues."
+    },
+    {
+      "blizzardId": 979,
+      "primaryLocationRef": "wowhead-zone:8899",
+      "locationRefs": ["wowhead-zone:8899"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Choix valide dans la revue des localisations ambigues."
+    },
+    {
+      "blizzardId": 981,
+      "primaryLocationRef": "wowhead-zone:8899",
+      "locationRefs": ["wowhead-zone:8899"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Choix valide dans la revue des localisations ambigues."
+    },
+    {
+      "blizzardId": 2322,
+      "primaryLocationRef": "wowhead-zone:10416",
+      "locationRefs": [
+        "wowhead-zone:10416"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Conserver Ile aux Sirenes plutot que Chambre Oubliee."
+    },
+    {
+      "blizzardId": 2499,
+      "primaryLocationRef": "wowhead-zone:14771",
+      "locationRefs": ["wowhead-zone:14771"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Choix valide dans la revue des localisations ambigues."
+    },
+    {
+      "blizzardId": 2694,
+      "primaryLocationRef": "wowhead-zone:15947",
+      "locationRefs": ["wowhead-zone:15947"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Choix valide dans la revue des localisations ambigues."
+    },
+    {
+      "blizzardId": 2758,
+      "primaryLocationRef": "wowhead-zone:15968",
+      "locationRefs": ["wowhead-zone:15968"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Choix valide dans la revue des localisations ambigues."
+    },
+    {
+      "blizzardId": 2760,
+      "primaryLocationRef": "wowhead-zone:15947",
+      "locationRefs": ["wowhead-zone:15947"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Choix valide dans la revue des localisations ambigues."
+    },
+    {
+      "blizzardId": 2762,
+      "primaryLocationRef": "wowhead-zone:15968",
+      "locationRefs": ["wowhead-zone:15968"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Choix valide dans la revue des localisations ambigues."
+    },
+    {
+      "blizzardId": 2769,
+      "primaryLocationRef": "wowhead-zone:15969",
+      "locationRefs": ["wowhead-zone:15969"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Choix valide dans la revue des localisations ambigues."
+    },
+    {
+      "blizzardId": 2770,
+      "primaryLocationRef": "wowhead-zone:15969",
+      "locationRefs": ["wowhead-zone:15969"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Choix valide dans la revue des localisations ambigues."
+    },
+    {
+      "blizzardId": 2776,
+      "primaryLocationRef": "wowhead-zone:15947",
+      "locationRefs": ["wowhead-zone:15947"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Choix valide dans la revue des localisations ambigues."
+    },
+    {
+      "blizzardId": 2778,
+      "primaryLocationRef": "wowhead-zone:15947",
+      "locationRefs": ["wowhead-zone:15947"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Choix valide dans la revue des localisations ambigues."
+    },
+    {
+      "blizzardId": 2786,
+      "primaryLocationRef": "wowhead-zone:16395",
+      "locationRefs": ["wowhead-zone:16395"],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Cavernes de Maisara rattachee a Zul'Aman pendant la revue."
+    }
+  ]
+}

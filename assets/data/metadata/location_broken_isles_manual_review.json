@@ -1,0 +1,508 @@
+{
+    "schemaVersion":  1,
+    "continentKey":  "broken-isles",
+    "reviewBatch":  "broken-isles-manual-review",
+    "sourceFile":  "assets/generated/locations_broken_isles_review.csv",
+    "importedAt":  "2026-06-22T17:32:34.4986915+02:00",
+    "suppliedListRows":  54,
+    "inferredParentZoneIds":  [
+                                  7502
+                              ],
+    "rows":  [
+                 {
+                     "wowheadZoneId":  7343,
+                     "name":  "[UNUSED]",
+                     "regionName":  "[UNUSED]",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7679,
+                     "name":  "Achérus : le fort d’Ébène",
+                     "regionName":  "Achérus : le fort d’Ébène",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Domaine de classe",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9386,
+                     "name":  "Allied - Highmountain Tauren Unlock",
+                     "regionName":  "Allied - Highmountain Tauren Unlock",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9387,
+                     "name":  "Allied - Lightforged Draenei Unlock",
+                     "regionName":  "Allied - Lightforged Draenei Unlock",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9397,
+                     "name":  "Allied - Nightborne Unlock",
+                     "regionName":  "Allied - Nightborne Unlock",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9396,
+                     "name":  "Allied - Void Elf Unlock",
+                     "regionName":  "Allied - Void Elf Unlock",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9395,
+                     "name":  "Alliés - Hurlevent",
+                     "regionName":  "Alliés - Hurlevent",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  9394,
+                     "name":  "Alliés - Orgrimmar",
+                     "regionName":  "Alliés - Orgrimmar",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7334,
+                     "name":  "Azsuna",
+                     "regionName":  "Azsuna",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8000,
+                     "name":  "Azsuna",
+                     "regionName":  "Azsuna",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Acquisition d\u0027Artefact",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7830,
+                     "name":  "Bas-fonds de l’embouchure de Hel",
+                     "regionName":  "Tornheim",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Acquisition d\u0027Artefact",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8012,
+                     "name":  "Chambre des Ombres",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Domaine de classe",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8392,
+                     "name":  "Égouts de Dalaran",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8701,
+                     "name":  "Érédath",
+                     "regionName":  "Argus",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8899,
+                     "name":  "Étendues Antoréennes",
+                     "regionName":  "Argus",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7875,
+                     "name":  "Faille de Scareffroi",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Domaine de classe",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7879,
+                     "name":  "Hall du Gardien",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Domaine de classe",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10713,
+                     "name":  "Haut-Roc",
+                     "regionName":  "Haut-Roc",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7503,
+                     "name":  "Haut-Roc",
+                     "regionName":  "Haut-Roc",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8574,
+                     "name":  "Krokuun",
+                     "regionName":  "Argus",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8700,
+                     "name":  "L’Exodar",
+                     "regionName":  "L’Exodar",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10731,
+                     "name":  "La Grande mer",
+                     "regionName":  "La Grande mer",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7656,
+                     "name":  "La Grande mer",
+                     "regionName":  "La Grande mer",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8445,
+                     "name":  "La Grande mer",
+                     "regionName":  "La Grande mer",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8600,
+                     "name":  "La Grande mer",
+                     "regionName":  "La Grande mer",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7846,
+                     "name":  "La Sylverêve",
+                     "regionName":  "Val’sharah",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Domaine de classe",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7745,
+                     "name":  "Le Maelström",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Domaine de classe",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8023,
+                     "name":  "Le Marteau gangrené",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Domaine de classe",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8714,
+                     "name":  "Le Vindicaar",
+                     "regionName":  "Le Vindicaar",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8915,
+                     "name":  "Le Vindicaar",
+                     "regionName":  "Le Vindicaar",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8916,
+                     "name":  "Le Vindicaar",
+                     "regionName":  "Argus",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  16752,
+                     "name":  "Navire abandonné de la Légion",
+                     "regionName":  "Rivage Brisé",
+                     "decision":  "Conservée",
+                     "extensionName":  "Midnight",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7578,
+                     "name":  "Œil d’Azshara",
+                     "regionName":  "Azsuna",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7877,
+                     "name":  "Pavillon du Traqueur",
+                     "regionName":  "Haut-Roc",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Domaine de classe",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7744,
+                     "name":  "Repos du bouclier",
+                     "regionName":  "Tornheim",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7543,
+                     "name":  "Rivage Brisé",
+                     "regionName":  "Rivage Brisé",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7638,
+                     "name":  "Sanctum de la Lumière",
+                     "regionName":  "Maleterres de l\u0027Est",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Domaine de classe",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7813,
+                     "name":  "Séjour céleste",
+                     "regionName":  "Tornheim",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Domaine de classe",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10727,
+                     "name":  "Suramar",
+                     "regionName":  "Suramar",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7637,
+                     "name":  "Suramar",
+                     "regionName":  "Suramar",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7767,
+                     "name":  "Suramar",
+                     "regionName":  "Suramar",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Acquisition d\u0027Artefact",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7903,
+                     "name":  "Temple des Cinq matins",
+                     "regionName":  "L\u0027île Vagabonde",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Domaine de classe",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7834,
+                     "name":  "Temple Halo-du-Néant",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Domaine de classe",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8054,
+                     "name":  "Thal’dranath",
+                     "regionName":  "Thal’dranath",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8053,
+                     "name":  "The Greater Sea (Don\u0027t Use)",
+                     "regionName":  "The Greater Sea (Don\u0027t Use)",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10714,
+                     "name":  "Tornheim",
+                     "regionName":  "Tornheim",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7541,
+                     "name":  "Tornheim",
+                     "regionName":  "Tornheim",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7921,
+                     "name":  "Tornheim",
+                     "regionName":  "Tornheim",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Acquisition d\u0027Artefact",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7731,
+                     "name":  "Totem-du-Tonnerre",
+                     "regionName":  "Haut-Roc",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  10430,
+                     "name":  "Val’sharah",
+                     "regionName":  "Val’sharah",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7558,
+                     "name":  "Val’sharah",
+                     "regionName":  "Val’sharah",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8470,
+                     "name":  "VictorCortisLand",
+                     "regionName":  "VictorCortisLand",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8598,
+                     "name":  "Warden Tower TEMP",
+                     "regionName":  "Warden Tower TEMP",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  8449,
+                     "name":  "xxOLD - Zuldazar City",
+                     "regionName":  "xxOLD - Zuldazar City",
+                     "decision":  "Supprimée",
+                     "extensionName":  "Battle for Azeroth",
+                     "instanceTypeName":  "Zone",
+                     "note":  ""
+                 },
+                 {
+                     "wowheadZoneId":  7502,
+                     "name":  "Dalaran",
+                     "regionName":  "Dalaran",
+                     "decision":  "Conservée",
+                     "extensionName":  "Legion",
+                     "instanceTypeName":  "Zone",
+                     "note":  "Région parente implicite utilisée par la revue manuelle."
+                 }
+             ]
+}

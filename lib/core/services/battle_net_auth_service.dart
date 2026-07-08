@@ -1,0 +1,69 @@
+import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+import '../config/app_config.dart';
+import 'oauth_launch_context.dart';
+
+class BattleNetAuthService {
+  static const _oauthChannel = MethodChannel('fr.cosmoslty.wow100/oauth');
+  static const _region = 'eu';
+
+  String buildAuthorizationUrl({bool forceLogin = false}) {
+    final queryParameters = {
+      'client_id': AppConfig.battleNetClientId,
+      'redirect_uri': AppConfig.battleNetRedirectUri,
+      'response_type': 'code',
+      'scope': 'wow.profile',
+      'state': 'wow100-${DateTime.now().millisecondsSinceEpoch}',
+      if (forceLogin) 'prompt': 'login',
+    };
+
+    final uri = Uri.https(
+      '$_region.battle.net',
+      '/oauth/authorize',
+      queryParameters,
+    );
+
+    return uri.toString();
+  }
+
+  Future<Uri?> openAuthorization({bool forceLogin = false}) async {
+    final uri = Uri.parse(buildAuthorizationUrl(forceLogin: forceLogin));
+
+    if (kIsWeb) {
+      markWebOAuthLaunch();
+    }
+
+    if (!kIsWeb && defaultTargetPlatform == TargetPlatform.iOS) {
+      final callback = await _oauthChannel.invokeMethod<String>(
+        'authenticate',
+        {'url': uri.toString(), 'callbackScheme': 'wow100'},
+      );
+
+      return callback == null ? null : Uri.tryParse(callback);
+    }
+
+    final didLaunch = await launchUrl(
+      uri,
+      mode: LaunchMode.platformDefault,
+      webOnlyWindowName: '_self',
+    );
+
+    if (!didLaunch) {
+      throw Exception('Impossible d’ouvrir la connexion Battle.net.');
+    }
+
+    return null;
+  }
+
+  Future<bool> openLogout() async {
+    final uri = Uri.https('$_region.battle.net', '/login/logout');
+
+    return launchUrl(
+      uri,
+      mode: LaunchMode.externalApplication,
+      webOnlyWindowName: '_blank',
+    );
+  }
+}

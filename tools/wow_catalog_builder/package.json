@@ -1,0 +1,21 @@
+{
+  "name": "wow-catalog-builder",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build:achievements": "node --use-system-ca build_achievements_catalog.js",
+    "build:achievements:offline": "node build_achievements_catalog.js --offline",
+    "build:zones": "node --use-system-ca build_zones_catalog.js",
+    "build:locations-reference": "node build_locations_reference.js",
+    "build:pets": "node --use-system-ca build_pets_catalog.js",
+    "build:mamytwink-candidates": "node --use-system-ca build_mamytwink_mount_candidates.js",
+    "build:mounts-reference": "node --use-system-ca build_mounts_reference_catalog.js",
+    "validate:mount-locations": "node validate_mount_location_links.js",
+    "audit:patches": "node --use-system-ca audit_wowhead_patch_classification.js",
+    "audit:distribution": "node audit_catalog_distribution.js"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1"
+  }
+}
