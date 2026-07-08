@@ -914,13 +914,17 @@ class _AdventurePlannerButtonGroup extends StatelessWidget {
       letterSpacing: 0,
     );
 
-    return Wrap(
-      spacing: 8,
-      runSpacing: 8,
-      crossAxisAlignment: WrapCrossAlignment.center,
+    return Column(
+      mainAxisSize: MainAxisSize.min,
       children: [
         Text('Partir en balade', style: labelStyle),
-        ...children,
+        const SizedBox(height: 6),
+        Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: children,
+        ),
       ],
     );
   }
