@@ -485,6 +485,8 @@ class _HeroCard extends StatelessWidget {
       child: LayoutBuilder(
         builder: (context, constraints) {
           final showInlinePortrait = hasPortrait && constraints.maxWidth >= 560;
+          final showInlineAchievementBadge =
+              hasCharacter && constraints.maxWidth >= 430;
 
           return Stack(
             children: [
@@ -525,7 +527,7 @@ class _HeroCard extends StatelessWidget {
                             ],
                           ),
                         ),
-                        if (hasCharacter) ...[
+                        if (showInlineAchievementBadge) ...[
                           const SizedBox(width: 14),
                           _AchievementPointsBadge(
                             points: character!.achievementPoints,
@@ -537,6 +539,12 @@ class _HeroCard extends StatelessWidget {
                         ],
                       ],
                     ),
+                    if (hasCharacter && !showInlineAchievementBadge) ...[
+                      const SizedBox(height: 14),
+                      _AchievementPointsBadge(
+                        points: character!.achievementPoints,
+                      ),
+                    ],
                     if (hasPortrait && !showInlinePortrait) ...[
                       const SizedBox(height: 14),
                       _CharacterPortraitFrame(imageUrl: portraitUrl),
@@ -568,138 +576,120 @@ class _AchievementPointsBadge extends StatelessWidget {
 
     return Semantics(
       label: 'Points de hauts faits $formattedPoints',
-      child: SizedBox(
-        width: 140,
-        height: 96,
-        child: Stack(
-          children: [
-            Positioned.fill(
-              child: PhysicalShape(
-                clipper: const _AchievementBadgeClipper(),
-                color: AppTheme.gold,
-                elevation: 8,
-                shadowColor: Colors.black.withAlpha(140),
-                child: DecoratedBox(
+      child: Container(
+        width: 166,
+        height: 76,
+        padding: const EdgeInsets.all(1.5),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(18),
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              const Color(0xFFFFE7A3).withAlpha(230),
+              AppTheme.gold.withAlpha(210),
+              const Color(0xFF6D4110).withAlpha(220),
+            ],
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withAlpha(130),
+              blurRadius: 18,
+              offset: const Offset(0, 8),
+            ),
+            BoxShadow(
+              color: AppTheme.gold.withAlpha(38),
+              blurRadius: 24,
+              spreadRadius: 1,
+            ),
+          ],
+        ),
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16.5),
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                const Color(0xFF33100B).withAlpha(235),
+                const Color(0xFF150713).withAlpha(235),
+                const Color(0xFF4E170A).withAlpha(225),
+              ],
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 9),
+            child: Row(
+              children: [
+                Container(
+                  width: 42,
+                  height: 42,
                   decoration: BoxDecoration(
-                    gradient: const LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
+                    shape: BoxShape.circle,
+                    gradient: const RadialGradient(
+                      center: Alignment(-0.35, -0.35),
+                      radius: 0.9,
                       colors: [
-                        Color(0xFFFFF0A8),
+                        Color(0xFFFFF4BD),
                         Color(0xFFE6B64D),
-                        Color(0xFF8F5A12),
+                        Color(0xFF8D5611),
                       ],
+                    ),
+                    border: Border.all(
+                      color: const Color(0xFFFFE7A3).withAlpha(210),
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.white.withAlpha(75),
-                        blurRadius: 16,
-                        offset: const Offset(-10, -10),
+                        color: AppTheme.gold.withAlpha(70),
+                        blurRadius: 10,
                       ),
                     ],
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(14, 11, 14, 14),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Icon(
-                          Icons.workspace_premium,
-                          color: Color(0xFF3F2406),
-                          size: 22,
-                        ),
-                        const SizedBox(height: 3),
-                        FittedBox(
-                          fit: BoxFit.scaleDown,
-                          child: Text(
-                            formattedPoints,
-                            maxLines: 1,
-                            style: const TextStyle(
-                              color: Color(0xFF2A1703),
-                              fontSize: 24,
-                              fontWeight: FontWeight.w900,
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 1),
-                        const Text(
-                          'points HF',
-                          maxLines: 1,
-                          style: TextStyle(
-                            color: Color(0xFF4E2E08),
-                            fontSize: 11,
-                            fontWeight: FontWeight.w800,
-                          ),
-                        ),
-                      ],
-                    ),
+                  child: const Icon(
+                    Icons.emoji_events,
+                    color: Color(0xFF3D2307),
+                    size: 24,
                   ),
                 ),
-              ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text(
+                        'Points de HF',
+                        maxLines: 1,
+                        style: TextStyle(
+                          color: Color(0xFFEED58A),
+                          fontSize: 11,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          formattedPoints,
+                          maxLines: 1,
+                          style: const TextStyle(
+                            color: Color(0xFFFFE7A3),
+                            fontSize: 25,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
-            Positioned.fill(
-              child: CustomPaint(painter: _AchievementBadgeBorderPainter()),
-            ),
-          ],
+          ),
         ),
       ),
     );
   }
-}
-
-class _AchievementBadgeClipper extends CustomClipper<Path> {
-  const _AchievementBadgeClipper();
-
-  @override
-  Path getClip(Size size) {
-    return Path()
-      ..moveTo(size.width * 0.12, 0)
-      ..lineTo(size.width * 0.88, 0)
-      ..quadraticBezierTo(size.width, 0, size.width, size.height * 0.15)
-      ..lineTo(size.width * 0.92, size.height * 0.66)
-      ..quadraticBezierTo(
-        size.width * 0.88,
-        size.height * 0.83,
-        size.width * 0.5,
-        size.height,
-      )
-      ..quadraticBezierTo(
-        size.width * 0.12,
-        size.height * 0.83,
-        size.width * 0.08,
-        size.height * 0.66,
-      )
-      ..lineTo(0, size.height * 0.15)
-      ..quadraticBezierTo(0, 0, size.width * 0.12, 0)
-      ..close();
-  }
-
-  @override
-  bool shouldReclip(covariant CustomClipper<Path> oldClipper) => false;
-}
-
-class _AchievementBadgeBorderPainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    final path = const _AchievementBadgeClipper().getClip(size);
-    final innerPath = const _AchievementBadgeClipper()
-        .getClip(Size(size.width - 12, size.height - 12))
-        .shift(const Offset(6, 6));
-    final outerPaint = Paint()
-      ..color = const Color(0xFFFFE69B)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 2;
-    final innerPaint = Paint()
-      ..color = const Color(0xFF5E3708).withAlpha(120)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1;
-
-    canvas.drawPath(path, outerPaint);
-    canvas.drawPath(innerPath, innerPaint);
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
 
 class _CharacterPortraitFrame extends StatelessWidget {
