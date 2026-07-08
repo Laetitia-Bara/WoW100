@@ -30,7 +30,7 @@ class RegionSelectorSheet extends StatefulWidget {
 }
 
 class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
-  late final Future<List<_ExpansionRegionSection>> _sectionsFuture;
+  late final Future<List<_WorldRegionSection>> _sectionsFuture;
   String _query = '';
 
   @override
@@ -39,7 +39,7 @@ class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
     _sectionsFuture = _loadSections();
   }
 
-  Future<List<_ExpansionRegionSection>> _loadSections() async {
+  Future<List<_WorldRegionSection>> _loadSections() async {
     final catalogSections = await WowLocationCatalog.loadAll();
     final catalogByExpansion = {
       for (final catalog in catalogSections) catalog.expansion: catalog,
@@ -62,7 +62,7 @@ class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
           : leftOrder.compareTo(rightOrder);
     });
 
-    final sections = <_ExpansionRegionSection>[];
+    final expansionSections = <_ExpansionRegionSection>[];
 
     for (final expansion in expansions) {
       final items = await widget.repository.getItems(
@@ -78,20 +78,20 @@ class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
               items,
             );
       if (section.regions.isNotEmpty) {
-        sections.add(section);
+        expansionSections.add(section);
       }
     }
 
-    return sections;
+    return _WorldRegionSection.fromExpansionSections(expansionSections);
   }
 
-  List<_ExpansionRegionSection> _filterSections(
-    List<_ExpansionRegionSection> sections,
+  List<_WorldRegionSection> _filterSections(
+    List<_WorldRegionSection> sections,
   ) {
     final query = WowRegionFilter.normalize(_query);
     if (query.isEmpty) return sections;
 
-    final filteredSections = <_ExpansionRegionSection>[];
+    final filteredSections = <_WorldRegionSection>[];
 
     for (final section in sections) {
       final filtered = section.filtered(query);
@@ -114,7 +114,7 @@ class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
                 children: [
                   Expanded(
                     child: Text(
-                      'Recherche par region',
+                      'Recherche par région',
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         fontWeight: FontWeight.w800,
                       ),
@@ -140,7 +140,7 @@ class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
               ),
             ),
             Expanded(
-              child: FutureBuilder<List<_ExpansionRegionSection>>(
+              child: FutureBuilder<List<_WorldRegionSection>>(
                 future: _sectionsFuture,
                 builder: (context, snapshot) {
                   if (!snapshot.hasData) {
@@ -154,7 +154,7 @@ class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
                       child: Padding(
                         padding: EdgeInsets.all(24),
                         child: Text(
-                          'Aucune region ne correspond a cette recherche.',
+                          'Aucune région ne correspond à cette recherche.',
                           style: TextStyle(color: AppTheme.mutedText),
                           textAlign: TextAlign.center,
                         ),
@@ -165,7 +165,7 @@ class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
                   return ListView.builder(
                     itemCount: sections.length,
                     itemBuilder: (context, index) {
-                      return _ExpansionRegionTile(
+                      return _WorldRegionTile(
                         section: sections[index],
                         selectedRegion: widget.selectedRegion,
                         initiallyExpanded: sections.length == 1,
@@ -182,34 +182,31 @@ class _RegionSelectorSheetState extends State<RegionSelectorSheet> {
   }
 }
 
-class _ExpansionRegionTile extends StatelessWidget {
-  const _ExpansionRegionTile({
+class _WorldRegionTile extends StatelessWidget {
+  const _WorldRegionTile({
     required this.section,
     required this.selectedRegion,
     required this.initiallyExpanded,
   });
 
-  final _ExpansionRegionSection section;
+  final _WorldRegionSection section;
   final WowRegionFilter? selectedRegion;
   final bool initiallyExpanded;
 
   @override
   Widget build(BuildContext context) {
-    final info = WowExpansionCatalog.infoOf(section.expansion);
-
     return ExpansionTile(
       initiallyExpanded:
-          initiallyExpanded || selectedRegion?.expansion == section.expansion,
+          initiallyExpanded || section.containsSelected(selectedRegion),
       title: _ZoneCountTitle(
-        label: info.name,
+        label: section.name,
         count: section.zoneCount,
         style: const TextStyle(fontWeight: FontWeight.w800),
       ),
       children: [
-        for (final region in section.regions)
-          _RegionTile(
-            section: section,
-            region: region,
+        for (final continent in section.continents)
+          _ContinentRegionTile(
+            continent: continent,
             selectedRegion: selectedRegion,
           ),
       ],
@@ -217,14 +214,36 @@ class _ExpansionRegionTile extends StatelessWidget {
   }
 }
 
-class _RegionTile extends StatelessWidget {
-  const _RegionTile({
-    required this.section,
-    required this.region,
+class _ContinentRegionTile extends StatelessWidget {
+  const _ContinentRegionTile({
+    required this.continent,
     required this.selectedRegion,
   });
 
-  final _ExpansionRegionSection section;
+  final _ContinentRegionSection continent;
+  final WowRegionFilter? selectedRegion;
+
+  @override
+  Widget build(BuildContext context) {
+    return ExpansionTile(
+      initiallyExpanded: continent.containsSelected(selectedRegion),
+      tilePadding: const EdgeInsets.only(left: 24, right: 16),
+      title: _ZoneCountTitle(
+        label: continent.name,
+        count: continent.zoneCount,
+        style: const TextStyle(fontWeight: FontWeight.w700),
+      ),
+      children: [
+        for (final region in continent.regions)
+          _RegionTile(region: region, selectedRegion: selectedRegion),
+      ],
+    );
+  }
+}
+
+class _RegionTile extends StatelessWidget {
+  const _RegionTile({required this.region, required this.selectedRegion});
+
   final _RegionSection region;
   final WowRegionFilter? selectedRegion;
 
@@ -254,7 +273,8 @@ class _RegionTile extends StatelessWidget {
 
     return ExpansionTile(
       initiallyExpanded:
-          selectedRegion?.expansion == section.expansion &&
+          WowRegionFilter.normalize(selectedRegion?.region ?? '') ==
+              WowRegionFilter.normalize(region.continentName) &&
           WowRegionFilter.normalize(selectedRegion?.zone ?? '') ==
               WowRegionFilter.normalize(region.name),
       tilePadding: const EdgeInsets.only(left: 32, right: 16),
@@ -272,15 +292,6 @@ class _RegionTile extends StatelessWidget {
                   : null,
             ),
             title: Text(option.filter.label),
-            trailing: option.count == 0
-                ? null
-                : Text(
-                    option.count.toString(),
-                    style: const TextStyle(
-                      color: AppTheme.gold,
-                      fontWeight: FontWeight.w800,
-                    ),
-                  ),
             onTap: () => Navigator.pop(context, option.filter),
           ),
       ],
@@ -299,21 +310,9 @@ class _ZoneCountTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     final baseStyle = DefaultTextStyle.of(context).style.merge(style);
 
-    return Text.rich(
-      TextSpan(
-        text: label,
-        style: baseStyle,
-        children: [
-          TextSpan(
-            text: ' ($count)',
-            style: baseStyle.copyWith(
-              color: AppTheme.mutedText,
-              fontSize: (baseStyle.fontSize ?? 14) - 2,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-        ],
-      ),
+    return Text(
+      label,
+      style: baseStyle,
       maxLines: 2,
       overflow: TextOverflow.ellipsis,
     );
@@ -352,7 +351,12 @@ class _ExpansionRegionSection {
           ),
       ];
 
-      return _RegionSection(name: region.name, options: options);
+      return _RegionSection(
+        worldName: region.worldName,
+        continentName: region.continentName,
+        name: region.name,
+        options: options,
+      );
     }).toList();
 
     return _ExpansionRegionSection(expansion: expansion, regions: regions);
@@ -415,7 +419,12 @@ class _ExpansionRegionSection {
               ).compareTo(WowRegionFilter.normalize(right.filter.label)),
             );
 
-          return _RegionSection(name: entry.key, options: options);
+          return _RegionSection(
+            worldName: _worldNameForItems(entry.value),
+            continentName: entry.key,
+            name: entry.key,
+            options: options,
+          );
         }).toList()..sort(
           (left, right) => WowRegionFilter.normalize(
             left.name,
@@ -445,7 +454,12 @@ class _ExpansionRegionSection {
 
       if (options.isNotEmpty) {
         filteredRegions.add(
-          _RegionSection(name: region.name, options: options),
+          _RegionSection(
+            worldName: region.worldName,
+            continentName: region.continentName,
+            name: region.name,
+            options: options,
+          ),
         );
       }
     }
@@ -457,11 +471,188 @@ class _ExpansionRegionSection {
       regions: filteredRegions,
     );
   }
+
+  static String _worldNameForItems(List<_RegionOption> options) {
+    for (final option in options) {
+      final world = option.filter.zone == TrackingItem.unknownZone
+          ? ''
+          : option.filter.region;
+      if (world.isNotEmpty) return world;
+    }
+
+    return TrackingItem.unknownZone;
+  }
+}
+
+class _WorldRegionSection {
+  const _WorldRegionSection({required this.name, required this.continents});
+
+  final String name;
+  final List<_ContinentRegionSection> continents;
+
+  int get zoneCount {
+    return continents.fold(
+      0,
+      (count, continent) => count + continent.zoneCount,
+    );
+  }
+
+  bool containsSelected(WowRegionFilter? selectedRegion) {
+    return continents.any(
+      (continent) => continent.containsSelected(selectedRegion),
+    );
+  }
+
+  _WorldRegionSection? filtered(String query) {
+    final matchesWorld = WowRegionFilter.normalize(name).contains(query);
+    final filteredContinents = <_ContinentRegionSection>[];
+
+    for (final continent in continents) {
+      final filtered = continent.filtered(query, matchesWorld: matchesWorld);
+      if (filtered != null) filteredContinents.add(filtered);
+    }
+
+    if (filteredContinents.isEmpty) return null;
+
+    return _WorldRegionSection(name: name, continents: filteredContinents);
+  }
+
+  static List<_WorldRegionSection> fromExpansionSections(
+    List<_ExpansionRegionSection> expansionSections,
+  ) {
+    final builders = <String, _WorldRegionBuilder>{};
+
+    for (final section in expansionSections) {
+      for (final region in section.regions) {
+        final worldBuilder = builders.putIfAbsent(
+          region.worldName,
+          () => _WorldRegionBuilder(region.worldName),
+        );
+        worldBuilder.add(region);
+      }
+    }
+
+    return builders.values.map((builder) => builder.build()).toList()
+      ..sort((left, right) => _compareLabels(left.name, right.name));
+  }
+}
+
+class _ContinentRegionSection {
+  const _ContinentRegionSection({required this.name, required this.regions});
+
+  final String name;
+  final List<_RegionSection> regions;
+
+  int get zoneCount {
+    return regions.fold(0, (count, region) => count + region.options.length);
+  }
+
+  bool containsSelected(WowRegionFilter? selectedRegion) {
+    if (selectedRegion == null) return false;
+
+    return regions.any((region) {
+      return WowRegionFilter.normalize(selectedRegion.region) ==
+              WowRegionFilter.normalize(name) &&
+          region.options.any(
+            (option) => option.filter.key == selectedRegion.key,
+          );
+    });
+  }
+
+  _ContinentRegionSection? filtered(
+    String query, {
+    required bool matchesWorld,
+  }) {
+    final matchesContinent = WowRegionFilter.normalize(name).contains(query);
+    final filteredRegions = <_RegionSection>[];
+
+    for (final region in regions) {
+      final filtered = region.filtered(
+        query,
+        matchesAncestor: matchesWorld || matchesContinent,
+      );
+      if (filtered != null) filteredRegions.add(filtered);
+    }
+
+    if (filteredRegions.isEmpty) return null;
+
+    return _ContinentRegionSection(name: name, regions: filteredRegions);
+  }
+}
+
+class _WorldRegionBuilder {
+  _WorldRegionBuilder(this.name);
+
+  final String name;
+  final Map<String, _ContinentRegionBuilder> _continents = {};
+
+  void add(_RegionSection region) {
+    final builder = _continents.putIfAbsent(
+      region.continentName,
+      () => _ContinentRegionBuilder(region.continentName),
+    );
+    builder.add(region);
+  }
+
+  _WorldRegionSection build() {
+    final continents =
+        _continents.values.map((builder) => builder.build()).toList()
+          ..sort((left, right) => _compareLabels(left.name, right.name));
+
+    return _WorldRegionSection(name: name, continents: continents);
+  }
+}
+
+class _ContinentRegionBuilder {
+  _ContinentRegionBuilder(this.name);
+
+  final String name;
+  final Map<String, _RegionSection> _regions = {};
+
+  void add(_RegionSection region) {
+    final key = WowRegionFilter.normalize(region.name);
+    final current = _regions[key];
+    if (current == null) {
+      _regions[key] = region;
+      return;
+    }
+
+    final optionsByKey = {
+      for (final option in current.options) option.filter.key: option,
+      for (final option in region.options) option.filter.key: option,
+    };
+
+    final options = optionsByKey.values.toList()
+      ..sort(
+        (left, right) => _compareLabels(left.filter.label, right.filter.label),
+      );
+
+    _regions[key] = _RegionSection(
+      worldName: current.worldName,
+      continentName: current.continentName,
+      name: current.name,
+      options: options,
+    );
+  }
+
+  _ContinentRegionSection build() {
+    final regions = _regions.values.toList()
+      ..sort((left, right) => _compareLabels(left.name, right.name));
+
+    return _ContinentRegionSection(name: name, regions: regions);
+  }
 }
 
 class _RegionSection {
-  const _RegionSection({required this.name, required this.options});
+  const _RegionSection({
+    required this.worldName,
+    required this.continentName,
+    required this.name,
+    required this.options,
+  });
 
+  final String worldName;
+  final String continentName;
   final String name;
   final List<_RegionOption> options;
 
@@ -476,6 +667,25 @@ class _RegionSection {
 
     return option;
   }
+
+  _RegionSection? filtered(String query, {required bool matchesAncestor}) {
+    final matchesRegion = WowRegionFilter.normalize(name).contains(query);
+    final options = this.options.where((option) {
+      return matchesAncestor ||
+          matchesRegion ||
+          WowRegionFilter.normalize(option.filter.zone).contains(query) ||
+          WowRegionFilter.normalize(option.filter.subzone).contains(query);
+    }).toList();
+
+    if (options.isEmpty) return null;
+
+    return _RegionSection(
+      worldName: worldName,
+      continentName: continentName,
+      name: name,
+      options: options,
+    );
+  }
 }
 
 class _RegionOption {
@@ -483,4 +693,10 @@ class _RegionOption {
 
   final WowRegionFilter filter;
   final int count;
+}
+
+int _compareLabels(String left, String right) {
+  return WowRegionFilter.normalize(
+    left,
+  ).compareTo(WowRegionFilter.normalize(right));
 }

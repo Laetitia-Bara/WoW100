@@ -80,6 +80,7 @@ class _PlannerPageState extends State<PlannerPage> {
   WowCharacter? _selectedCharacter;
   String? _selectedCharacterFaction;
   final Set<TrackingCategory> _selectedCategories = {};
+  final Set<WowExpansion> _selectedExtensions = {};
   final Set<String> _selectedGroups = {};
   final Set<String> _selectedDifficulties = {};
   WowRegionFilter? _selectedRegionFilter;
@@ -121,6 +122,9 @@ class _PlannerPageState extends State<PlannerPage> {
 
   bool get _tracksPets => _isExtensionPlanner || _isPetsPlanner;
 
+  bool get _usesObtainmentTypeLabels =>
+      _tracksMounts || _tracksPets || _tracksAchievements;
+
   TrackingCategory? get _regionSelectorCategoryScope {
     if (widget.extension == WowExpansion.allAchievements) {
       return TrackingCategory.achievements;
@@ -151,7 +155,7 @@ class _PlannerPageState extends State<PlannerPage> {
 
   String get _regionFilterEmptyLabel {
     if (_isAllAchievementsPlanner) return 'Toutes les régions';
-    if (_isAllCollectionPlanner) return 'Toutes les extensions';
+    if (_isAllCollectionPlanner) return 'Tous les mondes';
 
     return 'Toutes les régions (En construction ^^)';
   }
@@ -416,6 +420,24 @@ class _PlannerPageState extends State<PlannerPage> {
     return groups;
   }
 
+  List<WowExpansion> _extensionOptions() {
+    final expansions = _items
+        .map((item) => item.expansion)
+        .where(_isFilterableExpansion)
+        .toSet()
+        .toList();
+
+    expansions.sort((left, right) => left.index.compareTo(right.index));
+    return expansions;
+  }
+
+  bool _isFilterableExpansion(WowExpansion expansion) {
+    return expansion != WowExpansion.total &&
+        expansion != WowExpansion.allAchievements &&
+        expansion != WowExpansion.allMounts &&
+        expansion != WowExpansion.allPets;
+  }
+
   List<String> _difficultyOptions() {
     final difficulties = _items
         .map(_difficultyLabel)
@@ -619,6 +641,7 @@ class _PlannerPageState extends State<PlannerPage> {
       builder: (_) => _GroupFilterSheet(
         options: groupOptions,
         selectedGroups: _selectedGroups,
+        useObtainmentTypeLabels: _usesObtainmentTypeLabels,
       ),
     );
 
@@ -629,6 +652,27 @@ class _PlannerPageState extends State<PlannerPage> {
         ..clear()
         ..addAll(result);
       _collapsedGroups.removeAll(result);
+    });
+  }
+
+  Future<void> _openExtensionSelector(
+    List<WowExpansion> extensionOptions,
+  ) async {
+    final result = await showModalBottomSheet<Set<WowExpansion>>(
+      context: context,
+      isScrollControlled: true,
+      builder: (_) => _ExtensionFilterSheet(
+        options: extensionOptions,
+        selectedExtensions: _selectedExtensions,
+      ),
+    );
+
+    if (result == null || !mounted) return;
+
+    setState(() {
+      _selectedExtensions
+        ..clear()
+        ..addAll(result);
     });
   }
 
@@ -675,6 +719,7 @@ class _PlannerPageState extends State<PlannerPage> {
   @override
   Widget build(BuildContext context) {
     final groupOptions = _groupOptions();
+    final extensionOptions = _extensionOptions();
     final difficultyOptions = _difficultyOptions();
     final categoryOptions = _categoryOptions();
 
@@ -687,6 +732,9 @@ class _PlannerPageState extends State<PlannerPage> {
           _selectedCategories.contains(item.category);
       final matchesGroup =
           _selectedGroups.isEmpty || _selectedGroups.contains(group);
+      final matchesExtension =
+          _selectedExtensions.isEmpty ||
+          _selectedExtensions.contains(item.expansion);
       final matchesDifficulty =
           _selectedDifficulties.isEmpty ||
           (difficulty != null && _selectedDifficulties.contains(difficulty));
@@ -697,6 +745,7 @@ class _PlannerPageState extends State<PlannerPage> {
       final matchesSearch =
           query.isEmpty ||
           item.name.toLowerCase().contains(query) ||
+          item.expansion.label.toLowerCase().contains(query) ||
           item.world.toLowerCase().contains(query) ||
           item.region.toLowerCase().contains(query) ||
           item.zone.toLowerCase().contains(query) ||
@@ -716,6 +765,7 @@ class _PlannerPageState extends State<PlannerPage> {
 
       return matchesCategory &&
           matchesRegion &&
+          matchesExtension &&
           matchesGroup &&
           matchesDifficulty &&
           matchesSearch &&
@@ -819,8 +869,16 @@ class _PlannerPageState extends State<PlannerPage> {
                         ),
                         const SizedBox(height: 12),
                       ],
+                      if (extensionOptions.length > 1) ...[
+                        _ExtensionFilterField(
+                          selectedExtensions: _selectedExtensions,
+                          onTap: () => _openExtensionSelector(extensionOptions),
+                        ),
+                        const SizedBox(height: 12),
+                      ],
                       _GroupFilterField(
                         selectedGroups: _selectedGroups,
+                        useObtainmentTypeLabels: _usesObtainmentTypeLabels,
                         onTap: () => _openGroupSelector(groupOptions),
                       ),
                       const SizedBox(height: 12),
@@ -1239,21 +1297,30 @@ class _RegionFilterField extends StatelessWidget {
 }
 
 class _GroupFilterField extends StatelessWidget {
-  const _GroupFilterField({required this.selectedGroups, required this.onTap});
+  const _GroupFilterField({
+    required this.selectedGroups,
+    required this.onTap,
+    this.useObtainmentTypeLabels = false,
+  });
 
   final Set<String> selectedGroups;
   final VoidCallback onTap;
+  final bool useObtainmentTypeLabels;
 
   String get _label {
     if (selectedGroups.isEmpty) {
-      return 'Tous les groupes';
+      return useObtainmentTypeLabels
+          ? 'Tous les types d\'obtention'
+          : 'Tous les groupes';
     }
 
     if (selectedGroups.length <= 2) {
       return selectedGroups.join(', ');
     }
 
-    return '${selectedGroups.length} groupes sélectionnés';
+    return useObtainmentTypeLabels
+        ? '${selectedGroups.length} types sélectionnés'
+        : '${selectedGroups.length} groupes sélectionnés';
   }
 
   @override
@@ -1262,8 +1329,8 @@ class _GroupFilterField extends StatelessWidget {
       borderRadius: BorderRadius.circular(4),
       onTap: onTap,
       child: InputDecorator(
-        decoration: const InputDecoration(
-          labelText: 'Groupes',
+        decoration: InputDecoration(
+          labelText: useObtainmentTypeLabels ? 'Types d\'obtention' : 'Groupes',
           border: OutlineInputBorder(),
         ),
         child: Row(
@@ -1280,6 +1347,68 @@ class _GroupFilterField extends StatelessWidget {
               const SizedBox(width: 8),
               Text(
                 selectedGroups.length.toString(),
+                style: const TextStyle(
+                  color: AppTheme.gold,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+            ],
+            const SizedBox(width: 8),
+            const Icon(Icons.expand_more),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ExtensionFilterField extends StatelessWidget {
+  const _ExtensionFilterField({
+    required this.selectedExtensions,
+    required this.onTap,
+  });
+
+  final Set<WowExpansion> selectedExtensions;
+  final VoidCallback onTap;
+
+  String get _label {
+    if (selectedExtensions.isEmpty) {
+      return 'Toutes les extensions';
+    }
+
+    if (selectedExtensions.length <= 2) {
+      return selectedExtensions.map((extension) => extension.label).join(', ');
+    }
+
+    return '${selectedExtensions.length} extensions sélectionnées';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      borderRadius: BorderRadius.circular(4),
+      onTap: onTap,
+      child: InputDecorator(
+        decoration: const InputDecoration(
+          labelText: 'Extensions',
+          border: OutlineInputBorder(),
+        ),
+        child: Row(
+          children: [
+            const Icon(Icons.public, size: 20),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Text(
+                _label,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontWeight: FontWeight.w700),
+              ),
+            ),
+            if (selectedExtensions.isNotEmpty) ...[
+              const SizedBox(width: 8),
+              Text(
+                selectedExtensions.length.toString(),
                 style: const TextStyle(
                   color: AppTheme.gold,
                   fontWeight: FontWeight.w800,
@@ -1532,10 +1661,12 @@ class _GroupFilterSheet extends StatefulWidget {
   const _GroupFilterSheet({
     required this.options,
     required this.selectedGroups,
+    this.useObtainmentTypeLabels = false,
   });
 
   final List<String> options;
   final Set<String> selectedGroups;
+  final bool useObtainmentTypeLabels;
 
   @override
   State<_GroupFilterSheet> createState() => _GroupFilterSheetState();
@@ -1573,7 +1704,9 @@ class _GroupFilterSheetState extends State<_GroupFilterSheet> {
                 children: [
                   Expanded(
                     child: Text(
-                      'Groupes',
+                      widget.useObtainmentTypeLabels
+                          ? 'Types d\'obtention'
+                          : 'Groupes',
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         fontWeight: FontWeight.w800,
                       ),
@@ -1592,8 +1725,16 @@ class _GroupFilterSheetState extends State<_GroupFilterSheet> {
             ),
             CheckboxListTile(
               value: _tempSelected.isEmpty,
-              title: const Text('Tous les groupes'),
-              subtitle: const Text('Aucun groupe filtré'),
+              title: Text(
+                widget.useObtainmentTypeLabels
+                    ? 'Tous les types d\'obtention'
+                    : 'Tous les groupes',
+              ),
+              subtitle: Text(
+                widget.useObtainmentTypeLabels
+                    ? 'Aucun type d\'obtention filtré'
+                    : 'Aucun groupe filtré',
+              ),
               controlAffinity: ListTileControlAffinity.leading,
               onChanged: (_) {
                 setState(() {
@@ -1626,8 +1767,123 @@ class _GroupFilterSheetState extends State<_GroupFilterSheet> {
                   onPressed: () => Navigator.pop(context, _tempSelected),
                   child: Text(
                     _tempSelected.isEmpty
-                        ? 'Afficher tous les groupes'
+                        ? widget.useObtainmentTypeLabels
+                              ? 'Afficher tous les types d\'obtention'
+                              : 'Afficher tous les groupes'
+                        : widget.useObtainmentTypeLabels
+                        ? 'Appliquer ${_tempSelected.length} type(s)'
                         : 'Appliquer ${_tempSelected.length} groupe(s)',
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ExtensionFilterSheet extends StatefulWidget {
+  const _ExtensionFilterSheet({
+    required this.options,
+    required this.selectedExtensions,
+  });
+
+  final List<WowExpansion> options;
+  final Set<WowExpansion> selectedExtensions;
+
+  @override
+  State<_ExtensionFilterSheet> createState() => _ExtensionFilterSheetState();
+}
+
+class _ExtensionFilterSheetState extends State<_ExtensionFilterSheet> {
+  late final Set<WowExpansion> _tempSelected;
+
+  @override
+  void initState() {
+    super.initState();
+    _tempSelected = {...widget.selectedExtensions};
+  }
+
+  void _toggle(WowExpansion extension, bool selected) {
+    setState(() {
+      if (selected) {
+        _tempSelected.add(extension);
+      } else {
+        _tempSelected.remove(extension);
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: FractionallySizedBox(
+        heightFactor: 0.75,
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      'Extensions',
+                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      setState(() {
+                        _tempSelected.clear();
+                      });
+                    },
+                    child: const Text('Tout effacer'),
+                  ),
+                ],
+              ),
+            ),
+            CheckboxListTile(
+              value: _tempSelected.isEmpty,
+              title: const Text('Toutes les extensions'),
+              subtitle: const Text('Aucune extension filtrée'),
+              controlAffinity: ListTileControlAffinity.leading,
+              onChanged: (_) {
+                setState(() {
+                  _tempSelected.clear();
+                });
+              },
+            ),
+            const Divider(height: 1),
+            Expanded(
+              child: ListView.builder(
+                itemCount: widget.options.length,
+                itemBuilder: (context, index) {
+                  final extension = widget.options[index];
+                  final selected = _tempSelected.contains(extension);
+
+                  return CheckboxListTile(
+                    value: selected,
+                    title: Text(extension.label),
+                    controlAffinity: ListTileControlAffinity.leading,
+                    onChanged: (value) => _toggle(extension, value ?? false),
+                  );
+                },
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+              child: SizedBox(
+                width: double.infinity,
+                child: FilledButton(
+                  onPressed: () => Navigator.pop(context, _tempSelected),
+                  child: Text(
+                    _tempSelected.isEmpty
+                        ? 'Afficher toutes les extensions'
+                        : 'Appliquer ${_tempSelected.length} extension(s)',
                   ),
                 ),
               ),
@@ -1938,7 +2194,9 @@ class _PlannerItemCard extends StatelessWidget {
 
   String _descriptionText(String groupLabel) {
     final values = [
-      if (item.category != TrackingCategory.mounts) item.expansion.label,
+      if (item.category != TrackingCategory.mounts &&
+          item.category != TrackingCategory.pets)
+        item.expansion.label,
       if (item.world.isNotEmpty) item.world,
       if (item.region.isNotEmpty &&
           WowRegionFilter.normalize(item.region) !=
@@ -2249,14 +2507,20 @@ class _CategoryPlannerTag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (category != TrackingCategory.mounts) {
+    final icon = switch (category) {
+      TrackingCategory.mounts => '🐴',
+      TrackingCategory.pets => '🐾',
+      _ => null,
+    };
+
+    if (icon == null) {
       return _PlannerTag(label: category.label);
     }
 
     return Semantics(
       label: category.label,
       child: Chip(
-        label: const Text('🐴', style: TextStyle(fontSize: 16, height: 1)),
+        label: Text(icon, style: const TextStyle(fontSize: 16, height: 1)),
         visualDensity: VisualDensity.compact,
         backgroundColor: Colors.white10,
         side: BorderSide.none,

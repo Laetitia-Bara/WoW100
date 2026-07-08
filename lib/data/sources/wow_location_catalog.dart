@@ -16,7 +16,9 @@ class WowLocationCatalog {
       'assets/generated/locations_reference_catalog.json',
     );
     final data = jsonDecode(jsonString) as Map<String, dynamic>;
+    final worlds = _worldNames(data);
     final continents = _continentNames(data);
+    final continentWorlds = _continentWorldKeys(data);
     final locations = (data['locations'] as List<dynamic>? ?? const [])
         .whereType<Map<String, dynamic>>()
         .toList();
@@ -30,9 +32,14 @@ class WowLocationCatalog {
       final kind = location['kind'] as String? ?? '';
       final regionName = _string(location['regionName']);
       final regionRef = _string(location['regionRef']);
-      final continentName = continents[_string(location['continentKey'])] ?? '';
+      final continentKey = _string(location['continentKey']);
+      final continentName = continents[continentKey] ?? '';
+      final worldName = worlds[continentWorlds[continentKey]] ?? '';
 
-      if (regionName.isEmpty || regionRef.isEmpty || continentName.isEmpty) {
+      if (regionName.isEmpty ||
+          regionRef.isEmpty ||
+          continentName.isEmpty ||
+          worldName.isEmpty) {
         continue;
       }
 
@@ -44,6 +51,7 @@ class WowLocationCatalog {
         regionRef,
         () => _RegionBuilder(
           expansion: expansion,
+          worldName: worldName,
           continentName: continentName,
           regionName: regionName,
         ),
@@ -68,6 +76,16 @@ class WowLocationCatalog {
     ];
   }
 
+  static Map<String, String> _worldNames(Map<String, dynamic> data) {
+    final worlds = data['worlds'] as List<dynamic>? ?? const [];
+
+    return {
+      for (final world in worlds.whereType<Map<String, dynamic>>())
+        if (_string(world['key']).isNotEmpty)
+          _string(world['key']): _string(world['name']),
+    };
+  }
+
   static Map<String, String> _continentNames(Map<String, dynamic> data) {
     final continents = data['continents'] as List<dynamic>? ?? const [];
 
@@ -75,6 +93,16 @@ class WowLocationCatalog {
       for (final continent in continents.whereType<Map<String, dynamic>>())
         if (_string(continent['key']).isNotEmpty)
           _string(continent['key']): _string(continent['name']),
+    };
+  }
+
+  static Map<String, String> _continentWorldKeys(Map<String, dynamic> data) {
+    final continents = data['continents'] as List<dynamic>? ?? const [];
+
+    return {
+      for (final continent in continents.whereType<Map<String, dynamic>>())
+        if (_string(continent['key']).isNotEmpty)
+          _string(continent['key']): _string(continent['worldKey']),
     };
   }
 
@@ -119,12 +147,14 @@ class WowLocationCatalog {
 class WowCatalogRegion {
   const WowCatalogRegion({
     required this.expansion,
+    required this.worldName,
     required this.continentName,
     required this.name,
     required this.subzones,
   });
 
   final WowExpansion expansion;
+  final String worldName;
   final String continentName;
   final String name;
   final List<String> subzones;
@@ -150,11 +180,13 @@ class WowCatalogRegion {
 class _RegionBuilder {
   _RegionBuilder({
     required this.expansion,
+    required this.worldName,
     required this.continentName,
     required this.regionName,
   });
 
   final WowExpansion expansion;
+  final String worldName;
   final String continentName;
   final String regionName;
   final Set<String> _subzones = {};
@@ -169,6 +201,7 @@ class _RegionBuilder {
 
     return WowCatalogRegion(
       expansion: expansion,
+      worldName: worldName,
       continentName: continentName,
       name: regionName,
       subzones: subzones,
