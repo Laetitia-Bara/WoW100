@@ -125,6 +125,12 @@ class JsonPlannerSource {
           _metadataString(manual, 'difficulty') ??
           _metadataString(draft, 'difficulty') ??
           _metadataString(mamytwink, 'difficulty');
+      final dropRate =
+          _firstMetadataString(wowhead, _dropRateKeys) ??
+          _firstMetadataString(manual, _dropRateKeys) ??
+          _firstMetadataString(draft, _dropRateKeys) ??
+          _firstMetadataString(mamytwink, _dropRateKeys) ??
+          _firstMetadataString(reference, _dropRateKeys);
       final sourceName = (wowheadSource?.isNotEmpty ?? false)
           ? wowheadSource!
           : (manualSource?.isNotEmpty ?? false)
@@ -187,6 +193,7 @@ class JsonPlannerSource {
           obtained: false,
           unavailable: unavailable,
           difficulty: difficulty ?? '',
+          dropRate: dropRate ?? '',
           blizzardId: blizzardId,
           wowheadItemId: wowheadItemId,
           boss: wowhead?['boss'] ?? manual?['boss'] ?? '',
@@ -344,11 +351,33 @@ class JsonPlannerSource {
 
     final direct = metadata[key];
     if (direct is String && direct.isNotEmpty) return direct;
+    if (direct is num) return direct.toString();
 
     final mamytwink = metadata['mamytwink'];
     if (mamytwink is Map<String, dynamic>) {
       final nested = mamytwink[key];
       if (nested is String && nested.isNotEmpty) return nested;
+      if (nested is num) return nested.toString();
+    }
+
+    return null;
+  }
+
+  static const List<String> _dropRateKeys = [
+    'dropRate',
+    'dropChance',
+    'drop_rate',
+    'drop_chance',
+    'drop',
+  ];
+
+  String? _firstMetadataString(
+    Map<String, dynamic>? metadata,
+    List<String> keys,
+  ) {
+    for (final key in keys) {
+      final value = _metadataString(metadata, key);
+      if (value != null) return value;
     }
 
     return null;

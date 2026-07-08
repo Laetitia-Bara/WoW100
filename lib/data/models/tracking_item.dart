@@ -61,6 +61,9 @@ class TrackingItem {
   /// Niveau de difficulte de recuperation lorsque le catalogue le connait.
   final String difficulty;
 
+  /// Taux de drop affiche lorsque le catalogue le connait.
+  final String dropRate;
+
   final int? blizzardId;
 
   final String boss;
@@ -92,6 +95,7 @@ class TrackingItem {
     required this.obtained,
     this.unavailable = false,
     this.difficulty = '',
+    this.dropRate = '',
     this.blizzardId,
     required this.boss,
     this.externalUrl = '',
@@ -121,6 +125,7 @@ class TrackingItem {
       obtained: obtained ?? this.obtained,
       unavailable: unavailable,
       difficulty: difficulty,
+      dropRate: dropRate,
       blizzardId: blizzardId,
       boss: boss,
       externalUrl: externalUrl,
@@ -154,6 +159,13 @@ class TrackingItem {
       obtained: false,
       unavailable: json['unavailable'] ?? _looksUnavailable(json),
       difficulty: json['difficulty'] ?? '',
+      dropRate: _firstJsonDisplayString(json, [
+        'dropRate',
+        'dropChance',
+        'drop_rate',
+        'drop_chance',
+        'drop',
+      ]),
       blizzardId: json['blizzardId'],
       boss: json['boss'] ?? '',
       externalUrl: json['externalUrl'] ?? json['mamytwinkUrl'] ?? '',
@@ -207,6 +219,33 @@ class TrackingItem {
     for (final key in keys) {
       final value = _jsonString(json[key]);
       if (value.isNotEmpty) return value;
+    }
+
+    return '';
+  }
+
+  static String _jsonDisplayString(dynamic value) {
+    if (value is String) return value.trim();
+    if (value is num) return value.toString();
+
+    return '';
+  }
+
+  static String _firstJsonDisplayString(
+    Map<String, dynamic> json,
+    List<String> keys,
+  ) {
+    for (final source in [
+      json,
+      if (json['mamytwink'] is Map<String, dynamic>)
+        json['mamytwink'] as Map<String, dynamic>,
+      if (json['wowhead'] is Map<String, dynamic>)
+        json['wowhead'] as Map<String, dynamic>,
+    ]) {
+      for (final key in keys) {
+        final value = _jsonDisplayString(source[key]);
+        if (value.isNotEmpty) return value;
+      }
     }
 
     return '';

@@ -1527,11 +1527,13 @@ class _PlannerItemCard extends StatelessWidget {
 
   List<_PlannerTag> _metadataTags() {
     final difficultyTag = _difficultyTag();
+    final dropRateTag = _dropRateTag();
     final extensionTag = _extensionTag();
     final regionLabel = _regionLabel();
 
     return [
       ?difficultyTag,
+      ?dropRateTag,
       ?extensionTag,
       if (regionLabel != null) _PlannerTag(label: regionLabel),
     ];
@@ -1546,6 +1548,23 @@ class _PlannerItemCard extends StatelessWidget {
 
     final colors = _difficultyColors(normalized);
 
+    return _PlannerTag(
+      label: label,
+      backgroundColor: colors.$1,
+      foregroundColor: colors.$2,
+    );
+  }
+
+  _PlannerTag? _dropRateTag() {
+    if (item.category != TrackingCategory.mounts &&
+        item.category != TrackingCategory.pets) {
+      return null;
+    }
+
+    final label = _dropRateLabel(item.dropRate);
+    if (label == null) return null;
+
+    final colors = _dropRateColors(label);
     return _PlannerTag(
       label: label,
       backgroundColor: colors.$1,
@@ -1612,6 +1631,54 @@ class _PlannerItemCard extends StatelessWidget {
     return (const Color(0xFF334155), const Color(0xFFE2E8F0));
   }
 
+  String? _dropRateLabel(String value) {
+    final trimmed = value.trim();
+    if (trimmed.isEmpty) return null;
+
+    final normalized = WowRegionFilter.normalize(trimmed);
+    if (normalized == 'n a' ||
+        normalized == 'na' ||
+        normalized == 'inconnu' ||
+        normalized == 'unknown' ||
+        normalized == 'a verifier' ||
+        normalized == 'non renseigne' ||
+        normalized == 'pas de taux') {
+      return null;
+    }
+
+    final match = RegExp(r'(\d+(?:[,.]\d+)?)').firstMatch(trimmed);
+    if (match == null) return trimmed;
+
+    final rate = double.tryParse(match.group(1)!.replaceAll(',', '.'));
+    if (rate == null) return trimmed;
+
+    final formatted = rate == rate.roundToDouble()
+        ? rate.toInt().toString()
+        : rate.toString().replaceAll('.', ',');
+
+    return '$formatted%';
+  }
+
+  (Color, Color) _dropRateColors(String label) {
+    final match = RegExp(r'(\d+(?:[,.]\d+)?)').firstMatch(label);
+    final rate = match == null
+        ? null
+        : double.tryParse(match.group(1)!.replaceAll(',', '.'));
+
+    if (rate == null) {
+      return (const Color(0xFF334155), const Color(0xFFE2E8F0));
+    }
+
+    if (rate >= 50) {
+      return (const Color(0xFF14532D), const Color(0xFF86EFAC));
+    }
+    if (rate >= 5) {
+      return (const Color(0xFF713F12), const Color(0xFFFDE68A));
+    }
+
+    return (const Color(0xFF7F1D1D), const Color(0xFFFCA5A5));
+  }
+
   @override
   Widget build(BuildContext context) {
     final isMount = item.category == TrackingCategory.mounts;
@@ -1619,14 +1686,14 @@ class _PlannerItemCard extends StatelessWidget {
     final wowheadUrl = _wowheadUrl(context);
     final groupLabel =
         AchievementGroupHierarchy.labelFor(item) ?? item.instance;
-    final tags = [
+    final tags = <Widget>[
       if (item.unavailable)
         const _PlannerTag(
           label: 'Indisponible',
           backgroundColor: Color(0xFF7F1D1D),
           foregroundColor: Color(0xFFFEE2E2),
         ),
-      _PlannerTag(label: item.category.label),
+      _CategoryPlannerTag(category: item.category),
       ..._metadataTags(),
       _PlannerTag(label: item.weeklyLockout ? 'Hebdomadaire' : 'Farm libre'),
       if (item.groupRequired) const _PlannerTag(label: 'Groupe conseillé'),
@@ -1896,6 +1963,31 @@ class _PlannerTag extends StatelessWidget {
       visualDensity: VisualDensity.compact,
       backgroundColor: backgroundColor,
       side: BorderSide.none,
+    );
+  }
+}
+
+class _CategoryPlannerTag extends StatelessWidget {
+  const _CategoryPlannerTag({required this.category});
+
+  final TrackingCategory category;
+
+  @override
+  Widget build(BuildContext context) {
+    if (category != TrackingCategory.mounts) {
+      return _PlannerTag(label: category.label);
+    }
+
+    return Semantics(
+      label: category.label,
+      child: Chip(
+        label: const Text('🐴', style: TextStyle(fontSize: 16, height: 1)),
+        visualDensity: VisualDensity.compact,
+        backgroundColor: Colors.white10,
+        side: BorderSide.none,
+        padding: const EdgeInsets.symmetric(horizontal: 4),
+        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+      ),
     );
   }
 }
