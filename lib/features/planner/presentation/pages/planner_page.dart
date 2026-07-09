@@ -2281,7 +2281,6 @@ class _PlannerItemCard extends StatelessWidget {
       _CategoryPlannerTag(category: item.category),
       ..._metadataTags(),
       _PlannerTag(label: item.weeklyLockout ? 'Hebdomadaire' : 'Farm libre'),
-      if (item.groupRequired) const _PlannerTag(label: 'Groupe conseillé'),
       if (item.obtained) const _PlannerTag(label: 'Obtenu'),
     ];
 
