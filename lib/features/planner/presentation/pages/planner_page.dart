@@ -547,7 +547,11 @@ class _PlannerPageState extends State<PlannerPage> {
 
   String _groupLabel(TrackingItem item) {
     final achievementGroup = AchievementGroupHierarchy.labelFor(item);
-    if (achievementGroup != null) return achievementGroup;
+    if (achievementGroup != null) {
+      return _usesObtainmentTypeLabels
+          ? _compactObtainmentTypeLabel(achievementGroup)
+          : achievementGroup;
+    }
 
     final group = item.instance.trim();
 
@@ -575,7 +579,17 @@ class _PlannerPageState extends State<PlannerPage> {
       return 'Retirées / indisponibles';
     }
 
-    return group;
+    return _usesObtainmentTypeLabels
+        ? _compactObtainmentTypeLabel(group)
+        : group;
+  }
+
+  String _compactObtainmentTypeLabel(String label) {
+    final separatorIndex = label.indexOf(' > ');
+    if (separatorIndex == -1) return label;
+
+    final parentLabel = label.substring(0, separatorIndex).trim();
+    return parentLabel.isEmpty ? label : parentLabel;
   }
 
   int _compareGroups(String left, String right) {
