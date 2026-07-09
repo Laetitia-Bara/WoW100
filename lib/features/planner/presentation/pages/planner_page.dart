@@ -548,8 +548,8 @@ class _PlannerPageState extends State<PlannerPage> {
   String _groupLabel(TrackingItem item) {
     final achievementGroup = AchievementGroupHierarchy.labelFor(item);
     if (achievementGroup != null) {
-      return _usesObtainmentTypeLabels
-          ? _compactObtainmentTypeLabel(achievementGroup)
+      return _usesFlatAchievementGroups
+          ? AchievementGroupHierarchy.rootLabel(achievementGroup)
           : achievementGroup;
     }
 
@@ -583,6 +583,9 @@ class _PlannerPageState extends State<PlannerPage> {
         ? _compactObtainmentTypeLabel(group)
         : group;
   }
+
+  bool get _usesFlatAchievementGroups =>
+      _isAllAchievementsPlanner || _usesObtainmentTypeLabels;
 
   String _compactObtainmentTypeLabel(String label) {
     final separatorIndex = label.indexOf(' > ');

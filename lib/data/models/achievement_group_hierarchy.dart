@@ -410,6 +410,11 @@ class AchievementGroupHierarchy {
     return '$root$separator$leaf';
   }
 
+  static String rootLabel(String label) {
+    final parts = _split(label);
+    return parts.root;
+  }
+
   static int? compare(String left, String right) {
     final leftParts = _split(left);
     final rightParts = _split(right);
