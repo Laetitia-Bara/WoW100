@@ -16,6 +16,10 @@ const paths = {
     "mamytwink_mount_detail_cache.json",
   ),
   manualMetadata: path.join(metadataDir, "mounts_metadata.json"),
+  manualReviewOverrides: path.join(
+    metadataDir,
+    "mount_manual_review_overrides.json",
+  ),
   locationOverrides: path.join(metadataDir, "mount_location_overrides.json"),
   locationAssignments: path.join(
     metadataDir,
@@ -400,21 +404,30 @@ function buildReferenceMount({
   wowheadOverride,
   wowheadCacheEntry,
   manualMetadata,
+  manualReviewOverride,
   locationAssignment,
   legacyLocationOverride,
   locationIndex,
 }) {
+  const sourceFromManualReview = cleanSource(manualReviewOverride?.source);
   const sourceFromWowhead = cleanSource(
     wowheadOverride?.source ?? wowheadOverride?.sourceName,
   );
   const sourceFromMamytwink = cleanSource(
     mamytwinkDetail?.source ?? mamytwinkCandidate?.source,
   );
+  const difficultyFromManualReview = firstNonEmpty(
+    manualReviewOverride?.difficulty,
+  );
   const difficultyFromMamytwink = firstNonEmpty(
     mamytwinkDetail?.difficulty,
     mamytwinkCandidate?.difficulty,
   );
+  const expansionFromManualReview = firstNonEmpty(
+    manualReviewOverride?.expansion,
+  );
   const expansionFromMamytwink = firstNonEmpty(mamytwinkCandidate?.expansion);
+  const patchFromManualReview = firstNonEmpty(manualReviewOverride?.patch);
   const patchFromMamytwink = firstNonEmpty(mamytwinkDetail?.patch);
   const mamytwinkUrl = firstNonEmpty(
     mamytwinkDetail?.url,
@@ -443,16 +456,32 @@ function buildReferenceMount({
   const selectedLocations = manualLocation?.locations ??
     (selectedLocation ? [selectedLocation] : []);
   const wowheadLink = wowheadUrlFor(mount, wowheadOverride, wowheadCacheEntry);
+  const manualLocationIsNotApplicable =
+    manualReviewOverride?.locationApplicability === "not_applicable";
   const missingFields = [];
   const fieldSources = {
-    difficulty: difficultyFromMamytwink ? "mamytwink" : "manual_required",
-    source: sourceFromWowhead
+    difficulty: difficultyFromManualReview
+      ? "user_manual_review"
+      : difficultyFromMamytwink
+        ? "mamytwink"
+        : "manual_required",
+    source: sourceFromManualReview
+      ? "user_manual_review"
+      : sourceFromWowhead
       ? "wowhead_override"
       : sourceFromMamytwink
         ? "mamytwink"
         : "manual_required",
-    expansion: expansionFromMamytwink ? "mamytwink" : "manual_required",
-    patch: patchFromMamytwink ? "mamytwink_detail" : "manual_required",
+    expansion: expansionFromManualReview
+      ? "user_manual_review"
+      : expansionFromMamytwink
+        ? "mamytwink"
+        : "manual_required",
+    patch: patchFromManualReview
+      ? "user_manual_review"
+      : patchFromMamytwink
+        ? "mamytwink_detail"
+        : "manual_required",
     mamytwinkUrl: mamytwinkUrl ? "mamytwink" : "manual_required",
     wowheadUrl:
       wowheadOverride?.externalUrl || wowheadCacheEntry
@@ -473,10 +502,11 @@ function buildReferenceMount({
         : "manual_required",
   };
   const values = {
-    difficulty: difficultyFromMamytwink || TBD,
-    source: sourceFromWowhead || sourceFromMamytwink || TBD,
-    expansion: expansionFromMamytwink || TBD,
-    patch: patchFromMamytwink || TBD,
+    difficulty: difficultyFromManualReview || difficultyFromMamytwink || TBD,
+    source:
+      sourceFromManualReview || sourceFromWowhead || sourceFromMamytwink || TBD,
+    expansion: expansionFromManualReview || expansionFromMamytwink || TBD,
+    patch: patchFromManualReview || patchFromMamytwink || TBD,
     mamytwinkUrl: mamytwinkUrl || "",
     wowheadUrl: wowheadLink.url,
   };
@@ -484,7 +514,7 @@ function buildReferenceMount({
   for (const [key, value] of Object.entries(values)) {
     if (!value || value === TBD) missingFields.push(key);
   }
-  if (!selectedLocation) {
+  if (!selectedLocation && !manualLocationIsNotApplicable) {
     missingFields.push(
       locationCandidates.length ? "locationDecision" : "locationCandidates",
     );
@@ -501,8 +531,13 @@ function buildReferenceMount({
     requirements: mount.requirements ?? null,
     source: values.source,
     acquisitionCategory:
-      wowheadOverride?.category ?? manualMetadata?.category ?? mamytwinkCandidate?.source ?? TBD,
+      manualReviewOverride?.category ??
+      wowheadOverride?.category ??
+      manualMetadata?.category ??
+      mamytwinkCandidate?.source ??
+      TBD,
     difficulty: values.difficulty,
+    dropRate: manualReviewOverride?.dropRate ?? "",
     expansion: values.expansion,
     patch: values.patch,
     mamytwinkUrl: values.mamytwinkUrl,
@@ -548,15 +583,22 @@ function buildReferenceMount({
               "mamytwink_keywords_and_locations_reference_catalog",
             confidence: "unique_candidate",
           }
-      : {
-          status: locationCandidates.length
-            ? "manual_choice_required"
-            : "no_candidate",
+        : {
+          status: manualLocationIsNotApplicable
+            ? "not_applicable_manual_review"
+            : locationCandidates.length
+              ? "manual_choice_required"
+              : "no_candidate",
           primaryLocationRef: null,
           locationRefs: [],
           pathLabel: "",
-          source: "manual_required",
-          confidence: "unresolved",
+          source: manualLocationIsNotApplicable
+            ? "user_manual_review"
+            : "manual_required",
+          confidence: manualLocationIsNotApplicable
+            ? "confirmed"
+            : "unresolved",
+          note: manualReviewOverride?.locationText ?? "",
         },
     primaryLocationRef: selectedLocationDescription?.ref ?? null,
     locationRefs: selectedLocations.map(
@@ -608,6 +650,19 @@ function buildReferenceMount({
           }
         : null,
     },
+    manualReview: manualReviewOverride
+      ? {
+          source: "mount_manual_review_overrides.json",
+          reviewedAt: manualReviewOverride.reviewedAt ?? null,
+          availabilityStatus:
+            manualReviewOverride.availabilityStatus ?? "available",
+          locationText: manualReviewOverride.locationText ?? "",
+          locationApplicability:
+            manualReviewOverride.locationApplicability ?? "unknown",
+          keywords: manualReviewOverride.keywords ?? [],
+          notes: manualReviewOverride.notes ?? "",
+        }
+      : null,
     fieldSources,
     missingFields,
   };
@@ -667,6 +722,9 @@ function buildLocationReview(referenceMounts) {
     source: mount.source,
     extension: mount.expansion,
     patch: mount.patch,
+    "taux drop": mount.dropRate,
+    Difficulty: mount.difficulty,
+    "Key words": (mount.manualReview?.keywords ?? []).join(", "),
     statutLocalisation: mount.locationAssignment.status,
     nombreCandidates: mount.locationCandidates.length,
     primaryLocationRef: mount.primaryLocationRef ?? "",
@@ -683,7 +741,10 @@ function buildLocationReview(referenceMounts) {
     wowheadUrl: mount.wowheadUrl,
     decisionLocationRef: "",
     decisionStatut: "",
-    notes: mount.locationAssignment.note ?? "",
+    notes:
+      mount.manualReview?.notes ||
+      mount.locationAssignment.note ||
+      "",
   }));
 }
 
@@ -767,6 +828,7 @@ async function main() {
     mamytwinkData,
     mamytwinkDetailCache,
     manualMetadata,
+    manualReviewOverrides,
     locationAssignmentsData,
     locationOverrides,
     wowheadOverrides,
@@ -777,6 +839,7 @@ async function main() {
     loadJson(paths.mamytwinkCandidates, { candidates: [] }),
     loadJson(paths.mamytwinkDetailCache, { details: {} }),
     loadJson(paths.manualMetadata, []),
+    loadJson(paths.manualReviewOverrides, { overrides: [] }),
     loadJson(paths.locationAssignments, { assignments: [] }),
     loadJson(paths.locationOverrides, []),
     loadJson(paths.wowheadOverrides, []),
@@ -791,6 +854,9 @@ async function main() {
   const mamytwinkCandidates = mamytwinkData.candidates ?? [];
   const mamytwinkById = byBlizzardId(mamytwinkCandidates);
   const manualById = byBlizzardId(manualMetadata);
+  const manualReviewById = byBlizzardId(
+    manualReviewOverrides.overrides ?? [],
+  );
   const locationAssignmentById = byBlizzardId(
     locationAssignmentsData.assignments ?? [],
   );
@@ -817,6 +883,7 @@ async function main() {
         wowheadOverride: wowheadById.get(mount.id),
         wowheadCacheEntry: wowheadPatchCache.entries?.[`mount:${mount.id}`],
         manualMetadata: manualById.get(mount.id),
+        manualReviewOverride: manualReviewById.get(mount.id),
         locationAssignment: locationAssignmentById.get(mount.id),
         legacyLocationOverride: locationOverrideById.get(mount.id),
         locationIndex,

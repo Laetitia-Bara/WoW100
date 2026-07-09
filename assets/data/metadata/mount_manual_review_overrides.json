@@ -1,0 +1,1377 @@
+{
+  "schemaVersion": 1,
+  "description": "Overrides issus des lignes deja verifiees dans mount_location_manual_review.csv. Ne pas modifier le CSV de suivi utilisateur depuis ce fichier.",
+  "sourceFile": "assets/generated/mount_location_manual_review.csv",
+  "reviewedRange": "blizzardId <= 100",
+  "generatedAt": "2026-07-09T17:39:11.146Z",
+  "overrides": [
+    {
+      "blizzardId": 6,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "chaval",
+        "alliance",
+        "faction",
+        "réputation",
+        "Unger Statforth",
+        "Gregor MacVince",
+        "Katie Hunter",
+        "Katie Stokx"
+      ],
+      "locationText": "Les Paluns > Port de Ménéthil / Hurlevent / Forêt d'Elwynn > Camp du bûcheron du Val d'Est / Marécage d'âprefange > île de Théramore",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "4 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 7,
+      "source": "Jamais implémentée",
+      "expansion": "Jamais implémentée",
+      "patch": "Jamais implémentée",
+      "dropRate": "Jamais implémentée",
+      "difficulty": "Jamais implémentée",
+      "keywords": [
+        "Jamais implémentée"
+      ],
+      "locationText": "Jamais implémentée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "never_implemented",
+      "notes": "Jamais implémentée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 8,
+      "source": "Supprimée",
+      "expansion": "Supprimée",
+      "patch": "Supprimée",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 9,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Cheval humain",
+        "monture réputation Hurlevent",
+        "Katie Stokx",
+        "Unger Statforth",
+        "faction",
+        "alliance"
+      ],
+      "locationText": "Les Paluns > Port de Ménéthil / Hurlevent",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "2 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 11,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "chaval",
+        "alliance",
+        "faction",
+        "réputation",
+        "Unger Statforth",
+        "Gregor MacVince",
+        "Katie Hunter",
+        "Katie Stokx"
+      ],
+      "locationText": "Les Paluns > Port de Ménéthil / Hurlevent / Forêt d'Elwynn > Camp du bûcheron du Val d'Est / Marécage d'âprefange > île de Théramore",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "4 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 12,
+      "source": "Supprimée",
+      "expansion": "Supprimée",
+      "patch": "Supprimée",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 13,
+      "source": "Supprimée",
+      "expansion": "Supprimée",
+      "patch": "Supprimée",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 14,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Loup orc",
+        "monture réputation Orgrimmar",
+        "faction",
+        "Horde",
+        "Ogunaro Mèneloup"
+      ],
+      "locationText": "Orgrimmar",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 15,
+      "source": "Supprimée",
+      "expansion": "Supprimée",
+      "patch": "Supprimée",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 17,
+      "source": "Classe",
+      "expansion": "vanilla",
+      "patch": "vanilla",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Cheval Démoniste classe quête"
+      ],
+      "locationText": "Maïtres de classe",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "class_mount",
+      "notes": "Monture de classe",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 18,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "chaval",
+        "alliance",
+        "faction",
+        "réputation",
+        "Unger Statforth",
+        "Gregor MacVince",
+        "Katie Hunter",
+        "Katie Stokx"
+      ],
+      "locationText": "Les Paluns > Port de Ménéthil / Hurlevent / Forêt d'Elwynn > Camp du bûcheron du Val d'Est / Marécage d'âprefange > île de Théramore",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "4 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 19,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Loup orc",
+        "monture réputation Orgrimmar",
+        "faction",
+        "Horde",
+        "Ogunaro Mèneloup"
+      ],
+      "locationText": "Orgrimmar",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 20,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Loup orc",
+        "monture réputation Orgrimmar",
+        "faction",
+        "Horde",
+        "Ogunaro Mèneloup"
+      ],
+      "locationText": "Orgrimmar",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 21,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Bélier nain",
+        "monture réputation faction alliance Forgefer",
+        "Veron Distillambre"
+      ],
+      "locationText": "Dun Morogh > Ferme des Distillambre",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 22,
+      "source": "Supprimée",
+      "expansion": "vanilla",
+      "patch": "Supprimée",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 24,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Bélier nain",
+        "monture réputation faction alliance Forgefer",
+        "Veron Distillambre"
+      ],
+      "locationText": "Dun Morogh > Ferme des Distillambre",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 25,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Bélier nain",
+        "monture réputation faction alliance Forgefer",
+        "Veron Distillambre"
+      ],
+      "locationText": "Dun Morogh > Ferme des Distillambre",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 26,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Sabre elfe de la nuit réputation faction alliance Lelanai"
+      ],
+      "locationText": "Darnassus / Hurlevent / Amirdrassil",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "3 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 27,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Raptor trolls sombrelances réputation faction Horde Zjolnir"
+      ],
+      "locationText": "Durotar > Sen'Jin",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 28,
+      "source": "Jamais implémentée",
+      "expansion": "Jamais implémentée",
+      "patch": "Jamais implémentée",
+      "dropRate": "Jamais implémentée",
+      "difficulty": "Jamais implémentée",
+      "keywords": [
+        "Jamais implémentée"
+      ],
+      "locationText": "Jamais implémentée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "never_implemented",
+      "notes": "Jamais implémentée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 31,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Sabre elfe de la nuit réputation faction alliance Lelanai"
+      ],
+      "locationText": "Darnassus / Hurlevent / Amirdrassil",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "3 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 32,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "Supprimée",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 34,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Sabre elfe de la nuit réputation faction alliance Lelanai"
+      ],
+      "locationText": "Darnassus / Hurlevent / Amirdrassil",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "3 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 35,
+      "source": "Supprimée",
+      "expansion": "Supprimée",
+      "patch": "Supprimée",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 36,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Raptor trolls sombrelances réputation faction Horde Zjolnir"
+      ],
+      "locationText": "Durotar > Sen'Jin",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 38,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Raptor trolls sombrelances réputation faction Horde Zjolnir"
+      ],
+      "locationText": "Durotar > Sen'Jin",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 39,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Mécanotrotteur gnome réputation Gnomeragan faction Alliance Milli Siffleplume"
+      ],
+      "locationText": "Dun Morogh > Kharanos",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 40,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Mécanotrotteur gnome réputation Gnomeragan faction Alliance Milli Siffleplume"
+      ],
+      "locationText": "Dun Morogh > Kharanos",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 41,
+      "source": "Classe",
+      "expansion": "vanilla",
+      "patch": "vanilla",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Cheval Paladin classe quête faction Alliance"
+      ],
+      "locationText": "Maïtres de classe",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "class_mount",
+      "notes": "Monture de classe",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 42,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 43,
+      "source": "Supprimée",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 45,
+      "source": "Supprimée",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 46,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 50,
+      "source": "Supprimée",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 51,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 52,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 53,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Indisponible"
+      ],
+      "locationText": "Indisponible",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "unavailable",
+      "notes": "Indisponible",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 54,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 55,
+      "source": "Quête",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Moyen",
+      "keywords": [
+        "Sabre faction Alliance quêtes Rivern Givrevent"
+      ],
+      "locationText": "Berceau de l'Hiver > Roc des Sabres de Givre",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 56,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 57,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Mécanotrotteur gnome réputation Gnomeragan faction Alliance Milli Siffleplume"
+      ],
+      "locationText": "Dun Morogh > Kharanos",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 58,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Mécanotrotteur gnome réputation Gnomeragan faction Alliance Milli Siffleplume"
+      ],
+      "locationText": "Dun Morogh > Kharanos",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 62,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 63,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 64,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 65,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Cheval faction Horde réputation Fossoyeuse réprouvé mort-vivant Zachariah Post"
+      ],
+      "locationText": "Orgrimmar / Clairières de Tirisfal > Brill / Clairières de Tirisfal > Fossoyeuse",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "3 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 66,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Cheval faction Horde réputation Fossoyeuse réprouvé mort-vivant Zachariah Post"
+      ],
+      "locationText": "Orgrimmar / Clairières de Tirisfal > Brill / Clairières de Tirisfal > Fossoyeuse",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "3 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 67,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Cheval faction Horde réputation Fossoyeuse réprouvé mort-vivant Zachariah Post"
+      ],
+      "locationText": "Orgrimmar / Clairières de Tirisfal > Brill / Clairières de Tirisfal > Fossoyeuse",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "3 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 68,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Cheval faction Horde réputation Fossoyeuse réprouvé mort-vivant Zachariah Post"
+      ],
+      "locationText": "Orgrimmar / Clairières de Tirisfal > Brill / Clairières de Tirisfal > Fossoyeuse",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "3 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 69,
+      "source": "Butin",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0,9",
+      "difficulty": "Difficile",
+      "keywords": [
+        "Cheval barron",
+        "Destrier de Vaillefendre",
+        "Stratholme",
+        "donjon",
+        "drop",
+        "Seigneur Aurius Vaillefendre"
+      ],
+      "locationText": "Stratholme (Donjon)",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "Se drop sur le Seigneur Aurius Vaillefendre (Donjon), ajouter un tag \"Donjon\"",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 70,
+      "source": "Jamais implémentée",
+      "expansion": "Jamais implémentée",
+      "patch": "Jamais implémentée",
+      "dropRate": "Jamais implémentée",
+      "difficulty": "Jamais implémentée",
+      "keywords": [
+        "Jamais implémentée"
+      ],
+      "locationText": "Jamais implémentée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "never_implemented",
+      "notes": "Jamais implémentée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 71,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Kodo faction Horde réputation Pitons-du-Tonnerre Harb Sabot-griffu"
+      ],
+      "locationText": "Mulgore > Sabot-de-Sang",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 72,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Kodo faction Horde réputation Pitons-du-Tonnerre Harb Sabot-griffu"
+      ],
+      "locationText": "Mulgore > Sabot-de-Sang",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 73,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 74,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "0",
+      "difficulty": "Indisponible",
+      "keywords": [
+        "Supprimée"
+      ],
+      "locationText": "Supprimée",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "removed",
+      "notes": "Supprimée",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 75,
+      "source": "Vendeur",
+      "expansion": "tbc",
+      "patch": "2.0.1",
+      "dropRate": "100",
+      "difficulty": "Moyen",
+      "keywords": [
+        "Cheval Palefroi PvP marque d'honneur",
+        "faction Alliance",
+        "JcJ",
+        "Lieutenant Karter"
+      ],
+      "locationText": "Hurlevent",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "Monnaie JcJ",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 76,
+      "source": "Vendeur",
+      "expansion": "tbc",
+      "patch": "2.0.1",
+      "dropRate": "100",
+      "difficulty": "Moyen",
+      "keywords": [
+        "Kodo PvP marque d'honneur",
+        "faction Horde",
+        "JcJ",
+        "Chevaucheur Bork"
+      ],
+      "locationText": "Orgrimmar",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "Monnaie JcJ",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 77,
+      "source": "Vendeur",
+      "expansion": "tbc",
+      "patch": "2.0.1",
+      "dropRate": "100",
+      "difficulty": "Moyen",
+      "keywords": [
+        "Trotteur faction Alliance PvP JcJ marque d'honneur gnome Lieutenant Karter"
+      ],
+      "locationText": "Hurlevent",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "Monnaie JcJ",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 78,
+      "source": "Vendeur",
+      "expansion": "tbc",
+      "patch": "2.0.1",
+      "dropRate": "100",
+      "difficulty": "Moyen",
+      "keywords": [
+        "Bélier faction Alliance PvP JcJ marque d'honneur Lieutenant Karter"
+      ],
+      "locationText": "Hurlevent",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "Monnaie JcJ",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 79,
+      "source": "Vendeur",
+      "expansion": "tbc",
+      "patch": "2.0.1",
+      "dropRate": "100",
+      "difficulty": "Moyen",
+      "keywords": [
+        "Raptor PvP marque d'honneur",
+        "faction Horde",
+        "JcJ",
+        "Chevaucheur Bork"
+      ],
+      "locationText": "Orgrimmar",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "Monnaie JcJ",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 80,
+      "source": "Vendeur",
+      "expansion": "tbc",
+      "patch": "2.0.1",
+      "dropRate": "100",
+      "difficulty": "Moyen",
+      "keywords": [
+        "Cheval PvP marque d'honneur",
+        "faction Horde",
+        "JcJ",
+        "Chevaucheur Bork"
+      ],
+      "locationText": "Orgrimmar",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "Monnaie JcJ",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 81,
+      "source": "Vendeur",
+      "expansion": "tbc",
+      "patch": "2.0.1",
+      "dropRate": "100",
+      "difficulty": "Moyen",
+      "keywords": [
+        "Tigre faction Alliance PvP JcJ marque d'honneur Lieutenant Karter"
+      ],
+      "locationText": "Hurlevent",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "Monnaie JcJ",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 82,
+      "source": "Vendeur",
+      "expansion": "tbc",
+      "patch": "2.0.1",
+      "dropRate": "100",
+      "difficulty": "Moyen",
+      "keywords": [
+        "Loup PvP marque d'honneur",
+        "faction Horde",
+        "JcJ",
+        "Chevaucheur Bork"
+      ],
+      "locationText": "Orgrimmar",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "Monnaie JcJ",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 83,
+      "source": "Classe",
+      "expansion": "vanilla",
+      "patch": "vanilla",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Cheval Démoniste classe quête"
+      ],
+      "locationText": "Maïtres de classe",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "class_mount",
+      "notes": "Monture de classe",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 84,
+      "source": "Classe",
+      "expansion": "vanilla",
+      "patch": "vanilla",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Cheval Paladin classe quête faction Alliance"
+      ],
+      "locationText": "Maïtres de classe",
+      "locationApplicability": "not_applicable",
+      "availabilityStatus": "class_mount",
+      "notes": "Monture de classe",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 85,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Sabre elfe de la nuit réputation faction alliance Lelanai"
+      ],
+      "locationText": "Darnassus / Hurlevent / Amirdrassil",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "3 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 87,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Sabre elfe de la nuit réputation faction alliance Lelanai"
+      ],
+      "locationText": "Darnassus / Hurlevent / Amirdrassil",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "3 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 88,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Mécanotrotteur gnome réputation Gnomeragan faction Alliance Milli Siffleplume"
+      ],
+      "locationText": "Dun Morogh > Kharanos",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 89,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Mécanotrotteur gnome réputation Gnomeragan faction Alliance Milli Siffleplume"
+      ],
+      "locationText": "Dun Morogh > Kharanos",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 90,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Mécanotrotteur gnome réputation Gnomeragan faction Alliance Milli Siffleplume"
+      ],
+      "locationText": "Dun Morogh > Kharanos",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 91,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "chaval",
+        "alliance",
+        "faction",
+        "réputation",
+        "Gregor MacVince",
+        "Katie Hunter",
+        "Katie Stokx"
+      ],
+      "locationText": "Hurlevent / Forêt d'Elwynn > Camp du bûcheron du Val d'Est / Marécage d'âprefange > île de Théramore",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "3 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 92,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "chaval",
+        "alliance",
+        "faction",
+        "réputation",
+        "Gregor MacVince",
+        "Katie Hunter",
+        "Katie Stokx"
+      ],
+      "locationText": "Hurlevent / Forêt d'Elwynn > Camp du bûcheron du Val d'Est / Marécage d'âprefange > île de Théramore",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "3 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 93,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "chaval",
+        "alliance",
+        "faction",
+        "réputation",
+        "Gregor MacVince",
+        "Katie Hunter",
+        "Katie Stokx"
+      ],
+      "locationText": "Hurlevent / Forêt d'Elwynn > Camp du bûcheron du Val d'Est / Marécage d'âprefange > île de Théramore",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "3 localisations",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 94,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Bélier nain",
+        "monture réputation faction alliance Forgefer",
+        "Veron Distillambre"
+      ],
+      "locationText": "Dun Morogh > Ferme des Distillambre",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 95,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Bélier nain",
+        "monture réputation faction alliance Forgefer",
+        "Veron Distillambre"
+      ],
+      "locationText": "Dun Morogh > Ferme des Distillambre",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 96,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Bélier nain",
+        "monture réputation faction alliance Forgefer",
+        "Veron Distillambre"
+      ],
+      "locationText": "Dun Morogh > Ferme des Distillambre",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 97,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Raptor trolls sombrelances réputation faction Horde Zjolnir"
+      ],
+      "locationText": "Durotar > Sen'Jin",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 98,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Raptor trolls sombrelances réputation faction Horde Zjolnir"
+      ],
+      "locationText": "Durotar > Sen'Jin",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 99,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Raptor trolls sombrelances réputation faction Horde Zjolnir"
+      ],
+      "locationText": "Durotar > Sen'Jin",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "",
+      "reviewedAt": "2026-07-09"
+    },
+    {
+      "blizzardId": 100,
+      "source": "Vendeur",
+      "expansion": "vanilla",
+      "patch": "1.11.1",
+      "dropRate": "100",
+      "difficulty": "Facile",
+      "keywords": [
+        "Cheval faction Horde réputation Fossoyeuse réprouvé mort-vivant Zachariah Post"
+      ],
+      "locationText": "Orgrimmar / Clairières de Tirisfal > Brill / Clairières de Tirisfal > Fossoyeuse",
+      "locationApplicability": "mapped",
+      "availabilityStatus": "available",
+      "notes": "3 localisations",
+      "reviewedAt": "2026-07-09"
+    }
+  ]
+}

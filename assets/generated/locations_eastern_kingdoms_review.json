@@ -1,20 +1,20 @@
 {
   "sourceEntriesInWowheadCategory": 263,
   "suppliedListEntries": 259,
-  "retainedEntries": 70,
-  "canonicalLocationNodes": 74,
+  "retainedEntries": 71,
+  "canonicalLocationNodes": 75,
   "syntheticRegions": 4,
-  "subzones": 26,
+  "subzones": 27,
   "multiParentLocations": 1,
   "excludedEntries": 192,
   "excludedByTestRule": 0,
   "excludedByDoNotDisturbRule": 0,
   "excludedByTechnicalMarkerRule": 0,
-  "reviewedEntries": 74,
+  "reviewedEntries": 75,
   "pendingEntries": 0,
   "byKind": {
     "region": 48,
-    "subzone": 26
+    "subzone": 27
   },
   "locations": [
     {
@@ -2898,6 +2898,59 @@
         "continent:eastern-kingdoms"
       ],
       "canonicalRegionRef": "wowhead-zone:4298"
+    },
+    {
+      "ref": "wowhead-zone:2017",
+      "wowheadZoneId": 2017,
+      "name": "Stratholme",
+      "normalizedName": "stratholme",
+      "worldKey": "azeroth",
+      "continentKey": "eastern-kingdoms",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:139",
+      "parentRefs": [
+        "wowhead-zone:139"
+      ],
+      "depthBelowContinent": 2,
+      "regionRef": "wowhead-zone:139",
+      "regionName": "Maleterres de l’Est",
+      "extensionId": 0,
+      "extensionKey": "vanilla",
+      "extensionName": "Vanilla",
+      "expansionBasePatch": "1.0.0",
+      "patch": null,
+      "instanceTypeId": 2,
+      "instanceTypeName": "Donjon",
+      "territoryId": 2,
+      "territoryName": "Contesté",
+      "minLevel": 20,
+      "maxLevel": 30,
+      "wowheadUrl": "https://www.wowhead.com/fr/zone=2017",
+      "reviewStatus": "reviewed",
+      "reviewMethod": "user_manual_rule",
+      "reviewBatch": "eastern-kingdoms-2026-06-19",
+      "note": "Stratholme est un donjon rattache aux Maleterres de l'Est pendant la revue des montures.",
+      "source": "wowhead_zone_catalog_and_manual_review",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Est",
+        "Stratholme"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est > Stratholme",
+      "canonicalRef": "wowhead-zone:2017",
+      "isCanonical": true,
+      "aliasRefs": [
+        "wowhead-zone:2017"
+      ],
+      "canonicalWowheadZoneIds": [
+        2017
+      ],
+      "canonicalParentRef": "wowhead-zone:139",
+      "canonicalParentRefs": [
+        "wowhead-zone:139"
+      ],
+      "canonicalRegionRef": "wowhead-zone:139"
     },
     {
       "ref": "wowhead-zone:139",

@@ -514,6 +514,15 @@
       "note": "Silithus : la Plaie est rattaché à Silithus."
     },
     {
+      "wowheadZoneId": 2017,
+      "action": "override",
+      "continentKey": "eastern-kingdoms",
+      "kind": "subzone",
+      "parentRef": "wowhead-zone:139",
+      "reviewStatus": "reviewed",
+      "note": "Stratholme est un donjon rattache aux Maleterres de l'Est pendant la revue des montures."
+    },
+    {
       "wowheadZoneId": 15969,
       "action": "override",
       "continentKey": "quel-thalas",

@@ -3,9 +3,557 @@
   "description": "Associations de localisation confirmees manuellement pour les montures. Les chemins sont derives du catalogue de localisation via primaryLocationRef.",
   "assignments": [
     {
+      "blizzardId": 6,
+      "primaryLocationRef": "wowhead-zone:11",
+      "locationRefs": [
+        "wowhead-zone:11",
+        "wowhead-zone:1519",
+        "wowhead-zone:12",
+        "wowhead-zone:15"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "4 localisations"
+    },
+    {
+      "blizzardId": 9,
+      "primaryLocationRef": "wowhead-zone:11",
+      "locationRefs": [
+        "wowhead-zone:11",
+        "wowhead-zone:1519"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "2 localisations"
+    },
+    {
+      "blizzardId": 11,
+      "primaryLocationRef": "wowhead-zone:11",
+      "locationRefs": [
+        "wowhead-zone:11",
+        "wowhead-zone:1519",
+        "wowhead-zone:12",
+        "wowhead-zone:15"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "4 localisations"
+    },
+    {
+      "blizzardId": 14,
+      "primaryLocationRef": "wowhead-zone:1637",
+      "locationRefs": [
+        "wowhead-zone:1637"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Orgrimmar"
+    },
+    {
+      "blizzardId": 18,
+      "primaryLocationRef": "wowhead-zone:11",
+      "locationRefs": [
+        "wowhead-zone:11",
+        "wowhead-zone:1519",
+        "wowhead-zone:12",
+        "wowhead-zone:15"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "4 localisations"
+    },
+    {
+      "blizzardId": 19,
+      "primaryLocationRef": "wowhead-zone:1637",
+      "locationRefs": [
+        "wowhead-zone:1637"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Orgrimmar"
+    },
+    {
+      "blizzardId": 20,
+      "primaryLocationRef": "wowhead-zone:1637",
+      "locationRefs": [
+        "wowhead-zone:1637"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Orgrimmar"
+    },
+    {
+      "blizzardId": 21,
+      "primaryLocationRef": "wowhead-zone:1",
+      "locationRefs": [
+        "wowhead-zone:1"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Dun Morogh > Ferme des Distillambre"
+    },
+    {
+      "blizzardId": 24,
+      "primaryLocationRef": "wowhead-zone:1",
+      "locationRefs": [
+        "wowhead-zone:1"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Dun Morogh > Ferme des Distillambre"
+    },
+    {
+      "blizzardId": 25,
+      "primaryLocationRef": "wowhead-zone:1",
+      "locationRefs": [
+        "wowhead-zone:1"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Dun Morogh > Ferme des Distillambre"
+    },
+    {
+      "blizzardId": 26,
+      "primaryLocationRef": "wowhead-zone:1657",
+      "locationRefs": [
+        "wowhead-zone:1657",
+        "wowhead-zone:1519",
+        "wowhead-zone:15105"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "3 localisations"
+    },
+    {
+      "blizzardId": 27,
+      "primaryLocationRef": "wowhead-zone:14",
+      "locationRefs": [
+        "wowhead-zone:14"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Durotar > Sen'Jin"
+    },
+    {
+      "blizzardId": 31,
+      "primaryLocationRef": "wowhead-zone:1657",
+      "locationRefs": [
+        "wowhead-zone:1657",
+        "wowhead-zone:1519",
+        "wowhead-zone:15105"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "3 localisations"
+    },
+    {
+      "blizzardId": 34,
+      "primaryLocationRef": "wowhead-zone:1657",
+      "locationRefs": [
+        "wowhead-zone:1657",
+        "wowhead-zone:1519",
+        "wowhead-zone:15105"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "3 localisations"
+    },
+    {
+      "blizzardId": 36,
+      "primaryLocationRef": "wowhead-zone:14",
+      "locationRefs": [
+        "wowhead-zone:14"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Durotar > Sen'Jin"
+    },
+    {
+      "blizzardId": 38,
+      "primaryLocationRef": "wowhead-zone:14",
+      "locationRefs": [
+        "wowhead-zone:14"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Durotar > Sen'Jin"
+    },
+    {
+      "blizzardId": 39,
+      "primaryLocationRef": "wowhead-zone:1",
+      "locationRefs": [
+        "wowhead-zone:1"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Dun Morogh > Kharanos"
+    },
+    {
+      "blizzardId": 40,
+      "primaryLocationRef": "wowhead-zone:1",
+      "locationRefs": [
+        "wowhead-zone:1"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Dun Morogh > Kharanos"
+    },
+    {
+      "blizzardId": 55,
+      "primaryLocationRef": "wowhead-zone:618",
+      "locationRefs": [
+        "wowhead-zone:618"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Berceau de l'Hiver > Roc des Sabres de Givre"
+    },
+    {
+      "blizzardId": 57,
+      "primaryLocationRef": "wowhead-zone:1",
+      "locationRefs": [
+        "wowhead-zone:1"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Dun Morogh > Kharanos"
+    },
+    {
+      "blizzardId": 58,
+      "primaryLocationRef": "wowhead-zone:1",
+      "locationRefs": [
+        "wowhead-zone:1"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Dun Morogh > Kharanos"
+    },
+    {
+      "blizzardId": 65,
+      "primaryLocationRef": "wowhead-zone:1637",
+      "locationRefs": [
+        "wowhead-zone:1637",
+        "wowhead-zone:85",
+        "wowhead-zone:1497"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "3 localisations"
+    },
+    {
+      "blizzardId": 66,
+      "primaryLocationRef": "wowhead-zone:1637",
+      "locationRefs": [
+        "wowhead-zone:1637",
+        "wowhead-zone:85",
+        "wowhead-zone:1497"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "3 localisations"
+    },
+    {
+      "blizzardId": 67,
+      "primaryLocationRef": "wowhead-zone:1637",
+      "locationRefs": [
+        "wowhead-zone:1637",
+        "wowhead-zone:85",
+        "wowhead-zone:1497"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "3 localisations"
+    },
+    {
+      "blizzardId": 68,
+      "primaryLocationRef": "wowhead-zone:1637",
+      "locationRefs": [
+        "wowhead-zone:1637",
+        "wowhead-zone:85",
+        "wowhead-zone:1497"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "3 localisations"
+    },
+    {
+      "blizzardId": 69,
+      "primaryLocationRef": "wowhead-zone:2017",
+      "locationRefs": [
+        "wowhead-zone:2017"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Se drop sur le Seigneur Aurius Vaillefendre (Donjon), ajouter un tag \"Donjon\""
+    },
+    {
+      "blizzardId": 71,
+      "primaryLocationRef": "wowhead-zone:215",
+      "locationRefs": [
+        "wowhead-zone:215"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Mulgore > Sabot-de-Sang"
+    },
+    {
+      "blizzardId": 72,
+      "primaryLocationRef": "wowhead-zone:215",
+      "locationRefs": [
+        "wowhead-zone:215"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Mulgore > Sabot-de-Sang"
+    },
+    {
+      "blizzardId": 75,
+      "primaryLocationRef": "wowhead-zone:1519",
+      "locationRefs": [
+        "wowhead-zone:1519"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Monnaie JcJ"
+    },
+    {
+      "blizzardId": 76,
+      "primaryLocationRef": "wowhead-zone:1637",
+      "locationRefs": [
+        "wowhead-zone:1637"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Monnaie JcJ"
+    },
+    {
+      "blizzardId": 77,
+      "primaryLocationRef": "wowhead-zone:1519",
+      "locationRefs": [
+        "wowhead-zone:1519"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Monnaie JcJ"
+    },
+    {
+      "blizzardId": 78,
+      "primaryLocationRef": "wowhead-zone:1519",
+      "locationRefs": [
+        "wowhead-zone:1519"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Monnaie JcJ"
+    },
+    {
+      "blizzardId": 79,
+      "primaryLocationRef": "wowhead-zone:1637",
+      "locationRefs": [
+        "wowhead-zone:1637"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Monnaie JcJ"
+    },
+    {
+      "blizzardId": 80,
+      "primaryLocationRef": "wowhead-zone:1637",
+      "locationRefs": [
+        "wowhead-zone:1637"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Monnaie JcJ"
+    },
+    {
+      "blizzardId": 81,
+      "primaryLocationRef": "wowhead-zone:1519",
+      "locationRefs": [
+        "wowhead-zone:1519"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Monnaie JcJ"
+    },
+    {
+      "blizzardId": 82,
+      "primaryLocationRef": "wowhead-zone:1637",
+      "locationRefs": [
+        "wowhead-zone:1637"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Monnaie JcJ"
+    },
+    {
+      "blizzardId": 85,
+      "primaryLocationRef": "wowhead-zone:1657",
+      "locationRefs": [
+        "wowhead-zone:1657",
+        "wowhead-zone:1519",
+        "wowhead-zone:15105"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "3 localisations"
+    },
+    {
+      "blizzardId": 87,
+      "primaryLocationRef": "wowhead-zone:1657",
+      "locationRefs": [
+        "wowhead-zone:1657",
+        "wowhead-zone:1519",
+        "wowhead-zone:15105"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "3 localisations"
+    },
+    {
+      "blizzardId": 88,
+      "primaryLocationRef": "wowhead-zone:1",
+      "locationRefs": [
+        "wowhead-zone:1"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Dun Morogh > Kharanos"
+    },
+    {
+      "blizzardId": 89,
+      "primaryLocationRef": "wowhead-zone:1",
+      "locationRefs": [
+        "wowhead-zone:1"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Dun Morogh > Kharanos"
+    },
+    {
+      "blizzardId": 90,
+      "primaryLocationRef": "wowhead-zone:1",
+      "locationRefs": [
+        "wowhead-zone:1"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Dun Morogh > Kharanos"
+    },
+    {
+      "blizzardId": 91,
+      "primaryLocationRef": "wowhead-zone:1519",
+      "locationRefs": [
+        "wowhead-zone:1519",
+        "wowhead-zone:12",
+        "wowhead-zone:15"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "3 localisations"
+    },
+    {
+      "blizzardId": 92,
+      "primaryLocationRef": "wowhead-zone:1519",
+      "locationRefs": [
+        "wowhead-zone:1519",
+        "wowhead-zone:12",
+        "wowhead-zone:15"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "3 localisations"
+    },
+    {
+      "blizzardId": 93,
+      "primaryLocationRef": "wowhead-zone:1519",
+      "locationRefs": [
+        "wowhead-zone:1519",
+        "wowhead-zone:12",
+        "wowhead-zone:15"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "3 localisations"
+    },
+    {
+      "blizzardId": 94,
+      "primaryLocationRef": "wowhead-zone:1",
+      "locationRefs": [
+        "wowhead-zone:1"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Dun Morogh > Ferme des Distillambre"
+    },
+    {
+      "blizzardId": 95,
+      "primaryLocationRef": "wowhead-zone:1",
+      "locationRefs": [
+        "wowhead-zone:1"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Dun Morogh > Ferme des Distillambre"
+    },
+    {
+      "blizzardId": 96,
+      "primaryLocationRef": "wowhead-zone:1",
+      "locationRefs": [
+        "wowhead-zone:1"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Dun Morogh > Ferme des Distillambre"
+    },
+    {
+      "blizzardId": 97,
+      "primaryLocationRef": "wowhead-zone:14",
+      "locationRefs": [
+        "wowhead-zone:14"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Durotar > Sen'Jin"
+    },
+    {
+      "blizzardId": 98,
+      "primaryLocationRef": "wowhead-zone:14",
+      "locationRefs": [
+        "wowhead-zone:14"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Durotar > Sen'Jin"
+    },
+    {
+      "blizzardId": 99,
+      "primaryLocationRef": "wowhead-zone:14",
+      "locationRefs": [
+        "wowhead-zone:14"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "Durotar > Sen'Jin"
+    },
+    {
+      "blizzardId": 100,
+      "primaryLocationRef": "wowhead-zone:1637",
+      "locationRefs": [
+        "wowhead-zone:1637",
+        "wowhead-zone:85",
+        "wowhead-zone:1497"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review_mount_location_manual_review_first_100",
+      "note": "3 localisations"
+    },
+    {
       "blizzardId": 779,
       "primaryLocationRef": "wowhead-zone:7502",
-      "locationRefs": ["wowhead-zone:7502"],
+      "locationRefs": [
+        "wowhead-zone:7502"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Choix valide dans la revue des localisations ambigues."
@@ -13,7 +561,9 @@
     {
       "blizzardId": 955,
       "primaryLocationRef": "wowhead-zone:8899",
-      "locationRefs": ["wowhead-zone:8899"],
+      "locationRefs": [
+        "wowhead-zone:8899"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Choix valide dans la revue des localisations ambigues."
@@ -21,7 +571,9 @@
     {
       "blizzardId": 979,
       "primaryLocationRef": "wowhead-zone:8899",
-      "locationRefs": ["wowhead-zone:8899"],
+      "locationRefs": [
+        "wowhead-zone:8899"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Choix valide dans la revue des localisations ambigues."
@@ -29,7 +581,9 @@
     {
       "blizzardId": 981,
       "primaryLocationRef": "wowhead-zone:8899",
-      "locationRefs": ["wowhead-zone:8899"],
+      "locationRefs": [
+        "wowhead-zone:8899"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Choix valide dans la revue des localisations ambigues."
@@ -47,7 +601,9 @@
     {
       "blizzardId": 2499,
       "primaryLocationRef": "wowhead-zone:14771",
-      "locationRefs": ["wowhead-zone:14771"],
+      "locationRefs": [
+        "wowhead-zone:14771"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Choix valide dans la revue des localisations ambigues."
@@ -55,7 +611,9 @@
     {
       "blizzardId": 2694,
       "primaryLocationRef": "wowhead-zone:15947",
-      "locationRefs": ["wowhead-zone:15947"],
+      "locationRefs": [
+        "wowhead-zone:15947"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Choix valide dans la revue des localisations ambigues."
@@ -63,7 +621,9 @@
     {
       "blizzardId": 2758,
       "primaryLocationRef": "wowhead-zone:15968",
-      "locationRefs": ["wowhead-zone:15968"],
+      "locationRefs": [
+        "wowhead-zone:15968"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Choix valide dans la revue des localisations ambigues."
@@ -71,7 +631,9 @@
     {
       "blizzardId": 2760,
       "primaryLocationRef": "wowhead-zone:15947",
-      "locationRefs": ["wowhead-zone:15947"],
+      "locationRefs": [
+        "wowhead-zone:15947"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Choix valide dans la revue des localisations ambigues."
@@ -79,7 +641,9 @@
     {
       "blizzardId": 2762,
       "primaryLocationRef": "wowhead-zone:15968",
-      "locationRefs": ["wowhead-zone:15968"],
+      "locationRefs": [
+        "wowhead-zone:15968"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Choix valide dans la revue des localisations ambigues."
@@ -87,7 +651,9 @@
     {
       "blizzardId": 2769,
       "primaryLocationRef": "wowhead-zone:15969",
-      "locationRefs": ["wowhead-zone:15969"],
+      "locationRefs": [
+        "wowhead-zone:15969"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Choix valide dans la revue des localisations ambigues."
@@ -95,7 +661,9 @@
     {
       "blizzardId": 2770,
       "primaryLocationRef": "wowhead-zone:15969",
-      "locationRefs": ["wowhead-zone:15969"],
+      "locationRefs": [
+        "wowhead-zone:15969"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Choix valide dans la revue des localisations ambigues."
@@ -103,7 +671,9 @@
     {
       "blizzardId": 2776,
       "primaryLocationRef": "wowhead-zone:15947",
-      "locationRefs": ["wowhead-zone:15947"],
+      "locationRefs": [
+        "wowhead-zone:15947"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Choix valide dans la revue des localisations ambigues."
@@ -111,7 +681,9 @@
     {
       "blizzardId": 2778,
       "primaryLocationRef": "wowhead-zone:15947",
-      "locationRefs": ["wowhead-zone:15947"],
+      "locationRefs": [
+        "wowhead-zone:15947"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Choix valide dans la revue des localisations ambigues."
@@ -119,7 +691,9 @@
     {
       "blizzardId": 2786,
       "primaryLocationRef": "wowhead-zone:16395",
-      "locationRefs": ["wowhead-zone:16395"],
+      "locationRefs": [
+        "wowhead-zone:16395"
+      ],
       "status": "confirmed",
       "source": "user_manual_review",
       "note": "Cavernes de Maisara rattachee a Zul'Aman pendant la revue."

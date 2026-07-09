@@ -2,18 +2,18 @@
   "sourceEntries": 1254,
   "worlds": 4,
   "continents": 14,
-  "canonicalLocations": 337,
-  "canonicalSemanticLocations": 335,
+  "canonicalLocations": 338,
+  "canonicalSemanticLocations": 336,
   "canonicalAliasGroups": 2,
-  "sourceDerivedLocations": 328,
+  "sourceDerivedLocations": 329,
   "syntheticLocations": 9,
   "exclusions": 278,
-  "unassignedSourceEntries": 648,
+  "unassignedSourceEntries": 647,
   "sourceEntriesReconciled": 1254,
-  "reviewedLocations": 334,
+  "reviewedLocations": 335,
   "pendingLocations": 3,
   "byWorld": {
-    "azeroth": 293,
+    "azeroth": 294,
     "draenor": 14,
     "outland": 8,
     "shadowlands": 22
@@ -21,7 +21,7 @@
   "byContinent": {
     "broken-isles": 32,
     "dragon-isles": 12,
-    "eastern-kingdoms": 74,
+    "eastern-kingdoms": 75,
     "kalimdor": 41,
     "khaz-algar": 16,
     "kul-tiras": 24,
@@ -36,10 +36,10 @@
   },
   "byKind": {
     "region": 192,
-    "subzone": 145
+    "subzone": 146
   },
   "byReviewStatus": {
-    "reviewed": 334,
+    "reviewed": 335,
     "pending": 3
   },
   "hierarchyErrors": [],
@@ -52,16 +52,16 @@
   },
   "easternKingdoms": {
     "sourceEntries": 263,
-    "retainedEntries": 70,
-    "canonicalLocationNodes": 74,
+    "retainedEntries": 71,
+    "canonicalLocationNodes": 75,
     "syntheticRegions": 4,
-    "subzones": 26,
+    "subzones": 27,
     "multiParentLocations": 1,
     "excludedEntries": 192,
     "excludedByTestRule": 0,
     "excludedByDoNotDisturbRule": 0,
     "excludedByTechnicalMarkerRule": 0,
-    "reviewedEntries": 74,
+    "reviewedEntries": 75,
     "pendingEntries": 0
   },
   "outland": {

@@ -39,6 +39,16 @@ void main() {
       expect(prideOfTheHunt.region, "Quel'Thalas");
       expect(prideOfTheHunt.zone, contains('Argent'));
       expect(prideOfTheHunt.subzone, isEmpty);
+
+      final bayHorse = items.singleWhere((item) => item.blizzardId == 6);
+      expect(bayHorse.locationRef, 'wowhead-zone:11');
+      expect(bayHorse.source, 'Vendeur');
+      expect(bayHorse.difficulty, 'Facile');
+
+      final deathcharger = items.singleWhere((item) => item.blizzardId == 69);
+      expect(deathcharger.locationRef, 'wowhead-zone:2017');
+      expect(deathcharger.source, 'Butin');
+      expect(deathcharger.subzone, 'Stratholme');
     },
   );
 }
