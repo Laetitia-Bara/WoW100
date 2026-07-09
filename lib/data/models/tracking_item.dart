@@ -52,6 +52,9 @@ class TrackingItem {
   /// Reset hebdomadaire
   final bool weeklyLockout;
 
+  /// Libelle de frequence affiche a la place du tag de lockout standard.
+  final String frequencyLabel;
+
   /// Obtenu par le joueur
   final bool obtained;
 
@@ -63,6 +66,9 @@ class TrackingItem {
 
   /// Taux de drop affiche lorsque le catalogue le connait.
   final String dropRate;
+
+  /// Tags manuels additionnels affiches apres les metadonnees standard.
+  final List<String> tags;
 
   final int? blizzardId;
 
@@ -92,10 +98,12 @@ class TrackingItem {
     this.blizzardCategoryName = '',
     required this.groupRequired,
     required this.weeklyLockout,
+    this.frequencyLabel = '',
     required this.obtained,
     this.unavailable = false,
     this.difficulty = '',
     this.dropRate = '',
+    this.tags = const [],
     this.blizzardId,
     required this.boss,
     this.externalUrl = '',
@@ -122,10 +130,12 @@ class TrackingItem {
       blizzardCategoryName: blizzardCategoryName,
       groupRequired: groupRequired,
       weeklyLockout: weeklyLockout,
+      frequencyLabel: frequencyLabel,
       obtained: obtained ?? this.obtained,
       unavailable: unavailable,
       difficulty: difficulty,
       dropRate: dropRate,
+      tags: tags,
       blizzardId: blizzardId,
       boss: boss,
       externalUrl: externalUrl,
@@ -156,6 +166,11 @@ class TrackingItem {
       blizzardCategoryName: json['blizzardCategoryName'] ?? '',
       groupRequired: json['groupRequired'] ?? false,
       weeklyLockout: json['weeklyLockout'] ?? false,
+      frequencyLabel: _firstJsonDisplayString(json, [
+        'frequencyLabel',
+        'frequency',
+        'resetFrequency',
+      ]),
       obtained: false,
       unavailable: json['unavailable'] ?? _looksUnavailable(json),
       difficulty: json['difficulty'] ?? '',
@@ -166,6 +181,7 @@ class TrackingItem {
         'drop_chance',
         'drop',
       ]),
+      tags: _jsonStringList(json['tags']),
       blizzardId: json['blizzardId'],
       boss: json['boss'] ?? '',
       externalUrl: json['externalUrl'] ?? json['mamytwinkUrl'] ?? '',
@@ -178,6 +194,25 @@ class TrackingItem {
     if (value is! String) return '';
 
     return value.trim();
+  }
+
+  static List<String> _jsonStringList(dynamic value) {
+    if (value is! List) return const [];
+
+    final tags = <String>[];
+    final seen = <String>{};
+
+    for (final item in value) {
+      final tag = _jsonDisplayString(item);
+      if (tag.isEmpty) continue;
+
+      final normalized = _normalizeAvailabilityText(tag);
+      if (normalized.isEmpty || !seen.add(normalized)) continue;
+
+      tags.add(tag);
+    }
+
+    return tags;
   }
 
   static String _officialWorldZoneFromJson(Map<String, dynamic> json) {

@@ -6,8 +6,13 @@
     "zone": "Maleterres de l'Est",
     "instance": "Stratholme",
     "boss": "Baron Vaillefendre",
+    "difficulty": "Difficile",
+    "tags": [
+      "Donjon"
+    ],
     "groupRequired": true,
-    "weeklyLockout": true
+    "weeklyLockout": false,
+    "frequencyLabel": "Multi-Quotidien"
   },
   {
     "blizzardId": 110,

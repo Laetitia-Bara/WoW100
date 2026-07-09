@@ -131,6 +131,23 @@ class JsonPlannerSource {
           _firstMetadataString(draft, _dropRateKeys) ??
           _firstMetadataString(mamytwink, _dropRateKeys) ??
           _firstMetadataString(reference, _dropRateKeys);
+      final frequencyLabel =
+          _firstMetadataString(wowhead, _frequencyLabelKeys) ??
+          _firstMetadataString(manual, _frequencyLabelKeys) ??
+          _firstMetadataString(reference, _frequencyLabelKeys) ??
+          _firstMetadataString(draft, _frequencyLabelKeys) ??
+          _firstMetadataString(mamytwink, _frequencyLabelKeys);
+      final tags = _metadataStringList(wowhead, 'tags')
+          .followedBy(_metadataStringList(manual, 'tags'))
+          .followedBy(_metadataStringList(reference, 'tags'))
+          .followedBy(_metadataStringList(draft, 'tags'))
+          .followedBy(_metadataStringList(mamytwink, 'tags'))
+          .fold(<String>[], (tags, tag) {
+            if (!tags.any((existing) => existing == tag)) {
+              tags.add(tag);
+            }
+            return tags;
+          });
       final sourceName = (wowheadSource?.isNotEmpty ?? false)
           ? wowheadSource!
           : (manualSource?.isNotEmpty ?? false)
@@ -190,10 +207,12 @@ class JsonPlannerSource {
               wowhead?['weeklyLockout'] ??
               manual?['weeklyLockout'] ??
               _isWeeklyMountSource(sourceName),
+          frequencyLabel: frequencyLabel ?? '',
           obtained: false,
           unavailable: unavailable,
           difficulty: difficulty ?? '',
           dropRate: dropRate ?? '',
+          tags: tags,
           blizzardId: blizzardId,
           wowheadItemId: wowheadItemId,
           boss: wowhead?['boss'] ?? manual?['boss'] ?? '',
@@ -363,12 +382,30 @@ class JsonPlannerSource {
     return null;
   }
 
+  List<String> _metadataStringList(Map<String, dynamic>? metadata, String key) {
+    if (metadata == null) return const [];
+
+    final values = metadata[key];
+    if (values is! List) return const [];
+
+    return values
+        .map((value) => value is String ? value.trim() : '')
+        .where((value) => value.isNotEmpty)
+        .toList();
+  }
+
   static const List<String> _dropRateKeys = [
     'dropRate',
     'dropChance',
     'drop_rate',
     'drop_chance',
     'drop',
+  ];
+
+  static const List<String> _frequencyLabelKeys = [
+    'frequencyLabel',
+    'frequency',
+    'resetFrequency',
   ];
 
   String? _firstMetadataString(

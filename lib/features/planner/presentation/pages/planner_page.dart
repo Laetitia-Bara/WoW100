@@ -2080,13 +2080,11 @@ class _PlannerItemCard extends StatelessWidget {
   }
 
   List<_PlannerTag> _metadataTags() {
-    final difficultyTag = _difficultyTag();
     final dropRateTag = _dropRateTag();
     final extensionTag = _extensionTag();
     final regionLabel = _regionLabel();
 
     return [
-      ?difficultyTag,
       ?dropRateTag,
       ?extensionTag,
       if (regionLabel != null) _PlannerTag(label: regionLabel),
@@ -2271,6 +2269,12 @@ class _PlannerItemCard extends StatelessWidget {
     final wowheadUrl = _wowheadUrl(context);
     final groupLabel =
         AchievementGroupHierarchy.labelFor(item) ?? item.instance;
+    final difficultyTag = _difficultyTag();
+    final frequencyLabel = item.frequencyLabel.trim().isEmpty
+        ? item.weeklyLockout
+              ? 'Hebdomadaire'
+              : 'Farm libre'
+        : item.frequencyLabel.trim();
     final tags = <Widget>[
       if (item.unavailable)
         const _PlannerTag(
@@ -2280,8 +2284,11 @@ class _PlannerItemCard extends StatelessWidget {
         ),
       _CategoryPlannerTag(category: item.category),
       ..._metadataTags(),
-      _PlannerTag(label: item.weeklyLockout ? 'Hebdomadaire' : 'Farm libre'),
+      _PlannerTag(label: frequencyLabel),
       if (item.obtained) const _PlannerTag(label: 'Obtenu'),
+      ?difficultyTag,
+      for (final tag in item.tags)
+        if (_hasUsefulMetadataLabel(tag)) _PlannerTag(label: tag),
     ];
 
     return Card(
