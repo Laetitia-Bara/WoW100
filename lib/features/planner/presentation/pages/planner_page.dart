@@ -2091,6 +2091,16 @@ class _PlannerItemCard extends StatelessWidget {
     ];
   }
 
+  String _displayDifficultyLabel(String label) {
+    final normalized = WowRegionFilter.normalize(label);
+    if (item.category == TrackingCategory.mounts &&
+        (normalized.contains('reel') || normalized.contains('argent'))) {
+      return 'Achat IRL';
+    }
+
+    return label;
+  }
+
   _PlannerTag? _difficultyTag() {
     final label = item.difficulty.trim();
     if (!_hasUsefulMetadataLabel(label)) return null;
@@ -2101,7 +2111,7 @@ class _PlannerItemCard extends StatelessWidget {
     final colors = _difficultyColors(normalized);
 
     return _PlannerTag(
-      label: label,
+      label: _displayDifficultyLabel(label),
       backgroundColor: colors.$1,
       foregroundColor: colors.$2,
     );
@@ -2150,6 +2160,35 @@ class _PlannerItemCard extends StatelessWidget {
     }
 
     return null;
+  }
+
+  bool _isDungeonTag(String tag) => WowRegionFilter.normalize(tag) == 'donjon';
+
+  List<_PlannerTag> _manualTags({bool includeDungeonTag = true}) {
+    return [
+      for (final tag in item.tags)
+        if (_hasUsefulMetadataLabel(tag) &&
+            (includeDungeonTag || !_isDungeonTag(tag)))
+          _PlannerTag(label: _displayManualTagLabel(tag)),
+    ];
+  }
+
+  _PlannerTag? _dungeonTag() {
+    final hasDungeonTag = item.tags.any(
+      (tag) => _hasUsefulMetadataLabel(tag) && _isDungeonTag(tag),
+    );
+
+    return hasDungeonTag ? const _PlannerTag(label: 'Donjon') : null;
+  }
+
+  String _displayManualTagLabel(String label) {
+    final normalized = WowRegionFilter.normalize(label);
+    if (item.category == TrackingCategory.mounts &&
+        (normalized == 'reel' || normalized == 'argent reel')) {
+      return 'Achat IRL';
+    }
+
+    return label;
   }
 
   bool _hasUsefulMetadataLabel(String value) {
@@ -2270,26 +2309,47 @@ class _PlannerItemCard extends StatelessWidget {
     final groupLabel =
         AchievementGroupHierarchy.labelFor(item) ?? item.instance;
     final difficultyTag = _difficultyTag();
+    final dropRateTag = _dropRateTag();
+    final extensionTag = _extensionTag();
+    final regionLabel = _regionLabel();
+    final dungeonTag = _dungeonTag();
     final frequencyLabel = item.frequencyLabel.trim().isEmpty
         ? item.weeklyLockout
               ? 'Hebdomadaire'
               : 'Farm libre'
         : item.frequencyLabel.trim();
-    final tags = <Widget>[
-      if (item.unavailable)
-        const _PlannerTag(
-          label: 'Indisponible',
-          backgroundColor: Color(0xFF7F1D1D),
-          foregroundColor: Color(0xFFFEE2E2),
-        ),
-      _CategoryPlannerTag(category: item.category),
-      ..._metadataTags(),
-      _PlannerTag(label: frequencyLabel),
-      if (item.obtained) const _PlannerTag(label: 'Obtenu'),
-      ?difficultyTag,
-      for (final tag in item.tags)
-        if (_hasUsefulMetadataLabel(tag)) _PlannerTag(label: tag),
-    ];
+    final tags = isMount
+        ? <Widget>[
+            if (item.unavailable)
+              const _PlannerTag(
+                label: 'Indisponible',
+                backgroundColor: Color(0xFF7F1D1D),
+                foregroundColor: Color(0xFFFEE2E2),
+              ),
+            _CategoryPlannerTag(category: item.category),
+            ?difficultyTag,
+            ?dropRateTag,
+            ?extensionTag,
+            if (regionLabel != null) _PlannerTag(label: regionLabel),
+            ?dungeonTag,
+            _PlannerTag(label: frequencyLabel),
+            if (item.obtained) const _PlannerTag(label: 'Obtenu'),
+            ..._manualTags(includeDungeonTag: false),
+          ]
+        : <Widget>[
+            if (item.unavailable)
+              const _PlannerTag(
+                label: 'Indisponible',
+                backgroundColor: Color(0xFF7F1D1D),
+                foregroundColor: Color(0xFFFEE2E2),
+              ),
+            _CategoryPlannerTag(category: item.category),
+            ..._metadataTags(),
+            _PlannerTag(label: frequencyLabel),
+            if (item.obtained) const _PlannerTag(label: 'Obtenu'),
+            ?difficultyTag,
+            ..._manualTags(),
+          ];
 
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
