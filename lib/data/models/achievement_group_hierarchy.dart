@@ -394,13 +394,15 @@ class AchievementGroupHierarchy {
   static String? labelFor(TrackingItem item) {
     if (item.category != TrackingCategory.achievements) return null;
 
+    final leaf = item.blizzardCategoryName.trim();
+    if (leaf == 'Guilde') return leaf;
+
     final categoryId = item.blizzardCategoryId;
     if (categoryId == null) return null;
 
     final root = _rootByCategoryId[categoryId];
     if (root == null) return null;
 
-    final leaf = item.blizzardCategoryName.trim();
     if (_rootOnlyCategoryIds.contains(categoryId) ||
         leaf.isEmpty ||
         leaf == root) {

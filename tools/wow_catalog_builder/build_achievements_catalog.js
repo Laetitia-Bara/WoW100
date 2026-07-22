@@ -19,6 +19,7 @@ const locationsCatalogPath = path.join(
   repoRoot,
   "assets/generated/locations_reference_catalog.json",
 );
+const wowheadAchievementListUrl = "https://www.wowhead.com/fr/achievements";
 
 const expansions = [
   {
@@ -67,6 +68,10 @@ function normalize(value) {
 
 function firstNonEmpty(...values) {
   return values.find((value) => typeof value === "string" && value.trim()) ?? "";
+}
+
+function wowheadAchievementUrl(id) {
+  return `https://www.wowhead.com/fr/achievement=${id}`;
 }
 
 function normalizeLocationText(value) {
@@ -278,7 +283,7 @@ function extractWowheadListviewData(html) {
 async function fetchWowheadAchievementIndex() {
   const byId = new Map();
   const fetchStats = [];
-  const urls = ["https://www.wowhead.com/achievements"];
+  const urls = [wowheadAchievementListUrl];
 
   for (const url of urls) {
     try {
@@ -297,7 +302,7 @@ async function fetchWowheadAchievementIndex() {
 
         byId.set(row.id, {
           wowheadName: row.name,
-          wowheadUrl: `https://www.wowhead.com/achievement=${row.id}`,
+          wowheadUrl: wowheadAchievementUrl(row.id),
           category: row.category ?? null,
           categoryName: row.categoryName ?? row.category2 ?? "",
           expansion: row.expansion ?? null,
@@ -481,6 +486,14 @@ function inferExpansion(achievement, manualMetadata, wowheadMetadata) {
     return manualMetadata.expansion;
   }
 
+  const categoryExpansion = inferExpansionFromCategory(
+    achievement,
+    wowheadMetadata,
+  );
+  if (categoryExpansion) {
+    return categoryExpansion;
+  }
+
   const candidateText = normalize(
     [
       achievement.categoryName,
@@ -498,6 +511,26 @@ function inferExpansion(achievement, manualMetadata, wowheadMetadata) {
   }
 
   return "allAchievements";
+}
+
+function inferExpansionFromCategory(achievement, wowheadMetadata) {
+  const categoryText = normalize(
+    [
+      achievement.categoryName,
+      wowheadMetadata?.categoryName,
+      wowheadMetadata?.expansion,
+    ].join(" "),
+  );
+
+  if (!categoryText) return null;
+
+  for (const expansion of expansions) {
+    if (categoryText.includes(normalize(expansion.name))) {
+      return expansion.key;
+    }
+  }
+
+  return null;
 }
 
 function inferGroup(achievement, manualMetadata, wowheadMetadata) {
@@ -533,7 +566,7 @@ function toWow100Item(achievement, manualMetadata, wowheadMetadata, locationInde
     manualMetadata.externalUrl,
     manualMetadata.mamytwink?.url,
     wowheadMetadata?.wowheadUrl,
-    `https://www.wowhead.com/achievement=${achievement.id}`,
+    wowheadAchievementUrl(achievement.id),
   );
 
   return {
@@ -556,7 +589,10 @@ function toWow100Item(achievement, manualMetadata, wowheadMetadata, locationInde
     boss: manualMetadata.boss ?? "",
     externalUrl,
     blizzardCategoryId: achievement.categoryId,
-    blizzardCategoryName: achievement.categoryName,
+    blizzardCategoryName: firstNonEmpty(
+      manualMetadata.blizzardCategoryName,
+      achievement.categoryName,
+    ),
     wowhead: wowheadMetadata ?? null,
     mamytwink: manualMetadata.mamytwink ?? null,
   };
@@ -708,7 +744,7 @@ async function main() {
     `${JSON.stringify(
       {
         generatedAt: new Date().toISOString(),
-        source: "https://www.wowhead.com/achievements",
+        source: wowheadAchievementListUrl,
         fetchStats: wowhead.fetchStats,
         achievements: Object.fromEntries([...wowhead.byId.entries()].sort()),
       },

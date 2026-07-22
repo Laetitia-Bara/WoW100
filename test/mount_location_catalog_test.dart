@@ -49,6 +49,15 @@ void main() {
       expect(deathcharger.locationRef, 'wowhead-zone:2017');
       expect(deathcharger.source, 'Butin');
       expect(deathcharger.subzone, 'Stratholme');
+
+      final vanillaItems = await JsonPlannerSource().loadMountItems(
+        WowExpansion.vanilla,
+      );
+      final vanillaDeathcharger = vanillaItems.singleWhere(
+        (item) => item.blizzardId == 69,
+      );
+      expect(vanillaDeathcharger.instance, 'Butin');
+      expect(vanillaDeathcharger.subzone, 'Stratholme');
     },
   );
 }

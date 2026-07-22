@@ -37,10 +37,26 @@ class WowheadUrlBuilder {
     }
 
     if (item.externalUrl.isNotEmpty) {
-      return item.externalUrl;
+      return localizeUrl(item.externalUrl, locale: locale);
     }
 
     return 'https://www.wowhead.com$localePath';
+  }
+
+  static String localizeUrl(String url, {String locale = 'fr'}) {
+    final trimmed = url.trim();
+    if (trimmed.isEmpty) return '';
+
+    final match = RegExp(
+      r'^(https?://)(?:(?:www|[a-z]{2})\.)?wowhead\.com(/.*)?$',
+      caseSensitive: false,
+    ).firstMatch(trimmed);
+    if (match == null) return url;
+
+    final localePath = _localePath(locale);
+    final path = _withLocalePath(match.group(2) ?? '', localePath);
+
+    return '${match.group(1)}www.wowhead.com$path';
   }
 
   static String preferredLocaleCode(
@@ -58,6 +74,16 @@ class WowheadUrlBuilder {
   static String _localePath(String locale) {
     final normalized = _normalizeLocale(locale);
     return normalized == null || normalized == 'en' ? '' : '/$normalized';
+  }
+
+  static String _withLocalePath(String path, String localePath) {
+    final localePrefix = RegExp(r'^/(?:de|es|fr|it|ko|pt|ru)(?=/|$)');
+    final pathWithoutLocale = path.replaceFirst(localePrefix, '');
+
+    if (localePath.isEmpty) return pathWithoutLocale;
+    if (pathWithoutLocale.isEmpty) return localePath;
+
+    return '$localePath$pathWithoutLocale';
   }
 
   static String? _normalizeLocale(String locale) {

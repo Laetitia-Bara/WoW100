@@ -2054,19 +2054,23 @@ class _PlannerItemCard extends StatelessWidget {
   final ValueChanged<bool?> onChanged;
 
   String _wowheadUrl(BuildContext context) {
-    if (item.wowheadUrl.isNotEmpty) return item.wowheadUrl;
-
-    final locale = WowheadUrlBuilder.preferredLocaleCode(
+    final preferredLocale = WowheadUrlBuilder.preferredLocaleCode(
       WidgetsBinding.instance.platformDispatcher.locales.map(
         (locale) => locale.toLanguageTag(),
       ),
       fallback: Localizations.localeOf(context).languageCode,
     );
+    final locale =
+        item.category == TrackingCategory.mounts ||
+            item.category == TrackingCategory.achievements
+        ? 'fr'
+        : preferredLocale;
 
-    return WowheadUrlBuilder.build(
-      item: item,
-      locale: item.category == TrackingCategory.mounts ? 'fr' : locale,
-    );
+    if (item.wowheadUrl.isNotEmpty) {
+      return WowheadUrlBuilder.localizeUrl(item.wowheadUrl, locale: locale);
+    }
+
+    return WowheadUrlBuilder.build(item: item, locale: locale);
   }
 
   Future<void> _openUrl(String url) async {
