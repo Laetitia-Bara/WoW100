@@ -1222,25 +1222,18 @@ class _MissingObtainableSummary extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final messages = visibleCategories.map((category) {
-      final completed = progress.completedObtainable[category] ?? 0;
-      final total = progress.obtainableTotal[category] ?? 0;
-      final missing = (total - completed).clamp(0, total);
+    if (visibleCategories.isEmpty) return const SizedBox.shrink();
 
-      return Text(
-        '• $missing ${_missingCategoryLabel(category, missing)}',
-        maxLines: 1,
-        overflow: TextOverflow.ellipsis,
-        textAlign: TextAlign.center,
-        style: const TextStyle(
-          color: Color(0xFF34D399),
-          fontSize: 12,
-          fontWeight: FontWeight.w700,
-        ),
-      );
-    }).toList();
+    final missingEntries = visibleCategories
+        .map((category) {
+          final completed = progress.completedObtainable[category] ?? 0;
+          final total = progress.obtainableTotal[category] ?? 0;
+          final missing = (total - completed).clamp(0, total);
 
-    if (messages.isEmpty) return const SizedBox.shrink();
+          return MapEntry(category, missing);
+        })
+        .where((entry) => entry.value > 0)
+        .toList();
 
     return Center(
       child: Column(
@@ -1256,13 +1249,44 @@ class _MissingObtainableSummary extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          Wrap(
-            alignment: WrapAlignment.center,
-            runAlignment: WrapAlignment.center,
-            spacing: 14,
-            runSpacing: 4,
-            children: messages,
-          ),
+          if (missingEntries.isEmpty)
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 18),
+              child: Text(
+                "Plus rien ! tu as déjà tout ce qui est possible d'obtenir dans cette extension ! GG à toi ;)",
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Color(0xFF34D399),
+                  fontSize: 12,
+                  fontWeight: FontWeight.w700,
+                  height: 1.25,
+                ),
+              ),
+            )
+          else
+            Wrap(
+              alignment: WrapAlignment.center,
+              runAlignment: WrapAlignment.center,
+              spacing: 14,
+              runSpacing: 4,
+              children: missingEntries.map((entry) {
+                final missing = entry.value;
+
+                return Text(
+                  '• $missing ${_missingCategoryLabel(entry.key, missing)}',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: Color(0xFF34D399),
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
+                  ),
+                );
+              }).toList(),
+            ),
         ],
       ),
     );
