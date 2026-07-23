@@ -18,12 +18,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/246",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/246",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Wind Rider Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/246",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/246",
       "familyType": 8,
       "sourceCodes": [
         24
@@ -51,12 +51,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/245",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/245",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Gryphon Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/245",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/245",
       "familyType": 3,
       "sourceCodes": [
         24
@@ -84,12 +84,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/249",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/249",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Lil' K.T.",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/249",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/249",
       "familyType": 4,
       "sourceCodes": [
         24
@@ -117,12 +117,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/256",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/256",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Lil' XT",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/256",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/256",
       "familyType": 10,
       "sourceCodes": [
         24
@@ -150,12 +150,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/248",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/248",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Pandaren Monk",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/248",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/248",
       "familyType": 1,
       "sourceCodes": [
         24
@@ -183,12 +183,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/187",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/187",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Vampiric Batling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/187",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/187",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -216,12 +216,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/197",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/197",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Cobra Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/197",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/197",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -251,12 +251,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/234",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/234",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Gundrak Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/234",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/234",
       "familyType": 8,
       "sourceCodes": [
         2,
@@ -287,12 +287,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/233",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/233",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Deviate Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/233",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/233",
       "familyType": 8,
       "sourceCodes": [
         2,
@@ -323,12 +323,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/239",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/239",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Razzashi Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/239",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/239",
       "familyType": 8,
       "sourceCodes": [
         2,
@@ -359,12 +359,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/235",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/235",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Leaping Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/235",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/235",
       "familyType": 8,
       "sourceCodes": [
         2,
@@ -395,12 +395,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/238",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/238",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Razormaw Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/238",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/238",
       "familyType": 8,
       "sourceCodes": [
         2,
@@ -431,12 +431,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/232",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/232",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Darting Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/232",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/232",
       "familyType": 8,
       "sourceCodes": [
         2,
@@ -467,12 +467,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/237",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/237",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Ravasaur Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/237",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/237",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -502,12 +502,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/194",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/194",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Tickbird Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/194",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/194",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -537,12 +537,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/195",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/195",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "White Tickbird Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/195",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/195",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -572,12 +572,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/196",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/196",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Proto-Drake Whelp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/196",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/196",
       "familyType": 2,
       "sourceCodes": [
         2,
@@ -608,12 +608,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/242",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/242",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Spectral Tiger Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/242",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/242",
       "familyType": 6,
       "sourceCodes": [
         8
@@ -643,12 +643,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/241",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/241",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Tuskarr Kite",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/241",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/241",
       "familyType": 3,
       "sourceCodes": [
         8
@@ -678,12 +678,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/201",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/201",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Plump Turkey",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/201",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/201",
       "familyType": 3,
       "sourceCodes": [
         12
@@ -711,12 +711,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/251",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/251",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Toxic Wasteling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/251",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/251",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -746,12 +746,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/253",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/253",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Frigid Frostling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/253",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/253",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -781,12 +781,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/200",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/200",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Spring Rabbit",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/200",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/200",
       "familyType": 5,
       "sourceCodes": [
         5,
@@ -820,12 +820,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/226",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/226",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Curious Wolvar Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/226",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/226",
       "familyType": 1,
       "sourceCodes": [
         5
@@ -855,12 +855,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1351",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1351",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Macabre Marionette",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1351",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1351",
       "familyType": 4,
       "sourceCodes": [
         4
@@ -888,12 +888,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/225",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/225",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Curious Oracle Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/225",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/225",
       "familyType": 1,
       "sourceCodes": [
         5
@@ -923,12 +923,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/199",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/199",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Kirin Tor Familiar",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/199",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/199",
       "familyType": 7,
       "sourceCodes": [
         12
@@ -958,12 +958,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/250",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/250",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Perky Pug",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/250",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/250",
       "familyType": 5,
       "sourceCodes": [
         12
@@ -991,12 +991,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/243",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/243",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Onyxian Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/243",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/243",
       "familyType": 2,
       "sourceCodes": [
         11
@@ -1024,12 +1024,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/202",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/202",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Baby Blizzard Bear",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/202",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/202",
       "familyType": 8,
       "sourceCodes": [
         11
@@ -1057,12 +1057,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/203",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/203",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Little Fawn",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/203",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/203",
       "familyType": 5,
       "sourceCodes": [
         12
@@ -1090,12 +1090,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/211",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/211",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Strand Crawler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/211",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/211",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -1123,12 +1123,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/193",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/193",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Giant Sewer Rat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/193",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/193",
       "familyType": 5,
       "sourceCodes": [
         2,
@@ -1160,12 +1160,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/217",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/217",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Murkimus the Gladiator",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/217",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/217",
       "familyType": 1,
       "sourceCodes": [],
       "locations": []
@@ -1191,12 +1191,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/244",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/244",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Core Hound Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/244",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/244",
       "familyType": 7,
       "sourceCodes": [
         11
@@ -1224,12 +1224,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/188",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/188",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Frosty",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/188",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/188",
       "familyType": 4,
       "sourceCodes": [],
       "locations": []
@@ -1255,12 +1255,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/228",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/228",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Grunty",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/228",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/228",
       "familyType": 1,
       "sourceCodes": [
         8
@@ -1288,12 +1288,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/192",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/192",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Mr. Chilly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/192",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/192",
       "familyType": 9,
       "sourceCodes": [
         11
@@ -1323,12 +1323,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/258",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/258",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Mini Thor",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/258",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/258",
       "familyType": 10,
       "sourceCodes": [
         8
@@ -1356,12 +1356,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/227",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/227",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Warbot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/227",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/227",
       "familyType": 10,
       "sourceCodes": [
         5
@@ -1393,12 +1393,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/247",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/247",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Zipao Tiger",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/247",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/247",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -1424,12 +1424,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/214",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/214",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Argent Squire",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/214",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/214",
       "familyType": 1,
       "sourceCodes": [],
       "locations": [
@@ -1457,12 +1457,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/216",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/216",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Argent Gruntling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/216",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/216",
       "familyType": 1,
       "sourceCodes": [],
       "locations": [
@@ -1490,12 +1490,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/84",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/84",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Westfall Chicken",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/84",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/84",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -1526,12 +1526,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/209",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/209",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Elwynn Lamb",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/209",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/209",
       "familyType": 5,
       "sourceCodes": [
         2,
@@ -1563,12 +1563,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/213",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/213",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Enchanted Broom",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/213",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/213",
       "familyType": 6,
       "sourceCodes": [
         2,
@@ -1600,12 +1600,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/224",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/224",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Calico Cat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/224",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/224",
       "familyType": 8,
       "sourceCodes": [
         2,
@@ -1636,12 +1636,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/206",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/206",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Tirisfal Batling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/206",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/206",
       "familyType": 3,
       "sourceCodes": [
         2,
@@ -1673,12 +1673,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/190",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/190",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Ghostly Skull",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/190",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/190",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -1708,12 +1708,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/218",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/218",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Sen'jin Fetish",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/218",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/218",
       "familyType": 4,
       "sourceCodes": [
         2,
@@ -1745,12 +1745,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/212",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/212",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Ammen Vale Lashling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/212",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/212",
       "familyType": 7,
       "sourceCodes": [
         2,
@@ -1781,12 +1781,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/204",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/204",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Teldrassil Sproutling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/204",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/204",
       "familyType": 7,
       "sourceCodes": [
         2,
@@ -1818,12 +1818,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/236",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/236",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Obsidian Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/236",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/236",
       "familyType": 8,
       "sourceCodes": [
         2,
@@ -1854,12 +1854,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/215",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/215",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Mechanopeep",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/215",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/215",
       "familyType": 10,
       "sourceCodes": [
         2,
@@ -1891,12 +1891,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/205",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/205",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Dun Morogh Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/205",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/205",
       "familyType": 8,
       "sourceCodes": [
         2,
@@ -1928,12 +1928,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/198",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/198",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Pengu",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/198",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/198",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -1964,12 +1964,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/254",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/254",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Blue Clockwork Rocket Bot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/254",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/254",
       "familyType": 10,
       "sourceCodes": [
         2,
@@ -2002,12 +2002,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/207",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/207",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Durotar Scorpion",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/207",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/207",
       "familyType": 8,
       "sourceCodes": [
         2,
@@ -2039,12 +2039,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/210",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/210",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Mulgore Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/210",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/210",
       "familyType": 5,
       "sourceCodes": [
         2,
@@ -2076,12 +2076,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/229",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/229",
     "wowhead": {
       "expansion": "wrath",
       "expansionName": "Wrath of the Lich King",
       "wowheadName": "Shimmering Wyrmling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/229",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/229",
       "familyType": 6,
       "sourceCodes": [
         2,

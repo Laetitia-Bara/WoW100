@@ -18,12 +18,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2051",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2051",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Twilight",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2051",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2051",
       "familyType": 8,
       "sourceCodes": [
         24
@@ -51,12 +51,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2062",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2062",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Shadow",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2062",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2062",
       "familyType": 6,
       "sourceCodes": [
         24
@@ -84,12 +84,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1936",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1936",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Mischief",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1936",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1936",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -115,12 +115,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1968",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1968",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Wicked Soul",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1968",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1968",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -150,12 +150,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1803",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1803",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Thistleleaf Adventurer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1803",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1803",
       "familyType": 1,
       "sourceCodes": [
         5
@@ -183,12 +183,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1953",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1953",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Snobold Runt",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1953",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1953",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -216,12 +216,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1958",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1958",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Sanctum Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1958",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1958",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -249,12 +249,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1934",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1934",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Benax",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1934",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1934",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -282,12 +282,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1806",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1806",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Knockoff Blingtron",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1806",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1806",
       "familyType": 10,
       "sourceCodes": [],
       "locations": []
@@ -313,12 +313,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1777",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1777",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Broot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1777",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1777",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -346,12 +346,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1984",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1984",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Albino Buzzard",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1984",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1984",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -377,12 +377,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2163",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2163",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Silithid Mini-Tank",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2163",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2163",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -410,12 +410,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1907",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1907",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Pygmy Owl",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1907",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1907",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -443,12 +443,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2119",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2119",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Fel-Afflicted Skyfin",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2119",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2119",
       "familyType": 3,
       "sourceCodes": [
         2,
@@ -477,12 +477,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2118",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2118",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Docile Skyfin",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2118",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2118",
       "familyType": 3,
       "sourceCodes": [
         2,
@@ -511,12 +511,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2080",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2080",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Rattlejaw",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2080",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2080",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -544,12 +544,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2082",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2082",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Bound Stream",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2082",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2082",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -577,12 +577,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1752",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1752",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Crispin",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1752",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1752",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -610,12 +610,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2135",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2135",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Rebellious Imp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2135",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2135",
       "familyType": 1,
       "sourceCodes": [
         2,
@@ -644,12 +644,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1721",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1721",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Stormborne Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1721",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1721",
       "familyType": 2,
       "sourceCodes": [
         2
@@ -677,12 +677,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2072",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2072",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Ageless Bronze Drake",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2072",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2072",
       "familyType": 2,
       "sourceCodes": [
         2,
@@ -711,12 +711,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2079",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2079",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Discarded Experiment",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2079",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2079",
       "familyType": 2,
       "sourceCodes": [
         2
@@ -744,12 +744,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1960",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1960",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Snaplasher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1960",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1960",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -777,12 +777,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2090",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2090",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Faceless Mindlasher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2090",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2090",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -810,12 +810,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1964",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1964",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Blood Boil",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1964",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1964",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -843,12 +843,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2050",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2050",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Orphaned Felbat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2050",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2050",
       "familyType": 3,
       "sourceCodes": [
         2,
@@ -877,12 +877,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1967",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1967",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Drudge Ghoul",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1967",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1967",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -910,12 +910,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1926",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1926",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Hungering Claw",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1926",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1926",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -943,12 +943,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2089",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2089",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Infernal Pyreclaw",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2089",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2089",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -976,12 +976,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1954",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1954",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Nerubian Swarmer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1954",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1954",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -1009,12 +1009,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1952",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1952",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Dreadmaw",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1952",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1952",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -1042,12 +1042,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1965",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1965",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Blightbreath",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1965",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1965",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -1075,12 +1075,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2000",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2000",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Young Venomfang",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2000",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2000",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -1106,12 +1106,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1966",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1966",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Soulbroken Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1966",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1966",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -1139,12 +1139,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1723",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1723",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Nightmare Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1723",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1723",
       "familyType": 2,
       "sourceCodes": [
         2,
@@ -1173,12 +1173,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1804",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1804",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Risen Saber Kitten",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1804",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1804",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -1206,12 +1206,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2042",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2042",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Scraps",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2042",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2042",
       "familyType": 4,
       "sourceCodes": [
         2,
@@ -1240,12 +1240,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2120",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2120",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Grasping Manifestation",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2120",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2120",
       "familyType": 6,
       "sourceCodes": [
         2,
@@ -1274,12 +1274,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2063",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2063",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Sneaky Marmot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2063",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2063",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -1307,12 +1307,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1753",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1753",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Bleakwater Jelly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1753",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1753",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -1340,12 +1340,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2078",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2078",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Tinytron",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2078",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2078",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -1373,12 +1373,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1999",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1999",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Cavern Moccasin",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1999",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1999",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -1404,12 +1404,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2086",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2086",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Blazehound",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2086",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2086",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1437,12 +1437,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1975",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1975",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Direbeak Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1975",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1975",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -1468,12 +1468,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1974",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1974",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Snowfeather Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1974",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1974",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -1499,12 +1499,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1977",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1977",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Bloodgazer Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1977",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1977",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -1530,12 +1530,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1976",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1976",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Sharptalon Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1976",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1976",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -1561,12 +1561,12 @@
     "isCapturable": true,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1719",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1719",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Eye of Inquisition",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1719",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1719",
       "familyType": 6,
       "sourceCodes": [
         2,
@@ -1595,12 +1595,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1963",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1963",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Boneshard",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1963",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1963",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -1628,12 +1628,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1802",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1802",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Fetid Waveling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1802",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1802",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1661,12 +1661,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1957",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1957",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Runeforged Servitor",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1957",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1957",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -1694,12 +1694,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2001",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2001",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Dibbler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2001",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2001",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -1727,12 +1727,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1955",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1955",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Magma Rageling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1955",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1955",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1760,12 +1760,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1959",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1959",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Winter Rageling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1959",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1959",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1793,12 +1793,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2084",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2084",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Zephyrian Prince",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2084",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2084",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1826,12 +1826,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1956",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1956",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Ironbound Proto-Whelp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1956",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1956",
       "familyType": 2,
       "sourceCodes": [
         2,
@@ -1860,12 +1860,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2085",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2085",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Drafty",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2085",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2085",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1893,12 +1893,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2065",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2065",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Dig Rat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2065",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2065",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -1926,12 +1926,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2087",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2087",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Cinderweb Recluse",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2087",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2087",
       "familyType": 7,
       "sourceCodes": [
         2,
@@ -1960,12 +1960,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2091",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2091",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Corrupted Blood",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2091",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2091",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1993,12 +1993,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2083",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2083",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Faceless Minion",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2083",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2083",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -2026,12 +2026,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2081",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2081",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Twilight Clutch-Sister",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2081",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2081",
       "familyType": 2,
       "sourceCodes": [
         2
@@ -2059,12 +2059,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1998",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1998",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Everliving Spore",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1998",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1998",
       "familyType": 7,
       "sourceCodes": [],
       "locations": []
@@ -2090,12 +2090,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2088",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2088",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Surger",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2088",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2088",
       "familyType": 7,
       "sourceCodes": [
         2,
@@ -2124,12 +2124,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1962",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1962",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Creeping Tentacle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1962",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1962",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -2157,12 +2157,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1961",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1961",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "G0-R41-0N Ultratonk",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1961",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1961",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -2190,12 +2190,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2136",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2136",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Uuna",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2136",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2136",
       "familyType": 1,
       "sourceCodes": [
         2,
@@ -2224,12 +2224,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2092",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2092",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Unstable Tendril",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2092",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2092",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -2257,12 +2257,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1712",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1712",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Golden Eaglet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1712",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1712",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2290,12 +2290,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1734",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1734",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Shimmering Aquafly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1734",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1734",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2323,12 +2323,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1731",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1731",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Felspider",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1731",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1731",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2357,12 +2357,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2127",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2127",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Flickering Argunite",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2127",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2127",
       "familyType": 7,
       "sourceCodes": [],
       "locations": [
@@ -2390,12 +2390,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1738",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1738",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Auburn Ringtail",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1738",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1738",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -2423,12 +2423,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1914",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1914",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Coastal Sandpiper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1914",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1914",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2458,12 +2458,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1736",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1736",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Slithering Brownscale",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1736",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1736",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2494,12 +2494,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1763",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1763",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Spiketail Beaver",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1763",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1763",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2527,12 +2527,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1917",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1917",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Stormstruck Beaver",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1917",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1917",
       "familyType": 7,
       "sourceCodes": [],
       "locations": [
@@ -2560,12 +2560,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1762",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1762",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Hog-Nosed Bat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1762",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1762",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2593,12 +2593,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1776",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1776",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Mudshell Conch",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1776",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1776",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -2626,12 +2626,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1775",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1775",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Coralback Fiddler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1775",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1775",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -2659,12 +2659,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1941",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1941",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Snowfang",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1941",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1941",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -2690,12 +2690,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2130",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2130",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Void Shardling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2130",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2130",
       "familyType": 6,
       "sourceCodes": [],
       "locations": [
@@ -2724,12 +2724,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1714",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1714",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Northern Hawk Owl",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1714",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1714",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2757,12 +2757,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1913",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1913",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Gleamhoof Fawn",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1913",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1913",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -2790,12 +2790,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1932",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1932",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Nightmare Lasher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1932",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1932",
       "familyType": 7,
       "sourceCodes": [],
       "locations": []
@@ -2821,12 +2821,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2124",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2124",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Bilescourge",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2124",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2124",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2854,12 +2854,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2126",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2126",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Antoran Bilescourge",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2126",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2126",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2887,12 +2887,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1935",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1935",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Squirky",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1935",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1935",
       "familyType": 1,
       "sourceCodes": [],
       "locations": [
@@ -2920,12 +2920,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2131",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2131",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Arcane Gorger",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2131",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2131",
       "familyType": 6,
       "sourceCodes": [],
       "locations": [
@@ -2953,12 +2953,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1713",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1713",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Long-Eared Owl",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1713",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1713",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2987,12 +2987,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1726",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1726",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Burrow Spiderling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1726",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1726",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3020,12 +3020,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2134",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2134",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Skyfin Juvenile",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2134",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2134",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -3053,12 +3053,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1722",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1722",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Dream Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1722",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1722",
       "familyType": 2,
       "sourceCodes": [],
       "locations": [
@@ -3086,12 +3086,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1728",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1728",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Juvenile Scuttleback",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1728",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1728",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -3120,12 +3120,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1889",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1889",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Felbat Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1889",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1889",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -3151,12 +3151,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1912",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1912",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Young Mutant Warturtle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1912",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1912",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -3184,12 +3184,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1930",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1930",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Lagan",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1930",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1930",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -3215,12 +3215,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1778",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1778",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Dust Bunny",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1778",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1778",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -3248,12 +3248,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2123",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2123",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Bile Larva",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2123",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2123",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3281,12 +3281,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2122",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2122",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Antoran Bile Larva",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2122",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2122",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3314,12 +3314,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1735",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1735",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Terror Larva",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1735",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1735",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3347,12 +3347,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1729",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1729",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Olivetail Hare",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1729",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1729",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -3380,12 +3380,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1773",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1773",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Erudite Manafiend",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1773",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1773",
       "familyType": 6,
       "sourceCodes": [],
       "locations": [
@@ -3413,12 +3413,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1774",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1774",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Eldritch Manafiend",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1774",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1774",
       "familyType": 6,
       "sourceCodes": [],
       "locations": [
@@ -3446,12 +3446,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2133",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2133",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Pygmy Marsuul",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2133",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2133",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -3479,12 +3479,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1750",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1750",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Tiny Apparition",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1750",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1750",
       "familyType": 4,
       "sourceCodes": [],
       "locations": [
@@ -3512,12 +3512,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1718",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1718",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Hateful Eye",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1718",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1718",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -3543,12 +3543,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1737",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1737",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Vale Flitter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1737",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1737",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -3576,12 +3576,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1710",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1710",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Fledgling Oliveback",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1710",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1710",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -3609,12 +3609,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1709",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1709",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Fledgling Kingfeather",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1709",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1709",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -3642,12 +3642,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1756",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1756",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Ridgeback Piglet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1756",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1756",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -3673,12 +3673,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1759",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1759",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Thaumaturgical Piglet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1759",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1759",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -3704,12 +3704,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1708",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1708",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Albatross Chick",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1708",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1708",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -3738,12 +3738,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1915",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1915",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Blind Rat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1915",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1915",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -3771,12 +3771,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1809",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1809",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Crystalline Broodling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1809",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1809",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3804,12 +3804,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1810",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1810",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Thornclaw Broodling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1810",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1810",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3837,12 +3837,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1807",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1807",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Vicious Broodling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1807",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1807",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3870,12 +3870,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1744",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1744",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Mist Fox Kit",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1744",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1744",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3904,12 +3904,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1743",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1743",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Black-Footed Fox Kit",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1743",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1743",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3938,12 +3938,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1749",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1749",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Rose Taipan",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1749",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1749",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3971,12 +3971,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2128",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2128",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Warpstalker Runt",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2128",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2128",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -4004,12 +4004,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2129",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2129",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Voidstalker Runt",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2129",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2129",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -4037,12 +4037,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1739",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1739",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Spring Strider",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1739",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1739",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -4070,12 +4070,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2132",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2132",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Felcrazed Wyrm",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2132",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2132",
       "familyType": 6,
       "sourceCodes": [],
       "locations": [
@@ -4103,12 +4103,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1929",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1929",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Corgnelius",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1929",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1929",
       "familyType": 8,
       "sourceCodes": [
         5,
@@ -4137,12 +4137,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1928",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1928",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Firebat Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1928",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1928",
       "familyType": 3,
       "sourceCodes": [
         5,
@@ -4171,12 +4171,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1751",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1751",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Son of Goredome",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1751",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1751",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -4204,12 +4204,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1949",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1949",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Igneous Flameling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1949",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1949",
       "familyType": 7,
       "sourceCodes": [
         5
@@ -4237,12 +4237,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2002",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2002",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Naxxy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2002",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2002",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -4270,12 +4270,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2114",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2114",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Globe Yeti",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2114",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2114",
       "familyType": 1,
       "sourceCodes": [],
       "locations": [
@@ -4304,12 +4304,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2093",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2093",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Amalgam of Destruction",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2093",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2093",
       "familyType": 7,
       "sourceCodes": [
         12
@@ -4337,12 +4337,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1978",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1978",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Dutiful Squire",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1978",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1978",
       "familyType": 1,
       "sourceCodes": [
         2,
@@ -4371,12 +4371,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1919",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1919",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Horde Fanatic",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1919",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1919",
       "familyType": 1,
       "sourceCodes": [
         2,
@@ -4405,12 +4405,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1938",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1938",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Rescued Fawn",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1938",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1938",
       "familyType": 5,
       "sourceCodes": [
         12
@@ -4438,12 +4438,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2049",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2049",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Son of Skum",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2049",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2049",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -4469,12 +4469,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2003",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2003",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Hearthy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2003",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2003",
       "familyType": 7,
       "sourceCodes": [
         12
@@ -4502,12 +4502,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1979",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1979",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Dutiful Gruntling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1979",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1979",
       "familyType": 1,
       "sourceCodes": [
         2,
@@ -4536,12 +4536,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2113",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2113",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Felclaw Marsuul",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2113",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2113",
       "familyType": 5,
       "sourceCodes": [
         12
@@ -4569,12 +4569,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1918",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1918",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Alliance Enthusiast",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1918",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1918",
       "familyType": 1,
       "sourceCodes": [
         2,
@@ -4603,12 +4603,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2158",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2158",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Mailemental",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2158",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2158",
       "familyType": 6,
       "sourceCodes": [
         12
@@ -4636,12 +4636,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2064",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2064",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Mining Monkey",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2064",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2064",
       "familyType": 8,
       "sourceCodes": [
         12
@@ -4669,12 +4669,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1933",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1933",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Nightmare Treant",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1933",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1933",
       "familyType": 7,
       "sourceCodes": [
         12
@@ -4702,12 +4702,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1903",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1903",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Zoom",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1903",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1903",
       "familyType": 5,
       "sourceCodes": [
         12
@@ -4735,12 +4735,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1699",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1699",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Enchanted Cauldron",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1699",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1699",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -4766,12 +4766,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2117",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2117",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Fel Lasher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2117",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2117",
       "familyType": 7,
       "sourceCodes": [
         17
@@ -4799,12 +4799,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1886",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1886",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Trigger",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1886",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1886",
       "familyType": 10,
       "sourceCodes": [],
       "locations": []
@@ -4830,12 +4830,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2121",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2121",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Fossorial Bile Larva",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2121",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2121",
       "familyType": 8,
       "sourceCodes": [
         2,
@@ -4864,12 +4864,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1701",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1701",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Enchanted Pen",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1701",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1701",
       "familyType": 6,
       "sourceCodes": [
         1
@@ -4897,12 +4897,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1808",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1808",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Leyline Broodling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1808",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1808",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -4930,12 +4930,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2077",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2077",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Ghost Shark",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2077",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2077",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -4963,12 +4963,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1700",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1700",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Enchanted Torch",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1700",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1700",
       "familyType": 6,
       "sourceCodes": [
         1
@@ -4996,12 +4996,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1920",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1920",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Transmutant",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1920",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1920",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -5029,12 +5029,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1887",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1887",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Wyrmy Tunkins",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1887",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1887",
       "familyType": 1,
       "sourceCodes": [
         4,
@@ -5063,12 +5063,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1940",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1940",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Knight-Captain Murky",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1940",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1940",
       "familyType": 1,
       "sourceCodes": [],
       "locations": []
@@ -5094,12 +5094,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1939",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1939",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Legionnaire Murky",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1939",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1939",
       "familyType": 1,
       "sourceCodes": [],
       "locations": []
@@ -5125,12 +5125,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1997",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1997",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Crackers",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1997",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1997",
       "familyType": 3,
       "sourceCodes": [
         4
@@ -5158,12 +5158,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1922",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1922",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Lurking Owl Kitten",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1922",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1922",
       "familyType": 8,
       "sourceCodes": [
         4
@@ -5191,12 +5191,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1720",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1720",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Emmigosa",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1720",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1720",
       "familyType": 2,
       "sourceCodes": [
         4
@@ -5224,12 +5224,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1711",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1711",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Skyhorn Nestling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1711",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1711",
       "familyType": 3,
       "sourceCodes": [
         4
@@ -5257,12 +5257,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1706",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1706",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Ashmaw Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1706",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1706",
       "familyType": 8,
       "sourceCodes": [
         4
@@ -5290,12 +5290,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1969",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1969",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Stardust",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1969",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1969",
       "familyType": 6,
       "sourceCodes": [
         4
@@ -5323,12 +5323,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2071",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2071",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Bronze Proto-Whelp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2071",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2071",
       "familyType": 2,
       "sourceCodes": [
         2,
@@ -5357,12 +5357,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1705",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1705",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Grumpy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1705",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1705",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -5388,12 +5388,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1937",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1937",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Wondrous Wisdomball",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1937",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1937",
       "familyType": 6,
       "sourceCodes": [
         4
@@ -5421,12 +5421,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1921",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1921",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Untethered Wyrmling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1921",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1921",
       "familyType": 6,
       "sourceCodes": [
         4
@@ -5454,12 +5454,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1727",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1727",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Nursery Spider",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1727",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1727",
       "familyType": 8,
       "sourceCodes": [
         2,
@@ -5488,12 +5488,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2047",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2047",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Ban-Fu, Cub of Ban-Lu",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2047",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2047",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -5521,12 +5521,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1884",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1884",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Baby Elderhorn",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1884",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1884",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -5554,12 +5554,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2041",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2041",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Pocket Cannon",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2041",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2041",
       "familyType": 10,
       "sourceCodes": [
         5
@@ -5587,12 +5587,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2004",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2004",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Trashy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2004",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2004",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -5620,12 +5620,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2018",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2018",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Paradox Spirit",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2018",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2018",
       "familyType": 7,
       "sourceCodes": [
         5
@@ -5653,12 +5653,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2058",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2058",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Foe Reaper 0.9",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2058",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2058",
       "familyType": 10,
       "sourceCodes": [
         5
@@ -5686,12 +5686,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1890",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1890",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Corgi Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1890",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1890",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -5719,12 +5719,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2036",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2036",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Frostbrood Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2036",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2036",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -5752,12 +5752,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2037",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2037",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Vilebrood Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2037",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2037",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -5785,12 +5785,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2035",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2035",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Bloodbrood Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2035",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2035",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -5818,12 +5818,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1888",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1888",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Celestial Calf",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1888",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1888",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -5851,12 +5851,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1911",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1911",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Sting Ray Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1911",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1911",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -5884,12 +5884,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2115",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2115",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Cross Gazer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2115",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2115",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -5917,12 +5917,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2116",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2116",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Orphaned Marsuul",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2116",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2116",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -5950,12 +5950,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1754",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1754",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Sewer-Pipe Jelly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1754",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1754",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -5983,12 +5983,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1755",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1755",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Plump Jelly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1755",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1755",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -6016,12 +6016,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2017",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2017",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Infinite Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2017",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2017",
       "familyType": 2,
       "sourceCodes": [
         5
@@ -6049,12 +6049,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1717",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1717",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Extinguished Eye",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1717",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1717",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -6082,12 +6082,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1716",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1716",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Fledgling Warden Owl",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1716",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1716",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -6115,12 +6115,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1760",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1760",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Fel Piglet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1760",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1760",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -6148,12 +6148,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1715",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1715",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Nightwatch Swooper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1715",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1715",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -6181,12 +6181,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1805",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1805",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Alarm-o-Bot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1805",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1805",
       "familyType": 10,
       "sourceCodes": [
         5
@@ -6214,12 +6214,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1931",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1931",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Court Scribe",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1931",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1931",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -6247,12 +6247,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2057",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2057",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Tricorne",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2057",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2057",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -6280,12 +6280,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2022",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2022",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Tylarr Gronnden",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2022",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2022",
       "familyType": 1,
       "sourceCodes": [
         5
@@ -6313,12 +6313,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1885",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1885",
     "wowhead": {
       "expansion": "legion",
       "expansionName": "Legion",
       "wowheadName": "Sunborne Val'kyr",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1885",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1885",
       "familyType": 1,
       "sourceCodes": [
         5

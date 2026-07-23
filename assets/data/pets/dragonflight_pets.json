@@ -18,12 +18,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4421",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4421",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Hoplet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4421",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4421",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -49,12 +49,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4264",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4264",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Fyrn",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4264",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4264",
       "familyType": 2,
       "sourceCodes": [],
       "locations": []
@@ -80,12 +80,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4568",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4568",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Whoopy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4568",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4568",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -111,12 +111,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3248",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3248",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Ichabod",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3248",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3248",
       "familyType": 10,
       "sourceCodes": [
         28
@@ -144,12 +144,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2890",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2890",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Sunny",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2890",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2890",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -175,12 +175,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3541",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3541",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Ridged Shalewing",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3541",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3541",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -208,12 +208,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3512",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3512",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Ambre",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3512",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3512",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -241,12 +241,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3548",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3548",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Aquapo",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3548",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3548",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -274,12 +274,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3491",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3491",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Arfus",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3491",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3491",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -307,12 +307,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3333",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3333",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Berylmane",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3333",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3333",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -340,12 +340,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3511",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3511",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Blaise",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3511",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3511",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -373,12 +373,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3533",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3533",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Brul",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3533",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3533",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -406,12 +406,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4426",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4426",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Bubbles",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4426",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4426",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -437,12 +437,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3290",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3290",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Bunbo",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3290",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3290",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -470,12 +470,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3285",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3285",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Luvvy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3285",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3285",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -503,12 +503,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3309",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3309",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Viridescent Duck",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3309",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3309",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -534,12 +534,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3293",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3293",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Ashenwing",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3293",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3293",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -567,12 +567,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3275",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3275",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Chestnut",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3275",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3275",
       "familyType": 5,
       "sourceCodes": [],
       "locations": []
@@ -598,12 +598,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3325",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3325",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Bakar Companion",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3325",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3325",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -631,12 +631,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3311",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3311",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Ohuna Companion",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3311",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3311",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -664,12 +664,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3362",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3362",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Sapphire Crab",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3362",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3362",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -697,12 +697,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3355",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3355",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Echo of the Cave",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3355",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3355",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -730,12 +730,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3289",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3289",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Echo of the Inferno",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3289",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3289",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -763,12 +763,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3310",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3310",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Echo of the Heights",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3310",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3310",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -796,12 +796,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3299",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3299",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Echo of the Depths",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3299",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3299",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -829,12 +829,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3410",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3410",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Dust Spirit",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3410",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3410",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -862,12 +862,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3412",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3412",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Gale Spirit",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3412",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3412",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -895,12 +895,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3409",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3409",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Tide Spirit",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3409",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3409",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -928,12 +928,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3411",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3411",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Blaze Spirit",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3411",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3411",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -961,12 +961,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4425",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4425",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Glamrok",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4425",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4425",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -992,12 +992,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3415",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3415",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Cubbly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3415",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3415",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -1023,12 +1023,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4435",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4435",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Happy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4435",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4435",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -1054,12 +1054,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3524",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3524",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Devourer Lobstrok",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3524",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3524",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1087,12 +1087,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3596",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3596",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Kabluey",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3596",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3596",
       "familyType": 7,
       "sourceCodes": [
         4
@@ -1120,12 +1120,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3338",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3338",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Kobaldt",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3338",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3338",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -1153,12 +1153,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3551",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3551",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Teardrop Moth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3551",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3551",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -1186,12 +1186,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3259",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3259",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Shaggy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3259",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3259",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -1219,12 +1219,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3476",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3476",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Gilded Mechafrog",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3476",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3476",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -1252,12 +1252,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3321",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3321",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Blackfeather Nester",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3321",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3321",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -1283,12 +1283,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3332",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3332",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Patos",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3332",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3332",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -1316,12 +1316,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3269",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3269",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Azure Frillfish",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3269",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3269",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -1347,12 +1347,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3365",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3365",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Roseate Hopper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3365",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3365",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -1380,12 +1380,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3521",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3521",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Lord Stantley",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3521",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3521",
       "familyType": 7,
       "sourceCodes": [],
       "locations": []
@@ -1411,12 +1411,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3546",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3546",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Skaarn",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3546",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3546",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -1444,12 +1444,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3291",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3291",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Scruffles",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3291",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3291",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -1477,12 +1477,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3261",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3261",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Wakyn",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3261",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3261",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -1510,12 +1510,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4263",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4263",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Tobias",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4263",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4263",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -1541,12 +1541,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3545",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3545",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Salverun",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3545",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3545",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -1572,12 +1572,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3323",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3323",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Brightfeather",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3323",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3323",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -1605,12 +1605,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3544",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3544",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Shalewing Devourer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3544",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3544",
       "familyType": 7,
       "sourceCodes": [],
       "locations": [
@@ -1638,12 +1638,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3543",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3543",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Ravenous Shalewing",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3543",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3543",
       "familyType": 7,
       "sourceCodes": [],
       "locations": [
@@ -1671,12 +1671,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3320",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3320",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Whitewhisker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3320",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3320",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -1704,12 +1704,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3335",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3335",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Pale Baby Vorquin",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3335",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3335",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -1737,12 +1737,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4304",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4304",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Dream Badger",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4304",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4304",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -1770,12 +1770,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3367",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3367",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Emberling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3367",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3367",
       "familyType": 7,
       "sourceCodes": [],
       "locations": [
@@ -1803,12 +1803,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3313",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3313",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Grassland Stomper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3313",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3313",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -1838,12 +1838,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3385",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3385",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Storm-Touched Stomper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3385",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3385",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -1871,12 +1871,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3282",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3282",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Swoglet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3282",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3282",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -1907,12 +1907,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3481",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3481",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Stonewhisker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3481",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3481",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -1940,12 +1940,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3300",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3300",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Ironbeak Duck",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3300",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3300",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -1974,12 +1974,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3307",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3307",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Plucky Duckling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3307",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3307",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -2008,12 +2008,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3301",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3301",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Wild Duckling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3301",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3301",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -2044,12 +2044,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3353",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3353",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Stoneshell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3353",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3353",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -2078,12 +2078,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3482",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3482",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Cobbleshell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3482",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3482",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -2111,12 +2111,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4278",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4278",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Leyhart",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4278",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4278",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -2144,12 +2144,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3489",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3489",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Sunglow Cobra",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3489",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3489",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2177,12 +2177,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3361",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3361",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Diamond Crab",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3361",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3361",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -2208,12 +2208,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3357",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3357",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Azure Crystalspine",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3357",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3357",
       "familyType": 6,
       "sourceCodes": [],
       "locations": [
@@ -2241,12 +2241,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4279",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4279",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Slumbertooth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4279",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4279",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2274,12 +2274,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4302",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4302",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Pale Slumbertooth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4302",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4302",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2307,12 +2307,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3480",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3480",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Endmite",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3480",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3480",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -2340,12 +2340,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3358",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3358",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Crimsonspine",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3358",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3358",
       "familyType": 6,
       "sourceCodes": [],
       "locations": [
@@ -2374,12 +2374,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3487",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3487",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Scarlapod",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3487",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3487",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -2407,12 +2407,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3366",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3366",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Kindlet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3366",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3366",
       "familyType": 7,
       "sourceCodes": [],
       "locations": [
@@ -2442,12 +2442,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3283",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3283",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Snowlemental",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3283",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3283",
       "familyType": 7,
       "sourceCodes": [],
       "locations": [
@@ -2476,12 +2476,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3295",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3295",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Igneoid",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3295",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3295",
       "familyType": 7,
       "sourceCodes": [],
       "locations": [
@@ -2512,12 +2512,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4276",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4276",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Fol'ya Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4276",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4276",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -2545,12 +2545,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3318",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3318",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Thunderfoot Calf",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3318",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3318",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2578,12 +2578,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3266",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3266",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Black Slyvern Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3266",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3266",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2611,12 +2611,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3389",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3389",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "The Quackcestor",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3389",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3389",
       "familyType": 4,
       "sourceCodes": [],
       "locations": [
@@ -2644,12 +2644,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3272",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3272",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Pricklefury Hare",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3272",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3272",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -2680,12 +2680,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3273",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3273",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Magma Slug",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3273",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3273",
       "familyType": 7,
       "sourceCodes": [],
       "locations": [
@@ -2714,12 +2714,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3281",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3281",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Scruffy Ottuk",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3281",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3281",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -2749,12 +2749,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3354",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3354",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Storm-Touched Ottuk",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3354",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3354",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -2782,12 +2782,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3478",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3478",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Rock Martin",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3478",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3478",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2815,12 +2815,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3364",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3364",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Striped Snakebiter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3364",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3364",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2848,12 +2848,12 @@
     "isCapturable": true,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3280",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3280",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Shyfly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3280",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3280",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2881,12 +2881,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3352",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3352",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Razortooth Bear Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3352",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3352",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2915,12 +2915,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3351",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3351",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Grizzlefur Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3351",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3351",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2950,12 +2950,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3296",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3296",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Palamanther",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3296",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3296",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -2986,12 +2986,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3403",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3403",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Blue Dasher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3403",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3403",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -3019,12 +3019,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3328",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3328",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Tiny Timbertooth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3328",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3328",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3053,12 +3053,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3336",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3336",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Vorquin Runt",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3336",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3336",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3088,12 +3088,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3490",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3490",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Ebonwing Moth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3490",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3490",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -3121,12 +3121,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3485",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3485",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Hollow Moth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3485",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3485",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -3154,12 +3154,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3322",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3322",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Woodbiter Piculet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3322",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3322",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -3188,12 +3188,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3484",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3484",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Slabwing",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3484",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3484",
       "familyType": 7,
       "sourceCodes": [],
       "locations": [
@@ -3221,12 +3221,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3384",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3384",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Storm-Touched Bluefeather",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3384",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3384",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -3255,12 +3255,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3276",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3276",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Treeflitter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3276",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3276",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -3290,12 +3290,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3260",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3260",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Snowy Treeflitter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3260",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3260",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -3323,12 +3323,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3404",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3404",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Polliswog",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3404",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3404",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -3356,12 +3356,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3486",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3486",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Lithengale",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3486",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3486",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -3389,12 +3389,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4280",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4280",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Pewling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4280",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4280",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -3422,12 +3422,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3483",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3483",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Boulderfang",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3483",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3483",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3455,12 +3455,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3525",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3525",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Abyssal Lurker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3525",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3525",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -3486,12 +3486,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4277",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4277",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Sapnibbler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4277",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4277",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -3519,12 +3519,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3327",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3327",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Dusky Timbertooth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3327",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3327",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3552,12 +3552,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3329",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3329",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Storm-Touched Timbertooth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3329",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3329",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3585,12 +3585,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3477",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3477",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Puddlehopper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3477",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3477",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -3618,12 +3618,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4275",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4275",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Flooftalon",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4275",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4275",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3651,12 +3651,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3488",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3488",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Deepridger",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3488",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3488",
       "familyType": 7,
       "sourceCodes": [],
       "locations": [
@@ -3684,12 +3684,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3550",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3550",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Undermoth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3550",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3550",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -3715,12 +3715,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3356",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3356",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Chalkshell Turtle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3356",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3356",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -3748,12 +3748,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4303",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4303",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Snaggletoof",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4303",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4303",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3781,12 +3781,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3288",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3288",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Trunkalumpf",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3288",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3288",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -3815,12 +3815,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3547",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3547",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Jade Cragviper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3547",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3547",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -3846,12 +3846,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3479",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3479",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Yellabon",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3479",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3479",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -3879,12 +3879,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3542",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3542",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Soot-Stained Shalewing",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3542",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3542",
       "familyType": 7,
       "sourceCodes": [
         28
@@ -3912,12 +3912,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3582",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3582",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Blub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3582",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3582",
       "familyType": 9,
       "sourceCodes": [
         28
@@ -3945,12 +3945,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3252",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3252",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Garrlok",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3252",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3252",
       "familyType": 1,
       "sourceCodes": [
         28
@@ -3978,12 +3978,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4548",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4548",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Marrlok",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4548",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4548",
       "familyType": 1,
       "sourceCodes": [
         28
@@ -4011,12 +4011,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4565",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4565",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Trishi",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4565",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4565",
       "familyType": 1,
       "sourceCodes": [
         28
@@ -4044,12 +4044,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4566",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4566",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Worgli the Apprehensive",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4566",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4566",
       "familyType": 1,
       "sourceCodes": [
         28
@@ -4077,12 +4077,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3581",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3581",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Mote of Nasz'uro",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3581",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3581",
       "familyType": 7,
       "sourceCodes": [],
       "locations": []
@@ -4108,12 +4108,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4257",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4257",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Gill'dan",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4257",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4257",
       "familyType": 1,
       "sourceCodes": [
         2,
@@ -4142,12 +4142,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4255",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4255",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Briarhorn Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4255",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4255",
       "familyType": 8,
       "sourceCodes": [
         2,
@@ -4176,12 +4176,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4409",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4409",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Lovely Duckling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4409",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4409",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -4209,12 +4209,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4261",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4261",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Obsidian Warwhelp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4261",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4261",
       "familyType": 2,
       "sourceCodes": [
         5
@@ -4242,12 +4242,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4260",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4260",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Killbot 9000",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4260",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4260",
       "familyType": 10,
       "sourceCodes": [
         2,
@@ -4276,12 +4276,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4262",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4262",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "N'Ruby",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4262",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4262",
       "familyType": 6,
       "sourceCodes": [
         2,
@@ -4310,12 +4310,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3359",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3359",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Snowclaw Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3359",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3359",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -4341,12 +4341,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4258",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4258",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Jeepers",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4258",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4258",
       "familyType": 3,
       "sourceCodes": [
         2,
@@ -4375,12 +4375,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3549",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3549",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Heartseeker Moth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3549",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3549",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -4408,12 +4408,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4259",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4259",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Doomrubble",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4259",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4259",
       "familyType": 6,
       "sourceCodes": [
         2,
@@ -4442,12 +4442,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3360",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3360",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Bugbiter Tortoise",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3360",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3360",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -4473,12 +4473,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3555",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3555",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Axel",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3555",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3555",
       "familyType": 2,
       "sourceCodes": [
         12
@@ -4506,12 +4506,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4288",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4288",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Blueloo",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4288",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4288",
       "familyType": 6,
       "sourceCodes": [
         12
@@ -4539,12 +4539,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3519",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3519",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Byrn",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3519",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3519",
       "familyType": 7,
       "sourceCodes": [
         12
@@ -4572,12 +4572,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3263",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3263",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Secretive Frogduck",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3263",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3263",
       "familyType": 9,
       "sourceCodes": [
         12
@@ -4605,12 +4605,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3406",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3406",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Lady Feathersworth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3406",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3406",
       "familyType": 6,
       "sourceCodes": [
         12
@@ -4638,12 +4638,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3294",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3294",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Gerald",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3294",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3294",
       "familyType": 6,
       "sourceCodes": [
         12
@@ -4671,12 +4671,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4412",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4412",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Hap'he",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4412",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4412",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -4702,12 +4702,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4580",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4580",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Astral Emperor's Serpentling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4580",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4580",
       "familyType": 2,
       "sourceCodes": [],
       "locations": []
@@ -4733,12 +4733,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3518",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3518",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Lettuce",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3518",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3518",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -4766,12 +4766,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4291",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4291",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Ivy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4291",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4291",
       "familyType": 5,
       "sourceCodes": [
         12
@@ -4799,12 +4799,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3264",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3264",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Crystalline Mini-Monster",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3264",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3264",
       "familyType": 6,
       "sourceCodes": [
         12
@@ -4832,12 +4832,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3265",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3265",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Mister Muskoxeles",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3265",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3265",
       "familyType": 8,
       "sourceCodes": [
         12
@@ -4865,12 +4865,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3279",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3279",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Bronze Racing Enthusiast",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3279",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3279",
       "familyType": 2,
       "sourceCodes": [],
       "locations": []
@@ -4896,12 +4896,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4265",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4265",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Lil' Frostwing",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4265",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4265",
       "familyType": 2,
       "sourceCodes": [
         2
@@ -4929,12 +4929,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4411",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4411",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Reese",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4411",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4411",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -4960,12 +4960,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3368",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3368",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Shiverweb Broodling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3368",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3368",
       "familyType": 7,
       "sourceCodes": [
         4
@@ -4993,12 +4993,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3557",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3557",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Roggy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3557",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3557",
       "familyType": 5,
       "sourceCodes": [
         12
@@ -5026,12 +5026,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3493",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3493",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Roland",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3493",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3493",
       "familyType": 5,
       "sourceCodes": [
         12
@@ -5059,12 +5059,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4285",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4285",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Sergeant Quackers",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4285",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4285",
       "familyType": 9,
       "sourceCodes": [
         12
@@ -5092,12 +5092,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4579",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4579",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Muskpaw Calf",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4579",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4579",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -5123,12 +5123,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3262",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3262",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Violet Violence",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3262",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3262",
       "familyType": 8,
       "sourceCodes": [
         12
@@ -5156,12 +5156,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3390",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3390",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Sophic Amalgamation",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3390",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3390",
       "familyType": 7,
       "sourceCodes": [
         1
@@ -5189,12 +5189,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3306",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3306",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Quack-E",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3306",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3306",
       "familyType": 9,
       "sourceCodes": [
         1
@@ -5222,12 +5222,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3331",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3331",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Emmah",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3331",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3331",
       "familyType": 9,
       "sourceCodes": [
         16
@@ -5255,12 +5255,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3274",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3274",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Alvin the Anvil",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3274",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3274",
       "familyType": 10,
       "sourceCodes": [
         1
@@ -5288,12 +5288,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3345",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3345",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Jeweled Amber Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3345",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3345",
       "familyType": 2,
       "sourceCodes": [
         1
@@ -5321,12 +5321,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3347",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3347",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Jeweled Emerald Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3347",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3347",
       "familyType": 2,
       "sourceCodes": [
         1
@@ -5354,12 +5354,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3256",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3256",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Jeweled Onyx Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3256",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3256",
       "familyType": 2,
       "sourceCodes": [
         1
@@ -5387,12 +5387,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3344",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3344",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Jeweled Sapphire Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3344",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3344",
       "familyType": 2,
       "sourceCodes": [
         1
@@ -5420,12 +5420,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3346",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3346",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Jeweled Ruby Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3346",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3346",
       "familyType": 2,
       "sourceCodes": [
         1
@@ -5453,12 +5453,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4286",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4286",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Aura",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4286",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4286",
       "familyType": 6,
       "sourceCodes": [
         28
@@ -5486,12 +5486,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3580",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3580",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Baa'lial",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3580",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3580",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -5519,12 +5519,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4410",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4410",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Beetriz",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4410",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4410",
       "familyType": 5,
       "sourceCodes": [],
       "locations": []
@@ -5550,12 +5550,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3475",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3475",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Volatile Self-Driving Toolbox",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3475",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3475",
       "familyType": 10,
       "sourceCodes": [],
       "locations": []
@@ -5581,12 +5581,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4266",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4266",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Squally",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4266",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4266",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -5612,12 +5612,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3297",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3297",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Time-Lost Salamanther",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3297",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3297",
       "familyType": 9,
       "sourceCodes": [
         28
@@ -5645,12 +5645,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3236",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3236",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Gnomelia Gearheart",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3236",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3236",
       "familyType": 1,
       "sourceCodes": [],
       "locations": []
@@ -5676,12 +5676,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4311",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4311",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Mitzy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4311",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4311",
       "familyType": 5,
       "sourceCodes": [
         28
@@ -5709,12 +5709,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4407",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4407",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Nelle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4407",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4407",
       "familyType": 5,
       "sourceCodes": [
         28
@@ -5742,12 +5742,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4595",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4595",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Lil' Flameo",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4595",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4595",
       "familyType": 6,
       "sourceCodes": [
         28
@@ -5775,12 +5775,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4316",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4316",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Lil' Wrathion",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4316",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4316",
       "familyType": 2,
       "sourceCodes": [],
       "locations": []
@@ -5806,12 +5806,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4437",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4437",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Fathom",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4437",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4437",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -5837,12 +5837,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4408",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4408",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Buggsy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4408",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4408",
       "familyType": 5,
       "sourceCodes": [
         28
@@ -5870,12 +5870,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4253",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4253",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Slyvy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4253",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4253",
       "familyType": 3,
       "sourceCodes": [
         28
@@ -5903,12 +5903,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4406",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4406",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Sarge",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4406",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4406",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -5936,12 +5936,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4402",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4402",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Teele",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4402",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4402",
       "familyType": 5,
       "sourceCodes": [
         28
@@ -5969,12 +5969,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4436",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4436",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Pokee",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4436",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4436",
       "familyType": 6,
       "sourceCodes": [
         28
@@ -6002,12 +6002,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3579",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3579",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Ysergle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3579",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3579",
       "familyType": 1,
       "sourceCodes": [],
       "locations": []
@@ -6033,12 +6033,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3515",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3515",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Annuna",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3515",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3515",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -6067,12 +6067,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3350",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3350",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Lord Basilton",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3350",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3350",
       "familyType": 6,
       "sourceCodes": [
         4
@@ -6100,12 +6100,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3590",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3590",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Belastrasza",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3590",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3590",
       "familyType": 2,
       "sourceCodes": [
         4
@@ -6133,12 +6133,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3448",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3448",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Wildfire",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3448",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3448",
       "familyType": 7,
       "sourceCodes": [],
       "locations": []
@@ -6164,12 +6164,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3540",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3540",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Brulee",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3540",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3540",
       "familyType": 5,
       "sourceCodes": [
         4
@@ -6197,12 +6197,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3319",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3319",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Yipper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3319",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3319",
       "familyType": 3,
       "sourceCodes": [
         4
@@ -6230,12 +6230,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3588",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3588",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Iggy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3588",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3588",
       "familyType": 7,
       "sourceCodes": [],
       "locations": [
@@ -6264,12 +6264,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4297",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4297",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Kal'andu",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4297",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4297",
       "familyType": 2,
       "sourceCodes": [
         4
@@ -6297,12 +6297,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3578",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3578",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Newsy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3578",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3578",
       "familyType": 5,
       "sourceCodes": [
         4
@@ -6330,12 +6330,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3316",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3316",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Lubbins",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3316",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3316",
       "familyType": 2,
       "sourceCodes": [
         4
@@ -6363,12 +6363,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3405",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3405",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Living Mud Mask",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3405",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3405",
       "familyType": 6,
       "sourceCodes": [
         4
@@ -6396,12 +6396,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3286",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3286",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Mister Toots",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3286",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3286",
       "familyType": 8,
       "sourceCodes": [
         4
@@ -6429,12 +6429,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3553",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3553",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Nelthara",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3553",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3553",
       "familyType": 2,
       "sourceCodes": [
         4
@@ -6462,12 +6462,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3449",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3449",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Flow",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3449",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3449",
       "familyType": 7,
       "sourceCodes": [],
       "locations": []
@@ -6493,12 +6493,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3600",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3600",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Pallibrius",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3600",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3600",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -6524,12 +6524,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3292",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3292",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Phoenix Wishwing",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3292",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3292",
       "familyType": 6,
       "sourceCodes": [
         4
@@ -6557,12 +6557,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3302",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3302",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Pilot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3302",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3302",
       "familyType": 9,
       "sourceCodes": [
         4
@@ -6590,12 +6590,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3601",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3601",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Posidriss",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3601",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3601",
       "familyType": 2,
       "sourceCodes": [
         4
@@ -6623,12 +6623,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3597",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3597",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Princess Vorquistrasza",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3597",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3597",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -6654,12 +6654,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3552",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3552",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Rithro",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3552",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3552",
       "familyType": 2,
       "sourceCodes": [
         4
@@ -6687,12 +6687,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3589",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3589",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Rusziona",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3589",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3589",
       "familyType": 2,
       "sourceCodes": [
         4
@@ -6720,12 +6720,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3602",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3602",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Somnius",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3602",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3602",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -6753,12 +6753,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3538",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3538",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Tricky",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3538",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3538",
       "familyType": 5,
       "sourceCodes": [
         4
@@ -6786,12 +6786,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3342",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3342",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Spyragos",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3342",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3342",
       "familyType": 2,
       "sourceCodes": [
         4
@@ -6819,12 +6819,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3536",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3536",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Bashful",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3536",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3536",
       "familyType": 5,
       "sourceCodes": [
         4
@@ -6852,12 +6852,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3348",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3348",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Primal Stormling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3348",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3348",
       "familyType": 7,
       "sourceCodes": [
         4,
@@ -6886,12 +6886,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3447",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3447",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Tremblor",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3447",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3447",
       "familyType": 7,
       "sourceCodes": [],
       "locations": []
@@ -6917,12 +6917,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3446",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3446",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Vortex",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3446",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3446",
       "familyType": 7,
       "sourceCodes": [],
       "locations": []
@@ -6948,12 +6948,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3599",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3599",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Zalethgos",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3599",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3599",
       "familyType": 2,
       "sourceCodes": [
         4
@@ -6981,12 +6981,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3598",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3598",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Zhusadormu",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3598",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3598",
       "familyType": 2,
       "sourceCodes": [
         4
@@ -7014,12 +7014,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3425",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3425",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "[DNT] Storm Pet Boss - Rare",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3425",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3425",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -7045,12 +7045,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3532",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3532",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Amador",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3532",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3532",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -7076,12 +7076,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3513",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3513",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Azure Swoglet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3513",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3513",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -7107,12 +7107,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3517",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3517",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Bronze Swoglet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3517",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3517",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -7138,12 +7138,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3514",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3514",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Emerald Swoglet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3514",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3514",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -7169,12 +7169,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3539",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3539",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Roseshell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3539",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3539",
       "familyType": 5,
       "sourceCodes": [],
       "locations": []
@@ -7200,12 +7200,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3520",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3520",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Jade Skitterbug",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3520",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3520",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -7231,12 +7231,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3522",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3522",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Savage Lobstrok",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3522",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3522",
       "familyType": 7,
       "sourceCodes": [],
       "locations": []
@@ -7262,12 +7262,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3534",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3534",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Jerrie",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3534",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3534",
       "familyType": 5,
       "sourceCodes": [],
       "locations": []
@@ -7293,12 +7293,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3556",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3556",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Kromos",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3556",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3556",
       "familyType": 2,
       "sourceCodes": [],
       "locations": []
@@ -7324,12 +7324,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4267",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4267",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Lil' Maggz",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4267",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4267",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -7355,12 +7355,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4569",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4569",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Lil' Manny",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4569",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4569",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -7386,12 +7386,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3527",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3527",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Void Lurker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3527",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3527",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -7417,12 +7417,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3526",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3526",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Snapjaw Lurker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3526",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3526",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -7448,12 +7448,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3531",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3531",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Rusty",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3531",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3531",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -7479,12 +7479,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3554",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3554",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Senega",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3554",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3554",
       "familyType": 2,
       "sourceCodes": [],
       "locations": []
@@ -7510,12 +7510,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3253",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3253",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Crushhoof",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3253",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3253",
       "familyType": 8,
       "sourceCodes": [
         28
@@ -7543,12 +7543,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3330",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3330",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Buckie",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3330",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3330",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -7576,12 +7576,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3251",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3251",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Buzzworth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3251",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3251",
       "familyType": 3,
       "sourceCodes": [
         28
@@ -7609,12 +7609,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3255",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3255",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Buttercup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3255",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3255",
       "familyType": 8,
       "sourceCodes": [
         28
@@ -7642,12 +7642,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3516",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3516",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Crimson Swoglet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3516",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3516",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -7675,12 +7675,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3303",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3303",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Mallard Duckling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3303",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3303",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -7708,12 +7708,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3523",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3523",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Cheddar",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3523",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3523",
       "familyType": 7,
       "sourceCodes": [
         5
@@ -7741,12 +7741,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3535",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3535",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Diamondshell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3535",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3535",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -7774,12 +7774,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3244",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3244",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Drazka'zet the Wrathful",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3244",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3244",
       "familyType": 4,
       "sourceCodes": [
         28
@@ -7807,12 +7807,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3250",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3250",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Egbob",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3250",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3250",
       "familyType": 5,
       "sourceCodes": [
         28
@@ -7840,12 +7840,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4306",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4306",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Elmer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4306",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4306",
       "familyType": 6,
       "sourceCodes": [
         2,
@@ -7874,12 +7874,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4307",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4307",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Spruce",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4307",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4307",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -7907,12 +7907,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3287",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3287",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Ghostflame",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3287",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3287",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -7940,12 +7940,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3380",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3380",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Black Skitterbug",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3380",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3380",
       "familyType": 3,
       "sourceCodes": [
         4,
@@ -7974,12 +7974,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3254",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3254",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Watcher of the Huntress",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3254",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3254",
       "familyType": 3,
       "sourceCodes": [
         28
@@ -8007,12 +8007,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4308",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4308",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Juniper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4308",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4308",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -8040,12 +8040,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3378",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3378",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Magic Nibbler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3378",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3378",
       "familyType": 2,
       "sourceCodes": [
         4,
@@ -8074,12 +8074,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3376",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3376",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Chip",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3376",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3376",
       "familyType": 7,
       "sourceCodes": [
         5
@@ -8107,12 +8107,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3381",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3381",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Gray Marmoni",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3381",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3381",
       "familyType": 1,
       "sourceCodes": [
         4,
@@ -8141,12 +8141,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3530",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3530",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Miloh",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3530",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3530",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -8174,12 +8174,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3284",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3284",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Whiskuk",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3284",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3284",
       "familyType": 9,
       "sourceCodes": [
         4,
@@ -8208,12 +8208,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3242",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3242",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Lil' Maka'jin",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3242",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3242",
       "familyType": 8,
       "sourceCodes": [
         28
@@ -8241,12 +8241,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3528",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3528",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Paulie",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3528",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3528",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -8274,12 +8274,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3408",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3408",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Petal",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3408",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3408",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -8307,12 +8307,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3243",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3243",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Pippin",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3243",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3243",
       "familyType": 10,
       "sourceCodes": [
         28
@@ -8340,12 +8340,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4298",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4298",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Seedle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4298",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4298",
       "familyType": 5,
       "sourceCodes": [
         2,
@@ -8374,12 +8374,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3278",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3278",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Pistachio",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3278",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3278",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -8407,12 +8407,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3270",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3270",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Jean's Lucky Fish",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3270",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3270",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -8440,12 +8440,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3334",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3334",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Time-Lost Vorquin Foal",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3334",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3334",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -8473,12 +8473,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4299",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4299",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Dustite",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4299",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4299",
       "familyType": 5,
       "sourceCodes": [
         2,
@@ -8507,12 +8507,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3414",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3414",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Obsidian Proto-Whelp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3414",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3414",
       "familyType": 2,
       "sourceCodes": [
         5
@@ -8540,12 +8540,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3379",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3379",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Crimson Proto-Whelp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3379",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3379",
       "familyType": 2,
       "sourceCodes": [
         4,
@@ -8574,12 +8574,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3529",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3529",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Rango",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3529",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3529",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -8607,12 +8607,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4287",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4287",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Reverie",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4287",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4287",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -8640,12 +8640,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4296",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4296",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Snoozles",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4296",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4296",
       "familyType": 5,
       "sourceCodes": [
         2,
@@ -8674,12 +8674,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3326",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3326",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Backswimmer Timbertooth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3326",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3326",
       "familyType": 8,
       "sourceCodes": [
         4,
@@ -8708,12 +8708,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3417",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3417",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Pinkie",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3417",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3417",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -8741,12 +8741,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4290",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4290",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Dreamhoof",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4290",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4290",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -8774,12 +8774,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4305",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4305",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Snoots",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4305",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4305",
       "familyType": 6,
       "sourceCodes": [
         2,
@@ -8808,12 +8808,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4289",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4289",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Dreamborne Scarab",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4289",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4289",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -8841,12 +8841,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3407",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3407",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Scout",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3407",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3407",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -8874,12 +8874,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3317",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3317",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Hoofhelper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3317",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3317",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -8907,12 +8907,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4295",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4295",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Napps",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4295",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4295",
       "familyType": 5,
       "sourceCodes": [
         2,
@@ -8941,12 +8941,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4310",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4310",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Snorr",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4310",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4310",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -8974,12 +8974,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4309",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4309",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Drowsey",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4309",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4309",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -9007,12 +9007,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4300",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4300",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Somnolet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4300",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4300",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -9040,12 +9040,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/4292",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/4292",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Memorie",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/4292",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/4292",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -9073,12 +9073,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3537",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3537",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Thimblerig",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3537",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3537",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -9106,12 +9106,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3416",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3416",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Troubled Tome",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3416",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3416",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -9139,12 +9139,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3382",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3382",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Stormie",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3382",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3382",
       "familyType": 2,
       "sourceCodes": [
         5
@@ -9172,12 +9172,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/3427",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/3427",
     "wowhead": {
       "expansion": "dragonflight",
       "expansionName": "Dragonflight",
       "wowheadName": "Driftling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/3427",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/3427",
       "familyType": 7,
       "sourceCodes": [
         5

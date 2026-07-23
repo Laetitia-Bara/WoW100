@@ -47,6 +47,10 @@ function firstNonEmpty(...values) {
   return values.find((value) => typeof value === "string" && value.trim()) ?? "";
 }
 
+function wowheadPetPageUrl(speciesId) {
+  return `https://www.wowhead.com/fr/battle-pet/${speciesId}`;
+}
+
 async function getToken() {
   const params = new URLSearchParams();
   params.append("grant_type", "client_credentials");
@@ -229,7 +233,7 @@ async function fetchWowheadPetsByExpansion() {
   const fetchStats = [];
 
   for (const expansion of expansions) {
-    const url = `https://www.wowhead.com/battle-pets?filter=4;${expansion.wowheadId};0`;
+    const url = `https://www.wowhead.com/fr/battle-pets?filter=4;${expansion.wowheadId};0`;
     const response = await axios.get(url, {
       headers: {
         "User-Agent": "Mozilla/5.0 WoW100 metadata helper",
@@ -251,7 +255,7 @@ async function fetchWowheadPetsByExpansion() {
         expansion: expansion.key,
         expansionName: expansion.name,
         wowheadName: row.name,
-        wowheadUrl: `https://www.wowhead.com/battle-pet/${row.species}`,
+        wowheadUrl: wowheadPetPageUrl(row.species),
         familyType: row.type ?? null,
         sourceCodes: row.source ?? [],
         locations: row.location ?? row.npc?.location ?? [],
@@ -284,6 +288,11 @@ function toWow100Item(pet, manualMetadata, wowheadMetadata) {
     "Source à vérifier",
   );
   const expansion = manualMetadata.expansion ?? wowheadMetadata?.expansion ?? "allPets";
+  const wowheadUrl = firstNonEmpty(
+    manualMetadata.externalUrl,
+    wowheadMetadata?.wowheadUrl,
+    wowheadPetPageUrl(pet.id),
+  );
 
   return {
     id: `pet_${pet.id}`,
@@ -304,10 +313,7 @@ function toWow100Item(pet, manualMetadata, wowheadMetadata) {
     isCapturable: pet.isCapturable,
     isTradable: pet.isTradable,
     boss: manualMetadata.boss ?? "",
-    externalUrl:
-      manualMetadata.externalUrl ??
-      wowheadMetadata?.wowheadUrl ??
-      `https://www.wowhead.com/battle-pet/${pet.id}`,
+    externalUrl: wowheadUrl,
     wowhead: wowheadMetadata ?? null,
     mamytwink: manualMetadata.mamytwink ?? null,
   };
@@ -354,7 +360,7 @@ async function main() {
     `${JSON.stringify(
       {
         generatedAt: new Date().toISOString(),
-        source: "https://www.wowhead.com/battle-pets",
+        source: "https://www.wowhead.com/fr/battle-pets",
         fetchStats: wowhead.fetchStats,
         pets: wowheadExpansionIndex,
       },

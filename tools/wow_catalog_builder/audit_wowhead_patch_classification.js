@@ -13,7 +13,7 @@ const reportPath = path.join(generatedDir, "wowhead_patch_audit_report.json");
 
 const categoryUrls = {
   mount: (id) => `https://www.wowhead.com/mount/${id}`,
-  pet: (id) => `https://www.wowhead.com/battle-pet/${id}`,
+  pet: (id) => `https://www.wowhead.com/fr/battle-pet/${id}`,
   achievement: (id) => `https://www.wowhead.com/fr/achievement=${id}`,
 };
 

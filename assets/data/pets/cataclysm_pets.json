@@ -18,12 +18,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/311",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/311",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Guardian Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/311",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/311",
       "familyType": 3,
       "sourceCodes": [
         8
@@ -51,12 +51,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/296",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/296",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Moonkin Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/296",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/296",
       "familyType": 1,
       "sourceCodes": [
         24
@@ -86,12 +86,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/298",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/298",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Moonkin Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/298",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/298",
       "familyType": 1,
       "sourceCodes": [
         24
@@ -121,12 +121,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/316",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/316",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Cenarion Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/316",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/316",
       "familyType": 3,
       "sourceCodes": [
         24
@@ -157,12 +157,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/297",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/297",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Lil' Ragnaros",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/297",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/297",
       "familyType": 7,
       "sourceCodes": [
         24
@@ -190,12 +190,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/293",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/293",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Elementium Geode",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/293",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/293",
       "familyType": 7,
       "sourceCodes": [
         2,
@@ -229,12 +229,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/286",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/286",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Mr. Grubbs",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/286",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/286",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -264,12 +264,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/279",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/279",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Tiny Shale Spider",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/279",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/279",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -299,12 +299,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/278",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/278",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Fox Kit",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/278",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/278",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -334,12 +334,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/303",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/303",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Nightsaber Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/303",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/303",
       "familyType": 8,
       "sourceCodes": [
         8
@@ -369,12 +369,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/333",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/333",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Gregarious Grell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/333",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/333",
       "familyType": 1,
       "sourceCodes": [
         8
@@ -404,12 +404,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/302",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/302",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Landro's Lichling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/302",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/302",
       "familyType": 4,
       "sourceCodes": [
         8
@@ -439,12 +439,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/285",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/285",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Landro's Lil' XT",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/285",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/285",
       "familyType": 10,
       "sourceCodes": [
         8
@@ -474,12 +474,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/328",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/328",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Purple Puffer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/328",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/328",
       "familyType": 9,
       "sourceCodes": [
         8
@@ -509,12 +509,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/321",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/321",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Creepy Crate",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/321",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/321",
       "familyType": 4,
       "sourceCodes": [
         4,
@@ -546,12 +546,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/319",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/319",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Feline Familiar",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/319",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/319",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -582,12 +582,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/308",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/308",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Legs",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/308",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/308",
       "familyType": 6,
       "sourceCodes": [
         4,
@@ -618,12 +618,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/337",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/337",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Lumpy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/337",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/337",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -654,12 +654,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/342",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/342",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Festival Lantern",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/342",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/342",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -689,12 +689,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/341",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/341",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Lunar Lantern",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/341",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/341",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -724,12 +724,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/289",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/289",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Scooter the Snail",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/289",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/289",
       "familyType": 5,
       "sourceCodes": [
         4,
@@ -761,12 +761,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/255",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/255",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Celestial Dragon",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/255",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/255",
       "familyType": 2,
       "sourceCodes": [
         12
@@ -794,12 +794,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/265",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/265",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Pebble",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/265",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/265",
       "familyType": 7,
       "sourceCodes": [
         12
@@ -829,12 +829,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/325",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/325",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Brilliant Kaliri",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/325",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/325",
       "familyType": 3,
       "sourceCodes": [
         12
@@ -862,12 +862,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/323",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/323",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Nuts",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/323",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/323",
       "familyType": 5,
       "sourceCodes": [
         12
@@ -897,12 +897,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/262",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/262",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "De-Weaponized Mechanical Companion",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/262",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/262",
       "familyType": 10,
       "sourceCodes": [
         1
@@ -930,12 +930,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/261",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/261",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Personal World Destroyer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/261",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/261",
       "familyType": 10,
       "sourceCodes": [
         1
@@ -963,12 +963,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/310",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/310",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Voodoo Figurine",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/310",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/310",
       "familyType": 4,
       "sourceCodes": [
         1
@@ -1001,12 +1001,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/277",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/277",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Clockwork Gnome",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/277",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/277",
       "familyType": 10,
       "sourceCodes": [
         1
@@ -1039,12 +1039,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/264",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/264",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Crawling Claw",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/264",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/264",
       "familyType": 4,
       "sourceCodes": [
         1
@@ -1074,12 +1074,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/340",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/340",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Sea Pony",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/340",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/340",
       "familyType": 9,
       "sourceCodes": [
         2,
@@ -1110,12 +1110,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/309",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/309",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Pterrordax Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/309",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/309",
       "familyType": 3,
       "sourceCodes": [
         1
@@ -1148,12 +1148,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/266",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/266",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Fossilized Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/266",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/266",
       "familyType": 4,
       "sourceCodes": [
         1
@@ -1186,12 +1186,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/292",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/292",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Magic Lamp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/292",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/292",
       "familyType": 6,
       "sourceCodes": [
         1
@@ -1224,12 +1224,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/267",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/267",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Enchanted Lantern",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/267",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/267",
       "familyType": 6,
       "sourceCodes": [
         1
@@ -1262,12 +1262,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/329",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/329",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Murkablo",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/329",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/329",
       "familyType": 1,
       "sourceCodes": [
         8
@@ -1295,12 +1295,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/268",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/268",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Lil' Deathwing",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/268",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/268",
       "familyType": 2,
       "sourceCodes": [
         8
@@ -1328,12 +1328,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/294",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/294",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Deathy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/294",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/294",
       "familyType": 1,
       "sourceCodes": [
         8
@@ -1361,12 +1361,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/240",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/240",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Onyx Panther",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/240",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/240",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -1392,12 +1392,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/331",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/331",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Alliance Balloon",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/331",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/331",
       "familyType": 3,
       "sourceCodes": [
         4,
@@ -1428,12 +1428,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/332",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/332",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Horde Balloon",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/332",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/332",
       "familyType": 3,
       "sourceCodes": [
         4,
@@ -1464,12 +1464,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/301",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/301",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Panther Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/301",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/301",
       "familyType": 8,
       "sourceCodes": [
         4,
@@ -1500,12 +1500,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/307",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/307",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Lashtail Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/307",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/307",
       "familyType": 8,
       "sourceCodes": [
         4,
@@ -1536,12 +1536,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/259",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/259",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Blue Mini Jouster",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/259",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/259",
       "familyType": 3,
       "sourceCodes": [
         4,
@@ -1572,12 +1572,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/260",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/260",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Gold Mini Jouster",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/260",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/260",
       "familyType": 3,
       "sourceCodes": [
         4,
@@ -1608,12 +1608,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/287",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/287",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Tiny Flamefly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/287",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/287",
       "familyType": 3,
       "sourceCodes": [
         4,
@@ -1644,12 +1644,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/220",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/220",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Withers",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/220",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/220",
       "familyType": 7,
       "sourceCodes": [
         4,
@@ -1680,12 +1680,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/291",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/291",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Singing Sunflower",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/291",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/291",
       "familyType": 7,
       "sourceCodes": [
         4,
@@ -1716,12 +1716,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/336",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/336",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Darkmoon Balloon",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/336",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/336",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -1751,12 +1751,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/306",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/306",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Winterspring Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/306",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/306",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -1786,12 +1786,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/272",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/272",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Armadillo Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/272",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/272",
       "familyType": 5,
       "sourceCodes": [
         5,
@@ -1825,12 +1825,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/338",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/338",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Darkmoon Tonk",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/338",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/338",
       "familyType": 10,
       "sourceCodes": [
         5
@@ -1860,12 +1860,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/318",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/318",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Crimson Lasher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/318",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/318",
       "familyType": 7,
       "sourceCodes": [
         2,
@@ -1896,12 +1896,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/282",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/282",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Guild Herald",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/282",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/282",
       "familyType": 1,
       "sourceCodes": [
         5,
@@ -1930,12 +1930,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/283",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/283",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Guild Herald",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/283",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/283",
       "familyType": 1,
       "sourceCodes": [
         5,
@@ -1964,12 +1964,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/270",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/270",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Dark Phoenix Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/270",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/270",
       "familyType": 7,
       "sourceCodes": [
         5,
@@ -2003,12 +2003,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/343",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/343",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Darkmoon Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/343",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/343",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -2038,12 +2038,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/320",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/320",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Lil' Tarecgosa",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/320",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/320",
       "familyType": 2,
       "sourceCodes": [
         5,
@@ -2077,12 +2077,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/271",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/271",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Rustberg Gull",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/271",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/271",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -2112,12 +2112,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/317",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/317",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Hyjal Bear Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/317",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/317",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -2147,12 +2147,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/280",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/280",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Guild Page",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/280",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/280",
       "familyType": 1,
       "sourceCodes": [
         5,
@@ -2181,12 +2181,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/281",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/281",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Guild Page",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/281",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/281",
       "familyType": 1,
       "sourceCodes": [
         5,
@@ -2215,12 +2215,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/330",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/330",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Darkmoon Monkey",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/330",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/330",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -2250,12 +2250,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/335",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/335",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Darkmoon Turtle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/335",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/335",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -2285,12 +2285,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/339",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/339",
     "wowhead": {
       "expansion": "cataclysm",
       "expansionName": "Cataclysm",
       "wowheadName": "Darkmoon Zeppelin",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/339",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/339",
       "familyType": 10,
       "sourceCodes": [
         5

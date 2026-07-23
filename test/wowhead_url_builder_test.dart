@@ -21,4 +21,11 @@ void main() {
       'https://www.wowhead.com/fr/achievement=6601',
     );
   });
+
+  test('localizes Wowhead pet URLs to French', () {
+    expect(
+      WowheadUrlBuilder.localizeUrl('https://www.wowhead.com/battle-pet/50'),
+      'https://www.wowhead.com/fr/battle-pet/50',
+    );
+  });
 }

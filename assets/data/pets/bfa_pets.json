@@ -18,12 +18,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2185",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2185",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Cap'n Crackers",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2185",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2185",
       "familyType": 3,
       "sourceCodes": [
         24
@@ -51,12 +51,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2623",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2623",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Dottie",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2623",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2623",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -82,12 +82,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2184",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2184",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Whomper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2184",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2184",
       "familyType": 1,
       "sourceCodes": [],
       "locations": []
@@ -113,12 +113,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2586",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2586",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Amberglow Stinger",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2586",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2586",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -146,12 +146,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2589",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2589",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Living Amber",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2589",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2589",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -179,12 +179,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2569",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2569",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Violet Abyssal Eel",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2569",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2569",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -212,12 +212,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2709",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2709",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Skittering Eel",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2709",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2709",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -245,12 +245,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2758",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2758",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Slimy Eel",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2758",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2758",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -278,12 +278,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2842",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2842",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Anomalus",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2842",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2842",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -311,12 +311,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2833",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2833",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Void-Scarred Anubisath",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2833",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2833",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -344,12 +344,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2432",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2432",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Fuzzy Creepling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2432",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2432",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -377,12 +377,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2565",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2565",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Rebuilt Mechanical Spider",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2565",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2565",
       "familyType": 10,
       "sourceCodes": [],
       "locations": []
@@ -408,12 +408,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2582",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2582",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Baoh-Xi",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2582",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2582",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -441,12 +441,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2456",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2456",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Barnaby",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2456",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2456",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -474,12 +474,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2554",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2554",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Needleback Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2554",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2554",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -507,12 +507,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2551",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2551",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Baby Stonehide",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2551",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2551",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -540,12 +540,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2763",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2763",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Slimy Hermit Crab",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2763",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2763",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -573,12 +573,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2557",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2557",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Firesting Buzzer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2557",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2557",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -606,12 +606,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2469",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2469",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Thistlebrush Bud",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2469",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2469",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -639,12 +639,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2545",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2545",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Gust of Cyclarus",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2545",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2545",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -672,12 +672,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2450",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2450",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Tinder Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2450",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2450",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -705,12 +705,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2458",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2458",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Muskflank Calfling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2458",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2458",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -738,12 +738,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2700",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2700",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Wriggler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2700",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2700",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -771,12 +771,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2455",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2455",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Captain Nibs",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2455",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2455",
       "familyType": 4,
       "sourceCodes": [
         2,
@@ -805,12 +805,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2684",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2684",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Glittering Diamondshell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2684",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2684",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -838,12 +838,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2690",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2690",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Caverndark Nightmare",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2690",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2690",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -871,12 +871,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2838",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2838",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "C'Thuffer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2838",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2838",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -904,12 +904,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2762",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2762",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Slimy Darkhunter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2762",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2762",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -937,12 +937,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2840",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2840",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Void-Scarred Cat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2840",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2840",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -970,12 +970,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2567",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2567",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Crimson Bat Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2567",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2567",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -1003,12 +1003,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2583",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2583",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Azure Windseeker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2583",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2583",
       "familyType": 2,
       "sourceCodes": [
         2
@@ -1036,12 +1036,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2448",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2448",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Craghoof Kid",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2448",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2448",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -1069,12 +1069,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2446",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2446",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Sparkleshell Sandcrawler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2446",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2446",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -1102,12 +1102,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2581",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2581",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Comet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2581",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2581",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -1135,12 +1135,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2568",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2568",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Cobalt Raven",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2568",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2568",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -1168,12 +1168,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2538",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2538",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Dasher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2538",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2538",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -1201,12 +1201,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2585",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2585",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Kor'thik Swarmling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2585",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2585",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -1234,12 +1234,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2463",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2463",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Sandshell Chitterer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2463",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2463",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -1267,12 +1267,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2852",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2852",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Jade Defender",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2852",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2852",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -1300,12 +1300,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2546",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2546",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Detective Ray",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2546",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2546",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -1333,12 +1333,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2434",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2434",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Voidwiggler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2434",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2434",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -1366,12 +1366,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2756",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2756",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Irradiated Elementaling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2756",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2756",
       "familyType": 7,
       "sourceCodes": [],
       "locations": []
@@ -1397,12 +1397,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2692",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2692",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Lightless Ambusher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2692",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2692",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -1430,12 +1430,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2697",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2697",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Amethyst Softshell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2697",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2697",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -1463,12 +1463,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2584",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2584",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Spirit of the Spring",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2584",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2584",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1496,12 +1496,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2580",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2580",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Wayward Spirit",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2580",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2580",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -1529,12 +1529,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2449",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2449",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "False Knucklebump",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2449",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2449",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -1562,12 +1562,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2795",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2795",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Jenafur",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2795",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2795",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -1595,12 +1595,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2708",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2708",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Coral Lashling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2708",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2708",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1628,12 +1628,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2466",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2466",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Giggling Flame",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2466",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2466",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1661,12 +1661,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2559",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2559",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Tonguelasher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2559",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2559",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -1694,12 +1694,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2440",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2440",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Fozling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2440",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2440",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1727,12 +1727,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2165",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2165",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Francois",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2165",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2165",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -1760,12 +1760,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2694",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2694",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Mindlost Bloodfrenzy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2694",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2694",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -1793,12 +1793,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2701",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2701",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Seafury",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2701",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2701",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1826,12 +1826,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2695",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2695",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Daggertooth Frenzy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2695",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2695",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -1859,12 +1859,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2436",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2436",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Scabby",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2436",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2436",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -1892,12 +1892,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2445",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2445",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Scuttle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2445",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2445",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -1923,12 +1923,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2703",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2703",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Sandkeep",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2703",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2703",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -1956,12 +1956,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2441",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2441",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Squawkling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2441",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2441",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -1989,12 +1989,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2187",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2187",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Filthy Slime",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2187",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2187",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -2022,12 +2022,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2465",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2465",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Playful Frostkin",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2465",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2465",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -2055,12 +2055,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2457",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2457",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Coldlight Surfrunner",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2457",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2457",
       "familyType": 1,
       "sourceCodes": [
         2,
@@ -2089,12 +2089,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2720",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2720",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Arachnoid Skitterbot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2720",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2720",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -2122,12 +2122,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2837",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2837",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Gloop",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2837",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2837",
       "familyType": 6,
       "sourceCodes": [
         16
@@ -2155,12 +2155,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2553",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2553",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Rotting Ghoul",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2553",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2553",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -2188,12 +2188,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2547",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2547",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Hydrath Droplet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2547",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2547",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -2221,12 +2221,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2579",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2579",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Stoneclaw",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2579",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2579",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -2254,12 +2254,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2560",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2560",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Scritches",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2560",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2560",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -2287,12 +2287,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2712",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2712",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Snowsoft Nibbler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2712",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2712",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -2320,12 +2320,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2850",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2850",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Cursed Dune Watcher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2850",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2850",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -2353,12 +2353,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2847",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2847",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Rotbreath",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2847",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2847",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -2386,12 +2386,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2704",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2704",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Scalebrood Hydra",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2704",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2704",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -2419,12 +2419,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2566",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2566",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Albatross Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2566",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2566",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -2452,12 +2452,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2447",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2447",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Kindleweb Spiderling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2447",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2447",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -2485,12 +2485,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2561",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2561",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Thunderscale Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2561",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2561",
       "familyType": 2,
       "sourceCodes": [
         2
@@ -2518,12 +2518,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2754",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2754",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Ghostly Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2754",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2754",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -2551,12 +2551,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2454",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2454",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Kunchong Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2454",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2454",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -2582,12 +2582,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2411",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2411",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Wicker Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2411",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2411",
       "familyType": 4,
       "sourceCodes": [],
       "locations": []
@@ -2613,12 +2613,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2556",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2556",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Shadefeather Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2556",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2556",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -2646,12 +2646,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2433",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2433",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Aldrusian Sproutling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2433",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2433",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -2679,12 +2679,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2453",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2453",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Juvenile Brineshell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2453",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2453",
       "familyType": 9,
       "sourceCodes": [
         2,
@@ -2713,12 +2713,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2473",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2473",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Sunscale Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2473",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2473",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -2746,12 +2746,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2845",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2845",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "K'uddly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2845",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2845",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -2779,12 +2779,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2839",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2839",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Void-Scarred Hare",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2839",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2839",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -2812,12 +2812,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2765",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2765",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Slimy Sea Slug",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2765",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2765",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -2845,12 +2845,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2761",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2761",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Slimy Fangtooth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2761",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2761",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -2878,12 +2878,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2757",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2757",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Slimy Otter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2757",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2757",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -2911,12 +2911,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2549",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2549",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Void Jelly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2549",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2549",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -2944,12 +2944,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2718",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2718",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Microbot 8D",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2718",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2718",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -2977,12 +2977,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2435",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2435",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Teeny Titan Orb",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2435",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2435",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -3010,12 +3010,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2719",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2719",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Bonebiter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2719",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2719",
       "familyType": 2,
       "sourceCodes": [
         2
@@ -3043,12 +3043,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2832",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2832",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Muar",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2832",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2832",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -3076,12 +3076,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2681",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2681",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Murgle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2681",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2681",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -3109,12 +3109,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2696",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2696",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Nameless Octopode",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2696",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2696",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -3142,12 +3142,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2760",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2760",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Slimy Octopode",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2760",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2760",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -3175,12 +3175,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2836",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2836",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Eye of Corruption",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2836",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2836",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -3208,12 +3208,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2714",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2714",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "OOX-35/MG",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2714",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2714",
       "familyType": 10,
       "sourceCodes": [],
       "locations": []
@@ -3239,12 +3239,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2590",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2590",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Ravenous Prideling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2590",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2590",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -3272,12 +3272,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2792",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2792",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Papi",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2792",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2792",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -3305,12 +3305,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2793",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2793",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Sunsoaked Flitter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2793",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2793",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -3338,12 +3338,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2527",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2527",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Child of Pa'ku",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2527",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2527",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -3371,12 +3371,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2529",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2529",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Thunder Lizard Runt",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2529",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2529",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -3404,12 +3404,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2462",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2462",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Octopode Fry",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2462",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2462",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -3437,12 +3437,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2471",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2471",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Littlehoof",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2471",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2471",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -3470,12 +3470,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2468",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2468",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Laughing Stonekin",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2468",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2468",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -3503,12 +3503,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2472",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2472",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Snapper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2472",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2472",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -3536,12 +3536,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2689",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2689",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Chitterspine Needler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2689",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2689",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -3569,12 +3569,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2680",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2680",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Zanj'ir Poker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2680",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2680",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -3602,12 +3602,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2452",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2452",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Poro",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2452",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2452",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -3635,12 +3635,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2461",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2461",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Inky",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2461",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2461",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -3668,12 +3668,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2753",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2753",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Spraybot 0D",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2753",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2753",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -3701,12 +3701,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2835",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2835",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Ra'kim",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2835",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2835",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -3734,12 +3734,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2702",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2702",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Stormwrath",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2702",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2702",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -3767,12 +3767,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2437",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2437",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Ragepeep",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2437",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2437",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -3800,12 +3800,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2841",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2841",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Void-Scarred Rat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2841",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2841",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -3833,12 +3833,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2587",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2587",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Spawn of Garalon",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2587",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2587",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -3866,12 +3866,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2528",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2528",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Spawn of Krag'wa",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2528",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2528",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -3899,12 +3899,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2834",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2834",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Aqir Hivespawn",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2834",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2834",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -3932,12 +3932,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2186",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2186",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Spawn of Merektha",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2186",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2186",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -3965,12 +3965,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2693",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2693",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Spawn of Nalaada",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2693",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2693",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -3998,12 +3998,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2715",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2715",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Lost Robogrip",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2715",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2715",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -4031,12 +4031,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2564",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2564",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Rebuilt Gorilla Bot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2564",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2564",
       "familyType": 10,
       "sourceCodes": [],
       "locations": []
@@ -4062,12 +4062,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2766",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2766",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Armored Vaultbot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2766",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2766",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -4095,12 +4095,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2459",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2459",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Snort",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2459",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2459",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -4128,12 +4128,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2851",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2851",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Wicked Lurker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2851",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2851",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -4161,12 +4161,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2755",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2755",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Adventurous Hopling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2755",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2755",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -4194,12 +4194,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2843",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2843",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Void-Scarred Beetle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2843",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2843",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -4227,12 +4227,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2464",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2464",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Deathsting Scorpid",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2464",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2464",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -4260,12 +4260,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2558",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2558",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Lord Woofington",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2558",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2558",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -4293,12 +4293,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2544",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2544",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Darkshore Sentinel",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2544",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2544",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -4326,12 +4326,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2711",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2711",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Golden Snorf",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2711",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2711",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -4359,12 +4359,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2525",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2525",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Redridge Tarantula",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2525",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2525",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -4392,12 +4392,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2846",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2846",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Corrupted Tentacle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2846",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2846",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -4425,12 +4425,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2682",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2682",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Necrofin Tadpole",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2682",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2682",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -4458,12 +4458,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2460",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2460",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Voru'kar Leecher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2460",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2460",
       "familyType": 3,
       "sourceCodes": [
         2,
@@ -4492,12 +4492,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2548",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2548",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Everburning Treant",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2548",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2548",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -4525,12 +4525,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2848",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2848",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Aqir Tunneler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2848",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2848",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -4558,12 +4558,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2451",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2451",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Bloodstone Tunneler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2451",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2451",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -4591,12 +4591,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2707",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2707",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Budding Algan",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2707",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2707",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -4624,12 +4624,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2706",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2706",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Brinestone Algan",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2706",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2706",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -4657,12 +4657,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2541",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2541",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Proper Parrot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2541",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2541",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -4690,12 +4690,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2438",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2438",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Foulfeather",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2438",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2438",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -4723,12 +4723,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2794",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2794",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Crimson Skipper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2794",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2794",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -4756,12 +4756,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2467",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2467",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Mischievous Zephyr",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2467",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2467",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -4789,12 +4789,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2550",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2550",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Zur'aj the Depleted",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2550",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2550",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -4822,12 +4822,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2379",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2379",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Honey Bee",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2379",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2379",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -4857,12 +4857,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2650",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2650",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Great Sea Albatross",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2650",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2650",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -4890,12 +4890,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2651",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2651",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Deeptide Fingerling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2651",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2651",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -4923,12 +4923,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2352",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2352",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Baa'l",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2352",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2352",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -4954,12 +4954,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2537",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2537",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Baby Zandalari Raptor",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2537",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2537",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -4987,12 +4987,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2421",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2421",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Saurolisk Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2421",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2421",
       "familyType": 2,
       "sourceCodes": [],
       "locations": []
@@ -5018,12 +5018,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2399",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2399",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Hermit Crab",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2399",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2399",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5054,12 +5054,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2385",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2385",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Barrier Hermit",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2385",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2385",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5087,12 +5087,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2425",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2425",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Barnacled Hermit Crab",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2425",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2425",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -5118,12 +5118,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2400",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2400",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Coastal Bounder",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2400",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2400",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5153,12 +5153,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2390",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2390",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Leafy Flutterwing",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2390",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2390",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -5186,12 +5186,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2663",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2663",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Junkheap Roach",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2663",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2663",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -5219,12 +5219,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2664",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2664",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Experimental Roach",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2664",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2664",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -5253,12 +5253,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2669",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2669",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Rustbolt Clucker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2669",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2669",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -5286,12 +5286,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2646",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2646",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Sandclaw Sunshell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2646",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2646",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5319,12 +5319,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2647",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2647",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Glimmershell Scuttler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2647",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2647",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5352,12 +5352,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2386",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2386",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Coastal Scuttler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2386",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2386",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5385,12 +5385,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2652",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2652",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Bloodseeker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2652",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2652",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5418,12 +5418,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2374",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2374",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Freshwater Crawler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2374",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2374",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5451,12 +5451,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2377",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2377",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Sandyback Crawler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2377",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2377",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5486,12 +5486,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2372",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2372",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Shadowback Crawler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2372",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2372",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5520,12 +5520,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2667",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2667",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Motorized Croaker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2667",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2667",
       "familyType": 10,
       "sourceCodes": [],
       "locations": [
@@ -5553,12 +5553,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2382",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2382",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Inland Croaker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2382",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2382",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5586,12 +5586,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2397",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2397",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Spectral Raven",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2397",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2397",
       "familyType": 4,
       "sourceCodes": [],
       "locations": [
@@ -5619,12 +5619,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2645",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2645",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Sandclaw Pincher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2645",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2645",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5652,12 +5652,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2796",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2796",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Void-Scarred Toad",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2796",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2796",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -5683,12 +5683,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2649",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2649",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Hissing Chitterspine",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2649",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2649",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -5714,12 +5714,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2653",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2653",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Spireshell Snail",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2653",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2653",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -5747,12 +5747,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2389",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2389",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Elusive Skimmer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2389",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2389",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5780,12 +5780,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2373",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2373",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "River Frog",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2373",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2373",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5813,12 +5813,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2665",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2665",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Fleeting Frog",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2665",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2665",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5846,12 +5846,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2648",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2648",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Chitterspine Skitterling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2648",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2648",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5879,12 +5879,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2426",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2426",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Sandstinger Wasp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2426",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2426",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -5910,12 +5910,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2864",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2864",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Void-Scarred Locust",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2864",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2864",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -5944,12 +5944,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2392",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2392",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Young Sand Sifter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2392",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2392",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -5979,12 +5979,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2677",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2677",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Twilight Whelpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2677",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2677",
       "familyType": 2,
       "sourceCodes": [],
       "locations": [
@@ -6012,12 +6012,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2394",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2394",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Returned Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2394",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2394",
       "familyType": 4,
       "sourceCodes": [],
       "locations": [
@@ -6045,12 +6045,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2660",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2660",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Muck Slug",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2660",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2660",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -6078,12 +6078,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2659",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2659",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Trench Slug",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2659",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2659",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -6111,12 +6111,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2378",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2378",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "River Otter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2378",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2378",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -6145,12 +6145,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2866",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2866",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Voidglower",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2866",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2866",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -6178,12 +6178,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2674",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2674",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "H4ND-EE",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2674",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2674",
       "familyType": 10,
       "sourceCodes": [],
       "locations": [
@@ -6211,12 +6211,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2375",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2375",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Vale Marmot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2375",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2375",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -6244,12 +6244,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2670",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2670",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Mechagon Marmot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2670",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2670",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -6277,12 +6277,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2676",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2676",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Malfunctioning Microbot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2676",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2676",
       "familyType": 10,
       "sourceCodes": [],
       "locations": [
@@ -6310,12 +6310,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2678",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2678",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Abyssal Slitherling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2678",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2678",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -6343,12 +6343,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2381",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2381",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Shack Crab",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2381",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2381",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -6379,12 +6379,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2384",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2384",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Shore Butterfly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2384",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2384",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -6412,12 +6412,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2422",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2422",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Blue Flitter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2422",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2422",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -6443,12 +6443,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2863",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2863",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Oasis Void-Duster",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2863",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2863",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -6476,12 +6476,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2423",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2423",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Freshwater Pincher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2423",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2423",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -6507,12 +6507,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2380",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2380",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Parasitic Boarfly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2380",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2380",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -6540,12 +6540,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2376",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2376",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Valley Chicken",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2376",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2376",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -6573,12 +6573,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2865",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2865",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Voidskimmer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2865",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2865",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -6606,12 +6606,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2657",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2657",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Blackchasm Crawler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2657",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2657",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -6639,12 +6639,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2672",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2672",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Alloyed Alleyrat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2672",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2672",
       "familyType": 10,
       "sourceCodes": [],
       "locations": [
@@ -6672,12 +6672,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2662",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2662",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Duskytooth Snooter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2662",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2662",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -6706,12 +6706,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2661",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2661",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Rustyroot Snooter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2661",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2661",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -6739,12 +6739,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2666",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2666",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Yellow Junkhopper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2666",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2666",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -6773,12 +6773,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2398",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2398",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Boghopper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2398",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2398",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -6806,12 +6806,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2668",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2668",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Copper Hopper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2668",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2668",
       "familyType": 10,
       "sourceCodes": [],
       "locations": [
@@ -6839,12 +6839,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2387",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2387",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Golden Beetle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2387",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2387",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -6872,12 +6872,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2671",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2671",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Specimen 97",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2671",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2671",
       "familyType": 10,
       "sourceCodes": [],
       "locations": [
@@ -6905,12 +6905,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2867",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2867",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Golden Chirper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2867",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2867",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -6938,12 +6938,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2395",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2395",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Glutted Bleeder",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2395",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2395",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -6971,12 +6971,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2393",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2393",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Sticky Oozeling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2393",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2393",
       "familyType": 6,
       "sourceCodes": [],
       "locations": [
@@ -7004,12 +7004,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2198",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2198",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Taptaf",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2198",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2198",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -7035,12 +7035,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2388",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2388",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Bloodfever Tarantula",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2388",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2388",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -7068,12 +7068,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2658",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2658",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Chitterspine Deepstalker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2658",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2658",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -7101,12 +7101,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2675",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2675",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Clanking Scrapsorter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2675",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2675",
       "familyType": 10,
       "sourceCodes": [],
       "locations": [
@@ -7134,12 +7134,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2673",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2673",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Scrapyard Tunneler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2673",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2673",
       "familyType": 10,
       "sourceCodes": [],
       "locations": [
@@ -7167,12 +7167,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2383",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2383",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Giant Woodworm",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2383",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2383",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -7200,12 +7200,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2621",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2621",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Lil' Nefarian",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2621",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2621",
       "familyType": 2,
       "sourceCodes": [
         2,
@@ -7235,12 +7235,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2535",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2535",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Wicker Wraith",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2535",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2535",
       "familyType": 6,
       "sourceCodes": [
         12
@@ -7268,12 +7268,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2767",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2767",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Burnout",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2767",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2767",
       "familyType": 4,
       "sourceCodes": [
         12
@@ -7301,12 +7301,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2591",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2591",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Happiness",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2591",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2591",
       "familyType": 7,
       "sourceCodes": [
         12
@@ -7334,12 +7334,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2402",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2402",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Brutus",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2402",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2402",
       "familyType": 10,
       "sourceCodes": [
         12
@@ -7367,12 +7367,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2442",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2442",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Bumbles",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2442",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2442",
       "familyType": 3,
       "sourceCodes": [
         12
@@ -7400,12 +7400,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2479",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2479",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Bucketshell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2479",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2479",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -7433,12 +7433,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2401",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2401",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Rooter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2401",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2401",
       "familyType": 10,
       "sourceCodes": [
         12
@@ -7466,12 +7466,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2202",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2202",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Miimii",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2202",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2202",
       "familyType": 4,
       "sourceCodes": [
         12
@@ -7501,12 +7501,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2534",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2534",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Mini Spider Tank",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2534",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2534",
       "familyType": 10,
       "sourceCodes": [
         12
@@ -7534,12 +7534,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2638",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2638",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Minimancer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2638",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2638",
       "familyType": 4,
       "sourceCodes": [
         12
@@ -7567,12 +7567,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2683",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2683",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Kelpfin",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2683",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2683",
       "familyType": 1,
       "sourceCodes": [
         12
@@ -7600,12 +7600,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2844",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2844",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Reek",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2844",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2844",
       "familyType": 6,
       "sourceCodes": [
         12
@@ -7633,12 +7633,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2478",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2478",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Sir Snips",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2478",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2478",
       "familyType": 9,
       "sourceCodes": [
         28
@@ -7666,12 +7666,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2431",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2431",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Dreadtick Leecher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2431",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2431",
       "familyType": 3,
       "sourceCodes": [
         12
@@ -7699,12 +7699,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2477",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2477",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Baby Crawg",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2477",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2477",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -7732,12 +7732,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2197",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2197",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Direhorn Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2197",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2197",
       "familyType": 8,
       "sourceCodes": [
         1
@@ -7765,12 +7765,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2201",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2201",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Enchanted Tiki Mask",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2201",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2201",
       "familyType": 6,
       "sourceCodes": [
         1
@@ -7798,12 +7798,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2716",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2716",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Utility Mechanoclaw",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2716",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2716",
       "familyType": 10,
       "sourceCodes": [],
       "locations": []
@@ -7829,12 +7829,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2530",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2530",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Mechantula",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2530",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2530",
       "familyType": 10,
       "sourceCodes": [
         1
@@ -7862,12 +7862,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2717",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2717",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Microbot XD",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2717",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2717",
       "familyType": 10,
       "sourceCodes": [],
       "locations": []
@@ -7893,12 +7893,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2475",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2475",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Slippy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2475",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2475",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -7926,12 +7926,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2474",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2474",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Gearspring Hopper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2474",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2474",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -7959,12 +7959,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2199",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2199",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Restored Revenant",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2199",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2199",
       "familyType": 4,
       "sourceCodes": [
         1
@@ -7992,12 +7992,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2476",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2476",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Bloated Bloodfeaster",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2476",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2476",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -8025,12 +8025,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2778",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2778",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Finduin",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2778",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2778",
       "familyType": 1,
       "sourceCodes": [],
       "locations": []
@@ -8056,12 +8056,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2776",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2776",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Rikki",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2776",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2776",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -8087,12 +8087,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2777",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2777",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Gillvanas",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2777",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2777",
       "familyType": 1,
       "sourceCodes": [],
       "locations": []
@@ -8118,12 +8118,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2143",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2143",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Tottle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2143",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2143",
       "familyType": 9,
       "sourceCodes": [
         8
@@ -8151,12 +8151,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2779",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2779",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Anima Wyrmling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2779",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2779",
       "familyType": 2,
       "sourceCodes": [],
       "locations": []
@@ -8182,12 +8182,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2576",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2576",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Beakbert",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2576",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2576",
       "familyType": 9,
       "sourceCodes": [
         4,
@@ -8216,12 +8216,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2688",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2688",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Brilliant Glimmershell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2688",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2688",
       "familyType": 9,
       "sourceCodes": [
         4,
@@ -8250,12 +8250,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2687",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2687",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Lustrous Glimmershell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2687",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2687",
       "familyType": 9,
       "sourceCodes": [
         4,
@@ -8284,12 +8284,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2685",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2685",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Sandclaw Nestseeker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2685",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2685",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -8317,12 +8317,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2563",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2563",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Nightwreathed Watcher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2563",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2563",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -8348,12 +8348,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2577",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2577",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Froglet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2577",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2577",
       "familyType": 9,
       "sourceCodes": [
         4,
@@ -8382,12 +8382,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2578",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2578",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Scaley",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2578",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2578",
       "familyType": 2,
       "sourceCodes": [
         4,
@@ -8416,12 +8416,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2157",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2157",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Dart",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2157",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2157",
       "familyType": 8,
       "sourceCodes": [
         4
@@ -8449,12 +8449,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2872",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2872",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Shadowbarb Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2872",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2872",
       "familyType": 3,
       "sourceCodes": [
         4
@@ -8482,12 +8482,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2190",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2190",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Guardian Cobra Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2190",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2190",
       "familyType": 8,
       "sourceCodes": [
         4
@@ -8515,12 +8515,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2575",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2575",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Mr. Crabs",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2575",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2575",
       "familyType": 9,
       "sourceCodes": [
         4,
@@ -8549,12 +8549,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2196",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2196",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Lil' Tika",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2196",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2196",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -8582,12 +8582,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2526",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2526",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Feathers",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2526",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2526",
       "familyType": 10,
       "sourceCodes": [
         4
@@ -8615,12 +8615,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2188",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2188",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Poda",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2188",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2188",
       "familyType": 8,
       "sourceCodes": [
         4
@@ -8648,12 +8648,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2192",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2192",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Vengeful Chicken",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2192",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2192",
       "familyType": 10,
       "sourceCodes": [
         4
@@ -8681,12 +8681,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2721",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2721",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Echoing Oozeling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2721",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2721",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -8714,12 +8714,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2076",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2076",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "SpeedyNumberIII",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2076",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2076",
       "familyType": 5,
       "sourceCodes": [],
       "locations": []
@@ -8745,12 +8745,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2403",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2403",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Abyssal Eel",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2403",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2403",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -8778,12 +8778,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2409",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2409",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Greatwing Macaw",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2409",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2409",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -8811,12 +8811,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2417",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2417",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Ranishu Runt",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2417",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2417",
       "familyType": 1,
       "sourceCodes": [
         5
@@ -8844,12 +8844,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2429",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2429",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Azeriti",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2429",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2429",
       "familyType": 7,
       "sourceCodes": [],
       "locations": []
@@ -8875,12 +8875,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2484",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2484",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Horse Balloon",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2484",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2484",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -8908,12 +8908,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2482",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2482",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Wolf Balloon",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2482",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2482",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -8941,12 +8941,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2483",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2483",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Murloc Balloon",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2483",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2483",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -8974,12 +8974,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2404",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2404",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Seabreeze Bumblebee",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2404",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2404",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -9007,12 +9007,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2531",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2531",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Mechanical Cockroach",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2531",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2531",
       "familyType": 10,
       "sourceCodes": [
         5
@@ -9040,12 +9040,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2686",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2686",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Pearlescent Glimmershell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2686",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2686",
       "familyType": 9,
       "sourceCodes": [
         2,
@@ -9074,12 +9074,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2849",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2849",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Pygmy Camel",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2849",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2849",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -9107,12 +9107,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2533",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2533",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Alarm-O-Dog",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2533",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2533",
       "familyType": 10,
       "sourceCodes": [
         5
@@ -9140,12 +9140,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2410",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2410",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Mechanical Prairie Dog",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2410",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2410",
       "familyType": 10,
       "sourceCodes": [
         5
@@ -9173,12 +9173,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2427",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2427",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Cou'pa",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2427",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2427",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -9206,12 +9206,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2747",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2747",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Gruesome Belcher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2747",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2747",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -9239,12 +9239,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2419",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2419",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Swamp Toad",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2419",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2419",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -9272,12 +9272,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2413",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2413",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Zandalari Shinchomper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2413",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2413",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -9305,12 +9305,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2749",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2749",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Crypt Fiend",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2749",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2749",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -9338,12 +9338,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2691",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2691",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Chitterspine Devourer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2691",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2691",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -9371,12 +9371,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2405",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2405",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Corlain Falcon",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2405",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2405",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -9402,12 +9402,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2698",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2698",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Prismatic Softshell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2698",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2698",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -9435,12 +9435,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2868",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2868",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Experiment 13",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2868",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2868",
       "familyType": 10,
       "sourceCodes": [
         5
@@ -9468,12 +9468,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2428",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2428",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Carnivorous Lasher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2428",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2428",
       "familyType": 7,
       "sourceCodes": [
         5
@@ -9501,12 +9501,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2870",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2870",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Wailing Lasher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2870",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2870",
       "familyType": 7,
       "sourceCodes": [
         5
@@ -9534,12 +9534,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2439",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2439",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Azerite Puddle",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2439",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2439",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -9567,12 +9567,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2408",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2408",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Bilefang Skitterer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2408",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2408",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -9600,12 +9600,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2424",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2424",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Crimson Frog",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2424",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2424",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -9633,12 +9633,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2539",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2539",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Trecker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2539",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2539",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -9666,12 +9666,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2853",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2853",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Windfeather Chick",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2853",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2853",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -9699,12 +9699,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2555",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2555",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Albino Duskwatcher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2555",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2555",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -9732,12 +9732,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2750",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2750",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Shrieker",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2750",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2750",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -9765,12 +9765,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2552",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2552",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Leatherwing Screecher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2552",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2552",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -9798,12 +9798,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2710",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2710",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Drowned Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2710",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2710",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -9831,12 +9831,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2414",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2414",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Bloodfeaster Larva",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2414",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2414",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -9864,12 +9864,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2699",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2699",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Damplight Slug",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2699",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2699",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -9897,12 +9897,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2797",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2797",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Void-Scarred Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2797",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2797",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -9930,12 +9930,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2420",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2420",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Accursed Hexxer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2420",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2420",
       "familyType": 6,
       "sourceCodes": [
         5
@@ -9963,12 +9963,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2416",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2416",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Lil' Ben'fon",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2416",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2416",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -9996,12 +9996,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2444",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2444",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Lil' War Machine",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2444",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2444",
       "familyType": 10,
       "sourceCodes": [
         5
@@ -10029,12 +10029,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2443",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2443",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Lil' Siege Tower",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2443",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2443",
       "familyType": 10,
       "sourceCodes": [
         5
@@ -10062,12 +10062,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2869",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2869",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Tinyclaw",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2869",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2869",
       "familyType": 10,
       "sourceCodes": [
         5
@@ -10095,12 +10095,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2562",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2562",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Crimson Octopode",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2562",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2562",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -10128,12 +10128,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2430",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2430",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Lost Platysaur",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2430",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2430",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -10161,12 +10161,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2418",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2418",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Child of Jani",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2418",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2418",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -10194,12 +10194,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2412",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2412",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Tiny Direhorn",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2412",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2412",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -10227,12 +10227,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2406",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2406",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Drustvar Piglet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2406",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2406",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -10260,12 +10260,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2189",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2189",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Smoochums",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2189",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2189",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -10293,12 +10293,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2407",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2407",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Frenzied Cottontail",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2407",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2407",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -10326,12 +10326,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2532",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2532",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Leper Rat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2532",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2532",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -10359,12 +10359,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2713",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2713",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Mustyfur Snooter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2713",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2713",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -10392,12 +10392,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2540",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2540",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Tanzil",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2540",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2540",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -10425,12 +10425,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2415",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2415",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Tragg the Curious",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2415",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2415",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -10458,12 +10458,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/2748",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/2748",
     "wowhead": {
       "expansion": "bfa",
       "expansionName": "Battle for Azeroth",
       "wowheadName": "Ziggy",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/2748",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/2748",
       "familyType": 4,
       "sourceCodes": [
         5

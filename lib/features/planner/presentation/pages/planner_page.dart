@@ -2062,7 +2062,8 @@ class _PlannerItemCard extends StatelessWidget {
     );
     final locale =
         item.category == TrackingCategory.mounts ||
-            item.category == TrackingCategory.achievements
+            item.category == TrackingCategory.achievements ||
+            item.category == TrackingCategory.pets
         ? 'fr'
         : preferredLocale;
 
@@ -2081,6 +2082,14 @@ class _PlannerItemCard extends StatelessWidget {
       mode: LaunchMode.externalApplication,
       webOnlyWindowName: '_blank',
     );
+  }
+
+  bool _isWowheadUrl(String url) {
+    final host = Uri.tryParse(url.trim())?.host.toLowerCase();
+
+    return host == 'wowhead.com' ||
+        host == 'www.wowhead.com' ||
+        (host?.endsWith('.wowhead.com') ?? false);
   }
 
   List<_PlannerTag> _metadataTags() {
@@ -2310,6 +2319,7 @@ class _PlannerItemCard extends StatelessWidget {
     final isMount = item.category == TrackingCategory.mounts;
     final mamytwinkUrl = item.mamytwinkUrl.trim();
     final wowheadUrl = _wowheadUrl(context);
+    final hasWowheadLink = _isWowheadUrl(wowheadUrl);
     final groupLabel =
         AchievementGroupHierarchy.labelFor(item) ?? item.instance;
     final difficultyTag = _difficultyTag();
@@ -2388,33 +2398,22 @@ class _PlannerItemCard extends StatelessWidget {
                         _MountExternalLinkButton(
                           tooltip: 'Ouvrir sur Wowhead',
                           onPressed: () => _openUrl(wowheadUrl),
-                          child: const Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              /*Text(
-                                'WH',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w800,
-                                  fontSize: 9,
-                                ),
-                              ),*/
-                              SizedBox(width: 1),
-                              Icon(Icons.rocket_launch_rounded, size: 12),
-                            ],
-                          ),
+                          child: const _WowheadRocketIcon(),
                         ),
                       ],
                     )
                   else
-                    IconButton(
-                      tooltip:
-                          item.wowheadItemId != null ||
-                              item.wowheadAchievementId != null
-                          ? 'Ouvrir sur Wowhead'
-                          : 'Ouvrir la fiche',
-                      icon: const Icon(Icons.open_in_new),
-                      onPressed: () => _openUrl(wowheadUrl),
-                    ),
+                    hasWowheadLink
+                        ? _MountExternalLinkButton(
+                            tooltip: 'Ouvrir sur Wowhead',
+                            onPressed: () => _openUrl(wowheadUrl),
+                            child: const _WowheadRocketIcon(),
+                          )
+                        : IconButton(
+                            tooltip: 'Ouvrir la fiche',
+                            icon: const Icon(Icons.open_in_new),
+                            onPressed: () => _openUrl(wowheadUrl),
+                          ),
                 ],
               ),
             ),
@@ -2454,6 +2453,21 @@ class _PlannerItemCard extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _WowheadRocketIcon extends StatelessWidget {
+  const _WowheadRocketIcon();
+
+  @override
+  Widget build(BuildContext context) {
+    return const Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        SizedBox(width: 1),
+        Icon(Icons.rocket_launch_rounded, size: 12),
+      ],
     );
   }
 }
@@ -2619,6 +2633,7 @@ class _CategoryPlannerTag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final icon = switch (category) {
+      TrackingCategory.achievements => '🏆',
       TrackingCategory.mounts => '🐴',
       TrackingCategory.pets => '🐾',
       _ => null,

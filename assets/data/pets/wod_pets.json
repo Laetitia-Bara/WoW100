@@ -18,12 +18,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1603",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1603",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Argi",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1603",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1603",
       "familyType": 8,
       "sourceCodes": [
         24
@@ -51,12 +51,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1466",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1466",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Brightpaw",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1466",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1466",
       "familyType": 6,
       "sourceCodes": [
         24
@@ -84,12 +84,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1624",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1624",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Abyssius",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1624",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1624",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -117,12 +117,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1515",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1515",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Stonegrinder",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1515",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1515",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -150,12 +150,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1471",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1471",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Fruit Hunter",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1471",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1471",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -183,12 +183,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1633",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1633",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Chaos Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1633",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1633",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -216,12 +216,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1467",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1467",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Sky-Bo",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1467",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1467",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -249,12 +249,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1690",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1690",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Shard of Cyrukh",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1690",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1690",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -282,12 +282,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1533",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1533",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Lanticore Spawnling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1533",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1533",
       "familyType": 2,
       "sourceCodes": [
         2
@@ -315,12 +315,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1631",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1631",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Hyjal Wisp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1631",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1631",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -348,12 +348,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1564",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1564",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Doom Bloom",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1564",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1564",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -381,12 +381,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1625",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1625",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Fragment of Anger",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1625",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1625",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -414,12 +414,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1627",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1627",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Fragment of Desire",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1627",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1627",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -447,12 +447,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1626",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1626",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Fragment of Suffering",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1626",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1626",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -480,12 +480,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1672",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1672",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Corrupted Nest Guardian",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1672",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1672",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -513,12 +513,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1622",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1622",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Grotesque",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1622",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1622",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -546,12 +546,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1544",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1544",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Hatespark the Tiny",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1544",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1544",
       "familyType": 7,
       "sourceCodes": [
         2,
@@ -580,12 +580,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1541",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1541",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Hydraling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1541",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1541",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -613,12 +613,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1623",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1623",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Leviathan Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1623",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1623",
       "familyType": 9,
       "sourceCodes": [
         2,
@@ -647,12 +647,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1663",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1663",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Periwinkle Calf",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1663",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1663",
       "familyType": 8,
       "sourceCodes": [
         2
@@ -680,12 +680,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1662",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1662",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Cinder Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1662",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1662",
       "familyType": 8,
       "sourceCodes": [
         25
@@ -713,12 +713,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1604",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1604",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Nethaera's Light",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1604",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1604",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -744,12 +744,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1765",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1765",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Empyreal Manafiend",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1765",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1765",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -777,12 +777,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1764",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1764",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Energized Manafiend",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1764",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1764",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -810,12 +810,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1766",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1766",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Empowered Manafiend",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1766",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1766",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -843,12 +843,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1632",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1632",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Sunblade Micro-Defender",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1632",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1632",
       "familyType": 10,
       "sourceCodes": [
         2
@@ -876,12 +876,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1576",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1576",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Eye of Observation",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1576",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1576",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -909,12 +909,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1629",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1629",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Stinkrot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1629",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1629",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -942,12 +942,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1524",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1524",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Netherspawn, Spawn of Netherspawn",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1524",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1524",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -975,12 +975,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1416",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1416",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Teroclaw Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1416",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1416",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -1010,12 +1010,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1687",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1687",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Left Shark",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1687",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1687",
       "familyType": 9,
       "sourceCodes": [
         25
@@ -1043,12 +1043,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1601",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1601",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Servant of Demidos",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1601",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1601",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -1076,12 +1076,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1634",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1634",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Wretched Servant",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1634",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1634",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -1109,12 +1109,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1628",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1628",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Sister of Temptation",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1628",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1628",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -1142,12 +1142,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1539",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1539",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Seaborne Spore",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1539",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1539",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -1175,12 +1175,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1540",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1540",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Brilliant Spore",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1540",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1540",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -1208,12 +1208,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1537",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1537",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Crimson Spore",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1537",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1537",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -1241,12 +1241,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1536",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1536",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Zangar Spore",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1536",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1536",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -1274,12 +1274,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1538",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1538",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Umbrafen Spore",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1538",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1538",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -1307,12 +1307,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1478",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1478",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Syd the Squid",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1478",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1478",
       "familyType": 6,
       "sourceCodes": [
         2
@@ -1340,12 +1340,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1543",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1543",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Pygmy Cow",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1543",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1543",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -1373,12 +1373,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1428",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1428",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Zomstrok",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1428",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1428",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -1406,12 +1406,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1435",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1435",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Leatherhide Runt",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1435",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1435",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -1439,12 +1439,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1468",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1468",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Bloodbeak",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1468",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1468",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -1472,12 +1472,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1583",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1583",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Kelp Scuttler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1583",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1583",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -1508,12 +1508,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1579",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1579",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Ironclaw Scuttler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1579",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1579",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -1542,12 +1542,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1664",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1664",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Nightmare Bell",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1664",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1664",
       "familyType": 6,
       "sourceCodes": [],
       "locations": []
@@ -1573,12 +1573,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1761",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1761",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Echo Batling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1761",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1761",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -1606,12 +1606,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1655",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1655",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Slithershock Elver",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1655",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1655",
       "familyType": 9,
       "sourceCodes": [],
       "locations": []
@@ -1637,12 +1637,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1582",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1582",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Zangar Crawler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1582",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1582",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -1671,12 +1671,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1447",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1447",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Moonshell Crab",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1447",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1447",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -1704,12 +1704,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1581",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1581",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Fen Crab",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1581",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1581",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -1737,12 +1737,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1593",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1593",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Waterfly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1593",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1593",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -1773,12 +1773,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1456",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1456",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Thicket Skitterer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1456",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1456",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -1806,12 +1806,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1455",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1455",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Mossbite Skitterer",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1455",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1455",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -1839,12 +1839,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1465",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1465",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Amberbarb Wasp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1465",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1465",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -1872,12 +1872,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1464",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1464",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Twilight Wasp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1464",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1464",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -1907,12 +1907,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1463",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1463",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Wood Wasp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1463",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1463",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -1940,12 +1940,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1462",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1462",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Bloodsting Wasp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1462",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1462",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -1973,12 +1973,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1595",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1595",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Flat-Tooth Calf",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1595",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1595",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2006,12 +2006,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1594",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1594",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Mudback Calf",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1594",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1594",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2039,12 +2039,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1457",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1457",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Icespine Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1457",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1457",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2072,12 +2072,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1470",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1470",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Axebeak Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1470",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1470",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2105,12 +2105,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1656",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1656",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Young Talbuk",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1656",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1656",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -2136,12 +2136,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1469",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1469",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Junglebeak",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1469",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1469",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2169,12 +2169,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1615",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1615",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Parched Lizard",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1615",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1615",
       "familyType": 8,
       "sourceCodes": [],
       "locations": [
@@ -2202,12 +2202,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1590",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1590",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Swamplighter Firefly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1590",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1590",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2236,12 +2236,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1591",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1591",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Violet Firefly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1591",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1591",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2270,12 +2270,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1592",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1592",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Sapphire Firefly",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1592",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1592",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2303,12 +2303,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1586",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1586",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Cerulean Moth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1586",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1586",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2336,12 +2336,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1589",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1589",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Crimsonwing Moth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1589",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1589",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2369,12 +2369,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1587",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1587",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Royal Moth",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1587",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1587",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2405,12 +2405,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1578",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1578",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Frostshell Pincher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1578",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1578",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -2438,12 +2438,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1573",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1573",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Golden Dawnfeather",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1573",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1573",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2471,12 +2471,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1572",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1572",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Brilliant Bloodfeather",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1572",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1572",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2504,12 +2504,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1427",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1427",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Frostfur Rat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1427",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1427",
       "familyType": 5,
       "sourceCodes": [],
       "locations": [
@@ -2538,12 +2538,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1441",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1441",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Mud Jumper",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1441",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1441",
       "familyType": 9,
       "sourceCodes": [],
       "locations": [
@@ -2574,12 +2574,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1600",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1600",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Bone Serpent",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1600",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1600",
       "familyType": 4,
       "sourceCodes": [],
       "locations": []
@@ -2605,12 +2605,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1599",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1599",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Shadow Sporebat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1599",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1599",
       "familyType": 3,
       "sourceCodes": [],
       "locations": [
@@ -2638,12 +2638,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1740",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1740",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Ghost Maggot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1740",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1740",
       "familyType": 4,
       "sourceCodes": [],
       "locations": [
@@ -2672,12 +2672,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1521",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1521",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Cursed Birman",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1521",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1521",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -2705,12 +2705,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1514",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1514",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Mystical Spring Bouquet",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1514",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1514",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -2738,12 +2738,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1518",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1518",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Stout Alemental",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1518",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1518",
       "familyType": 7,
       "sourceCodes": [
         5
@@ -2771,12 +2771,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1523",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1523",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Widget the Departed",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1523",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1523",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -2804,12 +2804,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1517",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1517",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Blazing Cindercrawler",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1517",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1517",
       "familyType": 7,
       "sourceCodes": [
         5
@@ -2837,12 +2837,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1741",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1741",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Ghastly Rat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1741",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1741",
       "familyType": 4,
       "sourceCodes": [],
       "locations": [
@@ -2871,12 +2871,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1725",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1725",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Grumpling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1725",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1725",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -2904,12 +2904,12 @@
     "isCapturable": true,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1730",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1730",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Spectral Spinner",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1730",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1730",
       "familyType": 4,
       "sourceCodes": [],
       "locations": [
@@ -2938,12 +2938,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1546",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1546",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Stormwing",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1546",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1546",
       "familyType": 3,
       "sourceCodes": [
         12
@@ -2971,12 +2971,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1451",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1451",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Molten Corgi",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1451",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1451",
       "familyType": 7,
       "sourceCodes": [
         5,
@@ -3005,12 +3005,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1384",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1384",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Hogs",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1384",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1384",
       "familyType": 1,
       "sourceCodes": [],
       "locations": []
@@ -3036,12 +3036,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1635",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1635",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "K'ute",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1635",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1635",
       "familyType": 6,
       "sourceCodes": [
         12
@@ -3069,12 +3069,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1636",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1636",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Race MiniZep",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1636",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1636",
       "familyType": 10,
       "sourceCodes": [
         12
@@ -3102,12 +3102,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1411",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1411",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Royal Peachick",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1411",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1411",
       "familyType": 3,
       "sourceCodes": [
         12
@@ -3137,12 +3137,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1605",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1605",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Trunks",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1605",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1605",
       "familyType": 6,
       "sourceCodes": [
         12
@@ -3170,12 +3170,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1569",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1569",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Soul of the Forge",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1569",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1569",
       "familyType": 7,
       "sourceCodes": [
         1
@@ -3203,12 +3203,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1531",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1531",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Ancient Nest Guardian",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1531",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1531",
       "familyType": 10,
       "sourceCodes": [
         1
@@ -3236,12 +3236,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1448",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1448",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Sea Calf",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1448",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1448",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -3269,12 +3269,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1426",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1426",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Elekk Plushie",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1426",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1426",
       "familyType": 6,
       "sourceCodes": [],
       "locations": [
@@ -3303,12 +3303,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1403",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1403",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Mechanical Axebeak",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1403",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1403",
       "familyType": 3,
       "sourceCodes": [
         1
@@ -3336,12 +3336,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1432",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1432",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Nightshade Sproutling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1432",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1432",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -3369,12 +3369,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1530",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1530",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Frostwolf Ghostpup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1530",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1530",
       "familyType": 4,
       "sourceCodes": [
         1
@@ -3402,12 +3402,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1495",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1495",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Ore Eater",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1495",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1495",
       "familyType": 1,
       "sourceCodes": [
         2
@@ -3435,12 +3435,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1412",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1412",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Lifelike Mechanical Frostboar",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1412",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1412",
       "familyType": 10,
       "sourceCodes": [
         1
@@ -3468,12 +3468,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1395",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1395",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Lil' Leftovers",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1395",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1395",
       "familyType": 6,
       "sourceCodes": [
         1
@@ -3501,12 +3501,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/115",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/115",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Land Shark",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/115",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/115",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -3534,12 +3534,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1565",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1565",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Mechanical Scorpid",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1565",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1565",
       "familyType": 10,
       "sourceCodes": [
         1
@@ -3567,12 +3567,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1828",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1828",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Baby Winston",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1828",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1828",
       "familyType": 1,
       "sourceCodes": [
         8
@@ -3600,12 +3600,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1454",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1454",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Murkidan",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1454",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1454",
       "familyType": 1,
       "sourceCodes": [
         8
@@ -3633,12 +3633,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1602",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1602",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Grommloc",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1602",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1602",
       "familyType": 1,
       "sourceCodes": [
         8
@@ -3666,12 +3666,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1691",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1691",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Nibbles",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1691",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1691",
       "familyType": 5,
       "sourceCodes": [
         8
@@ -3699,12 +3699,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1639",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1639",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Graves",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1639",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1639",
       "familyType": 4,
       "sourceCodes": [],
       "locations": []
@@ -3730,12 +3730,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1545",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1545",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Firewing",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1545",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1545",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -3763,12 +3763,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1442",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1442",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Ghastly Kid",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1442",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1442",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -3796,12 +3796,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1385",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1385",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Albino Chimaeraling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1385",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1385",
       "familyType": 2,
       "sourceCodes": [
         2
@@ -3829,12 +3829,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1567",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1567",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Sentinel's Companion",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1567",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1567",
       "familyType": 3,
       "sourceCodes": [
         4
@@ -3862,12 +3862,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1532",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1532",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Ikky",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1532",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1532",
       "familyType": 3,
       "sourceCodes": [],
       "locations": []
@@ -3893,12 +3893,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1434",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1434",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Sun Sproutling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1434",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1434",
       "familyType": 7,
       "sourceCodes": [
         2
@@ -3928,12 +3928,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1570",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1570",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Sunfire Kaliri",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1570",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1570",
       "familyType": 3,
       "sourceCodes": [
         2
@@ -3961,12 +3961,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1660",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1660",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Fel Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1660",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1660",
       "familyType": 8,
       "sourceCodes": [
         4
@@ -3996,12 +3996,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1394",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1394",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Weebomination",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1394",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1394",
       "familyType": 4,
       "sourceCodes": [
         2
@@ -4029,12 +4029,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1566",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1566",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Everbloom Peachick",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1566",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1566",
       "familyType": 3,
       "sourceCodes": [
         4
@@ -4062,12 +4062,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1387",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1387",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Iron Starlette",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1387",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1387",
       "familyType": 10,
       "sourceCodes": [
         4
@@ -4097,12 +4097,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1568",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1568",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Puddle Terror",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1568",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1568",
       "familyType": 9,
       "sourceCodes": [
         2
@@ -4130,12 +4130,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1692",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1692",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Savage Cub",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1692",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1692",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -4163,12 +4163,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1666",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1666",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Blorp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1666",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1666",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -4196,12 +4196,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1396",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1396",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Crazy Carrot",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1396",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1396",
       "familyType": 7,
       "sourceCodes": [
         5
@@ -4229,12 +4229,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1688",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1688",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Crusher",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1688",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1688",
       "familyType": 1,
       "sourceCodes": [
         5
@@ -4262,12 +4262,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1665",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1665",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Ghostshell Crab",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1665",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1665",
       "familyType": 9,
       "sourceCodes": [
         5
@@ -4297,12 +4297,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1693",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1693",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Blazing Firehawk",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1693",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1693",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -4330,12 +4330,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1574",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1574",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Son of Sethe",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1574",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1574",
       "familyType": 4,
       "sourceCodes": [
         5
@@ -4363,12 +4363,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1575",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1575",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Sky Fry",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1575",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1575",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -4396,12 +4396,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1458",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1458",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Bone Wasp",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1458",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1458",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -4429,12 +4429,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1577",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1577",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Bloodthorn Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1577",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1577",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -4462,12 +4462,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1446",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1446",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Meadowstomper Calf",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1446",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1446",
       "familyType": 8,
       "sourceCodes": [],
       "locations": []
@@ -4493,12 +4493,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1596",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1596",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Veilwatcher Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1596",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1596",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -4526,12 +4526,12 @@
     "isCapturable": false,
     "isTradable": false,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1449",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1449",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Deathwatch Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1449",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1449",
       "familyType": 8,
       "sourceCodes": [
         5,
@@ -4560,12 +4560,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1597",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1597",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Kaliri Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1597",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1597",
       "familyType": 3,
       "sourceCodes": [
         2,
@@ -4594,12 +4594,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1453",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1453",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "River Calf",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1453",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1453",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -4627,12 +4627,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1571",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1571",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Albino River Calf",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1571",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1571",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -4660,12 +4660,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1429",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1429",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Autumnal Sproutling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1429",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1429",
       "familyType": 7,
       "sourceCodes": [
         5
@@ -4693,12 +4693,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1430",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1430",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Forest Sproutling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1430",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1430",
       "familyType": 7,
       "sourceCodes": [
         5
@@ -4726,12 +4726,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1542",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1542",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Frostwolf Pup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1542",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1542",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -4759,12 +4759,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1661",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1661",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Lost Netherpup",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1661",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1661",
       "familyType": 8,
       "sourceCodes": [
         5
@@ -4795,12 +4795,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1450",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1450",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Draenei Micro Defender",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1450",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1450",
       "familyType": 10,
       "sourceCodes": [
         5
@@ -4828,12 +4828,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1511",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1511",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Lovebird Hatchling",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1511",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1511",
       "familyType": 5,
       "sourceCodes": [
         5
@@ -4861,12 +4861,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1516",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1516",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Bush Chicken",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1516",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1516",
       "familyType": 5,
       "sourceCodes": [
         2
@@ -4894,12 +4894,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1588",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1588",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Dusty Sporewing",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1588",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1588",
       "familyType": 3,
       "sourceCodes": [
         5
@@ -4927,12 +4927,12 @@
     "isCapturable": false,
     "isTradable": true,
     "boss": "",
-    "externalUrl": "https://www.wowhead.com/battle-pet/1598",
+    "externalUrl": "https://www.wowhead.com/fr/battle-pet/1598",
     "wowhead": {
       "expansion": "wod",
       "expansionName": "Warlords of Draenor",
       "wowheadName": "Glowing Sporebat",
-      "wowheadUrl": "https://www.wowhead.com/battle-pet/1598",
+      "wowheadUrl": "https://www.wowhead.com/fr/battle-pet/1598",
       "familyType": 3,
       "sourceCodes": [
         5
