@@ -390,7 +390,7 @@ class _DashboardPageState extends State<DashboardPage> {
                           crossAxisCount: 2,
                           crossAxisSpacing: 14,
                           mainAxisSpacing: 14,
-                          mainAxisExtent: 298,
+                          mainAxisExtent: 348,
                         ),
                     itemCount: extensionProgresses.length,
                     itemBuilder: (context, index) {
@@ -1195,6 +1195,11 @@ class _ExpansionCard extends StatelessWidget {
                         );
                       }).toList(),
                     ),
+                    const SizedBox(height: 12),
+                    _MissingObtainableSummary(
+                      progress: progress,
+                      visibleCategories: visibleCategories,
+                    ),
                   ],
                 ],
               ),
@@ -1203,6 +1208,60 @@ class _ExpansionCard extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class _MissingObtainableSummary extends StatelessWidget {
+  const _MissingObtainableSummary({
+    required this.progress,
+    required this.visibleCategories,
+  });
+
+  final ExpansionProgress progress;
+  final Set<TrackingCategory> visibleCategories;
+
+  @override
+  Widget build(BuildContext context) {
+    final messages = visibleCategories.map((category) {
+      final completed = progress.completedObtainable[category] ?? 0;
+      final total = progress.obtainableTotal[category] ?? 0;
+      final missing = (total - completed).clamp(0, total);
+
+      return Text(
+        'Manque $missing ${_obtainableMissingLabel(category, missing)}',
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
+        style: const TextStyle(
+          color: Color(0xFF34D399),
+          fontSize: 12,
+          fontWeight: FontWeight.w700,
+        ),
+      );
+    }).toList();
+
+    if (messages.isEmpty) return const SizedBox.shrink();
+
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Wrap(spacing: 12, runSpacing: 6, children: messages),
+    );
+  }
+}
+
+String _obtainableMissingLabel(TrackingCategory category, int count) {
+  final plural = count != 1;
+
+  switch (category) {
+    case TrackingCategory.achievements:
+      return plural ? 'HF obtenables' : 'HF obtenable';
+    case TrackingCategory.mounts:
+      return plural ? 'Montures obtenables' : 'Monture obtenable';
+    case TrackingCategory.pets:
+      return plural ? 'Mascottes obtenables' : 'Mascotte obtenable';
+    default:
+      return plural
+          ? '${category.shortLabel} obtenables'
+          : '${category.shortLabel} obtenable';
   }
 }
 
