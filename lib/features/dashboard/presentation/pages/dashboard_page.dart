@@ -1228,9 +1228,10 @@ class _MissingObtainableSummary extends StatelessWidget {
       final missing = (total - completed).clamp(0, total);
 
       return Text(
-        'Manque $missing ${_obtainableMissingLabel(category, missing)}',
+        '• $missing ${_missingCategoryLabel(category, missing)}',
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
+        textAlign: TextAlign.center,
         style: const TextStyle(
           color: Color(0xFF34D399),
           fontSize: 12,
@@ -1241,27 +1242,45 @@ class _MissingObtainableSummary extends StatelessWidget {
 
     if (messages.isEmpty) return const SizedBox.shrink();
 
-    return Align(
-      alignment: Alignment.centerLeft,
-      child: Wrap(spacing: 12, runSpacing: 6, children: messages),
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const Text(
+            'Tu peux aller chercher :',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: AppTheme.text,
+              fontSize: 12,
+              fontWeight: FontWeight.w800,
+            ),
+          ),
+          const SizedBox(height: 6),
+          Wrap(
+            alignment: WrapAlignment.center,
+            runAlignment: WrapAlignment.center,
+            spacing: 14,
+            runSpacing: 4,
+            children: messages,
+          ),
+        ],
+      ),
     );
   }
 }
 
-String _obtainableMissingLabel(TrackingCategory category, int count) {
+String _missingCategoryLabel(TrackingCategory category, int count) {
   final plural = count != 1;
 
   switch (category) {
     case TrackingCategory.achievements:
-      return plural ? 'HF obtenables' : 'HF obtenable';
+      return 'HF';
     case TrackingCategory.mounts:
-      return plural ? 'Montures obtenables' : 'Monture obtenable';
+      return plural ? 'Montures' : 'Monture';
     case TrackingCategory.pets:
-      return plural ? 'Mascottes obtenables' : 'Mascotte obtenable';
+      return plural ? 'Mascottes' : 'Mascotte';
     default:
-      return plural
-          ? '${category.shortLabel} obtenables'
-          : '${category.shortLabel} obtenable';
+      return category.shortLabel;
   }
 }
 
