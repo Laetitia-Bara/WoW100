@@ -2,7 +2,6 @@ import 'package:wow100/data/models/tracking_item.dart';
 import 'package:flutter/foundation.dart';
 
 import '../../core/services/battle_net_token_service.dart';
-import '../../core/services/local_check_service.dart';
 import '../../core/services/selected_character_service.dart';
 import '../models/achievement_faction_equivalents.dart';
 import '../models/achievement_faction_availability.dart';
@@ -18,7 +17,6 @@ abstract class ProgressRepository {
 
 class JsonProgressRepository implements ProgressRepository {
   final JsonPlannerSource _source = JsonPlannerSource();
-  final LocalCheckService _localCheckService = LocalCheckService();
   final BattleNetTokenService _tokenService = BattleNetTokenService();
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
@@ -103,9 +101,6 @@ class JsonProgressRepository implements ProgressRepository {
     final expandedOwnedAchievementIds = AchievementFactionEquivalents.expand(
       ownedAchievementIds,
     );
-    final checkedItemIds = await _localCheckService.checkedItemIds(
-      allItems.map((item) => item.id),
-    );
 
     final progresses = <ExpansionProgress>[];
 
@@ -131,7 +126,6 @@ class JsonProgressRepository implements ProgressRepository {
           ownedMountIds,
           ownedPetIds,
           expandedOwnedAchievementIds,
-          checkedItemIds,
           character?.faction,
         ),
       );
@@ -144,7 +138,6 @@ class JsonProgressRepository implements ProgressRepository {
         ownedMountIds,
         ownedPetIds,
         expandedOwnedAchievementIds,
-        checkedItemIds,
         character?.faction,
       ),
       ...progresses,
@@ -157,7 +150,6 @@ class JsonProgressRepository implements ProgressRepository {
     Set<int> ownedMountIds,
     Set<int> ownedPetIds,
     Set<int> ownedAchievementIds,
-    Set<String> checkedItemIds,
     String? selectedCharacterFaction,
   ) async {
     var completedAchievements = 0;
@@ -172,24 +164,7 @@ class JsonProgressRepository implements ProgressRepository {
     var obtainableAchievements = 0;
     var obtainableMounts = 0;
     var obtainablePets = 0;
-    final checkedAchievementIds = <int>{};
-
     for (final item in items) {
-      if (item.category != TrackingCategory.achievements ||
-          item.blizzardId == null) {
-        continue;
-      }
-
-      final checked = checkedItemIds.contains(item.id);
-      if (checked) checkedAchievementIds.add(item.blizzardId!);
-    }
-
-    final expandedCheckedAchievementIds = AchievementFactionEquivalents.expand(
-      checkedAchievementIds,
-    );
-
-    for (final item in items) {
-      final checked = checkedItemIds.contains(item.id);
       final owned =
           item.blizzardId != null &&
           ((item.category == TrackingCategory.mounts &&
@@ -198,10 +173,6 @@ class JsonProgressRepository implements ProgressRepository {
                   ownedPetIds.contains(item.blizzardId)) ||
               (item.category == TrackingCategory.achievements &&
                   ownedAchievementIds.contains(item.blizzardId)));
-      final checkedByFactionEquivalent =
-          item.category == TrackingCategory.achievements &&
-          item.blizzardId != null &&
-          expandedCheckedAchievementIds.contains(item.blizzardId);
       final unavailable =
           item.unavailable ||
           AchievementFactionAvailability.isUnavailableForFaction(
@@ -220,15 +191,13 @@ class JsonProgressRepository implements ProgressRepository {
         if (!unavailable) obtainablePets += 1;
       }
 
-      if ((checked || checkedByFactionEquivalent || owned) &&
-          item.category == TrackingCategory.achievements) {
+      if (owned && item.category == TrackingCategory.achievements) {
         completedAchievements += 1;
         if (!unavailable) completedObtainableAchievements += 1;
-      } else if ((checked || owned) &&
-          item.category == TrackingCategory.mounts) {
+      } else if (owned && item.category == TrackingCategory.mounts) {
         completedMounts += 1;
         if (!unavailable) completedObtainableMounts += 1;
-      } else if ((checked || owned) && item.category == TrackingCategory.pets) {
+      } else if (owned && item.category == TrackingCategory.pets) {
         completedPets += 1;
         if (!unavailable) completedObtainablePets += 1;
       }

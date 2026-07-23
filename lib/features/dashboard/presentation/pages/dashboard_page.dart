@@ -266,6 +266,13 @@ class _DashboardPageState extends State<DashboardPage> {
     await _loadProgress();
   }
 
+  Future<void> _openSoloPlanner() async {
+    await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const SoloPlannerPage()),
+    );
+  }
+
   void _openLegalPage() {
     Navigator.push(
       context,
@@ -377,6 +384,7 @@ class _DashboardPageState extends State<DashboardPage> {
                     WowExpansion.allPets,
                     category: TrackingCategory.pets,
                   ),
+                  onSoloPlannerTap: _openSoloPlanner,
                   onFilterTap: _openCategoryFilters,
                   onSortTap: _toggleSortOrder,
                 ),
@@ -942,6 +950,7 @@ class _DashboardActionBar extends StatelessWidget {
     required this.onAchievementsTap,
     required this.onMountsTap,
     required this.onPetsTap,
+    required this.onSoloPlannerTap,
     required this.onFilterTap,
     required this.onSortTap,
   });
@@ -950,6 +959,7 @@ class _DashboardActionBar extends StatelessWidget {
   final VoidCallback onAchievementsTap;
   final VoidCallback onMountsTap;
   final VoidCallback onPetsTap;
+  final VoidCallback onSoloPlannerTap;
   final VoidCallback onFilterTap;
   final VoidCallback onSortTap;
 
@@ -990,8 +1000,12 @@ class _DashboardActionBar extends StatelessWidget {
       ),
     ];
 
-    const adventureButtons = [
-      _AdventurePlannerButton(icon: Icons.explore_outlined, label: 'Solo'),
+    final adventureButtons = [
+      _AdventurePlannerButton(
+        icon: Icons.explore_outlined,
+        label: 'Solo',
+        onPressed: onSoloPlannerTap,
+      ),
       _AdventurePlannerButton(
         icon: Icons.groups_2_outlined,
         label: 'Avec des amis',
@@ -1007,7 +1021,7 @@ class _DashboardActionBar extends StatelessWidget {
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
               ...collectableButtons,
-              const _AdventurePlannerButtonGroup(children: adventureButtons),
+              _AdventurePlannerButtonGroup(children: adventureButtons),
               ...toolButtons,
             ],
           );
@@ -1017,7 +1031,7 @@ class _DashboardActionBar extends StatelessWidget {
           children: [
             Wrap(spacing: 10, runSpacing: 10, children: collectableButtons),
             const SizedBox(width: 16),
-            const Expanded(
+            Expanded(
               child: Align(
                 alignment: Alignment.center,
                 child: _AdventurePlannerButtonGroup(children: adventureButtons),
@@ -1062,17 +1076,22 @@ class _AdventurePlannerButtonGroup extends StatelessWidget {
 }
 
 class _AdventurePlannerButton extends StatelessWidget {
-  const _AdventurePlannerButton({required this.icon, required this.label});
+  const _AdventurePlannerButton({
+    required this.icon,
+    required this.label,
+    this.onPressed,
+  });
 
   final IconData icon;
   final String label;
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
     return Tooltip(
-      message: 'Planner en construction',
+      message: onPressed == null ? 'Planner en construction' : label,
       child: OutlinedButton.icon(
-        onPressed: null,
+        onPressed: onPressed,
         icon: Icon(icon, size: 18),
         label: Text(label),
         style: ButtonStyle(

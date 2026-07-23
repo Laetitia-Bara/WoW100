@@ -10,8 +10,8 @@ import 'package:wow100/data/models/tracking_category.dart';
 import 'package:wow100/data/repositories/battle_net_repository.dart';
 
 import '../../../../core/ads/app_ads.dart';
-import '../../../../core/services/local_check_service.dart';
 import '../../../../core/services/selected_character_service.dart';
+import '../../../../core/services/solo_planner_service.dart';
 import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/expansion_palette.dart';
@@ -43,7 +43,7 @@ class PlannerPage extends StatefulWidget {
 
 class _PlannerPageState extends State<PlannerPage> {
   final PlannerRepository _repository = JsonPlannerRepository();
-  final LocalCheckService _localCheckService = LocalCheckService();
+  final SoloPlannerService _soloPlannerService = SoloPlannerService();
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
   final Set<String> _collapsedGroups = {};
@@ -77,6 +77,7 @@ class _PlannerPageState extends State<PlannerPage> {
   bool _missingOnly = true;
   bool _hideUnavailable = true;
   String _searchQuery = '';
+  Set<String> _soloItemIds = {};
   WowCharacter? _selectedCharacter;
   String? _selectedCharacterFaction;
   final Set<TrackingCategory> _selectedCategories = {};
@@ -253,16 +254,15 @@ class _PlannerPageState extends State<PlannerPage> {
         category: widget.category,
       );
       final character = await _selectedCharacterService.loadCharacter();
-      final checkedItemIds = await _localCheckService.checkedItemIds(
-        items.map((item) => item.id),
-      );
-      final localItems = _applyProgress(items, checkedItemIds: checkedItemIds);
+      final soloItemIds = await _soloPlannerService.selectedItemIds();
+      final localItems = _applyProgress(items);
       _applyInitialGroupCollapse(localItems);
 
       if (!mounted || generation != _loadGeneration) return;
 
       setState(() {
         _items = localItems;
+        _soloItemIds = soloItemIds;
         _selectedCharacter = character;
         _selectedCharacterFaction = character?.faction;
         _isLoading = false;
@@ -375,12 +375,8 @@ class _PlannerPageState extends State<PlannerPage> {
       }
     }
 
-    final checkedItemIds = await _localCheckService.checkedItemIds(
-      items.map((item) => item.id),
-    );
     final updatedItems = _applyProgress(
       items,
-      checkedItemIds: checkedItemIds,
       ownedMountIds: ownedMountIds,
       ownedPetIds: ownedPetIds,
       ownedAchievementIds: ownedAchievementIds,
@@ -395,7 +391,6 @@ class _PlannerPageState extends State<PlannerPage> {
 
   List<TrackingItem> _applyProgress(
     List<TrackingItem> items, {
-    required Set<String> checkedItemIds,
     Set<int> ownedMountIds = const <int>{},
     Set<int> ownedPetIds = const <int>{},
     Set<int> ownedAchievementIds = const <int>{},
@@ -403,28 +398,11 @@ class _PlannerPageState extends State<PlannerPage> {
     final expandedOwnedAchievementIds = AchievementFactionEquivalents.expand(
       ownedAchievementIds,
     );
-    final checkedAchievementIds = <int>{};
-
-    for (final item in items) {
-      if (checkedItemIds.contains(item.id) &&
-          item.category == TrackingCategory.achievements &&
-          item.blizzardId != null) {
-        checkedAchievementIds.add(item.blizzardId!);
-      }
-    }
-
-    final expandedCheckedAchievementIds = AchievementFactionEquivalents.expand(
-      checkedAchievementIds,
-    );
 
     return [
       for (final item in items)
         item.copyWith(
           obtained:
-              checkedItemIds.contains(item.id) ||
-              (item.category == TrackingCategory.achievements &&
-                  item.blizzardId != null &&
-                  expandedCheckedAchievementIds.contains(item.blizzardId)) ||
               (item.category == TrackingCategory.mounts &&
                   item.blizzardId != null &&
                   ownedMountIds.contains(item.blizzardId)) ||
@@ -638,35 +616,17 @@ class _PlannerPageState extends State<PlannerPage> {
     return left.compareTo(right);
   }
 
-  Future<void> _setChecked(TrackingItem item, bool checked) async {
-    final affectedItemIds = _items
-        .where(
-          (current) =>
-              current.id == item.id ||
-              (item.category == TrackingCategory.achievements &&
-                  current.category == TrackingCategory.achievements &&
-                  AchievementFactionEquivalents.areEquivalent(
-                    item.blizzardId,
-                    current.blizzardId,
-                  )),
-        )
-        .map((current) => current.id)
-        .toSet();
-
-    for (final itemId in affectedItemIds) {
-      await _localCheckService.setChecked(itemId, checked);
-    }
+  Future<void> _setSoloSelected(TrackingItem item, bool selected) async {
+    await _soloPlannerService.setSelected(item.id, selected);
 
     if (!mounted) return;
 
     setState(() {
-      _items = _items.map((current) {
-        if (affectedItemIds.contains(current.id)) {
-          return current.copyWith(obtained: checked);
-        }
-
-        return current;
-      }).toList();
+      if (selected) {
+        _soloItemIds.add(item.id);
+      } else {
+        _soloItemIds.remove(item.id);
+      }
     });
   }
 
@@ -827,10 +787,8 @@ class _PlannerPageState extends State<PlannerPage> {
     }).toList();
 
     final groupedItems = _groupedItems(filteredItems);
-    final obtainedCount = filteredItems.where((item) => item.obtained).length;
     final totalCount = filteredItems.length;
-    final progress = totalCount == 0 ? 0.0 : obtainedCount / totalCount;
-    final progressPercent = totalCount == 0 ? 0 : (progress * 100).round();
+    final missingCount = filteredItems.where((item) => !item.obtained).length;
     final listEntries = <_PlannerListEntry>[];
 
     for (final entry in groupedItems.entries) {
@@ -961,29 +919,8 @@ class _PlannerPageState extends State<PlannerPage> {
                       ),
                       const SizedBox(height: 20),
                       Text(
-                        '$obtainedCount / $totalCount obtenus',
+                        _missingSummary(missingCount, totalCount),
                         style: const TextStyle(fontWeight: FontWeight.w700),
-                      ),
-                      const SizedBox(height: 8),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: LinearProgressIndicator(
-                              value: progress,
-                              minHeight: 10,
-                              borderRadius: BorderRadius.circular(999),
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          Text(
-                            '$progressPercent %',
-                            style: const TextStyle(
-                              color: AppTheme.gold,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w800,
-                            ),
-                          ),
-                        ],
                       ),
                       const SizedBox(height: 20),
                       const AppNativeAd(),
@@ -1017,13 +954,258 @@ class _PlannerPageState extends State<PlannerPage> {
                     final item = entry.item!;
                     return _PlannerItemCard(
                       item: item,
-                      onChanged: (value) => _setChecked(item, value ?? false),
+                      selectedForSolo: _soloItemIds.contains(item.id),
+                      onChanged: (value) =>
+                          _setSoloSelected(item, value ?? false),
                     );
                   }, childCount: listEntries.length),
                 ),
               ],
             ),
     );
+  }
+
+  String _missingSummary(int missingCount, int totalCount) {
+    if (totalCount == 0) return 'Aucun item dans cette selection';
+    if (missingCount == 0) return 'Il ne te manque aucun item';
+    if (missingCount == 1) return 'Il te manque 1 item';
+
+    return 'Il te manque $missingCount items';
+  }
+}
+
+class SoloPlannerPage extends StatefulWidget {
+  const SoloPlannerPage({super.key});
+
+  @override
+  State<SoloPlannerPage> createState() => _SoloPlannerPageState();
+}
+
+class _SoloPlannerPageState extends State<SoloPlannerPage> {
+  final PlannerRepository _repository = JsonPlannerRepository();
+  final SoloPlannerService _soloPlannerService = SoloPlannerService();
+  final Set<String> _collapsedGroups = {};
+
+  List<TrackingItem> _items = [];
+  Set<String> _soloItemIds = {};
+  bool _isLoading = true;
+  String _searchQuery = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _loadItems();
+  }
+
+  Future<void> _loadItems() async {
+    setState(() {
+      _isLoading = true;
+    });
+
+    final soloItemIds = await _soloPlannerService.selectedItemIds();
+    final allCatalogItems = await Future.wait([
+      _repository.getItems(
+        WowExpansion.allAchievements,
+        category: TrackingCategory.achievements,
+      ),
+      _repository.getItems(WowExpansion.allMounts),
+      _repository.getItems(
+        WowExpansion.allPets,
+        category: TrackingCategory.pets,
+      ),
+    ]);
+
+    final selectedItemsById = <String, TrackingItem>{};
+
+    for (final catalogItems in allCatalogItems) {
+      for (final item in catalogItems) {
+        if (soloItemIds.contains(item.id)) {
+          selectedItemsById.putIfAbsent(item.id, () => item);
+        }
+      }
+    }
+
+    final selectedItems = selectedItemsById.values.toList()
+      ..sort(_compareItems);
+
+    if (!mounted) return;
+
+    setState(() {
+      _items = selectedItems;
+      _soloItemIds = soloItemIds;
+      _isLoading = false;
+    });
+  }
+
+  int _compareItems(TrackingItem left, TrackingItem right) {
+    final categoryCompare = left.category.index.compareTo(right.category.index);
+    if (categoryCompare != 0) return categoryCompare;
+
+    final expansionCompare = left.expansion.index.compareTo(
+      right.expansion.index,
+    );
+    if (expansionCompare != 0) return expansionCompare;
+
+    return left.name.compareTo(right.name);
+  }
+
+  String _groupLabel(TrackingItem item) => item.category.label;
+
+  Map<String, List<TrackingItem>> _groupedItems(List<TrackingItem> items) {
+    final groupedItems = <String, List<TrackingItem>>{};
+
+    for (final item in items) {
+      groupedItems.putIfAbsent(_groupLabel(item), () => []).add(item);
+    }
+
+    return groupedItems;
+  }
+
+  void _toggleGroup(String group) {
+    setState(() {
+      if (_collapsedGroups.contains(group)) {
+        _collapsedGroups.remove(group);
+      } else {
+        _collapsedGroups.add(group);
+      }
+    });
+  }
+
+  Future<void> _setSoloSelected(TrackingItem item, bool selected) async {
+    await _soloPlannerService.setSelected(item.id, selected);
+
+    if (!mounted) return;
+
+    setState(() {
+      if (selected) {
+        _soloItemIds.add(item.id);
+      } else {
+        _soloItemIds.remove(item.id);
+        _items = _items.where((current) => current.id != item.id).toList();
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final query = _searchQuery.toLowerCase();
+    final filteredItems = _items.where((item) {
+      if (query.isEmpty) return true;
+
+      return item.name.toLowerCase().contains(query) ||
+          item.expansion.label.toLowerCase().contains(query) ||
+          item.category.label.toLowerCase().contains(query) ||
+          item.zone.toLowerCase().contains(query) ||
+          item.region.toLowerCase().contains(query) ||
+          item.instance.toLowerCase().contains(query) ||
+          item.source.toLowerCase().contains(query);
+    }).toList();
+    final groupedItems = _groupedItems(filteredItems);
+    final listEntries = <_PlannerListEntry>[];
+
+    for (final entry in groupedItems.entries) {
+      listEntries.add(_PlannerListEntry.group(entry.key, entry.value.length));
+
+      if (!_collapsedGroups.contains(entry.key)) {
+        listEntries.addAll(entry.value.map(_PlannerListEntry.item));
+      }
+    }
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Planner Solo'),
+        actions: [
+          IconButton(
+            tooltip: 'Actualiser',
+            icon: const Icon(Icons.refresh),
+            onPressed: _loadItems,
+          ),
+        ],
+      ),
+      body: _isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : WebSponsorSliverPageBody(
+              slivers: [
+                SliverToBoxAdapter(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Text(
+                        'Partir en balade Solo',
+                        style: Theme.of(context).textTheme.titleLarge
+                            ?.copyWith(fontWeight: FontWeight.w800),
+                      ),
+                      const SizedBox(height: 16),
+                      TextField(
+                        decoration: const InputDecoration(
+                          labelText: 'Rechercher dans ma balade',
+                          prefixIcon: Icon(Icons.search),
+                          border: OutlineInputBorder(),
+                        ),
+                        onChanged: (value) {
+                          setState(() {
+                            _searchQuery = value;
+                            if (value.trim().isNotEmpty) {
+                              _collapsedGroups.clear();
+                            }
+                          });
+                        },
+                      ),
+                      const SizedBox(height: 16),
+                      Text(
+                        _soloCountLabel(filteredItems.length),
+                        style: const TextStyle(fontWeight: FontWeight.w700),
+                      ),
+                      const SizedBox(height: 20),
+                      const AppNativeAd(),
+                      if (filteredItems.isEmpty)
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(18),
+                            child: Text(
+                              _items.isEmpty
+                                  ? 'Ta balade solo est vide pour le moment.'
+                                  : 'Aucun item ne correspond a cette recherche.',
+                              style: const TextStyle(color: AppTheme.mutedText),
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
+                SliverList(
+                  delegate: SliverChildBuilderDelegate((context, index) {
+                    final entry = listEntries[index];
+                    final groupTitle = entry.groupTitle;
+
+                    if (groupTitle != null) {
+                      return _PlannerGroupHeader(
+                        title: groupTitle,
+                        count: entry.groupCount,
+                        isCollapsed: _collapsedGroups.contains(groupTitle),
+                        onToggle: () => _toggleGroup(groupTitle),
+                      );
+                    }
+
+                    final item = entry.item!;
+                    return _PlannerItemCard(
+                      item: item,
+                      selectedForSolo: _soloItemIds.contains(item.id),
+                      onChanged: (value) =>
+                          _setSoloSelected(item, value ?? false),
+                    );
+                  }, childCount: listEntries.length),
+                ),
+              ],
+            ),
+    );
+  }
+
+  String _soloCountLabel(int count) {
+    if (count == 0) return 'Aucun item dans ta balade solo';
+    if (count == 1) return '1 item dans ta balade solo';
+
+    return '$count items dans ta balade solo';
   }
 }
 
@@ -2048,9 +2230,14 @@ class _DifficultyFilterSheetState extends State<_DifficultyFilterSheet> {
 }
 
 class _PlannerItemCard extends StatelessWidget {
-  const _PlannerItemCard({required this.item, required this.onChanged});
+  const _PlannerItemCard({
+    required this.item,
+    required this.selectedForSolo,
+    required this.onChanged,
+  });
 
   final TrackingItem item;
+  final bool selectedForSolo;
   final ValueChanged<bool?> onChanged;
 
   String _wowheadUrl(BuildContext context) {
@@ -2348,6 +2535,7 @@ class _PlannerItemCard extends StatelessWidget {
             ?dungeonTag,
             _PlannerTag(label: frequencyLabel),
             if (item.obtained) const _PlannerTag(label: 'Obtenu'),
+            if (selectedForSolo) const _PlannerTag(label: 'Balade solo'),
             ..._manualTags(includeDungeonTag: false),
           ]
         : <Widget>[
@@ -2361,6 +2549,7 @@ class _PlannerItemCard extends StatelessWidget {
             ..._metadataTags(),
             _PlannerTag(label: frequencyLabel),
             if (item.obtained) const _PlannerTag(label: 'Obtenu'),
+            if (selectedForSolo) const _PlannerTag(label: 'Balade solo'),
             ?difficultyTag,
             ..._manualTags(),
           ];
@@ -2377,7 +2566,15 @@ class _PlannerItemCard extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Checkbox(value: item.obtained, onChanged: onChanged),
+                  Tooltip(
+                    message: selectedForSolo
+                        ? 'Retirer de la balade solo'
+                        : 'Ajouter a la balade solo',
+                    child: Checkbox(
+                      value: selectedForSolo,
+                      onChanged: onChanged,
+                    ),
+                  ),
                   if (isMount)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
