@@ -981,6 +981,8 @@ class SoloPlannerPage extends StatefulWidget {
   State<SoloPlannerPage> createState() => _SoloPlannerPageState();
 }
 
+enum _SoloPlannerSortMode { location, category }
+
 class _SoloPlannerPageState extends State<SoloPlannerPage> {
   final PlannerRepository _repository = JsonPlannerRepository();
   final SoloPlannerService _soloPlannerService = SoloPlannerService();
@@ -990,6 +992,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
   Set<String> _soloItemIds = {};
   bool _isLoading = true;
   String _searchQuery = '';
+  _SoloPlannerSortMode _sortMode = _SoloPlannerSortMode.location;
 
   @override
   void initState() {
@@ -1025,8 +1028,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
       }
     }
 
-    final selectedItems = selectedItemsById.values.toList()
-      ..sort(_compareItems);
+    final selectedItems = selectedItemsById.values.toList();
 
     if (!mounted) return;
 
@@ -1037,7 +1039,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
     });
   }
 
-  int _compareItems(TrackingItem left, TrackingItem right) {
+  int _compareCategoryItems(TrackingItem left, TrackingItem right) {
     final categoryCompare = left.category.index.compareTo(right.category.index);
     if (categoryCompare != 0) return categoryCompare;
 
@@ -1049,7 +1051,64 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
     return left.name.compareTo(right.name);
   }
 
-  String _groupLabel(TrackingItem item) => item.category.label;
+  int _compareLocationItems(TrackingItem left, TrackingItem right) {
+    final locationCompare = _locationGroupLabel(
+      left,
+    ).compareTo(_locationGroupLabel(right));
+    if (locationCompare != 0) return locationCompare;
+
+    final categoryCompare = left.category.index.compareTo(right.category.index);
+    if (categoryCompare != 0) return categoryCompare;
+
+    return left.name.compareTo(right.name);
+  }
+
+  int _compareItems(TrackingItem left, TrackingItem right) {
+    return switch (_sortMode) {
+      _SoloPlannerSortMode.location => _compareLocationItems(left, right),
+      _SoloPlannerSortMode.category => _compareCategoryItems(left, right),
+    };
+  }
+
+  String _groupLabel(TrackingItem item) {
+    return switch (_sortMode) {
+      _SoloPlannerSortMode.location => _locationGroupLabel(item),
+      _SoloPlannerSortMode.category => item.category.label,
+    };
+  }
+
+  String _locationGroupLabel(TrackingItem item) {
+    final values = [
+      item.world,
+      item.region,
+      item.zone,
+    ];
+    final uniqueValues = <String>[];
+    final seen = <String>{};
+
+    for (final value in values) {
+      final trimmed = value.trim();
+      if (!_hasUsefulLocationLabel(trimmed)) continue;
+
+      final normalized = WowRegionFilter.normalize(trimmed);
+      if (normalized.isEmpty || !seen.add(normalized)) continue;
+
+      uniqueValues.add(trimmed);
+    }
+
+    if (uniqueValues.isEmpty) return TrackingItem.unknownZone;
+
+    return uniqueValues.join(' > ');
+  }
+
+  bool _hasUsefulLocationLabel(String value) {
+    final normalized = WowRegionFilter.normalize(value);
+
+    return normalized.isNotEmpty &&
+        normalized != WowRegionFilter.normalize(TrackingItem.unknownZone) &&
+        normalized != 'unknown' &&
+        normalized != 'a definir';
+  }
 
   Map<String, List<TrackingItem>> _groupedItems(List<TrackingItem> items) {
     final groupedItems = <String, List<TrackingItem>>{};
@@ -1068,6 +1127,15 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
       } else {
         _collapsedGroups.add(group);
       }
+    });
+  }
+
+  void _setSortMode(_SoloPlannerSortMode sortMode) {
+    if (_sortMode == sortMode) return;
+
+    setState(() {
+      _sortMode = sortMode;
+      _collapsedGroups.clear();
     });
   }
 
@@ -1099,7 +1167,8 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
           item.region.toLowerCase().contains(query) ||
           item.instance.toLowerCase().contains(query) ||
           item.source.toLowerCase().contains(query);
-    }).toList();
+    }).toList()
+      ..sort(_compareItems);
     final groupedItems = _groupedItems(filteredItems);
     final listEntries = <_PlannerListEntry>[];
 
@@ -1150,6 +1219,11 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                             }
                           });
                         },
+                      ),
+                      const SizedBox(height: 16),
+                      _SoloPlannerSortPicker(
+                        selectedMode: _sortMode,
+                        onChanged: _setSortMode,
                       ),
                       const SizedBox(height: 16),
                       Text(
@@ -1206,6 +1280,113 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
     if (count == 1) return '1 item dans ta balade solo';
 
     return '$count items dans ta balade solo';
+  }
+}
+
+class _SoloPlannerSortPicker extends StatelessWidget {
+  const _SoloPlannerSortPicker({
+    required this.selectedMode,
+    required this.onChanged,
+  });
+
+  final _SoloPlannerSortMode selectedMode;
+  final ValueChanged<_SoloPlannerSortMode> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final cardColor = Theme.of(context).cardColor;
+
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: cardColor.withValues(alpha: 0.76),
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: AppTheme.gold.withValues(alpha: 0.45)),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(8),
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final isNarrow = constraints.maxWidth < 520;
+            final buttons = [
+              _SoloPlannerSortButton(
+                icon: Icons.travel_explore,
+                label: 'Par localisation',
+                selected: selectedMode == _SoloPlannerSortMode.location,
+                onPressed: () => onChanged(_SoloPlannerSortMode.location),
+              ),
+              _SoloPlannerSortButton(
+                icon: Icons.category_outlined,
+                label: 'Par catégories',
+                selected: selectedMode == _SoloPlannerSortMode.category,
+                onPressed: () => onChanged(_SoloPlannerSortMode.category),
+              ),
+            ];
+
+            if (isNarrow) {
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  for (var index = 0; index < buttons.length; index++) ...[
+                    buttons[index],
+                    if (index < buttons.length - 1) const SizedBox(height: 8),
+                  ],
+                ],
+              );
+            }
+
+            return Row(
+              children: [
+                for (var index = 0; index < buttons.length; index++) ...[
+                  Expanded(child: buttons[index]),
+                  if (index < buttons.length - 1) const SizedBox(width: 8),
+                ],
+              ],
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class _SoloPlannerSortButton extends StatelessWidget {
+  const _SoloPlannerSortButton({
+    required this.icon,
+    required this.label,
+    required this.selected,
+    required this.onPressed,
+  });
+
+  final IconData icon;
+  final String label;
+  final bool selected;
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    final backgroundColor = selected
+        ? AppTheme.gold
+        : AppTheme.gold.withValues(alpha: 0.14);
+    final foregroundColor = selected ? AppTheme.background : AppTheme.gold;
+
+    return FilledButton.icon(
+      onPressed: onPressed,
+      icon: Icon(icon, size: 20),
+      label: Text(label, textAlign: TextAlign.center),
+      style: FilledButton.styleFrom(
+        minimumSize: const Size(0, 48),
+        backgroundColor: backgroundColor,
+        foregroundColor: foregroundColor,
+        textStyle: const TextStyle(fontWeight: FontWeight.w900),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+        side: BorderSide(
+          color: selected
+              ? Colors.white.withValues(alpha: 0.55)
+              : AppTheme.gold.withValues(alpha: 0.55),
+          width: selected ? 1.4 : 1,
+        ),
+      ),
+    );
   }
 }
 
