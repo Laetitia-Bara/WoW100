@@ -386,7 +386,7 @@ class _DashboardPageState extends State<DashboardPage> {
                 ),
                 const SizedBox(height: 22),
                 _DashboardSection(
-                  title: 'Chercher par catégorie',
+                  title: 'Rechercher par extension',
                   child: _CategorySearchButtons(
                     onAchievementsTap: () => _openPlanner(
                       WowExpansion.allAchievements,
