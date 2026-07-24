@@ -1276,6 +1276,11 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                           });
                         },
                       ),
+                      const SizedBox(height: 10),
+                      _SoloPlannerSortPicker(
+                        selectedMode: _sortMode,
+                        onChanged: _setSortMode,
+                      ),
                       const SizedBox(height: 16),
                       TextField(
                         decoration: const InputDecoration(
@@ -1291,11 +1296,6 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                             }
                           });
                         },
-                      ),
-                      const SizedBox(height: 16),
-                      _SoloPlannerSortPicker(
-                        selectedMode: _sortMode,
-                        onChanged: _setSortMode,
                       ),
                       const SizedBox(height: 16),
                       Wrap(
@@ -1723,12 +1723,12 @@ class _AdventureCrewPicker extends StatelessWidget {
   Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: Theme.of(context).cardColor.withValues(alpha: 0.76),
+        color: Theme.of(context).cardColor.withValues(alpha: 0.46),
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: AppTheme.gold.withValues(alpha: 0.45)),
+        border: Border.all(color: AppTheme.gold.withValues(alpha: 0.28)),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: const EdgeInsets.all(10),
         child: LayoutBuilder(
           builder: (context, constraints) {
             final isNarrow = constraints.maxWidth < 560;
@@ -1805,27 +1805,26 @@ class _CrewButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final backgroundColor = selected
-        ? AppTheme.gold
-        : AppTheme.gold.withValues(alpha: 0.14);
-    final foregroundColor = selected ? AppTheme.background : AppTheme.gold;
+        ? AppTheme.gold.withValues(alpha: 0.18)
+        : Colors.white.withValues(alpha: 0.025);
+    final foregroundColor = selected ? AppTheme.gold : AppTheme.text;
+    final borderColor = selected
+        ? AppTheme.gold.withValues(alpha: 0.78)
+        : AppTheme.gold.withValues(alpha: 0.24);
 
     return FilledButton.icon(
       onPressed: onPressed,
-      icon: Icon(icon, size: 20),
+      icon: Icon(icon, size: 17),
       label: Text(label, textAlign: TextAlign.center),
       style: FilledButton.styleFrom(
-        minimumSize: const Size(0, 48),
+        minimumSize: const Size(0, 40),
         backgroundColor: backgroundColor,
-        disabledBackgroundColor: Colors.white.withValues(alpha: 0.08),
+        disabledBackgroundColor: Colors.white.withValues(alpha: 0.025),
         foregroundColor: foregroundColor,
-        disabledForegroundColor: AppTheme.mutedText,
-        textStyle: const TextStyle(fontWeight: FontWeight.w900),
+        disabledForegroundColor: AppTheme.mutedText.withValues(alpha: 0.72),
+        textStyle: const TextStyle(fontWeight: FontWeight.w700),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        side: BorderSide(
-          color: selected
-              ? Colors.white.withValues(alpha: 0.55)
-              : AppTheme.gold.withValues(alpha: 0.36),
-        ),
+        side: BorderSide(color: borderColor, width: selected ? 1.2 : 1),
       ),
     );
   }
@@ -1842,13 +1841,11 @@ class _SoloPlannerSortPicker extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cardColor = Theme.of(context).cardColor;
-
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: cardColor.withValues(alpha: 0.76),
+        color: Theme.of(context).cardColor.withValues(alpha: 0.46),
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: AppTheme.gold.withValues(alpha: 0.45)),
+        border: Border.all(color: AppTheme.gold.withValues(alpha: 0.28)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(8),
@@ -1913,26 +1910,24 @@ class _SoloPlannerSortButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final backgroundColor = selected
-        ? AppTheme.gold
-        : AppTheme.gold.withValues(alpha: 0.14);
-    final foregroundColor = selected ? AppTheme.background : AppTheme.gold;
+        ? AppTheme.gold.withValues(alpha: 0.18)
+        : Colors.white.withValues(alpha: 0.025);
+    final foregroundColor = selected ? AppTheme.gold : AppTheme.text;
+    final borderColor = selected
+        ? AppTheme.gold.withValues(alpha: 0.78)
+        : AppTheme.gold.withValues(alpha: 0.24);
 
     return FilledButton.icon(
       onPressed: onPressed,
-      icon: Icon(icon, size: 20),
+      icon: Icon(icon, size: 17),
       label: Text(label, textAlign: TextAlign.center),
       style: FilledButton.styleFrom(
-        minimumSize: const Size(0, 48),
+        minimumSize: const Size(0, 40),
         backgroundColor: backgroundColor,
         foregroundColor: foregroundColor,
-        textStyle: const TextStyle(fontWeight: FontWeight.w900),
+        textStyle: const TextStyle(fontWeight: FontWeight.w700),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        side: BorderSide(
-          color: selected
-              ? Colors.white.withValues(alpha: 0.55)
-              : AppTheme.gold.withValues(alpha: 0.55),
-          width: selected ? 1.4 : 1,
-        ),
+        side: BorderSide(color: borderColor, width: selected ? 1.2 : 1),
       ),
     );
   }
