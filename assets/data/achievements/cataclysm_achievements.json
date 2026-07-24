@@ -51,8 +51,37 @@
     "description": "Achever les suites de quêtes des hautes-terres du Crépuscule listées ci-dessous.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Hautes-terres du Crépuscule",
     "primaryLocationRef": "wowhead-zone:4922",
+    "locationRefs": [
+      "wowhead-zone:4922"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4922",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4922",
+      "name": "Hautes-terres du Crépuscule",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres du Crépuscule",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres du Crépuscule"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres du Crépuscule",
+      "wowheadZoneIds": [
+        4922
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Hautes-terres du Crépuscule",
@@ -101,8 +130,37 @@
     "description": "Tuer 10 soldats d'infanterie de Schnottz avec une seule munition d'artillerie au cours de la quête Le feu du ciel en Uldum.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Uldum",
     "primaryLocationRef": "wowhead-zone:5034",
+    "locationRefs": [
+      "wowhead-zone:5034"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5034",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5034",
+      "name": "Uldum",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Uldum",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Uldum"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Uldum",
+      "wowheadZoneIds": [
+        5034
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Uldum",
@@ -151,8 +209,37 @@
     "description": "Achever les quêtes de joute du mont Hyjal, y compris « Qui vole sur un œuf… ».",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:616",
+    "locationRefs": [
+      "wowhead-zone:616"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:616",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:616",
+      "name": "Mont Hyjal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal",
+      "wowheadZoneIds": [
+        616
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",
@@ -178,7 +265,40 @@
     "description": "Achever les suites de quêtes du Tréfonds listées ci-dessous.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Le Tréfonds",
+    "primaryLocationRef": "wowhead-zone:5042",
+    "locationRefs": [
+      "wowhead-zone:5042"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5042",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5042",
+      "name": "Le Tréfonds",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Tréfonds",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Tréfonds"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Tréfonds",
+      "wowheadZoneIds": [
+        5042
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Le Maelström",
+    "locationZone": "Le Tréfonds",
     "instance": "Cataclysm",
     "source": "Achever les suites de quêtes du Tréfonds listées ci-dessous.",
     "points": 10,
@@ -201,8 +321,37 @@
     "description": "Endurer les cauchemars d'Iso'rath dans les hautes-terres du Crépuscule.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Hautes-terres du Crépuscule",
     "primaryLocationRef": "wowhead-zone:4922",
+    "locationRefs": [
+      "wowhead-zone:4922"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4922",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4922",
+      "name": "Hautes-terres du Crépuscule",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres du Crépuscule",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres du Crépuscule"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres du Crépuscule",
+      "wowheadZoneIds": [
+        4922
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Hautes-terres du Crépuscule",
@@ -274,8 +423,37 @@
     "description": "Achever les quêtes d'Harrison Jones et du coffre des merveilles en Uldum, y compris « Harrison Jones et le temple d'Uldum ».",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Uldum",
     "primaryLocationRef": "wowhead-zone:5034",
+    "locationRefs": [
+      "wowhead-zone:5034"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5034",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5034",
+      "name": "Uldum",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Uldum",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Uldum"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Uldum",
+      "wowheadZoneIds": [
+        5034
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Uldum",
@@ -301,8 +479,37 @@
     "description": "Achever les suites de quêtes d’Uldum listées ci-dessous.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Uldum",
     "primaryLocationRef": "wowhead-zone:5034",
+    "locationRefs": [
+      "wowhead-zone:5034"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5034",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5034",
+      "name": "Uldum",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Uldum",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Uldum"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Uldum",
+      "wowheadZoneIds": [
+        5034
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Uldum",
@@ -351,8 +558,38 @@
     "description": "Parler aux personnages suivants au cours de l’attaque du front du Magma.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:5733",
+    "locationRefs": [
+      "wowhead-zone:5733"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5733",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5733",
+      "name": "Front du Magma",
+      "kind": "subzone",
+      "subzoneName": "Front du Magma",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal",
+        "Front du Magma"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal > Front du Magma",
+      "wowheadZoneIds": [
+        5733
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",
@@ -379,8 +616,37 @@
     "description": "Vaincre le requin-baleine en Vashj'ir (malgré ou parce qu'il ne rapporte aucun butin).",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Vashj’ir",
     "primaryLocationRef": "wowhead-zone:5146",
+    "locationRefs": [
+      "wowhead-zone:5146"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5146",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5146",
+      "name": "Vashj’ir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vashj’ir",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vashj’ir"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir",
+      "wowheadZoneIds": [
+        5146
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Vashj’ir",
@@ -406,8 +672,37 @@
     "description": "Achever les suites de quêtes du mont Hyjal listées ci-dessous.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:616",
+    "locationRefs": [
+      "wowhead-zone:616"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:616",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:616",
+      "name": "Mont Hyjal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal",
+      "wowheadZoneIds": [
+        616
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",
@@ -456,8 +751,37 @@
     "description": "Explorer Uldum et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Uldum",
     "primaryLocationRef": "wowhead-zone:5034",
+    "locationRefs": [
+      "wowhead-zone:5034"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5034",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5034",
+      "name": "Uldum",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Uldum",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Uldum"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Uldum",
+      "wowheadZoneIds": [
+        5034
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Uldum",
@@ -483,8 +807,37 @@
     "description": "Explorer Vashj'ir et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Vashj’ir",
     "primaryLocationRef": "wowhead-zone:5146",
+    "locationRefs": [
+      "wowhead-zone:5146"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5146",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5146",
+      "name": "Vashj’ir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vashj’ir",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vashj’ir"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir",
+      "wowheadZoneIds": [
+        5146
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Vashj’ir",
@@ -510,8 +863,37 @@
     "description": "Explorer les hautes-terres du Crépuscule et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Hautes-terres du Crépuscule",
     "primaryLocationRef": "wowhead-zone:4922",
+    "locationRefs": [
+      "wowhead-zone:4922"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4922",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4922",
+      "name": "Hautes-terres du Crépuscule",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres du Crépuscule",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres du Crépuscule"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres du Crépuscule",
+      "wowheadZoneIds": [
+        4922
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Hautes-terres du Crépuscule",
@@ -537,8 +919,37 @@
     "description": "Explorer le Tréfonds et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Le Tréfonds",
     "primaryLocationRef": "wowhead-zone:5042",
+    "locationRefs": [
+      "wowhead-zone:5042"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5042",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5042",
+      "name": "Le Tréfonds",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Tréfonds",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Tréfonds"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Tréfonds",
+      "wowheadZoneIds": [
+        5042
+      ]
+    },
     "world": "Azeroth",
     "region": "Le Maelström",
     "locationZone": "Le Tréfonds",
@@ -619,8 +1030,37 @@
     "description": "Vaincre le fongimancien Glop au cours de la quête journalière Glop, fils de Glop dans le Tréfonds sans subir de dégâts de ses champiboums.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Le Tréfonds",
     "primaryLocationRef": "wowhead-zone:5042",
+    "locationRefs": [
+      "wowhead-zone:5042"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5042",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5042",
+      "name": "Le Tréfonds",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Tréfonds",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Tréfonds"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Tréfonds",
+      "wowheadZoneIds": [
+        5042
+      ]
+    },
     "world": "Azeroth",
     "region": "Le Maelström",
     "locationZone": "Le Tréfonds",
@@ -687,13 +1127,65 @@
     "mamytwink": null
   },
   {
+    "id": "achievement_4827",
+    "name": "L'étendue des dégâts",
+    "description": "Explorer les zones de Kalimdor et des royaumes de l'Est listées ci-dessous et être témoin des métamorphoses provoquées par le Cataclysme.",
+    "category": "achievements",
+    "expansion": "cataclysm",
+    "zone": "Cataclysm",
+    "instance": "Cataclysm",
+    "source": "Explorer les zones de Kalimdor et des royaumes de l'Est listées ci-dessous et être témoin des métamorphoses provoquées par le Cataclysme.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4827,
+    "wowheadAchievementId": 4827,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4827",
+    "blizzardCategoryId": 15069,
+    "blizzardCategoryName": "Cataclysm",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
     "id": "achievement_4874",
     "name": "L'évasion de Tol Barad",
     "description": "Achever 100 quêtes journalières sur Tol Barad.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Tol Barad",
     "primaryLocationRef": "wowhead-zone:5095",
+    "locationRefs": [
+      "wowhead-zone:5095"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5095",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5095",
+      "name": "Tol Barad",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tol Barad",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Tol Barad"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Tol Barad",
+      "wowheadZoneIds": [
+        5095
+      ]
+    },
     "world": "Azeroth",
     "region": "Le Maelström",
     "locationZone": "Tol Barad",
@@ -719,8 +1211,38 @@
     "description": "Achever les quêtes de Leyara au mont Hyjal et au front du Magma.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:5733",
+    "locationRefs": [
+      "wowhead-zone:5733"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5733",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5733",
+      "name": "Front du Magma",
+      "kind": "subzone",
+      "subzoneName": "Front du Magma",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal",
+        "Front du Magma"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal > Front du Magma",
+      "wowheadZoneIds": [
+        5733
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",
@@ -747,8 +1269,38 @@
     "description": "Débloquer la liste ci-dessous au cours de l’attaque du front du Magma.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:5733",
+    "locationRefs": [
+      "wowhead-zone:5733"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5733",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5733",
+      "name": "Front du Magma",
+      "kind": "subzone",
+      "subzoneName": "Front du Magma",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal",
+        "Front du Magma"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal > Front du Magma",
+      "wowheadZoneIds": [
+        5733
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",
@@ -784,8 +1336,38 @@
     "description": "Atteindre le point culminant du Nid de la veuve au front du Magma.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:5733",
+    "locationRefs": [
+      "wowhead-zone:5733"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5733",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5733",
+      "name": "Front du Magma",
+      "kind": "subzone",
+      "subzoneName": "Front du Magma",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal",
+        "Front du Magma"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal > Front du Magma",
+      "wowheadZoneIds": [
+        5733
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",
@@ -821,8 +1403,37 @@
     "description": "Accomplir 10 fois la quête journalière Glop, fils de Glop dans le Tréfonds.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Le Tréfonds",
     "primaryLocationRef": "wowhead-zone:5042",
+    "locationRefs": [
+      "wowhead-zone:5042"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5042",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5042",
+      "name": "Le Tréfonds",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Tréfonds",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Tréfonds"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Tréfonds",
+      "wowheadZoneIds": [
+        5042
+      ]
+    },
     "world": "Azeroth",
     "region": "Le Maelström",
     "locationZone": "Le Tréfonds",
@@ -848,8 +1459,38 @@
     "description": "Bombardez les élémentaires listés ci-dessous au cours d’un bombardement au front du Magma.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:5733",
+    "locationRefs": [
+      "wowhead-zone:5733"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5733",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5733",
+      "name": "Front du Magma",
+      "kind": "subzone",
+      "subzoneName": "Front du Magma",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal",
+        "Front du Magma"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal > Front du Magma",
+      "wowheadZoneIds": [
+        5733
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",
@@ -972,13 +1613,74 @@
     "mamytwink": null
   },
   {
+    "id": "achievement_5868",
+    "name": "Les humbles hériteront de Kalimdor",
+    "description": "Aidez chacune des bestioles listées ci-dessous à prendre leur revanche sur les anciens élémentaires de feu.",
+    "category": "achievements",
+    "expansion": "cataclysm",
+    "zone": "Cataclysm",
+    "instance": "Cataclysm",
+    "source": "Aidez chacune des bestioles listées ci-dessous à prendre leur revanche sur les anciens élémentaires de feu.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 5868,
+    "wowheadAchievementId": 5868,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=5868",
+    "blizzardCategoryId": 15070,
+    "blizzardCategoryName": "Cataclysm",
+    "wowhead": {
+      "wowheadName": "And the Meek Shall Inherit Kalimdor",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=5868",
+      "category": 15070,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "",
+      "popularity": 87
+    },
+    "mamytwink": null
+  },
+  {
     "id": "achievement_4873",
     "name": "Les ombres du Crépuscule",
     "description": "Achever les suites de quêtes des hautes-terres du Crépuscule listées ci-dessous.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Hautes-terres du Crépuscule",
     "primaryLocationRef": "wowhead-zone:4922",
+    "locationRefs": [
+      "wowhead-zone:4922"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4922",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4922",
+      "name": "Hautes-terres du Crépuscule",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres du Crépuscule",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres du Crépuscule"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres du Crépuscule",
+      "wowheadZoneIds": [
+        4922
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Hautes-terres du Crépuscule",
@@ -1050,8 +1752,37 @@
     "description": "Achever la quête journalière L'impatience de la progéniture dans le Tréfonds, dans les 90 secondes après avoir frappé le cristal de résonance.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Le Tréfonds",
     "primaryLocationRef": "wowhead-zone:5042",
+    "locationRefs": [
+      "wowhead-zone:5042"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5042",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5042",
+      "name": "Le Tréfonds",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Tréfonds",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Tréfonds"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Tréfonds",
+      "wowheadZoneIds": [
+        5042
+      ]
+    },
     "world": "Azeroth",
     "region": "Le Maelström",
     "locationZone": "Le Tréfonds",
@@ -1132,8 +1863,37 @@
     "description": "Rester sur le trampoline et accomplir 20 bonds successifs dans le bosquet Sifflant, au mont Hyjal.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:616",
+    "locationRefs": [
+      "wowhead-zone:616"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:616",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:616",
+      "name": "Mont Hyjal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal",
+      "wowheadZoneIds": [
+        616
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",
@@ -1214,8 +1974,37 @@
     "description": "Achever les suites de quêtes de Vash’jir listées ci-dessous.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Vashj’ir",
     "primaryLocationRef": "wowhead-zone:5146",
+    "locationRefs": [
+      "wowhead-zone:5146"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5146",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5146",
+      "name": "Vashj’ir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vashj’ir",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vashj’ir"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir",
+      "wowheadZoneIds": [
+        5146
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Vashj’ir",
@@ -1241,8 +2030,37 @@
     "description": "Achever les suites de quêtes de Vash’jir listées ci-dessous.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Vashj’ir",
     "primaryLocationRef": "wowhead-zone:5146",
+    "locationRefs": [
+      "wowhead-zone:5146"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5146",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5146",
+      "name": "Vashj’ir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vashj’ir",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vashj’ir"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir",
+      "wowheadZoneIds": [
+        5146
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Vashj’ir",
@@ -1268,8 +2086,37 @@
     "description": "Au cours de la quête L’appel du vol, au mont Hyjal, obtenir 65 charges d’Envol.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:616",
+    "locationRefs": [
+      "wowhead-zone:616"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:616",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:616",
+      "name": "Mont Hyjal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal",
+      "wowheadZoneIds": [
+        616
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",
@@ -1295,8 +2142,37 @@
     "description": "Terminer 10 fois la quête journalière Perdu dans les profondeurs, dans le Tréfonds.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Le Tréfonds",
     "primaryLocationRef": "wowhead-zone:5042",
+    "locationRefs": [
+      "wowhead-zone:5042"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5042",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5042",
+      "name": "Le Tréfonds",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Tréfonds",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Tréfonds"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Tréfonds",
+      "wowheadZoneIds": [
+        5042
+      ]
+    },
     "world": "Azeroth",
     "region": "Le Maelström",
     "locationZone": "Le Tréfonds",
@@ -1322,8 +2198,37 @@
     "description": "Terminer 10 fois la quête journalière La vigilance a des ailes au mont Hyjal.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:616",
+    "locationRefs": [
+      "wowhead-zone:616"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:616",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:616",
+      "name": "Mont Hyjal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal",
+      "wowheadZoneIds": [
+        616
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",
@@ -1372,8 +2277,37 @@
     "description": "Achever la suite de quêtes du Marteau du crépuscule dans les hautes-terres du Crépuscule, y compris « Brise-Tête la Montagne ».",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Hautes-terres du Crépuscule",
     "primaryLocationRef": "wowhead-zone:4922",
+    "locationRefs": [
+      "wowhead-zone:4922"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4922",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4922",
+      "name": "Hautes-terres du Crépuscule",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres du Crépuscule",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres du Crépuscule"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres du Crépuscule",
+      "wowheadZoneIds": [
+        4922
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Hautes-terres du Crépuscule",
@@ -1399,8 +2333,37 @@
     "description": "Achever la suite de quêtes du Marteau du crépuscule dans les hautes-terres du Crépuscule, y compris « Brise-Tête la Montagne ».",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Hautes-terres du Crépuscule",
     "primaryLocationRef": "wowhead-zone:4922",
+    "locationRefs": [
+      "wowhead-zone:4922"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4922",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4922",
+      "name": "Hautes-terres du Crépuscule",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres du Crépuscule",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres du Crépuscule"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres du Crépuscule",
+      "wowheadZoneIds": [
+        4922
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Hautes-terres du Crépuscule",
@@ -1449,8 +2412,37 @@
     "description": "Explorer les coins et recoins des ruines de Tonnemar dans les hautes-terres du Crépuscule et impressionner vos alliés gueules-de-dragon en tuant les cibles listées ci-dessous.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Hautes-terres du Crépuscule",
     "primaryLocationRef": "wowhead-zone:4922",
+    "locationRefs": [
+      "wowhead-zone:4922"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4922",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4922",
+      "name": "Hautes-terres du Crépuscule",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres du Crépuscule",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres du Crépuscule"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres du Crépuscule",
+      "wowheadZoneIds": [
+        4922
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Hautes-terres du Crépuscule",
@@ -1476,8 +2468,37 @@
     "description": "Explorer les coins et recoins des ruines de Tonnemar dans les hautes-terres du Crépuscule et impressionner vos alliés marteaux-hardis en tuant les cibles listées ci-dessous.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Hautes-terres du Crépuscule",
     "primaryLocationRef": "wowhead-zone:4922",
+    "locationRefs": [
+      "wowhead-zone:4922"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4922",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4922",
+      "name": "Hautes-terres du Crépuscule",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres du Crépuscule",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres du Crépuscule"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres du Crépuscule",
+      "wowheadZoneIds": [
+        4922
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Hautes-terres du Crépuscule",
@@ -1503,8 +2524,37 @@
     "description": "Terminer les quêtes du Creuset du carnage dans les hautes-terres du Crépuscule, y compris « Le Creuset du carnage : la terreur du Crépuscule ! »",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Hautes-terres du Crépuscule",
     "primaryLocationRef": "wowhead-zone:4922",
+    "locationRefs": [
+      "wowhead-zone:4922"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4922",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4922",
+      "name": "Hautes-terres du Crépuscule",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres du Crépuscule",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres du Crépuscule"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres du Crépuscule",
+      "wowheadZoneIds": [
+        4922
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Hautes-terres du Crépuscule",
@@ -1530,8 +2580,38 @@
     "description": "Accomplir les hauts faits du Renouveau et du front du Magma listés ci-dessous.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:5733",
+    "locationRefs": [
+      "wowhead-zone:5733"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5733",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5733",
+      "name": "Front du Magma",
+      "kind": "subzone",
+      "subzoneName": "Front du Magma",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal",
+        "Front du Magma"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal > Front du Magma",
+      "wowheadZoneIds": [
+        5733
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",
@@ -1558,8 +2638,38 @@
     "description": "Tuer seul un béhémoth en fusion au front du Magma sans subir de dégâts de Piétinement de lave et de Rocher embrasé.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:5733",
+    "locationRefs": [
+      "wowhead-zone:5733"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5733",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5733",
+      "name": "Front du Magma",
+      "kind": "subzone",
+      "subzoneName": "Front du Magma",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal",
+        "Front du Magma"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal > Front du Magma",
+      "wowheadZoneIds": [
+        5733
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",
@@ -1586,8 +2696,37 @@
     "description": "Achever les quêtes de Neptulon en Vashj'ir, y compris « Défendre la faille ».",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Vashj’ir",
     "primaryLocationRef": "wowhead-zone:5146",
+    "locationRefs": [
+      "wowhead-zone:5146"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5146",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5146",
+      "name": "Vashj’ir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vashj’ir",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vashj’ir"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir",
+      "wowheadZoneIds": [
+        5146
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Vashj’ir",
@@ -1613,8 +2752,37 @@
     "description": "Achever les quêtes de Neptulon en Vashj'ir, y compris « Défendre la faille ».",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Vashj’ir",
     "primaryLocationRef": "wowhead-zone:5146",
+    "locationRefs": [
+      "wowhead-zone:5146"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5146",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5146",
+      "name": "Vashj’ir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vashj’ir",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vashj’ir"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir",
+      "wowheadZoneIds": [
+        5146
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Vashj’ir",
@@ -1640,8 +2808,37 @@
     "description": "Être témoin des 3 visions de la vierge combattante naz'jar en Vashj'ir.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Cataclysm",
+    "zone": "Vashj’ir",
     "primaryLocationRef": "wowhead-zone:5146",
+    "locationRefs": [
+      "wowhead-zone:5146"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5146",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5146",
+      "name": "Vashj’ir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vashj’ir",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vashj’ir"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vashj’ir",
+      "wowheadZoneIds": [
+        5146
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Vashj’ir",
@@ -1897,8 +3094,35 @@
     "description": "Sauver toutes les victimes potentielles de maléfices à Zul’Aman, en mode héroïque.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Donjons de Cataclysm",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -2016,8 +3240,35 @@
     "description": "Vaincre Halazzi à Zul’Aman en mode héroïque, sans tuer ses totems.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Donjons de Cataclysm",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -2374,8 +3625,35 @@
     "description": "Sauver les quatre prisonniers avant qu’ils soient sacrifiés à Zul'Aman, en mode héroïque.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Donjons de Cataclysm",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -2401,8 +3679,38 @@
     "description": "Vaincre Asaad sur la cime du Vortex.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Donjons de Cataclysm",
+    "zone": "Le Maelström",
     "primaryLocationRef": "wowhead-zone:8093",
+    "locationRefs": [
+      "wowhead-zone:8093"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8093",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8093",
+      "name": "La cime du Vortex",
+      "kind": "subzone",
+      "subzoneName": "La cime du Vortex",
+      "regionName": "Le Maelström",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Maelström",
+        "La cime du Vortex"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Maelström > La cime du Vortex",
+      "wowheadZoneIds": [
+        8093
+      ]
+    },
     "world": "Azeroth",
     "region": "Le Maelström",
     "locationZone": "Le Maelström",
@@ -2429,8 +3737,38 @@
     "description": "Vaincre Asaad sur la cime du Vortex en mode héroïque.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Donjons de Cataclysm",
+    "zone": "Le Maelström",
     "primaryLocationRef": "wowhead-zone:8093",
+    "locationRefs": [
+      "wowhead-zone:8093"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8093",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8093",
+      "name": "La cime du Vortex",
+      "kind": "subzone",
+      "subzoneName": "La cime du Vortex",
+      "regionName": "Le Maelström",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Maelström",
+        "La cime du Vortex"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Maelström > La cime du Vortex",
+      "wowheadZoneIds": [
+        8093
+      ]
+    },
     "world": "Azeroth",
     "region": "Le Maelström",
     "locationZone": "Le Maelström",
@@ -2710,8 +4048,38 @@
     "description": "Éviter complètement l'effet Adhérence statique au cours de la rencontre avec Asaad sur la cime du Vortex en mode héroïque.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Donjons de Cataclysm",
+    "zone": "Le Maelström",
     "primaryLocationRef": "wowhead-zone:8093",
+    "locationRefs": [
+      "wowhead-zone:8093"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8093",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8093",
+      "name": "La cime du Vortex",
+      "kind": "subzone",
+      "subzoneName": "La cime du Vortex",
+      "regionName": "Le Maelström",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Maelström",
+        "La cime du Vortex"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Maelström > La cime du Vortex",
+      "wowheadZoneIds": [
+        8093
+      ]
+    },
     "world": "Azeroth",
     "region": "Le Maelström",
     "locationZone": "Le Maelström",
@@ -2968,8 +4336,35 @@
     "description": "Vaincre Daakara à Zul’Aman en mode héroïque, sans qu’un seul joueur soit sorti du rectangle de maçonnerie turquoise gravé dans le sol au centre de la zone.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Donjons de Cataclysm",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -2995,8 +4390,38 @@
     "description": "Collecter 5 orbes dorés en une visite de la cime du Vortex en mode héroïque.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Donjons de Cataclysm",
+    "zone": "Le Maelström",
     "primaryLocationRef": "wowhead-zone:8093",
+    "locationRefs": [
+      "wowhead-zone:8093"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8093",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8093",
+      "name": "La cime du Vortex",
+      "kind": "subzone",
+      "subzoneName": "La cime du Vortex",
+      "regionName": "Le Maelström",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Maelström",
+        "La cime du Vortex"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Maelström > La cime du Vortex",
+      "wowheadZoneIds": [
+        8093
+      ]
+    },
     "world": "Azeroth",
     "region": "Le Maelström",
     "locationZone": "Le Maelström",
@@ -3184,8 +4609,35 @@
     "description": "Vaincre Daakara à Zul’Aman en mode héroïque et en groupe de guilde.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Donjons de Cataclysm",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -3418,8 +4870,38 @@
     "description": "Vaincre Asaad sur la cime du Vortex en mode héroïque et en groupe de guilde.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Donjons de Cataclysm",
+    "zone": "Le Maelström",
     "primaryLocationRef": "wowhead-zone:8093",
+    "locationRefs": [
+      "wowhead-zone:8093"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8093",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8093",
+      "name": "La cime du Vortex",
+      "kind": "subzone",
+      "subzoneName": "La cime du Vortex",
+      "regionName": "Le Maelström",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Maelström",
+        "La cime du Vortex"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Maelström > La cime du Vortex",
+      "wowheadZoneIds": [
+        8093
+      ]
+    },
     "world": "Azeroth",
     "region": "Le Maelström",
     "locationZone": "Le Maelström",
@@ -3446,8 +4928,35 @@
     "description": "Vaincre Daakara à Zul’Aman en mode héroïque.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Donjons de Cataclysm",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -3736,6 +5245,71 @@
     "blizzardCategoryId": 15270,
     "blizzardCategoryName": "Joueur contre Joueur",
     "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_5453",
+    "name": "Sombres secrets en Sombrivage",
+    "description": "Découvrir le secret enfoui sous la Gueule du Vide en Sombrivage.",
+    "category": "achievements",
+    "expansion": "cataclysm",
+    "zone": "Sombrivage",
+    "primaryLocationRef": "wowhead-zone:148",
+    "locationRefs": [
+      "wowhead-zone:148"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:148",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:148",
+      "name": "Sombrivage",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sombrivage",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Sombrivage"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Sombrivage",
+      "wowheadZoneIds": [
+        148
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Kalimdor",
+    "locationZone": "Sombrivage",
+    "instance": "Kalimdor",
+    "source": "Découvrir le secret enfoui sous la Gueule du Vide en Sombrivage.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 5453,
+    "wowheadAchievementId": 5453,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=5453",
+    "blizzardCategoryId": 15081,
+    "blizzardCategoryName": "Kalimdor",
+    "wowhead": {
+      "wowheadName": "Ghosts in the Dark",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=5453",
+      "category": 15081,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "",
+      "popularity": 80
+    },
     "mamytwink": null
   },
   {
@@ -4475,8 +6049,37 @@
     "description": "Vaincre Cho'gall dans le bastion du Crépuscule en mode héroïque.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Raids de Cataclysm",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -4548,8 +6151,37 @@
     "description": "Vaincre le conseil d'ascendants dans le bastion du Crépuscule en mode héroïque.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Raids de Cataclysm",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -4690,8 +6322,37 @@
     "description": "Vaincre la Monstruosité en élémentium dans le bastion du Crépuscule en ne lui permettant de créer qu'une seule flaque de Glace liquide.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Raids de Cataclysm",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -4786,8 +6447,37 @@
     "description": "Vaincre Halfus Brise-Wyrm dans le bastion du Crépuscule en mode héroïque.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Raids de Cataclysm",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -4859,8 +6549,37 @@
     "description": "Vaincre Cho'gall dans le bastion du Crépuscule avant qu'un seul membre du raid ait le sang vicié à plus de 30%.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Raids de Cataclysm",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -5042,8 +6761,37 @@
     "description": "Vaincre les boss du bastion du Crépuscule.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Raids de Cataclysm",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -5542,8 +7290,37 @@
     "description": "Vaincre Sinestra dans le bastion du Crépuscule en mode héroïque.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Raids de Cataclysm",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -5822,8 +7599,37 @@
     "description": "Vaincre Cho'gall dans le bastion du Crépuscule en mode héroïque et en groupe de guilde.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Raids de Cataclysm",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -5895,8 +7701,37 @@
     "description": "Vaincre Sinestra dans le bastion du Crépuscule en mode héroïque et en groupe de guilde.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Raids de Cataclysm",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -5945,8 +7780,37 @@
     "description": "Vaincre les boss du bastion de Baradin en groupe de guilde.",
     "category": "achievements",
     "expansion": "cataclysm",
-    "zone": "Raids de Cataclysm",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -6010,97 +7874,6 @@
     "blizzardCategoryId": 15068,
     "blizzardCategoryName": "Raids de Cataclysm",
     "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_4827",
-    "name": "L'étendue des dégâts",
-    "description": "Explorer les zones de Kalimdor et des royaumes de l'Est listées ci-dessous et être témoin des métamorphoses provoquées par le Cataclysme.",
-    "category": "achievements",
-    "expansion": "cataclysm",
-    "zone": "Cataclysm",
-    "instance": "Cataclysm",
-    "source": "Explorer les zones de Kalimdor et des royaumes de l'Est listées ci-dessous et être témoin des métamorphoses provoquées par le Cataclysme.",
-    "points": 10,
-    "rewardDescription": "",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 4827,
-    "wowheadAchievementId": 4827,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=4827",
-    "blizzardCategoryId": 15069,
-    "blizzardCategoryName": "Cataclysm",
-    "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_5868",
-    "name": "Les humbles hériteront de Kalimdor",
-    "description": "Aidez chacune des bestioles listées ci-dessous à prendre leur revanche sur les anciens élémentaires de feu.",
-    "category": "achievements",
-    "expansion": "cataclysm",
-    "zone": "Cataclysm",
-    "instance": "Cataclysm",
-    "source": "Aidez chacune des bestioles listées ci-dessous à prendre leur revanche sur les anciens élémentaires de feu.",
-    "points": 10,
-    "rewardDescription": "",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 5868,
-    "wowheadAchievementId": 5868,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=5868",
-    "blizzardCategoryId": 15070,
-    "blizzardCategoryName": "Cataclysm",
-    "wowhead": {
-      "wowheadName": "And the Meek Shall Inherit Kalimdor",
-      "wowheadUrl": "https://www.wowhead.com/fr/achievement=5868",
-      "category": 15070,
-      "categoryName": "",
-      "expansion": null,
-      "points": 10,
-      "reward": "",
-      "popularity": 87
-    },
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_5453",
-    "name": "Sombres secrets en Sombrivage",
-    "description": "Découvrir le secret enfoui sous la Gueule du Vide en Sombrivage.",
-    "category": "achievements",
-    "expansion": "cataclysm",
-    "zone": "Kalimdor",
-    "primaryLocationRef": "wowhead-zone:148",
-    "world": "Azeroth",
-    "region": "Kalimdor",
-    "locationZone": "Sombrivage",
-    "instance": "Kalimdor",
-    "source": "Découvrir le secret enfoui sous la Gueule du Vide en Sombrivage.",
-    "points": 10,
-    "rewardDescription": "",
-    "isAccountWide": false,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 5453,
-    "wowheadAchievementId": 5453,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=5453",
-    "blizzardCategoryId": 15081,
-    "blizzardCategoryName": "Kalimdor",
-    "wowhead": {
-      "wowheadName": "Ghosts in the Dark",
-      "wowheadUrl": "https://www.wowhead.com/fr/achievement=5453",
-      "category": 15081,
-      "categoryName": "",
-      "expansion": null,
-      "points": 10,
-      "reward": "",
-      "popularity": 80
-    },
     "mamytwink": null
   }
 ]

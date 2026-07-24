@@ -216,10 +216,22 @@ class TrackingItem {
   }
 
   static String _officialWorldZoneFromJson(Map<String, dynamic> json) {
-    final candidates = [
-      _firstJsonString(json, ['locationZone', 'localizedZone', 'area']),
-      _jsonString(json['zone']),
-    ];
+    final catalogLocationZone = _firstJsonString(json, [
+      'locationZone',
+      'localizedZone',
+      'area',
+    ]);
+    final hasCatalogLocationRef = _firstJsonString(json, [
+      'primaryLocationRef',
+      'locationRef',
+    ]).isNotEmpty;
+
+    if (catalogLocationZone.isNotEmpty &&
+        (hasCatalogLocationRef || isKnownWorldZone(catalogLocationZone))) {
+      return catalogLocationZone.trim();
+    }
+
+    final candidates = [_jsonString(json['zone'])];
 
     for (final candidate in candidates) {
       if (candidate.isEmpty) continue;

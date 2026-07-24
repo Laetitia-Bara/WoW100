@@ -1592,7 +1592,41 @@
     "description": "Il ne s’embête même pas à mâcher sa nourriture.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
+    "locationZone": "Île de Dorn",
+    "zone": "Île de Dorn",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1625,7 +1659,41 @@
     "description": "Cette créature peut engloutir deux fois son poids en un seul repas.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
+    "locationZone": "Île de Dorn",
+    "zone": "Île de Dorn",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1658,7 +1726,41 @@
     "description": "La fourrure blanche de ces créatures les aide à se cacher des prédateurs dans la neige.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13646",
+    "locationRefs": [
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13646",
+      "name": "Travée d’Azur",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Travée d’Azur",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Travée d’Azur"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur",
+      "wowheadZoneIds": [
+        13646
+      ]
+    },
+    "locationZone": "Travée d’Azur",
+    "zone": "Travée d’Azur",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1691,7 +1793,41 @@
     "description": "Admirez ! Un vorquin pâle !",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13646",
+    "locationRefs": [
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13646",
+      "name": "Travée d’Azur",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Travée d’Azur",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Travée d’Azur"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur",
+      "wowheadZoneIds": [
+        13646
+      ]
+    },
+    "locationZone": "Travée d’Azur",
+    "zone": "Travée d’Azur",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1724,7 +1860,41 @@
     "description": "Les blaireaux du Rêve bruns sont une espèce rare. Mais on se passerait bien de leur odeur.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14529",
+    "locationRefs": [
+      "wowhead-zone:14529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14529",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14529",
+      "name": "Rêve d’émeraude",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rêve d’émeraude",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rêve d’émeraude"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rêve d’émeraude",
+      "wowheadZoneIds": [
+        14529
+      ]
+    },
+    "locationZone": "Rêve d’émeraude",
+    "zone": "Rêve d’émeraude",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1757,7 +1927,41 @@
     "description": "La température interne d’une braisette peut dissoudre toute matière organique. N’oubliez pas d’enfiler vos gants avant d’en caresser une.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
+    "locationZone": "Rivages de l’Éveil",
+    "zone": "Rivages de l’Éveil",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1790,7 +1994,55 @@
     "description": "Cette créature fait trembler le sol à chacun de ses pas. Quand elles se déplacent en troupeau, on croirait entendre l’orage gronder au loin.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13647",
+    "locationRefs": [
+      "wowhead-zone:13647",
+      "wowhead-zone:13645",
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13647",
+      "name": "Thaldraszus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Thaldraszus",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus",
+      "wowheadZoneIds": [
+        13647
+      ]
+    },
+    "locationZone": "Thaldraszus",
+    "zone": "Thaldraszus",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1825,7 +2077,41 @@
     "description": "Ah, si seulement vous aviez écouté votre mère avant de manger de l’herbe frappée par la foudre…",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
+    "locationZone": "Rivages de l’Éveil",
+    "zone": "Rivages de l’Éveil",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1858,7 +2144,55 @@
     "description": "Le fracas retentissant d’un rot de bufflacien adulte peut être entendu à des lieues à la ronde. Plus discret, celui des bufflouilles est peut-être moins sonore, mais il est bien plus mélodieux.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644",
+      "wowhead-zone:13646",
+      "wowhead-zone:13645"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
+    "locationZone": "Rivages de l’Éveil",
+    "zone": "Rivages de l’Éveil",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1894,7 +2228,41 @@
     "description": "On raconte que l’éclat des oreilles de cailloustaches est dû à leur consommation de fromage magique. Ce qui pourrait également expliquer leur très mauvaise haleine.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1927,7 +2295,48 @@
     "description": "Si les îles aux Dragons abritent bon nombre de créatures mystérieuses, les canards sont peut-être les plus insaisissables de toutes. D’où viennent-ils, où vont-ils et que mijotent-ils ? Nous ne le saurons peut-être jamais.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645",
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
+    "locationZone": "Plaines d’Ohn’ahra",
+    "zone": "Plaines d’Ohn’ahra",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1961,7 +2370,49 @@
     "description": "La terreur dont le battement d’ailes résonne au-dessus des îles aux Dragons, le cauchemar ailé qui picore goulûment vos rêves d’émeraude. Non, ce n’est pas Aile de mort, c’est un canard !",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13862",
+    "locationRefs": [
+      "wowhead-zone:13862",
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13862",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13862",
+      "name": "Valdrakken",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Valdrakken",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus",
+        "Valdrakken"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus > Valdrakken",
+      "wowheadZoneIds": [
+        13862
+      ]
+    },
+    "locationZone": "Valdrakken",
+    "zone": "Valdrakken",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1995,7 +2446,55 @@
     "description": "Coin-coin.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644",
+      "wowhead-zone:13862",
+      "wowhead-zone:13647"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13862",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
+    "locationZone": "Rivages de l’Éveil",
+    "zone": "Rivages de l’Éveil",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2031,7 +2530,48 @@
     "description": "La carapace de ces créatures n’est pas réellement en pierre, mais elle est si résistante qu’on s’y tromperait.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645",
+      "wowhead-zone:13647"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
+    "locationZone": "Plaines d’Ohn’ahra",
+    "zone": "Plaines d’Ohn’ahra",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2065,7 +2605,41 @@
     "description": "Visqueux, mais également granuleux. Un très mauvais repas, en somme.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2098,7 +2672,41 @@
     "description": "Celui-ci adore le fromage, comme la plupart des faons.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14529",
+    "locationRefs": [
+      "wowhead-zone:14529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14529",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14529",
+      "name": "Rêve d’émeraude",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rêve d’émeraude",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rêve d’émeraude"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rêve d’émeraude",
+      "wowheadZoneIds": [
+        14529
+      ]
+    },
+    "locationZone": "Rêve d’émeraude",
+    "zone": "Rêve d’émeraude",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2131,7 +2739,41 @@
     "description": "Un soleil miniature semble brûler dans sa poitrine.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2195,7 +2837,41 @@
     "description": "Les chasseurs et chasseuses utilisent les cristaux acérés du dos de ces créatures pour fabriquer des armes.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13646",
+    "locationRefs": [
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13646",
+      "name": "Travée d’Azur",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Travée d’Azur",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Travée d’Azur"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur",
+      "wowheadZoneIds": [
+        13646
+      ]
+    },
+    "locationZone": "Travée d’Azur",
+    "zone": "Travée d’Azur",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2228,7 +2904,41 @@
     "description": "Lorsqu’elles sont jeunes, ces bestioles ont besoin de faire de nombreuses siestes. Heureusement, les sacs à dos représentent un excellent endroit pour se reposer.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14529",
+    "locationRefs": [
+      "wowhead-zone:14529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14529",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14529",
+      "name": "Rêve d’émeraude",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rêve d’émeraude",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rêve d’émeraude"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rêve d’émeraude",
+      "wowheadZoneIds": [
+        14529
+      ]
+    },
+    "locationZone": "Rêve d’émeraude",
+    "zone": "Rêve d’émeraude",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2261,7 +2971,41 @@
     "description": "Ces créatures vivent dans les buissons et près des arbres, mais elles dorment si profondément qu’elles sont presque invisibles. Si vous souhaitez interrompre leur sommeil, il est préférable de venir avec des alliés.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14529",
+    "locationRefs": [
+      "wowhead-zone:14529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14529",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14529",
+      "name": "Rêve d’émeraude",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rêve d’émeraude",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rêve d’émeraude"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rêve d’émeraude",
+      "wowheadZoneIds": [
+        14529
+      ]
+    },
+    "locationZone": "Rêve d’émeraude",
+    "zone": "Rêve d’émeraude",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2294,7 +3038,41 @@
     "description": "Habituellement d’apparence boueuse, cette créature peut parfois briller d’un rouge éclatant.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2327,7 +3105,48 @@
     "description": "Le sang d’épine-écarlate circule à travers les structures cristallines de son corps, et c’est ce qui lui donne sa couleur unique.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13647",
+    "locationRefs": [
+      "wowhead-zone:13647",
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13647",
+      "name": "Thaldraszus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Thaldraszus",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus",
+      "wowheadZoneIds": [
+        13647
+      ]
+    },
+    "locationZone": "Thaldraszus",
+    "zone": "Thaldraszus",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2361,7 +3180,41 @@
     "description": "Ces escargots, qui ont tendance à s’installer à proximité des colonies de Drogbars, sont à la fois plus rapides et plus puissants que leurs congénères de la surface.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2394,7 +3247,55 @@
     "description": "Un jour, un mage un peu trop curieux dénommé McGaffeur s’est mis en tête d’allumer un petit feu de camp. Il a alors invoqué une flamme qui s’est avérée bien plus vivace que prévu.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644",
+      "wowhead-zone:13647",
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
+    "locationZone": "Rivages de l’Éveil",
+    "zone": "Rivages de l’Éveil",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2429,7 +3330,48 @@
     "description": "Si vous sentez un frisson vous parcourir l’échine, pas de panique. Il s’agit probablement de votre floconou préféré.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644",
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
+    "locationZone": "Rivages de l’Éveil",
+    "zone": "Rivages de l’Éveil",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2463,7 +3405,56 @@
     "description": "Les ignoïdes se forment quand le magma remonté à la surface d’Azeroth est imprégné de magie noire élémentaire. Il en résulte une créature certes minuscule et adorable, mais néanmoins féroce.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13802",
+    "locationRefs": [
+      "wowhead-zone:13802",
+      "wowhead-zone:13647",
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13802",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13802",
+      "name": "Réservoir du Bastion de Tyr",
+      "kind": "subzone",
+      "subzoneName": "Réservoir du Bastion de Tyr",
+      "regionName": "Thaldraszus",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus",
+        "Réservoir du Bastion de Tyr"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus > Réservoir du Bastion de Tyr",
+      "wowheadZoneIds": [
+        13802
+      ]
+    },
+    "locationZone": "Thaldraszus",
+    "zone": "Thaldraszus",
+    "subzone": "Réservoir du Bastion de Tyr",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2499,7 +3490,41 @@
     "description": "Ne le laissez pas dans votre sac à dos, car il mangera toute votre nourriture et fera ensuite une sieste.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14529",
+    "locationRefs": [
+      "wowhead-zone:14529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14529",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14529",
+      "name": "Rêve d’émeraude",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rêve d’émeraude",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rêve d’émeraude"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rêve d’émeraude",
+      "wowheadZoneIds": [
+        14529
+      ]
+    },
+    "locationZone": "Rêve d’émeraude",
+    "zone": "Rêve d’émeraude",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2532,7 +3557,41 @@
     "description": "Une ruée de ces créatures rappelle le grondement d’un orage. Une ruée de ces créatures sous un orage fait penser à un cataclysme.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
+    "locationZone": "Rivages de l’Éveil",
+    "zone": "Rivages de l’Éveil",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2565,7 +3624,41 @@
     "description": "Le rusard vole au-dessus des vastes plaines verdoyantes et des collines à perte de vue, laissant pour seule trace de son passage de minuscules ombres sur le sol.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
+    "locationZone": "Plaines d’Ohn’ahra",
+    "zone": "Plaines d’Ohn’ahra",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2598,7 +3691,41 @@
     "description": "Ce n’est pas le canard de votre grand-père ! Ou… peut-être que si ?",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
+    "locationZone": "Plaines d’Ohn’ahra",
+    "zone": "Plaines d’Ohn’ahra",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2631,7 +3758,55 @@
     "description": "La créature hérissée de pointes la plus adorable et abordable que vous croiserez.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645",
+      "wowhead-zone:13647",
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
+    "locationZone": "Plaines d’Ohn’ahra",
+    "zone": "Plaines d’Ohn’ahra",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2667,7 +3842,48 @@
     "description": "D’une manière ou d’une autre, cette créature s’est débrouillée pour être tout à la fois chaude, rocailleuse et visqueuse.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644",
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
+    "locationZone": "Rivages de l’Éveil",
+    "zone": "Rivages de l’Éveil",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2701,7 +3917,55 @@
     "description": "Entre les bagarres, les bains et les jeux, ces loutrèkes n’ont pas le temps de s’ennuyer.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644",
+      "wowhead-zone:13646",
+      "wowhead-zone:13645"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
+    "locationZone": "Rivages de l’Éveil",
+    "zone": "Rivages de l’Éveil",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2736,7 +4000,41 @@
     "description": "Attention au choc électrique si cette loutrèke décide de vous asperger en jouant.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13646",
+    "locationRefs": [
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13646",
+      "name": "Travée d’Azur",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Travée d’Azur",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Travée d’Azur"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur",
+      "wowheadZoneIds": [
+        13646
+      ]
+    },
+    "locationZone": "Travée d’Azur",
+    "zone": "Travée d’Azur",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2769,7 +4067,41 @@
     "description": "Les martins foreurs font leurs nids à l’aide de cailloux récupérés.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2802,7 +4134,42 @@
     "description": "Ces créatures ont été élevées pour la chasse au serpent. Longs et courts sur pattes, les morserpents sont parfaits pour débusquer leurs proies dans leurs terriers.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15947",
+    "locationRefs": [
+      "wowhead-zone:15947"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15947",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15947",
+      "name": "Zul’Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul’Aman",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Zul’Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+      "wowheadZoneIds": [
+        15947
+      ]
+    },
+    "locationZone": "Zul’Aman",
+    "zone": "Zul’Aman",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2835,7 +4202,41 @@
     "description": "Ces mystérieuses créatures sont particulièrement difficiles à trouver, sauf si vous savez déjà où chercher. Heureusement, Haniko vous l’a justement indiqué.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
+    "locationZone": "Rivages de l’Éveil",
+    "zone": "Rivages de l’Éveil",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2868,7 +4269,49 @@
     "description": "Difficile d’arborer un pelage roux en plein hiver, mais en automne, c’est très à la mode.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13802",
+    "locationRefs": [
+      "wowhead-zone:13802",
+      "wowhead-zone:13647"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13802",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13802",
+      "name": "Réservoir du Bastion de Tyr",
+      "kind": "subzone",
+      "subzoneName": "Réservoir du Bastion de Tyr",
+      "regionName": "Thaldraszus",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus",
+        "Réservoir du Bastion de Tyr"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus > Réservoir du Bastion de Tyr",
+      "wowheadZoneIds": [
+        13802
+      ]
+    },
+    "locationZone": "Thaldraszus",
+    "zone": "Thaldraszus",
+    "subzone": "Réservoir du Bastion de Tyr",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2902,7 +4345,56 @@
     "description": "Ces petits ours ne s’en prennent généralement pas aux gens, mais sont connus pour dérober les paniers de pique-nique.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13802",
+    "locationRefs": [
+      "wowhead-zone:13802",
+      "wowhead-zone:13646",
+      "wowhead-zone:13647"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13802",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13802",
+      "name": "Réservoir du Bastion de Tyr",
+      "kind": "subzone",
+      "subzoneName": "Réservoir du Bastion de Tyr",
+      "regionName": "Thaldraszus",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus",
+        "Réservoir du Bastion de Tyr"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus > Réservoir du Bastion de Tyr",
+      "wowheadZoneIds": [
+        13802
+      ]
+    },
+    "locationZone": "Thaldraszus",
+    "zone": "Thaldraszus",
+    "subzone": "Réservoir du Bastion de Tyr",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2937,7 +4429,55 @@
     "description": "Cette dracamandre ne demande qu’à devenir votre meilleure amie.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644",
+      "wowhead-zone:13802",
+      "wowhead-zone:13645"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13802",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
+    "locationZone": "Rivages de l’Éveil",
+    "zone": "Rivages de l’Éveil",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2973,7 +4513,41 @@
     "description": "La mauvaise nouvelle, c’est que ces insectes sont carnivores. La bonne, c’est qu’ils se contentent normalement de dévorer d’autres bestioles.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13647",
+    "locationRefs": [
+      "wowhead-zone:13647"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13647",
+      "name": "Thaldraszus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Thaldraszus",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus",
+      "wowheadZoneIds": [
+        13647
+      ]
+    },
+    "locationZone": "Thaldraszus",
+    "zone": "Thaldraszus",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3006,7 +4580,48 @@
     "description": "Vaut son pesant d’or. Si elles n’ont rien de bien imposant, ces petites créatures n’en sont pas moins d’un courage gigantesque. – Bob GrandCœur",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13646",
+    "locationRefs": [
+      "wowhead-zone:13646",
+      "wowhead-zone:13645"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13646",
+      "name": "Travée d’Azur",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Travée d’Azur",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Travée d’Azur"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur",
+      "wowheadZoneIds": [
+        13646
+      ]
+    },
+    "locationZone": "Travée d’Azur",
+    "zone": "Travée d’Azur",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3040,7 +4655,55 @@
     "description": "Il va sans doute continuer à grandir. C’est probable, du moins.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644",
+      "wowhead-zone:13647",
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
+    "locationZone": "Rivages de l’Éveil",
+    "zone": "Rivages de l’Éveil",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3075,7 +4738,41 @@
     "description": "Parce qu’ils sont naturellement attirés par la lumière des bougies, ces phalènes posent de gros soucis aux Kobolds.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3108,7 +4805,41 @@
     "description": "Ne vous fiez pas à ces phalènes, ils ne vous apporteront que des ennuis.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3141,7 +4872,48 @@
     "description": "Ces oiseaux utilisent leurs becs coupants et leurs griffes draconiques pour creuser les troncs et les branches à la recherche de nourriture. Ils communiquent entre eux en tambourinant les arbres avec leurs becs, ce son distinct portant sur de longues distances.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645",
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
+    "locationZone": "Plaines d’Ohn’ahra",
+    "zone": "Plaines d’Ohn’ahra",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3175,7 +4947,41 @@
     "description": "Bien qu’elles soient principalement constituées de roche, ces créatures peuvent voler. Certains attribuent cela à la force de leurs ailes, mais la plupart s’accordent à dire qu’il s’agit probablement de magie.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3208,7 +5014,41 @@
     "description": "Pic. Pic. Zap !",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13647",
+    "locationRefs": [
+      "wowhead-zone:13647"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13647",
+      "name": "Thaldraszus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Thaldraszus",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus",
+      "wowheadZoneIds": [
+        13647
+      ]
+    },
+    "locationZone": "Thaldraszus",
+    "zone": "Thaldraszus",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3242,7 +5082,55 @@
     "description": "Nombreux sont ceux qui ont tenté de pincer ces adorables joues… et y ont laissé des doigts.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645",
+      "wowhead-zone:13647",
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
+    "locationZone": "Plaines d’Ohn’ahra",
+    "zone": "Plaines d’Ohn’ahra",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3277,7 +5165,41 @@
     "description": "Quasiment invisible, cette créature bondit d’arbre en arbre couvert de neige.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13646",
+    "locationRefs": [
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13646",
+      "name": "Travée d’Azur",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Travée d’Azur",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Travée d’Azur"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur",
+      "wowheadZoneIds": [
+        13646
+      ]
+    },
+    "locationZone": "Travée d’Azur",
+    "zone": "Travée d’Azur",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3310,7 +5232,41 @@
     "description": "Ces bestioles quittent souvent l’endroit qui les a vues naître dès qu’elles sont capables de se déplacer sur terre.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13647",
+    "locationRefs": [
+      "wowhead-zone:13647"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13647",
+      "name": "Thaldraszus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Thaldraszus",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus",
+      "wowheadZoneIds": [
+        13647
+      ]
+    },
+    "locationZone": "Thaldraszus",
+    "zone": "Thaldraszus",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3343,7 +5299,41 @@
     "description": "Le chant du prestaile a la particularité d’être persistant et dynamique, ce qui est rare chez les oiseaux.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3376,7 +5366,41 @@
     "description": "Si vous pensez que les mouffettes du Rêve d’émeraude dégagent une odeur désagréable, espérez ne jamais croiser la route d’une du Cauchemar.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14529",
+    "locationRefs": [
+      "wowhead-zone:14529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14529",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14529",
+      "name": "Rêve d’émeraude",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rêve d’émeraude",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rêve d’émeraude"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rêve d’émeraude",
+      "wowheadZoneIds": [
+        14529
+      ]
+    },
+    "locationZone": "Rêve d’émeraude",
+    "zone": "Rêve d’émeraude",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3409,7 +5433,41 @@
     "description": "Les rocrochets sont connus pour faire leurs nids dans les armoires, les chaussures et autres endroits inopportuns.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3473,7 +5531,41 @@
     "description": "Les ronge-sève sont toujours prêts à jouer à cache-souris.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14529",
+    "locationRefs": [
+      "wowhead-zone:14529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14529",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14529",
+      "name": "Rêve d’émeraude",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rêve d’émeraude",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rêve d’émeraude"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rêve d’émeraude",
+      "wowheadZoneIds": [
+        14529
+      ]
+    },
+    "locationZone": "Rêve d’émeraude",
+    "zone": "Rêve d’émeraude",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3506,7 +5598,41 @@
     "description": "Les chasseurs apprécient ces créatures davantage pour leur compagnie que pour leur peau.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
+    "locationZone": "Plaines d’Ohn’ahra",
+    "zone": "Plaines d’Ohn’ahra",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3539,7 +5665,41 @@
     "description": "Un rongebois imprégné de foudre ? Choquant !",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
+    "locationZone": "Plaines d’Ohn’ahra",
+    "zone": "Plaines d’Ohn’ahra",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3572,7 +5732,41 @@
     "description": "Les sauteflaques sont connus pour avaler des insectes presque aussi gros qu’eux. En une seule bouchée !",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3605,7 +5799,41 @@
     "description": "La première chose que l’on remarque chez cette créature, ce sont ses grands yeux expressifs. C’est malheureusement une erreur. Concentrez-vous plutôt sur ses griffes acérées.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14529",
+    "locationRefs": [
+      "wowhead-zone:14529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14529",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14529",
+      "name": "Rêve d’émeraude",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rêve d’émeraude",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rêve d’émeraude"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rêve d’émeraude",
+      "wowheadZoneIds": [
+        14529
+      ]
+    },
+    "locationZone": "Rêve d’émeraude",
+    "zone": "Rêve d’émeraude",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3638,7 +5866,41 @@
     "description": "Le feu du cœur de ce monde brûle dans sa carapace.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3702,7 +5964,41 @@
     "description": "Malgré son nom, sa carapace est bien plus solide que la craie.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13646",
+    "locationRefs": [
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13646",
+      "name": "Travée d’Azur",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Travée d’Azur",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Travée d’Azur"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur",
+      "wowheadZoneIds": [
+        13646
+      ]
+    },
+    "locationZone": "Travée d’Azur",
+    "zone": "Travée d’Azur",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3735,7 +6031,41 @@
     "description": "Un tel plumage. Une telle prestance.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14529",
+    "locationRefs": [
+      "wowhead-zone:14529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14529",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14529",
+      "name": "Rêve d’émeraude",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rêve d’émeraude",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rêve d’émeraude"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rêve d’émeraude",
+      "wowheadZoneIds": [
+        14529
+      ]
+    },
+    "locationZone": "Rêve d’émeraude",
+    "zone": "Rêve d’émeraude",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3768,7 +6098,48 @@
     "description": "Si leurs défenses minuscules ne sont pas très utiles au combat, les trompalumpfs compensent largement par leur poids.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645",
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
+    "locationZone": "Plaines d’Ohn’ahra",
+    "zone": "Plaines d’Ohn’ahra",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3833,7 +6204,41 @@
     "description": "Lorsque ces insectes se déplacent en essaim, ils donnent l’illusion d’un brouillard doré.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
+    "locationZone": "Grotte de Zaralek",
+    "zone": "Grotte de Zaralek",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6020,7 +8425,49 @@
     "description": "Annuna doit sa couleur particulière à son régime alimentaire, constitué uniquement de libellules orange.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13862",
+    "locationRefs": [
+      "wowhead-zone:13862",
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13862",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13862",
+      "name": "Valdrakken",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Valdrakken",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus",
+        "Valdrakken"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus > Valdrakken",
+      "wowheadZoneIds": [
+        13862
+      ]
+    },
+    "locationZone": "Valdrakken",
+    "zone": "Valdrakken",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -6217,7 +8664,49 @@
     "description": "Robuste et fiable, Iggy est toujours prêt pour une féroce bataille ou une gentille métaphore.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13862",
+    "locationRefs": [
+      "wowhead-zone:13862",
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13862",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13862",
+      "name": "Valdrakken",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Valdrakken",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus",
+        "Valdrakken"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus > Valdrakken",
+      "wowheadZoneIds": [
+        13862
+      ]
+    },
+    "locationZone": "Valdrakken",
+    "zone": "Valdrakken",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -6707,7 +9196,41 @@
     "description": "Somnius est célèbre pour sa capacité à dormir en toutes circonstances, sauf à l’heure du dîner.",
     "category": "pets",
     "expansion": "dragonflight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
+    "locationZone": "Rivages de l’Éveil",
+    "zone": "Rivages de l’Éveil",
+    "subzone": "",
+    "region": "Îles aux Dragons",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",

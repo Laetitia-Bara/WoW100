@@ -3104,7 +3104,41 @@
     "description": "Cette âme a été confrontée à ses errements passés et vaque sans but, prisonnière des tourments de l’Ombreterre.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10413",
+    "locationRefs": [
+      "wowhead-zone:10413"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10413",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10413",
+      "name": "Revendreth",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Revendreth",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Revendreth"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Revendreth",
+      "wowheadZoneIds": [
+        10413
+      ]
+    },
+    "locationZone": "Revendreth",
+    "zone": "Revendreth",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3137,7 +3171,41 @@
     "description": "Habituellement blanche, la peau de cette créature reflète ce qu’elle a mangé et se pare de magnifiques taches colorées dont la teinte varie en fonction des organes qu’elle ingère.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11462",
+    "locationRefs": [
+      "wowhead-zone:11462"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11462",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11462",
+      "name": "Maldraxxus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maldraxxus",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Maldraxxus"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Maldraxxus",
+      "wowheadZoneIds": [
+        11462
+      ]
+    },
+    "locationZone": "Maldraxxus",
+    "zone": "Maldraxxus",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3170,7 +3238,41 @@
     "description": "L’énergie latente des graines de Sylvarden confère parfois des aptitudes surnaturelles aux petites créatures qui peuplent la région.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11510",
+    "locationRefs": [
+      "wowhead-zone:11510"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11510",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11510",
+      "name": "Sylvarden",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sylvarden",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Sylvarden"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Sylvarden",
+      "wowheadZoneIds": [
+        11510
+      ]
+    },
+    "locationZone": "Sylvarden",
+    "zone": "Sylvarden",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3203,7 +3305,41 @@
     "description": "Certains des habitants les plus courageux de Zereth Mortis raffolent des bufonidés venimeux.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3236,7 +3372,41 @@
     "description": "Une espèce de nuisibles endémique de l’Antre. Personne ne sait de quoi ils se nourrissent ni à quoi ils servent dans la chaîne alimentaire, et encore moins comment s’en débarrasser.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11400",
+    "locationRefs": [
+      "wowhead-zone:11400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11400",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11400",
+      "name": "Antre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Antre",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Antre"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Antre",
+      "wowheadZoneIds": [
+        11400
+      ]
+    },
+    "locationZone": "Antre",
+    "zone": "Antre",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3269,7 +3439,41 @@
     "description": "Il n’existe pas une seule espèce de cancremort qui ne soit pas répugnante, mais celle-ci bat tous les records.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11400",
+    "locationRefs": [
+      "wowhead-zone:11400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11400",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11400",
+      "name": "Antre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Antre",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Antre"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Antre",
+      "wowheadZoneIds": [
+        11400
+      ]
+    },
+    "locationZone": "Antre",
+    "zone": "Antre",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3302,7 +3506,41 @@
     "description": "Le chant caractéristique du coasseur bufonidé peut être entendu à des lieues à la ronde.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3335,7 +3573,41 @@
     "description": "Ces créatures visqueuses émettent un bruit de succion des plus étranges lorsqu’elles tentent d’escalader un mur. C’est un fait bien connu en Maldraxxus, et ce, pour des raisons évidentes.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11462",
+    "locationRefs": [
+      "wowhead-zone:11462"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11462",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11462",
+      "name": "Maldraxxus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maldraxxus",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Maldraxxus"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Maldraxxus",
+      "wowheadZoneIds": [
+        11462
+      ]
+    },
+    "locationZone": "Maldraxxus",
+    "zone": "Maldraxxus",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3368,7 +3640,41 @@
     "description": "Où peut bien se trouver le système digestif de cette mascotte en forme de gueule ? Les nécromanciens de Maldraxxus ont disséqué de nombreux spécimens sans jamais trouver de réponse.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11462",
+    "locationRefs": [
+      "wowhead-zone:11462"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11462",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11462",
+      "name": "Maldraxxus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maldraxxus",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Maldraxxus"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Maldraxxus",
+      "wowheadZoneIds": [
+        11462
+      ]
+    },
+    "locationZone": "Maldraxxus",
+    "zone": "Maldraxxus",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3401,7 +3707,41 @@
     "description": "Il est rare qu’une proie passant à portée de cette créature fasse deux fois la même erreur.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3434,7 +3774,41 @@
     "description": "Ces créatures libèrent en volant des spores nocives qui transforment les petites bestioles sans défense en un festin répugnant.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11462",
+    "locationRefs": [
+      "wowhead-zone:11462"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11462",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11462",
+      "name": "Maldraxxus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maldraxxus",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Maldraxxus"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Maldraxxus",
+      "wowheadZoneIds": [
+        11462
+      ]
+    },
+    "locationZone": "Maldraxxus",
+    "zone": "Maldraxxus",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3533,7 +3907,41 @@
     "description": "La plupart des aurélidés de Zereth Mortis se contentent de nager, mais certains sont nés pour voler !",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3566,7 +3974,41 @@
     "description": "Nul n’ose qualifier ce galliforme de « poulet ».",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3599,7 +4041,41 @@
     "description": "Aucune personne saine d’esprit n’a jamais vu un géomentaire antrelié. Et pourtant, bien des gens en ont vu.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3632,7 +4108,41 @@
     "description": "Les légendes affirment que quiconque rêve d’une glisseuse lugubre devra en affronter une lors d’un combat à mort.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11462",
+    "locationRefs": [
+      "wowhead-zone:11462"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11462",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11462",
+      "name": "Maldraxxus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maldraxxus",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Maldraxxus"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Maldraxxus",
+      "wowheadZoneIds": [
+        11462
+      ]
+    },
+    "locationZone": "Maldraxxus",
+    "zone": "Maldraxxus",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3665,7 +4175,41 @@
     "description": "Il n’existe pas d’animal de compagnie plus enthousiaste à l’idée de niaquer tout ce qui passe à sa portée.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13570",
+    "locationRefs": [
+      "wowhead-zone:13570"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13570",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13570",
+      "name": "Korthia",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Korthia",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Korthia"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Korthia",
+      "wowheadZoneIds": [
+        13570
+      ]
+    },
+    "locationZone": "Korthia",
+    "zone": "Korthia",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3698,7 +4242,41 @@
     "description": "En cas de danger, les hélicidés se réfugient dans leur robuste coquille. Ceux qui les provoquent davantage goûtent alors à leur force dévastatrice.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3731,7 +4309,41 @@
     "description": "Présentes aux quatre coins du royaume, ces ailes de l’effroi sont l’espèce de chiropteffroi la plus commune.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10413",
+    "locationRefs": [
+      "wowhead-zone:10413"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10413",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10413",
+      "name": "Revendreth",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Revendreth",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Revendreth"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Revendreth",
+      "wowheadZoneIds": [
+        10413
+      ]
+    },
+    "locationZone": "Revendreth",
+    "zone": "Revendreth",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3764,7 +4376,41 @@
     "description": "Identifiables à la couleur singulière de leurs nombreuses pattes, ces araignées sont réputées pour leurs danses élaborées visant à intimider et à déstabiliser l’adversaire.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10413",
+    "locationRefs": [
+      "wowhead-zone:10413"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10413",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10413",
+      "name": "Revendreth",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Revendreth",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Revendreth"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Revendreth",
+      "wowheadZoneIds": [
+        10413
+      ]
+    },
+    "locationZone": "Revendreth",
+    "zone": "Revendreth",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3797,7 +4443,41 @@
     "description": "L’Entre-Deux est peuplé de dévoreurs de toutes tailles et de puissance variable, mais chacun d’eux est perpétuellement en quête d’anima.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13570",
+    "locationRefs": [
+      "wowhead-zone:13570"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13570",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13570",
+      "name": "Korthia",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Korthia",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Korthia"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Korthia",
+      "wowheadZoneIds": [
+        13570
+      ]
+    },
+    "locationZone": "Korthia",
+    "zone": "Korthia",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3830,7 +4510,41 @@
     "description": "Les grenagosiers aiment se rouler dans les fleurs rouge vif pour accentuer leur couleur naturelle, à la fois pour signaler leur présence à leurs congénères et pour décourager les prédateurs.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13570",
+    "locationRefs": [
+      "wowhead-zone:13570"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13570",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13570",
+      "name": "Korthia",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Korthia",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Korthia"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Korthia",
+      "wowheadZoneIds": [
+        13570
+      ]
+    },
+    "locationZone": "Korthia",
+    "zone": "Korthia",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3863,7 +4577,41 @@
     "description": "On peut obtenir une surface proche d’un miroir en tissant très soigneusement leurs plumes argentées.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
+    "locationZone": "Le Bastion",
+    "zone": "Le Bastion",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3896,7 +4644,41 @@
     "description": "Contrairement aux croyances populaires, le régime alimentaire d’une cistude ne dépend pas de la couleur de sa carapace.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
+    "locationZone": "Le Bastion",
+    "zone": "Le Bastion",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3929,7 +4711,41 @@
     "description": "Malgré leur air vulnérable, les prédateurs évitent souvent d’attaquer les jeunes vombatas. On ignore la raison exacte de ce comportement, mais certains pensent que leur adorable petite truffe y serait pour quelque chose.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3962,7 +4778,41 @@
     "description": "Ces larves ne sont pas regardantes et consomment volontiers tous types de matériaux, pourvu qu’ils ne contiennent plus d’anima.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11510",
+    "locationRefs": [
+      "wowhead-zone:11510"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11510",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11510",
+      "name": "Sylvarden",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sylvarden",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Sylvarden"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Sylvarden",
+      "wowheadZoneIds": [
+        11510
+      ]
+    },
+    "locationZone": "Sylvarden",
+    "zone": "Sylvarden",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3995,7 +4845,41 @@
     "description": "Certains des léporidés les plus craintifs vivent sous terre et n’émergent que pour se procurer de la nourriture avant de retourner dans leurs terriers.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4028,7 +4912,41 @@
     "description": "Certains léporidés sont adorables et dociles. D’autres sont… juste adorables.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4061,7 +4979,41 @@
     "description": "Les ailes des libellumes sont presque toujours saturées de pollen, ce qui explique la traînée régulière de poussière scintillante qu’elles laissent dans leur sillage.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
+    "locationZone": "Le Bastion",
+    "zone": "Le Bastion",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4094,7 +5046,41 @@
     "description": "Pour une raison inconnue, ces libellumes bleues ont souvent peur de l’eau.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
+    "locationZone": "Le Bastion",
+    "zone": "Le Bastion",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4127,7 +5113,41 @@
     "description": "Zereth Mortis abrite bien des créatures terrifiantes, mais aucune n’est aussi effrayante (ou adorable) qu’un vombata protégeant ses petits.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4160,7 +5180,41 @@
     "description": "Nombreux sont les fragments d’âme à errer dans l’Antre, recherchant une raison de subsister ou un moyen de mettre fin à leurs tourments. Mais certains veulent simplement vous donner un coup de main.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11400",
+    "locationRefs": [
+      "wowhead-zone:11400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11400",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11400",
+      "name": "Antre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Antre",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Antre"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Antre",
+      "wowheadZoneIds": [
+        11400
+      ]
+    },
+    "locationZone": "Antre",
+    "zone": "Antre",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4193,7 +5247,41 @@
     "description": "Le mordeur ambystome est l’une des créatures les plus amicales de tout Zereth Mortis… jusqu’à ce qu’il cesse de l’être.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4257,7 +5345,48 @@
     "description": "Ces yeux ont été envoyés pour ralentir et affaiblir les âmes égarées de l’Antre, de façon à pouvoir les capturer plus facilement.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13570",
+    "locationRefs": [
+      "wowhead-zone:13570",
+      "wowhead-zone:11400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13570",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:11400",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13570",
+      "name": "Korthia",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Korthia",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Korthia"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Korthia",
+      "wowheadZoneIds": [
+        13570
+      ]
+    },
+    "locationZone": "Korthia",
+    "zone": "Korthia",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4291,7 +5420,41 @@
     "description": "Il arrive que ces créatures sauvages de Sylvarden s’endorment debout, les pattes dans l’eau.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11510",
+    "locationRefs": [
+      "wowhead-zone:11510"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11510",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11510",
+      "name": "Sylvarden",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sylvarden",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Sylvarden"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Sylvarden",
+      "wowheadZoneIds": [
+        11510
+      ]
+    },
+    "locationZone": "Sylvarden",
+    "zone": "Sylvarden",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4324,7 +5487,41 @@
     "description": "Élevés dans les bosquets verdoyants de Sylvarden, ces renardeaux sont imprégnés d’essence de renaissance.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11510",
+    "locationRefs": [
+      "wowhead-zone:11510"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11510",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11510",
+      "name": "Sylvarden",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sylvarden",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Sylvarden"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Sylvarden",
+      "wowheadZoneIds": [
+        11510
+      ]
+    },
+    "locationZone": "Sylvarden",
+    "zone": "Sylvarden",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4357,7 +5554,41 @@
     "description": "Les jeunes terogriffes sont des chasseurs étonnamment efficaces n’hésitant pas à s’attaquer à des proies qui font le double de leur taille.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
+    "locationZone": "Le Bastion",
+    "zone": "Le Bastion",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4390,7 +5621,41 @@
     "description": "Les ailes de ce phalène brillent comme les cieux étoilés de Sylvarden.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11510",
+    "locationRefs": [
+      "wowhead-zone:11510"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11510",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11510",
+      "name": "Sylvarden",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sylvarden",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Sylvarden"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Sylvarden",
+      "wowheadZoneIds": [
+        11510
+      ]
+    },
+    "locationZone": "Sylvarden",
+    "zone": "Sylvarden",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4423,7 +5688,41 @@
     "description": "En plus d’être atrocement douloureuse, la piqûre de ces gorms provoque souvent une paralysie temporaire, même chez les victimes de grande taille.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11510",
+    "locationRefs": [
+      "wowhead-zone:11510"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11510",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11510",
+      "name": "Sylvarden",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sylvarden",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Sylvarden"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Sylvarden",
+      "wowheadZoneIds": [
+        11510
+      ]
+    },
+    "locationZone": "Sylvarden",
+    "zone": "Sylvarden",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4456,7 +5755,41 @@
     "description": "Cette créature saura soulager toutes vos démangeaisons, même les plus inaccessibles !",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11462",
+    "locationRefs": [
+      "wowhead-zone:11462"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11462",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11462",
+      "name": "Maldraxxus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maldraxxus",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Maldraxxus"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Maldraxxus",
+      "wowheadZoneIds": [
+        11462
+      ]
+    },
+    "locationZone": "Maldraxxus",
+    "zone": "Maldraxxus",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4489,7 +5822,41 @@
     "description": "Les antreliges utilisent ces gantelets ensorcelés pour capturer les prisonniers qui tentent de s’échapper.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11400",
+    "locationRefs": [
+      "wowhead-zone:11400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11400",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11400",
+      "name": "Antre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Antre",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Antre"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Antre",
+      "wowheadZoneIds": [
+        11400
+      ]
+    },
+    "locationZone": "Antre",
+    "zone": "Antre",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4522,7 +5889,41 @@
     "description": "Du fait de leur couleur rouge caractéristique, les proto-oiseaux écarlates ont le plus grand mal à échapper à leurs prédateurs, ce qui les rend ironiquement d’autant plus difficiles à trouver.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4555,7 +5956,41 @@
     "description": "Bien que les grands proto-oiseaux soient connus pour se nourrir de petits animaux, les jeunes se contentent essentiellement d’insectes et de vers.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4588,7 +6023,41 @@
     "description": "Cachés parmi les roseaux qui bordent les tourbières, les jeunes rampants des marais guettent patiemment le passage d’une proie facile.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10413",
+    "locationRefs": [
+      "wowhead-zone:10413"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10413",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10413",
+      "name": "Revendreth",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Revendreth",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Revendreth"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Revendreth",
+      "wowheadZoneIds": [
+        10413
+      ]
+    },
+    "locationZone": "Revendreth",
+    "zone": "Revendreth",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4621,7 +6090,41 @@
     "description": "Ne survivant que grâce à l’anima résiduel du marais des Affres, ces rampants déclinent rapidement, mais la faim les rend encore plus agressifs.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10413",
+    "locationRefs": [
+      "wowhead-zone:10413"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10413",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10413",
+      "name": "Revendreth",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Revendreth",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Revendreth"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Revendreth",
+      "wowheadZoneIds": [
+        10413
+      ]
+    },
+    "locationZone": "Revendreth",
+    "zone": "Revendreth",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4720,7 +6223,41 @@
     "description": "Les griffes du rat de l’Antre sont porteuses de plusieurs maladies fatales même dans l’au-delà.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11400",
+    "locationRefs": [
+      "wowhead-zone:11400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11400",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11400",
+      "name": "Antre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Antre",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Antre"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Antre",
+      "wowheadZoneIds": [
+        11400
+      ]
+    },
+    "locationZone": "Antre",
+    "zone": "Antre",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4753,7 +6290,41 @@
     "description": "La croissance des jeunes animacarus trop bien nourris en anima peut vite devenir incontrôlable. Il est recommandé de se limiter à l’équivalent d’une âme moyenne par an pour s’assurer de leur docilité.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13570",
+    "locationRefs": [
+      "wowhead-zone:13570"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13570",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13570",
+      "name": "Korthia",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Korthia",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Korthia"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Korthia",
+      "wowheadZoneIds": [
+        13570
+      ]
+    },
+    "locationZone": "Korthia",
+    "zone": "Korthia",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4786,7 +6357,41 @@
     "description": "Qu’est-ce qui différencie un renardeau ordinaire d’un petit vulpin ? Excellente question.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
+    "locationZone": "Le Bastion",
+    "zone": "Le Bastion",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4819,7 +6424,41 @@
     "description": "C’est un phénomène fort rare, mais il arrive qu’un vulpin au pelage doré donne naissance à l’un de ces renardeaux. D’aucuns considèrent que c’est un signe de détresse parmi la meute.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
+    "locationZone": "Le Bastion",
+    "zone": "Le Bastion",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4852,7 +6491,41 @@
     "description": "Ni vraiment vivant, ni vraiment mort. Juste un bras dépourvu de tout le reste.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11400",
+    "locationRefs": [
+      "wowhead-zone:11400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11400",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11400",
+      "name": "Antre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Antre",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Antre"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Antre",
+      "wowheadZoneIds": [
+        11400
+      ]
+    },
+    "locationZone": "Antre",
+    "zone": "Antre",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4885,7 +6558,41 @@
     "description": "Le rouge vif de la carapace de ce scarabidé lui permet d’attirer des partenaires. Hélas, il attire également les prédateurs.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4918,7 +6625,41 @@
     "description": "Certains des petits scarabidés de Zereth Mortis ont une carapace externe métallique à la fois robuste et splendide, ce qui ne gâche rien.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4951,7 +6692,41 @@
     "description": "Contrairement à certains autres tarachnidés qui préfèrent tendre des embuscades à leurs proies, cette espèce les pourchasse, les immobilise et les dévore vivantes.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4984,7 +6759,41 @@
     "description": "Certains fléaux sont universels, que ce soit dans le monde des vivants ou dans l’au-delà. Ces insupportables insectes suceurs de sang en font partie.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5017,7 +6826,41 @@
     "description": "Le rouge caractéristique de ces vipéridés sert d’avertissement aux prédateurs : « mangez-moi à vos risques et périls ! »",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5050,7 +6893,41 @@
     "description": "Où s’assoit un vipéridé de 350 livres ? Où il veut.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5083,7 +6960,41 @@
     "description": "Ces vipéridés peuvent rester tapis pendant des heures pour attendre une proie.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5116,7 +7027,41 @@
     "description": "On ne trouve jamais la moindre plume de ces créatures volantes dans la nature. Lorsque l’une d’elles se détache de leur corps, elle se met brièvement à briller avant de disparaître.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
+    "locationZone": "Le Bastion",
+    "zone": "Le Bastion",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5969,7 +7914,41 @@
     "description": "Livrés à eux-mêmes, ces léporidés font des bonds impressionnants à la moindre provocation. Il arrive même qu’ils retombent sur leurs pattes.",
     "category": "pets",
     "expansion": "shadowlands",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:13536",
+    "locationRefs": [
+      "wowhead-zone:13536"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13536",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13536",
+      "name": "Zereth Mortis",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zereth Mortis",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Zereth Mortis"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Zereth Mortis",
+      "wowheadZoneIds": [
+        13536
+      ]
+    },
+    "locationZone": "Zereth Mortis",
+    "zone": "Zereth Mortis",
+    "subzone": "",
+    "region": "Ombreterre",
+    "world": "Ombreterre",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",

@@ -203,7 +203,41 @@
     "description": "Les cobras d'Azeroth sont célèbres pour leur venin à action rapide et leurs frappes fulgurantes.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3711",
+    "locationRefs": [
+      "wowhead-zone:3711"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3711",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3711",
+      "name": "Bassin de Sholazar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bassin de Sholazar",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "Bassin de Sholazar"
+      ],
+      "pathLabel": "Azeroth > Norfendre > Bassin de Sholazar",
+      "wowheadZoneIds": [
+        3711
+      ]
+    },
+    "locationZone": "Bassin de Sholazar",
+    "zone": "Bassin de Sholazar",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -238,7 +272,41 @@
     "description": "Ce raptor rusé vient des déserts gelés du Norfendre. L'hostilité de l'environnement dans lequel il a grandi lui permet de rester fort là où beaucoup d'autres seraient déjà morts.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:66",
+    "locationRefs": [
+      "wowhead-zone:66"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:66",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:66",
+      "name": "Zul’Drak",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul’Drak",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "Zul’Drak"
+      ],
+      "pathLabel": "Azeroth > Norfendre > Zul’Drak",
+      "wowheadZoneIds": [
+        66
+      ]
+    },
+    "locationZone": "Zul’Drak",
+    "zone": "Zul’Drak",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -310,7 +378,42 @@
     "description": "Les raptors razzashi font partie des prédateurs les plus rusés de la jungle, ce qui leur attire la faveur des Trolls gurubashi.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:33",
+    "locationRefs": [
+      "wowhead-zone:33"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:33",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:33",
+      "name": "Strangleronce septentrionale",
+      "kind": "subzone",
+      "subzoneName": "Strangleronce septentrionale",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Strangleronce septentrionale"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Strangleronce septentrionale",
+      "wowheadZoneIds": [
+        33
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Strangleronce septentrionale",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -346,7 +449,41 @@
     "description": "Ce petit de Takk le Bondisseur possède une agilité incroyable. Il est à l'aise même dans les environnements les plus encombrés.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:17",
+    "locationRefs": [
+      "wowhead-zone:17"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:17",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:17",
+      "name": "Tarides du Nord",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tarides du Nord",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Tarides du Nord"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Tarides du Nord",
+      "wowheadZoneIds": [
+        17
+      ]
+    },
+    "locationZone": "Tarides du Nord",
+    "zone": "Tarides du Nord",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -382,7 +519,41 @@
     "description": "Les mères tranchegueules protègent leurs œufs avec sauvagerie. L'air adorable des petits ne fait que cacher leur férocité innée.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11",
+    "locationRefs": [
+      "wowhead-zone:11"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11",
+      "name": "Les Paluns",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les Paluns",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Les Paluns"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les Paluns",
+      "wowheadZoneIds": [
+        11
+      ]
+    },
+    "locationZone": "Les Paluns",
+    "zone": "Les Paluns",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -418,7 +589,41 @@
     "description": "Quitte rarement le nid avant d'être arrivé à maturité. Adore aller faire des farces au nid de tranchegueules le plus proche.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15",
+    "locationRefs": [
+      "wowhead-zone:15"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15",
+      "name": "Marécage d’Âprefange",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Marécage d’Âprefange",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Marécage d’Âprefange"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Marécage d’Âprefange",
+      "wowheadZoneIds": [
+        15
+      ]
+    },
+    "locationZone": "Marécage d’Âprefange",
+    "zone": "Marécage d’Âprefange",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -454,7 +659,41 @@
     "description": "Plus grands que les autres bébés raptors, ces petits deviennent d'imposants reptiles capables de ravages impressionnants.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:490",
+    "locationRefs": [
+      "wowhead-zone:490"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:490",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:490",
+      "name": "Cratère d’Un’Goro",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Cratère d’Un’Goro",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Cratère d’Un’Goro"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Cratère d’Un’Goro",
+      "wowheadZoneIds": [
+        490
+      ]
+    },
+    "locationZone": "Cratère d’Un’Goro",
+    "zone": "Cratère d’Un’Goro",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -489,7 +728,41 @@
     "description": "Contrairement à la plupart des « œufs mystérieux » de Geen le gorloc, celui-ci contenait une vraie créature vivante.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3711",
+    "locationRefs": [
+      "wowhead-zone:3711"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3711",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3711",
+      "name": "Bassin de Sholazar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bassin de Sholazar",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "Bassin de Sholazar"
+      ],
+      "pathLabel": "Azeroth > Norfendre > Bassin de Sholazar",
+      "wowheadZoneIds": [
+        3711
+      ]
+    },
+    "locationZone": "Bassin de Sholazar",
+    "zone": "Bassin de Sholazar",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -524,7 +797,41 @@
     "description": "Le très rare pique-bœuf albinos fait l'objet d'un culte chez les Oracles. Il est réputé apporter de grands orages, de bonnes récoltes d'asticots, et de longues hibernations de varleus.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3711",
+    "locationRefs": [
+      "wowhead-zone:3711"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3711",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3711",
+      "name": "Bassin de Sholazar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bassin de Sholazar",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "Bassin de Sholazar"
+      ],
+      "pathLabel": "Azeroth > Norfendre > Bassin de Sholazar",
+      "wowheadZoneIds": [
+        3711
+      ]
+    },
+    "locationZone": "Bassin de Sholazar",
+    "zone": "Bassin de Sholazar",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -559,7 +866,41 @@
     "description": "Ces dragonnets voraces grandissent à une vitesse incroyable et peuvent ingurgiter pas loin de deux fois leur poids en viande crue chaque jour.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3711",
+    "locationRefs": [
+      "wowhead-zone:3711"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3711",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3711",
+      "name": "Bassin de Sholazar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bassin de Sholazar",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "Bassin de Sholazar"
+      ],
+      "pathLabel": "Azeroth > Norfendre > Bassin de Sholazar",
+      "wowheadZoneIds": [
+        3711
+      ]
+    },
+    "locationZone": "Bassin de Sholazar",
+    "zone": "Bassin de Sholazar",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -595,7 +936,42 @@
     "description": "Curieux et affectueux, ces chatons semblent réussir à se cacher dans les endroits les plus surprenants.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Cartes à collectionner",
     "source": "Jeu de cartes à collectionner",
     "sourceType": "TCG",
@@ -630,7 +1006,42 @@
     "description": "Lorsqu'on aperçoit ces cerfs-volants au-dessus des rives du Norfendre, c'est un signe : les roharts ne sont pas loin.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Cartes à collectionner",
     "source": "Jeu de cartes à collectionner",
     "sourceType": "TCG",
@@ -768,7 +1179,55 @@
     "description": "Les lapins du printemps symbolisent la fertilité, et ils adorent montrer pourquoi.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3524",
+    "locationRefs": [
+      "wowhead-zone:3524",
+      "wowhead-zone:1",
+      "wowhead-zone:14"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3524",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3524",
+      "name": "Île de Brume-Azur",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Brume-Azur",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Île de Brume-Azur"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Île de Brume-Azur",
+      "wowheadZoneIds": [
+        3524
+      ]
+    },
+    "locationZone": "Île de Brume-Azur",
+    "zone": "Île de Brume-Azur",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -1275,7 +1734,41 @@
     "description": "M. Glagla nous ramène à une époque plus éclairée, lorsque les gentilshommes se livraient leurs duels en queue-de-pie.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7502",
+    "locationRefs": [
+      "wowhead-zone:7502"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7502",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7502",
+      "name": "Dalaran",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dalaran",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Dalaran"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+      "wowheadZoneIds": [
+        7502
+      ]
+    },
+    "locationZone": "Dalaran",
+    "zone": "Dalaran",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Promotion Blizzard",
     "source": "Promotion",
     "sourceType": "PROMOTION",
@@ -1343,7 +1836,49 @@
     "description": "Un robot de combat dont la batterie est alimentée par de délicieux électrolytes bleus et rouges.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1637",
+    "locationRefs": [
+      "wowhead-zone:1637",
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1637",
+      "name": "Orgrimmar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orgrimmar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar > Orgrimmar",
+      "wowheadZoneIds": [
+        1637
+      ]
+    },
+    "locationZone": "Orgrimmar",
+    "zone": "Orgrimmar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Promotion Blizzard",
     "source": "Promotion",
     "sourceType": "PROMOTION",
@@ -1411,7 +1946,41 @@
     "description": "De nombreux adolescents de Hurlevent se sont engagés comme écuyers dans la Croisade d'argent, espérant un jour pouvoir servir la Lumière sacrée au combat.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
+    "locationZone": "La Couronne de glace",
+    "zone": "La Couronne de glace",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -1444,7 +2013,41 @@
     "description": "Ces jeunes Orcs s'efforcent d'incarner les valeurs de la Croisade d'argent : vaillance, force et intégrité.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
+    "locationZone": "La Couronne de glace",
+    "zone": "La Couronne de glace",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -1477,7 +2080,49 @@
     "description": "Ne traitez pas cet oiseau de poule mouillée. C'est un coup à se retrouver avec de l'œuf plein le visage.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:85",
+    "locationRefs": [
+      "wowhead-zone:85",
+      "wowhead-zone:40"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:85",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:40",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:85",
+      "name": "Clairières de Tirisfal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Clairières de Tirisfal",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Clairières de Tirisfal"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Clairières de Tirisfal",
+      "wowheadZoneIds": [
+        85,
+        13983
+      ]
+    },
+    "locationZone": "Clairières de Tirisfal",
+    "zone": "Clairières de Tirisfal",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -1513,7 +2158,41 @@
     "description": "Contrairement à ceux obtenus par métamorphose, les véritables moutons de souche peuvent se révéler effrayants.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
+    "locationZone": "La Couronne de glace",
+    "zone": "La Couronne de glace",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1550,7 +2229,41 @@
     "description": "Créé par un apprenti elfe de sang, ce balai se révèlerait une invention très utile si quelqu'un trouvait un jour comment le faire s'arrêter.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
+    "locationZone": "La Couronne de glace",
+    "zone": "La Couronne de glace",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1623,7 +2336,41 @@
     "description": "Capable de percevoir les battements de cœur d'un adversaire par écholocalisation.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
+    "locationZone": "La Couronne de glace",
+    "zone": "La Couronne de glace",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1695,7 +2442,41 @@
     "description": "Ce fétiche vous apporte trois compagnons en un. Impossible de savoir lequel sortira avant de l'avoir invoqué !",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
+    "locationZone": "La Couronne de glace",
+    "zone": "La Couronne de glace",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1732,7 +2513,41 @@
     "description": "Les effets à long terme de la pollution entraînée par l'Exodar font encore l'objet d’observations.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
+    "locationZone": "La Couronne de glace",
+    "zone": "La Couronne de glace",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1768,7 +2583,41 @@
     "description": "Tous les jours, il danse dès le réveil. Tant de joie de vivre dans un si petit arbre !",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
+    "locationZone": "La Couronne de glace",
+    "zone": "La Couronne de glace",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1841,7 +2690,41 @@
     "description": "Utilisé comme monture d'apprentissage pour les jeunes Gnomes, le mécacuicui n'a pas encore la vitesse de ses grands frères, mais déjà leur charme.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
+    "locationZone": "La Couronne de glace",
+    "zone": "La Couronne de glace",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1878,7 +2761,41 @@
     "description": "Les ours de Dun Morogh sont très recherchés pour leur robustesse, leur fidélité et leur ardeur au combat. Et la compagnie des nains ne fait rien pour atténuer leur férocité.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
+    "locationZone": "La Couronne de glace",
+    "zone": "La Couronne de glace",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1915,7 +2832,48 @@
     "description": "Connu pour ses grands yeux ébahis et ses glissades stylées.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:65",
+    "locationRefs": [
+      "wowhead-zone:65",
+      "wowhead-zone:495"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:65",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:495",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:65",
+      "name": "Désolation des dragons",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Désolation des dragons",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "Désolation des dragons"
+      ],
+      "pathLabel": "Azeroth > Norfendre > Désolation des dragons",
+      "wowheadZoneIds": [
+        65
+      ]
+    },
+    "locationZone": "Désolation des dragons",
+    "zone": "Désolation des dragons",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1951,7 +2909,49 @@
     "description": "C'est la meilleure vente du rayon jouets de Jepetto cette saison. Le nouveau châssis bleu de ce robot au tempérament de feu en fait la coqueluche des enfants d'Azeroth.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1637",
+    "locationRefs": [
+      "wowhead-zone:1637",
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1637",
+      "name": "Orgrimmar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orgrimmar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar > Orgrimmar",
+      "wowheadZoneIds": [
+        1637
+      ]
+    },
+    "locationZone": "Orgrimmar",
+    "zone": "Orgrimmar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1989,7 +2989,41 @@
     "description": "L'impétueux scorpion de Durotar est un féroce prédateur du désert. Mais il ne pique que rarement son propre maître.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
+    "locationZone": "La Couronne de glace",
+    "zone": "La Couronne de glace",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -2026,7 +3060,41 @@
     "description": "La vitesse de course d'un haut-trotteur sur terrain dégagé est inégalée. Ses prédateurs doivent donc avoir recours à la furtivité et aux tactiques de groupe.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
+    "locationZone": "La Couronne de glace",
+    "zone": "La Couronne de glace",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -2063,7 +3131,41 @@
     "description": "Cette rarissime espèce de wyrm de mana est très recherchée pour sa couleur unique et son tempérament docile.",
     "category": "pets",
     "expansion": "wrath",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
+    "locationZone": "La Couronne de glace",
+    "zone": "La Couronne de glace",
+    "subzone": "",
+    "region": "Norfendre",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",

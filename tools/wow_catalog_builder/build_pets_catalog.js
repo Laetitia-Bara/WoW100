@@ -12,6 +12,17 @@ const repoRoot = path.resolve(__dirname, "../..");
 const generatedDir = path.join(repoRoot, "assets/generated");
 const petDataDir = path.join(repoRoot, "assets/data/pets");
 const metadataPath = path.join(repoRoot, "assets/data/metadata/pets_metadata.json");
+const locationsCatalogPath = path.join(
+  generatedDir,
+  "locations_reference_catalog.json",
+);
+const rawCatalogPath = path.join(generatedDir, "pets_catalog_raw.json");
+const enrichedCatalogPath = path.join(generatedDir, "pets_catalog_enriched.json");
+const wowheadExpansionIndexPath = path.join(
+  generatedDir,
+  "pets_wowhead_expansion_index.json",
+);
+const useOffline = process.argv.includes("--offline");
 
 const expansions = [
   { wowheadId: 1, key: "vanilla", name: "Vanilla" },
@@ -90,16 +101,22 @@ async function delay(milliseconds) {
 
 async function loadExistingEnrichedPets() {
   try {
-    const content = await fs.readFile(
-      path.join(generatedDir, "pets_catalog_enriched.json"),
-      "utf8",
-    );
+    const content = await fs.readFile(enrichedCatalogPath, "utf8");
     const data = JSON.parse(content);
 
     return new Map(data.map((pet) => [pet.id, pet]));
   } catch (error) {
     if (error.code !== "ENOENT") throw error;
     return new Map();
+  }
+}
+
+async function loadJson(filePath, fallback) {
+  try {
+    return JSON.parse(await fs.readFile(filePath, "utf8"));
+  } catch (error) {
+    if (error.code === "ENOENT") return fallback;
+    throw error;
   }
 }
 
@@ -280,7 +297,200 @@ async function loadManualMetadata() {
   }
 }
 
-function toWow100Item(pet, manualMetadata, wowheadMetadata) {
+function buildLocationIndex(locationsCatalog) {
+  const worldsByKey = new Map(
+    (locationsCatalog.worlds ?? []).map((world) => [world.key, world]),
+  );
+  const continentsByKey = new Map(
+    (locationsCatalog.continents ?? []).map((continent) => [
+      continent.key,
+      continent,
+    ]),
+  );
+  const allByRef = new Map(
+    (locationsCatalog.locations ?? []).map((location) => [
+      location.ref,
+      location,
+    ]),
+  );
+  const byRef = new Map();
+  const byWowheadZoneId = new Map();
+
+  for (const location of locationsCatalog.locations ?? []) {
+    const canonical =
+      allByRef.get(location.canonicalRef ?? location.ref) ?? location;
+
+    byRef.set(location.ref, canonical);
+    byRef.set(canonical.ref, canonical);
+
+    if (canonical.reviewStatus !== "reviewed") continue;
+
+    const zoneIds = [
+      ...(location.canonicalWowheadZoneIds ?? []),
+      location.wowheadZoneId,
+    ].filter(Number.isInteger);
+
+    for (const zoneId of zoneIds) {
+      byWowheadZoneId.set(zoneId, canonical);
+    }
+  }
+
+  return {
+    worldsByKey,
+    continentsByKey,
+    byRef,
+    byWowheadZoneId,
+  };
+}
+
+function describeLocation(location, locationIndex) {
+  if (!location) return null;
+
+  const world = locationIndex.worldsByKey.get(location.worldKey);
+  const continent = locationIndex.continentsByKey.get(location.continentKey);
+
+  return {
+    ref: location.canonicalRef ?? location.ref,
+    name: location.name,
+    kind: location.kind,
+    subzoneName: location.kind === "subzone" ? location.name : "",
+    regionName: location.regionName,
+    continentName: continent?.name ?? location.continentKey,
+    worldName: world?.name ?? location.worldKey,
+    path: location.path ?? [],
+    pathLabel: location.pathLabel ?? "",
+    wowheadZoneIds:
+      location.canonicalWowheadZoneIds ??
+      (Number.isInteger(location.wowheadZoneId)
+        ? [location.wowheadZoneId]
+        : []),
+  };
+}
+
+function uniqueLocations(locations) {
+  return [
+    ...new Map(
+      locations
+        .filter(Boolean)
+        .map((location) => [location.canonicalRef ?? location.ref, location]),
+    ).values(),
+  ];
+}
+
+function resolveManualLocation(manualMetadata, locationIndex, petId) {
+  if (!manualMetadata.primaryLocationRef) return null;
+
+  const requestedRefs = [
+    manualMetadata.primaryLocationRef,
+    ...(manualMetadata.locationRefs ?? []),
+  ].filter(Boolean);
+  const locations = uniqueLocations(
+    requestedRefs.map((ref) => {
+      const location = locationIndex.byRef.get(ref);
+      if (!location) {
+        throw new Error(
+          `Localisation ${ref} introuvable pour la mascotte ${petId}`,
+        );
+      }
+      return location;
+    }),
+  );
+  const primary = locationIndex.byRef.get(manualMetadata.primaryLocationRef);
+
+  if (!primary) {
+    throw new Error(
+      `Localisation principale ${manualMetadata.primaryLocationRef} introuvable pour la mascotte ${petId}`,
+    );
+  }
+
+  return {
+    primary,
+    locations,
+    status: manualMetadata.locationStatus ?? "confirmed",
+    source: manualMetadata.locationSource ?? "manual_pet_metadata",
+  };
+}
+
+function resolveWowheadLocations(wowheadMetadata, locationIndex) {
+  const zoneIds = Array.isArray(wowheadMetadata?.locations)
+    ? wowheadMetadata.locations
+    : [];
+  const locations = uniqueLocations(
+    zoneIds.map((zoneId) => locationIndex.byWowheadZoneId.get(zoneId)),
+  );
+
+  if (!locations.length) return null;
+
+  return {
+    primary: locations[0],
+    locations,
+    status: "auto_assigned_wowhead_location",
+    source: "wowhead_pet_location_ids_and_locations_reference_catalog",
+  };
+}
+
+function resolvePetLocation(
+  petId,
+  manualMetadata,
+  wowheadMetadata,
+  locationIndex,
+) {
+  return (
+    resolveManualLocation(manualMetadata, locationIndex, petId) ??
+    resolveWowheadLocations(wowheadMetadata, locationIndex)
+  );
+}
+
+function locationFields(locationResolution, locationIndex) {
+  if (!locationResolution) {
+    return {
+      primaryLocationRef: null,
+      locationRefs: [],
+      locationAssignments: [],
+      location: null,
+      locationZone: "",
+      zone: "",
+      subzone: "",
+      region: "",
+      world: "",
+    };
+  }
+
+  const selectedLocation = describeLocation(
+    locationResolution.primary,
+    locationIndex,
+  );
+  const selectedLocations = locationResolution.locations.map(
+    (location, index) => {
+      const description = describeLocation(location, locationIndex);
+
+      return {
+        locationRef: description.ref,
+        role: index === 0 ? "primary_obtainment" : "alternative_obtainment",
+        source: locationResolution.source,
+        confidence: locationResolution.status,
+      };
+    },
+  );
+  const zone =
+    selectedLocation.kind === "subzone"
+      ? selectedLocation.regionName
+      : selectedLocation.name;
+
+  return {
+    primaryLocationRef: selectedLocation.ref,
+    locationRefs: selectedLocations.map((location) => location.locationRef),
+    locationAssignments: selectedLocations,
+    location: selectedLocation,
+    locationZone: zone,
+    zone,
+    subzone: selectedLocation.subzoneName,
+    region: selectedLocation.continentName,
+    world: selectedLocation.worldName,
+  };
+}
+
+function toWow100Item(pet, manualMetadata, wowheadMetadata, locationIndex) {
   const sourceLabel = firstNonEmpty(
     manualMetadata.source,
     sourceMap[pet.sourceType],
@@ -293,6 +503,13 @@ function toWow100Item(pet, manualMetadata, wowheadMetadata) {
     wowheadMetadata?.wowheadUrl,
     wowheadPetPageUrl(pet.id),
   );
+  const resolvedLocation = locationFields(
+    resolvePetLocation(pet.id, manualMetadata, wowheadMetadata, locationIndex),
+    locationIndex,
+  );
+  const hasLocation = Boolean(
+    manualMetadata.primaryLocationRef ?? resolvedLocation.primaryLocationRef,
+  );
 
   return {
     id: `pet_${pet.id}`,
@@ -300,7 +517,22 @@ function toWow100Item(pet, manualMetadata, wowheadMetadata) {
     description: pet.description,
     category: "pets",
     expansion,
-    zone: manualMetadata.zone ?? "",
+    ...(hasLocation
+      ? {
+          primaryLocationRef:
+            manualMetadata.primaryLocationRef ??
+            resolvedLocation.primaryLocationRef,
+          locationRefs:
+            manualMetadata.locationRefs ?? resolvedLocation.locationRefs,
+          locationAssignments: resolvedLocation.locationAssignments,
+          location: resolvedLocation.location,
+          locationZone: manualMetadata.zone ?? resolvedLocation.locationZone,
+          zone: manualMetadata.zone ?? resolvedLocation.zone,
+          subzone: manualMetadata.subzone ?? resolvedLocation.subzone,
+          region: manualMetadata.region ?? resolvedLocation.region,
+          world: manualMetadata.world ?? resolvedLocation.world,
+        }
+      : { zone: manualMetadata.zone ?? "" }),
     instance: manualMetadata.instance ?? sourceLabel,
     source: firstNonEmpty(manualMetadata.sourceName, pet.sourceName, sourceLabel),
     sourceType: pet.sourceType || "UNKNOWN",
@@ -320,33 +552,59 @@ function toWow100Item(pet, manualMetadata, wowheadMetadata) {
 }
 
 async function main() {
-  const token = await getToken();
-  const catalog = await fetchBlizzardJson(
-    "https://eu.api.blizzard.com/data/wow/pet/index",
-    token,
-  );
+  const token = useOffline ? null : await getToken();
+  const catalog = useOffline
+    ? await loadJson(rawCatalogPath, { pets: [] })
+    : await fetchBlizzardJson(
+        "https://eu.api.blizzard.com/data/wow/pet/index",
+        token,
+      );
 
   console.log(`Mascottes Blizzard trouvées : ${catalog.pets.length}`);
 
   await fs.mkdir(generatedDir, { recursive: true });
   await fs.mkdir(petDataDir, { recursive: true });
 
-  await fs.writeFile(
-    path.join(generatedDir, "pets_catalog_raw.json"),
-    `${JSON.stringify(catalog, null, 2)}\n`,
-    "utf8",
-  );
+  if (!useOffline) {
+    await fs.writeFile(
+      rawCatalogPath,
+      `${JSON.stringify(catalog, null, 2)}\n`,
+      "utf8",
+    );
+  }
 
   const existingEnrichedPets = await loadExistingEnrichedPets();
 
-  const [{ enrichedPets, failedIds }, wowhead, manualById] = await Promise.all([
-    fetchPetDetails(catalog.pets, token, existingEnrichedPets),
-    fetchWowheadPetsByExpansion(),
+  const [petDetails, wowhead, manualById, locationsCatalog] = await Promise.all([
+    useOffline
+      ? {
+          enrichedPets: [...existingEnrichedPets.values()].sort(
+            (left, right) => left.id - right.id,
+          ),
+          failedIds: [],
+        }
+      : fetchPetDetails(catalog.pets, token, existingEnrichedPets),
+    useOffline
+      ? loadJson(wowheadExpansionIndexPath, { fetchStats: [], pets: {} }).then(
+          (data) => ({
+            fetchStats: data.fetchStats ?? [],
+            bySpeciesId: new Map(
+              Object.entries(data.pets ?? {}).map(([id, pet]) => [
+                Number(id),
+                pet,
+              ]),
+            ),
+          }),
+        )
+      : fetchWowheadPetsByExpansion(),
     loadManualMetadata(),
+    loadJson(locationsCatalogPath, { worlds: [], continents: [], locations: [] }),
   ]);
+  const { enrichedPets, failedIds } = petDetails;
+  const locationIndex = buildLocationIndex(locationsCatalog);
 
   await fs.writeFile(
-    path.join(generatedDir, "pets_catalog_enriched.json"),
+    enrichedCatalogPath,
     `${JSON.stringify(enrichedPets, null, 2)}\n`,
     "utf8",
   );
@@ -355,23 +613,30 @@ async function main() {
     [...wowhead.bySpeciesId.entries()].sort(([left], [right]) => left - right),
   );
 
-  await fs.writeFile(
-    path.join(generatedDir, "pets_wowhead_expansion_index.json"),
-    `${JSON.stringify(
-      {
-        generatedAt: new Date().toISOString(),
-        source: "https://www.wowhead.com/fr/battle-pets",
-        fetchStats: wowhead.fetchStats,
-        pets: wowheadExpansionIndex,
-      },
-      null,
-      2,
-    )}\n`,
-    "utf8",
-  );
+  if (!useOffline) {
+    await fs.writeFile(
+      wowheadExpansionIndexPath,
+      `${JSON.stringify(
+        {
+          generatedAt: new Date().toISOString(),
+          source: "https://www.wowhead.com/fr/battle-pets",
+          fetchStats: wowhead.fetchStats,
+          pets: wowheadExpansionIndex,
+        },
+        null,
+        2,
+      )}\n`,
+      "utf8",
+    );
+  }
 
   const wow100Draft = enrichedPets.map((pet) =>
-    toWow100Item(pet, manualById[pet.id] ?? {}, wowhead.bySpeciesId.get(pet.id)),
+    toWow100Item(
+      pet,
+      manualById[pet.id] ?? {},
+      wowhead.bySpeciesId.get(pet.id),
+      locationIndex,
+    ),
   );
 
   wow100Draft.sort((a, b) => {
@@ -416,6 +681,7 @@ async function main() {
         failedIds,
         classifiedByWowheadOrManual: wow100Draft.length - unclassified.length,
         unclassified: unclassified.length,
+        localized: wow100Draft.filter((pet) => pet.primaryLocationRef).length,
       },
       null,
       2,

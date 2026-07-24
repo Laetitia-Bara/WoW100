@@ -41,7 +41,42 @@
     "description": "Les Trolls de la jungle apprennent à ces oiseaux à imiter les appels à l'aide pour attirer les voyageurs ignorants dans leurs pièges.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -77,7 +112,41 @@
     "description": "Vieux proverbe d'Alterac : « Un chat a neuf vies, mais n'a besoin que d'une. »",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:267",
+    "locationRefs": [
+      "wowhead-zone:267"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:267",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:267",
+      "name": "Contreforts de Hautebrande",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Contreforts de Hautebrande",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Contreforts de Hautebrande"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Contreforts de Hautebrande",
+      "wowheadZoneIds": [
+        267
+      ]
+    },
+    "locationZone": "Contreforts de Hautebrande",
+    "zone": "Contreforts de Hautebrande",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -148,7 +217,41 @@
     "description": "Comme tous les membres du vol draconique bleu, ces petites créatures fantasques démontrent une certaine affinité avec la magie des Arcanes.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:618",
+    "locationRefs": [
+      "wowhead-zone:618"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:618",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:618",
+      "name": "Berceau-de-l’Hiver",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Berceau-de-l’Hiver",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Berceau-de-l’Hiver"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Berceau-de-l’Hiver",
+      "wowheadZoneIds": [
+        618
+      ]
+    },
+    "locationZone": "Berceau-de-l’Hiver",
+    "zone": "Berceau-de-l’Hiver",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -184,7 +287,41 @@
     "description": "Né dans les Paluns, ce petit dragon commence tout juste à apprendre à chasser, cracher du feu, et semer adorablement la dévastation sur son passage.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11",
+    "locationRefs": [
+      "wowhead-zone:11"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11",
+      "name": "Les Paluns",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les Paluns",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Les Paluns"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les Paluns",
+      "wowheadZoneIds": [
+        11
+      ]
+    },
+    "locationZone": "Les Paluns",
+    "zone": "Les Paluns",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -253,7 +390,42 @@
     "description": "Jadis couvés et élevés par le dragon vert Itharius, les dragons de cette lignée unique ont élu domicile dans les jungles de Féralas.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:357",
+    "locationRefs": [
+      "wowhead-zone:357"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:357",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:357",
+      "name": "Féralas",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Féralas",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Féralas"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Féralas",
+      "wowheadZoneIds": [
+        357,
+        7634
+      ]
+    },
+    "locationZone": "Féralas",
+    "zone": "Féralas",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -289,7 +461,55 @@
     "description": "Il espère grandir suffisamment pour détruire des villages, comme maman.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3",
+    "locationRefs": [
+      "wowhead-zone:3",
+      "wowhead-zone:15",
+      "wowhead-zone:11"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:15",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:11",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3",
+      "name": "Terres Ingrates",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terres Ingrates",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Terres Ingrates"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Terres Ingrates",
+      "wowheadZoneIds": [
+        3
+      ]
+    },
+    "locationZone": "Terres Ingrates",
+    "zone": "Terres Ingrates",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -327,7 +547,42 @@
     "description": "Ces adorables créatures aiment faire un gros câlin à leur maître après une longue journée de combats brutaux et sanglants.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:357",
+    "locationRefs": [
+      "wowhead-zone:357"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:357",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:357",
+      "name": "Féralas",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Féralas",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Féralas"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Féralas",
+      "wowheadZoneIds": [
+        357,
+        7634
+      ]
+    },
+    "locationZone": "Féralas",
+    "zone": "Féralas",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -397,7 +652,48 @@
     "description": "Avertissement : Ne jamais manipuler le suinteux dégoûtant sans être équipé de gants et lunettes de protection. NE PAS LAVER. Très salissant.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1377",
+    "locationRefs": [
+      "wowhead-zone:1377",
+      "wowhead-zone:4298"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1377",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:4298",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1377",
+      "name": "Silithus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Silithus",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Silithus"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Silithus",
+      "wowheadZoneIds": [
+        1377
+      ]
+    },
+    "locationZone": "Silithus",
+    "zone": "Silithus",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -436,7 +732,41 @@
     "description": "Le plumage d'un blanc brillant de ces majestueuses créatures est très recherché par les Furbolgs de Berceau-de-l'Hiver, qui l'utilisent pour leurs rituels.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:618",
+    "locationRefs": [
+      "wowhead-zone:618"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:618",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:618",
+      "name": "Berceau-de-l’Hiver",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Berceau-de-l’Hiver",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Berceau-de-l’Hiver"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Berceau-de-l’Hiver",
+      "wowheadZoneIds": [
+        618
+      ]
+    },
+    "locationZone": "Berceau-de-l’Hiver",
+    "zone": "Berceau-de-l’Hiver",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -469,7 +799,49 @@
     "description": "Ces compagnons saisonniers travaillent très dur pour préparer la fête du Voile d'hiver. Aussi, ils apprécieraient qu'on les laisse tranquilles le reste de l'année.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1537",
+    "locationRefs": [
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1537",
+      "name": "Forgefer",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forgefer",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh",
+        "Forgefer"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Forgefer",
+      "wowheadZoneIds": [
+        1537
+      ]
+    },
+    "locationZone": "Forgefer",
+    "zone": "Forgefer",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -505,7 +877,49 @@
     "description": "Rien ne sert de courir : il faut partir à point.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1637",
+    "locationRefs": [
+      "wowhead-zone:1637",
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1637",
+      "name": "Orgrimmar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orgrimmar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar > Orgrimmar",
+      "wowheadZoneIds": [
+        1637
+      ]
+    },
+    "locationZone": "Orgrimmar",
+    "zone": "Orgrimmar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -542,7 +956,56 @@
     "description": "Le pouvoir de l'amour peut être ravageur. Surtout dans les mains d'un Gobelin volant et acariâtre.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1657",
+    "locationRefs": [
+      "wowhead-zone:1657",
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1657",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1657",
+      "name": "Darnassus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Darnassus",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Teldrassil",
+        "Darnassus"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Teldrassil > Darnassus",
+      "wowheadZoneIds": [
+        1657
+      ]
+    },
+    "locationZone": "Darnassus",
+    "zone": "Darnassus",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -580,7 +1043,56 @@
     "description": "C'est un fragment d'été, qui a l'odeur des soirées chaleureuses et des orages estivaux. En regardant de près, on y distingue un visage.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1657",
+    "locationRefs": [
+      "wowhead-zone:1657",
+      "wowhead-zone:1637",
+      "wowhead-zone:3487"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1657",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:3487",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1657",
+      "name": "Darnassus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Darnassus",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Teldrassil",
+        "Darnassus"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Teldrassil > Darnassus",
+      "wowheadZoneIds": [
+        1657
+      ]
+    },
+    "locationZone": "Darnassus",
+    "zone": "Darnassus",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -618,7 +1130,41 @@
     "description": "La légendaire grenouille à bière était classée parmi les espèces disparues, jusqu'à ce que les curieux breuvages de la foire de Sombrelune la poussent à sortir de sa cachette.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5861",
+    "locationRefs": [
+      "wowhead-zone:5861"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5861",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5861",
+      "name": "Île de Sombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Sombrelune",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Île de Sombrelune"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Île de Sombrelune",
+      "wowheadZoneIds": [
+        5861
+      ]
+    },
+    "locationZone": "Île de Sombrelune",
+    "zone": "Île de Sombrelune",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -651,7 +1197,49 @@
     "description": "Nombreux sont ceux qui pensent que le nom de « Trémousse » fait référence au postérieur de ce cochon. C'est en voyant le mouvement de leurs entrailles pendantes qu'ils comprennent leur erreur.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1637",
+    "locationRefs": [
+      "wowhead-zone:1637",
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1637",
+      "name": "Orgrimmar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orgrimmar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar > Orgrimmar",
+      "wowheadZoneIds": [
+        1637
+      ]
+    },
+    "locationZone": "Orgrimmar",
+    "zone": "Orgrimmar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -688,7 +1276,49 @@
     "description": "Il adore danser, gigoter et jouer avec vous ! Il a tendance à fondre après la fête du Voile d'hiver, certes, mais ne vous inquiétez pas : il reviendra !",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1537",
+    "locationRefs": [
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1537",
+      "name": "Forgefer",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forgefer",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh",
+        "Forgefer"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Forgefer",
+      "wowheadZoneIds": [
+        1537
+      ]
+    },
+    "locationZone": "Forgefer",
+    "zone": "Forgefer",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -724,7 +1354,49 @@
     "description": "Moustaches est un fin tacticien, capable de feindre la mort pour échapper aux prédateurs et aux huissiers de justice.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1637",
+    "locationRefs": [
+      "wowhead-zone:1637",
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1637",
+      "name": "Orgrimmar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orgrimmar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar > Orgrimmar",
+      "wowheadZoneIds": [
+        1637
+      ]
+    },
+    "locationZone": "Orgrimmar",
+    "zone": "Orgrimmar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -761,7 +1433,49 @@
     "description": "Pendant la glorieuse fête du Voile d'hiver, ces fidèles compagnons sèment la joie partout dans le monde. Mais le reste de l'année, ils sont occupés.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1537",
+    "locationRefs": [
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1537",
+      "name": "Forgefer",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forgefer",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh",
+        "Forgefer"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Forgefer",
+      "wowheadZoneIds": [
+        1537
+      ]
+    },
+    "locationZone": "Forgefer",
+    "zone": "Forgefer",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -797,7 +1511,49 @@
     "description": "N'a pas trop apprécié tout ce temps passé enfermé dans un paquet cadeau.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1537",
+    "locationRefs": [
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1537",
+      "name": "Forgefer",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forgefer",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh",
+        "Forgefer"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Forgefer",
+      "wowheadZoneIds": [
+        1537
+      ]
+    },
+    "locationZone": "Forgefer",
+    "zone": "Forgefer",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -970,7 +1726,41 @@
     "description": "Cet astucieux jouet est équipé d’un commutateur secret permettant de désactiver le mode « Tranquillité ». Heureusement, même les ingénieurs qui l’ont construit ne savent pas comment le trouver.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:618",
+    "locationRefs": [
+      "wowhead-zone:618"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:618",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:618",
+      "name": "Berceau-de-l’Hiver",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Berceau-de-l’Hiver",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Berceau-de-l’Hiver"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Berceau-de-l’Hiver",
+      "wowheadZoneIds": [
+        618
+      ]
+    },
+    "locationZone": "Berceau-de-l’Hiver",
+    "zone": "Berceau-de-l’Hiver",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -1072,7 +1862,49 @@
     "description": "Chaque apparition de ce Murloc adulé mais timide est un grand succès populaire.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1537",
+    "locationRefs": [
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1537",
+      "name": "Forgefer",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forgefer",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh",
+        "Forgefer"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Forgefer",
+      "wowheadZoneIds": [
+        1537
+      ]
+    },
+    "locationZone": "Forgefer",
+    "zone": "Forgefer",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Promotion Blizzard",
     "source": "Promotion",
     "sourceType": "PROMOTION",
@@ -1108,7 +1940,49 @@
     "description": "Gloubie est une artiste née, mais elle reste discrète. Ses apparitions en public sont rares.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1537",
+    "locationRefs": [
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1537",
+      "name": "Forgefer",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forgefer",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh",
+        "Forgefer"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Forgefer",
+      "wowheadZoneIds": [
+        1537
+      ]
+    },
+    "locationZone": "Forgefer",
+    "zone": "Forgefer",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Promotion Blizzard",
     "source": "Promotion",
     "sourceType": "PROMOTION",
@@ -1303,7 +2177,42 @@
     "description": "N'ayez aucune inquiétude : les protocoles de combat et le système de visée de ce modèle ont été désactivés. Euh, je crois. - Orguignard Odipnoticus",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -1338,7 +2247,55 @@
     "description": "Posséder un cafard est la plupart du temps le fruit d'un achat compulsif. Ensuite, ses propriétaires ont toujours un mal fou à se séparer de lui, même après plusieurs tentatives.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:11",
+    "locationRefs": [
+      "wowhead-zone:11",
+      "wowhead-zone:1497",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1497",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11",
+      "name": "Les Paluns",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les Paluns",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Les Paluns"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les Paluns",
+      "wowheadZoneIds": [
+        11
+      ]
+    },
+    "locationZone": "Les Paluns",
+    "zone": "Les Paluns",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1376,7 +2333,41 @@
     "description": "Donni Anthania voudrait qu'un bombay soit enterré avec elle à sa mort. Mais l'aventurier sage saura faire bien meilleur usage de ses talents.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:12",
+    "locationRefs": [
+      "wowhead-zone:12"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:12",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:12",
+      "name": "Forêt d’Elwynn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt d’Elwynn",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt d’Elwynn"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn",
+      "wowheadZoneIds": [
+        12
+      ]
+    },
+    "locationZone": "Forêt d’Elwynn",
+    "zone": "Forêt d’Elwynn",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1413,7 +2404,41 @@
     "description": "Est connu pour ses yeux bleus. Est également un mets très recherché par les Murlocs géants.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3523",
+    "locationRefs": [
+      "wowhead-zone:3523"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3523",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3523",
+      "name": "Raz-de-Néant",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Raz-de-Néant",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Raz-de-Néant"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Raz-de-Néant",
+      "wowheadZoneIds": [
+        3523
+      ]
+    },
+    "locationZone": "Raz-de-Néant",
+    "zone": "Raz-de-Néant",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1450,7 +2475,41 @@
     "description": "Dormir est le deuxième sport préféré de ce chat. Le premier est bâiller.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:12",
+    "locationRefs": [
+      "wowhead-zone:12"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:12",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:12",
+      "name": "Forêt d’Elwynn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt d’Elwynn",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt d’Elwynn"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn",
+      "wowheadZoneIds": [
+        12
+      ]
+    },
+    "locationZone": "Forêt d’Elwynn",
+    "zone": "Forêt d’Elwynn",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1486,7 +2545,41 @@
     "description": "La dernière personne qui a essayé d'apprendre à ce chat à faire où on lui dit de faire a appris à ses dépens qu'une petite tache sur un tapis vaut mieux qu'un grand ravage partout ailleurs.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:12",
+    "locationRefs": [
+      "wowhead-zone:12"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:12",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:12",
+      "name": "Forêt d’Elwynn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt d’Elwynn",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt d’Elwynn"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn",
+      "wowheadZoneIds": [
+        12
+      ]
+    },
+    "locationZone": "Forêt d’Elwynn",
+    "zone": "Forêt d’Elwynn",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1522,7 +2615,42 @@
     "description": "La reine possédait trois chatons. Le premier lui rapporta un rat dodu. Le second, un savoureux lapin. Et le troisième, le blanc, son préféré, lui rapporta la tête de sa rivale.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1519",
+    "locationRefs": [
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1519",
+      "name": "Hurlevent",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hurlevent",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt d’Elwynn",
+        "Hurlevent"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn > Hurlevent",
+      "wowheadZoneIds": [
+        1519
+      ]
+    },
+    "locationZone": "Hurlevent",
+    "zone": "Hurlevent",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1558,7 +2686,42 @@
     "description": "C'est un système complexe de galeries qui protège les chiens de prairie des sabots de leurs voisins les plus imposants.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1638",
+    "locationRefs": [
+      "wowhead-zone:1638"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1638",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1638",
+      "name": "Les Pitons-du-Tonnerre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les Pitons-du-Tonnerre",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mulgore",
+        "Les Pitons-du-Tonnerre"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mulgore > Les Pitons-du-Tonnerre",
+      "wowheadZoneIds": [
+        1638
+      ]
+    },
+    "locationZone": "Les Pitons-du-Tonnerre",
+    "zone": "Les Pitons-du-Tonnerre",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1594,7 +2757,49 @@
     "description": "Ce rapace au plumage noir est souvent considéré comme un signe funeste par les druides de Teldrassil.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1657",
+    "locationRefs": [
+      "wowhead-zone:1657",
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1657",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1657",
+      "name": "Darnassus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Darnassus",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Teldrassil",
+        "Darnassus"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Teldrassil > Darnassus",
+      "wowheadZoneIds": [
+        1657
+      ]
+    },
+    "locationZone": "Darnassus",
+    "zone": "Darnassus",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1631,7 +2836,42 @@
     "description": "Le courageux Xan'tish piste, capture et dresse ces nobles serpents pour qu'ils combattent aux côtés de leurs compagnons.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1637",
+    "locationRefs": [
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1637",
+      "name": "Orgrimmar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orgrimmar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar > Orgrimmar",
+      "wowheadZoneIds": [
+        1637
+      ]
+    },
+    "locationZone": "Orgrimmar",
+    "zone": "Orgrimmar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1667,7 +2907,42 @@
     "description": "D'aucuns disent qu'il est possible d'apprendre à cet oiseau à parler. Mais il est assez intelligent pour savoir se taire.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1703,7 +2978,49 @@
     "description": "Traditionnellement, les enfants elfes de la nuit reçoivent une plume de chouette pour leur premier anniversaire, comme porte-bonheur.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1657",
+    "locationRefs": [
+      "wowhead-zone:1657",
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1657",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1657",
+      "name": "Darnassus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Darnassus",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Teldrassil",
+        "Darnassus"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Teldrassil > Darnassus",
+      "wowheadZoneIds": [
+        1657
+      ]
+    },
+    "locationZone": "Darnassus",
+    "zone": "Darnassus",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1740,7 +3057,41 @@
     "description": "Célèbres pour leurs cuisses puissantes et leur vue perçante.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5861",
+    "locationRefs": [
+      "wowhead-zone:5861"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5861",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5861",
+      "name": "Île de Sombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Sombrelune",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Île de Sombrelune"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Île de Sombrelune",
+      "wowheadZoneIds": [
+        5861
+      ]
+    },
+    "locationZone": "Île de Sombrelune",
+    "zone": "Île de Sombrelune",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1776,7 +3127,41 @@
     "description": "Les étals des marchands de la foire de Sombrelune regorgent de merveilles insolites et exotiques. Et aussi de grenouilles.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5861",
+    "locationRefs": [
+      "wowhead-zone:5861"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5861",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5861",
+      "name": "Île de Sombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Sombrelune",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Île de Sombrelune"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Île de Sombrelune",
+      "wowheadZoneIds": [
+        5861
+      ]
+    },
+    "locationZone": "Île de Sombrelune",
+    "zone": "Île de Sombrelune",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1812,7 +3197,41 @@
     "description": "Ce matin, un lapin patte-blanche a tué un chasseur. Puis l'a écorché. Avec les dents.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1",
+    "locationRefs": [
+      "wowhead-zone:1"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1",
+      "name": "Dun Morogh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dun Morogh",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh",
+      "wowheadZoneIds": [
+        1
+      ]
+    },
+    "locationZone": "Dun Morogh",
+    "zone": "Dun Morogh",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1848,7 +3267,41 @@
     "description": "Pour lui, c'est vous qui avez un goût de poulet.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:400",
+    "locationRefs": [
+      "wowhead-zone:400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:400",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:400",
+      "name": "Mille pointes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Mille pointes",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mille pointes"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mille pointes",
+      "wowheadZoneIds": [
+        400
+      ]
+    },
+    "locationZone": "Mille pointes",
+    "zone": "Mille pointes",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1884,7 +3337,41 @@
     "description": "Donni Anthania invite régulièrement ces chats à prendre le thé. Mais elle ne leur sert jamais leur boisson favorite : les larmes de leurs ennemis.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:12",
+    "locationRefs": [
+      "wowhead-zone:12"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:12",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:12",
+      "name": "Forêt d’Elwynn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt d’Elwynn",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt d’Elwynn"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn",
+      "wowheadZoneIds": [
+        12
+      ]
+    },
+    "locationZone": "Forêt d’Elwynn",
+    "zone": "Forêt d’Elwynn",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1920,7 +3407,42 @@
     "description": "Cet oiseau coloré est l'animal de compagnie préféré des Gobelins de Baie-du-Butin, qui apprécient son talent pour le comptage des pièces, l'équilibrage des budgets et le mensonge dans les négociations.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1992,7 +3514,42 @@
     "description": "Le serpent brun habite les territoires de la Horde. Il ne paraît pas très impressionnant, jusqu'à ce qu'un ennemi passe à portée.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1637",
+    "locationRefs": [
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1637",
+      "name": "Orgrimmar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orgrimmar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar > Orgrimmar",
+      "wowheadZoneIds": [
+        1637
+      ]
+    },
+    "locationZone": "Orgrimmar",
+    "zone": "Orgrimmar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -2028,7 +3585,42 @@
     "description": "Il n'y a pas que sa cruauté naturelle qui fait du serpent cramoisi un des compagnons préférés des Trolls sombrelances. Il y a aussi sa loyauté.",
     "category": "pets",
     "expansion": "vanilla",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1637",
+    "locationRefs": [
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1637",
+      "name": "Orgrimmar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orgrimmar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar > Orgrimmar",
+      "wowheadZoneIds": [
+        1637
+      ]
+    },
+    "locationZone": "Orgrimmar",
+    "zone": "Orgrimmar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",

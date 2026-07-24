@@ -8,6 +8,7 @@
     "build:zones": "node --use-system-ca build_zones_catalog.js",
     "build:locations-reference": "node build_locations_reference.js",
     "build:pets": "node --use-system-ca build_pets_catalog.js",
+    "build:pets:offline": "node build_pets_catalog.js --offline",
     "build:mamytwink-candidates": "node --use-system-ca build_mamytwink_mount_candidates.js",
     "build:mounts-reference": "node --use-system-ca build_mounts_reference_catalog.js",
     "validate:mount-locations": "node validate_mount_location_links.js",

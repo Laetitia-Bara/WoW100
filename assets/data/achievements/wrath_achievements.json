@@ -382,8 +382,38 @@
     "description": "Vaincre Ichoron dans le fort Pourpre sans que des globules d'ichor fusionnent en mode héroïque.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Dalaran",
     "primaryLocationRef": "wowhead-zone:7895",
+    "locationRefs": [
+      "wowhead-zone:7895"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7895",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7895",
+      "name": "Le fort Pourpre",
+      "kind": "subzone",
+      "subzoneName": "Le fort Pourpre",
+      "regionName": "Dalaran",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dalaran",
+        "Le fort Pourpre"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Le fort Pourpre",
+      "wowheadZoneIds": [
+        7895
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Dalaran",
@@ -534,8 +564,38 @@
     "description": "Vaincre Xevozz, Lavanthor, Ichoron, Zuramat l'Oblitérateur, Erekem et Moragg dans le fort Pourpre en mode héroïque.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Dalaran",
     "primaryLocationRef": "wowhead-zone:7895",
+    "locationRefs": [
+      "wowhead-zone:7895"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7895",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7895",
+      "name": "Le fort Pourpre",
+      "kind": "subzone",
+      "subzoneName": "Le fort Pourpre",
+      "regionName": "Dalaran",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dalaran",
+        "Le fort Pourpre"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Le fort Pourpre",
+      "wowheadZoneIds": [
+        7895
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Dalaran",
@@ -571,7 +631,42 @@
     "description": "Tuer 100 zombies ressuscités en 1 minute dans l'Épuration de Stratholme en mode héroïque.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Maleterres de l’Est",
+    "primaryLocationRef": "wowhead-zone:2017",
+    "locationRefs": [
+      "wowhead-zone:2017"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:2017",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:2017",
+      "name": "Stratholme",
+      "kind": "subzone",
+      "subzoneName": "Stratholme",
+      "regionName": "Maleterres de l’Est",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Est",
+        "Stratholme"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est > Stratholme",
+      "wowheadZoneIds": [
+        2017
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Maleterres de l’Est",
+    "subzone": "Stratholme",
     "instance": "Donjons de Lich King",
     "source": "Tuer 100 zombies ressuscités en 1 minute dans l'Épuration de Stratholme en mode héroïque.",
     "points": 10,
@@ -865,7 +960,42 @@
     "description": "Vaincre les boss des Grottes du temps : Stratholme.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Maleterres de l’Est",
+    "primaryLocationRef": "wowhead-zone:2017",
+    "locationRefs": [
+      "wowhead-zone:2017"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:2017",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:2017",
+      "name": "Stratholme",
+      "kind": "subzone",
+      "subzoneName": "Stratholme",
+      "regionName": "Maleterres de l’Est",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Est",
+        "Stratholme"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est > Stratholme",
+      "wowheadZoneIds": [
+        2017
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Maleterres de l’Est",
+    "subzone": "Stratholme",
     "instance": "Donjons de Lich King",
     "source": "Vaincre les boss des Grottes du temps : Stratholme.",
     "points": 10,
@@ -888,7 +1018,42 @@
     "description": "Vaincre les boss des Grottes du temps : Stratholme en mode héroïque.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Maleterres de l’Est",
+    "primaryLocationRef": "wowhead-zone:2017",
+    "locationRefs": [
+      "wowhead-zone:2017"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:2017",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:2017",
+      "name": "Stratholme",
+      "kind": "subzone",
+      "subzoneName": "Stratholme",
+      "regionName": "Maleterres de l’Est",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Est",
+        "Stratholme"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est > Stratholme",
+      "wowheadZoneIds": [
+        2017
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Maleterres de l’Est",
+    "subzone": "Stratholme",
     "instance": "Donjons de Lich King",
     "source": "Vaincre les boss des Grottes du temps : Stratholme en mode héroïque.",
     "points": 10,
@@ -911,7 +1076,42 @@
     "description": "Vaincre le corrupteur infini au cours de l'épuration de Stratholme en mode héroïque.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Maleterres de l’Est",
+    "primaryLocationRef": "wowhead-zone:2017",
+    "locationRefs": [
+      "wowhead-zone:2017"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:2017",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:2017",
+      "name": "Stratholme",
+      "kind": "subzone",
+      "subzoneName": "Stratholme",
+      "regionName": "Maleterres de l’Est",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Est",
+        "Stratholme"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est > Stratholme",
+      "wowheadZoneIds": [
+        2017
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Maleterres de l’Est",
+    "subzone": "Stratholme",
     "instance": "Donjons de Lich King",
     "source": "Vaincre le corrupteur infini au cours de l'épuration de Stratholme en mode héroïque.",
     "points": 10,
@@ -1026,8 +1226,38 @@
     "description": "Vaincre Zuramat l'Oblitérateur dans le fort Pourpre sans tuer de factionnaire du Vide en mode héroïque.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Dalaran",
     "primaryLocationRef": "wowhead-zone:7895",
+    "locationRefs": [
+      "wowhead-zone:7895"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7895",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7895",
+      "name": "Le fort Pourpre",
+      "kind": "subzone",
+      "subzoneName": "Le fort Pourpre",
+      "regionName": "Dalaran",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dalaran",
+        "Le fort Pourpre"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Le fort Pourpre",
+      "wowheadZoneIds": [
+        7895
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Dalaran",
@@ -1100,8 +1330,37 @@
     "description": "Vaincre les boss de la fosse de Saron.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Fosse de Saron",
     "primaryLocationRef": "wowhead-zone:8529",
+    "locationRefs": [
+      "wowhead-zone:8529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8529",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8529",
+      "name": "Fosse de Saron",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Fosse de Saron",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Fosse de Saron"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Fosse de Saron",
+      "wowheadZoneIds": [
+        8529
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Fosse de Saron",
@@ -1127,8 +1386,37 @@
     "description": "Vaincre les boss de la fosse de Saron en mode héroïque.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Fosse de Saron",
     "primaryLocationRef": "wowhead-zone:8529",
+    "locationRefs": [
+      "wowhead-zone:8529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8529",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8529",
+      "name": "Fosse de Saron",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Fosse de Saron",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Fosse de Saron"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Fosse de Saron",
+      "wowheadZoneIds": [
+        8529
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Fosse de Saron",
@@ -1200,8 +1488,38 @@
     "description": "Vaincre Cyanigosa dans le fort Pourpre.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Dalaran",
     "primaryLocationRef": "wowhead-zone:7895",
+    "locationRefs": [
+      "wowhead-zone:7895"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7895",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7895",
+      "name": "Le fort Pourpre",
+      "kind": "subzone",
+      "subzoneName": "Le fort Pourpre",
+      "regionName": "Dalaran",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dalaran",
+        "Le fort Pourpre"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Le fort Pourpre",
+      "wowheadZoneIds": [
+        7895
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Dalaran",
@@ -1228,8 +1546,38 @@
     "description": "Vaincre Cyanigosa dans le fort Pourpre en mode héroïque.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Dalaran",
     "primaryLocationRef": "wowhead-zone:7895",
+    "locationRefs": [
+      "wowhead-zone:7895"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7895",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7895",
+      "name": "Le fort Pourpre",
+      "kind": "subzone",
+      "subzoneName": "Le fort Pourpre",
+      "regionName": "Dalaran",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dalaran",
+        "Le fort Pourpre"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Le fort Pourpre",
+      "wowheadZoneIds": [
+        7895
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Dalaran",
@@ -1757,8 +2105,38 @@
     "description": "Vaincre Cyanigosa dans le fort Pourpre sans utiliser les cristaux de contrôle de défense et avec la résistance de la porte de la prison à 100% en mode héroïque.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Dalaran",
     "primaryLocationRef": "wowhead-zone:7895",
+    "locationRefs": [
+      "wowhead-zone:7895"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7895",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7895",
+      "name": "Le fort Pourpre",
+      "kind": "subzone",
+      "subzoneName": "Le fort Pourpre",
+      "regionName": "Dalaran",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dalaran",
+        "Le fort Pourpre"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Le fort Pourpre",
+      "wowheadZoneIds": [
+        7895
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Dalaran",
@@ -2015,7 +2393,42 @@
     "description": "Vaincre Mal'Ganis en mode héroïque et en groupe de guilde.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Maleterres de l’Est",
+    "primaryLocationRef": "wowhead-zone:2017",
+    "locationRefs": [
+      "wowhead-zone:2017"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:2017",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:2017",
+      "name": "Stratholme",
+      "kind": "subzone",
+      "subzoneName": "Stratholme",
+      "regionName": "Maleterres de l’Est",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Est",
+        "Stratholme"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est > Stratholme",
+      "wowheadZoneIds": [
+        2017
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Maleterres de l’Est",
+    "subzone": "Stratholme",
     "instance": "Donjons de Lich King",
     "source": "Vaincre Mal'Ganis en mode héroïque et en groupe de guilde.",
     "points": 10,
@@ -2061,8 +2474,38 @@
     "description": "Vaincre Cyanigosa dans le fort Pourpre en mode héroïque et en groupe de guilde.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Dalaran",
     "primaryLocationRef": "wowhead-zone:7895",
+    "locationRefs": [
+      "wowhead-zone:7895"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7895",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7895",
+      "name": "Le fort Pourpre",
+      "kind": "subzone",
+      "subzoneName": "Le fort Pourpre",
+      "regionName": "Dalaran",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dalaran",
+        "Le fort Pourpre"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dalaran > Le fort Pourpre",
+      "wowheadZoneIds": [
+        7895
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Dalaran",
@@ -2135,8 +2578,37 @@
     "description": "Vaincre le seigneur du Fléau Tyrannus et Frigecroc dans la fosse de Saron en mode héroïque et en groupe de guilde.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Donjons de Lich King",
+    "zone": "Fosse de Saron",
     "primaryLocationRef": "wowhead-zone:8529",
+    "locationRefs": [
+      "wowhead-zone:8529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8529",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8529",
+      "name": "Fosse de Saron",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Fosse de Saron",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Fosse de Saron"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Fosse de Saron",
+      "wowheadZoneIds": [
+        8529
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Fosse de Saron",
@@ -4406,8 +4878,37 @@
     "description": "Vaincre chaque boss de la citadelle de la Couronne de glace en mode héroïque à 10 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -4433,8 +4934,37 @@
     "description": "Vaincre chaque boss de la citadelle de la Couronne de glace en mode héroïque 25 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -4460,8 +4990,37 @@
     "description": "Vaincre chaque boss de la citadelle de la Couronne de glace en mode 10 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -4487,8 +5046,37 @@
     "description": "Vaincre chaque boss de la citadelle de la Couronne de glace en mode 25 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -4693,8 +5281,37 @@
     "description": "Vaincre le roi-liche dans la citadelle de la Couronne de glace en mode héroïque à 25 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -4720,8 +5337,37 @@
     "description": "Vaincre les boss de la Pesterie dans la citadelle de la Couronne de glace en mode héroïque à 10 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -4747,8 +5393,37 @@
     "description": "Vaincre les boss de la Pesterie dans la citadelle de la Couronne de glace en mode héroïque à 25 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -4774,8 +5449,37 @@
     "description": "Vaincre les boss de la Pesterie dans la citadelle de la Couronne de glace en mode 10 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -4801,8 +5505,37 @@
     "description": "Vaincre les boss de la Pesterie dans la citadelle de la Couronne de glace en mode 25 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -4828,8 +5561,37 @@
     "description": "Vaincre les quatre premiers boss de la citadelle de la Couronne de glace en mode héroïque à 10 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -4855,8 +5617,37 @@
     "description": "Vaincre les quatre premiers boss de la citadelle de la Couronne de glace en mode héroïque à 25 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -4882,8 +5673,37 @@
     "description": "Vaincre les quatre premiers boss de la citadelle de la Couronne de glace en mode 10 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -4909,8 +5729,37 @@
     "description": "Vaincre les quatre premiers boss de la citadelle de la Couronne de glace en mode 25 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -5005,8 +5854,37 @@
     "description": "Vaincre les boss de la salle Cramoisie dans la citadelle de la Couronne de glace en mode héroïque à 10 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -5032,8 +5910,37 @@
     "description": "Vaincre les boss de la salle Cramoisie dans la citadelle de la Couronne de glace en mode héroïque à 25 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -5059,8 +5966,37 @@
     "description": "Vaincre les boss de la salle Cramoisie dans la citadelle de la Couronne de glace en mode 10 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -5086,8 +6022,37 @@
     "description": "Vaincre les boss de la salle Cramoisie dans la citadelle de la Couronne de glace en mode 25 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -5688,8 +6653,37 @@
     "description": "Vaincre le roi-liche dans la citadelle de la Couronne de glace en mode héroïque à 10 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -5715,8 +6709,38 @@
     "description": "Vaincre le roi-liche en mode héroïque dans la citadelle de la Couronne de glace en groupe de guilde.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:4859",
+    "locationRefs": [
+      "wowhead-zone:4859"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4859",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4859",
+      "name": "Le Trône de glace",
+      "kind": "subzone",
+      "subzoneName": "Le Trône de glace",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace",
+        "Le Trône de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace > Le Trône de glace",
+      "wowheadZoneIds": [
+        4859
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -5743,8 +6767,38 @@
     "description": "Vaincre le roi-liche dans la citadelle de la Couronne de glace en mode 10 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:4859",
+    "locationRefs": [
+      "wowhead-zone:4859"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4859",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4859",
+      "name": "Le Trône de glace",
+      "kind": "subzone",
+      "subzoneName": "Le Trône de glace",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace",
+        "Le Trône de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace > Le Trône de glace",
+      "wowheadZoneIds": [
+        4859
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -5771,8 +6825,38 @@
     "description": "Vaincre le roi-liche dans la citadelle de la Couronne de glace à 25 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:4859",
+    "locationRefs": [
+      "wowhead-zone:4859"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4859",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4859",
+      "name": "Le Trône de glace",
+      "kind": "subzone",
+      "subzoneName": "Le Trône de glace",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace",
+        "Le Trône de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace > Le Trône de glace",
+      "wowheadZoneIds": [
+        4859
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -5992,8 +7076,37 @@
     "description": "Vaincre les boss des salles de l'Aile de givre dans la citadelle de la Couronne de glace en mode héroïque à 10 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -6019,8 +7132,37 @@
     "description": "Vaincre les boss des salles de l'Aile de givre dans la citadelle de la Couronne de glace en mode héroïque à 25 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -6046,8 +7188,37 @@
     "description": "Vaincre les boss des salles de l'Aile de givre dans la citadelle de la Couronne de glace en mode 10 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",
@@ -6073,8 +7244,37 @@
     "description": "Vaincre les boss des salles de l'Aile de givre dans la citadelle de la Couronne de glace en mode 25 joueurs.",
     "category": "achievements",
     "expansion": "wrath",
-    "zone": "Raids de Lich King",
+    "zone": "La Couronne de glace",
     "primaryLocationRef": "wowhead-zone:210",
+    "locationRefs": [
+      "wowhead-zone:210"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:210",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:210",
+      "name": "La Couronne de glace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "La Couronne de glace",
+      "continentName": "Norfendre",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Norfendre",
+        "La Couronne de glace"
+      ],
+      "pathLabel": "Azeroth > Norfendre > La Couronne de glace",
+      "wowheadZoneIds": [
+        210
+      ]
+    },
     "world": "Azeroth",
     "region": "Norfendre",
     "locationZone": "La Couronne de glace",

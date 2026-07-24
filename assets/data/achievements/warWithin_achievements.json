@@ -989,8 +989,38 @@
     "description": "Vaincre So’leah à Tazavesh, le marché dissimulé, en mode difficile pendant la saison 3 de The War Within.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Donjons",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15781",
+    "locationRefs": [
+      "wowhead-zone:15781"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15781",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15781",
+      "name": "Tazavesh, le marché dissimulé",
+      "kind": "subzone",
+      "subzoneName": "Tazavesh, le marché dissimulé",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh",
+        "Tazavesh, le marché dissimulé"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh > Tazavesh, le marché dissimulé",
+      "wowheadZoneIds": [
+        15781
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -1454,8 +1484,38 @@
     "description": "Vaincre tous les boss de Tazavesh, le marché dissimulé en mode difficile et au cours d’une seule et même instance pendant la saison 3 de The War Within.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Donjons",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15781",
+    "locationRefs": [
+      "wowhead-zone:15781"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15781",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15781",
+      "name": "Tazavesh, le marché dissimulé",
+      "kind": "subzone",
+      "subzoneName": "Tazavesh, le marché dissimulé",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh",
+        "Tazavesh, le marché dissimulé"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh > Tazavesh, le marché dissimulé",
+      "wowheadZoneIds": [
+        15781
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -1551,8 +1611,38 @@
     "description": "Vaincre Izo le Grand Faisceau dans la cité des Fils.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Donjons de The War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14753",
+    "locationRefs": [
+      "wowhead-zone:14753"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14753",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14753",
+      "name": "Cité des Fils",
+      "kind": "subzone",
+      "subzoneName": "Cité des Fils",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet",
+        "Cité des Fils"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet > Cité des Fils",
+      "wowheadZoneIds": [
+        14753
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -1579,8 +1669,38 @@
     "description": "Vaincre Izo le Grand Faisceau dans la cité des Fils en mode héroïque ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Donjons de The War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14753",
+    "locationRefs": [
+      "wowhead-zone:14753"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14753",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14753",
+      "name": "Cité des Fils",
+      "kind": "subzone",
+      "subzoneName": "Cité des Fils",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet",
+        "Cité des Fils"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet > Cité des Fils",
+      "wowheadZoneIds": [
+        14753
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -1607,8 +1727,38 @@
     "description": "Vaincre Izo le Grand Faisceau dans la cité des Fils en mode mythique ou clé mythique.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Donjons de The War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14753",
+    "locationRefs": [
+      "wowhead-zone:14753"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14753",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14753",
+      "name": "Cité des Fils",
+      "kind": "subzone",
+      "subzoneName": "Cité des Fils",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet",
+        "Cité des Fils"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet > Cité des Fils",
+      "wowheadZoneIds": [
+        14753
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -2325,8 +2475,38 @@
     "description": "Vaincre Izo le Grand Faisceau dans la cité des Fils en mode mythique et en groupe de guilde.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Donjons de The War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14753",
+    "locationRefs": [
+      "wowhead-zone:14753"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14753",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14753",
+      "name": "Cité des Fils",
+      "kind": "subzone",
+      "subzoneName": "Cité des Fils",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet",
+        "Cité des Fils"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet > Cité des Fils",
+      "wowheadZoneIds": [
+        14753
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -5227,8 +5407,37 @@
     "description": "Vaincre le Chaudron du carnage dans la Libération de Terremine en mode mythique.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5254,8 +5463,37 @@
     "description": "Vaincre les boss suivants qui captivent les masses dans la Libération de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5350,8 +5588,37 @@
     "description": "Vaincre Pignonneur Crosseplatine sans vous faire toucher par Rayon ardent, Barrage de fusées, Méga-magnétisme, Rayon du Vide géant ou Barrage du Vide dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5377,8 +5644,37 @@
     "description": "Vaincre le Bandit manchot après avoir activé deux machines de défense à jetons dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5427,8 +5723,37 @@
     "description": "Vaincre Verr’Minh, chefs de la sécurité pendant que tous les personnages-joueurs ont dormi avec les poissons dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5454,8 +5779,37 @@
     "description": "Vaincre le Chaudron du carnage en étant fan ultime de Fusendo dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5481,8 +5835,37 @@
     "description": "Vaincre le Chaudron du carnage en étant fan ultime de Torq dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5531,8 +5914,37 @@
     "description": "Vaincre le Roi du chrome Gallywix après avoir fait giga-boum-détoné 3 gigacommandes pendant un même Gigabobines dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5650,8 +6062,37 @@
     "description": "Vaincre le Roi du chrome dans la Libération de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5677,8 +6118,37 @@
     "description": "Vaincre Verr’Minh, chefs de la sécurité pendant que tous les personnages-joueurs arborent la même couleur de teinture dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5773,8 +6243,37 @@
     "description": "Vaincre Rik Rebond après avoir activé les deux D.I.S.C.O. pendant la Frénésie d’engouement dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5800,8 +6299,37 @@
     "description": "Vaincre le Bandit manchot dans la Libération de Terremine en mode mythique.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5919,8 +6447,37 @@
     "description": "Vaincre les boss suivants dans n’importe quel mode.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5946,8 +6503,37 @@
     "description": "Vaincre les boss suivants en mode héroïque.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -5973,8 +6559,37 @@
     "description": "Vaincre les boss suivants en mode mythique.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6023,8 +6638,37 @@
     "description": "Vaincre les boss suivants qui menacent de démanteler la ville dans la Libération de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6280,8 +6924,37 @@
     "description": "Vaincre Pignonneur Crosseplatine dans la Libération de Terremine en mode mythique.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6330,8 +7003,37 @@
     "description": "Vaincre Stix Jettetout après avoir absorbé ou incinéré tous les tas de détritus créés par Tri électromagnétique avant le prochain lancement de Tri électromagnétique dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6426,8 +7128,37 @@
     "description": "Vaincre les boss suivants qui contrôlent le casino dans la Libération de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6453,8 +7184,37 @@
     "description": "Vaincre Rik Rebond dans la Libération de Terremine en mode mythique.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6480,8 +7240,37 @@
     "description": "Vaincre Gallywix dans la Libération de Terremine en mode mythique.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6553,8 +7342,37 @@
     "description": "Vaincre Vexie et les Écrouabouilles après avoir percuté les objets suivants à moto dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6672,8 +7490,37 @@
     "description": "Vaincre le Chaudron du carnage sous l’emprise de fatuité après avoir bu le punch « ignifugé » et le soda « antichoc » dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6699,8 +7546,37 @@
     "description": "Vaincre Stix Jettetout dans la Libération de Terremine en mode mythique.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6726,8 +7602,37 @@
     "description": "Vaincre le Bandit manchot après avoir activé les quatre machines de défense à jetons dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6799,8 +7704,37 @@
     "description": "Vaincre le Bandit manchot après avoir activé trois machines de défense à jetons dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6872,8 +7806,37 @@
     "description": "Vaincre le Bandit manchot après avoir activé une machine de défense à jetons dans la Libération de Terremine en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6908,8 +7871,37 @@
     "description": "Vaincre Verr’Minh dans la Libération de Terremine en mode mythique.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -6935,8 +7927,37 @@
     "description": "Vaincre Vexie dans la Libération de Terremine en mode mythique.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -7100,8 +8121,37 @@
     "description": "Vaincre le Roi du chrome Gallywix dans la Libération de Terremine en mode mythique et en groupe de guilde.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -7127,8 +8177,37 @@
     "description": "Vaincre les boss suivants de la Libération de Terremine en mode normal ou supérieur et en groupe de guilde.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -7154,8 +8233,37 @@
     "description": "Vaincre les boss suivants de la Libération de Terremine en mode héroïque ou supérieur et en groupe de guilde.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Raids de The War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -8890,8 +9998,37 @@
     "description": "Dépasser l’utilisation des écus abîmés de Terremine pendant la saison 2 de The War Within.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Tours de force",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -8940,8 +10077,37 @@
     "description": "Obtenir un niveau d’objet moyen de 675 pendant la saison 2 de The War Within.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Tours de force",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -8990,8 +10156,37 @@
     "description": "Dépasser l’utilisation des écus gravés de Terremine pendant la saison 2 de The War Within.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Tours de force",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -9040,8 +10235,37 @@
     "description": "Dépasser l’utilisation des écus runiques de Terremine pendant la saison 2 de The War Within.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "Tours de force",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -9398,8 +10622,37 @@
     "description": "Nécessite le rang de renom 15 auprès des Arathis de Sainte-Chute.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -9512,8 +10765,37 @@
     "description": "Terminer 10 des combats spéciaux suivants à Azj-Kahet.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -9539,8 +10821,37 @@
     "description": "Terminer 10 des combats spéciaux suivants à Sainte-Chute.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -9566,8 +10877,37 @@
     "description": "Terminer 10 des combats spéciaux suivants dans les abîmes Retentissants.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Les abîmes Retentissants",
     "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Les abîmes Retentissants",
@@ -9593,8 +10933,37 @@
     "description": "Terminer 10 des combats spéciaux suivants sur l’île de Dorn.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Île de Dorn",
     "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Île de Dorn",
@@ -9620,8 +10989,37 @@
     "description": "Terminer 10 des combats spéciaux suivants de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -9647,8 +11045,37 @@
     "description": "Achever les suites de quêtes suivantes à Azj-Kahet.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -9706,8 +11133,37 @@
     "description": "Obtenir la réputation révérée auprès du cartel Baille-Fonds, du cartel des Flots noirs, du cartel Gentepression et du cartel de la KapitalRisk de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -9742,8 +11198,37 @@
     "description": "Localiser tous les livres de Sainte-Chute.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -9925,8 +11410,37 @@
     "description": "Atteindre le rang 20 auprès des cartels de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -10044,8 +11558,37 @@
     "description": "Terminer 4 mandats sur K’aresh.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -10112,8 +11655,37 @@
     "description": "Tuer au moins 5 des créatures élite de Noctechute suivantes dans Sainte-Chute ou Azj-Kahet :",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -10139,8 +11711,38 @@
     "description": "Atteindre le rang de renom 15 auprès du conseil de Dornogal.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Dornogal",
     "primaryLocationRef": "wowhead-zone:14771",
+    "locationRefs": [
+      "wowhead-zone:14771"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14771",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14771",
+      "name": "Dornogal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dornogal",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn",
+        "Dornogal"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn > Dornogal",
+      "wowheadZoneIds": [
+        14771
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Dornogal",
@@ -10189,8 +11791,37 @@
     "description": "Vaincre toutes les créatures rares de l’île aux Sirènes.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Île aux Sirènes",
     "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Île aux Sirènes",
@@ -10225,8 +11856,37 @@
     "description": "Caresser les félidrons suivants sur K’aresh.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -10261,8 +11921,37 @@
     "description": "Obtenir la réputation honorée auprès du cartel Baille-Fonds, du cartel des Flots noirs, du cartel Gentepression et du cartel de la KapitalRisk de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -10288,8 +11977,37 @@
     "description": "Terminer 50 missions de D.E.B.R.I.S. à Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -10315,8 +12033,37 @@
     "description": "Terminer tous les mandats sur K’aresh.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -10351,8 +12098,37 @@
     "description": "Terminer 25 missions de D.E.B.R.I.S. à Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -10378,8 +12154,37 @@
     "description": "Découvrir les mystères de K’aresh en accomplissant les hauts-faits listés ci-dessous.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -10405,8 +12210,37 @@
     "description": "Détruire 500 mines nérubiennes à Azj-Kahet.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -10501,8 +12335,37 @@
     "description": "Obtenir la réputation exaltée auprès du cartel Baille-Fonds, du cartel des Flots noirs, du cartel Gentepression et du cartel de la KapitalRisk de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -10551,8 +12414,37 @@
     "description": "En mode Dissonance radieuse, venir à bout de chacune des créatures rares rencontrées pendant les évènements du Souvenir de l’Âme-monde de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -10578,8 +12470,37 @@
     "description": "Achever les suites de quêtes suivantes sur K’aresh.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -10628,8 +12549,37 @@
     "description": "Découvrir Terremine à travers tous vos sens en terminant les hauts faits ci-dessous.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -10664,8 +12614,37 @@
     "description": "Explorer Azj-Kahet et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -10691,8 +12670,37 @@
     "description": "Explorer K’aresh et révéler les zones voilées de la carte.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -10718,8 +12726,37 @@
     "description": "Explorer l’île de Dorn et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Île de Dorn",
     "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Île de Dorn",
@@ -10745,8 +12782,37 @@
     "description": "Explorer les abîmes Retentissants et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Les abîmes Retentissants",
     "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Les abîmes Retentissants",
@@ -10772,8 +12838,37 @@
     "description": "Explorer Sainte-Chute et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -10799,8 +12894,37 @@
     "description": "Explorer Terremine et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -10849,8 +12973,37 @@
     "description": "Achever les quêtes finales de K’aresh listées ci-dessous.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -10876,8 +13029,37 @@
     "description": "Atteindre le niveau de réputation maximal auprès du général d’Azj’Kahet.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -10903,8 +13085,37 @@
     "description": "Terminer les quêtes suivantes pendant une tempête sur l’île aux Sirènes.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Île aux Sirènes",
     "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Île aux Sirènes",
@@ -10985,8 +13196,37 @@
     "description": "Accomplir les hauts faits de l’île aux Sirènes ci-dessous.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Île aux Sirènes",
     "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Île aux Sirènes",
@@ -11067,8 +13307,37 @@
     "description": "Aider les Arathis de Sainte-Chute en accomplissant les hauts faits listés ci-dessous.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -11227,8 +13496,37 @@
     "description": "Achever les suites de quêtes suivantes sur l’île de Dorn.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Île de Dorn",
     "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Île de Dorn",
@@ -11254,8 +13552,38 @@
     "description": "Obtenir 100 charges de Transfert vers l’Invisible dans les profondeurs Démentielles ou les champs Grouillants.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14769",
+    "locationRefs": [
+      "wowhead-zone:14769"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14769",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14769",
+      "name": "Les profondeurs Démentielles",
+      "kind": "subzone",
+      "subzoneName": "Les profondeurs Démentielles",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet",
+        "Les profondeurs Démentielles"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet > Les profondeurs Démentielles",
+      "wowheadZoneIds": [
+        14769
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -11282,8 +13610,37 @@
     "description": "Lire les livres d’Azj-Kahet suivants en étant sous l’effet d’une traduction polymorphique.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -11318,8 +13675,37 @@
     "description": "Atteindre l’illumination en nettoyant les rues de Terremine d’un coup de pied dans de vieilles canettes.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -11345,8 +13731,37 @@
     "description": "Atteindre le niveau de réputation maximal auprès de la Tisserande d’Azj’Kahet.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -11418,8 +13833,38 @@
     "description": "Être victime d’un accident du travail à la Placeforge de Dornogal.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Dornogal",
     "primaryLocationRef": "wowhead-zone:14771",
+    "locationRefs": [
+      "wowhead-zone:14771"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14771",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14771",
+      "name": "Dornogal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dornogal",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn",
+        "Dornogal"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn > Dornogal",
+      "wowheadZoneIds": [
+        14771
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Dornogal",
@@ -11509,8 +13954,38 @@
     "description": "Être éliminé de la cité des Fils par les gardes.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14753",
+    "locationRefs": [
+      "wowhead-zone:14753"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14753",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14753",
+      "name": "Cité des Fils",
+      "kind": "subzone",
+      "subzoneName": "Cité des Fils",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet",
+        "Cité des Fils"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet > Cité des Fils",
+      "wowheadZoneIds": [
+        14753
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -11560,8 +14035,37 @@
     "description": "Atteindre le rang de renom 25 auprès des Arathis de Sainte-Chute.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -11587,8 +14091,37 @@
     "description": "Achever les suites de quêtes suivantes sur K’aresh.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -11623,8 +14156,37 @@
     "description": "Découvrir la vie d’Azj-Kahet en accomplissant les hauts faits listés ci-dessous.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -11696,8 +14258,38 @@
     "description": "Participer aux pièces suivantes de la troupe de théâtre :",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Dornogal",
     "primaryLocationRef": "wowhead-zone:14771",
+    "locationRefs": [
+      "wowhead-zone:14771"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14771",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14771",
+      "name": "Dornogal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dornogal",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn",
+        "Dornogal"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn > Dornogal",
+      "wowheadZoneIds": [
+        14771
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Dornogal",
@@ -11723,8 +14315,37 @@
     "description": "Achever les suites de quêtes suivantes dans les abîmes Retentissants.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Les abîmes Retentissants",
     "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Les abîmes Retentissants",
@@ -11773,8 +14394,37 @@
     "description": "Découvrir les objets suivants liés à l’histoire de K’aresh.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -11832,8 +14482,37 @@
     "description": "Vaincre toutes les créatures rares de K’aresh.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -11868,7 +14547,40 @@
     "description": "Même si elles ne sont pas toutes douces, les créatures des abîmes Retentissants ont quand même besoin d’/amour.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Les abîmes Retentissants",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Khaz Algar",
+    "locationZone": "Les abîmes Retentissants",
     "instance": "War Within",
     "source": "Même si elles ne sont pas toutes douces, les créatures des abîmes Retentissants ont quand même besoin d’/amour.",
     "points": 5,
@@ -11900,8 +14612,37 @@
     "description": "Lire les livres suivants de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -11936,8 +14677,37 @@
     "description": "Lire les notes suivantes relatives aux mandataires des machines dans les abîmes Retentissants.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Les abîmes Retentissants",
     "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Les abîmes Retentissants",
@@ -12073,8 +14843,37 @@
     "description": "Terminer 10 missions de D.E.B.R.I.S. à Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -12100,8 +14899,37 @@
     "description": "Terminer une mission de D.E.B.R.I.S. dans tous les lieux de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -12127,8 +14955,37 @@
     "description": "Débloquer les cinq autovestiaires de Muff de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -12154,8 +15011,37 @@
     "description": "Ramener tous les souvenirs perdus de Sainte-Chute retrouvés auprès de Maera Ashyld.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -12309,8 +15195,38 @@
     "description": "Atteindre le rang de renom 25 auprès du conseil de Dornogal.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Dornogal",
     "primaryLocationRef": "wowhead-zone:14771",
+    "locationRefs": [
+      "wowhead-zone:14771"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14771",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14771",
+      "name": "Dornogal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dornogal",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn",
+        "Dornogal"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn > Dornogal",
+      "wowheadZoneIds": [
+        14771
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Dornogal",
@@ -12359,8 +15275,37 @@
     "description": "Contribuer à chacune des excavations suivantes sur la carte de commandement de l’île aux Sirènes.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Île aux Sirènes",
     "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Île aux Sirènes",
@@ -12418,8 +15363,37 @@
     "description": "Vous lier d’amitié avec les 5 rats attrapables de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -12454,8 +15428,37 @@
     "description": "Terminer 10 quêtes d’incursion en Sainte-Chute ou Azj-Kahet.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -12481,8 +15484,37 @@
     "description": "Achever les suites de quêtes optionnelles d’Azj-Kahet listées ci-dessous.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -12517,8 +15549,37 @@
     "description": "Achever les suites de quêtes optionnelles de Sainte-Chute listées ci-dessous.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -12553,8 +15614,37 @@
     "description": "Achever les suites de quêtes optionnelles de Terremine listées ci-dessous.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -12580,8 +15670,37 @@
     "description": "Achever les suites de quêtes optionnelles de K’aresh listées ci-dessous.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -12616,8 +15735,37 @@
     "description": "Achever les suites de quête optionnelles de l’île de Dorn listées ci-dessous.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Île de Dorn",
     "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Île de Dorn",
@@ -12652,8 +15800,37 @@
     "description": "Réparer 6 consoles terrestres cassées dans les abîmes Retentissants.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Les abîmes Retentissants",
     "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Les abîmes Retentissants",
@@ -12688,8 +15865,37 @@
     "description": "Achever les suites de quêtes suivantes à Sainte-Chute.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -12747,8 +15953,37 @@
     "description": "Accomplir la quête La détermination du général à Azj-Kahet.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -12774,8 +16009,37 @@
     "description": "Trouver et piller le conteneur éthérien forgé dans le Vide dans les ruines de Yaathron sur K’aresh.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -12801,7 +16065,40 @@
     "description": "Achever la suite de quêtes optionnelle des abîmes Retentissants indiquée ci-dessous.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Les abîmes Retentissants",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Khaz Algar",
+    "locationZone": "Les abîmes Retentissants",
     "instance": "War Within",
     "source": "Achever la suite de quêtes optionnelle des abîmes Retentissants indiquée ci-dessous.",
     "points": 10,
@@ -12888,8 +16185,37 @@
     "description": "Terminer chacun de ces évènements du Souvenir de l’Âme-monde de Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -12915,8 +16241,37 @@
     "description": "Atteindre le rang de renom 20 auprès de l’Entente de K’aresh.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -12974,8 +16329,37 @@
     "description": "Accomplir les hauts faits listés ci-dessous sur K’aresh.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -13001,7 +16385,40 @@
     "description": "Terminer l’expédition des abîmes Retentissants, « En quête de ressources », en vous aidant de 25 prises ou moins.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Les abîmes Retentissants",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Khaz Algar",
+    "locationZone": "Les abîmes Retentissants",
     "instance": "War Within",
     "source": "Terminer l’expédition des abîmes Retentissants, « En quête de ressources », en vous aidant de 25 prises ou moins.",
     "points": 5,
@@ -13024,8 +16441,37 @@
     "description": "Achever les suites de quêtes suivantes à Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -13124,8 +16570,37 @@
     "description": "Accomplir la quête L’héritage de la Tisserande à Azj-Kahet.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -13151,8 +16626,37 @@
     "description": "Éliminer des Kobyss dans le bassin Dévorant à Sainte-Chute avec Alyza Flambarc à vos côtés.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -13224,8 +16728,37 @@
     "description": "Terminer 2 mandats sur K’aresh.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -13260,8 +16793,37 @@
     "description": "Ouvrir 10 caches de la tempête runiques sur l’île aux Sirènes.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Île aux Sirènes",
     "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Île aux Sirènes",
@@ -13296,8 +16858,37 @@
     "description": "Découvrir les trésors cachés à Azj-Kahet.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -13332,8 +16923,37 @@
     "description": "Découvrir les trésors cachés sur K’aresh.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -13368,8 +16988,37 @@
     "description": "Découvrir les trésors cachés de l’île de Dorn.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Île de Dorn",
     "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Île de Dorn",
@@ -13404,8 +17053,37 @@
     "description": "Découvrir les trésors cachés à Sainte-Chute.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -13440,8 +17118,37 @@
     "description": "Découvrir les trésors cachés à Terremine.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Terremine",
     "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Terremine",
@@ -13467,8 +17174,37 @@
     "description": "Découvrir les trésors cachés dans les abîmes Retentissants.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Les abîmes Retentissants",
     "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Les abîmes Retentissants",
@@ -13503,8 +17239,37 @@
     "description": "Obtenir chacune des citrines de l’île aux Sirènes.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Île aux Sirènes",
     "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Île aux Sirènes",
@@ -13553,8 +17318,37 @@
     "description": "Caresser les féroces félins de guerre non loin de Sainte-Chute.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Sainte-Chute",
     "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Sainte-Chute",
@@ -13589,8 +17383,37 @@
     "description": "Rassembler un groupe d’experts pour soutenir l’Oasis sur K’aresh.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "K’aresh",
     "primaryLocationRef": "wowhead-zone:15336",
+    "locationRefs": [
+      "wowhead-zone:15336"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15336",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15336",
+      "name": "K’aresh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "K’aresh",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "K’aresh"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > K’aresh",
+      "wowheadZoneIds": [
+        15336
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "K’aresh",
@@ -13694,8 +17517,37 @@
     "description": "Achever les quêtes hebdomadaires listées ci-dessous sur l’île aux Sirènes.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Île aux Sirènes",
     "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Île aux Sirènes",
@@ -13808,8 +17660,37 @@
     "description": "Accomplir la quête La détermination du vizir à Azj-Kahet.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",
@@ -13858,8 +17739,37 @@
     "description": "Atteindre le niveau de réputation maximal auprès du vizir d’Azj’Kahet.",
     "category": "achievements",
     "expansion": "warWithin",
-    "zone": "War Within",
+    "zone": "Azj-Kahet",
     "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
     "world": "Azeroth",
     "region": "Khaz Algar",
     "locationZone": "Azj-Kahet",

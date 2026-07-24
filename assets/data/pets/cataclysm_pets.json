@@ -38,7 +38,41 @@
     "description": "Les séléniens sont bénis par Elune et répandent la grâce de la nature partout où ils vont. Ces vivaces volailles sont toujours partantes pour une petite danse.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7502",
+    "locationRefs": [
+      "wowhead-zone:7502"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7502",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7502",
+      "name": "Dalaran",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dalaran",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Dalaran"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+      "wowheadZoneIds": [
+        7502
+      ]
+    },
+    "locationZone": "Dalaran",
+    "zone": "Dalaran",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Boutique",
     "source": "Boutique en jeu",
     "sourceType": "PETSTORE",
@@ -73,7 +107,41 @@
     "description": "Le rugissement caractéristique du sélénien est l'un des sons les plus terrifiants du règne animal.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7502",
+    "locationRefs": [
+      "wowhead-zone:7502"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7502",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7502",
+      "name": "Dalaran",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dalaran",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Dalaran"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+      "wowheadZoneIds": [
+        7502
+      ]
+    },
+    "locationZone": "Dalaran",
+    "zone": "Dalaran",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Boutique",
     "source": "Boutique en jeu",
     "sourceType": "PETSTORE",
@@ -108,7 +176,48 @@
     "description": "Les bébés hippogriffes cénariens, pas encore aussi redoutables qu’ils le deviendront adultes, ont une apparence presque inoffensive qui a pris au dépourvu plus d’un dresseur novice du Cercle cénarien.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7502",
+    "locationRefs": [
+      "wowhead-zone:7502",
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7502",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7502",
+      "name": "Dalaran",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dalaran",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Dalaran"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+      "wowheadZoneIds": [
+        7502
+      ]
+    },
+    "locationZone": "Dalaran",
+    "zone": "Dalaran",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Boutique",
     "source": "Boutique en jeu",
     "sourceType": "PETSTORE",
@@ -177,7 +286,55 @@
     "description": "Souvent confondue avec une gemme rare par les mineurs, la géode prévient de sa présence en émettant des vibrations mélodiques.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5042",
+    "locationRefs": [
+      "wowhead-zone:5042",
+      "wowhead-zone:5095",
+      "wowhead-zone:5389"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5042",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:5095",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:5389",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5042",
+      "name": "Le Tréfonds",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Tréfonds",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Tréfonds"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Tréfonds",
+      "wowheadZoneIds": [
+        5042
+      ]
+    },
+    "locationZone": "Le Tréfonds",
+    "zone": "Le Tréfonds",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -216,7 +373,41 @@
     "description": "Les larves des Maleterres sont un effet secondaire de la corruption nécromantique et de l'accumulation de cadavres. M. Boustifs est d'une lignée particulièrement agile.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:139",
+    "locationRefs": [
+      "wowhead-zone:139"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:139",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:139",
+      "name": "Maleterres de l’Est",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maleterres de l’Est",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Est"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est",
+      "wowheadZoneIds": [
+        139
+      ]
+    },
+    "locationZone": "Maleterres de l’Est",
+    "zone": "Maleterres de l’Est",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -251,7 +442,41 @@
     "description": "L'araignée de schiste est un élémentaire, pas un véritable arachnide. Mais sa résilience et sa férocité en font un animal craint jusqu'au cœur du Tréfonds.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5042",
+    "locationRefs": [
+      "wowhead-zone:5042"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5042",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5042",
+      "name": "Le Tréfonds",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Tréfonds",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Tréfonds"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Tréfonds",
+      "wowheadZoneIds": [
+        5042
+      ]
+    },
+    "locationZone": "Le Tréfonds",
+    "zone": "Le Tréfonds",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -286,7 +511,41 @@
     "description": "Les incessants combats de Tol Barad rendent ces renardeaux difficiles à se procurer. L'afflux de collectionneurs a donc décimé la population de renards de la région.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5389",
+    "locationRefs": [
+      "wowhead-zone:5389"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5389",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5389",
+      "name": "Péninsule de Tol Barad",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Péninsule de Tol Barad",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Péninsule de Tol Barad"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Péninsule de Tol Barad",
+      "wowheadZoneIds": [
+        5389
+      ]
+    },
+    "locationZone": "Péninsule de Tol Barad",
+    "zone": "Péninsule de Tol Barad",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -321,7 +580,42 @@
     "description": "Elune a donné aux sabres-de-nuit leur robe noire et argentée afin qu'ils puissent se fondre dans les ombres du clair de lune.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Cartes à collectionner",
     "source": "Jeu de cartes à collectionner",
     "sourceType": "TCG",
@@ -356,7 +650,42 @@
     "description": "Les grells sont l'incarnation de la sauvagerie de la nature. Les grells domestiques sont extrêmement rares.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Cartes à collectionner",
     "source": "Jeu de cartes à collectionner",
     "sourceType": "TCG",
@@ -391,7 +720,42 @@
     "description": "Comment le Gobelin Landro Tirauloin a pu se procurer sa lichette reste un mystère… mais il n'aurait jamais dû la mettre en jeu si facilement lors d'une partie de cartes.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Cartes à collectionner",
     "source": "Jeu de cartes à collectionner",
     "sourceType": "TCG",
@@ -426,7 +790,42 @@
     "description": "Toujours « prêt à jouer », le mini XT de Landro est presque impossible à distinguer du vrai. Sujets à de fréquents caprices et attaques de narcolepsie.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Cartes à collectionner",
     "source": "Jeu de cartes à collectionner",
     "sourceType": "TCG",
@@ -461,7 +860,42 @@
     "description": "Vous pourriez être tenté de penser que ce poisson ferait un piètre adversaire hors de l'eau… Attendez donc de voir l'intensité qu'abrite sa bulle protectrice.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Cartes à collectionner",
     "source": "Jeu de cartes à collectionner",
     "sourceType": "TCG",
@@ -496,7 +930,49 @@
     "description": "Les précédents propriétaires de cette caisse ont signalé la mystérieuse disparition de plusieurs autres compagnons de leur collection.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1637",
+    "locationRefs": [
+      "wowhead-zone:1637",
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1637",
+      "name": "Orgrimmar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orgrimmar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar > Orgrimmar",
+      "wowheadZoneIds": [
+        1637
+      ]
+    },
+    "locationZone": "Orgrimmar",
+    "zone": "Orgrimmar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -533,7 +1009,48 @@
     "description": "Avec cette sorcière à moustaches, il faut jouer à pile ou fâche, et s'envoler à tombeau ouvert !",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:12",
+    "locationRefs": [
+      "wowhead-zone:12",
+      "wowhead-zone:1497"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:12",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1497",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:12",
+      "name": "Forêt d’Elwynn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt d’Elwynn",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt d’Elwynn"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn",
+      "wowheadZoneIds": [
+        12
+      ]
+    },
+    "locationZone": "Forêt d’Elwynn",
+    "zone": "Forêt d’Elwynn",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -569,7 +1086,42 @@
     "description": "Les marcheurs des marais sauvages sont agressifs et dangereux. Mais si vous réussissez à en apprivoiser un, il se montrera fidèle et affectueux.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3703",
+    "locationRefs": [
+      "wowhead-zone:3703"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3703",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3703",
+      "name": "Shattrath",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Shattrath",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar",
+        "Shattrath"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar > Shattrath",
+      "wowheadZoneIds": [
+        3703
+      ]
+    },
+    "locationZone": "Shattrath",
+    "zone": "Shattrath",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -605,7 +1157,49 @@
     "description": "Échappé de l'atelier du Grand-père Hiver, ce minuscule élémentaire s'est retrouvé enfermé dans un paquet cadeau dérobé par l'abominable Grinche.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1537",
+    "locationRefs": [
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1537",
+      "name": "Forgefer",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forgefer",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh",
+        "Forgefer"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Forgefer",
+      "wowheadZoneIds": [
+        1537
+      ]
+    },
+    "locationZone": "Forgefer",
+    "zone": "Forgefer",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -641,7 +1235,41 @@
     "description": "Chacune de ces lanternes brille en l'honneur de l'âme d'un esprit ancestral. Durant la Fête lunaire, les fantômes des anciens transmettent leur sagesse aux jeunes générations.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:493",
+    "locationRefs": [
+      "wowhead-zone:493"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:493",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:493",
+      "name": "Reflet-de-Lune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Reflet-de-Lune",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Reflet-de-Lune"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Reflet-de-Lune",
+      "wowheadZoneIds": [
+        493
+      ]
+    },
+    "locationZone": "Reflet-de-Lune",
+    "zone": "Reflet-de-Lune",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -676,7 +1304,41 @@
     "description": "Ces lanternes magiques se trouvent pendant la Fête lunaire, qui célèbre la défaite de la Légion ardente face aux races libres d'Azeroth.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:493",
+    "locationRefs": [
+      "wowhead-zone:493"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:493",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:493",
+      "name": "Reflet-de-Lune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Reflet-de-Lune",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Reflet-de-Lune"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Reflet-de-Lune",
+      "wowheadZoneIds": [
+        493
+      ]
+    },
+    "locationZone": "Reflet-de-Lune",
+    "zone": "Reflet-de-Lune",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -711,7 +1373,49 @@
     "description": "Si vous le cherchez, il est dans sa coquille. Comme tout escargot qui se respecte.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1637",
+    "locationRefs": [
+      "wowhead-zone:1637",
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1637",
+      "name": "Orgrimmar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orgrimmar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar > Orgrimmar",
+      "wowheadZoneIds": [
+        1637
+      ]
+    },
+    "locationZone": "Orgrimmar",
+    "zone": "Orgrimmar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -781,7 +1485,41 @@
     "description": "Petit élémentaire aventureux, Gravillon a échappé aux girevers affamés des profondeurs Désagrégées et bravé le vide sidéral du Néant distordu, pour terminer enfermé dans une étroite boîte aux lettres.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5042",
+    "locationRefs": [
+      "wowhead-zone:5042"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5042",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5042",
+      "name": "Le Tréfonds",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Tréfonds",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Le Tréfonds"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Le Tréfonds",
+      "wowheadZoneIds": [
+        5042
+      ]
+    },
+    "locationZone": "Le Tréfonds",
+    "zone": "Le Tréfonds",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Haut-fait",
     "source": "Haut fait",
     "sourceType": "ACHIEVEMENT",
@@ -849,7 +1587,42 @@
     "description": "La plupart des écureuils amassent des glands pour se préparer à l'hiver. Noisette, lui, les amasse pour être sûr d'avoir assez de munitions.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8670",
+    "locationRefs": [
+      "wowhead-zone:8670"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8670",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8670",
+      "name": "Dazar’alor",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dazar’alor",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Dazar’alor"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Dazar’alor",
+      "wowheadZoneIds": [
+        8670
+      ]
+    },
+    "locationZone": "Dazar’alor",
+    "zone": "Dazar’alor",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Haut-fait",
     "source": "Haut fait",
     "sourceType": "ACHIEVEMENT",
@@ -950,7 +1723,55 @@
     "description": "Les figurines vaudou peuvent tirer leur puissance des flacons de mojo, de la sueur de Troll et de la chair des ennemis de leur tribu.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:139",
+    "locationRefs": [
+      "wowhead-zone:139",
+      "wowhead-zone:33",
+      "wowhead-zone:8"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:139",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:33",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:139",
+      "name": "Maleterres de l’Est",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maleterres de l’Est",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Est"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est",
+      "wowheadZoneIds": [
+        139
+      ]
+    },
+    "locationZone": "Maleterres de l’Est",
+    "zone": "Maleterres de l’Est",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -988,7 +1809,55 @@
     "description": "Le Gnome mécanique serait à l'origine une création des Titans. Certaines de ses pièces sont si petites qu'on ne peut les voir à l'œil nu.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:45",
+    "locationRefs": [
+      "wowhead-zone:45",
+      "wowhead-zone:3",
+      "wowhead-zone:46"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:45",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:3",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:46",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:45",
+      "name": "Hautes-terres Arathies",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres Arathies",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres Arathies"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres Arathies",
+      "wowheadZoneIds": [
+        45
+      ]
+    },
+    "locationZone": "Hautes-terres Arathies",
+    "zone": "Hautes-terres Arathies",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -1026,7 +1895,41 @@
     "description": "À première vue, il ne s'agit que de la patte d'un petit primate. À mieux y regarder, on s'aperçoit que son aspect desséché lui vient de siècles d'exposition aux sables d'Uldum.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5034",
+    "locationRefs": [
+      "wowhead-zone:5034"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5034",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5034",
+      "name": "Uldum",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Uldum",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Uldum"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Uldum",
+      "wowheadZoneIds": [
+        5034
+      ]
+    },
+    "locationZone": "Uldum",
+    "zone": "Uldum",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -1061,7 +1964,41 @@
     "description": "Malgré sa toute petite taille, il est impossible de ne pas voir un jeune hippocampe traverser l’eau.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5861",
+    "locationRefs": [
+      "wowhead-zone:5861"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5861",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5861",
+      "name": "Île de Sombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Sombrelune",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Île de Sombrelune"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Île de Sombrelune",
+      "wowheadZoneIds": [
+        5861
+      ]
+    },
+    "locationZone": "Île de Sombrelune",
+    "zone": "Île de Sombrelune",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -1097,7 +2034,55 @@
     "description": "Les œufs de pterreurdactyles sont couvés sous les fossiles de leurs ancêtres, ce qui permet aux bébés de s'imprégner de la férocité et de la ruse de leurs ascendants.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:4",
+    "locationRefs": [
+      "wowhead-zone:4",
+      "wowhead-zone:46",
+      "wowhead-zone:10"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:46",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:10",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4",
+      "name": "Terres Foudroyées",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terres Foudroyées",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Terres Foudroyées"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Terres Foudroyées",
+      "wowheadZoneIds": [
+        4
+      ]
+    },
+    "locationZone": "Terres Foudroyées",
+    "zone": "Terres Foudroyées",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -1135,7 +2120,55 @@
     "description": "Vous le fixez dans les yeux. Et il vous fixe aussi intensément. Il paraît si intelligent. Parfois, on jurerait qu’il songe au meilleur moyen d'ouvrir les portes.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:4",
+    "locationRefs": [
+      "wowhead-zone:4",
+      "wowhead-zone:46",
+      "wowhead-zone:10"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:46",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:10",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4",
+      "name": "Terres Foudroyées",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terres Foudroyées",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Terres Foudroyées"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Terres Foudroyées",
+      "wowheadZoneIds": [
+        4
+      ]
+    },
+    "locationZone": "Terres Foudroyées",
+    "zone": "Terres Foudroyées",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -1173,7 +2206,56 @@
     "description": "Higitus figi… ? Hockiti pocki… ? Abracadab… ? Prestidigi… Oh, mais enfin Archimède !",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1657",
+    "locationRefs": [
+      "wowhead-zone:1657",
+      "wowhead-zone:1537",
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1657",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1657",
+      "name": "Darnassus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Darnassus",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Teldrassil",
+        "Darnassus"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Teldrassil > Darnassus",
+      "wowheadZoneIds": [
+        1657
+      ]
+    },
+    "locationZone": "Darnassus",
+    "zone": "Darnassus",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -1211,7 +2293,49 @@
     "description": "Réduit les chances de vous faire dévorer par des monstres voraces lorsque vous pénétrez dans un endroit obscur.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1637",
+    "locationRefs": [
+      "wowhead-zone:1637",
+      "wowhead-zone:1638"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1638",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1637",
+      "name": "Orgrimmar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orgrimmar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar > Orgrimmar",
+      "wowheadZoneIds": [
+        1637
+      ]
+    },
+    "locationZone": "Orgrimmar",
+    "zone": "Orgrimmar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -1379,7 +2503,42 @@
     "description": "Créés pour amuser les enfants à la foire de Sombrelune, ces ballons magiques ne sont pas du genre à se dégonfler.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1519",
+    "locationRefs": [
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1519",
+      "name": "Hurlevent",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hurlevent",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt d’Elwynn",
+        "Hurlevent"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn > Hurlevent",
+      "wowheadZoneIds": [
+        1519
+      ]
+    },
+    "locationZone": "Hurlevent",
+    "zone": "Hurlevent",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -1415,7 +2574,42 @@
     "description": "Ces ballons sont une merveille de magie. Ils ne se dégonflent jamais et apparaissent en général par paquets de quatre-vingt-dix-neuf.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1637",
+    "locationRefs": [
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1637",
+      "name": "Orgrimmar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orgrimmar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar > Orgrimmar",
+      "wowheadZoneIds": [
+        1637
+      ]
+    },
+    "locationZone": "Orgrimmar",
+    "zone": "Orgrimmar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -1451,7 +2645,42 @@
     "description": "Il vous a regardé avec ses grands yeux noirs, l'air de vous demander : « C’est toi, ma maman ? »",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:33",
+    "locationRefs": [
+      "wowhead-zone:33"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:33",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:33",
+      "name": "Strangleronce septentrionale",
+      "kind": "subzone",
+      "subzoneName": "Strangleronce septentrionale",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Strangleronce septentrionale"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Strangleronce septentrionale",
+      "wowheadZoneIds": [
+        33
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Strangleronce septentrionale",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -1523,7 +2752,41 @@
     "description": "Contrairement à son homologue doré, le mini jouteur bleu aime prendre son temps quand il plante sa lance dans les yeux d'un adversaire.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:616",
+    "locationRefs": [
+      "wowhead-zone:616"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:616",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:616",
+      "name": "Mont Hyjal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal",
+      "wowheadZoneIds": [
+        616
+      ]
+    },
+    "locationZone": "Mont Hyjal",
+    "zone": "Mont Hyjal",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -1559,7 +2822,41 @@
     "description": "Cette petite créature est bien connue pour sa capacité à vous suriner les yeux plus vite que l'éclair.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:616",
+    "locationRefs": [
+      "wowhead-zone:616"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:616",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:616",
+      "name": "Mont Hyjal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal",
+      "wowheadZoneIds": [
+        616
+      ]
+    },
+    "locationZone": "Mont Hyjal",
+    "zone": "Mont Hyjal",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -1595,7 +2892,41 @@
     "description": "Ces insectes étranges volent autour des bassins de lave dans la journée et émettent une lumière incandescente la nuit.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:46",
+    "locationRefs": [
+      "wowhead-zone:46"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:46",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:46",
+      "name": "Steppes Ardentes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Steppes Ardentes",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Steppes Ardentes"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Steppes Ardentes",
+      "wowheadZoneIds": [
+        46
+      ]
+    },
+    "locationZone": "Steppes Ardentes",
+    "zone": "Steppes Ardentes",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -1631,7 +2962,41 @@
     "description": "Une évocation solennelle de ce qui fut perdu lorsque le Brise-monde changea pour toujours la face d'Azeroth.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:148",
+    "locationRefs": [
+      "wowhead-zone:148"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:148",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:148",
+      "name": "Sombrivage",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sombrivage",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Sombrivage"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Sombrivage",
+      "wowheadZoneIds": [
+        148
+      ]
+    },
+    "locationZone": "Sombrivage",
+    "zone": "Sombrivage",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -1667,7 +3032,41 @@
     "description": "Cette fleur suave embellira votre journée grâce à son chaleureux sourire et son chant joyeux ! Aussi très efficace contre les Morts-vivants.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:267",
+    "locationRefs": [
+      "wowhead-zone:267"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:267",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:267",
+      "name": "Contreforts de Hautebrande",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Contreforts de Hautebrande",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Contreforts de Hautebrande"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Contreforts de Hautebrande",
+      "wowheadZoneIds": [
+        267
+      ]
+    },
+    "locationZone": "Contreforts de Hautebrande",
+    "zone": "Contreforts de Hautebrande",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -1703,7 +3102,41 @@
     "description": "Il ne fait que flotter…",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5861",
+    "locationRefs": [
+      "wowhead-zone:5861"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5861",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5861",
+      "name": "Île de Sombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Sombrelune",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Île de Sombrelune"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Île de Sombrelune",
+      "wowheadZoneIds": [
+        5861
+      ]
+    },
+    "locationZone": "Île de Sombrelune",
+    "zone": "Île de Sombrelune",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1738,7 +3171,41 @@
     "description": "C'est quand ils batifolent dans la neige fraîche que les bébés de Berceau-de-l'Hiver sont les plus heureux.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:618",
+    "locationRefs": [
+      "wowhead-zone:618"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:618",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:618",
+      "name": "Berceau-de-l’Hiver",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Berceau-de-l’Hiver",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Berceau-de-l’Hiver"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Berceau-de-l’Hiver",
+      "wowheadZoneIds": [
+        618
+      ]
+    },
+    "locationZone": "Berceau-de-l’Hiver",
+    "zone": "Berceau-de-l’Hiver",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1773,7 +3240,56 @@
     "description": "Se roule en boule pour se protéger quand il se sent menacé. Ou quand sa mère l'appelle pour le dîner.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1657",
+    "locationRefs": [
+      "wowhead-zone:1657",
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1657",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1657",
+      "name": "Darnassus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Darnassus",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Teldrassil",
+        "Darnassus"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Teldrassil > Darnassus",
+      "wowheadZoneIds": [
+        1657
+      ]
+    },
+    "locationZone": "Darnassus",
+    "zone": "Darnassus",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1812,7 +3328,41 @@
     "description": "Ce robuste jouet, capable d'encaisser les traitements même les plus imaginatifs, fait fureur chez les enfants d'Azeroth.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5861",
+    "locationRefs": [
+      "wowhead-zone:5861"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5861",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5861",
+      "name": "Île de Sombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Sombrelune",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Île de Sombrelune"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Île de Sombrelune",
+      "wowheadZoneIds": [
+        5861
+      ]
+    },
+    "locationZone": "Île de Sombrelune",
+    "zone": "Île de Sombrelune",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1847,7 +3397,42 @@
     "description": "Né sur le sol cendreux des terres de Feu, le flagellant fut transplanté vers Azeroth avec l'aide des Gardiens d'Hyjal.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5733",
+    "locationRefs": [
+      "wowhead-zone:5733"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5733",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5733",
+      "name": "Front du Magma",
+      "kind": "subzone",
+      "subzoneName": "Front du Magma",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal",
+        "Front du Magma"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal > Front du Magma",
+      "wowheadZoneIds": [
+        5733
+      ]
+    },
+    "locationZone": "Mont Hyjal",
+    "zone": "Mont Hyjal",
+    "subzone": "Front du Magma",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1951,7 +3536,56 @@
     "description": "Les faucons de feu naissent des cendres d'un phénix. Les phénix sombres, eux, naissent de leurs ombres.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1657",
+    "locationRefs": [
+      "wowhead-zone:1657",
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1657",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1657",
+      "name": "Darnassus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Darnassus",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Teldrassil",
+        "Darnassus"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Teldrassil > Darnassus",
+      "wowheadZoneIds": [
+        1657
+      ]
+    },
+    "locationZone": "Darnassus",
+    "zone": "Darnassus",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1990,7 +3624,41 @@
     "description": "Ce chaton très câlin aime jouer, mais il semble parfois chasser des proies invisibles.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5861",
+    "locationRefs": [
+      "wowhead-zone:5861"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5861",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5861",
+      "name": "Île de Sombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Sombrelune",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Île de Sombrelune"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Île de Sombrelune",
+      "wowheadZoneIds": [
+        5861
+      ]
+    },
+    "locationZone": "Île de Sombrelune",
+    "zone": "Île de Sombrelune",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -2025,7 +3693,56 @@
     "description": "Membre légendaire du vol draconique bleu.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1657",
+    "locationRefs": [
+      "wowhead-zone:1657",
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1657",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1657",
+      "name": "Darnassus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Darnassus",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Teldrassil",
+        "Darnassus"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Teldrassil > Darnassus",
+      "wowheadZoneIds": [
+        1657
+      ]
+    },
+    "locationZone": "Darnassus",
+    "zone": "Darnassus",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -2064,7 +3781,41 @@
     "description": "Cet oiseau est un vétéran chevronné des longues batailles navales autour de Tol Barad. Un vétéran un peu empâté, il faut bien le dire, à force de se servir sur les épaves.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5389",
+    "locationRefs": [
+      "wowhead-zone:5389"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5389",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5389",
+      "name": "Péninsule de Tol Barad",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Péninsule de Tol Barad",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Péninsule de Tol Barad"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Péninsule de Tol Barad",
+      "wowheadZoneIds": [
+        5389
+      ]
+    },
+    "locationZone": "Péninsule de Tol Barad",
+    "zone": "Péninsule de Tol Barad",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -2099,7 +3850,42 @@
     "description": "Les oursons d'Hyjal ont beaucoup souffert lors du Cataclysme. Mais pour voir le bon côté des choses, c'est aussi lui qui a développé leur attirance pour les hauteurs et les acrobaties périlleuses.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5733",
+    "locationRefs": [
+      "wowhead-zone:5733"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5733",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5733",
+      "name": "Front du Magma",
+      "kind": "subzone",
+      "subzoneName": "Front du Magma",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal",
+        "Front du Magma"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal > Front du Magma",
+      "wowheadZoneIds": [
+        5733
+      ]
+    },
+    "locationZone": "Mont Hyjal",
+    "zone": "Mont Hyjal",
+    "subzone": "Front du Magma",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -2202,7 +3988,41 @@
     "description": "Les singes d'Azeroth sont célèbres pour leurs tours pendables, et cette ruse innée est encore plus développée chez ces adorables compagnons de la foire de Sombrelune.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5861",
+    "locationRefs": [
+      "wowhead-zone:5861"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5861",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5861",
+      "name": "Île de Sombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Sombrelune",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Île de Sombrelune"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Île de Sombrelune",
+      "wowheadZoneIds": [
+        5861
+      ]
+    },
+    "locationZone": "Île de Sombrelune",
+    "zone": "Île de Sombrelune",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -2237,7 +4057,41 @@
     "description": "Ce reptile caparaçonné protège vaillamment la maison qu'il transporte sur son dos par son humeur infailliblement enjouée.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5861",
+    "locationRefs": [
+      "wowhead-zone:5861"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5861",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5861",
+      "name": "Île de Sombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Sombrelune",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Île de Sombrelune"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Île de Sombrelune",
+      "wowheadZoneIds": [
+        5861
+      ]
+    },
+    "locationZone": "Île de Sombrelune",
+    "zone": "Île de Sombrelune",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -2272,7 +4126,41 @@
     "description": "Débarrassée des mines et fusées de l'ancien modèle, cette version adaptée aux plus jeunes rencontre un grand succès auprès des enfants d'Azeroth.",
     "category": "pets",
     "expansion": "cataclysm",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5861",
+    "locationRefs": [
+      "wowhead-zone:5861"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5861",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5861",
+      "name": "Île de Sombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Sombrelune",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Île de Sombrelune"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Île de Sombrelune",
+      "wowheadZoneIds": [
+        5861
+      ]
+    },
+    "locationZone": "Île de Sombrelune",
+    "zone": "Île de Sombrelune",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",

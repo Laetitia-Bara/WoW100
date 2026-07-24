@@ -92,6 +92,268 @@
     "mamytwink": null
   },
   {
+    "id": "achievement_61046",
+    "name": "Dressage de mascottes aériennes de Kalimdor",
+    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Aérien de niveau 25.",
+    "category": "achievements",
+    "expansion": "midnight",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Aérien de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61046,
+    "wowheadAchievementId": 61046,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61046",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61041",
+    "name": "Dressage de mascottes aquatiques de Kalimdor",
+    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Aquatique de niveau 25.",
+    "category": "achievements",
+    "expansion": "midnight",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Aquatique de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61041,
+    "wowheadAchievementId": 61041,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61041",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61042",
+    "name": "Dressage de mascottes bestiales de Kalimdor",
+    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Bête de niveau 25.",
+    "category": "achievements",
+    "expansion": "midnight",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Bête de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61042,
+    "wowheadAchievementId": 61042,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61042",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61043",
+    "name": "Dressage de mascottes bestioles de Kalimdor",
+    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Bestiole de niveau 25.",
+    "category": "achievements",
+    "expansion": "midnight",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Bestiole de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61043,
+    "wowheadAchievementId": 61043,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61043",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61044",
+    "name": "Dressage de mascottes draconiennes de Kalimdor",
+    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Draconien de niveau 25.",
+    "category": "achievements",
+    "expansion": "midnight",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Draconien de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61044,
+    "wowheadAchievementId": 61044,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61044",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61045",
+    "name": "Dressage de mascottes élémentaires de Kalimdor",
+    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Élémentaire de niveau 25.",
+    "category": "achievements",
+    "expansion": "midnight",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Élémentaire de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61045,
+    "wowheadAchievementId": 61045,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61045",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61051",
+    "name": "Dressage de mascottes familiales de Kalimdor",
+    "description": "Accomplir les hauts faits listés ci-dessous.",
+    "category": "achievements",
+    "expansion": "midnight",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Accomplir les hauts faits listés ci-dessous.",
+    "points": 10,
+    "rewardDescription": "Mascotte : fléchetteuse lunaire",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61051,
+    "wowheadAchievementId": 61051,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61051",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": {
+      "wowheadName": "Family Battler of Kalimdor",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=61051",
+      "category": 15119,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "Pet: Moon Darter",
+      "popularity": 109
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61047",
+    "name": "Dressage de mascottes humanoïdes de Kalimdor",
+    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Humanoïde de niveau 25.",
+    "category": "achievements",
+    "expansion": "midnight",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Humanoïde de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61047,
+    "wowheadAchievementId": 61047,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61047",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61048",
+    "name": "Dressage de mascottes magiques de Kalimdor",
+    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Magique de niveau 25.",
+    "category": "achievements",
+    "expansion": "midnight",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Magique de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61048,
+    "wowheadAchievementId": 61048,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61048",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61049",
+    "name": "Dressage de mascottes mécaniques de Kalimdor",
+    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Machine de niveau 25.",
+    "category": "achievements",
+    "expansion": "midnight",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Machine de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61049,
+    "wowheadAchievementId": 61049,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61049",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61050",
+    "name": "Dressage de mascottes mortes-vivantes de Kalimdor",
+    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Mort-vivant de niveau 25.",
+    "category": "achievements",
+    "expansion": "midnight",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Mort-vivant de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61050,
+    "wowheadAchievementId": 61050,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61050",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
     "id": "achievement_62235",
     "name": "Calligraphie sur demande",
     "description": "Honorer 50 commandes d’artisanat de calligraphie de Midnight.",
@@ -143,8 +405,38 @@
     "description": "Obtenir toutes les mascottes sauvages au bois des Chants éternels, à Zul’Aman, en Harandar et dans la tempête du Vide.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Collections",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -1015,8 +1307,37 @@
     "description": "Vaincre Nalorakk dans l’antre de Nalorakk.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Donjons de Midnight",
+    "zone": "Antre",
     "primaryLocationRef": "wowhead-zone:11400",
+    "locationRefs": [
+      "wowhead-zone:11400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11400",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11400",
+      "name": "Antre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Antre",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Antre"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Antre",
+      "wowheadZoneIds": [
+        11400
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Antre",
@@ -1042,8 +1363,37 @@
     "description": "Vaincre Nalorakk dans l’antre de Nalorakk en mode héroïque ou supérieur.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Donjons de Midnight",
+    "zone": "Antre",
     "primaryLocationRef": "wowhead-zone:11400",
+    "locationRefs": [
+      "wowhead-zone:11400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11400",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11400",
+      "name": "Antre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Antre",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Antre"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Antre",
+      "wowheadZoneIds": [
+        11400
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Antre",
@@ -1138,8 +1488,39 @@
     "description": "Vaincre Rak’tul, réceptacle des âmes dans les cavernes de Maisara.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Donjons de Midnight",
+    "zone": "Zul’Aman",
     "primaryLocationRef": "wowhead-zone:16395",
+    "locationRefs": [
+      "wowhead-zone:16395"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16395",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16395",
+      "name": "Cavernes de Maisara",
+      "kind": "subzone",
+      "subzoneName": "Cavernes de Maisara",
+      "regionName": "Zul’Aman",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Zul’Aman",
+        "Cavernes de Maisara"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman > Cavernes de Maisara",
+      "wowheadZoneIds": [
+        16395
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Zul’Aman",
@@ -1166,8 +1547,39 @@
     "description": "Vaincre Rak’tul, réceptacle des âmes dans les cavernes de Maisara en mode héroïque ou supérieur.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Donjons de Midnight",
+    "zone": "Zul’Aman",
     "primaryLocationRef": "wowhead-zone:16395",
+    "locationRefs": [
+      "wowhead-zone:16395"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16395",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16395",
+      "name": "Cavernes de Maisara",
+      "kind": "subzone",
+      "subzoneName": "Cavernes de Maisara",
+      "regionName": "Zul’Aman",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Zul’Aman",
+        "Cavernes de Maisara"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman > Cavernes de Maisara",
+      "wowheadZoneIds": [
+        16395
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Zul’Aman",
@@ -1194,8 +1606,39 @@
     "description": "Vaincre Rak’tul, réceptacle des âmes dans les cavernes de Maisara en mode mythique ou clé mythique.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Donjons de Midnight",
+    "zone": "Zul’Aman",
     "primaryLocationRef": "wowhead-zone:16395",
+    "locationRefs": [
+      "wowhead-zone:16395"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16395",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16395",
+      "name": "Cavernes de Maisara",
+      "kind": "subzone",
+      "subzoneName": "Cavernes de Maisara",
+      "regionName": "Zul’Aman",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Zul’Aman",
+        "Cavernes de Maisara"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman > Cavernes de Maisara",
+      "wowheadZoneIds": [
+        16395
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Zul’Aman",
@@ -1337,8 +1780,37 @@
     "description": "Vaincre Nalorakk dans l’antre de Nalorakk en mode mythique ou clé mythique.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Donjons de Midnight",
+    "zone": "Antre",
     "primaryLocationRef": "wowhead-zone:11400",
+    "locationRefs": [
+      "wowhead-zone:11400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11400",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11400",
+      "name": "Antre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Antre",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Antre"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Antre",
+      "wowheadZoneIds": [
+        11400
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Antre",
@@ -1433,8 +1905,39 @@
     "description": "Vaincre Lothraxion au point-nexus Xenas.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Donjons de Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:15954",
+    "locationRefs": [
+      "wowhead-zone:15954"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15954",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15954",
+      "name": "Point-nexus Xenas",
+      "kind": "subzone",
+      "subzoneName": "Point-nexus Xenas",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide",
+        "Point-nexus Xenas"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Point-nexus Xenas",
+      "wowheadZoneIds": [
+        15954
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -1461,8 +1964,39 @@
     "description": "Vaincre Lothraxion au point-nexus Xenas en mode héroïque ou supérieur.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Donjons de Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:15954",
+    "locationRefs": [
+      "wowhead-zone:15954"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15954",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15954",
+      "name": "Point-nexus Xenas",
+      "kind": "subzone",
+      "subzoneName": "Point-nexus Xenas",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide",
+        "Point-nexus Xenas"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Point-nexus Xenas",
+      "wowheadZoneIds": [
+        15954
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -1489,8 +2023,39 @@
     "description": "Vaincre Lothraxion au point-nexus Xenas en mode mythique ou clé mythique.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Donjons de Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:15954",
+    "locationRefs": [
+      "wowhead-zone:15954"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15954",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15954",
+      "name": "Point-nexus Xenas",
+      "kind": "subzone",
+      "subzoneName": "Point-nexus Xenas",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide",
+        "Point-nexus Xenas"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Point-nexus Xenas",
+      "wowheadZoneIds": [
+        15954
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -1678,8 +2243,39 @@
     "description": "Vaincre Lothraxion au point-nexus Xenas en mode mythique et en groupe de guilde.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Donjons de Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:15954",
+    "locationRefs": [
+      "wowhead-zone:15954"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15954",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15954",
+      "name": "Point-nexus Xenas",
+      "kind": "subzone",
+      "subzoneName": "Point-nexus Xenas",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide",
+        "Point-nexus Xenas"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Point-nexus Xenas",
+      "wowheadZoneIds": [
+        15954
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -1729,8 +2325,37 @@
     "description": "Vaincre Nalorakk dans l’antre de Nalorakk en mode mythique et en groupe de guilde.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Donjons de Midnight",
+    "zone": "Antre",
     "primaryLocationRef": "wowhead-zone:11400",
+    "locationRefs": [
+      "wowhead-zone:11400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11400",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11400",
+      "name": "Antre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Antre",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Antre"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Antre",
+      "wowheadZoneIds": [
+        11400
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Antre",
@@ -1802,8 +2427,39 @@
     "description": "Vaincre Rak’tul, réceptacle des âmes dans les cavernes de Maisara en mode mythique et en groupe de guilde.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Donjons de Midnight",
+    "zone": "Zul’Aman",
     "primaryLocationRef": "wowhead-zone:16395",
+    "locationRefs": [
+      "wowhead-zone:16395"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16395",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16395",
+      "name": "Cavernes de Maisara",
+      "kind": "subzone",
+      "subzoneName": "Cavernes de Maisara",
+      "regionName": "Zul’Aman",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Zul’Aman",
+        "Cavernes de Maisara"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman > Cavernes de Maisara",
+      "wowheadZoneIds": [
+        16395
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Zul’Aman",
@@ -2202,8 +2858,37 @@
     "description": "Vaincre chacun des boss invoqués par la Lame du Crépuscule dans les hautes-terres du Crépuscule pendant les évènements du pré-lancement de Midnight.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Évènements",
+    "zone": "Hautes-terres du Crépuscule",
     "primaryLocationRef": "wowhead-zone:4922",
+    "locationRefs": [
+      "wowhead-zone:4922"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4922",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4922",
+      "name": "Hautes-terres du Crépuscule",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres du Crépuscule",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres du Crépuscule"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres du Crépuscule",
+      "wowheadZoneIds": [
+        4922
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Hautes-terres du Crépuscule",
@@ -3891,8 +4576,38 @@
     "description": "Récolter 250 000 points d’abondance dans la grotte des floarets, en Harandar.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Harandar",
     "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Harandar",
@@ -4014,8 +4729,39 @@
     "description": "Récolter 250 000 points d’abondance dans le terrier du Vide de l’Abondance, dans la tempête du Vide.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:16581",
+    "locationRefs": [
+      "wowhead-zone:16581"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16581",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16581",
+      "name": "Terrier du Vide de l’Abondance",
+      "kind": "subzone",
+      "subzoneName": "Terrier du Vide de l’Abondance",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide",
+        "Terrier du Vide de l’Abondance"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide > Terrier du Vide de l’Abondance",
+      "wowheadZoneIds": [
+        16581
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -4042,8 +4788,38 @@
     "description": "Récolter 250 000 points d’abondance dans les cryptes de Watha’nan, dans le bois des Chants éternels.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -4298,8 +5074,38 @@
     "description": "Récolter 250 000 points d’abondance dans la tanière de Tisse-Loa, à Zul’Aman.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "wowhead-zone:16375",
+    "locationRefs": [
+      "wowhead-zone:16375"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16375",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16375",
+      "name": "Tanière de Tisse-Loa",
+      "kind": "subzone",
+      "subzoneName": "Tanière de Tisse-Loa",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman",
+        "Tanière de Tisse-Loa"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman > Tanière de Tisse-Loa",
+      "wowheadZoneIds": [
+        16375
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -4656,8 +5462,38 @@
     "description": "Placer des télescopes sur les plus hautes cimes du bois des Chants éternels.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -4692,8 +5528,38 @@
     "description": "Atteindre le niveau de réputation maximal auprès de toutes les factions de la cour de Lune-d’Argent dans le bois des Chants éternels.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -4797,8 +5663,38 @@
     "description": "Goûter toutes les boissons disponibles pour le grand magistère Rommath dans le bois des Chants éternels.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -4833,8 +5729,38 @@
     "description": "Accomplir les hauts faits du bois des Chants éternels listés ci-dessous.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -4869,8 +5795,38 @@
     "description": "Vaincre toutes les créatures rares du bois des Chants éternels.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -4969,8 +5925,38 @@
     "description": "Achever les quêtes listées ci-dessous dans la tempête du Vide.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:16648",
+    "locationRefs": [
+      "wowhead-zone:16648"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16648",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16648",
+      "name": "Tempête du Vide",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide",
+      "wowheadZoneIds": [
+        16648
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -4996,8 +5982,35 @@
     "description": "Trouver et rejoindre Chu’ke, la poupée possédée, à Zul’Aman.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -5032,8 +6045,38 @@
     "description": "Vaincre toutes les créatures rares d’Harandar.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Harandar",
     "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Harandar",
@@ -5068,8 +6111,38 @@
     "description": "Trouver et ouvrir tous les coffres solides cachés dans Atal’Aman.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "wowhead-zone:16194",
+    "locationRefs": [
+      "wowhead-zone:16194"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16194",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16194",
+      "name": "Atal’Aman",
+      "kind": "subzone",
+      "subzoneName": "Atal’Aman",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman",
+        "Atal’Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman > Atal’Aman",
+      "wowheadZoneIds": [
+        16194
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -5233,8 +6306,39 @@
     "description": "Trouver et ouvrir tous les coffres solides cachés dans la place Parhélion.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Île de Quel’Danas",
     "primaryLocationRef": "wowhead-zone:16211",
+    "locationRefs": [
+      "wowhead-zone:16211"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16211",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16211",
+      "name": "Place Parhélion",
+      "kind": "subzone",
+      "subzoneName": "Place Parhélion",
+      "regionName": "Île de Quel’Danas",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Île de Quel’Danas",
+        "Place Parhélion"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Île de Quel’Danas > Place Parhélion",
+      "wowheadZoneIds": [
+        16211
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Île de Quel’Danas",
@@ -5398,8 +6502,35 @@
     "description": "Trouver tous les cherche-chant ombrepins à Zul’Aman.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -5526,8 +6657,38 @@
     "description": "Tenter de voler jusqu’au Berceau dans le ciel d’Harandar.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Harandar",
     "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Harandar",
@@ -5562,8 +6723,38 @@
     "description": "Explorer Harandar et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Harandar",
     "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Harandar",
@@ -5589,8 +6780,38 @@
     "description": "Explorer la tempête du Vide et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:16648",
+    "locationRefs": [
+      "wowhead-zone:16648"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16648",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16648",
+      "name": "Tempête du Vide",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide",
+      "wowheadZoneIds": [
+        16648
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -5625,8 +6846,35 @@
     "description": "Explorer Zul’Aman et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -5652,8 +6900,38 @@
     "description": "Explorer le bois des Chants éternels et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -5688,8 +6966,35 @@
     "description": "Accomplir tous les hauts faits de Zul’Aman listés ci-dessous.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -5756,8 +7061,39 @@
     "description": "Atteindre le rang de renom 20 auprès de la cour de Lune-d’Argent.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Lune-d’Argent",
     "primaryLocationRef": "wowhead-zone:15969",
+    "locationRefs": [
+      "wowhead-zone:15969"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15969",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15969",
+      "name": "Lune-d’Argent",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Lune-d’Argent",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels",
+        "Lune-d’Argent"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels > Lune-d’Argent",
+      "wowheadZoneIds": [
+        15969
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Lune-d’Argent",
@@ -5806,8 +7142,38 @@
     "description": "Échapper à la présence affamée dans la tempête du Vide pendant au moins 60 s.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:16648",
+    "locationRefs": [
+      "wowhead-zone:16648"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16648",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16648",
+      "name": "Tempête du Vide",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide",
+      "wowheadZoneIds": [
+        16648
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -6044,8 +7410,38 @@
     "description": "Trouver tous les phalènes luminescents cachés en Harandar.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Harandar",
     "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Harandar",
@@ -6112,8 +7508,38 @@
     "description": "Placer des télescopes sur les plus hautes cimes d’Harandar.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Harandar",
     "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Harandar",
@@ -6180,8 +7606,38 @@
     "description": "Terminer chaque variante de l’histoire d’Atal’Aman.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "wowhead-zone:16194",
+    "locationRefs": [
+      "wowhead-zone:16194"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16194",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16194",
+      "name": "Atal’Aman",
+      "kind": "subzone",
+      "subzoneName": "Atal’Aman",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman",
+        "Atal’Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman > Atal’Aman",
+      "wowheadZoneIds": [
+        16194
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -6309,8 +7765,39 @@
     "description": "Terminer chaque variante de l’histoire de la place Parhélion.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Île de Quel’Danas",
     "primaryLocationRef": "wowhead-zone:16211",
+    "locationRefs": [
+      "wowhead-zone:16211"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16211",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16211",
+      "name": "Place Parhélion",
+      "kind": "subzone",
+      "subzoneName": "Place Parhélion",
+      "regionName": "Île de Quel’Danas",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Île de Quel’Danas",
+        "Place Parhélion"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Île de Quel’Danas > Place Parhélion",
+      "wowheadZoneIds": [
+        16211
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Île de Quel’Danas",
@@ -6438,8 +7925,38 @@
     "description": "Accomplir tous les hauts faits de la tempête du Vide listés ci-dessous.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:16648",
+    "locationRefs": [
+      "wowhead-zone:16648"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16648",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16648",
+      "name": "Tempête du Vide",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide",
+      "wowheadZoneIds": [
+        16648
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -6506,8 +8023,35 @@
     "description": "Vaincre toutes les créatures rares de Zul’Aman.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -6574,8 +8118,38 @@
     "description": "Inviter les quatre factions au havre de Saltheril dans le bois des Chants éternels.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -6610,8 +8184,35 @@
     "description": "/Embrasser toutes les « princesses » grenouilles à Zul’Aman.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -6806,8 +8407,38 @@
     "description": "Accomplir l’expédition de la tempête du Vide Prexcision sans rater une seule fois.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:16648",
+    "locationRefs": [
+      "wowhead-zone:16648"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16648",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16648",
+      "name": "Tempête du Vide",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide",
+      "wowheadZoneIds": [
+        16648
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -6938,8 +8569,35 @@
     "description": "Aider le passeur patte-spirituelle à Zul’Aman.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -7070,8 +8728,38 @@
     "description": "Accomplir l’expédition d’Harandar Milice acérée avec au moins 15 cumuls de Poursuite du prédateur.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Harandar",
     "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Harandar",
@@ -7106,8 +8794,35 @@
     "description": "Achever les suites de quêtes impliquant le roi Mrgl-Mrgl dans la toundra Boréenne, à Haut-Roc et à Zul’Aman.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -7142,8 +8857,38 @@
     "description": "Achever les quêtes listées ci-dessous en Harandar.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Harandar",
     "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Harandar",
@@ -7178,8 +8923,38 @@
     "description": "Protéger toutes les pierres runiques dans le bois des Chants éternels.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -8267,8 +10042,38 @@
     "description": "Découvrir tous les chevalets de peintres en extérieur dans le bois des Chants éternels.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -8303,8 +10108,38 @@
     "description": "Faire fuir un persécuteur opportuniste jusqu’à son nid dans la tempête du Vide.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:16648",
+    "locationRefs": [
+      "wowhead-zone:16648"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16648",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16648",
+      "name": "Tempête du Vide",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide",
+      "wowheadZoneIds": [
+        16648
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -8339,8 +10174,35 @@
     "description": "Achever les quêtes listées ci-dessous à Zul’Aman.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -8407,8 +10269,38 @@
     "description": "Débloquer entièrement la console de recherche dans la tempête du Vide.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:16648",
+    "locationRefs": [
+      "wowhead-zone:16648"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16648",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16648",
+      "name": "Tempête du Vide",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide",
+      "wowheadZoneIds": [
+        16648
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -8443,8 +10335,38 @@
     "description": "Achever les quêtes listées ci-dessous dans le bois des Chants éternels.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -8470,8 +10392,35 @@
     "description": "Achever les suites de quêtes optionnelles de Zul’Aman listées ci-dessous.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -8506,8 +10455,38 @@
     "description": "Achever les suites de quêtes optionnelles de la tempête du Vide listées ci-dessous.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:16648",
+    "locationRefs": [
+      "wowhead-zone:16648"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16648",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16648",
+      "name": "Tempête du Vide",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide",
+      "wowheadZoneIds": [
+        16648
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -8542,8 +10521,38 @@
     "description": "Achever les suites de quêtes optionnelles du bois des Chants éternels listées ci-dessous.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -8578,8 +10587,38 @@
     "description": "Achever les suites de quêtes optionnelles d’Harandar listées ci-dessous.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Harandar",
     "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Harandar",
@@ -8752,8 +10791,38 @@
     "description": "Placer des télescopes sur les plus hautes cimes de la tempête du Vide.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:16648",
+    "locationRefs": [
+      "wowhead-zone:16648"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16648",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16648",
+      "name": "Tempête du Vide",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide",
+      "wowheadZoneIds": [
+        16648
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -8788,8 +10857,35 @@
     "description": "Rassembler tous les écrits du Gnome égaré à Zul’Aman.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -8824,8 +10920,38 @@
     "description": "Vaincre toutes les créatures rares de la tempête du Vide.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:16648",
+    "locationRefs": [
+      "wowhead-zone:16648"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16648",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16648",
+      "name": "Tempête du Vide",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide",
+      "wowheadZoneIds": [
+        16648
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -8860,8 +10986,38 @@
     "description": "Découvrir les trésors cachés en Harandar.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Harandar",
     "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Harandar",
@@ -8896,8 +11052,38 @@
     "description": "Découvrir les trésors cachés dans la Tempête du Vide.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Tempête du Vide",
     "primaryLocationRef": "wowhead-zone:16648",
+    "locationRefs": [
+      "wowhead-zone:16648"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16648",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16648",
+      "name": "Tempête du Vide",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tempête du Vide",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Tempête du Vide"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Tempête du Vide",
+      "wowheadZoneIds": [
+        16648
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Tempête du Vide",
@@ -8932,8 +11118,35 @@
     "description": "Découvrir les trésors cachés à Zul’Aman.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -8968,8 +11181,38 @@
     "description": "Découvrir les trésors cachés dans le bois des Chants éternels.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Bois des Chants éternels",
     "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
     "world": "Azeroth",
     "region": "Quel'Thalas",
     "locationZone": "Bois des Chants éternels",
@@ -9155,8 +11398,35 @@
     "description": "Placer des télescopes sur les plus hautes cimes de Zul’Aman.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Midnight",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -9737,8 +12007,38 @@
     "description": "Vaincre le Glas de minuit après avoir rendu 12 souvenirs d’Alleria à L’ura dans la marche sur Quel’Danas en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Raids de Midnight",
+    "zone": "Clairières de Tirisfal",
     "primaryLocationRef": "wowhead-zone:6454",
+    "locationRefs": [
+      "wowhead-zone:6454"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6454",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6454",
+      "name": "Le Glas",
+      "kind": "subzone",
+      "subzoneName": "Le Glas",
+      "regionName": "Clairières de Tirisfal",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Clairières de Tirisfal",
+        "Le Glas"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Clairières de Tirisfal > Le Glas",
+      "wowheadZoneIds": [
+        6454
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Clairières de Tirisfal",
@@ -9875,8 +12175,38 @@
     "description": "Vaincre le Glas de minuit dans la marche sur Quel’Danas en mode mythique.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Raids de Midnight",
+    "zone": "Clairières de Tirisfal",
     "primaryLocationRef": "wowhead-zone:6454",
+    "locationRefs": [
+      "wowhead-zone:6454"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6454",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6454",
+      "name": "Le Glas",
+      "kind": "subzone",
+      "subzoneName": "Le Glas",
+      "regionName": "Clairières de Tirisfal",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Clairières de Tirisfal",
+        "Le Glas"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Clairières de Tirisfal > Le Glas",
+      "wowheadZoneIds": [
+        6454
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Clairières de Tirisfal",
@@ -10531,8 +12861,38 @@
     "description": "Vaincre le Glas de minuit de la marche sur Quel’Danas en mode mythique et en groupe de guilde.",
     "category": "achievements",
     "expansion": "midnight",
-    "zone": "Raids de Midnight",
+    "zone": "Clairières de Tirisfal",
     "primaryLocationRef": "wowhead-zone:6454",
+    "locationRefs": [
+      "wowhead-zone:6454"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6454",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6454",
+      "name": "Le Glas",
+      "kind": "subzone",
+      "subzoneName": "Le Glas",
+      "regionName": "Clairières de Tirisfal",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Clairières de Tirisfal",
+        "Le Glas"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Clairières de Tirisfal > Le Glas",
+      "wowheadZoneIds": [
+        6454
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Clairières de Tirisfal",
@@ -10899,268 +13259,6 @@
       "reward": "Mount: Crimson Dragonhawk",
       "popularity": 254
     },
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_61046",
-    "name": "Dressage de mascottes aériennes de Kalimdor",
-    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Aérien de niveau 25.",
-    "category": "achievements",
-    "expansion": "midnight",
-    "zone": "Bataille",
-    "instance": "Bataille",
-    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Aérien de niveau 25.",
-    "points": 5,
-    "rewardDescription": "",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 61046,
-    "wowheadAchievementId": 61046,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=61046",
-    "blizzardCategoryId": 15119,
-    "blizzardCategoryName": "Bataille",
-    "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_61041",
-    "name": "Dressage de mascottes aquatiques de Kalimdor",
-    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Aquatique de niveau 25.",
-    "category": "achievements",
-    "expansion": "midnight",
-    "zone": "Bataille",
-    "instance": "Bataille",
-    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Aquatique de niveau 25.",
-    "points": 5,
-    "rewardDescription": "",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 61041,
-    "wowheadAchievementId": 61041,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=61041",
-    "blizzardCategoryId": 15119,
-    "blizzardCategoryName": "Bataille",
-    "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_61042",
-    "name": "Dressage de mascottes bestiales de Kalimdor",
-    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Bête de niveau 25.",
-    "category": "achievements",
-    "expansion": "midnight",
-    "zone": "Bataille",
-    "instance": "Bataille",
-    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Bête de niveau 25.",
-    "points": 5,
-    "rewardDescription": "",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 61042,
-    "wowheadAchievementId": 61042,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=61042",
-    "blizzardCategoryId": 15119,
-    "blizzardCategoryName": "Bataille",
-    "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_61043",
-    "name": "Dressage de mascottes bestioles de Kalimdor",
-    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Bestiole de niveau 25.",
-    "category": "achievements",
-    "expansion": "midnight",
-    "zone": "Bataille",
-    "instance": "Bataille",
-    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Bestiole de niveau 25.",
-    "points": 5,
-    "rewardDescription": "",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 61043,
-    "wowheadAchievementId": 61043,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=61043",
-    "blizzardCategoryId": 15119,
-    "blizzardCategoryName": "Bataille",
-    "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_61044",
-    "name": "Dressage de mascottes draconiennes de Kalimdor",
-    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Draconien de niveau 25.",
-    "category": "achievements",
-    "expansion": "midnight",
-    "zone": "Bataille",
-    "instance": "Bataille",
-    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Draconien de niveau 25.",
-    "points": 5,
-    "rewardDescription": "",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 61044,
-    "wowheadAchievementId": 61044,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=61044",
-    "blizzardCategoryId": 15119,
-    "blizzardCategoryName": "Bataille",
-    "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_61045",
-    "name": "Dressage de mascottes élémentaires de Kalimdor",
-    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Élémentaire de niveau 25.",
-    "category": "achievements",
-    "expansion": "midnight",
-    "zone": "Bataille",
-    "instance": "Bataille",
-    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Élémentaire de niveau 25.",
-    "points": 5,
-    "rewardDescription": "",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 61045,
-    "wowheadAchievementId": 61045,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=61045",
-    "blizzardCategoryId": 15119,
-    "blizzardCategoryName": "Bataille",
-    "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_61051",
-    "name": "Dressage de mascottes familiales de Kalimdor",
-    "description": "Accomplir les hauts faits listés ci-dessous.",
-    "category": "achievements",
-    "expansion": "midnight",
-    "zone": "Bataille",
-    "instance": "Bataille",
-    "source": "Accomplir les hauts faits listés ci-dessous.",
-    "points": 10,
-    "rewardDescription": "Mascotte : fléchetteuse lunaire",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 61051,
-    "wowheadAchievementId": 61051,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=61051",
-    "blizzardCategoryId": 15119,
-    "blizzardCategoryName": "Bataille",
-    "wowhead": {
-      "wowheadName": "Family Battler of Kalimdor",
-      "wowheadUrl": "https://www.wowhead.com/fr/achievement=61051",
-      "category": 15119,
-      "categoryName": "",
-      "expansion": null,
-      "points": 10,
-      "reward": "Pet: Moon Darter",
-      "popularity": 109
-    },
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_61047",
-    "name": "Dressage de mascottes humanoïdes de Kalimdor",
-    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Humanoïde de niveau 25.",
-    "category": "achievements",
-    "expansion": "midnight",
-    "zone": "Bataille",
-    "instance": "Bataille",
-    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Humanoïde de niveau 25.",
-    "points": 5,
-    "rewardDescription": "",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 61047,
-    "wowheadAchievementId": 61047,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=61047",
-    "blizzardCategoryId": 15119,
-    "blizzardCategoryName": "Bataille",
-    "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_61048",
-    "name": "Dressage de mascottes magiques de Kalimdor",
-    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Magique de niveau 25.",
-    "category": "achievements",
-    "expansion": "midnight",
-    "zone": "Bataille",
-    "instance": "Bataille",
-    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Magique de niveau 25.",
-    "points": 5,
-    "rewardDescription": "",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 61048,
-    "wowheadAchievementId": 61048,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=61048",
-    "blizzardCategoryId": 15119,
-    "blizzardCategoryName": "Bataille",
-    "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_61049",
-    "name": "Dressage de mascottes mécaniques de Kalimdor",
-    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Machine de niveau 25.",
-    "category": "achievements",
-    "expansion": "midnight",
-    "zone": "Bataille",
-    "instance": "Bataille",
-    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Machine de niveau 25.",
-    "points": 5,
-    "rewardDescription": "",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 61049,
-    "wowheadAchievementId": 61049,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=61049",
-    "blizzardCategoryId": 15119,
-    "blizzardCategoryName": "Bataille",
-    "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_61050",
-    "name": "Dressage de mascottes mortes-vivantes de Kalimdor",
-    "description": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Mort-vivant de niveau 25.",
-    "category": "achievements",
-    "expansion": "midnight",
-    "zone": "Bataille",
-    "instance": "Bataille",
-    "source": "Vaincre les dresseurs et dresseuses de Kalimdor suivants avec une équipe uniquement composée de mascottes de type Mort-vivant de niveau 25.",
-    "points": 5,
-    "rewardDescription": "",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 61050,
-    "wowheadAchievementId": 61050,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=61050",
-    "blizzardCategoryId": 15119,
-    "blizzardCategoryName": "Bataille",
-    "wowhead": null,
     "mamytwink": null
   }
 ]

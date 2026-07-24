@@ -235,8 +235,35 @@
     "description": "Vaincre Zul’jin en groupe de raid à Zul’Aman.",
     "category": "achievements",
     "expansion": "tbc",
-    "zone": "Raids",
+    "zone": "Zul'Aman",
     "primaryLocationRef": "manual-location:eastern-kingdoms:zul-aman",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:zul-aman"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:zul-aman",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:zul-aman",
+      "name": "Zul'Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman",
+      "wowheadZoneIds": []
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Zul'Aman",
@@ -254,38 +281,6 @@
     "blizzardCategoryId": 15278,
     "blizzardCategoryName": "Raids",
     "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_859",
-    "name": "Exploration du bois des Chants éternels (The Burning Crusade)",
-    "description": "Explorer le bois des Chants éternels et révéler les zones voilées de la carte du monde.",
-    "category": "achievements",
-    "expansion": "tbc",
-    "zone": "Royaumes de l'Est",
-    "instance": "Royaumes de l'Est",
-    "source": "Explorer le bois des Chants éternels et révéler les zones voilées de la carte du monde.",
-    "points": 10,
-    "rewardDescription": "",
-    "isAccountWide": true,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 859,
-    "wowheadAchievementId": 859,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=859",
-    "blizzardCategoryId": 14777,
-    "blizzardCategoryName": "Royaumes de l'Est",
-    "wowhead": {
-      "wowheadName": "Explore Eversong Woods (Burning Crusade)",
-      "wowheadUrl": "https://www.wowhead.com/fr/achievement=859",
-      "category": 14777,
-      "categoryName": "",
-      "expansion": null,
-      "points": 10,
-      "reward": "",
-      "popularity": 104
-    },
     "mamytwink": null
   },
   {
@@ -455,8 +450,37 @@
     "description": "Obtenir l'hippogriffe de guerre cénarien auprès de l'Expédition cénarienne dans le marécage de Zangar.",
     "category": "achievements",
     "expansion": "tbc",
-    "zone": "The Burning Crusade",
+    "zone": "Marécage de Zangar",
     "primaryLocationRef": "wowhead-zone:3521",
+    "locationRefs": [
+      "wowhead-zone:3521"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3521",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3521",
+      "name": "Marécage de Zangar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Marécage de Zangar",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Marécage de Zangar"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Marécage de Zangar",
+      "wowheadZoneIds": [
+        3521
+      ]
+    },
     "world": "Outreterre",
     "region": "Outreterre",
     "locationZone": "Marécage de Zangar",
@@ -712,8 +736,37 @@
     "description": "Vaincre Archimonde au cours de la bataille du mont Hyjal.",
     "category": "achievements",
     "expansion": "tbc",
-    "zone": "The Burning Crusade",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:616",
+    "locationRefs": [
+      "wowhead-zone:616"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:616",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:616",
+      "name": "Mont Hyjal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal",
+      "wowheadZoneIds": [
+        616
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",
@@ -1024,8 +1077,37 @@
     "description": "Vaincre Illidan Hurlorage au Temple noir.",
     "category": "achievements",
     "expansion": "tbc",
-    "zone": "The Burning Crusade",
+    "zone": "Temple noir",
     "primaryLocationRef": "wowhead-zone:6613",
+    "locationRefs": [
+      "wowhead-zone:6613"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6613",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6613",
+      "name": "Temple noir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Temple noir",
+      "continentName": "Pandarie",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Temple noir"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Temple noir",
+      "wowheadZoneIds": [
+        6613
+      ]
+    },
     "world": "Azeroth",
     "region": "Pandarie",
     "locationZone": "Temple noir",
@@ -1442,8 +1524,38 @@
     "description": "Être exalté auprès des Clairvoyants ou de l'Aldor.",
     "category": "achievements",
     "expansion": "tbc",
-    "zone": "The Burning Crusade",
+    "zone": "Shattrath",
     "primaryLocationRef": "wowhead-zone:3703",
+    "locationRefs": [
+      "wowhead-zone:3703"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3703",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3703",
+      "name": "Shattrath",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Shattrath",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar",
+        "Shattrath"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar > Shattrath",
+      "wowheadZoneIds": [
+        3703
+      ]
+    },
     "world": "Outreterre",
     "region": "Outreterre",
     "locationZone": "Shattrath",
@@ -1814,8 +1926,37 @@
     "description": "Vaincre Illidan Hurlorage au Temple noir en groupe de guilde.",
     "category": "achievements",
     "expansion": "tbc",
-    "zone": "The Burning Crusade",
+    "zone": "Temple noir",
     "primaryLocationRef": "wowhead-zone:6613",
+    "locationRefs": [
+      "wowhead-zone:6613"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6613",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6613",
+      "name": "Temple noir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Temple noir",
+      "continentName": "Pandarie",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Temple noir"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Temple noir",
+      "wowheadZoneIds": [
+        6613
+      ]
+    },
     "world": "Azeroth",
     "region": "Pandarie",
     "locationZone": "Temple noir",
@@ -2094,8 +2235,37 @@
     "description": "Vaincre Archimonde au cours de la bataille du mont Hyjal en groupe de guilde.",
     "category": "achievements",
     "expansion": "tbc",
-    "zone": "The Burning Crusade",
+    "zone": "Mont Hyjal",
     "primaryLocationRef": "wowhead-zone:616",
+    "locationRefs": [
+      "wowhead-zone:616"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:616",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:616",
+      "name": "Mont Hyjal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal",
+      "wowheadZoneIds": [
+        616
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mont Hyjal",

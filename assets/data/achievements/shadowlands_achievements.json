@@ -465,8 +465,37 @@
     "description": "Chatouiller les rats de négociants suivants dans Tazavesh, le marché dissimulé, en mode mythique.",
     "category": "achievements",
     "expansion": "shadowlands",
-    "zone": "Donjons de Shadowlands",
+    "zone": "Tazavesh, le marché dissimulé",
     "primaryLocationRef": "wowhead-zone:13672",
+    "locationRefs": [
+      "wowhead-zone:13672"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13672",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13672",
+      "name": "Tazavesh, le marché dissimulé",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tazavesh, le marché dissimulé",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Tazavesh, le marché dissimulé"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Tazavesh, le marché dissimulé",
+      "wowheadZoneIds": [
+        13672
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Tazavesh, le marché dissimulé",
@@ -593,8 +622,37 @@
     "description": "Vaincre le maître de P.O.S.T.E. après avoir transmis toutes les marchandises instables à au moins un autre personnage-joueur avant livraison à Tazavesh, le marché dissimulé, en mode mythique.",
     "category": "achievements",
     "expansion": "shadowlands",
-    "zone": "Donjons de Shadowlands",
+    "zone": "Tazavesh, le marché dissimulé",
     "primaryLocationRef": "wowhead-zone:13672",
+    "locationRefs": [
+      "wowhead-zone:13672"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13672",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13672",
+      "name": "Tazavesh, le marché dissimulé",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tazavesh, le marché dissimulé",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Tazavesh, le marché dissimulé"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Tazavesh, le marché dissimulé",
+      "wowheadZoneIds": [
+        13672
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Tazavesh, le marché dissimulé",
@@ -914,8 +972,37 @@
     "description": "Vaincre So’leah à Tazavesh, le marché dissimulé, après avoir tenté d’utiliser une fausse identité en mode mythique.",
     "category": "achievements",
     "expansion": "shadowlands",
-    "zone": "Donjons de Shadowlands",
+    "zone": "Tazavesh, le marché dissimulé",
     "primaryLocationRef": "wowhead-zone:13672",
+    "locationRefs": [
+      "wowhead-zone:13672"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13672",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13672",
+      "name": "Tazavesh, le marché dissimulé",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tazavesh, le marché dissimulé",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Tazavesh, le marché dissimulé"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Tazavesh, le marché dissimulé",
+      "wowheadZoneIds": [
+        13672
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Tazavesh, le marché dissimulé",
@@ -1198,8 +1285,37 @@
     "description": "Vaincre Zo’phex la sentinelle alors que tous les membres du groupe sont couverts de 4 substances mixées différentes à Tazavesh, le marché dissimulé, en mode mythique.",
     "category": "achievements",
     "expansion": "shadowlands",
-    "zone": "Donjons de Shadowlands",
+    "zone": "Tazavesh, le marché dissimulé",
     "primaryLocationRef": "wowhead-zone:13672",
+    "locationRefs": [
+      "wowhead-zone:13672"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13672",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13672",
+      "name": "Tazavesh, le marché dissimulé",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tazavesh, le marché dissimulé",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Tazavesh, le marché dissimulé"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Tazavesh, le marché dissimulé",
+      "wowheadZoneIds": [
+        13672
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Tazavesh, le marché dissimulé",
@@ -1625,8 +1741,37 @@
     "description": "Vaincre So’leah à Tazavesh, le marché dissimulé, en mode mythique.",
     "category": "achievements",
     "expansion": "shadowlands",
-    "zone": "Donjons de Shadowlands",
+    "zone": "Tazavesh, le marché dissimulé",
     "primaryLocationRef": "wowhead-zone:13672",
+    "locationRefs": [
+      "wowhead-zone:13672"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13672",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13672",
+      "name": "Tazavesh, le marché dissimulé",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tazavesh, le marché dissimulé",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Tazavesh, le marché dissimulé"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Tazavesh, le marché dissimulé",
+      "wowheadZoneIds": [
+        13672
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Tazavesh, le marché dissimulé",
@@ -1767,8 +1912,37 @@
     "description": "Vaincre Hylbrande après avoir inséré des codes de contournement uniquement, tout en subissant les effets du champ d’assainissement à Tazavesh, le marché dissimulé, en mode mythique.",
     "category": "achievements",
     "expansion": "shadowlands",
-    "zone": "Donjons de Shadowlands",
+    "zone": "Tazavesh, le marché dissimulé",
     "primaryLocationRef": "wowhead-zone:13672",
+    "locationRefs": [
+      "wowhead-zone:13672"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13672",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13672",
+      "name": "Tazavesh, le marché dissimulé",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tazavesh, le marché dissimulé",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Tazavesh, le marché dissimulé"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Tazavesh, le marché dissimulé",
+      "wowheadZoneIds": [
+        13672
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Tazavesh, le marché dissimulé",
@@ -1826,8 +2000,37 @@
     "description": "Vaincre So’leah à Tazavesh, le marché dissimulé, en mode mythique et en groupe de guilde.",
     "category": "achievements",
     "expansion": "shadowlands",
-    "zone": "Donjons de Shadowlands",
+    "zone": "Tazavesh, le marché dissimulé",
     "primaryLocationRef": "wowhead-zone:13672",
+    "locationRefs": [
+      "wowhead-zone:13672"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13672",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13672",
+      "name": "Tazavesh, le marché dissimulé",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tazavesh, le marché dissimulé",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Tazavesh, le marché dissimulé"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Tazavesh, le marché dissimulé",
+      "wowheadZoneIds": [
+        13672
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Tazavesh, le marché dissimulé",
@@ -3945,6 +4148,29 @@
     "mamytwink": null
   },
   {
+    "id": "achievement_14525",
+    "name": "Dites-le avec des fleurs",
+    "description": "Vaincre les généraux de la Légion de pierre alors que tous les personnages-joueurs portent un bouquet de roses sanguines en fleur dans le château Nathria en mode normal ou supérieur.",
+    "category": "achievements",
+    "expansion": "shadowlands",
+    "zone": "Raids de Shadowlands",
+    "instance": "Raids de Shadowlands",
+    "source": "Vaincre les généraux de la Légion de pierre alors que tous les personnages-joueurs portent un bouquet de roses sanguines en fleur dans le château Nathria en mode normal ou supérieur.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": true,
+    "weeklyLockout": false,
+    "blizzardId": 14525,
+    "wowheadAchievementId": 14525,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=14525",
+    "blizzardCategoryId": 15438,
+    "blizzardCategoryName": "Raids de Shadowlands",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
     "id": "achievement_15416",
     "name": "Emprise de la domination",
     "description": "Vaincre les boss suivants dans l’aile du sépulcre des Fondateurs.",
@@ -4086,6 +4312,29 @@
     "wowheadAchievementId": 15479,
     "boss": "",
     "externalUrl": "https://www.wowhead.com/fr/achievement=15479",
+    "blizzardCategoryId": 15438,
+    "blizzardCategoryName": "Raids de Shadowlands",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_14364",
+    "name": "Généraux de la Légion de pierre : mode mythique",
+    "description": "Vaincre les généraux de la Légion de pierre au château Nathria en mode mythique.",
+    "category": "achievements",
+    "expansion": "shadowlands",
+    "zone": "Raids de Shadowlands",
+    "instance": "Raids de Shadowlands",
+    "source": "Vaincre les généraux de la Légion de pierre au château Nathria en mode mythique.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": true,
+    "weeklyLockout": false,
+    "blizzardId": 14364,
+    "wowheadAchievementId": 14364,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=14364",
     "blizzardCategoryId": 15438,
     "blizzardCategoryName": "Raids de Shadowlands",
     "wowhead": null,
@@ -4832,8 +5081,37 @@
     "description": "Vaincre l’artificier Xy’mox après avoir remis l’anima résiduel de Maldraxxus, de Sylvarden et de l’Antre dans son conteneur, dans le château Nathria, en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "shadowlands",
-    "zone": "Raids de Shadowlands",
+    "zone": "Maldraxxus",
     "primaryLocationRef": "wowhead-zone:11462",
+    "locationRefs": [
+      "wowhead-zone:11462"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11462",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11462",
+      "name": "Maldraxxus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maldraxxus",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Maldraxxus"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Maldraxxus",
+      "wowheadZoneIds": [
+        11462
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Maldraxxus",
@@ -5728,8 +6006,37 @@
     "description": "Atteindre le niveau de réputation Apprécié après de Ve’nari dans l’Antre.",
     "category": "achievements",
     "expansion": "shadowlands",
-    "zone": "Shadowlands",
+    "zone": "Antre",
     "primaryLocationRef": "wowhead-zone:11400",
+    "locationRefs": [
+      "wowhead-zone:11400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11400",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11400",
+      "name": "Antre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Antre",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Antre"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Antre",
+      "wowheadZoneIds": [
+        11400
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Antre",

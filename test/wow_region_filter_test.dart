@@ -99,6 +99,35 @@ void main() {
     },
   );
 
+  test('localized pet data resolves to a filterable catalog zone', () async {
+    final repository = JsonPlannerRepository();
+    final items = await repository.getItems(WowExpansion.vanilla);
+    final pet = items.singleWhere((item) => item.id == 'pet_49');
+    final filter = WowRegionFilter.fromItem(pet);
+
+    expect(pet.locationRef, 'wowhead-zone:5287');
+    expect(pet.zone, 'Vall\u00e9e de Strangleronce');
+    expect(pet.subzone, 'Cap Strangleronce');
+    expect(pet.region, 'Royaumes de l\'Est');
+    expect(filter?.zone, 'Vall\u00e9e de Strangleronce');
+    expect(filter?.region, 'Royaumes de l\'Est');
+  });
+
+  test('localized achievement data resolves safe location aliases', () async {
+    final repository = JsonPlannerRepository();
+    final items = await repository.getItems(WowExpansion.bfa);
+    final achievement = items.singleWhere(
+      (item) => item.id == 'achievement_13482',
+    );
+    final filter = WowRegionFilter.fromItem(achievement);
+
+    expect(achievement.locationRef, 'wowhead-zone:10290');
+    expect(achievement.zone, '\u00cele de M\u00e9cagone');
+    expect(achievement.region, 'Kul Tiras');
+    expect(filter?.zone, '\u00cele de M\u00e9cagone');
+    expect(filter?.region, 'Kul Tiras');
+  });
+
   test(
     'region filters only expose known zones, catalog locations or Sans zone',
     () async {

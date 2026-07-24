@@ -41,7 +41,41 @@
     "description": "Souvent utilisé comme source de lumière par les sporelins pour naviguer le long des rivières du marécage de Zangar, ce petit insecte lumineux les aide à éviter les dangereux piqueurs Tourbembrase.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3521",
+    "locationRefs": [
+      "wowhead-zone:3521"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3521",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3521",
+      "name": "Marécage de Zangar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Marécage de Zangar",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Marécage de Zangar"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Marécage de Zangar",
+      "wowheadZoneIds": [
+        3521
+      ]
+    },
+    "locationZone": "Marécage de Zangar",
+    "zone": "Marécage de Zangar",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -110,7 +144,41 @@
     "description": "Terkie, aussi timide qu’adorable, préfère la compagnie d’amis proches plutôt que d’en découvrir de nouveaux.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7502",
+    "locationRefs": [
+      "wowhead-zone:7502"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7502",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7502",
+      "name": "Dalaran",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dalaran",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Dalaran"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+      "wowheadZoneIds": [
+        7502
+      ]
+    },
+    "locationZone": "Dalaran",
+    "zone": "Dalaran",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -146,7 +214,42 @@
     "description": "Landro aurait préféré ne pas se séparer de Bananas. Mais il s'est dit qu'il valait mieux que le petit soit loin, très loin de Baie-du-Butin au moment où son père, le roi Mukla, se rendrait compte qu'il avait disparu.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Cartes à collectionner",
     "source": "Jeu de cartes à collectionner",
     "sourceType": "TCG",
@@ -181,7 +284,42 @@
     "description": "Beaucoup moins bruyant qu'un vrai dragon.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Cartes à collectionner",
     "source": "Jeu de cartes à collectionner",
     "sourceType": "TCG",
@@ -216,7 +354,42 @@
     "description": "Lors d'une invasion de Harpies en Féralas, plusieurs aires d'hippogriffes furent attaquées. Des centaines de bébés se retrouvèrent orphelins et furent recueillis par les druides de l'île de Sardor.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Cartes à collectionner",
     "source": "Jeu de cartes à collectionner",
     "sourceType": "TCG",
@@ -251,7 +424,42 @@
     "description": "Les marchands-d'âmes éthériens emmènent en voyage ceux qui peuvent libérer les essences dont ils ont besoin de leurs hôtes turbulents.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Cartes à collectionner",
     "source": "Jeu de cartes à collectionner",
     "sourceType": "TCG",
@@ -286,7 +494,42 @@
     "description": "Lors de l'invasion de l'Outreterre par la Légion ardente, Landro Tirauloin a proposé les plans de cette créature pour participer à l'effort de guerre. La Horde et l'Alliance ont toutes deux décliné l'offre.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "locationZone": "Vallée de Strangleronce",
+    "zone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Cartes à collectionner",
     "source": "Jeu de cartes à collectionner",
     "sourceType": "TCG",
@@ -354,7 +597,42 @@
     "description": "Les elekk domestiques sont dressés à la monte par les Draeneï. Les sauvages sont chassés pour leurs défenses d'ivoire.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3703",
+    "locationRefs": [
+      "wowhead-zone:3703"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3703",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3703",
+      "name": "Shattrath",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Shattrath",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar",
+        "Shattrath"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar > Shattrath",
+      "wowheadZoneIds": [
+        3703
+      ]
+    },
+    "locationZone": "Shattrath",
+    "zone": "Shattrath",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -390,7 +668,42 @@
     "description": "Les faucons-pérégrins servent généralement de montures aux Sin'dorei. Mais celui-ci fut déclaré inapte au service après le diagnostic de plusieurs névroses anxieuses.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3703",
+    "locationRefs": [
+      "wowhead-zone:3703"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3703",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3703",
+      "name": "Shattrath",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Shattrath",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar",
+        "Shattrath"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar > Shattrath",
+      "wowheadZoneIds": [
+        3703
+      ]
+    },
+    "locationZone": "Shattrath",
+    "zone": "Shattrath",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -426,7 +739,55 @@
     "description": "L'elekk rose est une créature timide. Il ne se montre qu'à ceux qui ont su gagner sa confiance, ou à ceux qui sont trop ivres pour lui faire du mal.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1",
+    "locationRefs": [
+      "wowhead-zone:1",
+      "wowhead-zone:14",
+      "wowhead-zone:1537"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1",
+      "name": "Dun Morogh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dun Morogh",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh",
+      "wowheadZoneIds": [
+        1
+      ]
+    },
+    "locationZone": "Dun Morogh",
+    "zone": "Dun Morogh",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -464,7 +825,49 @@
     "description": "Ce guerrier mécanique est un cadeau en vogue lors de la fête du Voile d’hiver. Piles non incluses. Munitions mortelles incluses.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1537",
+    "locationRefs": [
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1537",
+      "name": "Forgefer",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forgefer",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh",
+        "Forgefer"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Forgefer",
+      "wowheadZoneIds": [
+        1537
+      ]
+    },
+    "locationZone": "Forgefer",
+    "zone": "Forgefer",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -500,7 +903,48 @@
     "description": "Cette cucurbitacée coquine aime surgir du sol et vous coller une trouille d'enfer. Voire six trouilles d'enfer.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:12",
+    "locationRefs": [
+      "wowhead-zone:12",
+      "wowhead-zone:1497"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:12",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1497",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:12",
+      "name": "Forêt d’Elwynn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt d’Elwynn",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt d’Elwynn"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn",
+      "wowheadZoneIds": [
+        12
+      ]
+    },
+    "locationZone": "Forêt d’Elwynn",
+    "zone": "Forêt d’Elwynn",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -537,7 +981,42 @@
     "description": "Un rien maléfique mais considérablement narcoleptique. À tenir éloigné des bestioles !",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3703",
+    "locationRefs": [
+      "wowhead-zone:3703"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3703",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3703",
+      "name": "Shattrath",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Shattrath",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar",
+        "Shattrath"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar > Shattrath",
+      "wowheadZoneIds": [
+        3703
+      ]
+    },
+    "locationZone": "Shattrath",
+    "zone": "Shattrath",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -573,7 +1052,48 @@
     "description": "Les participants de la fête des Brasseurs qui racontent l'histoire de cette mystérieuse créature sont légion. Ceux qui s'en rappellent encore le lendemain matin sont plus rares.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1",
+    "locationRefs": [
+      "wowhead-zone:1",
+      "wowhead-zone:14"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1",
+      "name": "Dun Morogh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dun Morogh",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh",
+      "wowheadZoneIds": [
+        1
+      ]
+    },
+    "locationZone": "Dun Morogh",
+    "zone": "Dun Morogh",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -643,7 +1163,41 @@
     "description": "Bourbe-haleine est un crocilisque comme les autres, mais doté d'un excellent sens de l'humour.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3519",
+    "locationRefs": [
+      "wowhead-zone:3519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3519",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3519",
+      "name": "Forêt de Terokkar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt de Terokkar",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar",
+      "wowheadZoneIds": [
+        3519
+      ]
+    },
+    "locationZone": "Forêt de Terokkar",
+    "zone": "Forêt de Terokkar",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -678,7 +1232,41 @@
     "description": "La peau et la viande du crocilisque sont très recherchées par les trappeurs. Mais l'animal est féroce et dur à surprendre.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3519",
+    "locationRefs": [
+      "wowhead-zone:3519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3519",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3519",
+      "name": "Forêt de Terokkar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt de Terokkar",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar",
+      "wowheadZoneIds": [
+        3519
+      ]
+    },
+    "locationZone": "Forêt de Terokkar",
+    "zone": "Forêt de Terokkar",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -713,7 +1301,41 @@
     "description": "Après des années passées à étudier les crocilisques, le célèbre pêcheur Nat Pagle a établi que leurs bébés étaient plutôt inoffensifs.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3519",
+    "locationRefs": [
+      "wowhead-zone:3519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3519",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3519",
+      "name": "Forêt de Terokkar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt de Terokkar",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar",
+      "wowheadZoneIds": [
+        3519
+      ]
+    },
+    "locationZone": "Forêt de Terokkar",
+    "zone": "Forêt de Terokkar",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -748,7 +1370,41 @@
     "description": "Les écrevisses magiques sont le fruit d'un peu de pêche et de beaucoup de magie. Si votre ligne est merveilleuse, votre pêche pourrait être miraculeuse.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3519",
+    "locationRefs": [
+      "wowhead-zone:3519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3519",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3519",
+      "name": "Forêt de Terokkar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt de Terokkar",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar",
+      "wowheadZoneIds": [
+        3519
+      ]
+    },
+    "locationZone": "Forêt de Terokkar",
+    "zone": "Forêt de Terokkar",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -781,7 +1437,41 @@
     "description": "Les crocilisques sont des prédateurs amphibiens hexapodes des eaux côtières. Certains archéologues ont pour théorie qu'ils descendent des dimeurtrodons du cratère d'Un'Goro.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3519",
+    "locationRefs": [
+      "wowhead-zone:3519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3519",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3519",
+      "name": "Forêt de Terokkar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt de Terokkar",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar",
+      "wowheadZoneIds": [
+        3519
+      ]
+    },
+    "locationZone": "Forêt de Terokkar",
+    "zone": "Forêt de Terokkar",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -849,7 +1539,49 @@
     "description": "Ce cochon doré fait honneur à ses ancêtres en apportant bonne fortune à ses amis.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1537",
+    "locationRefs": [
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1537",
+      "name": "Forgefer",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forgefer",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh",
+        "Forgefer"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Forgefer",
+      "wowheadZoneIds": [
+        1537
+      ]
+    },
+    "locationZone": "Forgefer",
+    "zone": "Forgefer",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Promotion Blizzard",
     "source": "Promotion",
     "sourceType": "PROMOTION",
@@ -951,7 +1683,49 @@
     "description": "Je suis la Justice incarnée !",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1519",
+    "locationRefs": [
+      "wowhead-zone:1519",
+      "wowhead-zone:1497"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1497",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1519",
+      "name": "Hurlevent",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hurlevent",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt d’Elwynn",
+        "Hurlevent"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn > Hurlevent",
+      "wowheadZoneIds": [
+        1519
+      ]
+    },
+    "locationZone": "Hurlevent",
+    "zone": "Hurlevent",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Promotion Blizzard",
     "source": "Promotion",
     "sourceType": "PROMOTION",
@@ -1051,7 +1825,41 @@
     "description": "L'énergie magique émise lors de la transformation d'Aile-du-ciel en sa véritable forme arakkoa a libéré cette pauvre créature, un petit oiseau emprisonné par Luanga pour alimenter son ignoble malédiction.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3519",
+    "locationRefs": [
+      "wowhead-zone:3519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3519",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3519",
+      "name": "Forêt de Terokkar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt de Terokkar",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar",
+      "wowheadZoneIds": [
+        3519
+      ]
+    },
+    "locationZone": "Forêt de Terokkar",
+    "zone": "Forêt de Terokkar",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -1120,7 +1928,42 @@
     "description": "Les anciens chamans ont lancé un avertissement : des feux follets de Ragnaros, fidèles serviteurs du seigneur du Feu, ont envahi le front du Magma. Nous vous conseillons la plus grande vigilance.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5733",
+    "locationRefs": [
+      "wowhead-zone:5733"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5733",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5733",
+      "name": "Front du Magma",
+      "kind": "subzone",
+      "subzoneName": "Front du Magma",
+      "regionName": "Mont Hyjal",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mont Hyjal",
+        "Front du Magma"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mont Hyjal > Front du Magma",
+      "wowheadZoneIds": [
+        5733
+      ]
+    },
+    "locationZone": "Mont Hyjal",
+    "zone": "Mont Hyjal",
+    "subzone": "Front du Magma",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1155,7 +1998,41 @@
     "description": "Venus de la forêt de Terokkar, les petits de raie du Néant naissent pendant la saison des pluies. Des centaines d'individus qui constituent une couvée, seuls quelques-uns survivent jusqu'à l'âge adulte.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3519",
+    "locationRefs": [
+      "wowhead-zone:3519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3519",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3519",
+      "name": "Forêt de Terokkar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt de Terokkar",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Forêt de Terokkar"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Forêt de Terokkar",
+      "wowheadZoneIds": [
+        3519
+      ]
+    },
+    "locationZone": "Forêt de Terokkar",
+    "zone": "Forêt de Terokkar",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1188,7 +2065,42 @@
     "description": "Un faucon-dragon d'une espèce féroce, qu'on aperçoit souvent piquer du ciel sur sa proie.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3430",
+    "locationRefs": [
+      "wowhead-zone:3430"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3430",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3430",
+      "name": "Bois des Chants éternels",
+      "kind": "subzone",
+      "subzoneName": "Bois des Chants éternels",
+      "regionName": "Bois des Chants éternels (The Burning Crusade)",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Bois des Chants éternels (The Burning Crusade)",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels (The Burning Crusade) > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        3430
+      ]
+    },
+    "locationZone": "Bois des Chants éternels (The Burning Crusade)",
+    "zone": "Bois des Chants éternels (The Burning Crusade)",
+    "subzone": "Bois des Chants éternels",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1224,7 +2136,41 @@
     "description": "Élevé par les rares marchands encore actifs à Raz-de-Néant.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3523",
+    "locationRefs": [
+      "wowhead-zone:3523"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3523",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3523",
+      "name": "Raz-de-Néant",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Raz-de-Néant",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Raz-de-Néant"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Raz-de-Néant",
+      "wowheadZoneIds": [
+        3523
+      ]
+    },
+    "locationZone": "Raz-de-Néant",
+    "zone": "Raz-de-Néant",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1260,7 +2206,42 @@
     "description": "Naguère coqueluche des éleveurs de faucons-dragons de Lune-d’Argent. Facilement repérable pour ses prédateurs la nuit, ce qui stimule ses réflexes dès son plus jeune âge.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3430",
+    "locationRefs": [
+      "wowhead-zone:3430"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3430",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3430",
+      "name": "Bois des Chants éternels",
+      "kind": "subzone",
+      "subzoneName": "Bois des Chants éternels",
+      "regionName": "Bois des Chants éternels (The Burning Crusade)",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Bois des Chants éternels (The Burning Crusade)",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels (The Burning Crusade) > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        3430
+      ]
+    },
+    "locationZone": "Bois des Chants éternels (The Burning Crusade)",
+    "zone": "Bois des Chants éternels (The Burning Crusade)",
+    "subzone": "Bois des Chants éternels",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1296,7 +2277,42 @@
     "description": "Ennemi juré des faucons-dragons argentés. S'entend relativement bien avec les faucons-dragons dorés.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3430",
+    "locationRefs": [
+      "wowhead-zone:3430"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3430",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3430",
+      "name": "Bois des Chants éternels",
+      "kind": "subzone",
+      "subzoneName": "Bois des Chants éternels",
+      "regionName": "Bois des Chants éternels (The Burning Crusade)",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Bois des Chants éternels (The Burning Crusade)",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels (The Burning Crusade) > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        3430
+      ]
+    },
+    "locationZone": "Bois des Chants éternels (The Burning Crusade)",
+    "zone": "Bois des Chants éternels (The Burning Crusade)",
+    "subzone": "Bois des Chants éternels",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1332,7 +2348,41 @@
     "description": "Ce lapin est la chose la plus adorable que ses adversaires ont jamais vu. Et la dernière, aussi.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3523",
+    "locationRefs": [
+      "wowhead-zone:3523"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3523",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3523",
+      "name": "Raz-de-Néant",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Raz-de-Néant",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Raz-de-Néant"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Raz-de-Néant",
+      "wowheadZoneIds": [
+        3523
+      ]
+    },
+    "locationZone": "Raz-de-Néant",
+    "zone": "Raz-de-Néant",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1367,7 +2417,41 @@
     "description": "Les sporoptères sauvages sont des créatures féroces. Mais, domestiqués jeunes, ils peuvent devenir des compagnons fidèles.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3521",
+    "locationRefs": [
+      "wowhead-zone:3521"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3521",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3521",
+      "name": "Marécage de Zangar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Marécage de Zangar",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Marécage de Zangar"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Marécage de Zangar",
+      "wowheadZoneIds": [
+        3521
+      ]
+    },
+    "locationZone": "Marécage de Zangar",
+    "zone": "Marécage de Zangar",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1403,7 +2487,42 @@
     "description": "Aime par-dessus tout voler au cœur des nuits embrumées, qui sont fréquentes sur l'île de Brume-Azur.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3557",
+    "locationRefs": [
+      "wowhead-zone:3557"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3557",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3557",
+      "name": "L’Exodar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "L’Exodar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Île de Brume-Azur",
+        "L’Exodar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Île de Brume-Azur > L’Exodar",
+      "wowheadZoneIds": [
+        3557
+      ]
+    },
+    "locationZone": "L’Exodar",
+    "zone": "L’Exodar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1440,7 +2559,42 @@
     "description": "Cet insecte délicat habite l'île de Brume-Azur, et on raconte qu'il possède des propriétés guérisseuses.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3557",
+    "locationRefs": [
+      "wowhead-zone:3557"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3557",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3557",
+      "name": "L’Exodar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "L’Exodar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Île de Brume-Azur",
+        "L’Exodar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Île de Brume-Azur > L’Exodar",
+      "wowheadZoneIds": [
+        3557
+      ]
+    },
+    "locationZone": "L’Exodar",
+    "zone": "L’Exodar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1476,7 +2630,42 @@
     "description": "Aime par-dessus tout voler au cœur des orages, qui sont fréquents sur l'île de Brume-Azur.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3557",
+    "locationRefs": [
+      "wowhead-zone:3557"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3557",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3557",
+      "name": "L’Exodar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "L’Exodar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Île de Brume-Azur",
+        "L’Exodar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Île de Brume-Azur > L’Exodar",
+      "wowheadZoneIds": [
+        3557
+      ]
+    },
+    "locationZone": "L’Exodar",
+    "zone": "L’Exodar",
+    "subzone": "",
+    "region": "Kalimdor",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1513,7 +2702,41 @@
     "description": "Produit de l'exposition d'insectes à des énergies magiques sauvages, cette créature aux couleurs surprenantes est apparue après l'introduction de phalènes dans les écodômes de Raz-de-Néant.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3523",
+    "locationRefs": [
+      "wowhead-zone:3523"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3523",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3523",
+      "name": "Raz-de-Néant",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Raz-de-Néant",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Raz-de-Néant"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Raz-de-Néant",
+      "wowheadZoneIds": [
+        3523
+      ]
+    },
+    "locationZone": "Raz-de-Néant",
+    "zone": "Raz-de-Néant",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -1549,7 +2772,41 @@
     "description": "Rashaad l'éthéré a commencé l'élevage de ces énigmatiques créatures après avoir eu vent de leur capacité à se nourrir d'énergie arcanique.",
     "category": "pets",
     "expansion": "tbc",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:3523",
+    "locationRefs": [
+      "wowhead-zone:3523"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3523",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3523",
+      "name": "Raz-de-Néant",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Raz-de-Néant",
+      "continentName": "Outreterre",
+      "worldName": "Outreterre",
+      "path": [
+        "Outreterre",
+        "Outreterre",
+        "Raz-de-Néant"
+      ],
+      "pathLabel": "Outreterre > Outreterre > Raz-de-Néant",
+      "wowheadZoneIds": [
+        3523
+      ]
+    },
+    "locationZone": "Raz-de-Néant",
+    "zone": "Raz-de-Néant",
+    "subzone": "",
+    "region": "Outreterre",
+    "world": "Outreterre",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",

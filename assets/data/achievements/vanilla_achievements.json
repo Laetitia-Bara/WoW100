@@ -1,5 +1,313 @@
 [
   {
+    "id": "achievement_18723",
+    "name": "Vous voilà spécialiste !",
+    "description": "Vous spécialiser dans la Maîtrise des potions, la Maîtrise des élixirs ou la Maîtrise des transmutations de l’ère classique.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Alchimie",
+    "instance": "Alchimie",
+    "source": "Vous spécialiser dans la Maîtrise des potions, la Maîtrise des élixirs ou la Maîtrise des transmutations de l’ère classique.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18723,
+    "wowheadAchievementId": 18723,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18723",
+    "blizzardCategoryId": 15489,
+    "blizzardCategoryName": "Alchimie",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61034",
+    "name": "Dressage de mascottes aériennes des royaumes de l’Est",
+    "description": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Aérien de niveau 25.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Aérien de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61034,
+    "wowheadAchievementId": 61034,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61034",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61029",
+    "name": "Dressage de mascottes aquatiques des royaumes de l’Est",
+    "description": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Aquatique de niveau 25.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Aquatique de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61029,
+    "wowheadAchievementId": 61029,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61029",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61030",
+    "name": "Dressage de mascottes bestiales des royaumes de l’Est",
+    "description": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Bête de niveau 25.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Bête de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61030,
+    "wowheadAchievementId": 61030,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61030",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61031",
+    "name": "Dressage de mascottes bestioles des royaumes de l’Est",
+    "description": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Bestiole de niveau 25.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Bestiole de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61031,
+    "wowheadAchievementId": 61031,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61031",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61032",
+    "name": "Dressage de mascottes draconiennes des royaumes de l’Est",
+    "description": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Draconien de niveau 25.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Draconien de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61032,
+    "wowheadAchievementId": 61032,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61032",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61033",
+    "name": "Dressage de mascottes élémentaires des royaumes de l’Est",
+    "description": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Élémentaire de niveau 25.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Élémentaire de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61033,
+    "wowheadAchievementId": 61033,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61033",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61040",
+    "name": "Dressage de mascottes familiales des royaumes de l’Est",
+    "description": "Accomplir les hauts faits listés ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Accomplir les hauts faits listés ci-dessous.",
+    "points": 10,
+    "rewardDescription": "Mascotte : Byrn",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61040,
+    "wowheadAchievementId": 61040,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61040",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": {
+      "wowheadName": "Family Battler of Eastern Kingdoms",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=61040",
+      "category": 15119,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "Pet: Byrn",
+      "popularity": 103
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61035",
+    "name": "Dressage de mascottes humanoïdes des royaumes de l’Est",
+    "description": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Humanoïde de niveau 25.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Humanoïde de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61035,
+    "wowheadAchievementId": 61035,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61035",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61036",
+    "name": "Dressage de mascottes magiques des royaumes de l’Est",
+    "description": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Magique de niveau 25.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Magique de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61036,
+    "wowheadAchievementId": 61036,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61036",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61037",
+    "name": "Dressage de mascottes mécaniques des royaumes de l’Est",
+    "description": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Machine de niveau 25.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Machine de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61037,
+    "wowheadAchievementId": 61037,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61037",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_61028",
+    "name": "Dressage de mascottes mortes-vivantes des royaumes de l’Est",
+    "description": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Mort-vivant de niveau 25.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre les dresseurs et dresseuses des royaumes de l’Est suivants avec une équipe uniquement composée de mascottes de type Mort-vivant de niveau 25.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 61028,
+    "wowheadAchievementId": 61028,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=61028",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_6603",
+    "name": "Royaumes de l’Est domptés",
+    "description": "Vaincre tous les dompteurs de mascottes des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bataille",
+    "instance": "Bataille",
+    "source": "Vaincre tous les dompteurs de mascottes des royaumes de l’Est.",
+    "points": 5,
+    "rewardDescription": "Déblocage : quêtes journalières de combat de mascottes des royaumes de l’Est",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 6603,
+    "wowheadAchievementId": 6603,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=6603",
+    "blizzardCategoryId": 15119,
+    "blizzardCategoryName": "Bataille",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
     "id": "achievement_643",
     "name": "Bas du pic Rochenoire",
     "description": "Vaincre le seigneur Wyrmthalak.",
@@ -359,8 +667,38 @@
     "description": "Vaincre Lardeur.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Classique",
+    "zone": "Hurlevent",
     "primaryLocationRef": "wowhead-zone:1519",
+    "locationRefs": [
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1519",
+      "name": "Hurlevent",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hurlevent",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt d’Elwynn",
+        "Hurlevent"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn > Hurlevent",
+      "wowheadZoneIds": [
+        1519
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Hurlevent",
@@ -409,8 +747,38 @@
     "description": "Vaincre l'empereur Dagran Thaurissan.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Classique",
+    "zone": "Steppes Ardentes",
     "primaryLocationRef": "wowhead-zone:10028",
+    "locationRefs": [
+      "wowhead-zone:10028"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10028",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10028",
+      "name": "Profondeurs de Rochenoire",
+      "kind": "subzone",
+      "subzoneName": "Profondeurs de Rochenoire",
+      "regionName": "Steppes Ardentes",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Steppes Ardentes",
+        "Profondeurs de Rochenoire"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Steppes Ardentes > Profondeurs de Rochenoire",
+      "wowheadZoneIds": [
+        10028
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Steppes Ardentes",
@@ -575,7 +943,42 @@
     "description": "Triompher des pièges maléfiques qui hantent Stratholme.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Classique",
+    "zone": "Maleterres de l’Est",
+    "primaryLocationRef": "wowhead-zone:2017",
+    "locationRefs": [
+      "wowhead-zone:2017"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:2017",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:2017",
+      "name": "Stratholme",
+      "kind": "subzone",
+      "subzoneName": "Stratholme",
+      "regionName": "Maleterres de l’Est",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Est",
+        "Stratholme"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est > Stratholme",
+      "wowheadZoneIds": [
+        2017
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Maleterres de l’Est",
+    "subzone": "Stratholme",
     "instance": "Classique",
     "source": "Triompher des pièges maléfiques qui hantent Stratholme.",
     "points": 10,
@@ -685,6 +1088,277 @@
     "mamytwink": null
   },
   {
+    "id": "achievement_6613",
+    "name": "Dompteur des royaumes de l’Est",
+    "description": "Attraper une mascotte de combat dans chacune des régions des royaumes de l’Est listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Collections",
+    "instance": "Collections",
+    "source": "Attraper une mascotte de combat dans chacune des régions des royaumes de l’Est listées ci-dessous.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 6613,
+    "wowheadAchievementId": 6613,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=6613",
+    "blizzardCategoryId": 15118,
+    "blizzardCategoryName": "Collections",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_7934",
+    "name": "Raid de mascottes",
+    "description": "Collectionner toutes les mascottes de combat des raids classiques listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Collections",
+    "instance": "Collections",
+    "source": "Collectionner toutes les mascottes de combat des raids classiques listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "Mascotte : M. Bigglesworth",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 7934,
+    "wowheadAchievementId": 7934,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=7934",
+    "blizzardCategoryId": 15118,
+    "blizzardCategoryName": "Collections",
+    "wowhead": {
+      "wowheadName": "Raiding with Leashes",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=7934",
+      "category": 15118,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "Pet: Mr. Bigglesworth",
+      "popularity": 444
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_6586",
+    "name": "Safari dans les royaumes de l’Est",
+    "description": "Attraper toutes les mascottes de combat des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Collections",
+    "instance": "Collections",
+    "source": "Attraper toutes les mascottes de combat des royaumes de l’Est.",
+    "points": 5,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 6586,
+    "wowheadAchievementId": 6586,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=6586",
+    "blizzardCategoryId": 15118,
+    "blizzardCategoryName": "Collections",
+    "wowhead": {
+      "wowheadName": "Eastern Kingdoms Safari",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=6586",
+      "category": 15118,
+      "categoryName": "",
+      "expansion": null,
+      "points": 5,
+      "reward": "",
+      "popularity": 111
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_123",
+    "name": "Chef classique",
+    "description": "Obtenir 300 points de compétence dans la catégorie « Classique » en cuisine.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Cuisine",
+    "instance": "Cuisine",
+    "source": "Obtenir 300 points de compétence dans la catégorie « Classique » en cuisine.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 123,
+    "wowheadAchievementId": 123,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=123",
+    "blizzardCategoryId": 170,
+    "blizzardCategoryName": "Cuisine",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_121",
+    "name": "Compagnon cuisinier",
+    "description": "Obtenir 150 points de compétence dans la catégorie « Classique » en cuisine.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Cuisine",
+    "instance": "Cuisine",
+    "source": "Obtenir 150 points de compétence dans la catégorie « Classique » en cuisine.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 121,
+    "wowheadAchievementId": 121,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=121",
+    "blizzardCategoryId": 170,
+    "blizzardCategoryName": "Cuisine",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_122",
+    "name": "Expert cuisinier",
+    "description": "Obtenir 225 points de compétence dans la catégorie « Classique » en cuisine.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Cuisine",
+    "instance": "Cuisine",
+    "source": "Obtenir 225 points de compétence dans la catégorie « Classique » en cuisine.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 122,
+    "wowheadAchievementId": 122,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=122",
+    "blizzardCategoryId": 170,
+    "blizzardCategoryName": "Cuisine",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_1307",
+    "name": "Sommet du pic Rochenoire (classique)",
+    "description": "Vaincre le général Drakkisath.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Donjons",
+    "instance": "Donjons",
+    "source": "Vaincre le général Drakkisath.",
+    "points": 0,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 1307,
+    "wowheadAchievementId": 1307,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=1307",
+    "blizzardCategoryId": 15277,
+    "blizzardCategoryName": "Donjons",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_1285",
+    "name": "Écumeur des raids classiques",
+    "description": "Accomplir les hauts faits dans les raids classiques listés ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Donjons et raids",
+    "instance": "Donjons et raids",
+    "source": "Accomplir les hauts faits dans les raids classiques listés ci-dessous.",
+    "points": 20,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": true,
+    "weeklyLockout": false,
+    "blizzardId": 1285,
+    "wowheadAchievementId": 1285,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=1285",
+    "blizzardCategoryId": 168,
+    "blizzardCategoryName": "Donjons et raids",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_5011",
+    "name": "Écumeur des raids classiques en guilde",
+    "description": "Accomplir les hauts faits dans les raids classiques listés ci-dessous en groupe de guilde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Donjons et raids",
+    "instance": "Donjons et raids",
+    "source": "Accomplir les hauts faits dans les raids classiques listés ci-dessous en groupe de guilde.",
+    "points": 20,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": true,
+    "weeklyLockout": false,
+    "blizzardId": 5011,
+    "wowheadAchievementId": 5011,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=5011",
+    "blizzardCategoryId": 15079,
+    "blizzardCategoryName": "Donjons et raids",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_1283",
+    "name": "Maître des vieux donjons",
+    "description": "Accomplir les hauts faits dans les donjons classiques listés ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Donjons et raids",
+    "instance": "Donjons et raids",
+    "source": "Accomplir les hauts faits dans les donjons classiques listés ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": true,
+    "weeklyLockout": false,
+    "blizzardId": 1283,
+    "wowheadAchievementId": 1283,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=1283",
+    "blizzardCategoryId": 168,
+    "blizzardCategoryName": "Donjons et raids",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4950",
+    "name": "Maître des vieux donjons en guilde",
+    "description": "Accomplir les hauts faits dans les donjons classiques listés ci-dessous en groupe de guilde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Donjons et raids",
+    "instance": "Donjons et raids",
+    "source": "Accomplir les hauts faits dans les donjons classiques listés ci-dessous en groupe de guilde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": true,
+    "weeklyLockout": false,
+    "blizzardId": 4950,
+    "wowheadAchievementId": 4950,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4950",
+    "blizzardCategoryId": 15079,
+    "blizzardCategoryName": "Donjons et raids",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
     "id": "achievement_43",
     "name": "Exploration de Kalimdor",
     "description": "Explorer les régions de Kalimdor.",
@@ -708,13 +1382,88 @@
     "mamytwink": null
   },
   {
+    "id": "achievement_42",
+    "name": "Exploration des royaumes de l’Est",
+    "description": "Explorer les régions des royaumes de l'Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Exploration",
+    "instance": "Exploration",
+    "source": "Explorer les régions des royaumes de l'Est.",
+    "points": 25,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 42,
+    "wowheadAchievementId": 42,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=42",
+    "blizzardCategoryId": 97,
+    "blizzardCategoryName": "Exploration",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_912",
+    "name": "Les Anciens des royaumes de l'Est",
+    "description": "Honorer les Anciens situés dans les royaumes de l'Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Fête lunaire",
+    "instance": "Fête lunaire",
+    "source": "Honorer les Anciens situés dans les royaumes de l'Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 912,
+    "wowheadAchievementId": 912,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=912",
+    "blizzardCategoryId": 160,
+    "blizzardCategoryName": "Fête lunaire",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
     "id": "achievement_5454",
     "name": "Azshara express",
     "description": "Parcourir toute la ligne du fusorail en Azshara.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Azshara",
     "primaryLocationRef": "wowhead-zone:16",
+    "locationRefs": [
+      "wowhead-zone:16"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16",
+      "name": "Azshara",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azshara",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Azshara"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Azshara",
+      "wowheadZoneIds": [
+        16
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Azshara",
@@ -740,8 +1489,37 @@
     "description": "Obtenir l'e'ko des créatures listées ci-dessous au Berceau-de-l'Hiver.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Berceau-de-l’Hiver",
     "primaryLocationRef": "wowhead-zone:618",
+    "locationRefs": [
+      "wowhead-zone:618"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:618",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:618",
+      "name": "Berceau-de-l’Hiver",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Berceau-de-l’Hiver",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Berceau-de-l’Hiver"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Berceau-de-l’Hiver",
+      "wowheadZoneIds": [
+        618
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Berceau-de-l’Hiver",
@@ -767,8 +1545,37 @@
     "description": "Explorer Azshara et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Azshara",
     "primaryLocationRef": "wowhead-zone:16",
+    "locationRefs": [
+      "wowhead-zone:16"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16",
+      "name": "Azshara",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azshara",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Azshara"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Azshara",
+      "wowheadZoneIds": [
+        16
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Azshara",
@@ -794,8 +1601,37 @@
     "description": "Explorer Orneval et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Orneval",
     "primaryLocationRef": "wowhead-zone:331",
+    "locationRefs": [
+      "wowhead-zone:331"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:331",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:331",
+      "name": "Orneval",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orneval",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Orneval"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Orneval",
+      "wowheadZoneIds": [
+        331
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Orneval",
@@ -821,8 +1657,37 @@
     "description": "Explorer Désolace et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Désolace",
     "primaryLocationRef": "wowhead-zone:405",
+    "locationRefs": [
+      "wowhead-zone:405"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:405",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:405",
+      "name": "Désolace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Désolace",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Désolace"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Désolace",
+      "wowheadZoneIds": [
+        405
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Désolace",
@@ -848,8 +1713,37 @@
     "description": "Explorer Durotar et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Durotar",
     "primaryLocationRef": "wowhead-zone:14",
+    "locationRefs": [
+      "wowhead-zone:14"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14",
+      "name": "Durotar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Durotar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar",
+      "wowheadZoneIds": [
+        14
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Durotar",
@@ -875,8 +1769,38 @@
     "description": "Explorer Féralas et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Féralas",
     "primaryLocationRef": "wowhead-zone:357",
+    "locationRefs": [
+      "wowhead-zone:357"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:357",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:357",
+      "name": "Féralas",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Féralas",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Féralas"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Féralas",
+      "wowheadZoneIds": [
+        357,
+        7634
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Féralas",
@@ -902,8 +1826,37 @@
     "description": "Explorer Gangrebois et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Gangrebois",
     "primaryLocationRef": "wowhead-zone:361",
+    "locationRefs": [
+      "wowhead-zone:361"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:361",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:361",
+      "name": "Gangrebois",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gangrebois",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Gangrebois"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Gangrebois",
+      "wowheadZoneIds": [
+        361
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Gangrebois",
@@ -929,8 +1882,37 @@
     "description": "Explorer l'île de Brume-Azur et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Île de Brume-Azur",
     "primaryLocationRef": "wowhead-zone:3524",
+    "locationRefs": [
+      "wowhead-zone:3524"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3524",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3524",
+      "name": "Île de Brume-Azur",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Brume-Azur",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Île de Brume-Azur"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Île de Brume-Azur",
+      "wowheadZoneIds": [
+        3524
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Île de Brume-Azur",
@@ -956,8 +1938,37 @@
     "description": "Explorer l'île de Brume-Sang et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Île de Brume-Sang",
     "primaryLocationRef": "wowhead-zone:3525",
+    "locationRefs": [
+      "wowhead-zone:3525"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3525",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3525",
+      "name": "Île de Brume-Sang",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Brume-Sang",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Île de Brume-Sang"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Île de Brume-Sang",
+      "wowheadZoneIds": [
+        3525
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Île de Brume-Sang",
@@ -992,8 +2003,37 @@
     "description": "Explorer Mulgore et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Mulgore",
     "primaryLocationRef": "wowhead-zone:215",
+    "locationRefs": [
+      "wowhead-zone:215"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:215",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:215",
+      "name": "Mulgore",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Mulgore",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mulgore"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mulgore",
+      "wowheadZoneIds": [
+        215
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mulgore",
@@ -1019,8 +2059,37 @@
     "description": "Explorer Reflet-de-Lune et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Reflet-de-Lune",
     "primaryLocationRef": "wowhead-zone:493",
+    "locationRefs": [
+      "wowhead-zone:493"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:493",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:493",
+      "name": "Reflet-de-Lune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Reflet-de-Lune",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Reflet-de-Lune"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Reflet-de-Lune",
+      "wowheadZoneIds": [
+        493
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Reflet-de-Lune",
@@ -1046,8 +2115,37 @@
     "description": "Explorer Silithus et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Silithus",
     "primaryLocationRef": "wowhead-zone:1377",
+    "locationRefs": [
+      "wowhead-zone:1377"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1377",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1377",
+      "name": "Silithus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Silithus",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Silithus"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Silithus",
+      "wowheadZoneIds": [
+        1377
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Silithus",
@@ -1073,8 +2171,37 @@
     "description": "Explorer Sombrivage et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Sombrivage",
     "primaryLocationRef": "wowhead-zone:148",
+    "locationRefs": [
+      "wowhead-zone:148"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:148",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:148",
+      "name": "Sombrivage",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sombrivage",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Sombrivage"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Sombrivage",
+      "wowheadZoneIds": [
+        148
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Sombrivage",
@@ -1100,8 +2227,37 @@
     "description": "Explorer Tanaris et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Tanaris",
     "primaryLocationRef": "wowhead-zone:440",
+    "locationRefs": [
+      "wowhead-zone:440"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:440",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:440",
+      "name": "Tanaris",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tanaris",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Tanaris"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Tanaris",
+      "wowheadZoneIds": [
+        440
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Tanaris",
@@ -1127,8 +2283,37 @@
     "description": "Explorer Teldrassil et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Teldrassil",
     "primaryLocationRef": "wowhead-zone:141",
+    "locationRefs": [
+      "wowhead-zone:141"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:141",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:141",
+      "name": "Teldrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Teldrassil",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Teldrassil"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Teldrassil",
+      "wowheadZoneIds": [
+        141
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Teldrassil",
@@ -1154,8 +2339,37 @@
     "description": "Explorer les Mille pointes et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Mille pointes",
     "primaryLocationRef": "wowhead-zone:400",
+    "locationRefs": [
+      "wowhead-zone:400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:400",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:400",
+      "name": "Mille pointes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Mille pointes",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mille pointes"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mille pointes",
+      "wowheadZoneIds": [
+        400
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mille pointes",
@@ -1181,8 +2395,37 @@
     "description": "Explorer les Serres-Rocheuses et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Les Serres-Rocheuses",
     "primaryLocationRef": "wowhead-zone:406",
+    "locationRefs": [
+      "wowhead-zone:406"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:406",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:406",
+      "name": "Les Serres-Rocheuses",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les Serres-Rocheuses",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Les Serres-Rocheuses"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Les Serres-Rocheuses",
+      "wowheadZoneIds": [
+        406
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Les Serres-Rocheuses",
@@ -1208,8 +2451,37 @@
     "description": "Explorer les Tarides et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Tarides du Nord",
     "primaryLocationRef": "wowhead-zone:17",
+    "locationRefs": [
+      "wowhead-zone:17"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:17",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:17",
+      "name": "Tarides du Nord",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tarides du Nord",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Tarides du Nord"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Tarides du Nord",
+      "wowheadZoneIds": [
+        17
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Tarides du Nord",
@@ -1235,8 +2507,37 @@
     "description": "Explorer les Tarides et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Tarides du Sud",
     "primaryLocationRef": "wowhead-zone:4709",
+    "locationRefs": [
+      "wowhead-zone:4709"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4709",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4709",
+      "name": "Tarides du Sud",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tarides du Sud",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Tarides du Sud"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Tarides du Sud",
+      "wowheadZoneIds": [
+        4709
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Tarides du Sud",
@@ -1262,8 +2563,37 @@
     "description": "Explorer le Berceau-de-l'Hiver et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Berceau-de-l’Hiver",
     "primaryLocationRef": "wowhead-zone:618",
+    "locationRefs": [
+      "wowhead-zone:618"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:618",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:618",
+      "name": "Berceau-de-l’Hiver",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Berceau-de-l’Hiver",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Berceau-de-l’Hiver"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Berceau-de-l’Hiver",
+      "wowheadZoneIds": [
+        618
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Berceau-de-l’Hiver",
@@ -1289,8 +2619,37 @@
     "description": "Explorer le cratère d'Un'Goro et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Cratère d’Un’Goro",
     "primaryLocationRef": "wowhead-zone:490",
+    "locationRefs": [
+      "wowhead-zone:490"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:490",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:490",
+      "name": "Cratère d’Un’Goro",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Cratère d’Un’Goro",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Cratère d’Un’Goro"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Cratère d’Un’Goro",
+      "wowheadZoneIds": [
+        490
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Cratère d’Un’Goro",
@@ -1325,8 +2684,37 @@
     "description": "Explorer le marécage d'Âprefange et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Marécage d’Âprefange",
     "primaryLocationRef": "wowhead-zone:15",
+    "locationRefs": [
+      "wowhead-zone:15"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15",
+      "name": "Marécage d’Âprefange",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Marécage d’Âprefange",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Marécage d’Âprefange"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Marécage d’Âprefange",
+      "wowheadZoneIds": [
+        15
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Marécage d’Âprefange",
@@ -1352,8 +2740,37 @@
     "description": "Lors de l'épreuve de l'Ombre de l'archimage Xylem en Azshara, piéger 20 Âmes éplorées sans subir de dégâts.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Azshara",
     "primaryLocationRef": "wowhead-zone:16",
+    "locationRefs": [
+      "wowhead-zone:16"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16",
+      "name": "Azshara",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azshara",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Azshara"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Azshara",
+      "wowheadZoneIds": [
+        16
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Azshara",
@@ -1379,8 +2796,37 @@
     "description": "Lors de l'Épreuve du Feu de l'archimage Xylem en Azshara, accumuler 10 charges de Danse de feu sans subir de dégâts.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Azshara",
     "primaryLocationRef": "wowhead-zone:16",
+    "locationRefs": [
+      "wowhead-zone:16"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16",
+      "name": "Azshara",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azshara",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Azshara"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Azshara",
+      "wowheadZoneIds": [
+        16
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Azshara",
@@ -1406,8 +2852,37 @@
     "description": "Lors de l'épreuve du Givre de l'archimage Xylem en Azshara, accumuler 20 charges d'Essence de glace sans subir de dégâts.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Azshara",
     "primaryLocationRef": "wowhead-zone:16",
+    "locationRefs": [
+      "wowhead-zone:16"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16",
+      "name": "Azshara",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azshara",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Azshara"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Azshara",
+      "wowheadZoneIds": [
+        16
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Azshara",
@@ -1474,8 +2949,37 @@
     "description": "Achever les suites de quêtes d’Azshara listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Azshara",
     "primaryLocationRef": "wowhead-zone:16",
+    "locationRefs": [
+      "wowhead-zone:16"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16",
+      "name": "Azshara",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azshara",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Azshara"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Azshara",
+      "wowheadZoneIds": [
+        16
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Azshara",
@@ -1501,8 +3005,37 @@
     "description": "Achever les suites de quêtes d’Orneval listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Orneval",
     "primaryLocationRef": "wowhead-zone:331",
+    "locationRefs": [
+      "wowhead-zone:331"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:331",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:331",
+      "name": "Orneval",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orneval",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Orneval"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Orneval",
+      "wowheadZoneIds": [
+        331
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Orneval",
@@ -1528,8 +3061,37 @@
     "description": "Achever les suites de quêtes d’Orneval listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Orneval",
     "primaryLocationRef": "wowhead-zone:331",
+    "locationRefs": [
+      "wowhead-zone:331"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:331",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:331",
+      "name": "Orneval",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orneval",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Orneval"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Orneval",
+      "wowheadZoneIds": [
+        331
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Orneval",
@@ -1564,8 +3126,37 @@
     "description": "Achever les suites de quêtes de l’île de Brume-Sang listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Île de Brume-Sang",
     "primaryLocationRef": "wowhead-zone:3525",
+    "locationRefs": [
+      "wowhead-zone:3525"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3525",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3525",
+      "name": "Île de Brume-Sang",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Brume-Sang",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Île de Brume-Sang"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Île de Brume-Sang",
+      "wowheadZoneIds": [
+        3525
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Île de Brume-Sang",
@@ -1591,8 +3182,37 @@
     "description": "Achever les suites de quêtes de Désolace listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Désolace",
     "primaryLocationRef": "wowhead-zone:405",
+    "locationRefs": [
+      "wowhead-zone:405"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:405",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:405",
+      "name": "Désolace",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Désolace",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Désolace"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Désolace",
+      "wowheadZoneIds": [
+        405
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Désolace",
@@ -1627,8 +3247,38 @@
     "description": "Achever les suites de quêtes de Féralas listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Féralas",
     "primaryLocationRef": "wowhead-zone:357",
+    "locationRefs": [
+      "wowhead-zone:357"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:357",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:357",
+      "name": "Féralas",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Féralas",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Féralas"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Féralas",
+      "wowheadZoneIds": [
+        357,
+        7634
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Féralas",
@@ -1654,8 +3304,38 @@
     "description": "Achever les suites de quêtes de Féralas listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Féralas",
     "primaryLocationRef": "wowhead-zone:357",
+    "locationRefs": [
+      "wowhead-zone:357"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:357",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:357",
+      "name": "Féralas",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Féralas",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Féralas"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Féralas",
+      "wowheadZoneIds": [
+        357,
+        7634
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Féralas",
@@ -1681,8 +3361,37 @@
     "description": "Achever les suites de quêtes de Gangrebois listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Gangrebois",
     "primaryLocationRef": "wowhead-zone:361",
+    "locationRefs": [
+      "wowhead-zone:361"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:361",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:361",
+      "name": "Gangrebois",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gangrebois",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Gangrebois"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Gangrebois",
+      "wowheadZoneIds": [
+        361
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Gangrebois",
@@ -1708,8 +3417,37 @@
     "description": "Achever les suites de quêtes de Silithus listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Silithus",
     "primaryLocationRef": "wowhead-zone:1377",
+    "locationRefs": [
+      "wowhead-zone:1377"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1377",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1377",
+      "name": "Silithus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Silithus",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Silithus"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Silithus",
+      "wowheadZoneIds": [
+        1377
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Silithus",
@@ -1735,8 +3473,37 @@
     "description": "Achever les suites de quêtes de Sombrivage listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Sombrivage",
     "primaryLocationRef": "wowhead-zone:148",
+    "locationRefs": [
+      "wowhead-zone:148"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:148",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:148",
+      "name": "Sombrivage",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sombrivage",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Sombrivage"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Sombrivage",
+      "wowheadZoneIds": [
+        148
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Sombrivage",
@@ -1762,8 +3529,37 @@
     "description": "Achever les suites de quêtes de Tanaris listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Tanaris",
     "primaryLocationRef": "wowhead-zone:440",
+    "locationRefs": [
+      "wowhead-zone:440"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:440",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:440",
+      "name": "Tanaris",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tanaris",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Tanaris"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Tanaris",
+      "wowheadZoneIds": [
+        440
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Tanaris",
@@ -1789,8 +3585,37 @@
     "description": "Achever les suites de quêtes des Mille pointes listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Mille pointes",
     "primaryLocationRef": "wowhead-zone:400",
+    "locationRefs": [
+      "wowhead-zone:400"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:400",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:400",
+      "name": "Mille pointes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Mille pointes",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Mille pointes"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Mille pointes",
+      "wowheadZoneIds": [
+        400
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Mille pointes",
@@ -1816,7 +3641,40 @@
     "description": "Achever les suites de quêtes des Serres-Rocheuses listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Les Serres-Rocheuses",
+    "primaryLocationRef": "wowhead-zone:406",
+    "locationRefs": [
+      "wowhead-zone:406"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:406",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:406",
+      "name": "Les Serres-Rocheuses",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les Serres-Rocheuses",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Les Serres-Rocheuses"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Les Serres-Rocheuses",
+      "wowheadZoneIds": [
+        406
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Kalimdor",
+    "locationZone": "Les Serres-Rocheuses",
     "instance": "Kalimdor",
     "source": "Achever les suites de quêtes des Serres-Rocheuses listées ci-dessous.",
     "points": 10,
@@ -1839,7 +3697,40 @@
     "description": "Achever les suites de quêtes des Serres-Rocheuses listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Les Serres-Rocheuses",
+    "primaryLocationRef": "wowhead-zone:406",
+    "locationRefs": [
+      "wowhead-zone:406"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:406",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:406",
+      "name": "Les Serres-Rocheuses",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les Serres-Rocheuses",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Les Serres-Rocheuses"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Les Serres-Rocheuses",
+      "wowheadZoneIds": [
+        406
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Kalimdor",
+    "locationZone": "Les Serres-Rocheuses",
     "instance": "Kalimdor",
     "source": "Achever les suites de quêtes des Serres-Rocheuses listées ci-dessous.",
     "points": 10,
@@ -1862,8 +3753,37 @@
     "description": "Achever les suites de quêtes des Tarides du Nord listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Tarides du Nord",
     "primaryLocationRef": "wowhead-zone:17",
+    "locationRefs": [
+      "wowhead-zone:17"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:17",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:17",
+      "name": "Tarides du Nord",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tarides du Nord",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Tarides du Nord"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Tarides du Nord",
+      "wowheadZoneIds": [
+        17
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Tarides du Nord",
@@ -1889,8 +3809,37 @@
     "description": "Achever les suites de quêtes des Tarides du Sud listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Tarides du Sud",
     "primaryLocationRef": "wowhead-zone:4709",
+    "locationRefs": [
+      "wowhead-zone:4709"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4709",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4709",
+      "name": "Tarides du Sud",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tarides du Sud",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Tarides du Sud"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Tarides du Sud",
+      "wowheadZoneIds": [
+        4709
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Tarides du Sud",
@@ -1916,8 +3865,37 @@
     "description": "Achever les suites de quêtes des Tarides du Sud listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Tarides du Sud",
     "primaryLocationRef": "wowhead-zone:4709",
+    "locationRefs": [
+      "wowhead-zone:4709"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4709",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4709",
+      "name": "Tarides du Sud",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tarides du Sud",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Tarides du Sud"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Tarides du Sud",
+      "wowheadZoneIds": [
+        4709
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Tarides du Sud",
@@ -1943,8 +3921,37 @@
     "description": "Achever les suites de quêtes de Berceau-de-l’Hiver listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Berceau-de-l’Hiver",
     "primaryLocationRef": "wowhead-zone:618",
+    "locationRefs": [
+      "wowhead-zone:618"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:618",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:618",
+      "name": "Berceau-de-l’Hiver",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Berceau-de-l’Hiver",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Berceau-de-l’Hiver"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Berceau-de-l’Hiver",
+      "wowheadZoneIds": [
+        618
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Berceau-de-l’Hiver",
@@ -1970,8 +3977,37 @@
     "description": "Achever les suites de quêtes du cratère d’Un’Goro listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Cratère d’Un’Goro",
     "primaryLocationRef": "wowhead-zone:490",
+    "locationRefs": [
+      "wowhead-zone:490"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:490",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:490",
+      "name": "Cratère d’Un’Goro",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Cratère d’Un’Goro",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Cratère d’Un’Goro"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Cratère d’Un’Goro",
+      "wowheadZoneIds": [
+        490
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Cratère d’Un’Goro",
@@ -1997,8 +4033,37 @@
     "description": "Achever les suites de quêtes du marécage d’Âprefange listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Marécage d’Âprefange",
     "primaryLocationRef": "wowhead-zone:15",
+    "locationRefs": [
+      "wowhead-zone:15"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15",
+      "name": "Marécage d’Âprefange",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Marécage d’Âprefange",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Marécage d’Âprefange"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Marécage d’Âprefange",
+      "wowheadZoneIds": [
+        15
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Marécage d’Âprefange",
@@ -2024,8 +4089,37 @@
     "description": "Achever les suites de quêtes du marécage d’Âprefange listées ci-dessous.",
     "category": "achievements",
     "expansion": "vanilla",
-    "zone": "Kalimdor",
+    "zone": "Marécage d’Âprefange",
     "primaryLocationRef": "wowhead-zone:15",
+    "locationRefs": [
+      "wowhead-zone:15"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15",
+      "name": "Marécage d’Âprefange",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Marécage d’Âprefange",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Marécage d’Âprefange"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Marécage d’Âprefange",
+      "wowheadZoneIds": [
+        15
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Marécage d’Âprefange",
@@ -2042,6 +4136,3478 @@
     "externalUrl": "https://www.wowhead.com/fr/achievement=4978",
     "blizzardCategoryId": 15081,
     "blizzardCategoryName": "Kalimdor",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_62357",
+    "name": "Bûcheronnage classique",
+    "description": "Récolter 250 bouts de bois de bois-de-fer.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Logis",
+    "instance": "Logis",
+    "source": "Récolter 250 bouts de bois de bois-de-fer.",
+    "points": 5,
+    "rewardDescription": "Récompense : récolte de bois en monture dans les régions de WoW Classic",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 62357,
+    "wowheadAchievementId": 62357,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=62357",
+    "blizzardCategoryId": 15606,
+    "blizzardCategoryName": "Logis",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_116",
+    "name": "Compagnon de métier",
+    "description": "Obtenir 150 points de compétence dans la catégorie « Classique » d’un métier principal.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Métiers",
+    "instance": "Métiers",
+    "source": "Obtenir 150 points de compétence dans la catégorie « Classique » d’un métier principal.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 116,
+    "wowheadAchievementId": 116,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=116",
+    "blizzardCategoryId": 169,
+    "blizzardCategoryName": "Métiers",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18728",
+    "name": "Débuts d’artisan",
+    "description": "Obtenir 300 points de compétence dans une catégorie classique de deux métiers principaux.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Métiers",
+    "instance": "Métiers",
+    "source": "Obtenir 300 points de compétence dans une catégorie classique de deux métiers principaux.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18728,
+    "wowheadAchievementId": 18728,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18728",
+    "blizzardCategoryId": 169,
+    "blizzardCategoryName": "Métiers",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_731",
+    "name": "Expert de métier",
+    "description": "Obtenir 225 points de compétence dans la catégorie « Classique » d’un métier principal.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Métiers",
+    "instance": "Métiers",
+    "source": "Obtenir 225 points de compétence dans la catégorie « Classique » d’un métier principal.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 731,
+    "wowheadAchievementId": 731,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=731",
+    "blizzardCategoryId": 169,
+    "blizzardCategoryName": "Métiers",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_732",
+    "name": "Maître de métier classique",
+    "description": "Obtenir 300 points de compétence dans la catégorie « Classique » d’un métier principal.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Métiers",
+    "instance": "Métiers",
+    "source": "Obtenir 300 points de compétence dans la catégorie « Classique » d’un métier principal.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 732,
+    "wowheadAchievementId": 732,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=732",
+    "blizzardCategoryId": 169,
+    "blizzardCategoryName": "Métiers",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18720",
+    "name": "Maîtrise de toute chose classique",
+    "description": "Obtenir 300 points de compétence dans la catégorie classique de tous les métiers principaux.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Métiers",
+    "instance": "Métiers",
+    "source": "Obtenir 300 points de compétence dans la catégorie classique de tous les métiers principaux.",
+    "points": 50,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18720,
+    "wowheadAchievementId": 18720,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18720",
+    "blizzardCategoryId": 169,
+    "blizzardCategoryName": "Métiers",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_128",
+    "name": "Artisan pêcheur",
+    "description": "Obtenir 300 points de compétence dans la catégorie « Classique » en pêche.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Pêche",
+    "instance": "Pêche",
+    "source": "Obtenir 300 points de compétence dans la catégorie « Classique » en pêche.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 128,
+    "wowheadAchievementId": 128,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=128",
+    "blizzardCategoryId": 171,
+    "blizzardCategoryName": "Pêche",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_126",
+    "name": "Compagnon pêcheur",
+    "description": "Obtenir 150 points de compétence dans la catégorie « Classique » en pêche.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Pêche",
+    "instance": "Pêche",
+    "source": "Obtenir 150 points de compétence dans la catégorie « Classique » en pêche.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 126,
+    "wowheadAchievementId": 126,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=126",
+    "blizzardCategoryId": 171,
+    "blizzardCategoryName": "Pêche",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_127",
+    "name": "Expert pêcheur",
+    "description": "Obtenir 225 points de compétence dans la catégorie « Classique » en pêche.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Pêche",
+    "instance": "Pêche",
+    "source": "Obtenir 225 points de compétence dans la catégorie « Classique » en pêche.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 127,
+    "wowheadAchievementId": 127,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=127",
+    "blizzardCategoryId": 171,
+    "blizzardCategoryName": "Pêche",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_684",
+    "name": "Le repaire d'Onyxia (niveau 60)",
+    "description": "Vaincre la version classique de niveau 60 d'Onyxia.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Raids",
+    "instance": "Raids",
+    "source": "Vaincre la version classique de niveau 60 d'Onyxia.",
+    "points": 0,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": true,
+    "weeklyLockout": false,
+    "blizzardId": 684,
+    "wowheadAchievementId": 684,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=684",
+    "blizzardCategoryId": 15278,
+    "blizzardCategoryName": "Raids",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_5128",
+    "name": "Batailles classiques",
+    "description": "Être exalté auprès des factions des champs de bataille classiques listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Réputation",
+    "instance": "Réputation",
+    "source": "Être exalté auprès des factions des champs de bataille classiques listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 5128,
+    "wowheadAchievementId": 5128,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=5128",
+    "blizzardCategoryId": 15089,
+    "blizzardCategoryName": "Réputation",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_5131",
+    "name": "Batailles classiques",
+    "description": "Être exalté auprès des factions des champs de bataille classiques listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Réputation",
+    "instance": "Réputation",
+    "source": "Être exalté auprès des factions des champs de bataille classiques listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 5131,
+    "wowheadAchievementId": 5131,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=5131",
+    "blizzardCategoryId": 15089,
+    "blizzardCategoryName": "Réputation",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_1206",
+    "name": "À tous les écureuils que j'ai aimés, avant",
+    "description": "Montrer tout votre /amour aux bestioles d'Azeroth.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Royaumes de l'Est",
+    "instance": "Royaumes de l'Est",
+    "source": "Montrer tout votre /amour aux bestioles d'Azeroth.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 1206,
+    "wowheadAchievementId": 1206,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=1206",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": {
+      "wowheadName": "To All The Squirrels I've Loved Before",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=1206",
+      "category": 14777,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "",
+      "popularity": 184
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_627",
+    "name": "Exploration de Dun Morogh",
+    "description": "Explorer Dun Morogh et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Dun Morogh",
+    "primaryLocationRef": "wowhead-zone:1",
+    "locationRefs": [
+      "wowhead-zone:1"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1",
+      "name": "Dun Morogh",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dun Morogh",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh",
+      "wowheadZoneIds": [
+        1
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Dun Morogh",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer Dun Morogh et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 627,
+    "wowheadAchievementId": 627,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=627",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_868",
+    "name": "Exploration de l'île de Quel'Danas",
+    "description": "Explorer l'île de Quel'Danas et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Île de Quel’Danas",
+    "primaryLocationRef": "wowhead-zone:4080",
+    "locationRefs": [
+      "wowhead-zone:4080"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4080",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4080",
+      "name": "Île de Quel’Danas",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Quel’Danas",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Île de Quel’Danas"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Île de Quel’Danas",
+      "wowheadZoneIds": [
+        4080
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Île de Quel’Danas",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer l'île de Quel'Danas et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 868,
+    "wowheadAchievementId": 868,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=868",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_776",
+    "name": "Exploration de la forêt d'Elwynn",
+    "description": "Explorer la forêt d'Elwynn et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Forêt d’Elwynn",
+    "primaryLocationRef": "wowhead-zone:12",
+    "locationRefs": [
+      "wowhead-zone:12"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:12",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:12",
+      "name": "Forêt d’Elwynn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt d’Elwynn",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt d’Elwynn"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn",
+      "wowheadZoneIds": [
+        12
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Forêt d’Elwynn",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer la forêt d'Elwynn et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 776,
+    "wowheadAchievementId": 776,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=776",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_769",
+    "name": "Exploration de la forêt des Pins-Argentés",
+    "description": "Explorer la forêt des Pins-Argentés et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Forêt des Pins-Argentés",
+    "primaryLocationRef": "wowhead-zone:130",
+    "locationRefs": [
+      "wowhead-zone:130"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:130",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:130",
+      "name": "Forêt des Pins-Argentés",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt des Pins-Argentés",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt des Pins-Argentés"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt des Pins-Argentés",
+      "wowheadZoneIds": [
+        130
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Forêt des Pins-Argentés",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer la forêt des Pins-Argentés et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 769,
+    "wowheadAchievementId": 769,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=769",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_774",
+    "name": "Exploration de la gorge des Vents brûlants",
+    "description": "Explorer la gorge des Vents brûlants et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Gorge des Vents brûlants",
+    "primaryLocationRef": "wowhead-zone:51",
+    "locationRefs": [
+      "wowhead-zone:51"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:51",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:51",
+      "name": "Gorge des Vents brûlants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorge des Vents brûlants",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Gorge des Vents brûlants"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Gorge des Vents brûlants",
+      "wowheadZoneIds": [
+        51
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Gorge des Vents brûlants",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer la gorge des Vents brûlants et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 774,
+    "wowheadAchievementId": 774,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=774",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_802",
+    "name": "Exploration de la marche de l'Ouest",
+    "description": "Explorer la marche de l'Ouest et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Marche de l’Ouest",
+    "primaryLocationRef": "wowhead-zone:40",
+    "locationRefs": [
+      "wowhead-zone:40"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:40",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:40",
+      "name": "Marche de l’Ouest",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Marche de l’Ouest",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Marche de l’Ouest"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Marche de l’Ouest",
+      "wowheadZoneIds": [
+        40
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Marche de l’Ouest",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer la marche de l'Ouest et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 802,
+    "wowheadAchievementId": 802,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=802",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_781",
+    "name": "Exploration de la Strangleronce septentrionale",
+    "description": "Explorer la Strangleronce septentrionale et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vallée de Strangleronce",
+    "primaryLocationRef": "wowhead-zone:33",
+    "locationRefs": [
+      "wowhead-zone:33"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:33",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:33",
+      "name": "Strangleronce septentrionale",
+      "kind": "subzone",
+      "subzoneName": "Strangleronce septentrionale",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Strangleronce septentrionale"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Strangleronce septentrionale",
+      "wowheadZoneIds": [
+        33
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Vallée de Strangleronce",
+    "subzone": "Strangleronce septentrionale",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer la Strangleronce septentrionale et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 781,
+    "wowheadAchievementId": 781,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=781",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_780",
+    "name": "Exploration des Carmines",
+    "description": "Explorer les Carmines et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Les Carmines",
+    "primaryLocationRef": "wowhead-zone:44",
+    "locationRefs": [
+      "wowhead-zone:44"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:44",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:44",
+      "name": "Les Carmines",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les Carmines",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Les Carmines"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les Carmines",
+      "wowheadZoneIds": [
+        44
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Les Carmines",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer les Carmines et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 780,
+    "wowheadAchievementId": 780,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=780",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_768",
+    "name": "Exploration des clairières de Tirisfal",
+    "description": "Explorer les clairières de Tirisfal et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Clairières de Tirisfal",
+    "primaryLocationRef": "wowhead-zone:85",
+    "locationRefs": [
+      "wowhead-zone:85"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:85",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:85",
+      "name": "Clairières de Tirisfal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Clairières de Tirisfal",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Clairières de Tirisfal"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Clairières de Tirisfal",
+      "wowheadZoneIds": [
+        85,
+        13983
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Clairières de Tirisfal",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer les clairières de Tirisfal et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 768,
+    "wowheadAchievementId": 768,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=768",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_772",
+    "name": "Exploration des contreforts de Hautebrande",
+    "description": "Explorer les contreforts de Hautebrande et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Contreforts de Hautebrande",
+    "primaryLocationRef": "wowhead-zone:267",
+    "locationRefs": [
+      "wowhead-zone:267"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:267",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:267",
+      "name": "Contreforts de Hautebrande",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Contreforts de Hautebrande",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Contreforts de Hautebrande"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Contreforts de Hautebrande",
+      "wowheadZoneIds": [
+        267
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Contreforts de Hautebrande",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer les contreforts de Hautebrande et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 772,
+    "wowheadAchievementId": 772,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=772",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_761",
+    "name": "Exploration des hautes-terres Arathies",
+    "description": "Explorer les hautes-terres Arathies et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Hautes-terres Arathies",
+    "primaryLocationRef": "wowhead-zone:45",
+    "locationRefs": [
+      "wowhead-zone:45"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:45",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:45",
+      "name": "Hautes-terres Arathies",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres Arathies",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres Arathies"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres Arathies",
+      "wowheadZoneIds": [
+        45
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Hautes-terres Arathies",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer les hautes-terres Arathies et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 761,
+    "wowheadAchievementId": 761,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=761",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_773",
+    "name": "Exploration des Hinterlands",
+    "description": "Explorer les Hinterlands et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Les Hinterlands",
+    "primaryLocationRef": "wowhead-zone:47",
+    "locationRefs": [
+      "wowhead-zone:47"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:47",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:47",
+      "name": "Les Hinterlands",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les Hinterlands",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Les Hinterlands"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les Hinterlands",
+      "wowheadZoneIds": [
+        47
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Les Hinterlands",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer les Hinterlands et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 773,
+    "wowheadAchievementId": 773,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=773",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_771",
+    "name": "Exploration des Maleterres de l'Est",
+    "description": "Explorer les Maleterres de l'Est et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Maleterres de l’Est",
+    "primaryLocationRef": "wowhead-zone:139",
+    "locationRefs": [
+      "wowhead-zone:139"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:139",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:139",
+      "name": "Maleterres de l’Est",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maleterres de l’Est",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Est"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est",
+      "wowheadZoneIds": [
+        139
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Maleterres de l’Est",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer les Maleterres de l'Est et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 771,
+    "wowheadAchievementId": 771,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=771",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_770",
+    "name": "Exploration des Maleterres de l'Ouest",
+    "description": "Explorer les Maleterres de l'Ouest et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Maleterres de l’Ouest",
+    "primaryLocationRef": "wowhead-zone:28",
+    "locationRefs": [
+      "wowhead-zone:28"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:28",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:28",
+      "name": "Maleterres de l’Ouest",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maleterres de l’Ouest",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Ouest"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Ouest",
+      "wowheadZoneIds": [
+        28
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Maleterres de l’Ouest",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer les Maleterres de l'Ouest et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 770,
+    "wowheadAchievementId": 770,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=770",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_841",
+    "name": "Exploration des Paluns",
+    "description": "Explorer les Paluns et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Les Paluns",
+    "primaryLocationRef": "wowhead-zone:11",
+    "locationRefs": [
+      "wowhead-zone:11"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:11",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:11",
+      "name": "Les Paluns",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les Paluns",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Les Paluns"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les Paluns",
+      "wowheadZoneIds": [
+        11
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Les Paluns",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer les Paluns et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 841,
+    "wowheadAchievementId": 841,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=841",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_775",
+    "name": "Exploration des steppes Ardentes",
+    "description": "Explorer les steppes Ardentes et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Steppes Ardentes",
+    "primaryLocationRef": "wowhead-zone:46",
+    "locationRefs": [
+      "wowhead-zone:46"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:46",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:46",
+      "name": "Steppes Ardentes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Steppes Ardentes",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Steppes Ardentes"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Steppes Ardentes",
+      "wowheadZoneIds": [
+        46
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Steppes Ardentes",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer les steppes Ardentes et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 775,
+    "wowheadAchievementId": 775,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=775",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_858",
+    "name": "Exploration des terres Fantômes",
+    "description": "Explorer les terres Fantômes et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Les terres Fantômes",
+    "primaryLocationRef": "wowhead-zone:3433",
+    "locationRefs": [
+      "wowhead-zone:3433"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3433",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3433",
+      "name": "Les terres Fantômes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les terres Fantômes",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Les terres Fantômes"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les terres Fantômes",
+      "wowheadZoneIds": [
+        3433
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Les terres Fantômes",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer les terres Fantômes et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 858,
+    "wowheadAchievementId": 858,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=858",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_766",
+    "name": "Exploration des terres Foudroyées",
+    "description": "Explorer les terres Foudroyées et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Terres Foudroyées",
+    "primaryLocationRef": "wowhead-zone:4",
+    "locationRefs": [
+      "wowhead-zone:4"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4",
+      "name": "Terres Foudroyées",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terres Foudroyées",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Terres Foudroyées"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Terres Foudroyées",
+      "wowheadZoneIds": [
+        4
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Terres Foudroyées",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer les terres Foudroyées et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 766,
+    "wowheadAchievementId": 766,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=766",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_765",
+    "name": "Exploration des terres Ingrates",
+    "description": "Explorer les terres Ingrates et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Terres Ingrates",
+    "primaryLocationRef": "wowhead-zone:3",
+    "locationRefs": [
+      "wowhead-zone:3"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3",
+      "name": "Terres Ingrates",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terres Ingrates",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Terres Ingrates"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Terres Ingrates",
+      "wowheadZoneIds": [
+        3
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Terres Ingrates",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer les terres Ingrates et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 765,
+    "wowheadAchievementId": 765,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=765",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_778",
+    "name": "Exploration du bois de la Pénombre",
+    "description": "Explorer le bois de la Pénombre et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bois de la Pénombre",
+    "primaryLocationRef": "wowhead-zone:10",
+    "locationRefs": [
+      "wowhead-zone:10"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10",
+      "name": "Bois de la Pénombre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois de la Pénombre",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Bois de la Pénombre"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bois de la Pénombre",
+      "wowheadZoneIds": [
+        10
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Bois de la Pénombre",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer le bois de la Pénombre et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 778,
+    "wowheadAchievementId": 778,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=778",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_859",
+    "name": "Exploration du bois des Chants éternels (The Burning Crusade)",
+    "description": "Explorer le bois des Chants éternels et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bois des Chants éternels (The Burning Crusade)",
+    "primaryLocationRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels-the-burning-crusade",
+    "locationRefs": [
+      "manual-location:eastern-kingdoms:bois-des-chants-eternels-the-burning-crusade"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "manual-location:eastern-kingdoms:bois-des-chants-eternels-the-burning-crusade",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "manual-location:eastern-kingdoms:bois-des-chants-eternels-the-burning-crusade",
+      "name": "Bois des Chants éternels (The Burning Crusade)",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels (The Burning Crusade)",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Bois des Chants éternels (The Burning Crusade)"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bois des Chants éternels (The Burning Crusade)",
+      "wowheadZoneIds": []
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Bois des Chants éternels (The Burning Crusade)",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer le bois des Chants éternels et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 859,
+    "wowheadAchievementId": 859,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=859",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": {
+      "wowheadName": "Explore Eversong Woods (Burning Crusade)",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=859",
+      "category": 14777,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "",
+      "popularity": 104
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4995",
+    "name": "Exploration du cap Strangleronce",
+    "description": "Explorer le cap Strangleronce et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vallée de Strangleronce",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer le cap Strangleronce et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4995,
+    "wowheadAchievementId": 4995,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4995",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_777",
+    "name": "Exploration du défilé de Deuillevent",
+    "description": "Explorer le défilé de Deuillevent et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Défilé de Deuillevent",
+    "primaryLocationRef": "wowhead-zone:41",
+    "locationRefs": [
+      "wowhead-zone:41"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:41",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:41",
+      "name": "Défilé de Deuillevent",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Défilé de Deuillevent",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Défilé de Deuillevent"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Défilé de Deuillevent",
+      "wowheadZoneIds": [
+        41
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Défilé de Deuillevent",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer le défilé de Deuillevent et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 777,
+    "wowheadAchievementId": 777,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=777",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_779",
+    "name": "Exploration du Loch Modan",
+    "description": "Explorer le Loch Modan et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Loch Modan",
+    "primaryLocationRef": "wowhead-zone:38",
+    "locationRefs": [
+      "wowhead-zone:38"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:38",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:38",
+      "name": "Loch Modan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Loch Modan",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Loch Modan"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Loch Modan",
+      "wowheadZoneIds": [
+        38
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Loch Modan",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer le Loch Modan et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 779,
+    "wowheadAchievementId": 779,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=779",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_782",
+    "name": "Exploration du marais des Chagrins",
+    "description": "Explorer le marais des Chagrins et révéler les zones voilées de la carte du monde.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Marais des Chagrins",
+    "primaryLocationRef": "wowhead-zone:8",
+    "locationRefs": [
+      "wowhead-zone:8"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8",
+      "name": "Marais des Chagrins",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Marais des Chagrins",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Marais des Chagrins"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Marais des Chagrins",
+      "wowheadZoneIds": [
+        8
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Marais des Chagrins",
+    "instance": "Royaumes de l'Est",
+    "source": "Explorer le marais des Chagrins et révéler les zones voilées de la carte du monde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 782,
+    "wowheadAchievementId": 782,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=782",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_5442",
+    "name": "La caravane est complète",
+    "description": "Recruter les 8 personnages dans la caravane de Fiona dans les Maleterres de l'Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Maleterres de l’Est",
+    "primaryLocationRef": "wowhead-zone:139",
+    "locationRefs": [
+      "wowhead-zone:139"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:139",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:139",
+      "name": "Maleterres de l’Est",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maleterres de l’Est",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Est"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est",
+      "wowheadZoneIds": [
+        139
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Maleterres de l’Est",
+    "instance": "Royaumes de l'Est",
+    "source": "Recruter les 8 personnages dans la caravane de Fiona dans les Maleterres de l'Est.",
+    "points": 10,
+    "rewardDescription": "Élément de décoration : chariot de nourriture de Comté-de-l’Or",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 5442,
+    "wowheadAchievementId": 5442,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=5442",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": {
+      "wowheadName": "Full Caravan",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=5442",
+      "category": 14861,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "Decor Reward: Goldshire Food Cart",
+      "popularity": 204
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_5444",
+    "name": "Les boucs émissaires",
+    "description": "En utilisant la Pétoire à bouc ou la Pétoire à bouc DX, dégommer 12 boucs en moins d'une minute.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Royaumes de l'Est",
+    "instance": "Royaumes de l'Est",
+    "source": "En utilisant la Pétoire à bouc ou la Pétoire à bouc DX, dégommer 12 boucs en moins d'une minute.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 5444,
+    "wowheadAchievementId": 5444,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=5444",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": {
+      "wowheadName": "Ready, Set, Goat!",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=5444",
+      "category": 14861,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "",
+      "popularity": 83
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_940",
+    "name": "Les vertes collines de Strangleronce",
+    "description": "Achever toutes les quêtes d'Hemet Nesingwary dans la vallée de Strangleronce, y compris « La chasse au gros gibier ».",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vallée de Strangleronce",
+    "primaryLocationRef": "wowhead-zone:5339",
+    "locationRefs": [
+      "wowhead-zone:5339"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5339",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5339",
+      "name": "Vallée de Strangleronce",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce",
+      "wowheadZoneIds": [
+        5339
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Vallée de Strangleronce",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever toutes les quêtes d'Hemet Nesingwary dans la vallée de Strangleronce, y compris « La chasse au gros gibier ».",
+    "points": 10,
+    "rewardDescription": "Élément de décoration : trophée d’orignal de Nesingwary",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 940,
+    "wowheadAchievementId": 940,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=940",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_1676",
+    "name": "Maître des traditions des royaumes de l'Est",
+    "description": "Accomplir les hauts faits de quêtes des royaumes de l'Est listés ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Royaumes de l'Est",
+    "instance": "Royaumes de l'Est",
+    "source": "Accomplir les hauts faits de quêtes des royaumes de l'Est listés ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 1676,
+    "wowheadAchievementId": 1676,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=1676",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": {
+      "wowheadName": "Loremaster of Eastern Kingdoms",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=1676",
+      "category": 14861,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "",
+      "popularity": 91
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18372",
+    "name": "Protections de la citadelle de l’effroi",
+    "description": "Renforcer votre décoration de l’Aube d’argent.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Royaumes de l'Est",
+    "instance": "Royaumes de l'Est",
+    "source": "Renforcer votre décoration de l’Aube d’argent.",
+    "points": 10,
+    "rewardDescription": "Débloque des secrets anciens de Naxxramas",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18372,
+    "wowheadAchievementId": 18372,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18372",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": {
+      "wowheadName": "Wards of the Dread Citadel",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=18372",
+      "category": 14777,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "Unlocks ancient secrets within Naxxramas",
+      "popularity": 182
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4894",
+    "name": "Quêtes de la forêt des Pins-Argentés",
+    "description": "Achever les suites de quêtes de la forêt des Pins-Argentés listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Forêt des Pins-Argentés",
+    "primaryLocationRef": "wowhead-zone:130",
+    "locationRefs": [
+      "wowhead-zone:130"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:130",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:130",
+      "name": "Forêt des Pins-Argentés",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forêt des Pins-Argentés",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt des Pins-Argentés"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt des Pins-Argentés",
+      "wowheadZoneIds": [
+        130
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Forêt des Pins-Argentés",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes de la forêt des Pins-Argentés listées ci-dessous.",
+    "points": 20,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4894,
+    "wowheadAchievementId": 4894,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4894",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4910",
+    "name": "Quêtes de la gorge des Vents brûlants",
+    "description": "Achever les suites de quêtes de la gorge des Vents brûlants listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Gorge des Vents brûlants",
+    "primaryLocationRef": "wowhead-zone:51",
+    "locationRefs": [
+      "wowhead-zone:51"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:51",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:51",
+      "name": "Gorge des Vents brûlants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorge des Vents brûlants",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Gorge des Vents brûlants"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Gorge des Vents brûlants",
+      "wowheadZoneIds": [
+        51
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Gorge des Vents brûlants",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes de la gorge des Vents brûlants listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4910,
+    "wowheadAchievementId": 4910,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4910",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4903",
+    "name": "Quêtes de la marche de l’Ouest",
+    "description": "Achever les suites de quêtes de la marche de l’Ouest listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Marche de l’Ouest",
+    "primaryLocationRef": "wowhead-zone:40",
+    "locationRefs": [
+      "wowhead-zone:40"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:40",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:40",
+      "name": "Marche de l’Ouest",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Marche de l’Ouest",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Marche de l’Ouest"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Marche de l’Ouest",
+      "wowheadZoneIds": [
+        40
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Marche de l’Ouest",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes de la marche de l’Ouest listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4903,
+    "wowheadAchievementId": 4903,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4903",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4906",
+    "name": "Quêtes de la Strangleronce septentrionale",
+    "description": "Achever les suites de quêtes de Strangleronce septentrionale listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vallée de Strangleronce",
+    "primaryLocationRef": "wowhead-zone:33",
+    "locationRefs": [
+      "wowhead-zone:33"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:33",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:33",
+      "name": "Strangleronce septentrionale",
+      "kind": "subzone",
+      "subzoneName": "Strangleronce septentrionale",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Strangleronce septentrionale"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Strangleronce septentrionale",
+      "wowheadZoneIds": [
+        33
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Vallée de Strangleronce",
+    "subzone": "Strangleronce septentrionale",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes de Strangleronce septentrionale listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4906,
+    "wowheadAchievementId": 4906,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4906",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4902",
+    "name": "Quêtes des Carmines",
+    "description": "Achever les suites de quêtes des Carmines listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Les Carmines",
+    "primaryLocationRef": "wowhead-zone:44",
+    "locationRefs": [
+      "wowhead-zone:44"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:44",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:44",
+      "name": "Les Carmines",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les Carmines",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Les Carmines"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les Carmines",
+      "wowheadZoneIds": [
+        44
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Les Carmines",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes des Carmines listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4902,
+    "wowheadAchievementId": 4902,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4902",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4895",
+    "name": "Quêtes des contreforts de Hautebrande",
+    "description": "Achever les suites de quêtes des contreforts de Hautebrande listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Contreforts de Hautebrande",
+    "primaryLocationRef": "wowhead-zone:267",
+    "locationRefs": [
+      "wowhead-zone:267"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:267",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:267",
+      "name": "Contreforts de Hautebrande",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Contreforts de Hautebrande",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Contreforts de Hautebrande"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Contreforts de Hautebrande",
+      "wowheadZoneIds": [
+        267
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Contreforts de Hautebrande",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes des contreforts de Hautebrande listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4895,
+    "wowheadAchievementId": 4895,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4895",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4896",
+    "name": "Quêtes des hautes-terres Arathies",
+    "description": "Achever les suites de quêtes des hautes-terres Arathies listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Hautes-terres Arathies",
+    "primaryLocationRef": "wowhead-zone:45",
+    "locationRefs": [
+      "wowhead-zone:45"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:45",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:45",
+      "name": "Hautes-terres Arathies",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres Arathies",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres Arathies"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres Arathies",
+      "wowheadZoneIds": [
+        45
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Hautes-terres Arathies",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes des hautes-terres Arathies listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4896,
+    "wowheadAchievementId": 4896,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4896",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4897",
+    "name": "Quêtes des Hinterlands",
+    "description": "Achever les suites de quêtes des Hinterlands listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Royaumes de l'Est",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes des Hinterlands listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4897,
+    "wowheadAchievementId": 4897,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4897",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4892",
+    "name": "Quêtes des Maleterres de l'Est",
+    "description": "Achever les suites de quêtes des Maleterres de l’Est listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Maleterres de l’Est",
+    "primaryLocationRef": "wowhead-zone:139",
+    "locationRefs": [
+      "wowhead-zone:139"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:139",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:139",
+      "name": "Maleterres de l’Est",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maleterres de l’Est",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Est"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Est",
+      "wowheadZoneIds": [
+        139
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Maleterres de l’Est",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes des Maleterres de l’Est listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4892,
+    "wowheadAchievementId": 4892,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4892",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4893",
+    "name": "Quêtes des Maleterres de l'Ouest",
+    "description": "Achever les suites de quêtes des Maleterres de l’Ouest listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Maleterres de l’Ouest",
+    "primaryLocationRef": "wowhead-zone:28",
+    "locationRefs": [
+      "wowhead-zone:28"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:28",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:28",
+      "name": "Maleterres de l’Ouest",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Maleterres de l’Ouest",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Maleterres de l’Ouest"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Maleterres de l’Ouest",
+      "wowheadZoneIds": [
+        28
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Maleterres de l’Ouest",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes des Maleterres de l’Ouest listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4893,
+    "wowheadAchievementId": 4893,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4893",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_12429",
+    "name": "Quêtes des Paluns",
+    "description": "Achever les suites de quêtes des Paluns listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Royaumes de l'Est",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes des Paluns listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 12429,
+    "wowheadAchievementId": 12429,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=12429",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4901",
+    "name": "Quêtes des steppes Ardentes",
+    "description": "Achever les suites de quêtes des steppes Ardentes listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Steppes Ardentes",
+    "primaryLocationRef": "wowhead-zone:46",
+    "locationRefs": [
+      "wowhead-zone:46"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:46",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:46",
+      "name": "Steppes Ardentes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Steppes Ardentes",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Steppes Ardentes"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Steppes Ardentes",
+      "wowheadZoneIds": [
+        46
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Steppes Ardentes",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes des steppes Ardentes listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4901,
+    "wowheadAchievementId": 4901,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4901",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4908",
+    "name": "Quêtes des terres Fantômes",
+    "description": "Achever les suites de quêtes des terres Fantômes listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Les terres Fantômes",
+    "primaryLocationRef": "wowhead-zone:3433",
+    "locationRefs": [
+      "wowhead-zone:3433"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3433",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3433",
+      "name": "Les terres Fantômes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les terres Fantômes",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Les terres Fantômes"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Les terres Fantômes",
+      "wowheadZoneIds": [
+        3433
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Les terres Fantômes",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes des terres Fantômes listées ci-dessous.",
+    "points": 20,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4908,
+    "wowheadAchievementId": 4908,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4908",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4909",
+    "name": "Quêtes des terres Foudroyées",
+    "description": "Achever les suites de quêtes des terres Foudroyées listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Terres Foudroyées",
+    "primaryLocationRef": "wowhead-zone:4",
+    "locationRefs": [
+      "wowhead-zone:4"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4",
+      "name": "Terres Foudroyées",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terres Foudroyées",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Terres Foudroyées"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Terres Foudroyées",
+      "wowheadZoneIds": [
+        4
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Terres Foudroyées",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes des terres Foudroyées listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4909,
+    "wowheadAchievementId": 4909,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4909",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": {
+      "wowheadName": "Blasted Lands Quests",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=4909",
+      "category": 14861,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "",
+      "popularity": 83
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4900",
+    "name": "Quêtes des terres Ingrates",
+    "description": "Achever les suites de quêtes des terres Ingrates listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Terres Ingrates",
+    "primaryLocationRef": "wowhead-zone:3",
+    "locationRefs": [
+      "wowhead-zone:3"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:3",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:3",
+      "name": "Terres Ingrates",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terres Ingrates",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Terres Ingrates"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Terres Ingrates",
+      "wowheadZoneIds": [
+        3
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Terres Ingrates",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes des terres Ingrates listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4900,
+    "wowheadAchievementId": 4900,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4900",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_12430",
+    "name": "Quêtes du bois de la Pénombre",
+    "description": "Achever les suites de quêtes du bois de la Pénombre listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Bois de la Pénombre",
+    "primaryLocationRef": "wowhead-zone:10",
+    "locationRefs": [
+      "wowhead-zone:10"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10",
+      "name": "Bois de la Pénombre",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois de la Pénombre",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Bois de la Pénombre"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Bois de la Pénombre",
+      "wowheadZoneIds": [
+        10
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Bois de la Pénombre",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes du bois de la Pénombre listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 12430,
+    "wowheadAchievementId": 12430,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=12430",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4905",
+    "name": "Quêtes du cap Strangleronce",
+    "description": "Achever les suites de quêtes du cap Strangleronce listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vallée de Strangleronce",
+    "primaryLocationRef": "wowhead-zone:5287",
+    "locationRefs": [
+      "wowhead-zone:5287"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5287",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5287",
+      "name": "Cap Strangleronce",
+      "kind": "subzone",
+      "subzoneName": "Cap Strangleronce",
+      "regionName": "Vallée de Strangleronce",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Vallée de Strangleronce",
+        "Cap Strangleronce"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Vallée de Strangleronce > Cap Strangleronce",
+      "wowheadZoneIds": [
+        5287
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Vallée de Strangleronce",
+    "subzone": "Cap Strangleronce",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes du cap Strangleronce listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4905,
+    "wowheadAchievementId": 4905,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4905",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4899",
+    "name": "Quêtes du Loch Modan",
+    "description": "Achever les suites de quêtes du Loch Modan listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Loch Modan",
+    "primaryLocationRef": "wowhead-zone:38",
+    "locationRefs": [
+      "wowhead-zone:38"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:38",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:38",
+      "name": "Loch Modan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Loch Modan",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Loch Modan"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Loch Modan",
+      "wowheadZoneIds": [
+        38
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Loch Modan",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes du Loch Modan listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4899,
+    "wowheadAchievementId": 4899,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4899",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_4904",
+    "name": "Quêtes du marais des Chagrins",
+    "description": "Achever les suites de quêtes du marais des Chagrins listées ci-dessous.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Marais des Chagrins",
+    "primaryLocationRef": "wowhead-zone:8",
+    "locationRefs": [
+      "wowhead-zone:8"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8",
+      "name": "Marais des Chagrins",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Marais des Chagrins",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Marais des Chagrins"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Marais des Chagrins",
+      "wowheadZoneIds": [
+        8
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Marais des Chagrins",
+    "instance": "Royaumes de l'Est",
+    "source": "Achever les suites de quêtes du marais des Chagrins listées ci-dessous.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 4904,
+    "wowheadAchievementId": 4904,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4904",
+    "blizzardCategoryId": 14861,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_17366",
+    "name": "Reliques d’un empire déchu",
+    "description": "Apporter un bijou hakkari restauré à quelqu’un qui s’intéresse à ce genre d’artefacts.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Royaumes de l'Est",
+    "instance": "Royaumes de l'Est",
+    "source": "Apporter un bijou hakkari restauré à quelqu’un qui s’intéresse à ce genre d’artefacts.",
+    "points": 10,
+    "rewardDescription": "Déblocage : secrets anciens de Zul’Gurub",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 17366,
+    "wowheadAchievementId": 17366,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=17366",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": {
+      "wowheadName": "Relics of a Fallen Empire",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=17366",
+      "category": 14777,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "Unlocks ancient secrets within Zul'Gurub",
+      "popularity": 237
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18368",
+    "name": "Souvenir de Scholomance",
+    "description": "Accomplissez un rituel avec le Journal d’Eva.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Royaumes de l'Est",
+    "instance": "Royaumes de l'Est",
+    "source": "Accomplissez un rituel avec le Journal d’Eva.",
+    "points": 10,
+    "rewardDescription": "Débloque le Souvenir de Scholomance",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18368,
+    "wowheadAchievementId": 18368,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18368",
+    "blizzardCategoryId": 14777,
+    "blizzardCategoryName": "Royaumes de l'Est",
+    "wowhead": {
+      "wowheadName": "Memory of Scholomance",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=18368",
+      "category": 14777,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "Unlocks the Memory of Scholomance",
+      "popularity": 293
+    },
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_966",
+    "name": "Bonbons et blagues des royaumes de l'Est",
+    "description": "Piocher dans les seaux de bonbons des royaumes de l'Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Sanssaint",
+    "instance": "Sanssaint",
+    "source": "Piocher dans les seaux de bonbons des royaumes de l'Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 966,
+    "wowheadAchievementId": 966,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=966",
+    "blizzardCategoryId": 158,
+    "blizzardCategoryName": "Sanssaint",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_967",
+    "name": "Bonbons et blagues des royaumes de l'Est",
+    "description": "Piocher dans les seaux de bonbons des royaumes de l'Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Sanssaint",
+    "instance": "Sanssaint",
+    "source": "Piocher dans les seaux de bonbons des royaumes de l'Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 967,
+    "wowheadAchievementId": 967,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=967",
+    "blizzardCategoryId": 158,
+    "blizzardCategoryName": "Sanssaint",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_1028",
+    "name": "Extinction des royaumes de l'Est",
+    "description": "Piétiner les feux de joie de la Horde dans les royaumes de l'Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Solstice d'été",
+    "instance": "Solstice d'été",
+    "source": "Piétiner les feux de joie de la Horde dans les royaumes de l'Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 1028,
+    "wowheadAchievementId": 1028,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=1028",
+    "blizzardCategoryId": 161,
+    "blizzardCategoryName": "Solstice d'été",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_1031",
+    "name": "Extinction des royaumes de l'Est",
+    "description": "Piétiner les feux de joie de l'Alliance dans les royaumes de l'Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Solstice d'été",
+    "instance": "Solstice d'été",
+    "source": "Piétiner les feux de joie de l'Alliance dans les royaumes de l'Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 1031,
+    "wowheadAchievementId": 1031,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=1031",
+    "blizzardCategoryId": 161,
+    "blizzardCategoryName": "Solstice d'été",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_1025",
+    "name": "Garde-flammes des royaumes de l'Est",
+    "description": "Honorer les flammes des royaumes de l'Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Solstice d'été",
+    "instance": "Solstice d'été",
+    "source": "Honorer les flammes des royaumes de l'Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 1025,
+    "wowheadAchievementId": 1025,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=1025",
+    "blizzardCategoryId": 161,
+    "blizzardCategoryName": "Solstice d'été",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_1022",
+    "name": "Gardien des flammes des royaumes de l'Est",
+    "description": "Honorer les flammes des royaumes de l'Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Solstice d'été",
+    "instance": "Solstice d'été",
+    "source": "Honorer les flammes des royaumes de l'Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 1022,
+    "wowheadAchievementId": 1022,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=1022",
+    "blizzardCategoryId": 161,
+    "blizzardCategoryName": "Solstice d'été",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_13928",
+    "name": "Vallée d’Alterac d’antan",
+    "description": "Collectez 200 insignes distordus dans le temps grâce aux quêtes et en participant à l’évènement Vallée d’Alterac classique.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vallée d'Alterac",
+    "instance": "Vallée d'Alterac",
+    "source": "Collectez 200 insignes distordus dans le temps grâce aux quêtes et en participant à l’évènement Vallée d’Alterac classique.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 13928,
+    "wowheadAchievementId": 13928,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=13928",
+    "blizzardCategoryId": 14801,
+    "blizzardCategoryName": "Vallée d'Alterac",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_13930",
+    "name": "Vallée d’Alterac d’antan",
+    "description": "Collectez 200 insignes distordus dans le temps grâce aux quêtes et en participant à l’évènement Vallée d’Alterac classique.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vallée d'Alterac",
+    "instance": "Vallée d'Alterac",
+    "source": "Collectez 200 insignes distordus dans le temps grâce aux quêtes et en participant à l’évènement Vallée d’Alterac classique.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 13930,
+    "wowheadAchievementId": 13930,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=13930",
+    "blizzardCategoryId": 14801,
+    "blizzardCategoryName": "Vallée d'Alterac",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18939",
+    "name": "Perfectionniste des courses des royaumes de l’Est",
+    "description": "Terminer toutes les courses des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vol dynamique",
+    "instance": "Vol dynamique",
+    "source": "Terminer toutes les courses des royaumes de l’Est.",
+    "points": 20,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18939,
+    "wowheadAchievementId": 18939,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18939",
+    "blizzardCategoryId": 15462,
+    "blizzardCategoryName": "Vol dynamique",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18940",
+    "name": "Perfectionniste des courses des royaumes de l’Est – Argent",
+    "description": "Obtenir l’argent dans toutes les courses des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vol dynamique",
+    "instance": "Vol dynamique",
+    "source": "Obtenir l’argent dans toutes les courses des royaumes de l’Est.",
+    "points": 20,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18940,
+    "wowheadAchievementId": 18940,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18940",
+    "blizzardCategoryId": 15462,
+    "blizzardCategoryName": "Vol dynamique",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18942",
+    "name": "Perfectionniste des courses des royaumes de l’Est – Or",
+    "description": "Obtenir l’or dans toutes les courses des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vol dynamique",
+    "instance": "Vol dynamique",
+    "source": "Obtenir l’or dans toutes les courses des royaumes de l’Est.",
+    "points": 20,
+    "rewardDescription": "Titre : pilote des royaumes de l’Est",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18942,
+    "wowheadAchievementId": 18942,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18942",
+    "blizzardCategoryId": 15462,
+    "blizzardCategoryName": "Vol dynamique",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18567",
+    "name": "Royaumes de l’Est – Argent",
+    "description": "Obtenir l’argent dans toutes les courses normales des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vol dynamique",
+    "instance": "Vol dynamique",
+    "source": "Obtenir l’argent dans toutes les courses normales des royaumes de l’Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18567,
+    "wowheadAchievementId": 18567,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18567",
+    "blizzardCategoryId": 15462,
+    "blizzardCategoryName": "Vol dynamique",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18570",
+    "name": "Royaumes de l’Est – Avancés – Argent",
+    "description": "Obtenir l’argent dans toutes les courses avancées des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vol dynamique",
+    "instance": "Vol dynamique",
+    "source": "Obtenir l’argent dans toutes les courses avancées des royaumes de l’Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18570,
+    "wowheadAchievementId": 18570,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18570",
+    "blizzardCategoryId": 15462,
+    "blizzardCategoryName": "Vol dynamique",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18569",
+    "name": "Royaumes de l’Est – Avancés – Bronze",
+    "description": "Terminer toutes les courses avancées des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vol dynamique",
+    "instance": "Vol dynamique",
+    "source": "Terminer toutes les courses avancées des royaumes de l’Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18569,
+    "wowheadAchievementId": 18569,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18569",
+    "blizzardCategoryId": 15462,
+    "blizzardCategoryName": "Vol dynamique",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18571",
+    "name": "Royaumes de l’Est – Avancés – Or",
+    "description": "Obtenir l’or dans toutes les courses avancées des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vol dynamique",
+    "instance": "Vol dynamique",
+    "source": "Obtenir l’or dans toutes les courses avancées des royaumes de l’Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18571,
+    "wowheadAchievementId": 18571,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18571",
+    "blizzardCategoryId": 15462,
+    "blizzardCategoryName": "Vol dynamique",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18566",
+    "name": "Royaumes de l’Est – Bronze",
+    "description": "Terminer toutes les courses des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vol dynamique",
+    "instance": "Vol dynamique",
+    "source": "Terminer toutes les courses des royaumes de l’Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18566,
+    "wowheadAchievementId": 18566,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18566",
+    "blizzardCategoryId": 15462,
+    "blizzardCategoryName": "Vol dynamique",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18573",
+    "name": "Royaumes de l’Est – Inversés – Argent",
+    "description": "Obtenir l’argent dans toutes les courses inversées des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vol dynamique",
+    "instance": "Vol dynamique",
+    "source": "Obtenir l’argent dans toutes les courses inversées des royaumes de l’Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18573,
+    "wowheadAchievementId": 18573,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18573",
+    "blizzardCategoryId": 15462,
+    "blizzardCategoryName": "Vol dynamique",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18572",
+    "name": "Royaumes de l’Est – Inversés – Bronze",
+    "description": "Terminer toutes les courses inversées des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vol dynamique",
+    "instance": "Vol dynamique",
+    "source": "Terminer toutes les courses inversées des royaumes de l’Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18572,
+    "wowheadAchievementId": 18572,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18572",
+    "blizzardCategoryId": 15462,
+    "blizzardCategoryName": "Vol dynamique",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18574",
+    "name": "Royaumes de l’Est – Inversés – Or",
+    "description": "Obtenir l’or dans toutes les courses inversées des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vol dynamique",
+    "instance": "Vol dynamique",
+    "source": "Obtenir l’or dans toutes les courses inversées des royaumes de l’Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18574,
+    "wowheadAchievementId": 18574,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18574",
+    "blizzardCategoryId": 15462,
+    "blizzardCategoryName": "Vol dynamique",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_18568",
+    "name": "Royaumes de l’Est – Or",
+    "description": "Obtenir l’or dans toutes les courses normales des royaumes de l’Est.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Vol dynamique",
+    "instance": "Vol dynamique",
+    "source": "Obtenir l’or dans toutes les courses normales des royaumes de l’Est.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18568,
+    "wowheadAchievementId": 18568,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18568",
+    "blizzardCategoryId": 15462,
+    "blizzardCategoryName": "Vol dynamique",
     "wowhead": null,
     "mamytwink": null
   }

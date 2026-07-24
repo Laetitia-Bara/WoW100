@@ -1729,7 +1729,41 @@
     "description": "Le proto-mouton passe l’hiver dépourvu de fleurs. Lorsque le printemps revient, les plaines s’emplissent de délicieuses odeurs de terre.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
+    "locationZone": "Île de Dorn",
+    "zone": "Île de Dorn",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1762,7 +1796,41 @@
     "description": "Ces essaims d’énergie du Vide ne peuvent pas persister dans la lumière de Beledar.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
+    "locationZone": "Sainte-Chute",
+    "zone": "Sainte-Chute",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1795,7 +1863,48 @@
     "description": "C’est un oiseau ! C’est un gyrocoptère ! Non, attendez, c’est bien pire que ça. Fuyez !",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838",
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
+    "locationZone": "Sainte-Chute",
+    "zone": "Sainte-Chute",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1829,7 +1938,55 @@
     "description": "Beaucoup d’arachnides doivent se débrouiller pour survivre après leur éclosion. C’est un sujet récurrent en thérapie pour les araignées.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795",
+      "wowhead-zone:14752",
+      "wowhead-zone:14753"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14753",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "locationZone": "Les abîmes Retentissants",
+    "zone": "Les abîmes Retentissants",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1865,7 +2022,48 @@
     "description": "Les grandes cornes de ces bêtes rendent jaloux les autres ruminants à cornes.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717",
+      "wowhead-zone:14771"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14771",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
+    "locationZone": "Île de Dorn",
+    "zone": "Île de Dorn",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1899,7 +2097,41 @@
     "description": "Les éleveurs et éleveuses terrestres possèdent différentes bêtes cornues de somme ou de compagnie. Aucune de ces créatures n’est plus fière que le béliérithe.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
+    "locationZone": "Île de Dorn",
+    "zone": "Île de Dorn",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1932,7 +2164,55 @@
     "description": "On trouve cette créature principalement sous terre, mais certains spécimens préfèrent la surface. Cela dit, ce n’est pas mon problème.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838",
+      "wowhead-zone:14795",
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
+    "locationZone": "Sainte-Chute",
+    "zone": "Sainte-Chute",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1968,7 +2248,41 @@
     "description": "Les membres des équipes techniques et scientifiques de Terremine, ainsi que les joueuses et joueurs, doivent nettoyer leur bureau pour éviter les infestations de cancrelats.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
+    "locationZone": "Terremine",
+    "zone": "Terremine",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2001,7 +2315,41 @@
     "description": "Les proto-béliers soulèvent des nuages de poussière en s’amusant, en se battant et en se reposant.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
+    "locationZone": "Île de Dorn",
+    "zone": "Île de Dorn",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2034,7 +2382,48 @@
     "description": "Les jeunes proto-béliers aiment jouer et faire semblant de charger. Mais ils aiment aussi charger pour de vrai.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717",
+      "wowhead-zone:14771"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14771",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
+    "locationZone": "Île de Dorn",
+    "zone": "Île de Dorn",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2099,7 +2488,41 @@
     "description": "Enterrés dans le sable et les sédiments, ces crabes se fondent parfaitement dans leur environnement.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
+    "locationZone": "Terremine",
+    "zone": "Terremine",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2132,7 +2555,41 @@
     "description": "Les crabes des cavernes coquille-pâle seraient la variante la plus savoureuse. Ce qui explique sans doute qu’on en trouve aussi peu.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
+    "locationZone": "Terremine",
+    "zone": "Terremine",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2165,7 +2622,41 @@
     "description": "Est-ce qu’il a passé trop de temps près de la kaja’mite ? Est-ce que quelqu’un lui a fait boire du Kaja’Cola ? Aucune idée, mais ce nom est un coup de génie commercial.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8499",
+    "locationRefs": [
+      "wowhead-zone:8499"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8499",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8499",
+      "name": "Zuldazar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zuldazar",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar",
+      "wowheadZoneIds": [
+        8499
+      ]
+    },
+    "locationZone": "Zuldazar",
+    "zone": "Zuldazar",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2198,7 +2689,41 @@
     "description": "L’habitat naturel de ces crabes est si pollué et dépourvu de coques à coloniser qu’ils ont dû s’abriter dans des munitions gobelines abandonnées. En sachant ça, comptez-vous continuer de semer vos déchets n’importe où ?",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
+    "locationZone": "Terremine",
+    "zone": "Terremine",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2231,7 +2756,41 @@
     "description": "En cas de besoin, la main-d’œuvre de la KapitalRisk peut utiliser ces animaux pour des tâches de démolition, à condition de les manipuler avec des pinces. Ce qui semble tout à fait approprié.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
+    "locationZone": "Terremine",
+    "zone": "Terremine",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2264,7 +2823,41 @@
     "description": "Les cobayes qui s’enfuient des laboratoires sont parfois dangereux. Parfois mignons. Parfois, les deux !",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
+    "locationZone": "Terremine",
+    "zone": "Terremine",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2297,7 +2890,41 @@
     "description": "Contrairement aux pieuvres et aux enfants, l’encrevive ne lance pas de l’encre n’importe où, sauf si la situation l’exige.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
+    "locationZone": "Azj-Kahet",
+    "zone": "Azj-Kahet",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2330,7 +2957,41 @@
     "description": "Bien qu’elle soit mignonne quand elle fait cette taille, l’encrevive représente une véritable menace pour les navires en grandissant.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
+    "locationZone": "Azj-Kahet",
+    "zone": "Azj-Kahet",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2363,7 +3024,48 @@
     "description": "Imaginez que vous vous déplaciez si lentement que de la mousse vous pousserait sur le dos. Ça ne pourrait pas m’arriver.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717",
+      "wowhead-zone:14771"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14771",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
+    "locationZone": "Île de Dorn",
+    "zone": "Île de Dorn",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2397,7 +3099,55 @@
     "description": "Les flagellants fongiques sont généralement violents et carnivores, mais cette espèce plus petite ne fera guère plus que frapper timidement le menu fretin avec ses membres.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795",
+      "wowhead-zone:14838",
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "locationZone": "Les abîmes Retentissants",
+    "zone": "Les abîmes Retentissants",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2433,7 +3183,41 @@
     "description": "Même les sédiments durs ne résistent pas longtemps aux griffes fouisseuses de ces créatures.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "locationZone": "Les abîmes Retentissants",
+    "zone": "Les abîmes Retentissants",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2466,7 +3250,55 @@
     "description": "Cette créature est utilisée au combat, mais aussi comme bête de somme quand elle devient plus grande. Vu sa taille actuelle, elle ne représente un danger que pour vos chevilles.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795",
+      "wowhead-zone:14838",
+      "wowhead-zone:14753"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14753",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "locationZone": "Les abîmes Retentissants",
+    "zone": "Les abîmes Retentissants",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2502,7 +3334,56 @@
     "description": "Difficiles à repérer dans le noir, ces vers ont donné une leçon à beaucoup d’aventuriers et aventurières qui fourraient leurs doigts où ils n’avaient rien à faire.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14753",
+    "locationRefs": [
+      "wowhead-zone:14753",
+      "wowhead-zone:14752",
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14753",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14753",
+      "name": "Cité des Fils",
+      "kind": "subzone",
+      "subzoneName": "Cité des Fils",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet",
+        "Cité des Fils"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet > Cité des Fils",
+      "wowheadZoneIds": [
+        14753
+      ]
+    },
+    "locationZone": "Azj-Kahet",
+    "zone": "Azj-Kahet",
+    "subzone": "Cité des Fils",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2538,7 +3419,55 @@
     "description": "Des griffes fouisseuses résistantes permettent aux arachnides de se déplacer facilement sous terre, mais quelle vie ennuyeuse !",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795",
+      "wowhead-zone:14752",
+      "wowhead-zone:14753"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14753",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "locationZone": "Les abîmes Retentissants",
+    "zone": "Les abîmes Retentissants",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2574,7 +3503,48 @@
     "description": "Son corps est si ridé et élastique !",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795",
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "locationZone": "Les abîmes Retentissants",
+    "zone": "Les abîmes Retentissants",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2608,7 +3578,41 @@
     "description": "Une récente excavation à Zuldazar a détruit l’habitat de ces créatures, qui se sont alors égayées dans la nature.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8499",
+    "locationRefs": [
+      "wowhead-zone:8499"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8499",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8499",
+      "name": "Zuldazar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zuldazar",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar",
+      "wowheadZoneIds": [
+        8499
+      ]
+    },
+    "locationZone": "Zuldazar",
+    "zone": "Zuldazar",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2641,7 +3645,41 @@
     "description": "Des spores fongiques baignées du sang de monstruosités défuntes.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "locationZone": "Les abîmes Retentissants",
+    "zone": "Les abîmes Retentissants",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2674,7 +3712,41 @@
     "description": "Ces jeunes créatures sont aussi joueuses que câlines.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
+    "locationZone": "Île aux Sirènes",
+    "zone": "Île aux Sirènes",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2707,7 +3779,41 @@
     "description": "On raconte que la morsure d’un jeune mordragon est bien plus puissante et cuisante que celle des adultes.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
+    "locationZone": "Île aux Sirènes",
+    "zone": "Île aux Sirènes",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2740,7 +3846,48 @@
     "description": "Comme beaucoup d’espèces de krolusks, cette variété semble préférer les grottes souterraines de l’île.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416",
+      "wowhead-zone:15827"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:15827",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
+    "locationZone": "Île aux Sirènes",
+    "zone": "Île aux Sirènes",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2774,7 +3921,41 @@
     "description": "Ces petits krolusks semblent préférer les hauts-fonds sablonneux et l’humidité des nombreuses plages des îles.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
+    "locationZone": "Île aux Sirènes",
+    "zone": "Île aux Sirènes",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2807,7 +3988,41 @@
     "description": "Autrefois protégés par les épaisses forêts de l’île, ces petits krolusks ont dû s’adapter rapidement face à la déforestation.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
+    "locationZone": "Île aux Sirènes",
+    "zone": "Île aux Sirènes",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2840,7 +4055,41 @@
     "description": "En l’approchant de votre oreille, vous entendrez les murmures des Dieux très anciens, comme avec un coquillage.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
+    "locationZone": "Azj-Kahet",
+    "zone": "Azj-Kahet",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2873,7 +4122,55 @@
     "description": "La lumière vacillante de ces lucioles apaiserait de manière surnaturelle et étrange les voyageurs et les prédateurs.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752",
+      "wowhead-zone:14838",
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
+    "locationZone": "Azj-Kahet",
+    "zone": "Azj-Kahet",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2908,7 +4205,55 @@
     "description": "Même si on confond parfois la lumière de ces insectes avec la lueur des substances toxiques ou de la magie noire, les Nérubiens et le peuple arathi les trouvent d’une beauté envoûtante.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795",
+      "wowhead-zone:14752",
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "locationZone": "Les abîmes Retentissants",
+    "zone": "Les abîmes Retentissants",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2944,7 +4289,55 @@
     "description": "La lueur verte de cette luciole est perçue comme un mauvais présage par les personnes qui voyagent dans les ténèbres.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717",
+      "wowhead-zone:14771",
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14771",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
+    "locationZone": "Île de Dorn",
+    "zone": "Île de Dorn",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2980,7 +4373,48 @@
     "description": "Mieux vaut ne pas le garder à l’intérieur si on habite dans une maison en bois.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795",
+      "wowhead-zone:14771"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14771",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "locationZone": "Les abîmes Retentissants",
+    "zone": "Les abîmes Retentissants",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3014,7 +4448,55 @@
     "description": "Les belles couleurs du double chapeau de ces créatures fongiques attirent sans distinction les victimes intelligentes et bestiales.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795",
+      "wowhead-zone:14838",
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "locationZone": "Les abîmes Retentissants",
+    "zone": "Les abîmes Retentissants",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3049,7 +4531,41 @@
     "description": "On raconte que dès leur éclosion, les mordragons sont indépendants. La récente expédition vers Nazjatar semble avoir démenti cette théorie.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
+    "locationZone": "Île aux Sirènes",
+    "zone": "Île aux Sirènes",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3082,7 +4598,41 @@
     "description": "Les jeunes mordragons abandonnés sur les côtes sont à présent imprégnés de l’énergie de la tempête furie-des-mers, comme les autres créatures de l’île aux Sirènes.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
+    "locationZone": "Île aux Sirènes",
+    "zone": "Île aux Sirènes",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3115,7 +4665,49 @@
     "description": "Ces agneaux savourent un voyage vers les plages de Khaz Algar pour se reposer sur le sable chaud.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14771",
+    "locationRefs": [
+      "wowhead-zone:14771",
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14771",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14771",
+      "name": "Dornogal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dornogal",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn",
+        "Dornogal"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn > Dornogal",
+      "wowheadZoneIds": [
+        14771
+      ]
+    },
+    "locationZone": "Dornogal",
+    "zone": "Dornogal",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3149,7 +4741,41 @@
     "description": "Les fleuristes terrestres habiles sont capables de créer de magnifiques compositions florales sur le dos des proto-moutons.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
+    "locationZone": "Île de Dorn",
+    "zone": "Île de Dorn",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3182,7 +4808,41 @@
     "description": "Ce magnifique ara est très loin de chez lui, et cherche une compagnie plus digne que ses anciens « propriétaires ».",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
+    "locationZone": "Île aux Sirènes",
+    "zone": "Île aux Sirènes",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3215,7 +4875,41 @@
     "description": "IL Y A DES ABEILLES ARDENTES, MAINTENANT ?",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
+    "locationZone": "Île de Dorn",
+    "zone": "Île de Dorn",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3248,7 +4942,41 @@
     "description": "Ces poules soie se trouvaient à bord des aéronefs des gens qui ont quitté l’Empire arathi pour réaliser la vision prophétique de leur empereur.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
+    "locationZone": "Sainte-Chute",
+    "zone": "Sainte-Chute",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3281,7 +5009,41 @@
     "description": "Il n’est pas facile d’élever des poules en liberté à Sainte-Chute à cause des monstres de l’ombre et des créatures pisciformes.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
+    "locationZone": "Sainte-Chute",
+    "zone": "Sainte-Chute",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3314,7 +5076,41 @@
     "description": "Plus les moustaches sont épaisses et longues, plus le rongeur est sournois. C’est une loi de la nature.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
+    "locationZone": "Terremine",
+    "zone": "Terremine",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3347,7 +5143,41 @@
     "description": "Arrêtez-moi si vous la connaissez : ça commence par une chute dans une cuve d’acide radioactif.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
+    "locationZone": "Terremine",
+    "zone": "Terremine",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3380,7 +5210,48 @@
     "description": "Capables de percevoir les vibrations et les secousses à près d’un kilomètre de distance, ces jeunes taupes ont tendance à s’enterrer au moindre signe de danger mortel.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795",
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "locationZone": "Les abîmes Retentissants",
+    "zone": "Les abîmes Retentissants",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3414,7 +5285,41 @@
     "description": "Les petites touches vert acide ajoutent des airs de machine de course à cette sorte d’oiseau robotique.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
+    "locationZone": "Terremine",
+    "zone": "Terremine",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3447,7 +5352,41 @@
     "description": "La mascotte parfaite si vous aimez marcher sur quelque chose d’humide au milieu de la nuit.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
+    "locationZone": "Azj-Kahet",
+    "zone": "Azj-Kahet",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3480,7 +5419,41 @@
     "description": "Le Sang noir est délicieux. Il a le goût des guerres du passé et de celles à venir.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14752",
+    "locationRefs": [
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14752",
+      "name": "Azj-Kahet",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azj-Kahet",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Azj-Kahet"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Azj-Kahet",
+      "wowheadZoneIds": [
+        14752
+      ]
+    },
+    "locationZone": "Azj-Kahet",
+    "zone": "Azj-Kahet",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3513,7 +5486,41 @@
     "description": "La plupart des gens ne trouvent pas le sang figé très appétissant. Contrairement aux tiques sanguinaires.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14795",
+    "locationRefs": [
+      "wowhead-zone:14795"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14795",
+      "name": "Les abîmes Retentissants",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Les abîmes Retentissants",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Les abîmes Retentissants"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Les abîmes Retentissants",
+      "wowheadZoneIds": [
+        14795
+      ]
+    },
+    "locationZone": "Les abîmes Retentissants",
+    "zone": "Les abîmes Retentissants",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3546,7 +5553,55 @@
     "description": "Le son d’une troglonouille résonnant dans les profondeurs d’une grotte ressemble presque à… du ragtime ?",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14838",
+    "locationRefs": [
+      "wowhead-zone:14838",
+      "wowhead-zone:14795",
+      "wowhead-zone:14752"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14838",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14795",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:14752",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14838",
+      "name": "Sainte-Chute",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Sainte-Chute",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Sainte-Chute"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Sainte-Chute",
+      "wowheadZoneIds": [
+        14838
+      ]
+    },
+    "locationZone": "Sainte-Chute",
+    "zone": "Sainte-Chute",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3582,7 +5637,41 @@
     "description": "Plus rapide. Plus forte. Avec un double saut.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
+    "locationZone": "Terremine",
+    "zone": "Terremine",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3615,7 +5704,41 @@
     "description": "Avant le modèle II, les Vermines étaient des nuisibles agaçants et trop complexes. Mais maintenant… ils me rendent vraiment dingue !",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15347",
+    "locationRefs": [
+      "wowhead-zone:15347"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15347",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15347",
+      "name": "Terremine",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Terremine",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Terremine"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Terremine",
+      "wowheadZoneIds": [
+        15347
+      ]
+    },
+    "locationZone": "Terremine",
+    "zone": "Terremine",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4255,7 +6378,42 @@
     "description": "Dandin a été rejeté par les autres cavaleurs cavernicoles et est tombé dans l’oubli, et tombé tout court jusqu’à arriver en Harandar. Il a pour réputation de suivre les gens qu’il trouve.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
+    "locationZone": "Harandar",
+    "zone": "Harandar",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -4288,7 +6446,41 @@
     "description": "Entraînés de manière rigoureuse dès la naissance, ces jeunes sangliers mangent, se battent et dorment dans leur armure.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10416",
+    "locationRefs": [
+      "wowhead-zone:10416"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10416",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10416",
+      "name": "Île aux Sirènes",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île aux Sirènes",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île aux Sirènes"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île aux Sirènes",
+      "wowheadZoneIds": [
+        10416
+      ]
+    },
+    "locationZone": "Île aux Sirènes",
+    "zone": "Île aux Sirènes",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -4354,7 +6546,41 @@
     "description": "Ce n’est pas une simple tortue, c’est une héroïne avec une demi-carapace !",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14717",
+    "locationRefs": [
+      "wowhead-zone:14717"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14717",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14717",
+      "name": "Île de Dorn",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Dorn",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn",
+      "wowheadZoneIds": [
+        14717
+      ]
+    },
+    "locationZone": "Île de Dorn",
+    "zone": "Île de Dorn",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -6562,7 +8788,42 @@
     "description": "Le Fléau des Aspects est dévoré par la rage et mû par une faim insatiable. Sa présence est le signe d’un avenir imprévisible et erratique pour toutes les créatures draconiques.",
     "category": "pets",
     "expansion": "warWithin",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:14771",
+    "locationRefs": [
+      "wowhead-zone:14771"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14771",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14771",
+      "name": "Dornogal",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dornogal",
+      "continentName": "Khaz Algar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Khaz Algar",
+        "Île de Dorn",
+        "Dornogal"
+      ],
+      "pathLabel": "Azeroth > Khaz Algar > Île de Dorn > Dornogal",
+      "wowheadZoneIds": [
+        14771
+      ]
+    },
+    "locationZone": "Dornogal",
+    "zone": "Dornogal",
+    "subzone": "",
+    "region": "Khaz Algar",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",

@@ -2431,8 +2431,38 @@
     "description": "Atteindre le rang 15 de renom auprès du concordat de Valdrakken.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Valdrakken",
     "primaryLocationRef": "wowhead-zone:13862",
+    "locationRefs": [
+      "wowhead-zone:13862"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13862",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13862",
+      "name": "Valdrakken",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Valdrakken",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus",
+        "Valdrakken"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus > Valdrakken",
+      "wowheadZoneIds": [
+        13862
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Valdrakken",
@@ -2504,8 +2534,37 @@
     "description": "Terminer les campagnes de renom des îles aux Dragons listés ci-dessous.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Îles",
     "primaryLocationRef": "wowhead-zone:8489",
+    "locationRefs": [
+      "wowhead-zone:8489"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8489",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8489",
+      "name": "Îles",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Îles",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Îles"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Îles",
+      "wowheadZoneIds": [
+        8489
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Îles",
@@ -2701,8 +2760,38 @@
     "description": "Achever 8 des quêtes journalières suivantes dans les marges des Éons.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Valdrakken",
     "primaryLocationRef": "wowhead-zone:13862",
+    "locationRefs": [
+      "wowhead-zone:13862"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13862",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13862",
+      "name": "Valdrakken",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Valdrakken",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus",
+        "Valdrakken"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus > Valdrakken",
+      "wowheadZoneIds": [
+        13862
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Valdrakken",
@@ -2852,8 +2941,37 @@
     "description": "Achever les suites de quêtes suivantes sur le chemin de la grotte de Zaralek et une fois à l’intérieur.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Grotte de Zaralek",
     "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Grotte de Zaralek",
@@ -2911,8 +3029,38 @@
     "description": "Atteindre le rang de renom 30 auprès du concordat de Valdrakken.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Valdrakken",
     "primaryLocationRef": "wowhead-zone:13862",
+    "locationRefs": [
+      "wowhead-zone:13862"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13862",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13862",
+      "name": "Valdrakken",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Valdrakken",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus",
+        "Valdrakken"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus > Valdrakken",
+      "wowheadZoneIds": [
+        13862
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Valdrakken",
@@ -3301,8 +3449,37 @@
     "description": "Cibler et utiliser /dormir sur les membres de la garde-rêve listés ci-dessous dans les plaines d’Ohn’ahra.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Plaines d’Ohn’ahra",
     "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Plaines d’Ohn’ahra",
@@ -3328,8 +3505,37 @@
     "description": "Achever les suites de quêtes suivantes aux confins Interdits.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Confins Interdits",
     "primaryLocationRef": "wowhead-zone:14433",
+    "locationRefs": [
+      "wowhead-zone:14433"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14433",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14433",
+      "name": "Confins Interdits",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Confins Interdits",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Confins Interdits"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Confins Interdits",
+      "wowheadZoneIds": [
+        14433
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Confins Interdits",
@@ -3355,8 +3561,37 @@
     "description": "Achever les suites de quêtes suivantes aux confins Interdits.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Confins Interdits",
     "primaryLocationRef": "wowhead-zone:14433",
+    "locationRefs": [
+      "wowhead-zone:14433"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14433",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14433",
+      "name": "Confins Interdits",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Confins Interdits",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Confins Interdits"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Confins Interdits",
+      "wowheadZoneIds": [
+        14433
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Confins Interdits",
@@ -3460,8 +3695,37 @@
     "description": "Achever les suites de quêtes suivantes aux rivages de l’Éveil.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Rivages de l’Éveil",
     "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Rivages de l’Éveil",
@@ -3602,8 +3866,37 @@
     "description": "Achever les suites de quêtes suivantes en Thaldraszus.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Thaldraszus",
     "primaryLocationRef": "wowhead-zone:13647",
+    "locationRefs": [
+      "wowhead-zone:13647"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13647",
+      "name": "Thaldraszus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Thaldraszus",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus",
+      "wowheadZoneIds": [
+        13647
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Thaldraszus",
@@ -3909,8 +4202,38 @@
     "description": "Récupérer des entrées de l’histoire du Repos du Traître pour Eadweard Dalyngrigge et les archives d’Azeroth en participant à la grande fouille.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Travée d’Azur",
     "primaryLocationRef": "wowhead-zone:13844",
+    "locationRefs": [
+      "wowhead-zone:13844"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13844",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13844",
+      "name": "Repos du Traître",
+      "kind": "subzone",
+      "subzoneName": "Repos du Traître",
+      "regionName": "Travée d’Azur",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Travée d’Azur",
+        "Repos du Traître"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur > Repos du Traître",
+      "wowheadZoneIds": [
+        13844
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Travée d’Azur",
@@ -3960,8 +4283,37 @@
     "description": "Achever les suites de quêtes suivantes dans Le Rêve d’émeraude.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Rêve d’émeraude",
     "primaryLocationRef": "wowhead-zone:14529",
+    "locationRefs": [
+      "wowhead-zone:14529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14529",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14529",
+      "name": "Rêve d’émeraude",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rêve d’émeraude",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rêve d’émeraude"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rêve d’émeraude",
+      "wowheadZoneIds": [
+        14529
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Rêve d’émeraude",
@@ -4010,8 +4362,37 @@
     "description": "Accomplir les hauts faits de quêtes des îles aux Dragons listés ci-dessous.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Îles",
     "primaryLocationRef": "wowhead-zone:8489",
+    "locationRefs": [
+      "wowhead-zone:8489"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8489",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8489",
+      "name": "Îles",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Îles",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Îles"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Îles",
+      "wowheadZoneIds": [
+        8489
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Îles",
@@ -4092,8 +4473,37 @@
     "description": "Accomplir les hauts faits listés ci-dessous :",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Rêve d’émeraude",
     "primaryLocationRef": "wowhead-zone:14529",
+    "locationRefs": [
+      "wowhead-zone:14529"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14529",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14529",
+      "name": "Rêve d’émeraude",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rêve d’émeraude",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rêve d’émeraude"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rêve d’émeraude",
+      "wowheadZoneIds": [
+        14529
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Rêve d’émeraude",
@@ -4293,8 +4703,37 @@
     "description": "Achever les suites de quêtes suivantes dans la travée d’Azur.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Travée d’Azur",
     "primaryLocationRef": "wowhead-zone:13646",
+    "locationRefs": [
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13646",
+      "name": "Travée d’Azur",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Travée d’Azur",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Travée d’Azur"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur",
+      "wowheadZoneIds": [
+        13646
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Travée d’Azur",
@@ -4343,8 +4782,37 @@
     "description": "Atteindre le niveau de renom maximum auprès des quatre factions principales.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Îles",
     "primaryLocationRef": "wowhead-zone:8489",
+    "locationRefs": [
+      "wowhead-zone:8489"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8489",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8489",
+      "name": "Îles",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Îles",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Îles"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Îles",
+      "wowheadZoneIds": [
+        8489
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Îles",
@@ -4563,8 +5031,38 @@
     "description": "Achever l’histoire de la reconquête de Gilnéas.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Gilnéas",
     "primaryLocationRef": "wowhead-zone:4714",
+    "locationRefs": [
+      "wowhead-zone:4714"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4714",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4714",
+      "name": "Gilnéas",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gilnéas",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Gilnéas (région)",
+        "Gilnéas"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Gilnéas (région) > Gilnéas",
+      "wowheadZoneIds": [
+        4714
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Gilnéas",
@@ -4714,8 +5212,37 @@
     "description": "Achever les suites de quêtes optionnelles des rivages de l’Éveil listées ci-dessous.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Rivages de l’Éveil",
     "primaryLocationRef": "wowhead-zone:13644",
+    "locationRefs": [
+      "wowhead-zone:13644"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13644",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13644",
+      "name": "Rivages de l’Éveil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rivages de l’Éveil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Rivages de l’Éveil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Rivages de l’Éveil",
+      "wowheadZoneIds": [
+        13644
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Rivages de l’Éveil",
@@ -4750,8 +5277,37 @@
     "description": "Achever les suites de quêtes optionnelles de la travée d’Azur listées ci-dessous.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Travée d’Azur",
     "primaryLocationRef": "wowhead-zone:13646",
+    "locationRefs": [
+      "wowhead-zone:13646"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13646",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13646",
+      "name": "Travée d’Azur",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Travée d’Azur",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Travée d’Azur"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Travée d’Azur",
+      "wowheadZoneIds": [
+        13646
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Travée d’Azur",
@@ -4786,8 +5342,37 @@
     "description": "Achever les suites de quêtes optionnelles des plaines d’Ohn’ahra listées ci-dessous.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Plaines d’Ohn’ahra",
     "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Plaines d’Ohn’ahra",
@@ -4822,8 +5407,37 @@
     "description": "Achever les suites de quêtes optionnelles de Thaldraszus listées ci-dessous.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Thaldraszus",
     "primaryLocationRef": "wowhead-zone:13647",
+    "locationRefs": [
+      "wowhead-zone:13647"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13647",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13647",
+      "name": "Thaldraszus",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Thaldraszus",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Thaldraszus"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Thaldraszus",
+      "wowheadZoneIds": [
+        13647
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Thaldraszus",
@@ -4858,8 +5472,37 @@
     "description": "Achever les suites de quêtes suivantes dans les plaines d’Ohn’ahra.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Plaines d’Ohn’ahra",
     "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Plaines d’Ohn’ahra",
@@ -5055,8 +5698,37 @@
     "description": "Achever les suites de quêtes De vieilles rancœurs dans les plaines d’Ohn’ahra.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Plaines d’Ohn’ahra",
     "primaryLocationRef": "wowhead-zone:13645",
+    "locationRefs": [
+      "wowhead-zone:13645"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:13645",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:13645",
+      "name": "Plaines d’Ohn’ahra",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Plaines d’Ohn’ahra",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Plaines d’Ohn’ahra"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Plaines d’Ohn’ahra",
+      "wowheadZoneIds": [
+        13645
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Plaines d’Ohn’ahra",
@@ -5215,8 +5887,37 @@
     "description": "Achever tous les hauts faits de la grotte de Zaralek listés ci-dessous.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Dragonflight",
+    "zone": "Grotte de Zaralek",
     "primaryLocationRef": "wowhead-zone:14022",
+    "locationRefs": [
+      "wowhead-zone:14022"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:14022",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:14022",
+      "name": "Grotte de Zaralek",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Grotte de Zaralek",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Grotte de Zaralek"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Grotte de Zaralek",
+      "wowheadZoneIds": [
+        14022
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Grotte de Zaralek",
@@ -6806,8 +7507,37 @@
     "description": "Vaincre les boss suivants dans n’importe quel mode.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -6833,8 +7563,37 @@
     "description": "Vaincre les boss suivants en mode héroïque.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -6860,8 +7619,37 @@
     "description": "Vaincre les boss suivants en mode mythique.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -7098,8 +7886,37 @@
     "description": "Vaincre Volcoross après qu’il ait consommé au moins 30 bufflards grésillants dans Amirdrassil, l’Espoir du Rêve en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -7134,8 +7951,37 @@
     "description": "Vaincre Fumeron après avoir éteint les 6 runes du seigneur du Feu dans Amirdrassil, l’Espoir du Rêve en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -7170,8 +8016,37 @@
     "description": "Vaincre le conseil des rêves dans Amirdrassil, l’Espoir du Rêve en mode mythique.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -7243,8 +8118,37 @@
     "description": "Vaincre Tindral Vifsage après avoir sauvé 6 Dragonnets perdus dans Amirdrassil, l’Espoir du Rêve en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -7421,8 +8325,37 @@
     "description": "Vaincre Fumeron dans Amirdrassil, l’Espoir du Rêve en mode mythique.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -7471,8 +8404,37 @@
     "description": "Vaincre Fyrakka le Flamboyant dans Amirdrassil, l’Espoir du Rêve en mode mythique.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -7521,8 +8483,37 @@
     "description": "Vaincre Igira la Cruelle dans Amirdrassil, l’Espoir du Rêve en mode mythique.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -7548,8 +8539,37 @@
     "description": "Vaincre les boss suivants qui brûlent le temple de l’Afflux dans Amirdrassil, l’Espoir du Rêve.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -7639,8 +8659,37 @@
     "description": "Vaincre Larodar, gardien de la flamme avec un lierre éteint et vivant dans Amirdrassil, l’Espoir du Rêve en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -7721,8 +8770,37 @@
     "description": "Vaincre Racine-Noueuse après avoir enflammé 8 floraisons inoffensives dans Amirdrassil, l’Espoir du Rêve en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -7826,8 +8904,37 @@
     "description": "Vaincre les boss suivants qui attaquent tous les intrus dans Amirdrassil, l’Espoir du Rêve.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -7853,8 +8960,37 @@
     "description": "Vaincre Larodar, gardien de la flamme dans Amirdrassil, l’Espoir du Rêve en mode mythique.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -7880,8 +9016,37 @@
     "description": "Vaincre les boss suivants qui menacent l’existence de l’Arbre-Monde dans Amirdrassil, l’Espoir du Rêve.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -8118,8 +9283,37 @@
     "description": "Vaincre Nymue, la trame du cercle dans Amirdrassil, l’Espoir du Rêve en mode mythique.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -8177,8 +9371,37 @@
     "description": "Vaincre Racine-Noueuse dans Amirdrassil, l’Espoir du Rêve en mode mythique.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -8282,8 +9505,37 @@
     "description": "Vaincre Igira après avoir libéré les bestioles calcinées dans Amirdrassil, l’Espoir du Rêve en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -8332,8 +9584,37 @@
     "description": "Vaincre les boss suivants qui attaquent le temple de l’Afflux dans Amirdrassil, l’Espoir du Rêve.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -8359,8 +9640,37 @@
     "description": "Vaincre Fyrakka le Flamboyant après avoir récupéré six souvenirs de Teldrassil et rapporté leurs esprits au cœur d’Amirdrassil dans Amirdrassil, l’Espoir du Rêve en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Teldrassil",
     "primaryLocationRef": "wowhead-zone:141",
+    "locationRefs": [
+      "wowhead-zone:141"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:141",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:141",
+      "name": "Teldrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Teldrassil",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Teldrassil"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Teldrassil",
+      "wowheadZoneIds": [
+        141
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Teldrassil",
@@ -8418,8 +9728,37 @@
     "description": "Vaincre le Conseil des rêves après avoir rallié le sergent Garnouille à votre cause dans Amirdrassil, l’Espoir du Rêve en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -8541,8 +9880,37 @@
     "description": "Vaincre Tindral Vifsage, prophète de flamme dans Amirdrassil, l’Espoir du Rêve en mode mythique.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -8568,8 +9936,37 @@
     "description": "Vaincre Nymue, la trame du cercle après avoir collecté 5 projections oniriques en dormant et vaincu le monarque manifesté dans Amirdrassil, l’Espoir du Rêve en mode normal ou supérieur.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -8682,8 +10079,37 @@
     "description": "Vaincre Fyrakka le Flamboyant dans Amirdrassil, l’Espoir du Rêve en mode mythique et en groupe de guilde.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -8801,8 +10227,37 @@
     "description": "Vaincre les boss suivants dans Amirdrassil, l’Espoir du Rêve en mode normal ou supérieur et en groupe de guilde.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -8828,8 +10283,37 @@
     "description": "Vaincre les boss suivants dans Amirdrassil, l’Espoir du Rêve en mode héroïque ou supérieur et en groupe de guilde.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",
@@ -8855,8 +10339,37 @@
     "description": "Vaincre Volcoross dans Amirdrassil, l’Espoir du Rêve en mode mythique.",
     "category": "achievements",
     "expansion": "dragonflight",
-    "zone": "Raids de Dragonflight",
+    "zone": "Amirdrassil",
     "primaryLocationRef": "wowhead-zone:15105",
+    "locationRefs": [
+      "wowhead-zone:15105"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15105",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15105",
+      "name": "Amirdrassil",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Amirdrassil",
+      "continentName": "Îles aux Dragons",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles aux Dragons",
+        "Amirdrassil"
+      ],
+      "pathLabel": "Azeroth > Îles aux Dragons > Amirdrassil",
+      "wowheadZoneIds": [
+        15105
+      ]
+    },
     "world": "Azeroth",
     "region": "Îles aux Dragons",
     "locationZone": "Amirdrassil",

@@ -355,8 +355,19 @@ async function loadLocationIndex() {
   );
   const locationsByRef = new Map();
   const candidates = [];
+  const aliasCounts = new Map();
 
   for (const location of catalog.locations ?? []) {
+    if (location.reviewStatus !== "reviewed") continue;
+
+    for (const alias of safeLocationAliases(location.name)) {
+      aliasCounts.set(alias, (aliasCounts.get(alias) ?? 0) + 1);
+    }
+  }
+
+  for (const location of catalog.locations ?? []) {
+    if (location.reviewStatus !== "reviewed") continue;
+
     const name = firstNonEmpty(location.name);
     const normalizedName = normalize(name);
 
@@ -369,10 +380,17 @@ async function loadLocationIndex() {
     const normalizedRegion = normalize(regionName);
     const isSubzone =
       location.kind === "subzone" && normalizedName !== normalizedRegion;
+    const aliases = [
+      normalizedName,
+      ...safeLocationAliases(name).filter(
+        (alias) => aliasCounts.get(alias) === 1,
+      ),
+    ];
     const candidate = {
       ref: location.ref,
       name,
       normalizedName,
+      aliases: [...new Set(aliases)],
       worldName: world?.name ?? "",
       continentName: continent?.name ?? "",
       regionName,
@@ -380,9 +398,17 @@ async function loadLocationIndex() {
       subzoneName: isSubzone ? name : "",
       extensionKey: location.extensionKey,
       kind: location.kind,
+      path: location.path ?? [],
+      pathLabel: location.pathLabel ?? "",
+      wowheadZoneIds:
+        location.canonicalWowheadZoneIds ??
+        (Number.isInteger(location.wowheadZoneId)
+          ? [location.wowheadZoneId]
+          : []),
     };
 
     locationsByRef.set(location.ref, candidate);
+    locationsByRef.set(candidate.ref, candidate);
     candidates.push(candidate);
   }
 
@@ -395,6 +421,30 @@ async function loadLocationIndex() {
   });
 
   return { locationsByRef, candidates };
+}
+
+function safeLocationAliases(value) {
+  const normalized = normalize(value);
+  const aliases = [];
+
+  const articleStripped = normalized.replace(/^(l|le|la|les) /, "");
+  if (isSafeLocationAlias(articleStripped, normalized)) {
+    aliases.push(articleStripped);
+  }
+
+  const islandStripped = normalized.replace(/^(l )?iles? (d |de )/, "");
+  if (
+    islandStripped === "mecagone" &&
+    isSafeLocationAlias(islandStripped, normalized)
+  ) {
+    aliases.push(islandStripped);
+  }
+
+  return aliases;
+}
+
+function isSafeLocationAlias(alias, original) {
+  return alias !== original && alias.length >= 8 && alias.split(" ").length <= 3;
 }
 
 function expansionKeyMatchesLocation(achievementExpansion, locationExtensionKey) {
@@ -417,21 +467,24 @@ function expansionKeyMatchesLocation(achievementExpansion, locationExtensionKey)
 }
 
 function findTextMatch(candidate, weightedTexts, achievementExpansion) {
-  const needle = normalizeLocationText(candidate.name);
   let bestScore = 0;
 
-  for (const { text, weight } of weightedTexts) {
-    if (!text.includes(needle)) continue;
+  for (const alias of candidate.aliases ?? [candidate.normalizedName]) {
+    const needle = normalizeLocationText(alias);
 
-    let score = weight + candidate.normalizedName.length;
-    if (candidate.kind === "subzone") score += 12;
-    if (
-      expansionKeyMatchesLocation(achievementExpansion, candidate.extensionKey)
-    ) {
-      score += 18;
+    for (const { text, weight } of weightedTexts) {
+      if (!text.includes(needle)) continue;
+
+      let score = weight + alias.length;
+      if (candidate.kind === "subzone") score += 12;
+      if (
+        expansionKeyMatchesLocation(achievementExpansion, candidate.extensionKey)
+      ) {
+        score += 18;
+      }
+
+      bestScore = Math.max(bestScore, score);
     }
-
-    bestScore = Math.max(bestScore, score);
   }
 
   return bestScore;
@@ -445,7 +498,11 @@ function inferLocation(achievement, manualMetadata, expansion, locationIndex) {
   const manualLocation = locationIndex.locationsByRef.get(manualRef);
 
   if (manualLocation) {
-    return manualLocation;
+    return {
+      ...manualLocation,
+      locationAssignmentSource: "manual_achievements_metadata",
+      locationAssignmentConfidence: "confirmed",
+    };
   }
 
   const weightedTexts = [
@@ -466,7 +523,14 @@ function inferLocation(achievement, manualMetadata, expansion, locationIndex) {
     }
   }
 
-  return selectedScore >= 60 ? selectedLocation : null;
+  return selectedScore >= 60
+    ? {
+        ...selectedLocation,
+        locationAssignmentSource:
+          "achievement_text_and_locations_reference_catalog",
+        locationAssignmentConfidence: "auto_assigned_text_match",
+      }
+    : null;
 }
 
 function locationFields(location) {
@@ -474,9 +538,31 @@ function locationFields(location) {
 
   return {
     primaryLocationRef: location.ref,
+    locationRefs: [location.ref],
+    locationAssignments: [
+      {
+        locationRef: location.ref,
+        role: "primary_obtainment",
+        source: location.locationAssignmentSource,
+        confidence: location.locationAssignmentConfidence,
+      },
+    ],
+    location: {
+      ref: location.ref,
+      name: location.name,
+      kind: location.kind,
+      subzoneName: location.subzoneName,
+      regionName: location.regionName,
+      continentName: location.continentName,
+      worldName: location.worldName,
+      path: location.path,
+      pathLabel: location.pathLabel,
+      wowheadZoneIds: location.wowheadZoneIds,
+    },
     world: location.worldName,
     region: location.continentName,
     locationZone: location.regionName,
+    zone: location.regionName,
     ...(location.subzoneName ? { subzone: location.subzoneName } : {}),
   };
 }

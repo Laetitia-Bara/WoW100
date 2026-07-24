@@ -160,7 +160,43 @@
     "description": "Malgré sa malchance qui lui a valu d’être exposé de nombreuses fois à la corruption du Vide, Cabiai a survécu. Il fait partie des rares créatures à s’en être sorties plus ou moins indemnes.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15969",
+    "locationRefs": [
+      "wowhead-zone:15969"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15969",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15969",
+      "name": "Lune-d’Argent",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Lune-d’Argent",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels",
+        "Lune-d’Argent"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels > Lune-d’Argent",
+      "wowheadZoneIds": [
+        15969
+      ]
+    },
+    "locationZone": "Lune-d’Argent",
+    "zone": "Lune-d’Argent",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -1070,7 +1106,43 @@
     "description": "Les magistères adorent activer leurs balais enchantés avant de partir au travail, pour ensuite les retrouver coincés dans un coin de leur logement de Lune-d’Argent.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15969",
+    "locationRefs": [
+      "wowhead-zone:15969"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15969",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15969",
+      "name": "Lune-d’Argent",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Lune-d’Argent",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels",
+        "Lune-d’Argent"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels > Lune-d’Argent",
+      "wowheadZoneIds": [
+        15969
+      ]
+    },
+    "locationZone": "Lune-d’Argent",
+    "zone": "Lune-d’Argent",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -1103,7 +1175,42 @@
     "description": "Oui, oui, elle va se transformer en une majestueuse créature ailée. Cela prendra juste quelques petites dizaines d’années.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
+    "locationZone": "Harandar",
+    "zone": "Harandar",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -1136,7 +1243,49 @@
     "description": "Bond jour !",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15947",
+    "locationRefs": [
+      "wowhead-zone:15947",
+      "wowhead-zone:16194"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15947",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:16194",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15947",
+      "name": "Zul’Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul’Aman",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Zul’Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+      "wowheadZoneIds": [
+        15947
+      ]
+    },
+    "locationZone": "Zul’Aman",
+    "zone": "Zul’Aman",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -1269,7 +1418,42 @@
     "description": "Ces faucons-dragons se sont développés dans les terres sauvages de Zul’Aman, où leurs plumes vertes et leur mue leur permettent d’échapper aux parties de chasse et aux prédateurs.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15947",
+    "locationRefs": [
+      "wowhead-zone:15947"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15947",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15947",
+      "name": "Zul’Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul’Aman",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Zul’Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+      "wowheadZoneIds": [
+        15947
+      ]
+    },
+    "locationZone": "Zul’Aman",
+    "zone": "Zul’Aman",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -1333,7 +1517,49 @@
     "description": "Mince, un lézard ! Attention, il mord !",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:16194",
+    "locationRefs": [
+      "wowhead-zone:16194",
+      "wowhead-zone:15947"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16194",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:15947",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16194",
+      "name": "Atal’Aman",
+      "kind": "subzone",
+      "subzoneName": "Atal’Aman",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman",
+        "Atal’Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman > Atal’Aman",
+      "wowheadZoneIds": [
+        16194
+      ]
+    },
+    "locationZone": "Zul'Aman",
+    "zone": "Zul'Aman",
+    "subzone": "Atal’Aman",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -1400,7 +1626,49 @@
     "description": "Elles rôdent dans les eaux sombres, les dents acérées comme des aiguilles. Vous aussi, vous pouvez les mordre et boire leur sang. Vous en avez le droit.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:16194",
+    "locationRefs": [
+      "wowhead-zone:16194",
+      "wowhead-zone:15947"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:16194",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:15947",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:16194",
+      "name": "Atal’Aman",
+      "kind": "subzone",
+      "subzoneName": "Atal’Aman",
+      "regionName": "Zul'Aman",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Zul'Aman",
+        "Atal’Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Zul'Aman > Atal’Aman",
+      "wowheadZoneIds": [
+        16194
+      ]
+    },
+    "locationZone": "Zul'Aman",
+    "zone": "Zul'Aman",
+    "subzone": "Atal’Aman",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -1434,7 +1702,42 @@
     "description": "Les jeunes rampants des bosquets sont réputés s’enrouler autour des chevilles de qui les protège pour dormir.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
+    "locationZone": "Harandar",
+    "zone": "Harandar",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -1467,7 +1770,42 @@
     "description": "Les plumes de mue de ces jeunes aigles sont utilisées pour construire de la literie confortable pour les Amani.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15947",
+    "locationRefs": [
+      "wowhead-zone:15947"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15947",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15947",
+      "name": "Zul’Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul’Aman",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Zul’Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+      "wowheadZoneIds": [
+        15947
+      ]
+    },
+    "locationZone": "Zul’Aman",
+    "zone": "Zul’Aman",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -1500,7 +1838,42 @@
     "description": "Il est comploteur. Son sourire est narquois. Ne lui faites pas confiance.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15947",
+    "locationRefs": [
+      "wowhead-zone:15947"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15947",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15947",
+      "name": "Zul’Aman",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zul’Aman",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Zul’Aman"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Zul’Aman",
+      "wowheadZoneIds": [
+        15947
+      ]
+    },
+    "locationZone": "Zul’Aman",
+    "zone": "Zul’Aman",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -1533,7 +1906,42 @@
     "description": "Le bois des Chants éternels profite d’un afflux récent de ces bestioles volantes.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
+    "locationZone": "Bois des Chants éternels",
+    "zone": "Bois des Chants éternels",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -1566,7 +1974,42 @@
     "description": "Ces oiseaux guindés ne savent pas voler et sont réputés faire leur toilette constamment. Tout comme les gens qui les chevauchent.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
+    "locationZone": "Bois des Chants éternels",
+    "zone": "Bois des Chants éternels",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -1632,7 +2075,42 @@
     "description": "Ce ne sont pas les mêmes créatures que les sporoptères que l’on peut trouver sur Draenor ou en Outreterre. Ce n’est qu’une coïncidence.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
+    "locationZone": "Harandar",
+    "zone": "Harandar",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -1665,7 +2143,42 @@
     "description": "Ils n’ont PAS un goût de pomme de terre. Promis.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15355",
+    "locationRefs": [
+      "wowhead-zone:15355"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15355",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15355",
+      "name": "Harandar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Harandar",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Harandar"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Harandar",
+      "wowheadZoneIds": [
+        15355
+      ]
+    },
+    "locationZone": "Harandar",
+    "zone": "Harandar",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -1731,7 +2244,42 @@
     "description": "La population des wyrms de mana a monté en flèche quand Torrent arcanique a été nerfé.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15968",
+    "locationRefs": [
+      "wowhead-zone:15968"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15968",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15968",
+      "name": "Bois des Chants éternels",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Bois des Chants éternels",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels",
+      "wowheadZoneIds": [
+        15968
+      ]
+    },
+    "locationZone": "Bois des Chants éternels",
+    "zone": "Bois des Chants éternels",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Découverte",
     "source": "Découverte",
     "sourceType": "DISCOVERY",
@@ -2440,7 +2988,43 @@
     "description": "Les brise-esprits sont des créatures rares des profondeurs. Nous ne savons pas grand-chose sur leur véritable origine, si ce n’est qu’elle remonte à l’époque de l’Empire noir.",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15969",
+    "locationRefs": [
+      "wowhead-zone:15969"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15969",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15969",
+      "name": "Lune-d’Argent",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Lune-d’Argent",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels",
+        "Lune-d’Argent"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels > Lune-d’Argent",
+      "wowheadZoneIds": [
+        15969
+      ]
+    },
+    "locationZone": "Lune-d’Argent",
+    "zone": "Lune-d’Argent",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -2508,7 +3092,43 @@
     "description": "Il n’a été que très peu exposé à l’énergie du Vide, mais il montre déjà des signes de nouvelles capacités. Nous pouvons maîtriser ces dernières en l’entraînant. – Sergent Vornin",
     "category": "pets",
     "expansion": "midnight",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:15969",
+    "locationRefs": [
+      "wowhead-zone:15969"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:15969",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:15969",
+      "name": "Lune-d’Argent",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Lune-d’Argent",
+      "continentName": "Quel'Thalas",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Quel'Thalas",
+        "Bois des Chants éternels",
+        "Lune-d’Argent"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Quel'Thalas > Bois des Chants éternels > Lune-d’Argent",
+      "wowheadZoneIds": [
+        15969
+      ]
+    },
+    "locationZone": "Lune-d’Argent",
+    "zone": "Lune-d’Argent",
+    "subzone": "",
+    "region": "Quel'Thalas",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",

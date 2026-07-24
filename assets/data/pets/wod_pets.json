@@ -962,7 +962,42 @@
     "description": "La terogriffe est l’un des pires cauchemars de tout ce qui est petit, mignon et poilu.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8670",
+    "locationRefs": [
+      "wowhead-zone:8670"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8670",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8670",
+      "name": "Dazar’alor",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dazar’alor",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Dazar’alor"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Dazar’alor",
+      "wowheadZoneIds": [
+        8670
+      ]
+    },
+    "locationZone": "Dazar’alor",
+    "zone": "Dazar’alor",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -1393,7 +1428,41 @@
     "description": "Il y a longtemps, un Ogre essaya d’utiliser un avorton peau-de-cuir comme ballon. Depuis, son nom est devenu Un-Pied.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6755",
+    "locationRefs": [
+      "wowhead-zone:6755"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6755",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6755",
+      "name": "Nagrand",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nagrand",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Nagrand"
+      ],
+      "pathLabel": "Draenor > Draenor > Nagrand",
+      "wowheadZoneIds": [
+        6755
+      ]
+    },
+    "locationZone": "Nagrand",
+    "zone": "Nagrand",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1426,7 +1495,41 @@
     "description": "Les anciennes tribus de Draenor récoltaient leurs becs tranchants pour en faire des armes et des outils grossiers.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
+    "locationZone": "Jungle de Tanaan",
+    "zone": "Jungle de Tanaan",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1459,7 +1562,55 @@
     "description": "Ils se couvrent d’algues et autres végétaux marins pour avoir une pince d’avance sur leur proie.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6662",
+    "locationRefs": [
+      "wowhead-zone:6662",
+      "wowhead-zone:7334",
+      "wowhead-zone:7541"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6662",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7334",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7541",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6662",
+      "name": "Talador",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador",
+      "wowheadZoneIds": [
+        6662
+      ]
+    },
+    "locationZone": "Talador",
+    "zone": "Talador",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1495,7 +1646,48 @@
     "description": "Ses griffes étant capables de transpercer un gantelet en plaques, il vaut mieux le manipuler avec précaution.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7541",
+    "locationRefs": [
+      "wowhead-zone:7541",
+      "wowhead-zone:6720"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7541",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:6720",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7541",
+      "name": "Tornheim",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tornheim",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Tornheim"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Tornheim",
+      "wowheadZoneIds": [
+        7541
+      ]
+    },
+    "locationZone": "Tornheim",
+    "zone": "Tornheim",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1560,7 +1752,41 @@
     "description": "La plupart des chauves-souris ne sont pas aveugles. Celle-là l’est complètement.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7503",
+    "locationRefs": [
+      "wowhead-zone:7503"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7503",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7503",
+      "name": "Haut-Roc",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Haut-Roc",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Haut-Roc"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc",
+      "wowheadZoneIds": [
+        7503
+      ]
+    },
+    "locationZone": "Haut-Roc",
+    "zone": "Haut-Roc",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1624,7 +1850,48 @@
     "description": "Les spores fongiques riches en nutriments dont ils se nourrissent donnent à la carapace de ces crabes sa couleur distinctive.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6719",
+    "locationRefs": [
+      "wowhead-zone:6719",
+      "wowhead-zone:6722"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6719",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6719",
+      "name": "Vallée d’Ombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée d’Ombrelune",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Vallée d’Ombrelune"
+      ],
+      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune",
+      "wowheadZoneIds": [
+        6719
+      ]
+    },
+    "locationZone": "Vallée d’Ombrelune",
+    "zone": "Vallée d’Ombrelune",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1658,7 +1925,41 @@
     "description": "Le crabe carapalune réfléchit si bien la lumière qu’on peut s’en servir comme d’un miroir. Attention à ne pas trop approcher votre visage de ses pinces !",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6719",
+    "locationRefs": [
+      "wowhead-zone:6719"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6719",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6719",
+      "name": "Vallée d’Ombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée d’Ombrelune",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Vallée d’Ombrelune"
+      ],
+      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune",
+      "wowheadZoneIds": [
+        6719
+      ]
+    },
+    "locationZone": "Vallée d’Ombrelune",
+    "zone": "Vallée d’Ombrelune",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1691,7 +1992,41 @@
     "description": "Ces crustacés rusés s’enterrent sous la vase pour ne pas être enlevés par de plus grands prédateurs.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
+    "locationZone": "Jungle de Tanaan",
+    "zone": "Jungle de Tanaan",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1724,7 +2059,55 @@
     "description": "L’eauciole se sert de la surface de l’onde réfléchissant la lueur de son abdomen pour attirer ses partenaires.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6719",
+    "locationRefs": [
+      "wowhead-zone:6719",
+      "wowhead-zone:6662",
+      "wowhead-zone:6722"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6719",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:6662",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6719",
+      "name": "Vallée d’Ombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée d’Ombrelune",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Vallée d’Ombrelune"
+      ],
+      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune",
+      "wowheadZoneIds": [
+        6719
+      ]
+    },
+    "locationZone": "Vallée d’Ombrelune",
+    "zone": "Vallée d’Ombrelune",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1760,7 +2143,41 @@
     "description": "Ils abusent leurs proies grâce à leur air si mignon, puis la cueillent dans un déluge de coups dévastateurs. Câliner avec prudence uniquement.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6722",
+    "locationRefs": [
+      "wowhead-zone:6722"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6722",
+      "name": "Flèches d’Arak",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Flèches d’Arak",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Flèches d’Arak"
+      ],
+      "pathLabel": "Draenor > Draenor > Flèches d’Arak",
+      "wowheadZoneIds": [
+        6722
+      ]
+    },
+    "locationZone": "Flèches d’Arak",
+    "zone": "Flèches d’Arak",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1793,7 +2210,41 @@
     "description": "Camouflés en lichens, les glisseurs se dissimulent dans les arbres pour plonger sur leurs victimes.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6719",
+    "locationRefs": [
+      "wowhead-zone:6719"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6719",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6719",
+      "name": "Vallée d’Ombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée d’Ombrelune",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Vallée d’Ombrelune"
+      ],
+      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune",
+      "wowheadZoneIds": [
+        6719
+      ]
+    },
+    "locationZone": "Vallée d’Ombrelune",
+    "zone": "Vallée d’Ombrelune",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1826,7 +2277,41 @@
     "description": "Les barbelambres poussent souvent des créatures plus grandes qu’elles à les agresser. Une fois que leur victime les attaque, c’est toute la ruche qui réplique.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
+    "locationZone": "Gorgrond",
+    "zone": "Gorgrond",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1859,7 +2344,56 @@
     "description": "Au clair de lune, leurs ailes créent une aura brillante donnant l’illusion d’une étoile scintillante.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7004",
+    "locationRefs": [
+      "wowhead-zone:7004",
+      "wowhead-zone:6720",
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7004",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:6720",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7004",
+      "name": "Mur-de-Givre",
+      "kind": "subzone",
+      "subzoneName": "Mur-de-Givre",
+      "regionName": "Crête de Givrefeu",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Crête de Givrefeu",
+        "Mur-de-Givre"
+      ],
+      "pathLabel": "Draenor > Draenor > Crête de Givrefeu > Mur-de-Givre",
+      "wowheadZoneIds": [
+        7004
+      ]
+    },
+    "locationZone": "Crête de Givrefeu",
+    "zone": "Crête de Givrefeu",
+    "subzone": "Mur-de-Givre",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1894,7 +2428,41 @@
     "description": "Les guêpes forestières font leur nid dans des arbres morts ou creux et sont promptes à attaquer tout ce qui menace leur essaim.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
+    "locationZone": "Gorgrond",
+    "zone": "Gorgrond",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1927,7 +2495,41 @@
     "description": "Contrairement à la croyance populaire, les guêpes piquesang ne vivent pas de sang mais d’amour.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6722",
+    "locationRefs": [
+      "wowhead-zone:6722"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6722",
+      "name": "Flèches d’Arak",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Flèches d’Arak",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Flèches d’Arak"
+      ],
+      "pathLabel": "Draenor > Draenor > Flèches d’Arak",
+      "wowheadZoneIds": [
+        6722
+      ]
+    },
+    "locationZone": "Flèches d’Arak",
+    "zone": "Flèches d’Arak",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1960,7 +2562,41 @@
     "description": "Étonnamment vif quand on le provoque, il se calme aussitôt quand on lui présente un picotin de sagittaire de Nagrand.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6662",
+    "locationRefs": [
+      "wowhead-zone:6662"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6662",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6662",
+      "name": "Talador",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador",
+      "wowheadZoneIds": [
+        6662
+      ]
+    },
+    "locationZone": "Talador",
+    "zone": "Talador",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -1993,7 +2629,41 @@
     "description": "Étonnamment vif quand on le provoque, il se calme aussitôt quand on lui présente un picotin de sagittaire de Nagrand.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
+    "locationZone": "Gorgrond",
+    "zone": "Gorgrond",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2026,7 +2696,41 @@
     "description": "Dotés de griffes extrêmement tranchantes, ces jeunes épine-glaciale creusent les couches de glace et de roche pour s’abriter.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6720",
+    "locationRefs": [
+      "wowhead-zone:6720"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6720",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6720",
+      "name": "Crête de Givrefeu",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Crête de Givrefeu",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Crête de Givrefeu"
+      ],
+      "pathLabel": "Draenor > Draenor > Crête de Givrefeu",
+      "wowheadZoneIds": [
+        6720
+      ]
+    },
+    "locationZone": "Crête de Givrefeu",
+    "zone": "Crête de Givrefeu",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2059,7 +2763,41 @@
     "description": "Les bords de leur bec sont particulièrement tranchants. Attention à vos doigts en les nourrissant !",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
+    "locationZone": "Gorgrond",
+    "zone": "Gorgrond",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2123,7 +2861,41 @@
     "description": "Les collectionneurs recherchent avec ardeur le plumage coloré de ces oiseaux. On dit que porter leurs plumes vous rend chanceux.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
+    "locationZone": "Gorgrond",
+    "zone": "Gorgrond",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2156,7 +2928,41 @@
     "description": "Rapide mais aussi très bruyant !",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
+    "locationZone": "Gorgrond",
+    "zone": "Gorgrond",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2189,7 +2995,48 @@
     "description": "Les érudits débattent tant et plus sur le mécanisme qui fait briller les lucioles, mais l’hypothèse majeure reste : « c’est de la magie ».",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6722",
+    "locationRefs": [
+      "wowhead-zone:6722",
+      "wowhead-zone:7503"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7503",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6722",
+      "name": "Flèches d’Arak",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Flèches d’Arak",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Flèches d’Arak"
+      ],
+      "pathLabel": "Draenor > Draenor > Flèches d’Arak",
+      "wowheadZoneIds": [
+        6722
+      ]
+    },
+    "locationZone": "Flèches d’Arak",
+    "zone": "Flèches d’Arak",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2223,7 +3070,48 @@
     "description": "La lueur violette de ces lucioles vient de leur régime constitué exclusivement de nectar et fleurs pourpres.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723",
+      "wowhead-zone:7637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
+    "locationZone": "Jungle de Tanaan",
+    "zone": "Jungle de Tanaan",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2257,7 +3145,41 @@
     "description": "Baptisée parfois « gemme volante » du fait de son éclat rappelant celui des saphirs les plus purs.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6722",
+    "locationRefs": [
+      "wowhead-zone:6722"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6722",
+      "name": "Flèches d’Arak",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Flèches d’Arak",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Flèches d’Arak"
+      ],
+      "pathLabel": "Draenor > Draenor > Flèches d’Arak",
+      "wowheadZoneIds": [
+        6722
+      ]
+    },
+    "locationZone": "Flèches d’Arak",
+    "zone": "Flèches d’Arak",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2290,7 +3212,41 @@
     "description": "Délicate et dangereuse, brillante et audacieuse, cette beauté plus que l’or est précieuse.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
+    "locationZone": "Jungle de Tanaan",
+    "zone": "Jungle de Tanaan",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2323,7 +3279,41 @@
     "description": "Délicate et dangereuse, brillante et audacieuse, cette beauté plus que son poids en or est précieuse. Dommage qu’elle soit si légère.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6662",
+    "locationRefs": [
+      "wowhead-zone:6662"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6662",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6662",
+      "name": "Talador",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador",
+      "wowheadZoneIds": [
+        6662
+      ]
+    },
+    "locationZone": "Talador",
+    "zone": "Talador",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2356,7 +3346,55 @@
     "description": "Leurs ailes d’un violet profond sont très recherchées par les Ogres-mages qui croient que les consommer sous forme de potions prolonge la vie.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6719",
+    "locationRefs": [
+      "wowhead-zone:6719",
+      "wowhead-zone:6662",
+      "wowhead-zone:7334"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6719",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:6662",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7334",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6719",
+      "name": "Vallée d’Ombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée d’Ombrelune",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Vallée d’Ombrelune"
+      ],
+      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune",
+      "wowheadZoneIds": [
+        6719
+      ]
+    },
+    "locationZone": "Vallée d’Ombrelune",
+    "zone": "Vallée d’Ombrelune",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2392,7 +3430,41 @@
     "description": "Les pinceurs givre-coques accumulent des couches de glace pour se protéger des grands prédateurs.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6720",
+    "locationRefs": [
+      "wowhead-zone:6720"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6720",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6720",
+      "name": "Crête de Givrefeu",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Crête de Givrefeu",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Crête de Givrefeu"
+      ],
+      "pathLabel": "Draenor > Draenor > Crête de Givrefeu",
+      "wowheadZoneIds": [
+        6720
+      ]
+    },
+    "locationZone": "Crête de Givrefeu",
+    "zone": "Crête de Givrefeu",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2425,7 +3497,41 @@
     "description": "On dit que ses plumes brillent comme l’or quand elles sont illuminées par le soleil matinal.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6722",
+    "locationRefs": [
+      "wowhead-zone:6722"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6722",
+      "name": "Flèches d’Arak",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Flèches d’Arak",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Flèches d’Arak"
+      ],
+      "pathLabel": "Draenor > Draenor > Flèches d’Arak",
+      "wowheadZoneIds": [
+        6722
+      ]
+    },
+    "locationZone": "Flèches d’Arak",
+    "zone": "Flèches d’Arak",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2458,7 +3564,41 @@
     "description": "Le plumesang ne connaît pas la peur, il déploie ses ailes et charge sur toute menace apparente.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6662",
+    "locationRefs": [
+      "wowhead-zone:6662"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6662",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6662",
+      "name": "Talador",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador",
+      "wowheadZoneIds": [
+        6662
+      ]
+    },
+    "locationZone": "Talador",
+    "zone": "Talador",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2491,7 +3631,49 @@
     "description": "Horripilant et nuisible, il peut être amadoué à grand renfort de fromage et devenir ainsi un compagnon très acceptable.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7004",
+    "locationRefs": [
+      "wowhead-zone:7004",
+      "wowhead-zone:6720"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7004",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:6720",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7004",
+      "name": "Mur-de-Givre",
+      "kind": "subzone",
+      "subzoneName": "Mur-de-Givre",
+      "regionName": "Crête de Givrefeu",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Crête de Givrefeu",
+        "Mur-de-Givre"
+      ],
+      "pathLabel": "Draenor > Draenor > Crête de Givrefeu > Mur-de-Givre",
+      "wowheadZoneIds": [
+        7004
+      ]
+    },
+    "locationZone": "Crête de Givrefeu",
+    "zone": "Crête de Givrefeu",
+    "subzone": "Mur-de-Givre",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2525,7 +3707,55 @@
     "description": "Les enfants orcs ont pour tradition de se glisser près d’un saute-boue et de murmurer un secret qu’ils veulent voir se réaliser. Si le saute-boue reste immobile, le vœu se réalisera.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6722",
+    "locationRefs": [
+      "wowhead-zone:6722",
+      "wowhead-zone:6662",
+      "wowhead-zone:6755"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:6662",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:6755",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6722",
+      "name": "Flèches d’Arak",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Flèches d’Arak",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Flèches d’Arak"
+      ],
+      "pathLabel": "Draenor > Draenor > Flèches d’Arak",
+      "wowheadZoneIds": [
+        6722
+      ]
+    },
+    "locationZone": "Flèches d’Arak",
+    "zone": "Flèches d’Arak",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2592,7 +3822,41 @@
     "description": "Les sporoptères sauvages sont des créatures féroces. Mais, domestiqués jeunes, ils peuvent devenir des compagnons fidèles.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:6662",
+    "locationRefs": [
+      "wowhead-zone:6662"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6662",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6662",
+      "name": "Talador",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador",
+      "wowheadZoneIds": [
+        6662
+      ]
+    },
+    "locationZone": "Talador",
+    "zone": "Talador",
+    "subzone": "",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2625,7 +3889,49 @@
     "description": "Si un asticot vivant mange les morts, que mange un asticot mort ?",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7004",
+    "locationRefs": [
+      "wowhead-zone:7004",
+      "wowhead-zone:7078"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7004",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7078",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7004",
+      "name": "Mur-de-Givre",
+      "kind": "subzone",
+      "subzoneName": "Mur-de-Givre",
+      "regionName": "Crête de Givrefeu",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Crête de Givrefeu",
+        "Mur-de-Givre"
+      ],
+      "pathLabel": "Draenor > Draenor > Crête de Givrefeu > Mur-de-Givre",
+      "wowheadZoneIds": [
+        7004
+      ]
+    },
+    "locationZone": "Crête de Givrefeu",
+    "zone": "Crête de Givrefeu",
+    "subzone": "Mur-de-Givre",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -2824,7 +4130,49 @@
     "description": "C’est de loin la meilleure manière de propager la peste morte-vivante.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7004",
+    "locationRefs": [
+      "wowhead-zone:7004",
+      "wowhead-zone:7078"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7004",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7078",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7004",
+      "name": "Mur-de-Givre",
+      "kind": "subzone",
+      "subzoneName": "Mur-de-Givre",
+      "regionName": "Crête de Givrefeu",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Crête de Givrefeu",
+        "Mur-de-Givre"
+      ],
+      "pathLabel": "Draenor > Draenor > Crête de Givrefeu > Mur-de-Givre",
+      "wowheadZoneIds": [
+        7004
+      ]
+    },
+    "locationZone": "Crête de Givrefeu",
+    "zone": "Crête de Givrefeu",
+    "subzone": "Mur-de-Givre",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -2891,7 +4239,49 @@
     "description": "Comme si une mine pleine d’araignées normales n’était pas suffisamment effrayante.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7004",
+    "locationRefs": [
+      "wowhead-zone:7004",
+      "wowhead-zone:7078"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7004",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7078",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7004",
+      "name": "Mur-de-Givre",
+      "kind": "subzone",
+      "subzoneName": "Mur-de-Givre",
+      "regionName": "Crête de Givrefeu",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Crête de Givrefeu",
+        "Mur-de-Givre"
+      ],
+      "pathLabel": "Draenor > Draenor > Crête de Givrefeu > Mur-de-Givre",
+      "wowheadZoneIds": [
+        7004
+      ]
+    },
+    "locationZone": "Crête de Givrefeu",
+    "zone": "Crête de Givrefeu",
+    "subzone": "Mur-de-Givre",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",
@@ -3089,7 +4479,41 @@
     "description": "Une plume de paon est souvent déposée sur les tombes pour éloigner les mauvais esprits.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7502",
+    "locationRefs": [
+      "wowhead-zone:7502"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7502",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7502",
+      "name": "Dalaran",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dalaran",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Dalaran"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+      "wowheadZoneIds": [
+        7502
+      ]
+    },
+    "locationZone": "Dalaran",
+    "zone": "Dalaran",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Haut-fait",
     "source": "Haut fait",
     "sourceType": "ACHIEVEMENT",
@@ -3256,7 +4680,48 @@
     "description": "Cet adorable petit éléphant est toujours là pour vous.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7502",
+    "locationRefs": [
+      "wowhead-zone:7502",
+      "wowhead-zone:8670"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7502",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8670",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7502",
+      "name": "Dalaran",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dalaran",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Dalaran"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+      "wowheadZoneIds": [
+        7502
+      ]
+    },
+    "locationZone": "Dalaran",
+    "zone": "Dalaran",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Métier",
     "source": "Métier",
     "sourceType": "PROFESSION",
@@ -3880,7 +5345,41 @@
     "description": "D’une graine devenue fleur, une minuscule terreur est née.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7502",
+    "locationRefs": [
+      "wowhead-zone:7502"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7502",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7502",
+      "name": "Dalaran",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dalaran",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Dalaran"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+      "wowheadZoneIds": [
+        7502
+      ]
+    },
+    "locationZone": "Dalaran",
+    "zone": "Dalaran",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -3948,7 +5447,41 @@
     "description": "Ces petits sont des boules de fourrure et de dents jusqu’à ce qu’ils grandissent. Ensuite il n’y a plus que les dents.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7502",
+    "locationRefs": [
+      "wowhead-zone:7502"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7502",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7502",
+      "name": "Dalaran",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dalaran",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Dalaran"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+      "wowheadZoneIds": [
+        7502
+      ]
+    },
+    "locationZone": "Dalaran",
+    "zone": "Dalaran",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -4049,7 +5582,42 @@
     "description": "Cette arme de destruction massive a été miniaturisée pour un usage privé, idéal pour le jardin. Attention les taupes !",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8670",
+    "locationRefs": [
+      "wowhead-zone:8670"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8670",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8670",
+      "name": "Dazar’alor",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dazar’alor",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Dazar’alor"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Dazar’alor",
+      "wowheadZoneIds": [
+        8670
+      ]
+    },
+    "locationZone": "Dazar’alor",
+    "zone": "Dazar’alor",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Quête",
     "source": "Quête",
     "sourceType": "QUEST",
@@ -4249,7 +5817,41 @@
     "description": "Ces crabes ont développé une forme avancée de camouflage qui leur permet de rendre leur peau translucide.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:5861",
+    "locationRefs": [
+      "wowhead-zone:5861"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:5861",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:5861",
+      "name": "Île de Sombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Sombrelune",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Île de Sombrelune"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Île de Sombrelune",
+      "wowheadZoneIds": [
+        5861
+      ]
+    },
+    "locationZone": "Île de Sombrelune",
+    "zone": "Île de Sombrelune",
+    "subzone": "",
+    "region": "Le Maelström",
+    "world": "Azeroth",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",
@@ -4746,7 +6348,49 @@
     "description": "On raconte qu’il existe des bêtes touchées par le Vide, dans un espace situé entre notre monde et l’au-delà.",
     "category": "pets",
     "expansion": "wod",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7078",
+    "locationRefs": [
+      "wowhead-zone:7078",
+      "wowhead-zone:7004"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7078",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7004",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7078",
+      "name": "Chutelune",
+      "kind": "subzone",
+      "subzoneName": "Chutelune",
+      "regionName": "Vallée d’Ombrelune",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Vallée d’Ombrelune",
+        "Chutelune"
+      ],
+      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune > Chutelune",
+      "wowheadZoneIds": [
+        7078
+      ]
+    },
+    "locationZone": "Vallée d’Ombrelune",
+    "zone": "Vallée d’Ombrelune",
+    "subzone": "Chutelune",
+    "region": "Draenor",
+    "world": "Draenor",
     "instance": "Vendeur",
     "source": "Vendeur",
     "sourceType": "VENDOR",

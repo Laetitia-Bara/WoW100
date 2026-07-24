@@ -102,7 +102,42 @@
     "description": "Une âme impénitente autrefois piégée dans Deuillegivre qui virevolte désormais sans relâche d’un monde à un autre.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8670",
+    "locationRefs": [
+      "wowhead-zone:8670"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8670",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8670",
+      "name": "Dazar’alor",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dazar’alor",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar",
+        "Dazar’alor"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar > Dazar’alor",
+      "wowheadZoneIds": [
+        8670
+      ]
+    },
+    "locationZone": "Dazar’alor",
+    "zone": "Dazar’alor",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -2244,7 +2279,41 @@
     "description": "Ces oiseaux se nourrissent souvent de tortues qu’ils précipitent depuis les airs pour briser leurs carapaces.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7541",
+    "locationRefs": [
+      "wowhead-zone:7541"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7541",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7541",
+      "name": "Tornheim",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tornheim",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Tornheim"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Tornheim",
+      "wowheadZoneIds": [
+        7541
+      ]
+    },
+    "locationZone": "Tornheim",
+    "zone": "Tornheim",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2277,7 +2346,41 @@
     "description": "En de très rares occasions, ces créatures chatoyantes synchronisent leurs émissions de lumière. Un spectacle à couper le souffle de tout aventurier assez chanceux pour y assister.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7558",
+    "locationRefs": [
+      "wowhead-zone:7558"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7558",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7558",
+      "name": "Val’sharah",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Val’sharah",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Val’sharah"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Val’sharah",
+      "wowheadZoneIds": [
+        7558
+      ]
+    },
+    "locationZone": "Val’sharah",
+    "zone": "Val’sharah",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2310,7 +2413,48 @@
     "description": "Ce n’est qu’une araignée ordinaire. Sauf qu’elle est gangrenée.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7334",
+    "locationRefs": [
+      "wowhead-zone:7334",
+      "wowhead-zone:7503"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7334",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7503",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7334",
+      "name": "Azsuna",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azsuna",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Azsuna"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Azsuna",
+      "wowheadZoneIds": [
+        7334
+      ]
+    },
+    "locationZone": "Azsuna",
+    "zone": "Azsuna",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2344,7 +2488,42 @@
     "description": "Une créature née de l’épave du Xénédar, sur Argus.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8574",
+    "locationRefs": [
+      "wowhead-zone:8574"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8574",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8574",
+      "name": "Krokuun",
+      "kind": "subzone",
+      "subzoneName": "Krokuun",
+      "regionName": "Argus",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Argus",
+        "Krokuun"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Krokuun",
+      "wowheadZoneIds": [
+        8574
+      ]
+    },
+    "locationZone": "Argus",
+    "zone": "Argus",
+    "subzone": "Krokuun",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2377,7 +2556,41 @@
     "description": "Une queue marron striée de trois bandes blanches ou une queue blanche striée de deux bandes marron ?",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7558",
+    "locationRefs": [
+      "wowhead-zone:7558"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7558",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7558",
+      "name": "Val’sharah",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Val’sharah",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Val’sharah"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Val’sharah",
+      "wowheadZoneIds": [
+        7558
+      ]
+    },
+    "locationZone": "Val’sharah",
+    "zone": "Val’sharah",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2410,7 +2623,55 @@
     "description": "Elle adore les longues promenades sur la plage.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7334",
+    "locationRefs": [
+      "wowhead-zone:7334",
+      "wowhead-zone:7637",
+      "wowhead-zone:7578"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7334",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7578",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7334",
+      "name": "Azsuna",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azsuna",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Azsuna"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Azsuna",
+      "wowheadZoneIds": [
+        7334
+      ]
+    },
+    "locationZone": "Azsuna",
+    "zone": "Azsuna",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2445,7 +2706,55 @@
     "description": "Ces serpents sont des créatures extraordinairement dociles. Mais ils se fondent si bien dans leur environnement qu’il n’est pas rare de voir des aventuriers s’approcher trop près de leurs nids par mégarde. La plupart des morsures sont accidentelles et pourraient être évitées.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8567",
+    "locationRefs": [
+      "wowhead-zone:8567",
+      "wowhead-zone:7334",
+      "wowhead-zone:7558"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8567",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7334",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7558",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8567",
+      "name": "Rade de Tiragarde",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rade de Tiragarde",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Rade de Tiragarde"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde",
+      "wowheadZoneIds": [
+        8567
+      ]
+    },
+    "locationZone": "Rade de Tiragarde",
+    "zone": "Rade de Tiragarde",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2481,7 +2790,41 @@
     "description": "Il a fait tout le chemin depuis son barrage !",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7503",
+    "locationRefs": [
+      "wowhead-zone:7503"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7503",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7503",
+      "name": "Haut-Roc",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Haut-Roc",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Haut-Roc"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc",
+      "wowheadZoneIds": [
+        7503
+      ]
+    },
+    "locationZone": "Haut-Roc",
+    "zone": "Haut-Roc",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2514,7 +2857,41 @@
     "description": "Autrefois un castor normal, cette créature a été frappée en même temps par la foudre, le souffle d’un drake aile-tempête et un rocher.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7541",
+    "locationRefs": [
+      "wowhead-zone:7541"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7541",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7541",
+      "name": "Tornheim",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tornheim",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Tornheim"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Tornheim",
+      "wowheadZoneIds": [
+        7541
+      ]
+    },
+    "locationZone": "Tornheim",
+    "zone": "Tornheim",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2547,7 +2924,41 @@
     "description": "Ne jamais fredonner « Le vol du bourdon » en sa présence.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7503",
+    "locationRefs": [
+      "wowhead-zone:7503"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7503",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7503",
+      "name": "Haut-Roc",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Haut-Roc",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Haut-Roc"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc",
+      "wowheadZoneIds": [
+        7503
+      ]
+    },
+    "locationZone": "Haut-Roc",
+    "zone": "Haut-Roc",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2580,7 +2991,41 @@
     "description": "Vous ne devinerez jamais quel est son lit préféré. Un quignon de pain !",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7503",
+    "locationRefs": [
+      "wowhead-zone:7503"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7503",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7503",
+      "name": "Haut-Roc",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Haut-Roc",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Haut-Roc"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc",
+      "wowheadZoneIds": [
+        7503
+      ]
+    },
+    "locationZone": "Haut-Roc",
+    "zone": "Haut-Roc",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2613,7 +3058,41 @@
     "description": "Les pinces de ce crabe, malgré son jeune âge, sont déjà capables de broyer des os.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7503",
+    "locationRefs": [
+      "wowhead-zone:7503"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7503",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7503",
+      "name": "Haut-Roc",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Haut-Roc",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Haut-Roc"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc",
+      "wowheadZoneIds": [
+        7503
+      ]
+    },
+    "locationZone": "Haut-Roc",
+    "zone": "Haut-Roc",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2677,7 +3156,42 @@
     "description": "Vous avez l’étrange sensation qu’il souhaite votre mort.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8701",
+    "locationRefs": [
+      "wowhead-zone:8701"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8701",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8701",
+      "name": "Érédath",
+      "kind": "subzone",
+      "subzoneName": "Érédath",
+      "regionName": "Argus",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Argus",
+        "Érédath"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Érédath",
+      "wowheadZoneIds": [
+        8701
+      ]
+    },
+    "locationZone": "Argus",
+    "zone": "Argus",
+    "subzone": "Érédath",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2711,7 +3225,41 @@
     "description": "Sa vision acérée lui permet de repérer un lapin patte-blanche dans une tempête de neige.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7503",
+    "locationRefs": [
+      "wowhead-zone:7503"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7503",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7503",
+      "name": "Haut-Roc",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Haut-Roc",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Haut-Roc"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc",
+      "wowheadZoneIds": [
+        7503
+      ]
+    },
+    "locationZone": "Haut-Roc",
+    "zone": "Haut-Roc",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2744,7 +3292,41 @@
     "description": "Alors, où sont ses parents ? Espèce de monstre…",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7558",
+    "locationRefs": [
+      "wowhead-zone:7558"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7558",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7558",
+      "name": "Val’sharah",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Val’sharah",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Val’sharah"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Val’sharah",
+      "wowheadZoneIds": [
+        7558
+      ]
+    },
+    "locationZone": "Val’sharah",
+    "zone": "Val’sharah",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2808,7 +3390,42 @@
     "description": "La phase finale du développement du fléau bilieux.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8574",
+    "locationRefs": [
+      "wowhead-zone:8574"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8574",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8574",
+      "name": "Krokuun",
+      "kind": "subzone",
+      "subzoneName": "Krokuun",
+      "regionName": "Argus",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Argus",
+        "Krokuun"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Krokuun",
+      "wowheadZoneIds": [
+        8574
+      ]
+    },
+    "locationZone": "Argus",
+    "zone": "Argus",
+    "subzone": "Krokuun",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2841,7 +3458,42 @@
     "description": "Le fléau bilieux se repaît principalement des cadavres des victimes de la Légion. Mais depuis votre arrivée, il a appris à apprécier les carcasses de démons.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8899",
+    "locationRefs": [
+      "wowhead-zone:8899"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8899",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8899",
+      "name": "Étendues Antoréennes",
+      "kind": "subzone",
+      "subzoneName": "Étendues Antoréennes",
+      "regionName": "Argus",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Argus",
+        "Étendues Antoréennes"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Étendues Antoréennes",
+      "wowheadZoneIds": [
+        8899
+      ]
+    },
+    "locationZone": "Argus",
+    "zone": "Argus",
+    "subzone": "Étendues Antoréennes",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2874,7 +3526,41 @@
     "description": "À une certaine période de l’année, un clan secret de Murlocs envoie souvent de jeunes têtards explorer et vivre des aventures pour commencer leur histoire.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7334",
+    "locationRefs": [
+      "wowhead-zone:7334"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7334",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7334",
+      "name": "Azsuna",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azsuna",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Azsuna"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Azsuna",
+      "wowheadZoneIds": [
+        7334
+      ]
+    },
+    "locationZone": "Azsuna",
+    "zone": "Azsuna",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2907,7 +3593,42 @@
     "description": "Il y a des millénaires de cela, les wyrms de mana pullulaient sur Argus, mais les temps ont bien changé depuis cette époque bénie.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8701",
+    "locationRefs": [
+      "wowhead-zone:8701"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8701",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8701",
+      "name": "Érédath",
+      "kind": "subzone",
+      "subzoneName": "Érédath",
+      "regionName": "Argus",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Argus",
+        "Érédath"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Érédath",
+      "wowheadZoneIds": [
+        8701
+      ]
+    },
+    "locationZone": "Argus",
+    "zone": "Argus",
+    "subzone": "Érédath",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2940,7 +3661,48 @@
     "description": "Sa vue est supérieure à son ouïe.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7503",
+    "locationRefs": [
+      "wowhead-zone:7503",
+      "wowhead-zone:7541"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7503",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7541",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7503",
+      "name": "Haut-Roc",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Haut-Roc",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Haut-Roc"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc",
+      "wowheadZoneIds": [
+        7503
+      ]
+    },
+    "locationZone": "Haut-Roc",
+    "zone": "Haut-Roc",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -2974,7 +3736,41 @@
     "description": "Les pattes avant de cette araignée sont d’une solidité à toute épreuve, ce qui lui permet de fouir presque n’importe quelle surface.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7503",
+    "locationRefs": [
+      "wowhead-zone:7503"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7503",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7503",
+      "name": "Haut-Roc",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Haut-Roc",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Haut-Roc"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc",
+      "wowheadZoneIds": [
+        7503
+      ]
+    },
+    "locationZone": "Haut-Roc",
+    "zone": "Haut-Roc",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3007,7 +3803,42 @@
     "description": "Les ciailerons savent voler dès la naissance. Certaines femelles mettent même bas en plein vol !",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8701",
+    "locationRefs": [
+      "wowhead-zone:8701"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8701",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8701",
+      "name": "Érédath",
+      "kind": "subzone",
+      "subzoneName": "Érédath",
+      "regionName": "Argus",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Argus",
+        "Érédath"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Érédath",
+      "wowheadZoneIds": [
+        8701
+      ]
+    },
+    "locationZone": "Argus",
+    "zone": "Argus",
+    "subzone": "Érédath",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3073,7 +3904,48 @@
     "description": "Jeune en termes d’années peut-être, mais déjà très mature.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7334",
+    "locationRefs": [
+      "wowhead-zone:7334",
+      "wowhead-zone:7578"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7334",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7578",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7334",
+      "name": "Azsuna",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azsuna",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Azsuna"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Azsuna",
+      "wowheadZoneIds": [
+        7334
+      ]
+    },
+    "locationZone": "Azsuna",
+    "zone": "Azsuna",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3138,7 +4010,41 @@
     "description": "Miam… pizza !",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7502",
+    "locationRefs": [
+      "wowhead-zone:7502"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7502",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7502",
+      "name": "Dalaran",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dalaran",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Dalaran"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+      "wowheadZoneIds": [
+        7502
+      ]
+    },
+    "locationZone": "Dalaran",
+    "zone": "Dalaran",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3202,7 +4108,41 @@
     "description": "Cette créature insaisissable aime se terrer dans les lieux rarement fréquentés par les aventuriers.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7502",
+    "locationRefs": [
+      "wowhead-zone:7502"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7502",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7502",
+      "name": "Dalaran",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dalaran",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Dalaran"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+      "wowheadZoneIds": [
+        7502
+      ]
+    },
+    "locationZone": "Dalaran",
+    "zone": "Dalaran",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3235,7 +4175,42 @@
     "description": "Une phase précoce du développement du fléau bilieux.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8574",
+    "locationRefs": [
+      "wowhead-zone:8574"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8574",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8574",
+      "name": "Krokuun",
+      "kind": "subzone",
+      "subzoneName": "Krokuun",
+      "regionName": "Argus",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Argus",
+        "Krokuun"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Krokuun",
+      "wowheadZoneIds": [
+        8574
+      ]
+    },
+    "locationZone": "Argus",
+    "zone": "Argus",
+    "subzone": "Krokuun",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3268,7 +4243,42 @@
     "description": "La proximité d’Antorus rend ces larves particulièrement agressives.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8899",
+    "locationRefs": [
+      "wowhead-zone:8899"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8899",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8899",
+      "name": "Étendues Antoréennes",
+      "kind": "subzone",
+      "subzoneName": "Étendues Antoréennes",
+      "regionName": "Argus",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Argus",
+        "Étendues Antoréennes"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Étendues Antoréennes",
+      "wowheadZoneIds": [
+        8899
+      ]
+    },
+    "locationZone": "Argus",
+    "zone": "Argus",
+    "subzone": "Étendues Antoréennes",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3301,7 +4311,41 @@
     "description": "La larve de terreur recherche un hôte pour se repaître de ses rêves et de ses peurs. Très vite, elle devient le pire cauchemar de sa victime.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7558",
+    "locationRefs": [
+      "wowhead-zone:7558"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7558",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7558",
+      "name": "Val’sharah",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Val’sharah",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Val’sharah"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Val’sharah",
+      "wowheadZoneIds": [
+        7558
+      ]
+    },
+    "locationZone": "Val’sharah",
+    "zone": "Val’sharah",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3334,7 +4378,41 @@
     "description": "« Queue-olive » n’est peut-être pas si approprié que cela, son corps est tout marron…",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7334",
+    "locationRefs": [
+      "wowhead-zone:7334"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7334",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7334",
+      "name": "Azsuna",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azsuna",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Azsuna"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Azsuna",
+      "wowheadZoneIds": [
+        7334
+      ]
+    },
+    "locationZone": "Azsuna",
+    "zone": "Azsuna",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3367,7 +4445,41 @@
     "description": "Les mages recherchent ces manafiels pour absorber leur énergie tellurique.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7334",
+    "locationRefs": [
+      "wowhead-zone:7334"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7334",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7334",
+      "name": "Azsuna",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azsuna",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Azsuna"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Azsuna",
+      "wowheadZoneIds": [
+        7334
+      ]
+    },
+    "locationZone": "Azsuna",
+    "zone": "Azsuna",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3400,7 +4512,41 @@
     "description": "Un manafiel qui a consommé assez d’énergie tellurique devient agressif et retors. S’en approcher avec la plus grande prudence.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7334",
+    "locationRefs": [
+      "wowhead-zone:7334"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7334",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7334",
+      "name": "Azsuna",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azsuna",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Azsuna"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Azsuna",
+      "wowheadZoneIds": [
+        7334
+      ]
+    },
+    "locationZone": "Azsuna",
+    "zone": "Azsuna",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3433,7 +4579,42 @@
     "description": "Ce marsuul apprécie particulièrement les gratouillis derrière les ailerons.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8701",
+    "locationRefs": [
+      "wowhead-zone:8701"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8701",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8701",
+      "name": "Érédath",
+      "kind": "subzone",
+      "subzoneName": "Érédath",
+      "regionName": "Argus",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Argus",
+        "Érédath"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Érédath",
+      "wowheadZoneIds": [
+        8701
+      ]
+    },
+    "locationZone": "Argus",
+    "zone": "Argus",
+    "subzone": "Érédath",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3466,7 +4647,41 @@
     "description": "Elle est plus mignonne qu’effrayante.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7541",
+    "locationRefs": [
+      "wowhead-zone:7541"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7541",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7541",
+      "name": "Tornheim",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tornheim",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Tornheim"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Tornheim",
+      "wowheadZoneIds": [
+        7541
+      ]
+    },
+    "locationZone": "Tornheim",
+    "zone": "Tornheim",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3530,7 +4745,41 @@
     "description": "L’espérance de vie des papillonneurs du val est incroyablement supérieure à la moyenne. Enfin, c’était le cas avant qu’on leur découvre un talent pour les combats de mascottes.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7558",
+    "locationRefs": [
+      "wowhead-zone:7558"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7558",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7558",
+      "name": "Val’sharah",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Val’sharah",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Val’sharah"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Val’sharah",
+      "wowheadZoneIds": [
+        7558
+      ]
+    },
+    "locationZone": "Val’sharah",
+    "zone": "Val’sharah",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3563,7 +4812,41 @@
     "description": "Toujours dans l’ombre de son frère.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7334",
+    "locationRefs": [
+      "wowhead-zone:7334"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7334",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7334",
+      "name": "Azsuna",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azsuna",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Azsuna"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Azsuna",
+      "wowheadZoneIds": [
+        7334
+      ]
+    },
+    "locationZone": "Azsuna",
+    "zone": "Azsuna",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3596,7 +4879,41 @@
     "description": "Si d’autres espèces d’oiseaux se relayent pour guider le vol durant la migration, le plumeroi reste toujours à la tête de son groupe. Difficile de déterminer s’il s’agit là d’une façon d’aider ses congénères à conserver leur énergie ou de marquer sa domination.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7334",
+    "locationRefs": [
+      "wowhead-zone:7334"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7334",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7334",
+      "name": "Azsuna",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Azsuna",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Azsuna"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Azsuna",
+      "wowheadZoneIds": [
+        7334
+      ]
+    },
+    "locationZone": "Azsuna",
+    "zone": "Azsuna",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3691,7 +5008,48 @@
     "description": "De nombreux marins sont persuadés que l’infortune s’abat sur le malheureux qui ose s’en prendre à un albatros.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7541",
+    "locationRefs": [
+      "wowhead-zone:7541",
+      "wowhead-zone:7334"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7541",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7334",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7541",
+      "name": "Tornheim",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tornheim",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Tornheim"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Tornheim",
+      "wowheadZoneIds": [
+        7541
+      ]
+    },
+    "locationZone": "Tornheim",
+    "zone": "Tornheim",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3725,7 +5083,41 @@
     "description": "Qu’est-ce qu’il court, ma parole !",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7502",
+    "locationRefs": [
+      "wowhead-zone:7502"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7502",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7502",
+      "name": "Dalaran",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Dalaran",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Dalaran"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Dalaran",
+      "wowheadZoneIds": [
+        7502
+      ]
+    },
+    "locationZone": "Dalaran",
+    "zone": "Dalaran",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3758,7 +5150,41 @@
     "description": "La proximité d’amas de mana cristallin a rendu le corps de ce rejeton presque aussi dur que la pierre.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7637",
+    "locationRefs": [
+      "wowhead-zone:7637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7637",
+      "name": "Suramar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Suramar",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Suramar"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Suramar",
+      "wowheadZoneIds": [
+        7637
+      ]
+    },
+    "locationZone": "Suramar",
+    "zone": "Suramar",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3791,7 +5217,41 @@
     "description": "Une armure en chitine s’est formée autour des crocs, des pattes et de l’abdomen de ces créatures.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7637",
+    "locationRefs": [
+      "wowhead-zone:7637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7637",
+      "name": "Suramar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Suramar",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Suramar"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Suramar",
+      "wowheadZoneIds": [
+        7637
+      ]
+    },
+    "locationZone": "Suramar",
+    "zone": "Suramar",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3824,7 +5284,41 @@
     "description": "Les plus méchants et vicieux sont reconnaissables à leur teinte rougeâtre.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7637",
+    "locationRefs": [
+      "wowhead-zone:7637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7637",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7637",
+      "name": "Suramar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Suramar",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Suramar"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Suramar",
+      "wowheadZoneIds": [
+        7637
+      ]
+    },
+    "locationZone": "Suramar",
+    "zone": "Suramar",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3857,7 +5351,48 @@
     "description": "Disparaît aussi discrètement et mystérieusement que la brume.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7503",
+    "locationRefs": [
+      "wowhead-zone:7503",
+      "wowhead-zone:7541"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7503",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7541",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7503",
+      "name": "Haut-Roc",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Haut-Roc",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Haut-Roc"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc",
+      "wowheadZoneIds": [
+        7503
+      ]
+    },
+    "locationZone": "Haut-Roc",
+    "zone": "Haut-Roc",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3891,7 +5426,48 @@
     "description": "Quand il a une proie en gueule, ses pattes se teintent vite de rouge.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7503",
+    "locationRefs": [
+      "wowhead-zone:7503",
+      "wowhead-zone:7541"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7503",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:7541",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7503",
+      "name": "Haut-Roc",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Haut-Roc",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Haut-Roc"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Haut-Roc",
+      "wowheadZoneIds": [
+        7503
+      ]
+    },
+    "locationZone": "Haut-Roc",
+    "zone": "Haut-Roc",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3925,7 +5501,41 @@
     "description": "La dernière chose que l’on voit, c’est un éclair rose.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7541",
+    "locationRefs": [
+      "wowhead-zone:7541"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7541",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7541",
+      "name": "Tornheim",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Tornheim",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Tornheim"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Tornheim",
+      "wowheadZoneIds": [
+        7541
+      ]
+    },
+    "locationZone": "Tornheim",
+    "zone": "Tornheim",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3958,7 +5568,42 @@
     "description": "Malgré les nombreux traits qu’elle partage avec les traqueurs dimensionnels d’Azeroth, cette créature semble avoir suivi une évolution distincte. Fascinant !",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8701",
+    "locationRefs": [
+      "wowhead-zone:8701"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8701",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8701",
+      "name": "Érédath",
+      "kind": "subzone",
+      "subzoneName": "Érédath",
+      "regionName": "Argus",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Argus",
+        "Érédath"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Érédath",
+      "wowheadZoneIds": [
+        8701
+      ]
+    },
+    "locationZone": "Argus",
+    "zone": "Argus",
+    "subzone": "Érédath",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -3991,7 +5636,42 @@
     "description": "Le Vide peut dévorer la vie, ou s’y combiner. Dans ce second cas, les conséquences sont souvent imprévisibles.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8701",
+    "locationRefs": [
+      "wowhead-zone:8701"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8701",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8701",
+      "name": "Érédath",
+      "kind": "subzone",
+      "subzoneName": "Érédath",
+      "regionName": "Argus",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Argus",
+        "Érédath"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Érédath",
+      "wowheadZoneIds": [
+        8701
+      ]
+    },
+    "locationZone": "Argus",
+    "zone": "Argus",
+    "subzone": "Érédath",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4024,7 +5704,41 @@
     "description": "Les trotteurs luisent le plus près de l’eau, ce qui leur a valu leur nom.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:7558",
+    "locationRefs": [
+      "wowhead-zone:7558"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:7558",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:7558",
+      "name": "Val’sharah",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Val’sharah",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Val’sharah"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Val’sharah",
+      "wowheadZoneIds": [
+        7558
+      ]
+    },
+    "locationZone": "Val’sharah",
+    "zone": "Val’sharah",
+    "subzone": "",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4057,7 +5771,42 @@
     "description": "En cas de pénurie de mana, ces wyrms cherchent d’autres sources d’énergie pour se nourrir.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8701",
+    "locationRefs": [
+      "wowhead-zone:8701"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8701",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8701",
+      "name": "Érédath",
+      "kind": "subzone",
+      "subzoneName": "Érédath",
+      "regionName": "Argus",
+      "continentName": "Îles Brisées",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Îles Brisées",
+        "Argus",
+        "Érédath"
+      ],
+      "pathLabel": "Azeroth > Îles Brisées > Argus > Érédath",
+      "wowheadZoneIds": [
+        8701
+      ]
+    },
+    "locationZone": "Argus",
+    "zone": "Argus",
+    "subzone": "Érédath",
+    "region": "Îles Brisées",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4257,7 +6006,49 @@
     "description": "Qui les fabrique ? Comment atterrissent-ils ici ? Seul le vieux Grandpère Hiver le sait.",
     "category": "pets",
     "expansion": "legion",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:1537",
+    "locationRefs": [
+      "wowhead-zone:1537",
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1537",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1537",
+      "name": "Forgefer",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Forgefer",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Dun Morogh",
+        "Forgefer"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Dun Morogh > Forgefer",
+      "wowheadZoneIds": [
+        1537
+      ]
+    },
+    "locationZone": "Forgefer",
+    "zone": "Forgefer",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Événement mondial",
     "source": "Évènement mondial",
     "sourceType": "WORLDEVENT",

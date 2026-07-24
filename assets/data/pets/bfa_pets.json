@@ -1714,7 +1714,41 @@
     "description": "François, pompeux représentant de la bourgeoiseaux, doit sa fortune et son entregent à l’exploitation du prolétaviaire.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8567",
+    "locationRefs": [
+      "wowhead-zone:8567"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8567",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8567",
+      "name": "Rade de Tiragarde",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rade de Tiragarde",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Rade de Tiragarde"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde",
+      "wowheadZoneIds": [
+        8567
+      ]
+    },
+    "locationZone": "Rade de Tiragarde",
+    "zone": "Rade de Tiragarde",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Butin",
     "source": "Butin",
     "sourceType": "DROP",
@@ -4809,7 +4843,55 @@
     "description": "On raconte que ces abeilles peuvent détecter depuis Drustvar le pollen d’une fleur tout juste éclose dans le nord de la vallée Chantorage.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:9042",
+    "locationRefs": [
+      "wowhead-zone:9042",
+      "wowhead-zone:8721",
+      "wowhead-zone:8567"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:9042",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8721",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8567",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:9042",
+      "name": "Vallée Chantorage",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée Chantorage",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Vallée Chantorage"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage",
+      "wowheadZoneIds": [
+        9042
+      ]
+    },
+    "locationZone": "Vallée Chantorage",
+    "zone": "Vallée Chantorage",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -4941,7 +5023,41 @@
     "description": "Les plumes des raptors de Zandalar se développent dès leur plus jeune âge, ce qui en fait des proies idéales. En réalité, ces petites terreurs mangent tout ce qui leur fait envie et ne sont la proie d’aucune espèce.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8499",
+    "locationRefs": [
+      "wowhead-zone:8499"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8499",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8499",
+      "name": "Zuldazar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zuldazar",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar",
+      "wowheadZoneIds": [
+        8499
+      ]
+    },
+    "locationZone": "Zuldazar",
+    "zone": "Zuldazar",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5005,7 +5121,55 @@
     "description": "Quoi de plus pratique que d’emmener sa maison avec soi ?",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8501",
+    "locationRefs": [
+      "wowhead-zone:8501",
+      "wowhead-zone:8567",
+      "wowhead-zone:8568"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8501",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8567",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8568",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8501",
+      "name": "Vol’dun",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vol’dun",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Vol’dun"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Vol’dun",
+      "wowheadZoneIds": [
+        8501
+      ]
+    },
+    "locationZone": "Vol’dun",
+    "zone": "Vol’dun",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5041,7 +5205,41 @@
     "description": "La bonne vieille blague de la sonnette marche beaucoup moins bien quand la maison elle-même peut se lancer à votre poursuite.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8499",
+    "locationRefs": [
+      "wowhead-zone:8499"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8499",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8499",
+      "name": "Zuldazar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zuldazar",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar",
+      "wowheadZoneIds": [
+        8499
+      ]
+    },
+    "locationZone": "Zuldazar",
+    "zone": "Zuldazar",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5105,7 +5303,55 @@
     "description": "Une espèce des plus exaspérantes. Peu importe la hauteur de vos murs, ces créatures parviendront à les franchir d’un bond.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8500",
+    "locationRefs": [
+      "wowhead-zone:8500",
+      "wowhead-zone:8568",
+      "wowhead-zone:8567"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8500",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8568",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8567",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8500",
+      "name": "Nazmir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nazmir",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Nazmir"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Nazmir",
+      "wowheadZoneIds": [
+        8500
+      ]
+    },
+    "locationZone": "Nazmir",
+    "zone": "Nazmir",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5140,7 +5386,41 @@
     "description": "Une fois perchée dans un arbre, cette créature est pratiquement invisible pour ses proies.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8499",
+    "locationRefs": [
+      "wowhead-zone:8499"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8499",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8499",
+      "name": "Zuldazar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zuldazar",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar",
+      "wowheadZoneIds": [
+        8499
+      ]
+    },
+    "locationZone": "Zuldazar",
+    "zone": "Zuldazar",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5173,7 +5453,41 @@
     "description": "De toutes les créatures de Mécagone, les cafards semblent être les moins affectés par tous ces changements.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10290",
+    "locationRefs": [
+      "wowhead-zone:10290"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10290",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10290",
+      "name": "Île de Mécagone",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Mécagone",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Île de Mécagone"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone",
+      "wowheadZoneIds": [
+        10290
+      ]
+    },
+    "locationZone": "Île de Mécagone",
+    "zone": "Île de Mécagone",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5206,7 +5520,41 @@
     "description": "Les expériences menées sur ce cafard lui ont conféré une taille gigantesque. Mais qui a eu une telle idée ?",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10290",
+    "locationRefs": [
+      "wowhead-zone:10290"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10290",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10290",
+      "name": "Île de Mécagone",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Mécagone",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Île de Mécagone"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone",
+      "wowheadZoneIds": [
+        10290
+      ]
+    },
+    "locationZone": "Île de Mécagone",
+    "zone": "Île de Mécagone",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5240,7 +5588,41 @@
     "description": "Ces volatiles font partie des rares créatures de chair encore présentes à Mécagone, et servent de nourriture et même parfois d’amis aux habitants de Mécarouille. ",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10290",
+    "locationRefs": [
+      "wowhead-zone:10290"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10290",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10290",
+      "name": "Île de Mécagone",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Mécagone",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Île de Mécagone"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone",
+      "wowheadZoneIds": [
+        10290
+      ]
+    },
+    "locationZone": "Île de Mécagone",
+    "zone": "Île de Mécagone",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5339,7 +5721,41 @@
     "description": "Sa couleur violette permet à cette espèce de crabes de se fondre dans les rochers et les ombres, mais elle fait d’eux des proies faciles pour les mouettes lorsqu’ils traînent trop longtemps sur le sable.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8721",
+    "locationRefs": [
+      "wowhead-zone:8721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8721",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8721",
+      "name": "Drustvar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Drustvar",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Drustvar"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Drustvar",
+      "wowheadZoneIds": [
+        8721
+      ]
+    },
+    "locationZone": "Drustvar",
+    "zone": "Drustvar",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5405,7 +5821,41 @@
     "description": "Les bernard-l’hermite de la vallée Chantorage utilisent tout ce qu’ils trouvent comme carapace, pour peu qu’ils puissent se glisser à l’intérieur.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:9042",
+    "locationRefs": [
+      "wowhead-zone:9042"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:9042",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:9042",
+      "name": "Vallée Chantorage",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée Chantorage",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Vallée Chantorage"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage",
+      "wowheadZoneIds": [
+        9042
+      ]
+    },
+    "locationZone": "Vallée Chantorage",
+    "zone": "Vallée Chantorage",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5438,7 +5888,55 @@
     "description": "Les clampants dos-de-sable doivent leur nom à leur carapace légèrement collante qui se recouvre de sable lorsqu’ils se déplacent.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:9042",
+    "locationRefs": [
+      "wowhead-zone:9042",
+      "wowhead-zone:8567",
+      "wowhead-zone:8568"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:9042",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8567",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8568",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:9042",
+      "name": "Vallée Chantorage",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée Chantorage",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Vallée Chantorage"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage",
+      "wowheadZoneIds": [
+        9042
+      ]
+    },
+    "locationZone": "Vallée Chantorage",
+    "zone": "Vallée Chantorage",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5473,7 +5971,41 @@
     "description": "Même les crabes aux carapaces les plus solides peuvent succomber aux sombres mystères des ombres.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:9042",
+    "locationRefs": [
+      "wowhead-zone:9042"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:9042",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:9042",
+      "name": "Vallée Chantorage",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée Chantorage",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Vallée Chantorage"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage",
+      "wowheadZoneIds": [
+        9042
+      ]
+    },
+    "locationZone": "Vallée Chantorage",
+    "zone": "Vallée Chantorage",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5507,7 +6039,41 @@
     "description": "Les grenouilles mécaniques de Mécagone ont trouvé le moyen d’évoluer de sorte à pouvoir manger des insectes mécaniques.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10290",
+    "locationRefs": [
+      "wowhead-zone:10290"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10290",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10290",
+      "name": "Île de Mécagone",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Mécagone",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Île de Mécagone"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone",
+      "wowheadZoneIds": [
+        10290
+      ]
+    },
+    "locationZone": "Île de Mécagone",
+    "zone": "Île de Mécagone",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5540,7 +6106,41 @@
     "description": "Le mucus sécrété par les coasseuses terrestres est si hydrophobe que les chantiers navals de Kul Tiras l’utilisent depuis de nombreuses années pour calfater leurs bateaux.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8567",
+    "locationRefs": [
+      "wowhead-zone:8567"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8567",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8567",
+      "name": "Rade de Tiragarde",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rade de Tiragarde",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Rade de Tiragarde"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde",
+      "wowheadZoneIds": [
+        8567
+      ]
+    },
+    "locationZone": "Rade de Tiragarde",
+    "zone": "Rade de Tiragarde",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5573,7 +6173,41 @@
     "description": "Soudain, il se fit un tapotement…",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8500",
+    "locationRefs": [
+      "wowhead-zone:8500"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8500",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8500",
+      "name": "Nazmir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nazmir",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Nazmir"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Nazmir",
+      "wowheadZoneIds": [
+        8500
+      ]
+    },
+    "locationZone": "Nazmir",
+    "zone": "Nazmir",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5734,7 +6368,41 @@
     "description": "Les frôleurs aquatiques utilisent la tension de surface et leurs longues pattes hydrophobes pour marcher à la surface de l’eau.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8500",
+    "locationRefs": [
+      "wowhead-zone:8500"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8500",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8500",
+      "name": "Nazmir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nazmir",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Nazmir"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Nazmir",
+      "wowheadZoneIds": [
+        8500
+      ]
+    },
+    "locationZone": "Nazmir",
+    "zone": "Nazmir",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5767,7 +6435,41 @@
     "description": "Les grenouilles des rivières de la vallée Chantorage sont connues pour essayer d’hypnotiser les gens en les fixant droit dans les yeux tout en émettant un grondement sourd.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:9042",
+    "locationRefs": [
+      "wowhead-zone:9042"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:9042",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:9042",
+      "name": "Vallée Chantorage",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée Chantorage",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Vallée Chantorage"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage",
+      "wowheadZoneIds": [
+        9042
+      ]
+    },
+    "locationZone": "Vallée Chantorage",
+    "zone": "Vallée Chantorage",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5800,7 +6502,41 @@
     "description": "Face à la mécanisation, les grenouilles de Mécagone n’ont eu que deux choix : se cacher ou se multiplier. Cette espèce a choisi la deuxième option.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10290",
+    "locationRefs": [
+      "wowhead-zone:10290"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10290",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10290",
+      "name": "Île de Mécagone",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Mécagone",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Île de Mécagone"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone",
+      "wowheadZoneIds": [
+        10290
+      ]
+    },
+    "locationZone": "Île de Mécagone",
+    "zone": "Île de Mécagone",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5931,7 +6667,48 @@
     "description": "Cette espèce trouve sa pitance dans les cadavres pourrissants enfouis sous le sable. C’est grâce à elle si nos plages sont si propres !",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8500",
+    "locationRefs": [
+      "wowhead-zone:8500",
+      "wowhead-zone:8501"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8500",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8501",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8500",
+      "name": "Nazmir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nazmir",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Nazmir"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Nazmir",
+      "wowheadZoneIds": [
+        8500
+      ]
+    },
+    "locationZone": "Nazmir",
+    "zone": "Nazmir",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5966,7 +6743,41 @@
     "description": "La réapparition de dragonnets à l’extérieur de Grim Batol inquiète le Vol draconique rouge… il se passe sans doute quelque chose dans la cité perdue.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:4922",
+    "locationRefs": [
+      "wowhead-zone:4922"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4922",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4922",
+      "name": "Hautes-terres du Crépuscule",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hautes-terres du Crépuscule",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Hautes-terres du Crépuscule"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Hautes-terres du Crépuscule",
+      "wowheadZoneIds": [
+        4922
+      ]
+    },
+    "locationZone": "Hautes-terres du Crépuscule",
+    "zone": "Hautes-terres du Crépuscule",
+    "subzone": "",
+    "region": "Royaumes de l'Est",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -5999,7 +6810,41 @@
     "description": "Terrifiant de son vivant, il l’est tout autant une fois mort.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8500",
+    "locationRefs": [
+      "wowhead-zone:8500"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8500",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8500",
+      "name": "Nazmir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nazmir",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Nazmir"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Nazmir",
+      "wowheadZoneIds": [
+        8500
+      ]
+    },
+    "locationZone": "Nazmir",
+    "zone": "Nazmir",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6098,7 +6943,48 @@
     "description": "Les vibrisses des loutres des rivières ne cessent jamais de pousser depuis leur plus jeune âge, ce qui leur confère une fois âgées les plus belles moustaches de tout le règne animal.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:9042",
+    "locationRefs": [
+      "wowhead-zone:9042",
+      "wowhead-zone:8721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:9042",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8721",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:9042",
+      "name": "Vallée Chantorage",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée Chantorage",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Vallée Chantorage"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage",
+      "wowheadZoneIds": [
+        9042
+      ]
+    },
+    "locationZone": "Vallée Chantorage",
+    "zone": "Vallée Chantorage",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6198,7 +7084,41 @@
     "description": "Les marmottes de la vallée sont vives comme l’éclair et sans égales lorsqu’il s’agit de creuser des terriers. Les enfants adorent les poursuivre et tenter de leur donner un coup sur la tête lorsqu’elles émergent de leurs trous pour prendre le soleil.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:9042",
+    "locationRefs": [
+      "wowhead-zone:9042"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:9042",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:9042",
+      "name": "Vallée Chantorage",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée Chantorage",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Vallée Chantorage"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage",
+      "wowheadZoneIds": [
+        9042
+      ]
+    },
+    "locationZone": "Vallée Chantorage",
+    "zone": "Vallée Chantorage",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6231,7 +7151,41 @@
     "description": "Les expériences de mécanisation ont poussé la plupart des animaux vivant encore à Mécagone à se cacher ou à fuir.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10290",
+    "locationRefs": [
+      "wowhead-zone:10290"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10290",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10290",
+      "name": "Île de Mécagone",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Mécagone",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Île de Mécagone"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone",
+      "wowheadZoneIds": [
+        10290
+      ]
+    },
+    "locationZone": "Île de Mécagone",
+    "zone": "Île de Mécagone",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6264,7 +7218,41 @@
     "description": "Il ne se souvient pas de sa programmation originelle et veut juste affronter les autres mascottes.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10290",
+    "locationRefs": [
+      "wowhead-zone:10290"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10290",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10290",
+      "name": "Île de Mécagone",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Mécagone",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Île de Mécagone"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone",
+      "wowheadZoneIds": [
+        10290
+      ]
+    },
+    "locationZone": "Île de Mécagone",
+    "zone": "Île de Mécagone",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6330,7 +7318,55 @@
     "description": "Ce crabe est le seul de la famille des bernard-l’hermite à régénérer ses membres perdus au combat.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8567",
+    "locationRefs": [
+      "wowhead-zone:8567",
+      "wowhead-zone:8568",
+      "wowhead-zone:8721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8567",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8568",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      },
+      {
+        "locationRef": "wowhead-zone:8721",
+        "role": "alternative_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8567",
+      "name": "Rade de Tiragarde",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rade de Tiragarde",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Rade de Tiragarde"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde",
+      "wowheadZoneIds": [
+        8567
+      ]
+    },
+    "locationZone": "Rade de Tiragarde",
+    "zone": "Rade de Tiragarde",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6366,7 +7402,41 @@
     "description": "Les organes gustatifs des papillons se trouvent au bout de leurs pattes, raison pour laquelle ils n’hésitent pas à mettre les pieds dans le plat.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8499",
+    "locationRefs": [
+      "wowhead-zone:8499"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8499",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8499",
+      "name": "Zuldazar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zuldazar",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar",
+      "wowheadZoneIds": [
+        8499
+      ]
+    },
+    "locationZone": "Zuldazar",
+    "zone": "Zuldazar",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6494,7 +7564,41 @@
     "description": "Le dard d’une guêpe ravageuse provoque une douleur intense pouvant durer jusqu’à trois heures. En cas de piqûre, consultez immédiatement un médecin.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8567",
+    "locationRefs": [
+      "wowhead-zone:8567"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8567",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8567",
+      "name": "Rade de Tiragarde",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rade de Tiragarde",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Rade de Tiragarde"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde",
+      "wowheadZoneIds": [
+        8567
+      ]
+    },
+    "locationZone": "Rade de Tiragarde",
+    "zone": "Rade de Tiragarde",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6527,7 +7631,41 @@
     "description": "Il fut un temps où le nombre de poulets de la vallée Chantorage était si important que ses habitants craignaient de les voir provoquer une famine en dévorant tout le maïs.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:9042",
+    "locationRefs": [
+      "wowhead-zone:9042"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:9042",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:9042",
+      "name": "Vallée Chantorage",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée Chantorage",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Vallée Chantorage"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Vallée Chantorage",
+      "wowheadZoneIds": [
+        9042
+      ]
+    },
+    "locationZone": "Vallée Chantorage",
+    "zone": "Vallée Chantorage",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6659,7 +7797,41 @@
     "description": "La couleur de leur fourrure permet aux dents-sombres de se cacher plus facilement dans les piles de débris de Mécagone.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10290",
+    "locationRefs": [
+      "wowhead-zone:10290"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10290",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10290",
+      "name": "Île de Mécagone",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Mécagone",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Île de Mécagone"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone",
+      "wowheadZoneIds": [
+        10290
+      ]
+    },
+    "locationZone": "Île de Mécagone",
+    "zone": "Île de Mécagone",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6693,7 +7865,41 @@
     "description": "Les renifleurs ont un excellent odorat et peuvent facilement trouver de l’herbe et des graines enfouies sous la neige ou les débris.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10290",
+    "locationRefs": [
+      "wowhead-zone:10290"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10290",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10290",
+      "name": "Île de Mécagone",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Mécagone",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Île de Mécagone"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone",
+      "wowheadZoneIds": [
+        10290
+      ]
+    },
+    "locationZone": "Île de Mécagone",
+    "zone": "Île de Mécagone",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6726,7 +7932,41 @@
     "description": "Face à la mécanisation, les grenouilles de Mécagone n’ont eu que deux choix : se cacher ou se multiplier. Cette espèce a choisi la première option.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10290",
+    "locationRefs": [
+      "wowhead-zone:10290"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10290",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10290",
+      "name": "Île de Mécagone",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Mécagone",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Île de Mécagone"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone",
+      "wowheadZoneIds": [
+        10290
+      ]
+    },
+    "locationZone": "Île de Mécagone",
+    "zone": "Île de Mécagone",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6760,7 +8000,41 @@
     "description": "Combien de tourbières a-t-il sautées ? Nul ne le sait.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8500",
+    "locationRefs": [
+      "wowhead-zone:8500"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8500",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8500",
+      "name": "Nazmir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nazmir",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Nazmir"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Nazmir",
+      "wowheadZoneIds": [
+        8500
+      ]
+    },
+    "locationZone": "Nazmir",
+    "zone": "Nazmir",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6826,7 +8100,41 @@
     "description": "Nombre d’anciennes tribus vénéraient ces énormes scarabées.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8499",
+    "locationRefs": [
+      "wowhead-zone:8499"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8499",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8499",
+      "name": "Zuldazar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Zuldazar",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Zuldazar"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Zuldazar",
+      "wowheadZoneIds": [
+        8499
+      ]
+    },
+    "locationZone": "Zuldazar",
+    "zone": "Zuldazar",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6859,7 +8167,41 @@
     "description": "Le spécimen 97 s’est échappé de sa cage avant d’être complètement mécanisé. Depuis, il ne cherche qu’à se venger.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10290",
+    "locationRefs": [
+      "wowhead-zone:10290"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10290",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10290",
+      "name": "Île de Mécagone",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Mécagone",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Île de Mécagone"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone",
+      "wowheadZoneIds": [
+        10290
+      ]
+    },
+    "locationZone": "Île de Mécagone",
+    "zone": "Île de Mécagone",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6925,7 +8267,41 @@
     "description": "À appliquer directement sur le front.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8500",
+    "locationRefs": [
+      "wowhead-zone:8500"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8500",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8500",
+      "name": "Nazmir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nazmir",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Nazmir"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Nazmir",
+      "wowheadZoneIds": [
+        8500
+      ]
+    },
+    "locationZone": "Nazmir",
+    "zone": "Nazmir",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -6958,7 +8334,41 @@
     "description": "Qui pourrait vouloir d’une créature aussi répugnante ?",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8500",
+    "locationRefs": [
+      "wowhead-zone:8500"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8500",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8500",
+      "name": "Nazmir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nazmir",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Nazmir"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Nazmir",
+      "wowheadZoneIds": [
+        8500
+      ]
+    },
+    "locationZone": "Nazmir",
+    "zone": "Nazmir",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -7022,7 +8432,41 @@
     "description": "Ces créatures sont totalement inoffensives pour les Trolls, mais toute la faune de Nazmir les redoute.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8500",
+    "locationRefs": [
+      "wowhead-zone:8500"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8500",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8500",
+      "name": "Nazmir",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nazmir",
+      "continentName": "Zandalar",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Zandalar",
+        "Nazmir"
+      ],
+      "pathLabel": "Azeroth > Zandalar > Nazmir",
+      "wowheadZoneIds": [
+        8500
+      ]
+    },
+    "locationZone": "Nazmir",
+    "zone": "Nazmir",
+    "subzone": "",
+    "region": "Zandalar",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -7121,7 +8565,41 @@
     "description": "Programmées pour creuser, ces bestioles ont pour fonction essentielle de démolir les grandes piles de débris.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:10290",
+    "locationRefs": [
+      "wowhead-zone:10290"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10290",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10290",
+      "name": "Île de Mécagone",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Île de Mécagone",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Île de Mécagone"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Île de Mécagone",
+      "wowheadZoneIds": [
+        10290
+      ]
+    },
+    "locationZone": "Île de Mécagone",
+    "zone": "Île de Mécagone",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",
@@ -7154,7 +8632,41 @@
     "description": "Le ver à bois géant peut s’enfouir dans presque tous les sols, à l’exception de la pierre.",
     "category": "pets",
     "expansion": "bfa",
-    "zone": "",
+    "primaryLocationRef": "wowhead-zone:8567",
+    "locationRefs": [
+      "wowhead-zone:8567"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8567",
+        "role": "primary_obtainment",
+        "source": "wowhead_pet_location_ids_and_locations_reference_catalog",
+        "confidence": "auto_assigned_wowhead_location"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8567",
+      "name": "Rade de Tiragarde",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Rade de Tiragarde",
+      "continentName": "Kul Tiras",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kul Tiras",
+        "Rade de Tiragarde"
+      ],
+      "pathLabel": "Azeroth > Kul Tiras > Rade de Tiragarde",
+      "wowheadZoneIds": [
+        8567
+      ]
+    },
+    "locationZone": "Rade de Tiragarde",
+    "zone": "Rade de Tiragarde",
+    "subzone": "",
+    "region": "Kul Tiras",
+    "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
     "sourceType": "WILDPET",

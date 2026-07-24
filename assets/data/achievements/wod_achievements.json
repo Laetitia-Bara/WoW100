@@ -1894,8 +1894,37 @@
     "description": "Accomplir les objectifs bonus de Gorgrond listés ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Gorgrond",
     "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Gorgrond",
@@ -1967,8 +1996,38 @@
     "description": "Vaincre Krud l’Éviscérateur à l’Ordalie gorienne.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Sommet de Kun-Lai",
     "primaryLocationRef": "wowhead-zone:6852",
+    "locationRefs": [
+      "wowhead-zone:6852"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6852",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6852",
+      "name": "Ordalie",
+      "kind": "subzone",
+      "subzoneName": "Ordalie",
+      "regionName": "Sommet de Kun-Lai",
+      "continentName": "Pandarie",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Pandarie",
+        "Sommet de Kun-Lai",
+        "Ordalie"
+      ],
+      "pathLabel": "Azeroth > Pandarie > Sommet de Kun-Lai > Ordalie",
+      "wowheadZoneIds": [
+        6852
+      ]
+    },
     "world": "Azeroth",
     "region": "Pandarie",
     "locationZone": "Sommet de Kun-Lai",
@@ -1995,8 +2054,37 @@
     "description": "Achever les suites de quêtes de la vallée d’Ombrelune listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Vallée d’Ombrelune",
     "primaryLocationRef": "wowhead-zone:6719",
+    "locationRefs": [
+      "wowhead-zone:6719"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6719",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6719",
+      "name": "Vallée d’Ombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée d’Ombrelune",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Vallée d’Ombrelune"
+      ],
+      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune",
+      "wowheadZoneIds": [
+        6719
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Vallée d’Ombrelune",
@@ -2045,8 +2133,37 @@
     "description": "Accomplir les objectifs journaliers de la jungle de Tanaan listés ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -2072,8 +2189,37 @@
     "description": "Accomplir les objectifs journaliers de la jungle de Tanaan listés ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -2145,8 +2291,38 @@
     "description": "Activer 12 gangrerunes différentes en 6 secondes et survivre pour pouvoir raconter ce récit à Shattrath.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Talador",
     "primaryLocationRef": "wowhead-zone:6980",
+    "locationRefs": [
+      "wowhead-zone:6980"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6980",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6980",
+      "name": "Shattrath",
+      "kind": "subzone",
+      "subzoneName": "Shattrath",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador",
+        "Shattrath"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador > Shattrath",
+      "wowheadZoneIds": [
+        6980
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Talador",
@@ -2173,8 +2349,37 @@
     "description": "Rendre la liberté à 50 esclaves dans le bastion de la Masse-Sanglante.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -2269,8 +2474,38 @@
     "description": "Vaincre 30 membres du Conseil des ombres sous l’effet de Renforcement d’arkonite à Shattrath.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Talador",
     "primaryLocationRef": "wowhead-zone:6980",
+    "locationRefs": [
+      "wowhead-zone:6980"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6980",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6980",
+      "name": "Shattrath",
+      "kind": "subzone",
+      "subzoneName": "Shattrath",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador",
+        "Shattrath"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador > Shattrath",
+      "wowheadZoneIds": [
+        6980
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Talador",
@@ -2297,8 +2532,37 @@
     "description": "Vaincre 25 créatures rares dans la jungle de Tanaan.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -2324,8 +2588,37 @@
     "description": "Tuer toutes les créatures élites rares de Gorgrond listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Gorgrond",
     "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Gorgrond",
@@ -2351,8 +2644,37 @@
     "description": "Découvrir 10 trésors de Draenor (hormis dans la jungle de Tanaan).",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -2378,8 +2700,37 @@
     "description": "Découvrir 20 trésors dans la jungle de Tanaan.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -2405,8 +2756,37 @@
     "description": "Accomplir les objectifs bonus des flèches d’Arak listés ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Flèches d’Arak",
     "primaryLocationRef": "wowhead-zone:6722",
+    "locationRefs": [
+      "wowhead-zone:6722"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6722",
+      "name": "Flèches d’Arak",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Flèches d’Arak",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Flèches d’Arak"
+      ],
+      "pathLabel": "Draenor > Draenor > Flèches d’Arak",
+      "wowheadZoneIds": [
+        6722
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Flèches d’Arak",
@@ -2524,8 +2904,37 @@
     "description": "Bénéficier en même temps des effets Bien nourri des croustillons de cafard grillé, brochettes de rat mariné et côtes de sanglier grillées dans le bastion de la Masse-Sanglante.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -2597,8 +3006,38 @@
     "description": "Brûler 30 missives sargereï à Shattrath.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Talador",
     "primaryLocationRef": "wowhead-zone:6980",
+    "locationRefs": [
+      "wowhead-zone:6980"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6980",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6980",
+      "name": "Shattrath",
+      "kind": "subzone",
+      "subzoneName": "Shattrath",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador",
+        "Shattrath"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador > Shattrath",
+      "wowheadZoneIds": [
+        6980
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Talador",
@@ -2625,8 +3064,37 @@
     "description": "Être révéré auprès des trois factions de la jungle de Tanaan.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -2652,8 +3120,37 @@
     "description": "Être révéré auprès des trois factions de la jungle de Tanaan.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -2679,8 +3176,37 @@
     "description": "Achever les suites de quêtes de Gorgrond listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Gorgrond",
     "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Gorgrond",
@@ -2706,8 +3232,37 @@
     "description": "Achever les suites de quêtes de Gorgrond listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Gorgrond",
     "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Gorgrond",
@@ -2733,8 +3288,37 @@
     "description": "Retrouver la page de journal en lambeaux de Bodrick Grey dans le bastion de la Masse-Sanglante.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -2760,8 +3344,37 @@
     "description": "Retrouver la page de journal en lambeaux de la chasseuse des ombres Bwu’ja dans le bastion de la Masse-Sanglante.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Le Bastion",
     "primaryLocationRef": "wowhead-zone:10534",
+    "locationRefs": [
+      "wowhead-zone:10534"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:10534",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:10534",
+      "name": "Le Bastion",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Le Bastion",
+      "continentName": "Ombreterre",
+      "worldName": "Ombreterre",
+      "path": [
+        "Ombreterre",
+        "Ombreterre",
+        "Le Bastion"
+      ],
+      "pathLabel": "Ombreterre > Ombreterre > Le Bastion",
+      "wowheadZoneIds": [
+        10534
+      ]
+    },
     "world": "Ombreterre",
     "region": "Ombreterre",
     "locationZone": "Le Bastion",
@@ -2810,8 +3423,37 @@
     "description": "Découvrir 50 trésors de Draenor (hormis dans la jungle de Tanaan).",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -2837,8 +3479,37 @@
     "description": "Explorer Gorgrond et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Gorgrond",
     "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Gorgrond",
@@ -2864,8 +3535,37 @@
     "description": "Explorer la crête de Givrefeu et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Crête de Givrefeu",
     "primaryLocationRef": "wowhead-zone:6720",
+    "locationRefs": [
+      "wowhead-zone:6720"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6720",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6720",
+      "name": "Crête de Givrefeu",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Crête de Givrefeu",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Crête de Givrefeu"
+      ],
+      "pathLabel": "Draenor > Draenor > Crête de Givrefeu",
+      "wowheadZoneIds": [
+        6720
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Crête de Givrefeu",
@@ -2891,8 +3591,37 @@
     "description": "Explorer la vallée d’Ombrelune et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Vallée d’Ombrelune",
     "primaryLocationRef": "wowhead-zone:6719",
+    "locationRefs": [
+      "wowhead-zone:6719"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6719",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6719",
+      "name": "Vallée d’Ombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée d’Ombrelune",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Vallée d’Ombrelune"
+      ],
+      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune",
+      "wowheadZoneIds": [
+        6719
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Vallée d’Ombrelune",
@@ -2918,8 +3647,37 @@
     "description": "Explorer Nagrand et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Nagrand",
     "primaryLocationRef": "wowhead-zone:6755",
+    "locationRefs": [
+      "wowhead-zone:6755"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6755",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6755",
+      "name": "Nagrand",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nagrand",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Nagrand"
+      ],
+      "pathLabel": "Draenor > Draenor > Nagrand",
+      "wowheadZoneIds": [
+        6755
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Nagrand",
@@ -2945,8 +3703,37 @@
     "description": "Explorer Talador et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Talador",
     "primaryLocationRef": "wowhead-zone:6662",
+    "locationRefs": [
+      "wowhead-zone:6662"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6662",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6662",
+      "name": "Talador",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador",
+      "wowheadZoneIds": [
+        6662
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Talador",
@@ -2972,8 +3759,37 @@
     "description": "Explorer les flèches d’Arak et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Flèches d’Arak",
     "primaryLocationRef": "wowhead-zone:6722",
+    "locationRefs": [
+      "wowhead-zone:6722"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6722",
+      "name": "Flèches d’Arak",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Flèches d’Arak",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Flèches d’Arak"
+      ],
+      "pathLabel": "Draenor > Draenor > Flèches d’Arak",
+      "wowheadZoneIds": [
+        6722
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Flèches d’Arak",
@@ -2999,8 +3815,37 @@
     "description": "Explorer la jungle de Tanaan et révéler les zones voilées de la carte du monde.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -3049,8 +3894,38 @@
     "description": "Combiner les effets des trois types de cristal runique à Shattrath.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Talador",
     "primaryLocationRef": "wowhead-zone:6980",
+    "locationRefs": [
+      "wowhead-zone:6980"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6980",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6980",
+      "name": "Shattrath",
+      "kind": "subzone",
+      "subzoneName": "Shattrath",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador",
+        "Shattrath"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador > Shattrath",
+      "wowheadZoneIds": [
+        6980
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Talador",
@@ -3086,8 +3961,37 @@
     "description": "Découvrir 200 trésors de Draenor (hormis dans la jungle de Tanaan).",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -3145,8 +4049,38 @@
     "description": "Vaincre toutes les créatures rares de Shattrath listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Talador",
     "primaryLocationRef": "wowhead-zone:6980",
+    "locationRefs": [
+      "wowhead-zone:6980"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6980",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6980",
+      "name": "Shattrath",
+      "kind": "subzone",
+      "subzoneName": "Shattrath",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador",
+        "Shattrath"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador > Shattrath",
+      "wowheadZoneIds": [
+        6980
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Talador",
@@ -3173,8 +4107,37 @@
     "description": "Accomplir les objectifs bonus de la vallée d’Ombrelune listés ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Vallée d’Ombrelune",
     "primaryLocationRef": "wowhead-zone:6719",
+    "locationRefs": [
+      "wowhead-zone:6719"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6719",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6719",
+      "name": "Vallée d’Ombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée d’Ombrelune",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Vallée d’Ombrelune"
+      ],
+      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune",
+      "wowheadZoneIds": [
+        6719
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Vallée d’Ombrelune",
@@ -3200,8 +4163,37 @@
     "description": "Ramasser 5 000 griffes de Croc-Noir sur les sabrons de Croc’rila dans la jungle de Tanaan.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -3227,8 +4219,38 @@
     "description": "Libérer 10 gardes capturés à Shattrath.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Talador",
     "primaryLocationRef": "wowhead-zone:6980",
+    "locationRefs": [
+      "wowhead-zone:6980"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6980",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6980",
+      "name": "Shattrath",
+      "kind": "subzone",
+      "subzoneName": "Shattrath",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador",
+        "Shattrath"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador > Shattrath",
+      "wowheadZoneIds": [
+        6980
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Talador",
@@ -3310,8 +4332,37 @@
     "description": "Accomplir les objectifs bonus de Nagrand listés ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Nagrand",
     "primaryLocationRef": "wowhead-zone:6755",
+    "locationRefs": [
+      "wowhead-zone:6755"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6755",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6755",
+      "name": "Nagrand",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nagrand",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Nagrand"
+      ],
+      "pathLabel": "Draenor > Draenor > Nagrand",
+      "wowheadZoneIds": [
+        6755
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Nagrand",
@@ -3452,8 +4503,37 @@
     "description": "Vaincre tous les champions de la citadelle des Flammes infernales dans la jungle de Tanaan.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -3488,8 +4568,37 @@
     "description": "Accomplir les objectifs bonus de la crête de Givrefeu listés ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Crête de Givrefeu",
     "primaryLocationRef": "wowhead-zone:6720",
+    "locationRefs": [
+      "wowhead-zone:6720"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6720",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6720",
+      "name": "Crête de Givrefeu",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Crête de Givrefeu",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Crête de Givrefeu"
+      ],
+      "pathLabel": "Draenor > Draenor > Crête de Givrefeu",
+      "wowheadZoneIds": [
+        6720
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Crête de Givrefeu",
@@ -3515,8 +4624,37 @@
     "description": "Achever les suites de quêtes de la crête de Givrefeu listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Crête de Givrefeu",
     "primaryLocationRef": "wowhead-zone:6720",
+    "locationRefs": [
+      "wowhead-zone:6720"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6720",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6720",
+      "name": "Crête de Givrefeu",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Crête de Givrefeu",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Crête de Givrefeu"
+      ],
+      "pathLabel": "Draenor > Draenor > Crête de Givrefeu",
+      "wowheadZoneIds": [
+        6720
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Crête de Givrefeu",
@@ -3698,8 +4836,37 @@
     "description": "Découvrir 100 trésors sur Draenor (hormis dans la jungle de Tanaan).",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -3771,8 +4938,37 @@
     "description": "Découvrir tous les trésors de la jungle de Tanaan.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -3798,8 +4994,37 @@
     "description": "Récupérer 12 roncevignes durcies ou plus en Gorgrond.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Gorgrond",
     "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Gorgrond",
@@ -3871,8 +5096,37 @@
     "description": "Achever les suites de quêtes de Nagrand listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Nagrand",
     "primaryLocationRef": "wowhead-zone:6755",
+    "locationRefs": [
+      "wowhead-zone:6755"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6755",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6755",
+      "name": "Nagrand",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nagrand",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Nagrand"
+      ],
+      "pathLabel": "Draenor > Draenor > Nagrand",
+      "wowheadZoneIds": [
+        6755
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Nagrand",
@@ -3898,8 +5152,37 @@
     "description": "Achever les suites de quêtes de Nagrand listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Nagrand",
     "primaryLocationRef": "wowhead-zone:6755",
+    "locationRefs": [
+      "wowhead-zone:6755"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6755",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6755",
+      "name": "Nagrand",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nagrand",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Nagrand"
+      ],
+      "pathLabel": "Draenor > Draenor > Nagrand",
+      "wowheadZoneIds": [
+        6755
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Nagrand",
@@ -3971,8 +5254,38 @@
     "description": "Se débarrasser de 40 Orcs flottants à Shattrath.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Talador",
     "primaryLocationRef": "wowhead-zone:6980",
+    "locationRefs": [
+      "wowhead-zone:6980"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6980",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6980",
+      "name": "Shattrath",
+      "kind": "subzone",
+      "subzoneName": "Shattrath",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador",
+        "Shattrath"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador > Shattrath",
+      "wowheadZoneIds": [
+        6980
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Talador",
@@ -4160,8 +5473,37 @@
     "description": "Obtenir les preuves de force de Gorgrond listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Gorgrond",
     "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Gorgrond",
@@ -4196,8 +5538,38 @@
     "description": "Vaincre toutes les créatures rares de Shattrath listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Talador",
     "primaryLocationRef": "wowhead-zone:6980",
+    "locationRefs": [
+      "wowhead-zone:6980"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6980",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6980",
+      "name": "Shattrath",
+      "kind": "subzone",
+      "subzoneName": "Shattrath",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador",
+        "Shattrath"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador > Shattrath",
+      "wowheadZoneIds": [
+        6980
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Talador",
@@ -4279,8 +5651,37 @@
     "description": "Achever la suite de quêtes de la vallée d’Ombrelune listée ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Vallée d’Ombrelune",
     "primaryLocationRef": "wowhead-zone:6719",
+    "locationRefs": [
+      "wowhead-zone:6719"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6719",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6719",
+      "name": "Vallée d’Ombrelune",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Vallée d’Ombrelune",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Vallée d’Ombrelune"
+      ],
+      "pathLabel": "Draenor > Draenor > Vallée d’Ombrelune",
+      "wowheadZoneIds": [
+        6719
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Vallée d’Ombrelune",
@@ -4306,8 +5707,37 @@
     "description": "Achever la suite de quêtes de la crête de Givrefeu listée ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Crête de Givrefeu",
     "primaryLocationRef": "wowhead-zone:6720",
+    "locationRefs": [
+      "wowhead-zone:6720"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6720",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6720",
+      "name": "Crête de Givrefeu",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Crête de Givrefeu",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Crête de Givrefeu"
+      ],
+      "pathLabel": "Draenor > Draenor > Crête de Givrefeu",
+      "wowheadZoneIds": [
+        6720
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Crête de Givrefeu",
@@ -4333,8 +5763,37 @@
     "description": "Accomplir les objectifs bonus de Talador listés ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Talador",
     "primaryLocationRef": "wowhead-zone:6662",
+    "locationRefs": [
+      "wowhead-zone:6662"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6662",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6662",
+      "name": "Talador",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador",
+      "wowheadZoneIds": [
+        6662
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Talador",
@@ -4360,8 +5819,37 @@
     "description": "Achever les suites de quêtes de Talador listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Talador",
     "primaryLocationRef": "wowhead-zone:6662",
+    "locationRefs": [
+      "wowhead-zone:6662"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6662",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6662",
+      "name": "Talador",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador",
+      "wowheadZoneIds": [
+        6662
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Talador",
@@ -4387,8 +5875,37 @@
     "description": "Achever les suites de quêtes de Talador listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Talador",
     "primaryLocationRef": "wowhead-zone:6662",
+    "locationRefs": [
+      "wowhead-zone:6662"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6662",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6662",
+      "name": "Talador",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Talador",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Talador"
+      ],
+      "pathLabel": "Draenor > Draenor > Talador",
+      "wowheadZoneIds": [
+        6662
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Talador",
@@ -4414,8 +5931,37 @@
     "description": "Accomplir tous les hauts faits de la jungle de Tanaan listés ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -4441,8 +5987,37 @@
     "description": "Accomplir tous les hauts faits de la jungle de Tanaan listés ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -4491,8 +6066,37 @@
     "description": "Vaincre toutes les créatures rares dans la jungle de Tanaan.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -4527,8 +6131,37 @@
     "description": "Achever les suites de quêtes des flèches d’Arak listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Flèches d’Arak",
     "primaryLocationRef": "wowhead-zone:6722",
+    "locationRefs": [
+      "wowhead-zone:6722"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6722",
+      "name": "Flèches d’Arak",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Flèches d’Arak",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Flèches d’Arak"
+      ],
+      "pathLabel": "Draenor > Draenor > Flèches d’Arak",
+      "wowheadZoneIds": [
+        6722
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Flèches d’Arak",
@@ -4554,8 +6187,37 @@
     "description": "Achever les suites de quêtes des flèches d’Arak listées ci-dessous.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Draenor",
+    "zone": "Flèches d’Arak",
     "primaryLocationRef": "wowhead-zone:6722",
+    "locationRefs": [
+      "wowhead-zone:6722"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6722",
+      "name": "Flèches d’Arak",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Flèches d’Arak",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Flèches d’Arak"
+      ],
+      "pathLabel": "Draenor > Draenor > Flèches d’Arak",
+      "wowheadZoneIds": [
+        6722
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Flèches d’Arak",
@@ -5381,8 +7043,37 @@
     "description": "Vaincre toutes les cibles du dressage de monture en Nagrand en portant la griffe noire de Sethe.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Fief de Draenor",
+    "zone": "Nagrand",
     "primaryLocationRef": "wowhead-zone:6755",
+    "locationRefs": [
+      "wowhead-zone:6755"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6755",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6755",
+      "name": "Nagrand",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nagrand",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Nagrand"
+      ],
+      "pathLabel": "Draenor > Draenor > Nagrand",
+      "wowheadZoneIds": [
+        6755
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Nagrand",
@@ -5408,8 +7099,37 @@
     "description": "Vaincre toutes les cibles du dressage de monture en Nagrand en portant la griffe noire de Sethe.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Fief de Draenor",
+    "zone": "Nagrand",
     "primaryLocationRef": "wowhead-zone:6755",
+    "locationRefs": [
+      "wowhead-zone:6755"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6755",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6755",
+      "name": "Nagrand",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nagrand",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Nagrand"
+      ],
+      "pathLabel": "Draenor > Draenor > Nagrand",
+      "wowheadZoneIds": [
+        6755
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Nagrand",
@@ -5895,8 +7615,37 @@
     "description": "Terminer la quête Ennemi juré : tueur de Kezan au sanctum du Gladiateur.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Fief de Draenor",
+    "zone": "Kezan",
     "primaryLocationRef": "wowhead-zone:4737",
+    "locationRefs": [
+      "wowhead-zone:4737"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:4737",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:4737",
+      "name": "Kezan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Kezan",
+      "continentName": "Le Maelström",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Le Maelström",
+        "Kezan"
+      ],
+      "pathLabel": "Azeroth > Le Maelström > Kezan",
+      "wowheadZoneIds": [
+        4737
+      ]
+    },
     "world": "Azeroth",
     "region": "Le Maelström",
     "locationZone": "Kezan",
@@ -6612,8 +8361,37 @@
     "description": "Vaincre toutes les cibles du dressage de monture en Nagrand en portant le collier en dents de garn.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Fief de Draenor",
+    "zone": "Nagrand",
     "primaryLocationRef": "wowhead-zone:6755",
+    "locationRefs": [
+      "wowhead-zone:6755"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6755",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6755",
+      "name": "Nagrand",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nagrand",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Nagrand"
+      ],
+      "pathLabel": "Draenor > Draenor > Nagrand",
+      "wowheadZoneIds": [
+        6755
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Nagrand",
@@ -6648,8 +8426,37 @@
     "description": "Vaincre toutes les cibles du dressage de monture en Nagrand en portant le collier en dents de garn.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Fief de Draenor",
+    "zone": "Nagrand",
     "primaryLocationRef": "wowhead-zone:6755",
+    "locationRefs": [
+      "wowhead-zone:6755"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6755",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6755",
+      "name": "Nagrand",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Nagrand",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Nagrand"
+      ],
+      "pathLabel": "Draenor > Draenor > Nagrand",
+      "wowheadZoneIds": [
+        6755
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Nagrand",
@@ -8381,8 +10188,38 @@
     "description": "Emprunter le portail de Willard « Bubulles » Wilcox pour Orgrimmar pendant la campagne de Draenor.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Héritage",
+    "zone": "Orgrimmar",
     "primaryLocationRef": "wowhead-zone:1637",
+    "locationRefs": [
+      "wowhead-zone:1637"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1637",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1637",
+      "name": "Orgrimmar",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Orgrimmar",
+      "continentName": "Kalimdor",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Kalimdor",
+        "Durotar",
+        "Orgrimmar"
+      ],
+      "pathLabel": "Azeroth > Kalimdor > Durotar > Orgrimmar",
+      "wowheadZoneIds": [
+        1637
+      ]
+    },
     "world": "Azeroth",
     "region": "Kalimdor",
     "locationZone": "Orgrimmar",
@@ -8408,8 +10245,38 @@
     "description": "Emprunter le portail de Zippi Galoche pour Hurlevent pendant la campagne de Draenor.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Héritage",
+    "zone": "Hurlevent",
     "primaryLocationRef": "wowhead-zone:1519",
+    "locationRefs": [
+      "wowhead-zone:1519"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:1519",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:1519",
+      "name": "Hurlevent",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Hurlevent",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Forêt d’Elwynn",
+        "Hurlevent"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Forêt d’Elwynn > Hurlevent",
+      "wowheadZoneIds": [
+        1519
+      ]
+    },
     "world": "Azeroth",
     "region": "Royaumes de l'Est",
     "locationZone": "Hurlevent",
@@ -10767,8 +12634,37 @@
     "description": "Vaincre Rukhmar aux flèches d’Arak.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Raids de Warlords of Draenor",
+    "zone": "Flèches d’Arak",
     "primaryLocationRef": "wowhead-zone:6722",
+    "locationRefs": [
+      "wowhead-zone:6722"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6722",
+      "name": "Flèches d’Arak",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Flèches d’Arak",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Flèches d’Arak"
+      ],
+      "pathLabel": "Draenor > Draenor > Flèches d’Arak",
+      "wowheadZoneIds": [
+        6722
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Flèches d’Arak",
@@ -11056,8 +12952,37 @@
     "description": "Vaincre le seigneur suprême Kazzak dans la jungle de Tanaan.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Raids de Warlords of Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -11276,8 +13201,37 @@
     "description": "Vaincre Tarlna l’Éternel et Drov le Dévastateur en Gorgrond.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Raids de Warlords of Draenor",
+    "zone": "Gorgrond",
     "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Gorgrond",
@@ -12038,8 +13992,37 @@
     "description": "Vaincre le seigneur suprême Kazzak dans la jungle de Tanaan en groupe de guilde.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Raids de Warlords of Draenor",
+    "zone": "Jungle de Tanaan",
     "primaryLocationRef": "wowhead-zone:6723",
+    "locationRefs": [
+      "wowhead-zone:6723"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6723",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6723",
+      "name": "Jungle de Tanaan",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Jungle de Tanaan",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Jungle de Tanaan"
+      ],
+      "pathLabel": "Draenor > Draenor > Jungle de Tanaan",
+      "wowheadZoneIds": [
+        6723
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Jungle de Tanaan",
@@ -12065,8 +14048,37 @@
     "description": "Vaincre Tarlna l’Éternel et Drov le Dévastateur en Gorgrond en groupe de guilde.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Raids de Warlords of Draenor",
+    "zone": "Gorgrond",
     "primaryLocationRef": "wowhead-zone:6721",
+    "locationRefs": [
+      "wowhead-zone:6721"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6721",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6721",
+      "name": "Gorgrond",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Gorgrond",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Gorgrond"
+      ],
+      "pathLabel": "Draenor > Draenor > Gorgrond",
+      "wowheadZoneIds": [
+        6721
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Gorgrond",
@@ -12092,8 +14104,37 @@
     "description": "Vaincre Rukhmar aux flèches d’Arak en groupe de guilde.",
     "category": "achievements",
     "expansion": "wod",
-    "zone": "Raids de Warlords of Draenor",
+    "zone": "Flèches d’Arak",
     "primaryLocationRef": "wowhead-zone:6722",
+    "locationRefs": [
+      "wowhead-zone:6722"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:6722",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:6722",
+      "name": "Flèches d’Arak",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Flèches d’Arak",
+      "continentName": "Draenor",
+      "worldName": "Draenor",
+      "path": [
+        "Draenor",
+        "Draenor",
+        "Flèches d’Arak"
+      ],
+      "pathLabel": "Draenor > Draenor > Flèches d’Arak",
+      "wowheadZoneIds": [
+        6722
+      ]
+    },
     "world": "Draenor",
     "region": "Draenor",
     "locationZone": "Flèches d’Arak",
