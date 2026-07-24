@@ -8,6 +8,7 @@ import 'package:wow100/core/services/battle_net_token_service.dart';
 import '../../../../core/ads/app_ads.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../../core/widgets/journey_step_bar.dart';
 import '../../../../core/widgets/web_sponsor_panel.dart';
 import '../../../../data/models/expansion_progress.dart';
 import '../../../../data/models/tracking_category.dart';
@@ -273,6 +274,13 @@ class _DashboardPageState extends State<DashboardPage> {
     );
   }
 
+  Future<void> _openRoutePlanner() async {
+    await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const RoutePlannerPage()),
+    );
+  }
+
   void _openLegalPage() {
     Navigator.push(
       context,
@@ -353,6 +361,12 @@ class _DashboardPageState extends State<DashboardPage> {
             ),
           ],
         ],
+        bottom: JourneyStepBar(
+          currentStep: 1,
+          onStep1: () {},
+          onStep2: _openSoloPlanner,
+          onStep3: _openRoutePlanner,
+        ),
       ),
       body: LayoutBuilder(
         builder: (context, constraints) {
@@ -370,21 +384,29 @@ class _DashboardPageState extends State<DashboardPage> {
                   totalProgress: totalProgress,
                   visibleCategories: _visibleCategories,
                 ),
-                const SizedBox(height: 12),
-                _RegionSearchButton(onTap: _openRegionSelector),
-                const SizedBox(height: 20),
-                _DashboardActionBar(
+                const SizedBox(height: 22),
+                _DashboardSection(
+                  title: 'Chercher par catégorie',
+                  child: _CategorySearchButtons(
+                    onAchievementsTap: () => _openPlanner(
+                      WowExpansion.allAchievements,
+                      category: TrackingCategory.achievements,
+                    ),
+                    onMountsTap: () => _openPlanner(WowExpansion.allMounts),
+                    onPetsTap: () => _openPlanner(
+                      WowExpansion.allPets,
+                      category: TrackingCategory.pets,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 18),
+                _DashboardSection(
+                  title: 'Rechercher par zone',
+                  child: _RegionSearchButton(onTap: _openRegionSelector),
+                ),
+                const SizedBox(height: 18),
+                _ExtensionSearchHeader(
                   newestFirst: _newestFirst,
-                  onAchievementsTap: () => _openPlanner(
-                    WowExpansion.allAchievements,
-                    category: TrackingCategory.achievements,
-                  ),
-                  onMountsTap: () => _openPlanner(WowExpansion.allMounts),
-                  onPetsTap: () => _openPlanner(
-                    WowExpansion.allPets,
-                    category: TrackingCategory.pets,
-                  ),
-                  onSoloPlannerTap: _openSoloPlanner,
                   onFilterTap: _openCategoryFilters,
                   onSortTap: _toggleSortOrder,
                 ),
@@ -944,6 +966,117 @@ class _RegionSearchButton extends StatelessWidget {
   }
 }
 
+class _DashboardSection extends StatelessWidget {
+  const _DashboardSection({required this.title, required this.child});
+
+  final String title;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          title,
+          style: Theme.of(
+            context,
+          ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w900),
+        ),
+        const SizedBox(height: 10),
+        child,
+      ],
+    );
+  }
+}
+
+class _CategorySearchButtons extends StatelessWidget {
+  const _CategorySearchButtons({
+    required this.onAchievementsTap,
+    required this.onMountsTap,
+    required this.onPetsTap,
+  });
+
+  final VoidCallback onAchievementsTap;
+  final VoidCallback onMountsTap;
+  final VoidCallback onPetsTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      spacing: 10,
+      runSpacing: 10,
+      children: [
+        OutlinedButton.icon(
+          onPressed: onAchievementsTap,
+          icon: const Icon(Icons.emoji_events_outlined),
+          label: const Text('HF'),
+        ),
+        OutlinedButton.icon(
+          onPressed: onMountsTap,
+          icon: const Icon(Icons.pets),
+          label: const Text('Montures'),
+        ),
+        OutlinedButton.icon(
+          onPressed: onPetsTap,
+          icon: const Icon(Icons.cruelty_free),
+          label: const Text('Mascottes'),
+        ),
+      ],
+    );
+  }
+}
+
+class _ExtensionSearchHeader extends StatelessWidget {
+  const _ExtensionSearchHeader({
+    required this.newestFirst,
+    required this.onFilterTap,
+    required this.onSortTap,
+  });
+
+  final bool newestFirst;
+  final VoidCallback onFilterTap;
+  final VoidCallback onSortTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Expanded(
+          child: Text(
+            'Rechercher par extension',
+            style: Theme.of(
+              context,
+            ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w900),
+          ),
+        ),
+        Tooltip(
+          message: 'Filtres',
+          child: IconButton.outlined(
+            onPressed: onFilterTap,
+            icon: const Icon(Icons.filter_alt_outlined),
+          ),
+        ),
+        const SizedBox(width: 8),
+        Tooltip(
+          message: newestFirst
+              ? 'Ordre historique'
+              : 'Extensions récentes en premier',
+          child: IconButton.outlined(
+            onPressed: onSortTap,
+            icon: Icon(
+              newestFirst
+                  ? Icons.vertical_align_bottom
+                  : Icons.vertical_align_top,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+// ignore: unused_element
 class _DashboardActionBar extends StatelessWidget {
   const _DashboardActionBar({
     required this.newestFirst,

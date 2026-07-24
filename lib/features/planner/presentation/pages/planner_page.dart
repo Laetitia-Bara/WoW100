@@ -15,6 +15,7 @@ import '../../../../core/services/solo_planner_service.dart';
 import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/expansion_palette.dart';
+import '../../../../core/widgets/journey_step_bar.dart';
 import '../../../../core/widgets/web_sponsor_panel.dart';
 import '../../../../data/models/tracking_item.dart';
 import '../../../../data/models/wow_character.dart';
@@ -630,6 +631,24 @@ class _PlannerPageState extends State<PlannerPage> {
     });
   }
 
+  void _backToProgress() {
+    Navigator.of(context).popUntil((route) => route.isFirst);
+  }
+
+  Future<void> _openWhishlist() async {
+    await Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (_) => const SoloPlannerPage()),
+    );
+  }
+
+  Future<void> _openRoute() async {
+    await Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (_) => const RoutePlannerPage()),
+    );
+  }
+
   void _toggleGroup(String group) {
     setState(() {
       if (_collapsedGroups.contains(group)) {
@@ -812,6 +831,12 @@ class _PlannerPageState extends State<PlannerPage> {
             onPressed: _resetFiltersAndRefresh,
           ),
         ],
+        bottom: JourneyStepBar(
+          currentStep: 1,
+          onStep1: _backToProgress,
+          onStep2: _openWhishlist,
+          onStep3: _openRoute,
+        ),
       ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
@@ -955,6 +980,7 @@ class _PlannerPageState extends State<PlannerPage> {
                     return _PlannerItemCard(
                       item: item,
                       selectedForSolo: _soloItemIds.contains(item.id),
+                      selectionTagLabel: 'Whishlist',
                       onChanged: (value) =>
                           _setSoloSelected(item, value ?? false),
                     );
@@ -983,16 +1009,19 @@ class SoloPlannerPage extends StatefulWidget {
 
 enum _SoloPlannerSortMode { location, category }
 
+enum _AdventureCrewMode { solo, friends }
+
 class _SoloPlannerPageState extends State<SoloPlannerPage> {
   final PlannerRepository _repository = JsonPlannerRepository();
   final SoloPlannerService _soloPlannerService = SoloPlannerService();
   final Set<String> _collapsedGroups = {};
 
   List<TrackingItem> _items = [];
-  Set<String> _soloItemIds = {};
+  Set<String> _todayItemIds = {};
   bool _isLoading = true;
   String _searchQuery = '';
   _SoloPlannerSortMode _sortMode = _SoloPlannerSortMode.location;
+  _AdventureCrewMode _crewMode = _AdventureCrewMode.solo;
 
   @override
   void initState() {
@@ -1006,6 +1035,9 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
     });
 
     final soloItemIds = await _soloPlannerService.selectedItemIds();
+    final todayItemIds = await _soloPlannerService.selectedTodayItemIds(
+      soloItemIds,
+    );
     final allCatalogItems = await Future.wait([
       _repository.getItems(
         WowExpansion.allAchievements,
@@ -1034,7 +1066,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
 
     setState(() {
       _items = selectedItems;
-      _soloItemIds = soloItemIds;
+      _todayItemIds = todayItemIds;
       _isLoading = false;
     });
   }
@@ -1078,11 +1110,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
   }
 
   String _locationGroupLabel(TrackingItem item) {
-    final values = [
-      item.world,
-      item.region,
-      item.zone,
-    ];
+    final values = [item.world, item.region, item.zone];
     final uniqueValues = <String>[];
     final seen = <String>{};
 
@@ -1139,19 +1167,48 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
     });
   }
 
-  Future<void> _setSoloSelected(TrackingItem item, bool selected) async {
-    await _soloPlannerService.setSelected(item.id, selected);
+  Future<void> _setTodaySelected(TrackingItem item, bool selected) async {
+    await _soloPlannerService.setTodaySelected(item.id, selected);
 
     if (!mounted) return;
 
     setState(() {
       if (selected) {
-        _soloItemIds.add(item.id);
+        _todayItemIds.add(item.id);
       } else {
-        _soloItemIds.remove(item.id);
-        _items = _items.where((current) => current.id != item.id).toList();
+        _todayItemIds.remove(item.id);
       }
     });
+  }
+
+  Future<void> _clearTodaySelection() async {
+    await _soloPlannerService.clearTodaySelected();
+
+    if (!mounted) return;
+
+    setState(_todayItemIds.clear);
+  }
+
+  Future<void> _selectAllToday() async {
+    final allItemIds = _items.map((item) => item.id).toSet();
+    await _soloPlannerService.setAllTodaySelected(allItemIds);
+
+    if (!mounted) return;
+
+    setState(() {
+      _todayItemIds = allItemIds;
+    });
+  }
+
+  void _backToProgress() {
+    Navigator.of(context).popUntil((route) => route.isFirst);
+  }
+
+  Future<void> _openRoute() async {
+    await Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (_) => const RoutePlannerPage()),
+    );
   }
 
   @override
@@ -1167,8 +1224,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
           item.region.toLowerCase().contains(query) ||
           item.instance.toLowerCase().contains(query) ||
           item.source.toLowerCase().contains(query);
-    }).toList()
-      ..sort(_compareItems);
+    }).toList()..sort(_compareItems);
     final groupedItems = _groupedItems(filteredItems);
     final listEntries = <_PlannerListEntry>[];
 
@@ -1182,7 +1238,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Planner Solo'),
+        title: const Text('Whishlist'),
         actions: [
           IconButton(
             tooltip: 'Actualiser',
@@ -1190,6 +1246,12 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
             onPressed: _loadItems,
           ),
         ],
+        bottom: JourneyStepBar(
+          currentStep: 2,
+          onStep1: _backToProgress,
+          onStep2: () {},
+          onStep3: _openRoute,
+        ),
       ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
@@ -1200,14 +1262,24 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Text(
-                        'Partir en balade Solo',
-                        style: Theme.of(context).textTheme.titleLarge
-                            ?.copyWith(fontWeight: FontWeight.w800),
+                        'Organise ta whishlist',
+                        style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                      const SizedBox(height: 16),
+                      _AdventureCrewPicker(
+                        selectedMode: _crewMode,
+                        onChanged: (mode) {
+                          setState(() {
+                            _crewMode = mode;
+                          });
+                        },
                       ),
                       const SizedBox(height: 16),
                       TextField(
                         decoration: const InputDecoration(
-                          labelText: 'Rechercher dans ma balade',
+                          labelText: 'Rechercher dans ma whishlist',
                           prefixIcon: Icon(Icons.search),
                           border: OutlineInputBorder(),
                         ),
@@ -1226,9 +1298,37 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                         onChanged: _setSortMode,
                       ),
                       const SizedBox(height: 16),
-                      Text(
-                        _soloCountLabel(filteredItems.length),
-                        style: const TextStyle(fontWeight: FontWeight.w700),
+                      Wrap(
+                        spacing: 10,
+                        runSpacing: 10,
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        children: [
+                          Text(
+                            _soloCountLabel(filteredItems.length),
+                            style: const TextStyle(fontWeight: FontWeight.w700),
+                          ),
+                          OutlinedButton.icon(
+                            onPressed: _todayItemIds.isEmpty
+                                ? null
+                                : _clearTodaySelection,
+                            icon: const Icon(Icons.remove_done_outlined),
+                            label: const Text('Tout désactiver'),
+                          ),
+                          OutlinedButton.icon(
+                            onPressed: _todayItemIds.length == _items.length
+                                ? null
+                                : _selectAllToday,
+                            icon: const Icon(Icons.done_all_outlined),
+                            label: const Text('Tout activer'),
+                          ),
+                          FilledButton.icon(
+                            onPressed: _todayItemIds.isEmpty
+                                ? null
+                                : _openRoute,
+                            icon: const Icon(Icons.route_rounded),
+                            label: const Text('Générer ma route'),
+                          ),
+                        ],
                       ),
                       const SizedBox(height: 20),
                       const AppNativeAd(),
@@ -1238,8 +1338,8 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                             padding: const EdgeInsets.all(18),
                             child: Text(
                               _items.isEmpty
-                                  ? 'Ta balade solo est vide pour le moment.'
-                                  : 'Aucun item ne correspond a cette recherche.',
+                                  ? 'Ta whishlist est vide pour le moment.'
+                                  : 'Aucun item ne correspond à cette recherche.',
                               style: const TextStyle(color: AppTheme.mutedText),
                             ),
                           ),
@@ -1264,9 +1364,10 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                     final item = entry.item!;
                     return _PlannerItemCard(
                       item: item,
-                      selectedForSolo: _soloItemIds.contains(item.id),
+                      selectedForSolo: _todayItemIds.contains(item.id),
+                      selectionTagLabel: 'Balade du jour',
                       onChanged: (value) =>
-                          _setSoloSelected(item, value ?? false),
+                          _setTodaySelected(item, value ?? false),
                     );
                   }, childCount: listEntries.length),
                 ),
@@ -1276,10 +1377,457 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
   }
 
   String _soloCountLabel(int count) {
-    if (count == 0) return 'Aucun item dans ta balade solo';
-    if (count == 1) return '1 item dans ta balade solo';
+    final selectedCount = _todayItemIds.length;
+    if (count == 0) return 'Aucun item dans ta whishlist';
+    if (count == 1) return '1 item dans ta whishlist - $selectedCount prévu';
 
-    return '$count items dans ta balade solo';
+    return '$count items dans ta whishlist - $selectedCount prévus';
+  }
+}
+
+class RoutePlannerPage extends StatefulWidget {
+  const RoutePlannerPage({super.key});
+
+  @override
+  State<RoutePlannerPage> createState() => _RoutePlannerPageState();
+}
+
+class _RoutePlannerPageState extends State<RoutePlannerPage> {
+  final PlannerRepository _repository = JsonPlannerRepository();
+  final SoloPlannerService _soloPlannerService = SoloPlannerService();
+  final SelectedCharacterService _selectedCharacterService =
+      SelectedCharacterService();
+
+  List<TrackingItem> _items = [];
+  WowCharacter? _selectedCharacter;
+  bool _isLoading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadRouteItems();
+  }
+
+  Future<void> _loadRouteItems() async {
+    setState(() {
+      _isLoading = true;
+    });
+
+    final wishlistItemIds = await _soloPlannerService.selectedItemIds();
+    final todayItemIds = await _soloPlannerService.selectedTodayItemIds(
+      wishlistItemIds,
+    );
+    final character = await _selectedCharacterService.loadCharacter();
+    final allCatalogItems = await Future.wait([
+      _repository.getItems(
+        WowExpansion.allAchievements,
+        category: TrackingCategory.achievements,
+      ),
+      _repository.getItems(WowExpansion.allMounts),
+      _repository.getItems(
+        WowExpansion.allPets,
+        category: TrackingCategory.pets,
+      ),
+    ]);
+
+    final selectedItemsById = <String, TrackingItem>{};
+
+    for (final catalogItems in allCatalogItems) {
+      for (final item in catalogItems) {
+        if (todayItemIds.contains(item.id)) {
+          selectedItemsById.putIfAbsent(item.id, () => item);
+        }
+      }
+    }
+
+    final items = selectedItemsById.values.toList()..sort(_compareRouteItems);
+
+    if (!mounted) return;
+
+    setState(() {
+      _items = items;
+      _selectedCharacter = character;
+      _isLoading = false;
+    });
+  }
+
+  int _compareRouteItems(TrackingItem left, TrackingItem right) {
+    final locationCompare = _locationGroupLabel(
+      left,
+    ).compareTo(_locationGroupLabel(right));
+    if (locationCompare != 0) return locationCompare;
+
+    final categoryCompare = left.category.index.compareTo(right.category.index);
+    if (categoryCompare != 0) return categoryCompare;
+
+    return left.name.compareTo(right.name);
+  }
+
+  Map<String, List<TrackingItem>> _groupedItems() {
+    final groupedItems = <String, List<TrackingItem>>{};
+
+    for (final item in _items) {
+      groupedItems.putIfAbsent(_locationGroupLabel(item), () => []).add(item);
+    }
+
+    return groupedItems;
+  }
+
+  String _locationGroupLabel(TrackingItem item) {
+    final values = [item.world, item.region, item.zone];
+    final uniqueValues = <String>[];
+    final seen = <String>{};
+
+    for (final value in values) {
+      final trimmed = value.trim();
+      if (!_hasUsefulLocationLabel(trimmed)) continue;
+
+      final normalized = WowRegionFilter.normalize(trimmed);
+      if (normalized.isEmpty || !seen.add(normalized)) continue;
+
+      uniqueValues.add(trimmed);
+    }
+
+    if (uniqueValues.isEmpty) return TrackingItem.unknownZone;
+
+    return uniqueValues.join(' > ');
+  }
+
+  bool _hasUsefulLocationLabel(String value) {
+    final normalized = WowRegionFilter.normalize(value);
+
+    return normalized.isNotEmpty &&
+        normalized != WowRegionFilter.normalize(TrackingItem.unknownZone) &&
+        normalized != 'unknown' &&
+        normalized != 'a definir';
+  }
+
+  String get _startingCapital {
+    final faction = WowRegionFilter.normalize(
+      _selectedCharacter?.faction ?? '',
+    );
+
+    if (faction == 'alliance') return 'Hurlevent';
+
+    return 'Orgrimmar';
+  }
+
+  void _backToProgress() {
+    Navigator.of(context).popUntil((route) => route.isFirst);
+  }
+
+  Future<void> _openWhishlist() async {
+    await Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (_) => const SoloPlannerPage()),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final groupedItems = _groupedItems();
+    var stepNumber = 0;
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Route du jour'),
+        actions: [
+          IconButton(
+            tooltip: 'Actualiser',
+            icon: const Icon(Icons.refresh),
+            onPressed: _loadRouteItems,
+          ),
+        ],
+        bottom: JourneyStepBar(
+          currentStep: 3,
+          onStep1: _backToProgress,
+          onStep2: _openWhishlist,
+          onStep3: () {},
+        ),
+      ),
+      body: _isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : WebSponsorSliverPageBody(
+              slivers: [
+                SliverToBoxAdapter(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Text(
+                        'Prends la route',
+                        style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      _RouteStartCard(capital: _startingCapital),
+                      const SizedBox(height: 18),
+                      Text(
+                        _routeCountLabel(_items.length),
+                        style: const TextStyle(fontWeight: FontWeight.w700),
+                      ),
+                      const SizedBox(height: 20),
+                      const AppNativeAd(),
+                      if (_items.isEmpty)
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(18),
+                            child: Text(
+                              'Aucun item sélectionné pour cette balade.',
+                              style: const TextStyle(color: AppTheme.mutedText),
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
+                SliverList(
+                  delegate: SliverChildListDelegate([
+                    for (final entry in groupedItems.entries) ...[
+                      _PlannerGroupHeader(
+                        title: entry.key,
+                        count: entry.value.length,
+                        isCollapsed: false,
+                        onToggle: () {},
+                      ),
+                      for (final item in entry.value)
+                        _RouteItemCard(item: item, stepNumber: ++stepNumber),
+                    ],
+                  ]),
+                ),
+              ],
+            ),
+    );
+  }
+
+  String _routeCountLabel(int count) {
+    if (count == 0) return 'Aucun objectif pour aujourd\'hui';
+    if (count == 1) return '1 objectif pour cette balade';
+
+    return '$count objectifs pour cette balade';
+  }
+}
+
+class _RouteStartCard extends StatelessWidget {
+  const _RouteStartCard({required this.capital});
+
+  final String capital;
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: EdgeInsets.zero,
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Row(
+          children: [
+            const Icon(Icons.flag_rounded, color: AppTheme.gold),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(
+                'Départ : $capital',
+                style: const TextStyle(fontWeight: FontWeight.w900),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _RouteItemCard extends StatelessWidget {
+  const _RouteItemCard({required this.item, required this.stepNumber});
+
+  final TrackingItem item;
+  final int stepNumber;
+
+  @override
+  Widget build(BuildContext context) {
+    final details = [
+      item.expansion.label,
+      item.category.label,
+      if (item.instance.trim().isNotEmpty) item.instance.trim(),
+      if (item.boss.trim().isNotEmpty) 'Boss : ${item.boss.trim()}',
+      if (item.source.trim().isNotEmpty) item.source.trim(),
+    ];
+
+    return Card(
+      margin: const EdgeInsets.only(bottom: 12),
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(
+              width: 38,
+              child: Text(
+                '$stepNumber',
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: AppTheme.gold,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+            ),
+            const SizedBox(width: 10),
+            _PlannerItemArtwork(item: item),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    item.name,
+                    style: const TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    details.join(' • '),
+                    style: const TextStyle(color: AppTheme.mutedText),
+                  ),
+                  const SizedBox(height: 8),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      _CategoryPlannerTag(category: item.category),
+                      _PlannerTag(label: item.expansion.label),
+                      if (item.weeklyLockout)
+                        const _PlannerTag(label: 'Hebdomadaire')
+                      else
+                        const _PlannerTag(label: 'Farm libre'),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _AdventureCrewPicker extends StatelessWidget {
+  const _AdventureCrewPicker({
+    required this.selectedMode,
+    required this.onChanged,
+  });
+
+  final _AdventureCrewMode selectedMode;
+  final ValueChanged<_AdventureCrewMode> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: Theme.of(context).cardColor.withValues(alpha: 0.76),
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: AppTheme.gold.withValues(alpha: 0.45)),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final isNarrow = constraints.maxWidth < 560;
+            final buttons = [
+              _CrewButton(
+                icon: Icons.explore_outlined,
+                label: 'Solo',
+                selected: selectedMode == _AdventureCrewMode.solo,
+                onPressed: () => onChanged(_AdventureCrewMode.solo),
+              ),
+              _CrewButton(
+                icon: Icons.groups_2_outlined,
+                label: 'Avec des amis',
+                selected: selectedMode == _AdventureCrewMode.friends,
+                onPressed: null,
+              ),
+            ];
+
+            final buttonRow = isNarrow
+                ? Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      for (var index = 0; index < buttons.length; index++) ...[
+                        buttons[index],
+                        if (index < buttons.length - 1)
+                          const SizedBox(height: 8),
+                      ],
+                    ],
+                  )
+                : Row(
+                    children: [
+                      for (var index = 0; index < buttons.length; index++) ...[
+                        Expanded(child: buttons[index]),
+                        if (index < buttons.length - 1)
+                          const SizedBox(width: 8),
+                      ],
+                    ],
+                  );
+
+            return Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Composition de l\'équipage :',
+                  style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                    color: AppTheme.gold,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                buttonRow,
+              ],
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class _CrewButton extends StatelessWidget {
+  const _CrewButton({
+    required this.icon,
+    required this.label,
+    required this.selected,
+    required this.onPressed,
+  });
+
+  final IconData icon;
+  final String label;
+  final bool selected;
+  final VoidCallback? onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    final backgroundColor = selected
+        ? AppTheme.gold
+        : AppTheme.gold.withValues(alpha: 0.14);
+    final foregroundColor = selected ? AppTheme.background : AppTheme.gold;
+
+    return FilledButton.icon(
+      onPressed: onPressed,
+      icon: Icon(icon, size: 20),
+      label: Text(label, textAlign: TextAlign.center),
+      style: FilledButton.styleFrom(
+        minimumSize: const Size(0, 48),
+        backgroundColor: backgroundColor,
+        disabledBackgroundColor: Colors.white.withValues(alpha: 0.08),
+        foregroundColor: foregroundColor,
+        disabledForegroundColor: AppTheme.mutedText,
+        textStyle: const TextStyle(fontWeight: FontWeight.w900),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+        side: BorderSide(
+          color: selected
+              ? Colors.white.withValues(alpha: 0.55)
+              : AppTheme.gold.withValues(alpha: 0.36),
+        ),
+      ),
+    );
   }
 }
 
@@ -2414,11 +2962,13 @@ class _PlannerItemCard extends StatelessWidget {
   const _PlannerItemCard({
     required this.item,
     required this.selectedForSolo,
+    this.selectionTagLabel = 'Balade du jour',
     required this.onChanged,
   });
 
   final TrackingItem item;
   final bool selectedForSolo;
+  final String selectionTagLabel;
   final ValueChanged<bool?> onChanged;
 
   String _wowheadUrl(BuildContext context) {
@@ -2716,7 +3266,7 @@ class _PlannerItemCard extends StatelessWidget {
             ?dungeonTag,
             _PlannerTag(label: frequencyLabel),
             if (item.obtained) const _PlannerTag(label: 'Obtenu'),
-            if (selectedForSolo) const _PlannerTag(label: 'Balade solo'),
+            if (selectedForSolo) _PlannerTag(label: selectionTagLabel),
             ..._manualTags(includeDungeonTag: false),
           ]
         : <Widget>[
@@ -2730,7 +3280,7 @@ class _PlannerItemCard extends StatelessWidget {
             ..._metadataTags(),
             _PlannerTag(label: frequencyLabel),
             if (item.obtained) const _PlannerTag(label: 'Obtenu'),
-            if (selectedForSolo) const _PlannerTag(label: 'Balade solo'),
+            if (selectedForSolo) _PlannerTag(label: selectionTagLabel),
             ?difficultyTag,
             ..._manualTags(),
           ];
@@ -2749,8 +3299,8 @@ class _PlannerItemCard extends StatelessWidget {
                 children: [
                   Tooltip(
                     message: selectedForSolo
-                        ? 'Retirer de la balade solo'
-                        : 'Ajouter a la balade solo',
+                        ? 'Retirer de $selectionTagLabel'
+                        : 'Ajouter à $selectionTagLabel',
                     child: Checkbox(
                       value: selectedForSolo,
                       onChanged: onChanged,
