@@ -1259,7 +1259,7 @@ class _MissingObtainableSummary extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           const Text(
-            'Tu peux aller chercher :',
+            'Tu peux encore aller farmer :',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: AppTheme.text,
@@ -1285,26 +1285,23 @@ class _MissingObtainableSummary extends StatelessWidget {
               ),
             )
           else
-            Wrap(
-              alignment: WrapAlignment.center,
-              runAlignment: WrapAlignment.center,
-              spacing: 14,
-              runSpacing: 4,
-              children: missingEntries.map((entry) {
-                final missing = entry.value;
+            Text(
+              missingEntries
+                  .map((entry) {
+                    final missing = entry.value;
 
-                return Text(
-                  '• $missing ${_missingCategoryLabel(entry.key, missing)}',
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    color: Color(0xFF34D399),
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
-                  ),
-                );
-              }).toList(),
+                    return '$missing ${_missingCategoryLabel(entry.key, missing)}';
+                  })
+                  .join('  -  '),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: Color(0xFF34D399),
+                fontSize: 12,
+                fontWeight: FontWeight.w700,
+                height: 1.25,
+              ),
             ),
         ],
       ),
