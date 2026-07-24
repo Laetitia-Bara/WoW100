@@ -1591,7 +1591,12 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
                         onToggle: () {},
                       ),
                       for (final item in entry.value)
-                        _RouteItemCard(item: item, stepNumber: ++stepNumber),
+                        _PlannerItemCard(
+                          item: item,
+                          selectedForSolo: false,
+                          stepNumber: ++stepNumber,
+                          onChanged: (_) {},
+                        ),
                     ],
                   ]),
                 ),
@@ -1636,74 +1641,22 @@ class _RouteStartCard extends StatelessWidget {
   }
 }
 
-class _RouteItemCard extends StatelessWidget {
-  const _RouteItemCard({required this.item, required this.stepNumber});
+class _RouteStepNumberBadge extends StatelessWidget {
+  const _RouteStepNumberBadge({required this.number});
 
-  final TrackingItem item;
-  final int stepNumber;
+  final int number;
 
   @override
   Widget build(BuildContext context) {
-    final details = [
-      item.expansion.label,
-      item.category.label,
-      if (item.instance.trim().isNotEmpty) item.instance.trim(),
-      if (item.boss.trim().isNotEmpty) 'Boss : ${item.boss.trim()}',
-      if (item.source.trim().isNotEmpty) item.source.trim(),
-    ];
-
-    return Card(
-      margin: const EdgeInsets.only(bottom: 12),
-      child: Padding(
-        padding: const EdgeInsets.all(12),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SizedBox(
-              width: 38,
-              child: Text(
-                '$stepNumber',
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  color: AppTheme.gold,
-                  fontSize: 18,
-                  fontWeight: FontWeight.w900,
-                ),
-              ),
-            ),
-            const SizedBox(width: 10),
-            _PlannerItemArtwork(item: item),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    item.name,
-                    style: const TextStyle(fontWeight: FontWeight.w900),
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    details.join(' • '),
-                    style: const TextStyle(color: AppTheme.mutedText),
-                  ),
-                  const SizedBox(height: 8),
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
-                    children: [
-                      _CategoryPlannerTag(category: item.category),
-                      _PlannerTag(label: item.expansion.label),
-                      if (item.weeklyLockout)
-                        const _PlannerTag(label: 'Hebdomadaire')
-                      else
-                        const _PlannerTag(label: 'Farm libre'),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ],
+    return SizedBox(
+      width: 42,
+      child: Text(
+        '$number',
+        textAlign: TextAlign.center,
+        style: const TextStyle(
+          color: AppTheme.gold,
+          fontSize: 18,
+          fontWeight: FontWeight.w900,
         ),
       ),
     );
@@ -2958,12 +2911,14 @@ class _PlannerItemCard extends StatelessWidget {
     required this.item,
     required this.selectedForSolo,
     this.selectionTagLabel = 'Balade du jour',
+    this.stepNumber,
     required this.onChanged,
   });
 
   final TrackingItem item;
   final bool selectedForSolo;
   final String selectionTagLabel;
+  final int? stepNumber;
   final ValueChanged<bool?> onChanged;
 
   String _wowheadUrl(BuildContext context) {
@@ -3287,59 +3242,62 @@ class _PlannerItemCard extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(
-              width: isMount ? 72 : 42,
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Tooltip(
-                    message: selectedForSolo
-                        ? 'Retirer de $selectionTagLabel'
-                        : 'Ajouter à $selectionTagLabel',
-                    child: Checkbox(
-                      value: selectedForSolo,
-                      onChanged: onChanged,
+            if (stepNumber != null)
+              _RouteStepNumberBadge(number: stepNumber!)
+            else
+              SizedBox(
+                width: isMount ? 72 : 42,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Tooltip(
+                      message: selectedForSolo
+                          ? 'Retirer de $selectionTagLabel'
+                          : 'Ajouter à $selectionTagLabel',
+                      child: Checkbox(
+                        value: selectedForSolo,
+                        onChanged: onChanged,
+                      ),
                     ),
-                  ),
-                  if (isMount)
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        if (mamytwinkUrl.isNotEmpty)
-                          _MountExternalLinkButton(
-                            tooltip: 'Ouvrir sur Mamytwink',
-                            onPressed: () => _openUrl(mamytwinkUrl),
-                            child: const Text(
-                              'M',
-                              style: TextStyle(
-                                color: Color(0xFF84CC16),
-                                fontWeight: FontWeight.w900,
-                                fontSize: 17,
+                    if (isMount)
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          if (mamytwinkUrl.isNotEmpty)
+                            _MountExternalLinkButton(
+                              tooltip: 'Ouvrir sur Mamytwink',
+                              onPressed: () => _openUrl(mamytwinkUrl),
+                              child: const Text(
+                                'M',
+                                style: TextStyle(
+                                  color: Color(0xFF84CC16),
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 17,
+                                ),
                               ),
                             ),
-                          ),
-                        _MountExternalLinkButton(
-                          tooltip: 'Ouvrir sur Wowhead',
-                          onPressed: () => _openUrl(wowheadUrl),
-                          child: const _WowheadRocketIcon(),
-                        ),
-                      ],
-                    )
-                  else
-                    hasWowheadLink
-                        ? _MountExternalLinkButton(
+                          _MountExternalLinkButton(
                             tooltip: 'Ouvrir sur Wowhead',
                             onPressed: () => _openUrl(wowheadUrl),
                             child: const _WowheadRocketIcon(),
-                          )
-                        : IconButton(
-                            tooltip: 'Ouvrir la fiche',
-                            icon: const Icon(Icons.open_in_new),
-                            onPressed: () => _openUrl(wowheadUrl),
                           ),
-                ],
+                        ],
+                      )
+                    else
+                      hasWowheadLink
+                          ? _MountExternalLinkButton(
+                              tooltip: 'Ouvrir sur Wowhead',
+                              onPressed: () => _openUrl(wowheadUrl),
+                              child: const _WowheadRocketIcon(),
+                            )
+                          : IconButton(
+                              tooltip: 'Ouvrir la fiche',
+                              icon: const Icon(Icons.open_in_new),
+                              onPressed: () => _openUrl(wowheadUrl),
+                            ),
+                  ],
+                ),
               ),
-            ),
             const SizedBox(width: 10),
             _PlannerItemArtwork(item: item),
             const SizedBox(width: 12),

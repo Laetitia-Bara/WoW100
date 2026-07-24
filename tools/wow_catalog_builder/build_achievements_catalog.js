@@ -55,6 +55,41 @@ const categoryLabels = {
   81: "Tours de force",
 };
 
+const globalAchievementCategoryIds = new Set([
+  155,
+  156,
+  158,
+  159,
+  160,
+  161,
+  162,
+  163,
+  187,
+  14981,
+  15101,
+  15416,
+  15454,
+  15532,
+  15545,
+  15567,
+  15574,
+]);
+
+const expansionByAchievementId = {
+  18566: "dragonflight",
+  18567: "dragonflight",
+  18568: "dragonflight",
+  18569: "dragonflight",
+  18570: "dragonflight",
+  18571: "dragonflight",
+  18572: "dragonflight",
+  18573: "dragonflight",
+  18574: "dragonflight",
+  18939: "dragonflight",
+  18940: "dragonflight",
+  18942: "dragonflight",
+};
+
 function normalize(value) {
   return String(value ?? "")
     .toLocaleLowerCase("fr-FR")
@@ -572,12 +607,21 @@ function inferExpansion(achievement, manualMetadata, wowheadMetadata) {
     return manualMetadata.expansion;
   }
 
-  const categoryExpansion = inferExpansionFromCategory(
+  if (globalAchievementCategoryIds.has(achievement.categoryId)) {
+    return "allAchievements";
+  }
+
+  const achievementExpansion = expansionByAchievementId[achievement.id];
+  if (achievementExpansion) {
+    return achievementExpansion;
+  }
+
+  const namedCategoryExpansion = inferExpansionFromCategory(
     achievement,
     wowheadMetadata,
   );
-  if (categoryExpansion) {
-    return categoryExpansion;
+  if (namedCategoryExpansion) {
+    return namedCategoryExpansion;
   }
 
   const candidateText = normalize(

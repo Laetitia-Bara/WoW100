@@ -9,6 +9,41 @@ import '../models/wow_expansion.dart';
 class JsonPlannerSource {
   static final Map<String, Future<List<TrackingItem>>> _itemAssetCache = {};
 
+  static const Set<int> _globalAchievementCategoryIds = {
+    155,
+    156,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    187,
+    14981,
+    15101,
+    15416,
+    15454,
+    15532,
+    15545,
+    15567,
+    15574,
+  };
+
+  static const Map<int, WowExpansion> _achievementExpansionOverrides = {
+    18566: WowExpansion.dragonflight,
+    18567: WowExpansion.dragonflight,
+    18568: WowExpansion.dragonflight,
+    18569: WowExpansion.dragonflight,
+    18570: WowExpansion.dragonflight,
+    18571: WowExpansion.dragonflight,
+    18572: WowExpansion.dragonflight,
+    18573: WowExpansion.dragonflight,
+    18574: WowExpansion.dragonflight,
+    18939: WowExpansion.dragonflight,
+    18940: WowExpansion.dragonflight,
+    18942: WowExpansion.dragonflight,
+  };
+
   static const Map<WowExpansion, String> _achievementAssetPaths = {
     WowExpansion.vanilla: 'assets/data/achievements/vanilla_achievements.json',
     WowExpansion.tbc: 'assets/data/achievements/tbc_achievements.json',
@@ -282,7 +317,9 @@ class JsonPlannerSource {
     final assetPath = _achievementAssetPaths[expansion];
     if (assetPath == null) return [];
 
-    final items = await _tryLoadItemsFromAsset(assetPath);
+    final items = (await _tryLoadItemsFromAsset(
+      assetPath,
+    )).where((item) => _belongsInAchievementPlanner(item, expansion)).toList();
 
     items.sort((a, b) {
       final instanceCompare = a.instance.compareTo(b.instance);
@@ -292,6 +329,26 @@ class JsonPlannerSource {
     });
 
     return items;
+  }
+
+  bool _belongsInAchievementPlanner(TrackingItem item, WowExpansion expansion) {
+    final categoryId = item.blizzardCategoryId;
+    if (categoryId != null) {
+      if (_globalAchievementCategoryIds.contains(categoryId)) {
+        return false;
+      }
+    }
+
+    final achievementId = item.blizzardId;
+    if (achievementId != null) {
+      final achievementExpansion =
+          _achievementExpansionOverrides[achievementId];
+      if (achievementExpansion != null && achievementExpansion != expansion) {
+        return false;
+      }
+    }
+
+    return item.expansion == expansion;
   }
 
   Future<List<TrackingItem>> _loadAllAchievementAssets() async {
