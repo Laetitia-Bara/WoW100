@@ -24,22 +24,15 @@ class JourneyStepBar extends StatelessWidget implements PreferredSizeWidget {
     final steps = [
       _JourneyStep(
         number: 1,
-        icon: Icons.checklist_rounded,
         label: 'Sélectionne les items à farmer',
         onPressed: onStep1,
       ),
       _JourneyStep(
         number: 2,
-        icon: Icons.playlist_add_check_rounded,
         label: 'Organise ta whishlist',
         onPressed: onStep2,
       ),
-      _JourneyStep(
-        number: 3,
-        icon: Icons.route_rounded,
-        label: 'Prends la route',
-        onPressed: onStep3,
-      ),
+      _JourneyStep(number: 3, label: 'Prends la route', onPressed: onStep3),
     ];
 
     return Material(
@@ -94,13 +87,11 @@ class JourneyStepBar extends StatelessWidget implements PreferredSizeWidget {
 class _JourneyStep {
   const _JourneyStep({
     required this.number,
-    required this.icon,
     required this.label,
     required this.onPressed,
   });
 
   final int number;
-  final IconData icon;
   final String label;
   final VoidCallback onPressed;
 }
@@ -121,14 +112,8 @@ class _JourneyStepButton extends StatelessWidget {
         ? Colors.white.withValues(alpha: 0.62)
         : AppTheme.gold.withValues(alpha: 0.36);
 
-    return FilledButton.icon(
+    return FilledButton(
       onPressed: step.onPressed,
-      icon: Icon(step.icon, size: 20),
-      label: Text(
-        '${step.number} - ${step.label}',
-        maxLines: 1,
-        overflow: TextOverflow.ellipsis,
-      ),
       style: FilledButton.styleFrom(
         minimumSize: const Size(0, 50),
         backgroundColor: backgroundColor,
@@ -136,6 +121,58 @@ class _JourneyStepButton extends StatelessWidget {
         textStyle: const TextStyle(fontWeight: FontWeight.w900),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         side: BorderSide(color: borderColor, width: selected ? 1.4 : 1),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          _StepNumberBadge(number: step.number, selected: selected),
+          const SizedBox(width: 10),
+          Flexible(
+            child: Text(
+              step.label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _StepNumberBadge extends StatelessWidget {
+  const _StepNumberBadge({required this.number, required this.selected});
+
+  final int number;
+  final bool selected;
+
+  @override
+  Widget build(BuildContext context) {
+    final backgroundColor = selected
+        ? AppTheme.background.withValues(alpha: 0.18)
+        : AppTheme.gold.withValues(alpha: 0.14);
+    final borderColor = selected
+        ? AppTheme.background.withValues(alpha: 0.44)
+        : AppTheme.gold.withValues(alpha: 0.62);
+    final foregroundColor = selected ? AppTheme.background : AppTheme.gold;
+
+    return Container(
+      width: 30,
+      height: 30,
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: backgroundColor,
+        border: Border.all(color: borderColor, width: 1.4),
+      ),
+      child: Text(
+        '$number',
+        style: TextStyle(
+          color: foregroundColor,
+          fontSize: 16,
+          fontWeight: FontWeight.w900,
+        ),
       ),
     );
   }
