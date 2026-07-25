@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class SoloPlannerService {
   static const _itemIdsKey = 'solo_planner_item_ids';
   static const _todayItemIdsKey = 'solo_planner_today_item_ids';
+  static const _routeCompletedStepIdsKey = 'solo_route_completed_step_ids';
 
   Future<Set<String>> selectedItemIds() async {
     final prefs = await SharedPreferences.getInstance();
@@ -76,5 +77,49 @@ class SoloPlannerService {
   Future<void> clearTodaySelected() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setStringList(_todayItemIdsKey, const <String>[]);
+  }
+
+  Future<Set<String>> routeCompletedStepIds([Set<String>? validStepIds]) async {
+    final prefs = await SharedPreferences.getInstance();
+    final stepIds =
+        (prefs.getStringList(_routeCompletedStepIdsKey) ?? const <String>[])
+            .toSet();
+
+    if (validStepIds == null) return stepIds;
+
+    return stepIds.where(validStepIds.contains).toSet();
+  }
+
+  Future<void> setRouteStepCompleted(String stepId, bool completed) async {
+    final prefs = await SharedPreferences.getInstance();
+    final stepIds =
+        (prefs.getStringList(_routeCompletedStepIdsKey) ?? const <String>[])
+            .toSet();
+
+    if (completed) {
+      stepIds.add(stepId);
+    } else {
+      stepIds.remove(stepId);
+    }
+
+    final sortedStepIds = stepIds.toList()..sort();
+    await prefs.setStringList(_routeCompletedStepIdsKey, sortedStepIds);
+  }
+
+  Future<void> clearRouteCompletedSteps([Iterable<String>? stepIds]) async {
+    final prefs = await SharedPreferences.getInstance();
+
+    if (stepIds == null) {
+      await prefs.setStringList(_routeCompletedStepIdsKey, const <String>[]);
+      return;
+    }
+
+    final completedStepIds =
+        (prefs.getStringList(_routeCompletedStepIdsKey) ?? const <String>[])
+            .toSet()
+          ..removeAll(stepIds);
+    final sortedStepIds = completedStepIds.toList()..sort();
+
+    await prefs.setStringList(_routeCompletedStepIdsKey, sortedStepIds);
   }
 }

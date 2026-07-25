@@ -38,6 +38,7 @@ flutter:
     - assets/translations/
     - assets/data/mounts/
     - assets/data/metadata/
+    - assets/data/routes/
     - assets/data/pets/
     - assets/images/expansions/
     - assets/images/

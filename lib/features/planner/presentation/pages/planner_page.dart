@@ -11,6 +11,7 @@ import 'package:wow100/data/repositories/battle_net_repository.dart';
 
 import '../../../../core/ads/app_ads.dart';
 import '../../../../core/services/selected_character_service.dart';
+import '../../../../core/services/route_planner_service.dart';
 import '../../../../core/services/solo_planner_service.dart';
 import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../core/theme/app_theme.dart';
@@ -1379,10 +1380,13 @@ class RoutePlannerPage extends StatefulWidget {
 class _RoutePlannerPageState extends State<RoutePlannerPage> {
   final PlannerRepository _repository = JsonPlannerRepository();
   final SoloPlannerService _soloPlannerService = SoloPlannerService();
+  final RoutePlannerService _routePlannerService = RoutePlannerService();
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
 
   List<TrackingItem> _items = [];
+  List<PlannedRouteStep> _routeSteps = [];
+  Set<String> _completedRouteStepIds = {};
   WowCharacter? _selectedCharacter;
   bool _isLoading = true;
 
@@ -1424,66 +1428,23 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
       }
     }
 
-    final items = selectedItemsById.values.toList()..sort(_compareRouteItems);
+    final items = selectedItemsById.values.toList();
+    final routePlan = await _routePlannerService.buildPlan(
+      items: items,
+      faction: character?.faction ?? '',
+    );
+    final completedRouteStepIds = await _soloPlannerService
+        .routeCompletedStepIds(routePlan.steps.map((step) => step.id).toSet());
 
     if (!mounted) return;
 
     setState(() {
       _items = items;
+      _routeSteps = routePlan.steps;
+      _completedRouteStepIds = completedRouteStepIds;
       _selectedCharacter = character;
       _isLoading = false;
     });
-  }
-
-  int _compareRouteItems(TrackingItem left, TrackingItem right) {
-    final locationCompare = _locationGroupLabel(
-      left,
-    ).compareTo(_locationGroupLabel(right));
-    if (locationCompare != 0) return locationCompare;
-
-    final categoryCompare = left.category.index.compareTo(right.category.index);
-    if (categoryCompare != 0) return categoryCompare;
-
-    return left.name.compareTo(right.name);
-  }
-
-  Map<String, List<TrackingItem>> _groupedItems() {
-    final groupedItems = <String, List<TrackingItem>>{};
-
-    for (final item in _items) {
-      groupedItems.putIfAbsent(_locationGroupLabel(item), () => []).add(item);
-    }
-
-    return groupedItems;
-  }
-
-  String _locationGroupLabel(TrackingItem item) {
-    final values = [item.world, item.region, item.zone];
-    final uniqueValues = <String>[];
-    final seen = <String>{};
-
-    for (final value in values) {
-      final trimmed = value.trim();
-      if (!_hasUsefulLocationLabel(trimmed)) continue;
-
-      final normalized = WowRegionFilter.normalize(trimmed);
-      if (normalized.isEmpty || !seen.add(normalized)) continue;
-
-      uniqueValues.add(trimmed);
-    }
-
-    if (uniqueValues.isEmpty) return TrackingItem.unknownZone;
-
-    return uniqueValues.join(' > ');
-  }
-
-  bool _hasUsefulLocationLabel(String value) {
-    final normalized = WowRegionFilter.normalize(value);
-
-    return normalized.isNotEmpty &&
-        normalized != WowRegionFilter.normalize(TrackingItem.unknownZone) &&
-        normalized != 'unknown' &&
-        normalized != 'a definir';
   }
 
   String get _startingCapital {
@@ -1507,9 +1468,50 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
     );
   }
 
+  Future<void> _setRouteStepCompleted(
+    PlannedRouteStep step,
+    bool completed,
+  ) async {
+    await _soloPlannerService.setRouteStepCompleted(step.id, completed);
+
+    if (!mounted) return;
+
+    setState(() {
+      if (completed) {
+        _completedRouteStepIds.add(step.id);
+      } else {
+        _completedRouteStepIds.remove(step.id);
+      }
+    });
+  }
+
+  Future<void> _resetAllRouteSteps() async {
+    await _soloPlannerService.clearRouteCompletedSteps();
+
+    if (!mounted) return;
+
+    setState(_completedRouteStepIds.clear);
+  }
+
+  Future<void> _resetRouteSteps(RouteResetScope scope) async {
+    final stepIds = _routeSteps
+        .where((step) => step.resetScope == scope)
+        .map((step) => step.id)
+        .toSet();
+
+    if (stepIds.isEmpty) return;
+
+    await _soloPlannerService.clearRouteCompletedSteps(stepIds);
+
+    if (!mounted) return;
+
+    setState(() {
+      _completedRouteStepIds.removeAll(stepIds);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    final groupedItems = _groupedItems();
     var stepNumber = 0;
 
     return Scaffold(
@@ -1555,6 +1557,15 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
                         _routeCountLabel(_items.length),
                         style: const TextStyle(fontWeight: FontWeight.w700),
                       ),
+                      const SizedBox(height: 12),
+                      _RouteResetActionBar(
+                        hasCompletedSteps: _completedRouteStepIds.isNotEmpty,
+                        onResetAll: _resetAllRouteSteps,
+                        onResetDaily: () =>
+                            _resetRouteSteps(RouteResetScope.daily),
+                        onResetWeekly: () =>
+                            _resetRouteSteps(RouteResetScope.weekly),
+                      ),
                       const SizedBox(height: 20),
                       const AppNativeAd(),
                       if (_items.isEmpty)
@@ -1571,23 +1582,17 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
                   ),
                 ),
                 SliverList(
-                  delegate: SliverChildListDelegate([
-                    for (final entry in groupedItems.entries) ...[
-                      _PlannerGroupHeader(
-                        title: entry.key,
-                        count: entry.value.length,
-                        isCollapsed: false,
-                        onToggle: () {},
-                      ),
-                      for (final item in entry.value)
-                        _PlannerItemCard(
-                          item: item,
-                          selectedForSolo: false,
-                          stepNumber: ++stepNumber,
-                          onChanged: (_) {},
-                        ),
-                    ],
-                  ]),
+                  delegate: SliverChildBuilderDelegate((context, index) {
+                    final step = _routeSteps[index];
+
+                    return _RouteStepCard(
+                      step: step,
+                      stepNumber: ++stepNumber,
+                      completed: _completedRouteStepIds.contains(step.id),
+                      onChanged: (value) =>
+                          _setRouteStepCompleted(step, value ?? false),
+                    );
+                  }, childCount: _routeSteps.length),
                 ),
               ],
             ),
@@ -1627,6 +1632,165 @@ class _RouteStartCard extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class _RouteResetActionBar extends StatelessWidget {
+  const _RouteResetActionBar({
+    required this.hasCompletedSteps,
+    required this.onResetAll,
+    required this.onResetDaily,
+    required this.onResetWeekly,
+  });
+
+  final bool hasCompletedSteps;
+  final VoidCallback onResetAll;
+  final VoidCallback onResetDaily;
+  final VoidCallback onResetWeekly;
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      spacing: 10,
+      runSpacing: 10,
+      children: [
+        OutlinedButton.icon(
+          onPressed: hasCompletedSteps ? onResetAll : null,
+          icon: const Icon(Icons.restart_alt_rounded),
+          label: const Text('Reset all'),
+        ),
+        OutlinedButton.icon(
+          onPressed: onResetDaily,
+          icon: const Icon(Icons.today_rounded),
+          label: const Text('Reset quotidien'),
+        ),
+        OutlinedButton.icon(
+          onPressed: onResetWeekly,
+          icon: const Icon(Icons.calendar_month_rounded),
+          label: const Text('Reset hebdo'),
+        ),
+      ],
+    );
+  }
+}
+
+class _RouteStepCard extends StatelessWidget {
+  const _RouteStepCard({
+    required this.step,
+    required this.stepNumber,
+    required this.completed,
+    required this.onChanged,
+  });
+
+  final PlannedRouteStep step;
+  final int stepNumber;
+  final bool completed;
+  final ValueChanged<bool?> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final item = step.item;
+    final details = step.details.trim();
+    final textStyle = TextStyle(
+      fontWeight: FontWeight.w900,
+      decoration: completed ? TextDecoration.lineThrough : null,
+    );
+    final mutedStyle = TextStyle(
+      color: AppTheme.mutedText,
+      decoration: completed ? TextDecoration.lineThrough : null,
+    );
+
+    return Card(
+      margin: const EdgeInsets.only(bottom: 10),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Checkbox(value: completed, onChanged: onChanged),
+            _RouteStepNumberBadge(number: stepNumber),
+            const SizedBox(width: 8),
+            _RouteStepIcon(kind: step.kind),
+            const SizedBox(width: 12),
+            if (item != null) ...[
+              _PlannerItemArtwork(item: item),
+              const SizedBox(width: 12),
+            ],
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(step.label, style: textStyle),
+                  if (details.isNotEmpty) ...[
+                    const SizedBox(height: 6),
+                    Text(details, style: mutedStyle),
+                  ],
+                  const SizedBox(height: 8),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      _PlannerTag(label: _routeKindLabel(step.kind)),
+                      if (step.resetScope != RouteResetScope.none)
+                        _PlannerTag(label: _resetScopeLabel(step.resetScope)),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  String _routeKindLabel(RouteStepKind kind) {
+    return switch (kind) {
+      RouteStepKind.portal => 'Portail',
+      RouteStepKind.flight => 'Fly',
+      RouteStepKind.go => 'Go',
+      RouteStepKind.hearthstone => 'Pierre de foyer',
+      RouteStepKind.objective => 'Objectif',
+    };
+  }
+
+  String _resetScopeLabel(RouteResetScope scope) {
+    return switch (scope) {
+      RouteResetScope.daily => 'Quotidien',
+      RouteResetScope.weekly => 'Hebdomadaire',
+      RouteResetScope.none => '',
+    };
+  }
+}
+
+class _RouteStepIcon extends StatelessWidget {
+  const _RouteStepIcon({required this.kind});
+
+  final RouteStepKind kind;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 38,
+      height: 38,
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        color: AppTheme.gold.withValues(alpha: 0.14),
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: AppTheme.gold.withValues(alpha: 0.35)),
+      ),
+      child: Icon(_icon, color: AppTheme.gold, size: 20),
+    );
+  }
+
+  IconData get _icon {
+    return switch (kind) {
+      RouteStepKind.portal => Icons.auto_awesome_motion_rounded,
+      RouteStepKind.flight => Icons.flight_takeoff_rounded,
+      RouteStepKind.go => Icons.directions_run_rounded,
+      RouteStepKind.hearthstone => Icons.home_rounded,
+      RouteStepKind.objective => Icons.flag_rounded,
+    };
   }
 }
 
@@ -2951,14 +3115,12 @@ class _PlannerItemCard extends StatelessWidget {
     required this.item,
     required this.selectedForSolo,
     this.selectionTagLabel = 'Prochain farm',
-    this.stepNumber,
     required this.onChanged,
   });
 
   final TrackingItem item;
   final bool selectedForSolo;
   final String selectionTagLabel;
-  final int? stepNumber;
   final ValueChanged<bool?> onChanged;
 
   String _wowheadUrl(BuildContext context) {
@@ -3270,62 +3432,59 @@ class _PlannerItemCard extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            if (stepNumber != null)
-              _RouteStepNumberBadge(number: stepNumber!)
-            else
-              SizedBox(
-                width: 72,
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Tooltip(
-                      message: selectedForSolo
-                          ? 'Retirer de $selectionTagLabel'
-                          : 'Ajouter à $selectionTagLabel',
-                      child: Checkbox(
-                        value: selectedForSolo,
-                        onChanged: onChanged,
-                      ),
+            SizedBox(
+              width: 72,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Tooltip(
+                    message: selectedForSolo
+                        ? 'Retirer de $selectionTagLabel'
+                        : 'Ajouter à $selectionTagLabel',
+                    child: Checkbox(
+                      value: selectedForSolo,
+                      onChanged: onChanged,
                     ),
-                    if (isMount)
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          if (mamytwinkUrl.isNotEmpty)
-                            _MountExternalLinkButton(
-                              tooltip: 'Ouvrir sur Mamytwink',
-                              onPressed: () => _openUrl(mamytwinkUrl),
-                              child: const Text(
-                                'M',
-                                style: TextStyle(
-                                  color: Color(0xFF84CC16),
-                                  fontWeight: FontWeight.w900,
-                                  fontSize: 17,
-                                ),
+                  ),
+                  if (isMount)
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        if (mamytwinkUrl.isNotEmpty)
+                          _MountExternalLinkButton(
+                            tooltip: 'Ouvrir sur Mamytwink',
+                            onPressed: () => _openUrl(mamytwinkUrl),
+                            child: const Text(
+                              'M',
+                              style: TextStyle(
+                                color: Color(0xFF84CC16),
+                                fontWeight: FontWeight.w900,
+                                fontSize: 17,
                               ),
                             ),
-                          _MountExternalLinkButton(
+                          ),
+                        _MountExternalLinkButton(
+                          tooltip: 'Ouvrir sur Wowhead',
+                          onPressed: () => _openUrl(wowheadUrl),
+                          child: const _WowheadRocketIcon(),
+                        ),
+                      ],
+                    )
+                  else
+                    hasWowheadLink
+                        ? _MountExternalLinkButton(
                             tooltip: 'Ouvrir sur Wowhead',
                             onPressed: () => _openUrl(wowheadUrl),
                             child: const _WowheadRocketIcon(),
+                          )
+                        : IconButton(
+                            tooltip: 'Ouvrir la fiche',
+                            icon: const Icon(Icons.open_in_new),
+                            onPressed: () => _openUrl(wowheadUrl),
                           ),
-                        ],
-                      )
-                    else
-                      hasWowheadLink
-                          ? _MountExternalLinkButton(
-                              tooltip: 'Ouvrir sur Wowhead',
-                              onPressed: () => _openUrl(wowheadUrl),
-                              child: const _WowheadRocketIcon(),
-                            )
-                          : IconButton(
-                              tooltip: 'Ouvrir la fiche',
-                              icon: const Icon(Icons.open_in_new),
-                              onPressed: () => _openUrl(wowheadUrl),
-                            ),
-                  ],
-                ),
+                ],
               ),
+            ),
             const SizedBox(width: 10),
             _PlannerItemArtwork(item: item),
             const SizedBox(width: 12),

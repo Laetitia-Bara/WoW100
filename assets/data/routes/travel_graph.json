@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "notes": "MVP routing graph. Costs are estimated convenience scores, not exact travel times.",
+  "locationNodes": {
+    "Orgrimmar": "orgrimmar",
+    "Hurlevent": "stormwind",
+    "Stormwind": "stormwind",
+    "Shattrath": "shattrath",
+    "Outreterre": "shattrath",
+    "Raz-de-Neant": "netherstorm",
+    "Raz de Neant": "netherstorm",
+    "Netherstorm": "netherstorm",
+    "Maleterres de l'Est": "eastern_plaguelands",
+    "Eastern Plaguelands": "eastern_plaguelands",
+    "Norfendre": "dalaran_northrend",
+    "Dalaran": "dalaran_northrend",
+    "Couronne de glace": "icecrown",
+    "La Couronne de glace": "icecrown",
+    "Coldarra": "coldarra",
+    "Toundra boreenne": "borean_tundra",
+    "Fjord hurlant": "howling_fjord",
+    "Les pics foudroyes": "storm_peaks",
+    "Pics foudroyes": "storm_peaks",
+    "Uldum": "uldum",
+    "Mont Hyjal": "hyjal",
+    "Pandarie": "pandaria",
+    "Val de l'eternel printemps": "pandaria",
+    "Draenor": "draenor",
+    "Iles Brisees": "broken_isles",
+    "Argus": "argus",
+    "Kul Tiras": "kul_tiras",
+    "Zandalar": "zandalar",
+    "Ombreterre": "shadowlands",
+    "Iles aux Dragons": "dragon_isles",
+    "Khaz Algar": "khaz_algar"
+  },
+  "nodes": [
+    { "id": "orgrimmar", "label": "Orgrimmar" },
+    { "id": "stormwind", "label": "Hurlevent" },
+    { "id": "shattrath", "label": "Shattrath" },
+    { "id": "netherstorm", "label": "Raz-de-Neant" },
+    { "id": "silvermoon", "label": "Lune-d'argent" },
+    { "id": "eastern_plaguelands", "label": "Maleterres de l'Est" },
+    { "id": "dalaran_northrend", "label": "Dalaran de Norfendre" },
+    { "id": "icecrown", "label": "Couronne de glace" },
+    { "id": "coldarra", "label": "Coldarra" },
+    { "id": "borean_tundra", "label": "Toundra boreenne" },
+    { "id": "howling_fjord", "label": "Fjord hurlant" },
+    { "id": "storm_peaks", "label": "Les pics foudroyes" },
+    { "id": "uldum", "label": "Uldum" },
+    { "id": "hyjal", "label": "Mont Hyjal" },
+    { "id": "pandaria", "label": "Pandarie" },
+    { "id": "draenor", "label": "Draenor" },
+    { "id": "broken_isles", "label": "Iles Brisees" },
+    { "id": "argus", "label": "Argus" },
+    { "id": "kul_tiras", "label": "Kul Tiras" },
+    { "id": "zandalar", "label": "Zandalar" },
+    { "id": "shadowlands", "label": "Ombreterre" },
+    { "id": "dragon_isles", "label": "Iles aux Dragons" },
+    { "id": "khaz_algar", "label": "Khaz Algar" }
+  ],
+  "edges": [
+    {
+      "from": "orgrimmar",
+      "to": "shattrath",
+      "type": "portal",
+      "label": "Portail : Orgrimmar -> Shattrath",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "shattrath",
+      "to": "orgrimmar",
+      "type": "portal",
+      "label": "Portail : Shattrath -> Orgrimmar",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "stormwind",
+      "to": "shattrath",
+      "type": "portal",
+      "label": "Portail : Hurlevent -> Shattrath",
+      "cost": 2,
+      "faction": "alliance"
+    },
+    {
+      "from": "shattrath",
+      "to": "stormwind",
+      "type": "portal",
+      "label": "Portail : Shattrath -> Hurlevent",
+      "cost": 2,
+      "faction": "alliance"
+    },
+    {
+      "from": "shattrath",
+      "to": "netherstorm",
+      "type": "flight",
+      "label": "Fly : Shattrath -> Raz-de-Neant",
+      "cost": 2,
+      "faction": "both"
+    },
+    {
+      "from": "netherstorm",
+      "to": "shattrath",
+      "type": "flight",
+      "label": "Fly : Raz-de-Neant -> Shattrath",
+      "cost": 2,
+      "faction": "both"
+    },
+    {
+      "from": "orgrimmar",
+      "to": "silvermoon",
+      "type": "portal",
+      "label": "Portail : Orgrimmar -> Lune-d'argent",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "silvermoon",
+      "to": "orgrimmar",
+      "type": "portal",
+      "label": "Portail : Lune-d'argent -> Orgrimmar",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "silvermoon",
+      "to": "eastern_plaguelands",
+      "type": "flight",
+      "label": "Fly : Lune-d'argent -> Maleterres de l'Est",
+      "cost": 4,
+      "faction": "horde"
+    },
+    {
+      "from": "eastern_plaguelands",
+      "to": "silvermoon",
+      "type": "flight",
+      "label": "Fly : Maleterres de l'Est -> Lune-d'argent",
+      "cost": 4,
+      "faction": "horde"
+    },
+    {
+      "from": "stormwind",
+      "to": "eastern_plaguelands",
+      "type": "flight",
+      "label": "Fly : Hurlevent -> Maleterres de l'Est",
+      "cost": 6,
+      "faction": "alliance"
+    },
+    {
+      "from": "eastern_plaguelands",
+      "to": "stormwind",
+      "type": "hearthstone",
+      "label": "Pierre de foyer : retour a Hurlevent",
+      "cost": 2,
+      "faction": "alliance"
+    },
+    {
+      "from": "orgrimmar",
+      "to": "dalaran_northrend",
+      "type": "portal",
+      "label": "Portail : Orgrimmar -> Dalaran de Norfendre",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "stormwind",
+      "to": "dalaran_northrend",
+      "type": "portal",
+      "label": "Portail : Hurlevent -> Dalaran de Norfendre",
+      "cost": 2,
+      "faction": "alliance"
+    },
+    {
+      "from": "dalaran_northrend",
+      "to": "orgrimmar",
+      "type": "hearthstone",
+      "label": "Pierre de foyer : retour a Orgrimmar",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "dalaran_northrend",
+      "to": "stormwind",
+      "type": "hearthstone",
+      "label": "Pierre de foyer : retour a Hurlevent",
+      "cost": 2,
+      "faction": "alliance"
+    },
+    {
+      "from": "dalaran_northrend",
+      "to": "icecrown",
+      "type": "flight",
+      "label": "Fly : Dalaran -> Couronne de glace",
+      "cost": 2,
+      "faction": "both"
+    },
+    {
+      "from": "dalaran_northrend",
+      "to": "coldarra",
+      "type": "flight",
+      "label": "Fly : Dalaran -> Coldarra",
+      "cost": 3,
+      "faction": "both"
+    },
+    {
+      "from": "dalaran_northrend",
+      "to": "borean_tundra",
+      "type": "flight",
+      "label": "Fly : Dalaran -> Toundra boreenne",
+      "cost": 3,
+      "faction": "both"
+    },
+    {
+      "from": "dalaran_northrend",
+      "to": "howling_fjord",
+      "type": "flight",
+      "label": "Fly : Dalaran -> Fjord hurlant",
+      "cost": 4,
+      "faction": "both"
+    },
+    {
+      "from": "dalaran_northrend",
+      "to": "storm_peaks",
+      "type": "flight",
+      "label": "Fly : Dalaran -> Pics foudroyes",
+      "cost": 3,
+      "faction": "both"
+    },
+    {
+      "from": "orgrimmar",
+      "to": "uldum",
+      "type": "portal",
+      "label": "Portail : Orgrimmar -> Uldum",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "stormwind",
+      "to": "uldum",
+      "type": "portal",
+      "label": "Portail : Hurlevent -> Uldum",
+      "cost": 2,
+      "faction": "alliance"
+    },
+    {
+      "from": "orgrimmar",
+      "to": "hyjal",
+      "type": "portal",
+      "label": "Portail : Orgrimmar -> Mont Hyjal",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "stormwind",
+      "to": "hyjal",
+      "type": "portal",
+      "label": "Portail : Hurlevent -> Mont Hyjal",
+      "cost": 2,
+      "faction": "alliance"
+    },
+    {
+      "from": "orgrimmar",
+      "to": "pandaria",
+      "type": "portal",
+      "label": "Portail : Orgrimmar -> Pandarie",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "stormwind",
+      "to": "pandaria",
+      "type": "portal",
+      "label": "Portail : Hurlevent -> Pandarie",
+      "cost": 2,
+      "faction": "alliance"
+    },
+    {
+      "from": "orgrimmar",
+      "to": "draenor",
+      "type": "portal",
+      "label": "Portail : Orgrimmar -> Draenor",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "stormwind",
+      "to": "draenor",
+      "type": "portal",
+      "label": "Portail : Hurlevent -> Draenor",
+      "cost": 2,
+      "faction": "alliance"
+    },
+    {
+      "from": "orgrimmar",
+      "to": "broken_isles",
+      "type": "portal",
+      "label": "Portail : Orgrimmar -> Iles Brisees",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "stormwind",
+      "to": "broken_isles",
+      "type": "portal",
+      "label": "Portail : Hurlevent -> Iles Brisees",
+      "cost": 2,
+      "faction": "alliance"
+    },
+    {
+      "from": "broken_isles",
+      "to": "argus",
+      "type": "portal",
+      "label": "Portail : Dalaran des Iles Brisees -> Argus",
+      "cost": 3,
+      "faction": "both"
+    },
+    {
+      "from": "orgrimmar",
+      "to": "zandalar",
+      "type": "portal",
+      "label": "Portail : Orgrimmar -> Zandalar",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "stormwind",
+      "to": "kul_tiras",
+      "type": "portal",
+      "label": "Portail : Hurlevent -> Kul Tiras",
+      "cost": 2,
+      "faction": "alliance"
+    },
+    {
+      "from": "orgrimmar",
+      "to": "shadowlands",
+      "type": "portal",
+      "label": "Portail : Orgrimmar -> Oribos",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "stormwind",
+      "to": "shadowlands",
+      "type": "portal",
+      "label": "Portail : Hurlevent -> Oribos",
+      "cost": 2,
+      "faction": "alliance"
+    },
+    {
+      "from": "orgrimmar",
+      "to": "dragon_isles",
+      "type": "portal",
+      "label": "Portail : Orgrimmar -> Valdrakken",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "stormwind",
+      "to": "dragon_isles",
+      "type": "portal",
+      "label": "Portail : Hurlevent -> Valdrakken",
+      "cost": 2,
+      "faction": "alliance"
+    },
+    {
+      "from": "orgrimmar",
+      "to": "khaz_algar",
+      "type": "portal",
+      "label": "Portail : Orgrimmar -> Dornogal",
+      "cost": 2,
+      "faction": "horde"
+    },
+    {
+      "from": "stormwind",
+      "to": "khaz_algar",
+      "type": "portal",
+      "label": "Portail : Hurlevent -> Dornogal",
+      "cost": 2,
+      "faction": "alliance"
+    }
+  ]
+}
