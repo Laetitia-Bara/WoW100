@@ -56,10 +56,11 @@ void main() {
       expect(ashesOfAlar.region, 'Outreterre');
       expect(ashesOfAlar.zone, 'Raz-de-Néant');
       expect(ashesOfAlar.instance, 'Butin');
+      expect(ashesOfAlar.displayInstance, 'L’Œil');
       expect(ashesOfAlar.source, 'Butin');
       expect(ashesOfAlar.difficulty, 'Difficile');
-      expect(ashesOfAlar.dropRate, '2');
-      expect(ashesOfAlar.tags, contains('Raid'));
+      expect(ashesOfAlar.dropRate, '1.70');
+      expect(ashesOfAlar.tags, ['Raid']);
       expect(ashesOfAlar.frequencyLabel, 'Hebdomadaire');
 
       final vanillaItems = await JsonPlannerSource().loadMountItems(

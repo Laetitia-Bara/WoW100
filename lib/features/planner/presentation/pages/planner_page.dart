@@ -1349,7 +1349,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                     return _PlannerItemCard(
                       item: item,
                       selectedForSolo: _todayItemIds.contains(item.id),
-                      selectionTagLabel: 'Balade du jour',
+                      selectionTagLabel: 'Prochain farm',
                       onChanged: (value) =>
                           _setTodaySelected(item, value ?? false),
                     );
@@ -2950,7 +2950,7 @@ class _PlannerItemCard extends StatelessWidget {
   const _PlannerItemCard({
     required this.item,
     required this.selectedForSolo,
-    this.selectionTagLabel = 'Balade du jour',
+    this.selectionTagLabel = 'Prochain farm',
     this.stepNumber,
     required this.onChanged,
   });
@@ -3083,23 +3083,12 @@ class _PlannerItemCard extends StatelessWidget {
     return null;
   }
 
-  bool _isDungeonTag(String tag) => WowRegionFilter.normalize(tag) == 'donjon';
-
-  List<_PlannerTag> _manualTags({bool includeDungeonTag = true}) {
+  List<_PlannerTag> _manualTags() {
     return [
       for (final tag in item.tags)
-        if (_hasUsefulMetadataLabel(tag) &&
-            (includeDungeonTag || !_isDungeonTag(tag)))
+        if (_hasUsefulMetadataLabel(tag))
           _PlannerTag(label: _displayManualTagLabel(tag)),
     ];
-  }
-
-  _PlannerTag? _dungeonTag() {
-    final hasDungeonTag = item.tags.any(
-      (tag) => _hasUsefulMetadataLabel(tag) && _isDungeonTag(tag),
-    );
-
-    return hasDungeonTag ? const _PlannerTag(label: 'Donjon') : null;
   }
 
   String _displayManualTagLabel(String label) {
@@ -3203,6 +3192,7 @@ class _PlannerItemCard extends StatelessWidget {
         item.region,
       item.zone,
       if (item.subzone.isNotEmpty) item.subzone,
+      if (item.displayInstance.isNotEmpty) item.displayInstance,
       groupLabel,
       item.source,
     ];
@@ -3234,7 +3224,6 @@ class _PlannerItemCard extends StatelessWidget {
     final dropRateTag = _dropRateTag();
     final extensionTag = _extensionTag();
     final regionLabel = _regionLabel();
-    final dungeonTag = _dungeonTag();
     final frequencyLabel = item.frequencyLabel.trim().isEmpty
         ? item.weeklyLockout
               ? 'Hebdomadaire'
@@ -3253,11 +3242,10 @@ class _PlannerItemCard extends StatelessWidget {
             ?dropRateTag,
             ?extensionTag,
             if (regionLabel != null) _PlannerTag(label: regionLabel),
-            ?dungeonTag,
+            ..._manualTags(),
             _PlannerTag(label: frequencyLabel),
             if (item.obtained) const _PlannerTag(label: 'Obtenu'),
             if (selectedForSolo) _PlannerTag(label: selectionTagLabel),
-            ..._manualTags(includeDungeonTag: false),
           ]
         : <Widget>[
             if (item.unavailable)

@@ -33,6 +33,9 @@ class TrackingItem {
   /// Donjon / Raid / Zone précise
   final String instance;
 
+  /// Lieu affichable dans la description quand `instance` sert au groupement.
+  final String displayInstance;
+
   /// Boss ou source
   final String source;
 
@@ -91,6 +94,7 @@ class TrackingItem {
     this.world = '',
     this.locationRef = '',
     required this.instance,
+    this.displayInstance = '',
     required this.source,
     this.wowheadItemId,
     this.wowheadAchievementId,
@@ -123,6 +127,7 @@ class TrackingItem {
       world: world,
       locationRef: locationRef,
       instance: instance,
+      displayInstance: displayInstance,
       source: source,
       wowheadItemId: wowheadItemId,
       wowheadAchievementId: wowheadAchievementId,
@@ -159,6 +164,7 @@ class TrackingItem {
       world: json['world'] ?? '',
       locationRef: json['primaryLocationRef'] ?? json['locationRef'] ?? '',
       instance: json['instance'] ?? '',
+      displayInstance: json['displayInstance'] ?? '',
       source: json['source'] ?? '',
       wowheadItemId: json['wowheadItemId'],
       wowheadAchievementId: json['wowheadAchievementId'],

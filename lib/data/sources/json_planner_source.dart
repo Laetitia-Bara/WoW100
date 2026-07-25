@@ -203,6 +203,9 @@ class JsonPlannerSource {
       final instance = (manualInstance?.isNotEmpty ?? false)
           ? manualInstance!
           : sourceName;
+      final displayInstance = (manualInstance?.isNotEmpty ?? false)
+          ? manualInstance!
+          : '';
       final mamytwinkUrl =
           _metadataString(reference, 'mamytwinkUrl') ??
           _metadataString(mamytwink, 'mamytwinkUrl') ??
@@ -235,6 +238,7 @@ class JsonPlannerSource {
               : instance.isEmpty
               ? 'Source a verifier'
               : instance,
+          displayInstance: displayInstance,
           source: sourceName,
           groupRequired:
               wowhead?['groupRequired'] ?? manual?['groupRequired'] ?? false,

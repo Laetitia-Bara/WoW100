@@ -29,12 +29,12 @@
     "expansion": "tbc",
     "category": "raid_drop",
     "zone": "Raz-de-Néant",
-    "instance": "L'Œil",
+    "instance": "L’Œil",
     "boss": "Kael'thas Haut-Soleil",
     "groupRequired": true,
     "weeklyLockout": true,
     "source": "Butin",
-    "dropRate": "2",
+    "dropRate": "1.70",
     "difficulty": "Difficile",
     "tags": [
       "Raid"

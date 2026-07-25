@@ -36,6 +36,17 @@
     }
   },
   {
+    "blizzardId": 183,
+    "wowheadItemId": 32458,
+    "dropRate": "1.70",
+    "externalUrl": "https://www.wowhead.com/fr/item=32458/cendres-dalar",
+    "verification": {
+      "source": "Wowhead",
+      "checkedAt": "2026-07-25",
+      "note": "La fiche Wowhead live indique Chance de Butin: 1.70%."
+    }
+  },
+  {
     "blizzardId": 1528,
     "wowheadItemId": 187641,
     "expansion": "shadowlands",
