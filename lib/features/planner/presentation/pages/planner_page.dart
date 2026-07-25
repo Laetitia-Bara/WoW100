@@ -16,6 +16,7 @@ import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/expansion_palette.dart';
 import '../../../../core/widgets/journey_step_bar.dart';
+import '../../../../core/widgets/scrolling_notice_banner.dart';
 import '../../../../core/widgets/web_sponsor_panel.dart';
 import '../../../../data/models/tracking_item.dart';
 import '../../../../data/models/wow_character.dart';
@@ -846,6 +847,11 @@ class _PlannerPageState extends State<PlannerPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
+                      const ScrollingNoticeBanner(
+                        message:
+                            'ATTENTION : verification manuelle de localisation des items toujours en cours',
+                      ),
+                      const SizedBox(height: 12),
                       Text(
                         widget.extension == WowExpansion.allMounts ||
                                 widget.extension == WowExpansion.allPets ||
@@ -1261,6 +1267,11 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
+                      const ScrollingNoticeBanner(
+                        message:
+                            'ATTENTION : verification manuelle de localisation des items toujours en cours',
+                      ),
+                      const SizedBox(height: 12),
                       Text(
                         'Organise ta whishlist',
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
@@ -1526,6 +1537,11 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
+                      const ScrollingNoticeBanner(
+                        message:
+                            'ATTENTION : Algorithme de calcul de route en cours de developpement',
+                      ),
+                      const SizedBox(height: 12),
                       Text(
                         'Prends la route',
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(

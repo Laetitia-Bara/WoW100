@@ -9,6 +9,7 @@ import '../../../../core/ads/app_ads.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/widgets/journey_step_bar.dart';
+import '../../../../core/widgets/scrolling_notice_banner.dart';
 import '../../../../core/widgets/web_sponsor_panel.dart';
 import '../../../../data/models/expansion_progress.dart';
 import '../../../../data/models/tracking_category.dart';
@@ -379,6 +380,11 @@ class _DashboardPageState extends State<DashboardPage> {
             content: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
+                const ScrollingNoticeBanner(
+                  message:
+                      'ATTENTION : verification manuelle de localisation des items toujours en cours',
+                ),
+                const SizedBox(height: 12),
                 _HeroCard(
                   character: _mainCharacter,
                   totalProgress: totalProgress,
