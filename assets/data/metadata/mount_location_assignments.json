@@ -549,6 +549,16 @@
       "note": "3 localisations"
     },
     {
+      "blizzardId": 183,
+      "primaryLocationRef": "wowhead-zone:3523",
+      "locationRefs": [
+        "wowhead-zone:3523"
+      ],
+      "status": "confirmed",
+      "source": "user_manual_review",
+      "note": "Kael'thas Haut-Soleil dans L'Oeil, Donjon de la Tempete, en Raz-de-Neant."
+    },
+    {
       "blizzardId": 779,
       "primaryLocationRef": "wowhead-zone:7502",
       "locationRefs": [

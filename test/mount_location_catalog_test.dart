@@ -50,6 +50,18 @@ void main() {
       expect(deathcharger.source, 'Butin');
       expect(deathcharger.subzone, 'Stratholme');
 
+      final ashesOfAlar = items.singleWhere((item) => item.blizzardId == 183);
+      expect(ashesOfAlar.locationRef, 'wowhead-zone:3523');
+      expect(ashesOfAlar.world, 'Outreterre');
+      expect(ashesOfAlar.region, 'Outreterre');
+      expect(ashesOfAlar.zone, 'Raz-de-Néant');
+      expect(ashesOfAlar.instance, 'Butin');
+      expect(ashesOfAlar.source, 'Butin');
+      expect(ashesOfAlar.difficulty, 'Difficile');
+      expect(ashesOfAlar.dropRate, '2');
+      expect(ashesOfAlar.tags, contains('Raid'));
+      expect(ashesOfAlar.frequencyLabel, 'Hebdomadaire');
+
       final vanillaItems = await JsonPlannerSource().loadMountItems(
         WowExpansion.vanilla,
       );

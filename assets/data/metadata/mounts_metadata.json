@@ -32,7 +32,14 @@
     "instance": "L'Œil",
     "boss": "Kael'thas Haut-Soleil",
     "groupRequired": true,
-    "weeklyLockout": true
+    "weeklyLockout": true,
+    "source": "Butin",
+    "dropRate": "2",
+    "difficulty": "Difficile",
+    "tags": [
+      "Raid"
+    ],
+    "frequencyLabel": "Hebdomadaire"
   },
   {
     "blizzardId": 168,

@@ -17322,7 +17322,7 @@
       "source": "Butin",
       "acquisitionCategory": "raid_drop",
       "difficulty": "Difficile",
-      "dropRate": "",
+      "dropRate": "2",
       "expansion": "tbc",
       "patch": "à définir",
       "mamytwinkUrl": "https://www.mamytwink.com/montures/cendres-dalar",
@@ -17347,24 +17347,55 @@
       ],
       "locationCandidates": [],
       "locationAssignment": {
-        "status": "no_candidate",
-        "primaryLocationRef": null,
-        "locationRefs": [],
-        "pathLabel": "",
-        "source": "manual_required",
-        "confidence": "unresolved",
-        "note": ""
+        "status": "manually_assigned",
+        "primaryLocationRef": "wowhead-zone:3523",
+        "locationRefs": [
+          "wowhead-zone:3523"
+        ],
+        "pathLabel": "Outreterre > Outreterre > Raz-de-Néant",
+        "source": "user_manual_review",
+        "confidence": "confirmed",
+        "note": "Kael'thas Haut-Soleil dans L'Oeil, Donjon de la Tempete, en Raz-de-Neant."
       },
-      "primaryLocationRef": null,
-      "locationRefs": [],
-      "locationAssignments": [],
-      "location": null,
-      "world": "à définir",
-      "continent": "à définir",
-      "region": "à définir",
+      "primaryLocationRef": "wowhead-zone:3523",
+      "locationRefs": [
+        "wowhead-zone:3523"
+      ],
+      "locationAssignments": [
+        {
+          "locationRef": "wowhead-zone:3523",
+          "role": "primary_obtainment",
+          "source": "user_manual_review",
+          "confidence": "confirmed"
+        }
+      ],
+      "location": {
+        "ref": "wowhead-zone:3523",
+        "name": "Raz-de-Néant",
+        "kind": "region",
+        "subzoneName": "",
+        "regionRef": "wowhead-zone:3523",
+        "regionName": "Raz-de-Néant",
+        "continentKey": "outland",
+        "continentName": "Outreterre",
+        "worldKey": "outland",
+        "worldName": "Outreterre",
+        "path": [
+          "Outreterre",
+          "Outreterre",
+          "Raz-de-Néant"
+        ],
+        "pathLabel": "Outreterre > Outreterre > Raz-de-Néant",
+        "wowheadZoneIds": [
+          3523
+        ]
+      },
+      "world": "Outreterre",
+      "continent": "Outreterre",
+      "region": "Raz-de-Néant",
       "subzone": "",
-      "zoneId": null,
-      "zone": "à définir",
+      "zoneId": 3523,
+      "zone": "Raz-de-Néant",
       "instance": "L'Œil",
       "boss": "Kael'thas Haut-Soleil",
       "groupRequired": true,
@@ -17394,22 +17425,41 @@
           "matchType": "exactName"
         }
       },
-      "manualReview": null,
+      "manualReview": {
+        "source": "mounts_metadata.json",
+        "reviewedAt": "2026-07-25",
+        "availabilityStatus": "available",
+        "locationText": "L'Oeil, Donjon de la Tempete, Raz-de-Neant (Raid 25)",
+        "locationApplicability": "mapped",
+        "keywords": [
+          "Cendres d'Al'ar",
+          "Kael'thas Haut-Soleil",
+          "L'Oeil",
+          "Donjon de la Tempete",
+          "Raz-de-Neant",
+          "raid",
+          "butin"
+        ],
+        "notes": "Butin de Kael'thas Haut-Soleil dans le raid 25 L'Oeil, Donjon de la Tempete."
+      },
       "fieldSources": {
-        "difficulty": "mamytwink",
-        "source": "mamytwink",
-        "expansion": "mamytwink",
+        "difficulty": "user_manual_review",
+        "source": "user_manual_review",
+        "expansion": "user_manual_review",
         "patch": "manual_required",
         "mamytwinkUrl": "mamytwink",
         "wowheadUrl": "wowhead",
-        "locationCandidates": "manual_required",
-        "zone": "manual_required",
-        "continent": "manual_required"
+        "locationCandidates": "user_manual_review",
+        "zone": "manual_override",
+        "continent": "locations_reference_catalog_via_manual_override"
       },
       "missingFields": [
-        "patch",
-        "locationCandidates"
-      ]
+        "patch"
+      ],
+      "tags": [
+        "Raid"
+      ],
+      "frequencyLabel": "Hebdomadaire"
     },
     {
       "blizzardId": 185,
