@@ -1324,13 +1324,6 @@ class _ExpansionCard extends StatelessWidget {
                   ),
                   if (!isCollapsed) ...[
                     const SizedBox(height: 12),
-                    _DualProgressBars(
-                      completionRate: completionRate,
-                      obtainableCompletionRate: obtainableCompletionRate,
-                      obtainablePercent: obtainablePercent,
-                      obtainableLabel: 'Obtenables',
-                    ),
-                    const SizedBox(height: 14),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: visibleCategories.map((category) {
@@ -1346,6 +1339,13 @@ class _ExpansionCard extends StatelessWidget {
                           percent: statPercent,
                         );
                       }).toList(),
+                    ),
+                    const SizedBox(height: 14),
+                    _DualProgressBars(
+                      completionRate: completionRate,
+                      obtainableCompletionRate: obtainableCompletionRate,
+                      obtainablePercent: obtainablePercent,
+                      obtainableLabel: 'Obtenables',
                     ),
                     const SizedBox(height: 12),
                     _MissingObtainableSummary(
@@ -1546,7 +1546,7 @@ class _MiniStat extends StatelessWidget {
           const SizedBox(height: 2),
           Text(
             '$percent%',
-            style: const TextStyle(color: AppTheme.mutedText, fontSize: 11),
+            style: const TextStyle(color: AppTheme.gold, fontSize: 11),
           ),
         ],
       ),
