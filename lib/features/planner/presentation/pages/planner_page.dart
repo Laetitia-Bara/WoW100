@@ -1276,11 +1276,6 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                           });
                         },
                       ),
-                      const SizedBox(height: 10),
-                      _SoloPlannerSortPicker(
-                        selectedMode: _sortMode,
-                        onChanged: _setSortMode,
-                      ),
                       const SizedBox(height: 16),
                       TextField(
                         decoration: const InputDecoration(
@@ -1298,37 +1293,15 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                         },
                       ),
                       const SizedBox(height: 16),
-                      Wrap(
-                        spacing: 10,
-                        runSpacing: 10,
-                        crossAxisAlignment: WrapCrossAlignment.center,
-                        children: [
-                          Text(
-                            _soloCountLabel(filteredItems.length),
-                            style: const TextStyle(fontWeight: FontWeight.w700),
-                          ),
-                          OutlinedButton.icon(
-                            onPressed: _todayItemIds.isEmpty
-                                ? null
-                                : _clearTodaySelection,
-                            icon: const Icon(Icons.remove_done_outlined),
-                            label: const Text('Tout désactiver'),
-                          ),
-                          OutlinedButton.icon(
-                            onPressed: _todayItemIds.length == _items.length
-                                ? null
-                                : _selectAllToday,
-                            icon: const Icon(Icons.done_all_outlined),
-                            label: const Text('Tout activer'),
-                          ),
-                          FilledButton.icon(
-                            onPressed: _todayItemIds.isEmpty
-                                ? null
-                                : _openRoute,
-                            icon: const Icon(Icons.route_rounded),
-                            label: const Text('Générer ma route'),
-                          ),
-                        ],
+                      _SoloPlannerActionBar(
+                        countLabel: _soloCountLabel(filteredItems.length),
+                        hasTodaySelection: _todayItemIds.isNotEmpty,
+                        allItemsSelected: _todayItemIds.length == _items.length,
+                        sortMode: _sortMode,
+                        onClearSelection: _clearTodaySelection,
+                        onSelectAll: _selectAllToday,
+                        onOpenRoute: _openRoute,
+                        onSortModeChanged: _setSortMode,
                       ),
                       const SizedBox(height: 20),
                       const AppNativeAd(),
@@ -1783,8 +1756,90 @@ class _CrewButton extends StatelessWidget {
   }
 }
 
-class _SoloPlannerSortPicker extends StatelessWidget {
-  const _SoloPlannerSortPicker({
+class _SoloPlannerActionBar extends StatelessWidget {
+  const _SoloPlannerActionBar({
+    required this.countLabel,
+    required this.hasTodaySelection,
+    required this.allItemsSelected,
+    required this.sortMode,
+    required this.onClearSelection,
+    required this.onSelectAll,
+    required this.onOpenRoute,
+    required this.onSortModeChanged,
+  });
+
+  final String countLabel;
+  final bool hasTodaySelection;
+  final bool allItemsSelected;
+  final _SoloPlannerSortMode sortMode;
+  final VoidCallback onClearSelection;
+  final VoidCallback onSelectAll;
+  final VoidCallback onOpenRoute;
+  final ValueChanged<_SoloPlannerSortMode> onSortModeChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final count = Text(
+      countLabel,
+      style: const TextStyle(fontWeight: FontWeight.w700),
+    );
+    final clearButton = OutlinedButton.icon(
+      onPressed: hasTodaySelection ? onClearSelection : null,
+      icon: const Icon(Icons.remove_done_outlined),
+      label: const Text('Tout désactiver'),
+    );
+    final selectAllButton = OutlinedButton.icon(
+      onPressed: allItemsSelected ? null : onSelectAll,
+      icon: const Icon(Icons.done_all_outlined),
+      label: const Text('Tout activer'),
+    );
+    final routeButton = FilledButton.icon(
+      onPressed: hasTodaySelection ? onOpenRoute : null,
+      icon: const Icon(Icons.route_rounded),
+      label: const Text('Générer ma route'),
+    );
+    final sortControls = _SoloPlannerSortControls(
+      selectedMode: sortMode,
+      onChanged: onSortModeChanged,
+    );
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth < 820) {
+          return Wrap(
+            spacing: 10,
+            runSpacing: 10,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [
+              count,
+              clearButton,
+              selectAllButton,
+              routeButton,
+              sortControls,
+            ],
+          );
+        }
+
+        return Row(
+          children: [
+            count,
+            const SizedBox(width: 10),
+            clearButton,
+            const SizedBox(width: 10),
+            selectAllButton,
+            const SizedBox(width: 10),
+            routeButton,
+            const Spacer(),
+            sortControls,
+          ],
+        );
+      },
+    );
+  }
+}
+
+class _SoloPlannerSortControls extends StatelessWidget {
+  const _SoloPlannerSortControls({
     required this.selectedMode,
     required this.onChanged,
   });
@@ -1794,69 +1849,37 @@ class _SoloPlannerSortPicker extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        color: Theme.of(context).cardColor.withValues(alpha: 0.46),
-        borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: AppTheme.gold.withValues(alpha: 0.28)),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(8),
-        child: LayoutBuilder(
-          builder: (context, constraints) {
-            final isNarrow = constraints.maxWidth < 520;
-            final buttons = [
-              _SoloPlannerSortButton(
-                icon: Icons.travel_explore,
-                label: 'Par localisation',
-                selected: selectedMode == _SoloPlannerSortMode.location,
-                onPressed: () => onChanged(_SoloPlannerSortMode.location),
-              ),
-              _SoloPlannerSortButton(
-                icon: Icons.category_outlined,
-                label: 'Par catégories',
-                selected: selectedMode == _SoloPlannerSortMode.category,
-                onPressed: () => onChanged(_SoloPlannerSortMode.category),
-              ),
-            ];
-
-            if (isNarrow) {
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  for (var index = 0; index < buttons.length; index++) ...[
-                    buttons[index],
-                    if (index < buttons.length - 1) const SizedBox(height: 8),
-                  ],
-                ],
-              );
-            }
-
-            return Row(
-              children: [
-                for (var index = 0; index < buttons.length; index++) ...[
-                  Expanded(child: buttons[index]),
-                  if (index < buttons.length - 1) const SizedBox(width: 8),
-                ],
-              ],
-            );
-          },
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        _SoloPlannerSortIconButton(
+          icon: Icons.travel_explore,
+          tooltip: 'Trier par Localisation',
+          selected: selectedMode == _SoloPlannerSortMode.location,
+          onPressed: () => onChanged(_SoloPlannerSortMode.location),
         ),
-      ),
+        const SizedBox(width: 8),
+        _SoloPlannerSortIconButton(
+          icon: Icons.category_outlined,
+          tooltip: 'Trier par Catégories',
+          selected: selectedMode == _SoloPlannerSortMode.category,
+          onPressed: () => onChanged(_SoloPlannerSortMode.category),
+        ),
+      ],
     );
   }
 }
 
-class _SoloPlannerSortButton extends StatelessWidget {
-  const _SoloPlannerSortButton({
+class _SoloPlannerSortIconButton extends StatelessWidget {
+  const _SoloPlannerSortIconButton({
     required this.icon,
-    required this.label,
+    required this.tooltip,
     required this.selected,
     required this.onPressed,
   });
 
   final IconData icon;
-  final String label;
+  final String tooltip;
   final bool selected;
   final VoidCallback onPressed;
 
@@ -1870,17 +1893,18 @@ class _SoloPlannerSortButton extends StatelessWidget {
         ? AppTheme.gold.withValues(alpha: 0.78)
         : AppTheme.gold.withValues(alpha: 0.24);
 
-    return FilledButton.icon(
+    return IconButton.outlined(
+      tooltip: tooltip,
       onPressed: onPressed,
-      icon: Icon(icon, size: 17),
-      label: Text(label, textAlign: TextAlign.center),
-      style: FilledButton.styleFrom(
-        minimumSize: const Size(0, 40),
+      icon: Icon(icon),
+      style: IconButton.styleFrom(
+        fixedSize: const Size.square(38),
+        minimumSize: const Size.square(38),
+        padding: EdgeInsets.zero,
         backgroundColor: backgroundColor,
         foregroundColor: foregroundColor,
-        textStyle: const TextStyle(fontWeight: FontWeight.w700),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         side: BorderSide(color: borderColor, width: selected ? 1.2 : 1),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(999)),
       ),
     );
   }
@@ -3246,7 +3270,7 @@ class _PlannerItemCard extends StatelessWidget {
               _RouteStepNumberBadge(number: stepNumber!)
             else
               SizedBox(
-                width: isMount ? 72 : 42,
+                width: 72,
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
