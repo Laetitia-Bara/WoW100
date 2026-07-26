@@ -18,6 +18,7 @@ void main() {
       StartupLogger.mark('app started');
       WidgetsFlutterBinding.ensureInitialized();
       StartupLogger.mark('Flutter initialized');
+      _configureSystemBars();
       _configureStartupErrorLogging();
       unawaited(StartupLogger.initializePersistence());
       StartupLogger.mark('runApp called');
@@ -30,6 +31,18 @@ void main() {
     (error, stackTrace) {
       StartupLogger.recordError('uncaught startup error', error, stackTrace);
     },
+  );
+}
+
+void _configureSystemBars() {
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.light,
+      statusBarBrightness: Brightness.dark,
+      systemNavigationBarColor: AppTheme.background,
+      systemNavigationBarIconBrightness: Brightness.light,
+    ),
   );
 }
 

@@ -310,161 +310,277 @@ class _DashboardPageState extends State<DashboardPage> {
     }
 
     return Scaffold(
-      appBar: AppBar(
-        title: Row(
-          mainAxisSize: MainAxisSize.min,
+      body: SafeArea(
+        bottom: false,
+        child: Column(
           children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(8),
-              child: Image.asset(
-                'assets/images/icones/icone192.png',
-                height: 30,
-                width: 30,
-                fit: BoxFit.cover,
-                errorBuilder: (_, _, _) => const Text(
-                  'WoW100%',
-                  style: TextStyle(
-                    color: AppTheme.gold,
-                    fontWeight: FontWeight.w900,
+            _DashboardTopBar(
+              mainCharacter: _mainCharacter,
+              onLegalTap: _openLegalPage,
+              onLoginTap: _openBattleNetLogin,
+              onCharacterTap: _openCharacterSwitch,
+              onFriendsTap: _openBattleNetFriends,
+              onLogoutTap: _disconnectBattleNet,
+            ),
+            JourneyStepBar(
+              currentStep: 1,
+              onStep1: () {},
+              onStep2: _openSoloPlanner,
+              onStep3: _openRoutePlanner,
+            ),
+            Expanded(
+              child: LayoutBuilder(
+                builder: (context, constraints) {
+                  final availableContentWidth = constraints.maxWidth >= 1280
+                      ? constraints.maxWidth - 300
+                      : constraints.maxWidth;
+                  final isWide = availableContentWidth >= 1000;
+
+                  return WebSponsorPageBody(
+                    content: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        const ScrollingNoticeBanner(
+                          message:
+                              'ATTENTION : verification manuelle de localisation des items toujours en cours',
+                        ),
+                        const SizedBox(height: 12),
+                        _HeroCard(
+                          character: _mainCharacter,
+                          totalProgress: totalProgress,
+                          visibleCategories: _visibleCategories,
+                        ),
+                        const SizedBox(height: 22),
+                        _DashboardSection(
+                          title: 'Rechercher par catégorie',
+                          child: _CategorySearchButtons(
+                            onAchievementsTap: () => _openPlanner(
+                              WowExpansion.allAchievements,
+                              category: TrackingCategory.achievements,
+                            ),
+                            onMountsTap: () =>
+                                _openPlanner(WowExpansion.allMounts),
+                            onPetsTap: () => _openPlanner(
+                              WowExpansion.allPets,
+                              category: TrackingCategory.pets,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 18),
+                        _DashboardSection(
+                          title: 'Rechercher par zone',
+                          child: _RegionSearchButton(
+                            onTap: _openRegionSelector,
+                          ),
+                        ),
+                        const SizedBox(height: 18),
+                        _ExtensionSearchHeader(
+                          newestFirst: _newestFirst,
+                          onFilterTap: _openCategoryFilters,
+                          onSortTap: _toggleSortOrder,
+                        ),
+                        const SizedBox(height: 20),
+                        if (isWide)
+                          GridView.builder(
+                            shrinkWrap: true,
+                            physics: const NeverScrollableScrollPhysics(),
+                            gridDelegate:
+                                const SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 2,
+                                  crossAxisSpacing: 14,
+                                  mainAxisSpacing: 14,
+                                  mainAxisExtent: 348,
+                                ),
+                            itemCount: extensionProgresses.length,
+                            itemBuilder: (context, index) {
+                              final progress = extensionProgresses[index];
+
+                              return _ExpansionCard(
+                                progress: progress,
+                                visibleCategories: _visibleCategories,
+                                isCollapsed: _collapsedExpansions.contains(
+                                  progress.expansion,
+                                ),
+                                onToggleCollapse: () =>
+                                    _toggleCollapse(progress.expansion),
+                                onOpenPlanner: () =>
+                                    _openPlanner(progress.expansion),
+                              );
+                            },
+                          )
+                        else
+                          for (final progress in extensionProgresses)
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 14),
+                              child: _ExpansionCard(
+                                progress: progress,
+                                visibleCategories: _visibleCategories,
+                                isCollapsed: _collapsedExpansions.contains(
+                                  progress.expansion,
+                                ),
+                                onToggleCollapse: () =>
+                                    _toggleCollapse(progress.expansion),
+                                onOpenPlanner: () =>
+                                    _openPlanner(progress.expansion),
+                              ),
+                            ),
+                      ],
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
+      bottomNavigationBar: const AppBannerAd(),
+    );
+  }
+}
+
+class _DashboardTopBar extends StatelessWidget {
+  const _DashboardTopBar({
+    required this.mainCharacter,
+    required this.onLegalTap,
+    required this.onLoginTap,
+    required this.onCharacterTap,
+    required this.onFriendsTap,
+    required this.onLogoutTap,
+  });
+
+  final WowCharacter? mainCharacter;
+  final VoidCallback onLegalTap;
+  final VoidCallback onLoginTap;
+  final VoidCallback onCharacterTap;
+  final VoidCallback onFriendsTap;
+  final VoidCallback onLogoutTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: AppTheme.background.withValues(alpha: 0.94),
+      child: SizedBox(
+        height: 56,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12),
+          child: Row(
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(8),
+                child: Image.asset(
+                  'assets/images/icones/icone192.png',
+                  height: 34,
+                  width: 34,
+                  fit: BoxFit.cover,
+                  errorBuilder: (_, _, _) => const Text(
+                    'WoW100%',
+                    style: TextStyle(
+                      color: AppTheme.gold,
+                      fontWeight: FontWeight.w900,
+                    ),
                   ),
                 ),
               ),
-            ),
-            const SizedBox(width: 6),
-            IconButton(
-              tooltip: 'Informations légales',
-              constraints: const BoxConstraints.tightFor(width: 36, height: 36),
-              padding: EdgeInsets.zero,
-              visualDensity: VisualDensity.compact,
-              icon: const Icon(Icons.info_outline),
-              onPressed: _openLegalPage,
-            ),
-          ],
+              const SizedBox(width: 8),
+              IconButton(
+                tooltip: 'Informations légales',
+                constraints: const BoxConstraints.tightFor(
+                  width: 38,
+                  height: 38,
+                ),
+                padding: EdgeInsets.zero,
+                visualDensity: VisualDensity.compact,
+                icon: const Icon(Icons.info_outline),
+                onPressed: onLegalTap,
+              ),
+              const Spacer(),
+              _DashboardAccountActions(
+                mainCharacter: mainCharacter,
+                onLoginTap: onLoginTap,
+                onCharacterTap: onCharacterTap,
+                onFriendsTap: onFriendsTap,
+                onLogoutTap: onLogoutTap,
+              ),
+            ],
+          ),
         ),
-        actions: [
-          if (_mainCharacter == null)
-            TextButton.icon(
-              onPressed: _openBattleNetLogin,
-              icon: const Icon(Icons.login),
-              label: const Text('Connexion'),
-            )
-          else ...[
-            TextButton.icon(
-              onPressed: _openCharacterSwitch,
-              icon: const Icon(Icons.person),
-              label: const Text('Mes personnages'),
-            ),
-            _BattleNetFriendsAction(onPressed: _openBattleNetFriends),
-            IconButton(
-              tooltip: 'Déconnexion',
-              icon: const Icon(Icons.logout),
-              onPressed: _disconnectBattleNet,
-            ),
-          ],
+      ),
+    );
+  }
+}
+
+class _DashboardAccountActions extends StatelessWidget {
+  const _DashboardAccountActions({
+    required this.mainCharacter,
+    required this.onLoginTap,
+    required this.onCharacterTap,
+    required this.onFriendsTap,
+    required this.onLogoutTap,
+  });
+
+  final WowCharacter? mainCharacter;
+  final VoidCallback onLoginTap;
+  final VoidCallback onCharacterTap;
+  final VoidCallback onFriendsTap;
+  final VoidCallback onLogoutTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final isCompact = MediaQuery.sizeOf(context).width < 480;
+
+    if (mainCharacter == null) {
+      return FilledButton.icon(
+        onPressed: onLoginTap,
+        icon: const Icon(Icons.login, size: 18),
+        label: Text(isCompact ? 'Connexion' : 'Connexion Battle.net'),
+        style: FilledButton.styleFrom(
+          backgroundColor: AppTheme.gold,
+          foregroundColor: AppTheme.background,
+          visualDensity: VisualDensity.compact,
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+          textStyle: const TextStyle(fontWeight: FontWeight.w900),
+        ),
+      );
+    }
+
+    if (isCompact) {
+      return Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          IconButton(
+            tooltip: 'Mes personnages',
+            icon: const Icon(Icons.person),
+            onPressed: onCharacterTap,
+          ),
+          IconButton(
+            tooltip: 'Mes amis',
+            icon: const Icon(Icons.group, color: Color(0xFF00AEFF)),
+            onPressed: onFriendsTap,
+          ),
+          IconButton(
+            tooltip: 'Déconnexion',
+            icon: const Icon(Icons.logout),
+            onPressed: onLogoutTap,
+          ),
         ],
-        bottom: JourneyStepBar(
-          currentStep: 1,
-          onStep1: () {},
-          onStep2: _openSoloPlanner,
-          onStep3: _openRoutePlanner,
+      );
+    }
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        TextButton.icon(
+          onPressed: onCharacterTap,
+          icon: const Icon(Icons.person),
+          label: const Text('Mes personnages'),
         ),
-      ),
-      body: LayoutBuilder(
-        builder: (context, constraints) {
-          final availableContentWidth = constraints.maxWidth >= 1280
-              ? constraints.maxWidth - 300
-              : constraints.maxWidth;
-          final isWide = availableContentWidth >= 1000;
-
-          return WebSponsorPageBody(
-            content: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                const ScrollingNoticeBanner(
-                  message:
-                      'ATTENTION : verification manuelle de localisation des items toujours en cours',
-                ),
-                const SizedBox(height: 12),
-                _HeroCard(
-                  character: _mainCharacter,
-                  totalProgress: totalProgress,
-                  visibleCategories: _visibleCategories,
-                ),
-                const SizedBox(height: 22),
-                _DashboardSection(
-                  title: 'Rechercher par catégorie',
-                  child: _CategorySearchButtons(
-                    onAchievementsTap: () => _openPlanner(
-                      WowExpansion.allAchievements,
-                      category: TrackingCategory.achievements,
-                    ),
-                    onMountsTap: () => _openPlanner(WowExpansion.allMounts),
-                    onPetsTap: () => _openPlanner(
-                      WowExpansion.allPets,
-                      category: TrackingCategory.pets,
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 18),
-                _DashboardSection(
-                  title: 'Rechercher par zone',
-                  child: _RegionSearchButton(onTap: _openRegionSelector),
-                ),
-                const SizedBox(height: 18),
-                _ExtensionSearchHeader(
-                  newestFirst: _newestFirst,
-                  onFilterTap: _openCategoryFilters,
-                  onSortTap: _toggleSortOrder,
-                ),
-                const SizedBox(height: 20),
-                if (isWide)
-                  GridView.builder(
-                    shrinkWrap: true,
-                    physics: const NeverScrollableScrollPhysics(),
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
-                          crossAxisSpacing: 14,
-                          mainAxisSpacing: 14,
-                          mainAxisExtent: 348,
-                        ),
-                    itemCount: extensionProgresses.length,
-                    itemBuilder: (context, index) {
-                      final progress = extensionProgresses[index];
-
-                      return _ExpansionCard(
-                        progress: progress,
-                        visibleCategories: _visibleCategories,
-                        isCollapsed: _collapsedExpansions.contains(
-                          progress.expansion,
-                        ),
-                        onToggleCollapse: () =>
-                            _toggleCollapse(progress.expansion),
-                        onOpenPlanner: () => _openPlanner(progress.expansion),
-                      );
-                    },
-                  )
-                else
-                  for (final progress in extensionProgresses)
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 14),
-                      child: _ExpansionCard(
-                        progress: progress,
-                        visibleCategories: _visibleCategories,
-                        isCollapsed: _collapsedExpansions.contains(
-                          progress.expansion,
-                        ),
-                        onToggleCollapse: () =>
-                            _toggleCollapse(progress.expansion),
-                        onOpenPlanner: () => _openPlanner(progress.expansion),
-                      ),
-                    ),
-              ],
-            ),
-          );
-        },
-      ),
-      bottomNavigationBar: const AppBannerAd(),
+        _BattleNetFriendsAction(onPressed: onFriendsTap),
+        IconButton(
+          tooltip: 'Déconnexion',
+          icon: const Icon(Icons.logout),
+          onPressed: onLogoutTap,
+        ),
+      ],
     );
   }
 }

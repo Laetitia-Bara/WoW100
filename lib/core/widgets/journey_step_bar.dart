@@ -35,48 +35,51 @@ class JourneyStepBar extends StatelessWidget implements PreferredSizeWidget {
       _JourneyStep(number: 3, label: 'Prends la route', onPressed: onStep3),
     ];
 
-    return Material(
-      color: AppTheme.background.withValues(alpha: 0.94),
-      child: SafeArea(
-        top: false,
-        bottom: false,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(12, 8, 12, 10),
-          child: LayoutBuilder(
-            builder: (context, constraints) {
-              if (constraints.maxWidth < 780) {
-                return ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: steps.length,
-                  separatorBuilder: (_, _) => const SizedBox(width: 10),
-                  itemBuilder: (context, index) {
-                    final step = steps[index];
+    return SizedBox(
+      height: preferredSize.height,
+      child: Material(
+        color: AppTheme.background.withValues(alpha: 0.94),
+        child: SafeArea(
+          top: false,
+          bottom: false,
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(12, 8, 12, 10),
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                if (constraints.maxWidth < 780) {
+                  return ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: steps.length,
+                    separatorBuilder: (_, _) => const SizedBox(width: 10),
+                    itemBuilder: (context, index) {
+                      final step = steps[index];
 
-                    return SizedBox(
-                      width: 248,
-                      child: _JourneyStepButton(
-                        step: step,
-                        selected: currentStep == step.number,
-                      ),
-                    );
-                  },
-                );
-              }
+                      return SizedBox(
+                        width: 248,
+                        child: _JourneyStepButton(
+                          step: step,
+                          selected: currentStep == step.number,
+                        ),
+                      );
+                    },
+                  );
+                }
 
-              return Row(
-                children: [
-                  for (var index = 0; index < steps.length; index++) ...[
-                    Expanded(
-                      child: _JourneyStepButton(
-                        step: steps[index],
-                        selected: currentStep == steps[index].number,
+                return Row(
+                  children: [
+                    for (var index = 0; index < steps.length; index++) ...[
+                      Expanded(
+                        child: _JourneyStepButton(
+                          step: steps[index],
+                          selected: currentStep == steps[index].number,
+                        ),
                       ),
-                    ),
-                    if (index < steps.length - 1) const SizedBox(width: 12),
+                      if (index < steps.length - 1) const SizedBox(width: 12),
+                    ],
                   ],
-                ],
-              );
-            },
+                );
+              },
+            ),
           ),
         ),
       ),
