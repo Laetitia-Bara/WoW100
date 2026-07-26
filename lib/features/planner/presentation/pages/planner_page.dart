@@ -1731,8 +1731,9 @@ class _RouteStepCard extends StatelessWidget {
                     runSpacing: 8,
                     children: [
                       _PlannerTag(label: _routeKindLabel(step.kind)),
+                      for (final tag in step.tags) _PlannerTag(label: tag),
                       if (step.resetScope != RouteResetScope.none)
-                        _PlannerTag(label: _resetScopeLabel(step.resetScope)),
+                        _PlannerTag(label: _resetScopeLabel(step)),
                     ],
                   ),
                 ],
@@ -1754,8 +1755,11 @@ class _RouteStepCard extends StatelessWidget {
     };
   }
 
-  String _resetScopeLabel(RouteResetScope scope) {
-    return switch (scope) {
+  String _resetScopeLabel(PlannedRouteStep step) {
+    final itemFrequencyLabel = step.item?.frequencyLabel.trim() ?? '';
+    if (itemFrequencyLabel.isNotEmpty) return itemFrequencyLabel;
+
+    return switch (step.resetScope) {
       RouteResetScope.daily => 'Quotidien',
       RouteResetScope.weekly => 'Hebdomadaire',
       RouteResetScope.none => '',

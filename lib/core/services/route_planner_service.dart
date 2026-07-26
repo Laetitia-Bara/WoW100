@@ -31,6 +31,7 @@ class PlannedRouteStep {
     required this.label,
     this.details = '',
     this.item,
+    this.tags = const [],
     this.resetScope = RouteResetScope.none,
   });
 
@@ -39,6 +40,7 @@ class PlannedRouteStep {
   final String label;
   final String details;
   final TrackingItem? item;
+  final List<String> tags;
   final RouteResetScope resetScope;
 }
 
@@ -147,6 +149,7 @@ class RoutePlannerService {
           label: _objectiveLabel(target.item),
           details: _objectiveDetails(target.item),
           item: target.item,
+          tags: _objectiveTags(target.item),
           resetScope: _resetScopeFor(target.item),
         ),
       );
@@ -200,9 +203,7 @@ class RoutePlannerService {
   }
 
   String _goLabel(TrackingItem item, String zoneLabel) {
-    final destination = item.instance.trim().isNotEmpty
-        ? item.instance.trim()
-        : zoneLabel;
+    final destination = _routeDestinationLabel(item, zoneLabel);
 
     if (!_hasUsefulLabel(destination)) return '';
 
@@ -216,11 +217,13 @@ class RoutePlannerService {
       TrackingCategory.pets => 'Farmer',
       _ => 'Faire',
     };
+    final contentTypeLabel = _contentTypeLabel(item);
     final destination = [
-      item.instance,
+      ?contentTypeLabel,
+      if (contentTypeLabel == null) _nonGenericLabel(item.instance),
       item.boss,
       item.source,
-    ].map((value) => value.trim()).where(_hasUsefulLabel).toList();
+    ].where(_hasUsefulLabel).toList();
 
     if (destination.isEmpty) return '$action : ${item.name}';
 
@@ -238,6 +241,62 @@ class RoutePlannerService {
     ];
 
     return parts.join(' - ');
+  }
+
+  List<String> _objectiveTags(TrackingItem item) {
+    return [?_contentTypeLabel(item)];
+  }
+
+  String _routeDestinationLabel(TrackingItem item, String zoneLabel) {
+    final hasInstanceContentType = _contentTypeLabel(item) != null;
+    final candidates = hasInstanceContentType
+        ? [
+            item.subzone,
+            item.zone,
+            zoneLabel,
+            _nonGenericLabel(item.instance),
+            item.region,
+          ]
+        : [
+            item.subzone,
+            _nonGenericLabel(item.instance),
+            item.zone,
+            zoneLabel,
+            item.region,
+          ];
+
+    for (final candidate in candidates) {
+      final trimmed = candidate.trim();
+      if (_hasUsefulLabel(trimmed)) return trimmed;
+    }
+
+    return '';
+  }
+
+  String? _contentTypeLabel(TrackingItem item) {
+    final labels = [...item.tags, item.instance, item.source];
+
+    for (final label in labels) {
+      final normalized = WowRegionFilter.normalize(label);
+
+      if (normalized == 'donjon' || normalized == 'dungeon') {
+        return 'Donjon';
+      }
+      if (normalized == 'raid') {
+        return 'Raid';
+      }
+    }
+
+    return null;
+  }
+
+  String _nonGenericLabel(String value) {
+    final trimmed = value.trim();
+    final normalized = WowRegionFilter.normalize(trimmed);
+
+    if (_genericSourceLabels.contains(normalized)) return '';
+
+    return trimmed;
   }
 
   String _locationDetails(TrackingItem item) {
@@ -290,6 +349,25 @@ class RoutePlannerService {
         normalized != 'a verifier' &&
         normalized != 'source a verifier';
   }
+
+  static const Set<String> _genericSourceLabels = {
+    'butin',
+    'drop',
+    'drops',
+    'loot',
+    'vendeur',
+    'vendor',
+    'quete',
+    'quetes',
+    'haut fait',
+    'hauts faits',
+    'reputation',
+    'evenement mondial',
+    'evenements mondiaux',
+    'divers',
+    'secret',
+    'inconnu',
+  };
 }
 
 class _TravelGraph {
