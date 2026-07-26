@@ -48,27 +48,31 @@ class _ScrollingNoticeBannerState extends State<ScrollingNoticeBanner>
                 child: AnimatedBuilder(
                   animation: _controller,
                   builder: (context, _) {
-                    return Transform.translate(
-                      offset: Offset(-_controller.value * width, 0),
-                      child: SizedBox(
-                        width: width * 2,
-                        child: Row(
-                          children: [
-                            SizedBox(
-                              width: width,
-                              child: _ScrollingNoticeBannerContent(
-                                message: widget.message,
-                                icon: widget.icon,
+                    return OverflowBox(
+                      alignment: Alignment.centerLeft,
+                      maxWidth: width * 2,
+                      child: Transform.translate(
+                        offset: Offset(-_controller.value * width, 0),
+                        child: SizedBox(
+                          width: width * 2,
+                          child: Row(
+                            children: [
+                              SizedBox(
+                                width: width,
+                                child: _ScrollingNoticeBannerContent(
+                                  message: widget.message,
+                                  icon: widget.icon,
+                                ),
                               ),
-                            ),
-                            SizedBox(
-                              width: width,
-                              child: _ScrollingNoticeBannerContent(
-                                message: widget.message,
-                                icon: widget.icon,
+                              SizedBox(
+                                width: width,
+                                child: _ScrollingNoticeBannerContent(
+                                  message: widget.message,
+                                  icon: widget.icon,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     );
