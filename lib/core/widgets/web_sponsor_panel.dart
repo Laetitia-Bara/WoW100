@@ -169,24 +169,66 @@ class WebSponsorPanel extends StatelessWidget {
     });
   }
 
-  static final _picks = [
-    _SponsorPick(
-      icon: Icons.emoji_events_rounded,
+  static final _carousels = [
+    _SponsorCarouselData(
       title: 'Goodies WoW',
-      description: 'Figurines, mugs, déco et idées cadeau',
-      uri: _amazonSearchUri('World of Warcraft goodies'),
+      picks: [
+        _SponsorPick(
+          title: 'Figurines',
+          imageAsset: 'assets/images/expansions/vanilla.jpg',
+          uri: _amazonSearchUri('World of Warcraft figurine'),
+        ),
+        _SponsorPick(
+          title: 'Mugs',
+          imageAsset: 'assets/images/expansions/tbc.jpg',
+          uri: _amazonSearchUri('World of Warcraft mug'),
+        ),
+        _SponsorPick(
+          title: 'Déco',
+          imageAsset: 'assets/images/expansions/wrath.jpg',
+          uri: _amazonSearchUri('World of Warcraft decoration'),
+        ),
+      ],
     ),
-    _SponsorPick(
-      icon: Icons.menu_book_rounded,
+    _SponsorCarouselData(
       title: 'Livres Warcraft',
-      description: 'Romans, artbooks et lore à feuilleter',
-      uri: _amazonSearchUri('World of Warcraft livre'),
+      picks: [
+        _SponsorPick(
+          title: 'Romans',
+          imageAsset: 'assets/images/expansions/mop.jpg',
+          uri: _amazonSearchUri('World of Warcraft roman'),
+        ),
+        _SponsorPick(
+          title: 'Artbooks',
+          imageAsset: 'assets/images/expansions/legion.jpg',
+          uri: _amazonSearchUri('World of Warcraft artbook'),
+        ),
+        _SponsorPick(
+          title: 'Lore',
+          imageAsset: 'assets/images/expansions/dragonflight.jpg',
+          uri: _amazonSearchUri('Warcraft chroniques'),
+        ),
+      ],
     ),
-    _SponsorPick(
-      icon: Icons.sports_esports_rounded,
+    _SponsorCarouselData(
       title: 'Setup gaming',
-      description: 'Accessoires utiles pour les longues sessions',
-      uri: _amazonSearchUri('accessoires gaming PC'),
+      picks: [
+        _SponsorPick(
+          title: 'Claviers',
+          imageAsset: 'assets/images/icones/wallpaper_app.jpg',
+          uri: _amazonSearchUri('clavier gaming PC'),
+        ),
+        _SponsorPick(
+          title: 'Souris',
+          imageAsset: 'assets/images/expansions/tww.jpg',
+          uri: _amazonSearchUri('souris gaming PC'),
+        ),
+        _SponsorPick(
+          title: 'Casques',
+          imageAsset: 'assets/images/expansions/midnight.jpg',
+          uri: _amazonSearchUri('casque gaming PC'),
+        ),
+      ],
     ),
   ];
 
@@ -202,12 +244,6 @@ class WebSponsorPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final highlights = [
-      (Icons.public_rounded, 'WoW100% + BoB'),
-      (Icons.handshake_rounded, 'Sponsoring commun'),
-      (Icons.hourglass_top_rounded, 'En attendant nos sponsors'),
-    ];
-
     return Card(
       clipBehavior: Clip.antiAlias,
       child: DecoratedBox(
@@ -267,45 +303,15 @@ class WebSponsorPanel extends StatelessWidget {
                 'En attendant les accords avec nos sponsors spécifiques, cet espace relaie un sponsoring commun pour soutenir WoW100%.',
                 style: TextStyle(color: AppTheme.mutedText, height: 1.4),
               ),
-              const SizedBox(height: 16),
-              if (compact)
-                Wrap(
-                  spacing: 10,
-                  runSpacing: 10,
-                  children: [
-                    for (final highlight in highlights)
-                      _SponsorHighlight(
-                        icon: highlight.$1,
-                        label: highlight.$2,
-                      ),
-                  ],
-                )
-              else
-                for (final highlight in highlights)
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
-                    child: _SponsorHighlight(
-                      icon: highlight.$1,
-                      label: highlight.$2,
-                    ),
-                  ),
-              const SizedBox(height: 6),
+              const SizedBox(height: 14),
               Divider(color: Colors.white.withValues(alpha: 0.1)),
               const SizedBox(height: 12),
-              const Text(
-                'Petite sélection temporaire',
-                style: TextStyle(fontWeight: FontWeight.w900),
-              ),
-              const SizedBox(height: 10),
-              for (final pick in _picks)
+              for (final carousel in _carousels)
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 9),
-                  child: _SponsorPickTile(
-                    pick: pick,
-                    onTap: () => _openPick(pick),
-                  ),
+                  padding: const EdgeInsets.only(bottom: 12),
+                  child: _SponsorCarousel(data: carousel, onPickTap: _openPick),
                 ),
-              const SizedBox(height: 3),
+              const SizedBox(height: 1),
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(12),
@@ -383,109 +389,139 @@ class WebSponsorPanel extends StatelessWidget {
   }
 }
 
-class _SponsorHighlight extends StatelessWidget {
-  const _SponsorHighlight({required this.icon, required this.label});
+class _SponsorCarouselData {
+  const _SponsorCarouselData({required this.title, required this.picks});
 
-  final IconData icon;
-  final String label;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 9),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.055),
-        borderRadius: BorderRadius.circular(11),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, color: AppTheme.gold, size: 18),
-          const SizedBox(width: 9),
-          Text(label, style: const TextStyle(fontWeight: FontWeight.w700)),
-        ],
-      ),
-    );
-  }
+  final String title;
+  final List<_SponsorPick> picks;
 }
 
 class _SponsorPick {
   const _SponsorPick({
-    required this.icon,
     required this.title,
-    required this.description,
+    required this.imageAsset,
     required this.uri,
   });
 
-  final IconData icon;
   final String title;
-  final String description;
+  final String imageAsset;
   final Uri uri;
 }
 
-class _SponsorPickTile extends StatelessWidget {
-  const _SponsorPickTile({required this.pick, required this.onTap});
+class _SponsorCarousel extends StatelessWidget {
+  const _SponsorCarousel({required this.data, required this.onPickTap});
+
+  final _SponsorCarouselData data;
+  final ValueChanged<_SponsorPick> onPickTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          data.title,
+          style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 13),
+        ),
+        const SizedBox(height: 8),
+        SizedBox(
+          height: 82,
+          child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            physics: const BouncingScrollPhysics(),
+            itemCount: data.picks.length,
+            separatorBuilder: (context, index) => const SizedBox(width: 9),
+            itemBuilder: (context, index) {
+              final pick = data.picks[index];
+
+              return _SponsorPhotoTile(
+                pick: pick,
+                onTap: () => onPickTap(pick),
+              );
+            },
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _SponsorPhotoTile extends StatelessWidget {
+  const _SponsorPhotoTile({required this.pick, required this.onTap});
 
   final _SponsorPick pick;
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(13),
-      child: Ink(
-        padding: const EdgeInsets.all(11),
-        decoration: BoxDecoration(
-          color: Colors.white.withValues(alpha: 0.055),
-          borderRadius: BorderRadius.circular(13),
-          border: Border.all(color: Colors.white.withValues(alpha: 0.06)),
-        ),
-        child: Row(
-          children: [
-            Container(
-              width: 36,
-              height: 36,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: AppTheme.gold.withValues(alpha: 0.14),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Icon(pick.icon, color: AppTheme.gold, size: 19),
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(14),
+        child: Ink(
+          width: 128,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(14),
+            border: Border.all(color: AppTheme.gold.withValues(alpha: 0.2)),
+            image: DecorationImage(
+              image: AssetImage(pick.imageAsset),
+              fit: BoxFit.cover,
             ),
-            const SizedBox(width: 11),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(14),
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Colors.black.withValues(alpha: 0.04),
+                        Colors.black.withValues(alpha: 0.72),
+                      ],
+                    ),
+                  ),
+                ),
+                Positioned(
+                  left: 9,
+                  right: 9,
+                  bottom: 8,
+                  child: Text(
                     pick.title,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(fontWeight: FontWeight.w900),
-                  ),
-                  const SizedBox(height: 3),
-                  Text(
-                    pick.description,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
                     style: const TextStyle(
-                      color: AppTheme.mutedText,
+                      color: AppTheme.text,
                       fontSize: 12,
-                      height: 1.25,
-                      fontWeight: FontWeight.w600,
+                      fontWeight: FontWeight.w900,
                     ),
                   ),
-                ],
-              ),
+                ),
+                const Positioned(
+                  top: 8,
+                  right: 8,
+                  child: Icon(
+                    Icons.open_in_new_rounded,
+                    color: AppTheme.gold,
+                    size: 16,
+                  ),
+                ),
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  child: Container(
+                    height: 2,
+                    color: AppTheme.gold.withValues(alpha: 0.72),
+                  ),
+                ),
+              ],
             ),
-            const SizedBox(width: 8),
-            const Icon(
-              Icons.open_in_new_rounded,
-              color: AppTheme.gold,
-              size: 17,
-            ),
-          ],
+          ),
         ),
       ),
     );
