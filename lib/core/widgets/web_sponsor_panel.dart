@@ -158,15 +158,46 @@ class WebSponsorSliverPageBody extends StatelessWidget {
 class WebSponsorPanel extends StatelessWidget {
   const WebSponsorPanel({super.key, this.compact = false});
 
-  static final Uri _amazonUri = Uri.https('www.amazon.fr', '/s', {
-    'k': 'World of Warcraft',
-    'tag': 'cosmoslty-21',
-  });
+  static const String _amazonPartnerTag = 'cosmoslty-21';
+
+  static final Uri _amazonUri = _amazonSearchUri('World of Warcraft');
+
+  static Uri _amazonSearchUri(String keywords) {
+    return Uri.https('www.amazon.fr', '/s', {
+      'k': keywords,
+      'tag': _amazonPartnerTag,
+    });
+  }
+
+  static final _picks = [
+    _SponsorPick(
+      icon: Icons.emoji_events_rounded,
+      title: 'Goodies WoW',
+      description: 'Figurines, mugs, déco et idées cadeau',
+      uri: _amazonSearchUri('World of Warcraft goodies'),
+    ),
+    _SponsorPick(
+      icon: Icons.menu_book_rounded,
+      title: 'Livres Warcraft',
+      description: 'Romans, artbooks et lore à feuilleter',
+      uri: _amazonSearchUri('World of Warcraft livre'),
+    ),
+    _SponsorPick(
+      icon: Icons.sports_esports_rounded,
+      title: 'Setup gaming',
+      description: 'Accessoires utiles pour les longues sessions',
+      uri: _amazonSearchUri('accessoires gaming PC'),
+    ),
+  ];
 
   final bool compact;
 
   Future<void> _openAmazon() async {
     await launchUrl(_amazonUri, mode: LaunchMode.externalApplication);
+  }
+
+  Future<void> _openPick(_SponsorPick pick) async {
+    await launchUrl(pick.uri, mode: LaunchMode.externalApplication);
   }
 
   @override
@@ -260,7 +291,21 @@ class WebSponsorPanel extends StatelessWidget {
                   ),
               const SizedBox(height: 6),
               Divider(color: Colors.white.withValues(alpha: 0.1)),
+              const SizedBox(height: 12),
+              const Text(
+                'Petite sélection temporaire',
+                style: TextStyle(fontWeight: FontWeight.w900),
+              ),
               const SizedBox(height: 10),
+              for (final pick in _picks)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 9),
+                  child: _SponsorPickTile(
+                    pick: pick,
+                    onTap: () => _openPick(pick),
+                  ),
+                ),
+              const SizedBox(height: 3),
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(12),
@@ -359,6 +404,89 @@ class _SponsorHighlight extends StatelessWidget {
           const SizedBox(width: 9),
           Text(label, style: const TextStyle(fontWeight: FontWeight.w700)),
         ],
+      ),
+    );
+  }
+}
+
+class _SponsorPick {
+  const _SponsorPick({
+    required this.icon,
+    required this.title,
+    required this.description,
+    required this.uri,
+  });
+
+  final IconData icon;
+  final String title;
+  final String description;
+  final Uri uri;
+}
+
+class _SponsorPickTile extends StatelessWidget {
+  const _SponsorPickTile({required this.pick, required this.onTap});
+
+  final _SponsorPick pick;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(13),
+      child: Ink(
+        padding: const EdgeInsets.all(11),
+        decoration: BoxDecoration(
+          color: Colors.white.withValues(alpha: 0.055),
+          borderRadius: BorderRadius.circular(13),
+          border: Border.all(color: Colors.white.withValues(alpha: 0.06)),
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 36,
+              height: 36,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: AppTheme.gold.withValues(alpha: 0.14),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Icon(pick.icon, color: AppTheme.gold, size: 19),
+            ),
+            const SizedBox(width: 11),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    pick.title,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                  const SizedBox(height: 3),
+                  Text(
+                    pick.description,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      color: AppTheme.mutedText,
+                      fontSize: 12,
+                      height: 1.25,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: 8),
+            const Icon(
+              Icons.open_in_new_rounded,
+              color: AppTheme.gold,
+              size: 17,
+            ),
+          ],
+        ),
       ),
     );
   }
