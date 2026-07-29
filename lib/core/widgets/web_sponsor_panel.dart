@@ -158,33 +158,23 @@ class WebSponsorSliverPageBody extends StatelessWidget {
 class WebSponsorPanel extends StatelessWidget {
   const WebSponsorPanel({super.key, this.compact = false});
 
-  static final Uri _contactUri = Uri(
-    scheme: 'mailto',
-    path: 'contact@cosmos-lty.fr',
-    queryParameters: {
-      'subject': 'Partenariat sponsor WoW100%',
-      'body': 'Bonjour,\n\nJe souhaite proposer un partenariat pour WoW100%.',
-    },
-  );
-  static final Uri _koFiUri = Uri.parse('https://ko-fi.com/cosmoslty');
+  static final Uri _amazonUri = Uri.https('www.amazon.fr', '/s', {
+    'k': 'World of Warcraft',
+    'tag': 'cosmoslty-21',
+  });
 
   final bool compact;
 
-  Future<void> _openContact() async {
-    await launchUrl(_contactUri, mode: LaunchMode.externalApplication);
-  }
-
-  Future<void> _openKoFi() async {
-    await launchUrl(_koFiUri, mode: LaunchMode.externalApplication);
+  Future<void> _openAmazon() async {
+    await launchUrl(_amazonUri, mode: LaunchMode.externalApplication);
   }
 
   @override
   Widget build(BuildContext context) {
-    final opportunities = [
-      (Icons.groups_rounded, 'Guilde recrutant'),
-      (Icons.videocam_rounded, 'Streamer WoW'),
-      (Icons.auto_awesome_rounded, 'Créateur de contenu'),
-      (Icons.sports_esports_rounded, 'Boutique gaming'),
+    final highlights = [
+      (Icons.public_rounded, 'WoW100% + BoB'),
+      (Icons.handshake_rounded, 'Sponsoring commun'),
+      (Icons.hourglass_top_rounded, 'En attendant nos sponsors'),
     ];
 
     return Card(
@@ -217,7 +207,7 @@ class WebSponsorPanel extends StatelessWidget {
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: const Icon(
-                      Icons.handshake_outlined,
+                      Icons.storefront_rounded,
                       color: AppTheme.gold,
                       size: 22,
                     ),
@@ -225,7 +215,7 @@ class WebSponsorPanel extends StatelessWidget {
                   const SizedBox(width: 12),
                   const Expanded(
                     child: Text(
-                      'PARTENAIRES',
+                      'SPONSORING COMMUN',
                       style: TextStyle(
                         color: AppTheme.gold,
                         fontSize: 12,
@@ -238,12 +228,12 @@ class WebSponsorPanel extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               const Text(
-                'Soutenez WoW100%',
+                'Amazon Partenaires',
                 style: TextStyle(fontSize: 21, fontWeight: FontWeight.w900),
               ),
               const SizedBox(height: 8),
               const Text(
-                'Présentez votre projet à une communauté de collectionneurs et joueuses et joueurs de WoW.',
+                'En attendant les accords avec nos vrais sponsors, cet espace relaie un sponsoring commun pour soutenir WoW100% et BoB.',
                 style: TextStyle(color: AppTheme.mutedText, height: 1.4),
               ),
               const SizedBox(height: 16),
@@ -252,33 +242,75 @@ class WebSponsorPanel extends StatelessWidget {
                   spacing: 10,
                   runSpacing: 10,
                   children: [
-                    for (final opportunity in opportunities)
-                      _SponsorOpportunity(
-                        icon: opportunity.$1,
-                        label: opportunity.$2,
+                    for (final highlight in highlights)
+                      _SponsorHighlight(
+                        icon: highlight.$1,
+                        label: highlight.$2,
                       ),
                   ],
                 )
               else
-                for (final opportunity in opportunities)
+                for (final highlight in highlights)
                   Padding(
                     padding: const EdgeInsets.only(bottom: 10),
-                    child: _SponsorOpportunity(
-                      icon: opportunity.$1,
-                      label: opportunity.$2,
+                    child: _SponsorHighlight(
+                      icon: highlight.$1,
+                      label: highlight.$2,
                     ),
                   ),
               const SizedBox(height: 6),
               Divider(color: Colors.white.withValues(alpha: 0.1)),
               const SizedBox(height: 10),
-              const Row(
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.black.withValues(alpha: 0.18),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    color: AppTheme.gold.withValues(alpha: 0.18),
+                  ),
+                ),
+                child: const Text(
+                  'En tant que Partenaire Amazon, Cosmos LTY réalise un bénéfice sur les achats remplissant les conditions requises, sans frais supplémentaire pour vous.',
+                  style: TextStyle(
+                    color: AppTheme.mutedText,
+                    fontSize: 12,
+                    height: 1.35,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 14),
+              Row(
                 children: [
-                  Icon(Icons.campaign_outlined, color: AppTheme.gold, size: 20),
-                  SizedBox(width: 9),
-                  Expanded(
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 7,
+                    ),
+                    decoration: BoxDecoration(
+                      color: AppTheme.gold.withValues(alpha: 0.14),
+                      borderRadius: BorderRadius.circular(999),
+                    ),
+                    child: const Text(
+                      'amazon.fr',
+                      style: TextStyle(
+                        color: AppTheme.gold,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 9),
+                  const Expanded(
                     child: Text(
-                      'Emplacement sponsor disponible',
-                      style: TextStyle(fontWeight: FontWeight.w800),
+                      'Liens partenaires temporaires',
+                      style: TextStyle(
+                        color: AppTheme.mutedText,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
                   ),
                 ],
@@ -287,33 +319,14 @@ class WebSponsorPanel extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: FilledButton.icon(
-                  onPressed: _openContact,
-                  icon: const Icon(Icons.mail_outline_rounded, size: 19),
-                  label: const Text('Proposer un partenariat'),
+                  onPressed: _openAmazon,
+                  icon: const Icon(Icons.shopping_bag_outlined, size: 19),
+                  label: const Text('Voir la sélection Amazon'),
                   style: FilledButton.styleFrom(
                     backgroundColor: AppTheme.gold,
                     foregroundColor: AppTheme.background,
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     textStyle: const TextStyle(fontWeight: FontWeight.w900),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              Center(
-                child: TextButton.icon(
-                  onPressed: _openKoFi,
-                  icon: const Icon(Icons.local_cafe_rounded, size: 17),
-                  label: const Text('Me soutenir sur Ko-Fi'),
-                  style: TextButton.styleFrom(
-                    foregroundColor: AppTheme.gold,
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 8,
-                    ),
-                    textStyle: const TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w800,
-                    ),
                   ),
                 ),
               ),
@@ -325,8 +338,8 @@ class WebSponsorPanel extends StatelessWidget {
   }
 }
 
-class _SponsorOpportunity extends StatelessWidget {
-  const _SponsorOpportunity({required this.icon, required this.label});
+class _SponsorHighlight extends StatelessWidget {
+  const _SponsorHighlight({required this.icon, required this.label});
 
   final IconData icon;
   final String label;
