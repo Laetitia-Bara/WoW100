@@ -264,7 +264,7 @@ class WebSponsorPanel extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               const Text(
-                'En attendant les accords avec nos vrais sponsors, cet espace relaie un sponsoring commun pour soutenir WoW100% et BoB.',
+                'En attendant les accords avec nos sponsors spécifiques, cet espace relaie un sponsoring commun pour soutenir WoW100%.',
                 style: TextStyle(color: AppTheme.mutedText, height: 1.4),
               ),
               const SizedBox(height: 16),
