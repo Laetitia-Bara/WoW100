@@ -160,8 +160,6 @@ class WebSponsorPanel extends StatelessWidget {
 
   static const String _amazonPartnerTag = 'cosmoslty-21';
 
-  static final Uri _amazonUri = _amazonSearchUri('World of Warcraft');
-
   static Uri _amazonSearchUri(String keywords) {
     return Uri.https('www.amazon.fr', '/s', {
       'k': keywords,
@@ -234,10 +232,6 @@ class WebSponsorPanel extends StatelessWidget {
 
   final bool compact;
 
-  Future<void> _openAmazon() async {
-    await launchUrl(_amazonUri, mode: LaunchMode.externalApplication);
-  }
-
   Future<void> _openPick(_SponsorPick pick) async {
     await launchUrl(pick.uri, mode: LaunchMode.externalApplication);
   }
@@ -282,7 +276,7 @@ class WebSponsorPanel extends StatelessWidget {
                   const SizedBox(width: 12),
                   const Expanded(
                     child: Text(
-                      'SPONSORING COMMUN',
+                      'SPONSORING',
                       style: TextStyle(
                         color: AppTheme.gold,
                         fontSize: 12,
@@ -300,7 +294,7 @@ class WebSponsorPanel extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               const Text(
-                'En attendant les accords avec nos sponsors spécifiques, cet espace relaie un sponsoring commun pour soutenir WoW100%.',
+                'Les bénéfices générés par les liens partenaires permettent de participer à soutenir financièrement le développement de l’application et de ses services. Merci beaucoup pour votre aide ;)',
                 style: TextStyle(color: AppTheme.mutedText, height: 1.4),
               ),
               const SizedBox(height: 14),
@@ -323,7 +317,7 @@ class WebSponsorPanel extends StatelessWidget {
                   ),
                 ),
                 child: const Text(
-                  'En tant que Partenaire Amazon, Cosmos LTY réalise un bénéfice sur les achats remplissant les conditions requises, sans frais supplémentaire pour vous.',
+                  'En tant que Partenaire Amazon, Cosmos-lty réalise un bénéfice sur les achats remplissant les conditions requises, sans frais supplémentaire pour vous.',
                   style: TextStyle(
                     color: AppTheme.mutedText,
                     fontSize: 12,
@@ -353,34 +347,9 @@ class WebSponsorPanel extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(width: 9),
-                  const Expanded(
-                    child: Text(
-                      'Liens partenaires temporaires',
-                      style: TextStyle(
-                        color: AppTheme.mutedText,
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                  ),
                 ],
               ),
               const SizedBox(height: 14),
-              SizedBox(
-                width: double.infinity,
-                child: FilledButton.icon(
-                  onPressed: _openAmazon,
-                  icon: const Icon(Icons.shopping_bag_outlined, size: 19),
-                  label: const Text('Voir la sélection Amazon'),
-                  style: FilledButton.styleFrom(
-                    backgroundColor: AppTheme.gold,
-                    foregroundColor: AppTheme.background,
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    textStyle: const TextStyle(fontWeight: FontWeight.w900),
-                  ),
-                ),
-              ),
             ],
           ),
         ),
