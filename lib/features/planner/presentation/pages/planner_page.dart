@@ -1327,6 +1327,42 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
     }
   }
 
+  Future<void> _openSavedRoutes() async {
+    try {
+      final routes = await _savedFarmRouteService.loadMyRoutes();
+
+      if (!mounted) return;
+
+      final selectedRoute = await showDialog<SavedFarmRoute>(
+        context: context,
+        builder: (_) => _SavedFarmRoutesDialog(routes: routes),
+      );
+
+      if (selectedRoute == null) return;
+
+      final itemIds = selectedRoute.itemIds.toSet();
+      await _soloPlannerService.setAllTodaySelected(itemIds);
+
+      if (!mounted) return;
+
+      setState(() {
+        _todayItemIds = itemIds;
+      });
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Route "${selectedRoute.name}" chargee.')),
+      );
+    } catch (_) {
+      if (!mounted) return;
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Connecte-toi a ton compte pour voir tes routes.'),
+        ),
+      );
+    }
+  }
+
   void _backToProgress() {
     Navigator.of(context).popUntil((route) => route.isFirst);
   }
@@ -1454,6 +1490,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                         sortMode: _sortMode,
                         onClearSelection: _clearTodaySelection,
                         onSelectAll: _selectAllToday,
+                        onOpenSavedRoutes: _openSavedRoutes,
                         onSaveRoute: _saveCurrentRoute,
                         onOpenRoute: _openRoute,
                         onSortModeChanged: _setSortMode,
@@ -2393,6 +2430,114 @@ class _SaveFarmRouteDialogState extends State<_SaveFarmRouteDialog> {
   }
 }
 
+class _SavedFarmRoutesDialog extends StatelessWidget {
+  const _SavedFarmRoutesDialog({required this.routes});
+
+  final List<SavedFarmRoute> routes;
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: const Text('Mes routes sauvegardees'),
+      content: SizedBox(
+        width: 560,
+        child: routes.isEmpty
+            ? const Text(
+                'Aucune route sauvegardee pour le moment.',
+                style: TextStyle(color: AppTheme.mutedText),
+              )
+            : ConstrainedBox(
+                constraints: const BoxConstraints(maxHeight: 420),
+                child: ListView.separated(
+                  shrinkWrap: true,
+                  itemCount: routes.length,
+                  separatorBuilder: (_, _) => const SizedBox(height: 10),
+                  itemBuilder: (context, index) {
+                    return _SavedFarmRouteTile(route: routes[index]);
+                  },
+                ),
+              ),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text('Fermer'),
+        ),
+      ],
+    );
+  }
+}
+
+class _SavedFarmRouteTile extends StatelessWidget {
+  const _SavedFarmRouteTile({required this.route});
+
+  final SavedFarmRoute route;
+
+  @override
+  Widget build(BuildContext context) {
+    final ownerLabel = [
+      route.ownerCharacterName,
+      route.ownerRealm,
+    ].where((value) => value.trim().isNotEmpty).join(' - ');
+
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.035),
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: AppTheme.gold.withValues(alpha: 0.18)),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Icon(
+              route.isPublic ? Icons.public_rounded : Icons.lock_outline,
+              color: AppTheme.gold,
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    route.name,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                  if (ownerLabel.isNotEmpty) ...[
+                    const SizedBox(height: 4),
+                    Text(
+                      ownerLabel,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(color: AppTheme.mutedText),
+                    ),
+                  ],
+                  const SizedBox(height: 8),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      _PlannerTag(label: route.visibility.label),
+                      _PlannerTag(label: '${route.itemIds.length} objectif(s)'),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: 12),
+            FilledButton.icon(
+              onPressed: () => Navigator.pop(context, route),
+              icon: const Icon(Icons.playlist_add_check_rounded),
+              label: const Text('Charger'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 class _SoloPlannerActionBar extends StatelessWidget {
   const _SoloPlannerActionBar({
     required this.countLabel,
@@ -2402,6 +2547,7 @@ class _SoloPlannerActionBar extends StatelessWidget {
     required this.sortMode,
     required this.onClearSelection,
     required this.onSelectAll,
+    required this.onOpenSavedRoutes,
     required this.onSaveRoute,
     required this.onOpenRoute,
     required this.onSortModeChanged,
@@ -2414,6 +2560,7 @@ class _SoloPlannerActionBar extends StatelessWidget {
   final _SoloPlannerSortMode sortMode;
   final VoidCallback onClearSelection;
   final VoidCallback onSelectAll;
+  final VoidCallback onOpenSavedRoutes;
   final VoidCallback onSaveRoute;
   final VoidCallback onOpenRoute;
   final ValueChanged<_SoloPlannerSortMode> onSortModeChanged;
@@ -2434,6 +2581,11 @@ class _SoloPlannerActionBar extends StatelessWidget {
       icon: const Icon(Icons.done_all_outlined),
       label: const Text('Tout activer'),
     );
+    final savedRoutesButton = OutlinedButton.icon(
+      onPressed: onOpenSavedRoutes,
+      icon: const Icon(Icons.folder_open_rounded),
+      label: const Text('Mes routes'),
+    );
     final saveButton = OutlinedButton.icon(
       onPressed: hasTodaySelection ? onSaveRoute : null,
       icon: const Icon(Icons.bookmark_add_outlined),
@@ -2451,7 +2603,7 @@ class _SoloPlannerActionBar extends StatelessWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < 820) {
+        if (constraints.maxWidth < 1240) {
           return Wrap(
             spacing: 10,
             runSpacing: 10,
@@ -2460,6 +2612,7 @@ class _SoloPlannerActionBar extends StatelessWidget {
               count,
               clearButton,
               selectAllButton,
+              savedRoutesButton,
               saveButton,
               routeButton,
               sortControls,
@@ -2474,6 +2627,8 @@ class _SoloPlannerActionBar extends StatelessWidget {
             clearButton,
             const SizedBox(width: 10),
             selectAllButton,
+            const SizedBox(width: 10),
+            savedRoutesButton,
             const SizedBox(width: 10),
             saveButton,
             const SizedBox(width: 10),
