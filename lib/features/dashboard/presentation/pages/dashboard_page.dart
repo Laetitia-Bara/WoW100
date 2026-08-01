@@ -341,8 +341,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         const ScrollingNoticeBanner(
-                          message:
-                              'ATTENTION : verification manuelle de localisation des items toujours en cours',
+                          message: 'ATTENTION : développement en cours',
                         ),
                         const SizedBox(height: 12),
                         _HeroCard(

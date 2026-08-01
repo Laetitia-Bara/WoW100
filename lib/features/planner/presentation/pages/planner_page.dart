@@ -849,8 +849,7 @@ class _PlannerPageState extends State<PlannerPage> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       const ScrollingNoticeBanner(
-                        message:
-                            'ATTENTION : verification manuelle de localisation des items toujours en cours',
+                        message: 'ATTENTION : Développement en cours',
                       ),
                       const SizedBox(height: 12),
                       Text(
@@ -1269,8 +1268,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       const ScrollingNoticeBanner(
-                        message:
-                            'ATTENTION : verification manuelle de localisation des items toujours en cours',
+                        message: 'ATTENTION : Développement en cours',
                       ),
                       const SizedBox(height: 12),
                       Text(
@@ -1540,8 +1538,7 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       const ScrollingNoticeBanner(
-                        message:
-                            'ATTENTION : Algorithme de calcul de route en cours de developpement',
+                        message: 'ATTENTION : Développement en cours',
                       ),
                       const SizedBox(height: 12),
                       Text(

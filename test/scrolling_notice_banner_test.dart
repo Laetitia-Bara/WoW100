@@ -13,8 +13,7 @@ void main() {
           body: SizedBox(
             width: 416,
             child: ScrollingNoticeBanner(
-              message:
-                  'ATTENTION : verification manuelle de localisation des items toujours en cours',
+              message: 'ATTENTION : Développement en cours',
             ),
           ),
         ),
