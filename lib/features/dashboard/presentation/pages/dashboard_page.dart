@@ -686,9 +686,43 @@ class _HeroCard extends StatelessWidget {
       child: LayoutBuilder(
         builder: (context, constraints) {
           final showInlineProfileStats =
-              hasCharacter && constraints.maxWidth >= 760;
+              hasCharacter && constraints.maxWidth >= 980;
           final showStackedProfileStats =
               hasCharacter && !showInlineProfileStats;
+          final identityBlock = Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                hasCharacter
+                    ? currentCharacter.name
+                    : 'Companion de collection WoW',
+                style: TextStyle(
+                  color: characterClassColor,
+                  fontSize: 22,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                hasCharacter
+                    ? '${currentCharacter.race} ${currentCharacter.characterClass} • ${currentCharacter.realm} • ${currentCharacter.faction} • Niveau ${currentCharacter.level}'
+                    : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
+                style: const TextStyle(color: AppTheme.mutedText, height: 1.4),
+              ),
+            ],
+          );
+          final profileStatsBlock = Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              _AchievementPointsBadge(
+                points: currentCharacter?.achievementPoints ?? 0,
+              ),
+              const SizedBox(width: 12),
+              _MythicKeystoneRatingBadge(
+                rating: currentCharacter?.mythicKeystoneRating ?? 0,
+              ),
+            ],
+          );
 
           return Stack(
             children: [
@@ -699,52 +733,41 @@ class _HeroCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                hasCharacter
-                                    ? currentCharacter.name
-                                    : 'Companion de collection WoW',
-                                style: TextStyle(
-                                  color: characterClassColor,
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.w800,
+                    if (showInlineProfileStats)
+                      SizedBox(
+                        height: hasPortrait ? 112 : 76,
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Align(
+                              alignment: Alignment.topLeft,
+                              child: SizedBox(
+                                width: (constraints.maxWidth * 0.43).clamp(
+                                  360.0,
+                                  constraints.maxWidth - 500,
+                                ),
+                                child: identityBlock,
+                              ),
+                            ),
+                            if (hasPortrait)
+                              Align(
+                                alignment: Alignment.topCenter,
+                                child: _CharacterPortraitFrame(
+                                  imageUrl: portraitUrl,
                                 ),
                               ),
-                              const SizedBox(height: 8),
-                              Text(
-                                hasCharacter
-                                    ? '${currentCharacter.race} ${currentCharacter.characterClass} • ${currentCharacter.realm} • ${currentCharacter.faction} • Niveau ${currentCharacter.level}'
-                                    : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
-                                style: const TextStyle(
-                                  color: AppTheme.mutedText,
-                                  height: 1.4,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        if (showInlineProfileStats) ...[
-                          const SizedBox(width: 14),
-                          _AchievementPointsBadge(
-                            points: currentCharacter.achievementPoints,
-                          ),
-                          const SizedBox(width: 12),
-                          _MythicKeystoneRatingBadge(
-                            rating: currentCharacter.mythicKeystoneRating ?? 0,
-                          ),
-                          if (hasPortrait) ...[
-                            const SizedBox(width: 16),
-                            _CharacterPortraitFrame(imageUrl: portraitUrl),
+                            Align(
+                              alignment: Alignment.topRight,
+                              child: profileStatsBlock,
+                            ),
                           ],
-                        ],
-                      ],
-                    ),
+                        ),
+                      )
+                    else
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [Expanded(child: identityBlock)],
+                      ),
                     if (showStackedProfileStats) ...[
                       const SizedBox(height: 14),
                       Wrap(
@@ -752,12 +775,7 @@ class _HeroCard extends StatelessWidget {
                         runSpacing: 12,
                         crossAxisAlignment: WrapCrossAlignment.center,
                         children: [
-                          _AchievementPointsBadge(
-                            points: currentCharacter.achievementPoints,
-                          ),
-                          _MythicKeystoneRatingBadge(
-                            rating: currentCharacter.mythicKeystoneRating ?? 0,
-                          ),
+                          profileStatsBlock,
                           if (hasPortrait)
                             _CharacterPortraitFrame(imageUrl: portraitUrl),
                         ],
@@ -797,7 +815,7 @@ class _AchievementPointsBadge extends StatelessWidget {
     return Semantics(
       label: 'Points de hauts faits $formattedPoints',
       child: Container(
-        width: 166,
+        width: 174,
         height: 76,
         padding: const EdgeInsets.all(1.5),
         decoration: BoxDecoration(
@@ -842,10 +860,10 @@ class _AchievementPointsBadge extends StatelessWidget {
             child: Row(
               children: [
                 SizedBox(
-                  width: 42,
-                  height: 42,
+                  width: 48,
+                  height: 48,
                   child: Padding(
-                    padding: const EdgeInsets.all(1),
+                    padding: const EdgeInsets.all(0.5),
                     child: Image.asset(
                       'assets/images/icones/hf_points_flower_badge.png',
                       fit: BoxFit.contain,
@@ -908,7 +926,7 @@ class _MythicKeystoneRatingBadge extends StatelessWidget {
     return Semantics(
       label: 'Cote Mythique Plus $formattedRating',
       child: Container(
-        width: 132,
+        width: 146,
         height: 76,
         padding: const EdgeInsets.all(1.5),
         decoration: BoxDecoration(
@@ -952,37 +970,14 @@ class _MythicKeystoneRatingBadge extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 9),
             child: Row(
               children: [
-                Container(
-                  width: 42,
-                  height: 42,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient: const RadialGradient(
-                      center: Alignment(-0.35, -0.35),
-                      radius: 0.9,
-                      colors: [
-                        Color(0xFFE0FCFF),
-                        Color(0xFF38BDF8),
-                        Color(0xFF4338CA),
-                      ],
-                    ),
-                    border: Border.all(
-                      color: const Color(0xFFB8F7FF).withAlpha(210),
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: const Color(0xFF38BDF8).withAlpha(70),
-                        blurRadius: 10,
-                      ),
-                    ],
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(4),
-                    child: Image.asset(
-                      _iconAsset,
-                      filterQuality: FilterQuality.medium,
-                      excludeFromSemantics: true,
-                    ),
+                SizedBox(
+                  width: 50,
+                  height: 50,
+                  child: Image.asset(
+                    _iconAsset,
+                    fit: BoxFit.contain,
+                    filterQuality: FilterQuality.high,
+                    excludeFromSemantics: true,
                   ),
                 ),
                 const SizedBox(width: 9),
