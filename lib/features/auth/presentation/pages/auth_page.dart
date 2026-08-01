@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/services/firebase_account_service.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/app_user_profile.dart';
+import '../../../legal/presentation/pages/legal_page.dart';
 
 enum _AuthMode { signIn, signUp }
 
@@ -164,10 +165,49 @@ class _AuthPageState extends State<AuthPage> {
     return 'Connexion impossible pour le moment.';
   }
 
+  void _openLegalPage() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const LegalPage()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Compte WoW100%')),
+      appBar: AppBar(
+        titleSpacing: 10,
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: Image.asset(
+                'assets/images/icones/icone192.png',
+                height: 34,
+                width: 34,
+                fit: BoxFit.cover,
+                errorBuilder: (_, _, _) => const Text(
+                  'WoW100%',
+                  style: TextStyle(
+                    color: AppTheme.gold,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(width: 8),
+            IconButton(
+              tooltip: 'Informations legales',
+              constraints: const BoxConstraints.tightFor(width: 38, height: 38),
+              padding: EdgeInsets.zero,
+              visualDensity: VisualDensity.compact,
+              icon: const Icon(Icons.info_outline),
+              onPressed: _openLegalPage,
+            ),
+          ],
+        ),
+      ),
       body: SafeArea(
         child: StreamBuilder<AppUserProfile?>(
           stream: _accountService.profileChanges,
@@ -268,12 +308,12 @@ class _AuthForm extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const Text(
-                'Compte WoW100%',
+                'WoW100%',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.w900),
               ),
               const SizedBox(height: 8),
               const Text(
-                'Connecte-toi pour rattacher ton futur abonnement premium et masquer les pubs.',
+                'Connecte-toi pour afin de retrouver ton progress et tes favoris, quelque soit ta plateforme (Web, Android, iOS)  ;)',
                 style: TextStyle(color: AppTheme.mutedText, height: 1.4),
               ),
               const SizedBox(height: 18),
@@ -329,7 +369,7 @@ class _AuthForm extends StatelessWidget {
               if (!_isSignUp)
                 TextButton(
                   onPressed: isBusy ? null : onPasswordReset,
-                  child: const Text('Mot de passe oublie'),
+                  child: const Text('Mot de passe oublié'),
                 ),
               const SizedBox(height: 12),
               Row(
@@ -392,7 +432,7 @@ class _SignedInPanel extends StatelessWidget {
   Widget build(BuildContext context) {
     final title = profile.displayName?.trim().isNotEmpty == true
         ? profile.displayName!.trim()
-        : profile.email ?? 'Compte connecte';
+        : profile.email ?? 'Compte connecté';
 
     return Card(
       child: Padding(
@@ -444,7 +484,7 @@ class _SignedInPanel extends StatelessWidget {
             OutlinedButton.icon(
               onPressed: isBusy ? null : onSignOut,
               icon: const Icon(Icons.logout),
-              label: const Text('Deconnexion'),
+              label: const Text('Déconnexion'),
             ),
             if (message != null) ...[
               const SizedBox(height: 14),
@@ -483,8 +523,8 @@ class _PremiumStatusBadge extends StatelessWidget {
           Expanded(
             child: Text(
               isPremium
-                  ? 'Premium actif : les pubs sont masquees.'
-                  : 'Premium inactif : les pubs restent affichees.',
+                  ? 'Premium actif : les pubs sont masquées.'
+                  : 'Premium inactif : les pubs restent affichées.',
               style: TextStyle(color: color, fontWeight: FontWeight.w800),
             ),
           ),
