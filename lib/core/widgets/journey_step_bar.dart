@@ -47,21 +47,19 @@ class JourneyStepBar extends StatelessWidget implements PreferredSizeWidget {
             child: LayoutBuilder(
               builder: (context, constraints) {
                 if (constraints.maxWidth < 780) {
-                  return ListView.separated(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: steps.length,
-                    separatorBuilder: (_, _) => const SizedBox(width: 10),
-                    itemBuilder: (context, index) {
-                      final step = steps[index];
-
-                      return SizedBox(
-                        width: 248,
-                        child: _JourneyStepButton(
-                          step: step,
-                          selected: currentStep == step.number,
+                  return Row(
+                    children: [
+                      for (var index = 0; index < steps.length; index++) ...[
+                        Expanded(
+                          child: _JourneyStepButton(
+                            step: steps[index],
+                            selected: currentStep == steps[index].number,
+                            compact: true,
+                          ),
                         ),
-                      );
-                    },
+                        if (index < steps.length - 1) const SizedBox(width: 6),
+                      ],
+                    ],
                   );
                 }
 
@@ -100,10 +98,15 @@ class _JourneyStep {
 }
 
 class _JourneyStepButton extends StatelessWidget {
-  const _JourneyStepButton({required this.step, required this.selected});
+  const _JourneyStepButton({
+    required this.step,
+    required this.selected,
+    this.compact = false,
+  });
 
   final _JourneyStep step;
   final bool selected;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
@@ -118,19 +121,32 @@ class _JourneyStepButton extends StatelessWidget {
     return FilledButton(
       onPressed: step.onPressed,
       style: FilledButton.styleFrom(
-        minimumSize: const Size(0, 50),
+        minimumSize: Size(0, compact ? 44 : 50),
+        padding: EdgeInsets.symmetric(
+          horizontal: compact ? 6 : 16,
+          vertical: 0,
+        ),
         backgroundColor: backgroundColor,
         foregroundColor: foregroundColor,
-        textStyle: const TextStyle(fontWeight: FontWeight.w900),
+        textStyle: TextStyle(
+          fontSize: compact ? 12 : null,
+          fontWeight: FontWeight.w900,
+        ),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         side: BorderSide(color: borderColor, width: selected ? 1.4 : 1),
+        tapTargetSize: compact ? MaterialTapTargetSize.shrinkWrap : null,
+        visualDensity: compact ? VisualDensity.compact : null,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
         children: [
-          _StepNumberBadge(number: step.number, selected: selected),
-          const SizedBox(width: 10),
+          _StepNumberBadge(
+            number: step.number,
+            selected: selected,
+            compact: compact,
+          ),
+          SizedBox(width: compact ? 5 : 10),
           Flexible(
             child: Text(
               step.label,
@@ -145,10 +161,15 @@ class _JourneyStepButton extends StatelessWidget {
 }
 
 class _StepNumberBadge extends StatelessWidget {
-  const _StepNumberBadge({required this.number, required this.selected});
+  const _StepNumberBadge({
+    required this.number,
+    required this.selected,
+    this.compact = false,
+  });
 
   final int number;
   final bool selected;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
@@ -161,8 +182,8 @@ class _StepNumberBadge extends StatelessWidget {
     final foregroundColor = selected ? AppTheme.background : AppTheme.gold;
 
     return Container(
-      width: 30,
-      height: 30,
+      width: compact ? 24 : 30,
+      height: compact ? 24 : 30,
       alignment: Alignment.center,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
@@ -173,7 +194,7 @@ class _StepNumberBadge extends StatelessWidget {
         '$number',
         style: TextStyle(
           color: foregroundColor,
-          fontSize: 16,
+          fontSize: compact ? 13 : 16,
           fontWeight: FontWeight.w900,
         ),
       ),

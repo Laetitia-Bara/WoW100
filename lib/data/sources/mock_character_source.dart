@@ -14,6 +14,7 @@ class MockCharacterSource {
       realmSlug: '',
       professions: ['Enchantement', 'Couture'],
       achievementPoints: 37390,
+      mythicKeystoneRating: 2478,
     );
   }
 }

@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import 'app_wallpaper_preference.dart';
+
 class AppUserProfile {
   const AppUserProfile({
     required this.uid,
@@ -7,6 +9,7 @@ class AppUserProfile {
     required this.displayName,
     required this.photoUrl,
     required this.isPremium,
+    required this.wallpaperPreference,
   });
 
   final String uid;
@@ -14,6 +17,7 @@ class AppUserProfile {
   final String? displayName;
   final String? photoUrl;
   final bool isPremium;
+  final AppWallpaperPreference wallpaperPreference;
 
   factory AppUserProfile.fromFirestore(
     DocumentSnapshot<Map<String, dynamic>> doc,
@@ -26,6 +30,9 @@ class AppUserProfile {
       displayName: data['displayName'] as String?,
       photoUrl: data['photoUrl'] as String?,
       isPremium: data['isPremium'] as bool? ?? false,
+      wallpaperPreference: AppWallpaperPreference.fromFirestoreValue(
+        data['wallpaperPreference'],
+      ),
     );
   }
 }

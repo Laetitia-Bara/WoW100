@@ -10,6 +10,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
 import '../../data/models/app_user_profile.dart';
+import '../../data/models/app_wallpaper_preference.dart';
 
 class FirebaseAccountService {
   FirebaseAccountService({
@@ -32,6 +33,22 @@ class FirebaseAccountService {
 
   Stream<User?> get authStateChanges => _auth.authStateChanges();
 
+  Stream<AppWallpaperPreference> get wallpaperPreferenceChanges {
+    return _auth.authStateChanges().asyncExpand((user) {
+      if (user == null) {
+        return Stream<AppWallpaperPreference>.value(
+          AppWallpaperPreference.factions,
+        );
+      }
+
+      return _userRef(user.uid).snapshots().map((snapshot) {
+        return AppWallpaperPreference.fromFirestoreValue(
+          snapshot.data()?['wallpaperPreference'],
+        );
+      });
+    });
+  }
+
   Stream<AppUserProfile?> get profileChanges {
     return _auth.authStateChanges().asyncExpand((user) {
       if (user == null) {
@@ -49,6 +66,7 @@ class FirebaseAccountService {
             displayName: user.displayName,
             photoUrl: user.photoURL,
             isPremium: false,
+            wallpaperPreference: AppWallpaperPreference.factions,
           );
         }
 
@@ -169,6 +187,24 @@ class FirebaseAccountService {
     }
 
     await _auth.signOut();
+  }
+
+  Future<void> updateWallpaperPreference(
+    AppWallpaperPreference preference,
+  ) async {
+    final user = _auth.currentUser;
+    if (user == null) {
+      throw FirebaseAuthException(
+        code: 'not-authenticated',
+        message: 'No Firebase account is signed in.',
+      );
+    }
+
+    await ensureUserProfile(user);
+    await _userRef(user.uid).set({
+      'wallpaperPreference': preference.firestoreValue,
+      'updatedAt': FieldValue.serverTimestamp(),
+    }, SetOptions(merge: true));
   }
 
   Future<void> ensureUserProfile(User? user) async {

@@ -15,6 +15,7 @@ service cloud.firestore {
     //   - photoUrl: string or null (optional, max 500) - Account avatar URL.
     //   - providerIds: list (optional, max 8) - Firebase Auth provider ids.
     //   - isPremium: bool (required, client create must be false, immutable by client) - Ad removal entitlement.
+    //   - wallpaperPreference: string (optional, default|horde|alliance) - App background preference.
     //   - createdAt: timestamp (required, immutable) - Profile creation time.
     //   - updatedAt: timestamp (required) - Last profile refresh time.
     //
@@ -29,6 +30,7 @@ service cloud.firestore {
     //   - faction: string (required, max 32) - Character faction.
     //   - realmSlug: string (required, max 100) - Battle.net realm slug.
     //   - achievementPoints: int (required, 0..10000000) - Character achievement points.
+    //   - mythicKeystoneRating: int (optional, 0..10000) - Mythic+ rating.
     //   - portraitUrl: string or null (optional, max 500) - Character portrait URL.
     //   - updatedAt: timestamp (required) - Last selected-character update time.
     //
@@ -59,6 +61,13 @@ service cloud.firestore {
           (value.matches('^https://.*') || value.matches('^http://.*')));
     }
 
+    function validWallpaperPreference(value) {
+      return value is string &&
+        (value == 'default' ||
+          value == 'horde' ||
+          value == 'alliance');
+    }
+
     function hasValidUserShape(data, userId) {
       return data.keys().hasOnly([
           'uid',
@@ -67,6 +76,7 @@ service cloud.firestore {
           'photoUrl',
           'providerIds',
           'isPremium',
+          'wallpaperPreference',
           'createdAt',
           'updatedAt',
         ]) &&
@@ -91,6 +101,8 @@ service cloud.firestore {
               'google.com',
               'apple.com',
             ]))) &&
+        (!('wallpaperPreference' in data) ||
+          validWallpaperPreference(data.wallpaperPreference)) &&
         data.isPremium is bool &&
         data.createdAt is timestamp &&
         data.updatedAt is timestamp;
@@ -121,6 +133,7 @@ service cloud.firestore {
           'faction',
           'realmSlug',
           'achievementPoints',
+          'mythicKeystoneRating',
           'portraitUrl',
           'updatedAt',
         ]) &&
@@ -147,6 +160,10 @@ service cloud.firestore {
         data.achievementPoints is int &&
         data.achievementPoints >= 0 &&
         data.achievementPoints <= 10000000 &&
+        (!('mythicKeystoneRating' in data) ||
+          (data.mythicKeystoneRating is int &&
+            data.mythicKeystoneRating >= 0 &&
+            data.mythicKeystoneRating <= 10000)) &&
         (!('portraitUrl' in data) ||
           validNullableUrl(data.portraitUrl, 500)) &&
         data.updatedAt is timestamp &&

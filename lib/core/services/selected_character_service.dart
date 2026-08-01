@@ -84,6 +84,8 @@ class SelectedCharacterService {
       'faction': character.faction,
       'realmSlug': character.realmSlug,
       'achievementPoints': character.achievementPoints,
+      if (character.mythicKeystoneRating != null)
+        'mythicKeystoneRating': character.mythicKeystoneRating,
       'portraitUrl': character.portraitUrl,
     };
   }
@@ -103,6 +105,7 @@ class SelectedCharacterService {
         'realmSlug': character.realmSlug,
         'professions': character.professions,
         'achievementPoints': character.achievementPoints,
+        'mythicKeystoneRating': character.mythicKeystoneRating,
         'portraitUrl': character.portraitUrl,
       }),
     );

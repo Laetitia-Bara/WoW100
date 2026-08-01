@@ -100,7 +100,7 @@ class _DashboardPageState extends State<DashboardPage> {
       return;
     }
 
-    final character = await _loadSelectedCharacterWithPortrait();
+    final character = await _loadSelectedCharacterWithProfileStats();
 
     if (!mounted) return;
 
@@ -109,10 +109,12 @@ class _DashboardPageState extends State<DashboardPage> {
     });
   }
 
-  Future<WowCharacter?> _loadSelectedCharacterWithPortrait() async {
+  Future<WowCharacter?> _loadSelectedCharacterWithProfileStats() async {
     final character = await _selectedCharacterService.loadCharacter();
 
-    if (character == null || character.portraitUrl?.isNotEmpty == true) {
+    if (character == null ||
+        (character.portraitUrl?.isNotEmpty == true &&
+            character.mythicKeystoneRating != null)) {
       return character;
     }
 
@@ -671,28 +673,27 @@ class _HeroCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final hasCharacter = character != null;
-    final characterClassColor = hasCharacter
-        ? _wowClassColor(character!.characterClass)
+    final currentCharacter = character;
+    final hasCharacter = currentCharacter != null;
+    final characterClassColor = currentCharacter != null
+        ? _wowClassColor(currentCharacter.characterClass)
         : AppTheme.text;
-    final portraitUrl = character?.portraitUrl;
+    final portraitUrl = currentCharacter?.portraitUrl;
     final hasPortrait = portraitUrl != null && portraitUrl.isNotEmpty;
 
     return Card(
       clipBehavior: Clip.antiAlias,
       child: LayoutBuilder(
         builder: (context, constraints) {
-          final showInlinePortrait = hasPortrait && constraints.maxWidth >= 560;
-          final showInlineAchievementBadge =
-              hasCharacter && constraints.maxWidth >= 430;
-          final showStackedPortrait = hasPortrait && !showInlinePortrait;
-          final showStackedAchievementBadge =
-              hasCharacter && !showInlineAchievementBadge;
+          final showInlineProfileStats =
+              hasCharacter && constraints.maxWidth >= 760;
+          final showStackedProfileStats =
+              hasCharacter && !showInlineProfileStats;
 
           return Stack(
             children: [
               if (hasCharacter)
-                _CharacterIdentityBackdrop(character: character!),
+                _CharacterIdentityBackdrop(character: currentCharacter),
               Padding(
                 padding: const EdgeInsets.all(18),
                 child: Column(
@@ -707,7 +708,7 @@ class _HeroCard extends StatelessWidget {
                             children: [
                               Text(
                                 hasCharacter
-                                    ? character!.name
+                                    ? currentCharacter.name
                                     : 'Companion de collection WoW',
                                 style: TextStyle(
                                   color: characterClassColor,
@@ -718,7 +719,7 @@ class _HeroCard extends StatelessWidget {
                               const SizedBox(height: 8),
                               Text(
                                 hasCharacter
-                                    ? '${character!.race} ${character!.characterClass} • ${character!.realm} • ${character!.faction} • Niveau ${character!.level}'
+                                    ? '${currentCharacter.race} ${currentCharacter.characterClass} • ${currentCharacter.realm} • ${currentCharacter.faction} • Niveau ${currentCharacter.level}'
                                     : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
                                 style: const TextStyle(
                                   color: AppTheme.mutedText,
@@ -728,40 +729,45 @@ class _HeroCard extends StatelessWidget {
                             ],
                           ),
                         ),
-                        if (showInlineAchievementBadge) ...[
+                        if (showInlineProfileStats) ...[
                           const SizedBox(width: 14),
                           _AchievementPointsBadge(
-                            points: character!.achievementPoints,
+                            points: currentCharacter.achievementPoints,
                           ),
-                        ],
-                        if (showInlinePortrait) ...[
-                          const SizedBox(width: 16),
-                          _CharacterPortraitFrame(imageUrl: portraitUrl),
+                          const SizedBox(width: 12),
+                          _MythicKeystoneRatingBadge(
+                            rating: currentCharacter.mythicKeystoneRating ?? 0,
+                          ),
+                          if (hasPortrait) ...[
+                            const SizedBox(width: 16),
+                            _CharacterPortraitFrame(imageUrl: portraitUrl),
+                          ],
                         ],
                       ],
                     ),
-                    if (showStackedPortrait || showStackedAchievementBadge) ...[
+                    if (showStackedProfileStats) ...[
                       const SizedBox(height: 14),
-                      if (showStackedPortrait && showStackedAchievementBadge)
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
+                      Wrap(
+                        spacing: 12,
+                        runSpacing: 12,
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        children: [
+                          _AchievementPointsBadge(
+                            points: currentCharacter.achievementPoints,
+                          ),
+                          _MythicKeystoneRatingBadge(
+                            rating: currentCharacter.mythicKeystoneRating ?? 0,
+                          ),
+                          if (hasPortrait)
                             _CharacterPortraitFrame(imageUrl: portraitUrl),
-                            const SizedBox(width: 12),
-                            Expanded(
-                              child: _AchievementPointsBadge(
-                                points: character!.achievementPoints,
-                                width: double.infinity,
-                              ),
-                            ),
-                          ],
-                        )
-                      else if (showStackedAchievementBadge)
-                        _AchievementPointsBadge(
-                          points: character!.achievementPoints,
-                        )
-                      else
-                        _CharacterPortraitFrame(imageUrl: portraitUrl!),
+                        ],
+                      ),
+                    ] else if (!hasCharacter && hasPortrait) ...[
+                      const SizedBox(height: 14),
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: _CharacterPortraitFrame(imageUrl: portraitUrl),
+                      ),
                     ],
                     const SizedBox(height: 18),
                     _TotalProgressSummary(
@@ -780,10 +786,9 @@ class _HeroCard extends StatelessWidget {
 }
 
 class _AchievementPointsBadge extends StatelessWidget {
-  const _AchievementPointsBadge({required this.points, this.width = 166});
+  const _AchievementPointsBadge({required this.points});
 
   final int points;
-  final double width;
 
   @override
   Widget build(BuildContext context) {
@@ -792,7 +797,7 @@ class _AchievementPointsBadge extends StatelessWidget {
     return Semantics(
       label: 'Points de hauts faits $formattedPoints',
       child: Container(
-        width: width,
+        width: 166,
         height: 76,
         padding: const EdgeInsets.all(1.5),
         decoration: BoxDecoration(
@@ -860,10 +865,13 @@ class _AchievementPointsBadge extends StatelessWidget {
                       ),
                     ],
                   ),
-                  child: const Icon(
-                    Icons.emoji_events,
-                    color: Color(0xFF3D2307),
-                    size: 24,
+                  child: Padding(
+                    padding: const EdgeInsets.all(3),
+                    child: Image.asset(
+                      'assets/images/icones/hf_points_flower_badge.png',
+                      fit: BoxFit.contain,
+                      filterQuality: FilterQuality.high,
+                    ),
                   ),
                 ),
                 const SizedBox(width: 10),
@@ -890,6 +898,133 @@ class _AchievementPointsBadge extends StatelessWidget {
                           maxLines: 1,
                           style: const TextStyle(
                             color: Color(0xFFFFE7A3),
+                            fontSize: 25,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _MythicKeystoneRatingBadge extends StatelessWidget {
+  const _MythicKeystoneRatingBadge({required this.rating});
+
+  final int rating;
+
+  @override
+  Widget build(BuildContext context) {
+    final formattedRating = _formatNumber(rating);
+
+    return Semantics(
+      label: 'Cote Mythique Plus $formattedRating',
+      child: Container(
+        width: 132,
+        height: 76,
+        padding: const EdgeInsets.all(1.5),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(18),
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              const Color(0xFFB8F7FF).withAlpha(225),
+              const Color(0xFF38BDF8).withAlpha(205),
+              const Color(0xFF2E1065).withAlpha(220),
+            ],
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withAlpha(130),
+              blurRadius: 18,
+              offset: const Offset(0, 8),
+            ),
+            BoxShadow(
+              color: const Color(0xFF38BDF8).withAlpha(44),
+              blurRadius: 24,
+              spreadRadius: 1,
+            ),
+          ],
+        ),
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16.5),
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                const Color(0xFF0C1A2E).withAlpha(238),
+                const Color(0xFF11071F).withAlpha(238),
+                const Color(0xFF25104D).withAlpha(228),
+              ],
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 9),
+            child: Row(
+              children: [
+                Container(
+                  width: 42,
+                  height: 42,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    gradient: const RadialGradient(
+                      center: Alignment(-0.35, -0.35),
+                      radius: 0.9,
+                      colors: [
+                        Color(0xFFE0FCFF),
+                        Color(0xFF38BDF8),
+                        Color(0xFF4338CA),
+                      ],
+                    ),
+                    border: Border.all(
+                      color: const Color(0xFFB8F7FF).withAlpha(210),
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFF38BDF8).withAlpha(70),
+                        blurRadius: 10,
+                      ),
+                    ],
+                  ),
+                  child: const Icon(
+                    Icons.auto_awesome,
+                    color: Color(0xFF071527),
+                    size: 22,
+                  ),
+                ),
+                const SizedBox(width: 9),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text(
+                        'Cote MM+',
+                        maxLines: 1,
+                        style: TextStyle(
+                          color: Color(0xFFB8F7FF),
+                          fontSize: 11,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          formattedRating,
+                          maxLines: 1,
+                          style: const TextStyle(
+                            color: Color(0xFFE0FCFF),
                             fontSize: 25,
                             fontWeight: FontWeight.w900,
                           ),
@@ -1161,15 +1296,40 @@ class _DashboardSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      children: [_SearchSectionTitle(title), const SizedBox(height: 10), child],
+    );
+  }
+}
+
+class _SearchSectionTitle extends StatelessWidget {
+  const _SearchSectionTitle(this.title);
+
+  static const _campaignQuestIconAsset =
+      'assets/images/icones/campaign_quest_icon_native.png';
+
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
       children: [
-        Text(
-          title,
-          style: Theme.of(
-            context,
-          ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w900),
+        Image.asset(
+          _campaignQuestIconAsset,
+          width: 16,
+          height: 20,
+          filterQuality: FilterQuality.medium,
+          excludeFromSemantics: true,
         ),
-        const SizedBox(height: 10),
-        child,
+        const SizedBox(width: 8),
+        Flexible(
+          child: Text(
+            title,
+            style: Theme.of(
+              context,
+            ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w900),
+          ),
+        ),
       ],
     );
   }
@@ -1227,14 +1387,7 @@ class _ExtensionSearchHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(
-          child: Text(
-            'Rechercher par extension',
-            style: Theme.of(
-              context,
-            ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w900),
-          ),
-        ),
+        Expanded(child: const _SearchSectionTitle('Rechercher par extension')),
         Tooltip(
           message: 'Filtres',
           child: IconButton.outlined(

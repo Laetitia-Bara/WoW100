@@ -8,6 +8,7 @@ class WowCharacter {
   final String realmSlug;
   final List<String> professions;
   final int achievementPoints;
+  final int? mythicKeystoneRating;
   final String? portraitUrl;
 
   const WowCharacter({
@@ -20,6 +21,7 @@ class WowCharacter {
     required this.realmSlug,
     this.professions = const [],
     this.achievementPoints = 0,
+    this.mythicKeystoneRating,
     this.portraitUrl,
   });
 
@@ -34,8 +36,17 @@ class WowCharacter {
       realmSlug: json['realmSlug'] ?? '',
       professions: _professionsFromJson(json['professions']),
       achievementPoints: json['achievementPoints'] ?? 0,
+      mythicKeystoneRating: _nullableIntFromJson(json['mythicKeystoneRating']),
       portraitUrl: json['portraitUrl'],
     );
+  }
+
+  static int? _nullableIntFromJson(Object? value) {
+    if (value is int) return value;
+    if (value is num) return value.round();
+    if (value is String) return int.tryParse(value);
+
+    return null;
   }
 
   static List<String> _professionsFromJson(Object? value) {

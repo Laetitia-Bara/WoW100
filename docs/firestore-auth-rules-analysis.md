@@ -19,6 +19,7 @@
   - `photoUrl`: URL string or null, optional, max 500 chars.
   - `providerIds`: list, optional, max 8 provider ids.
   - `isPremium`: bool, required, false on client create, immutable by client update.
+  - `wallpaperPreference`: string, optional, one of `default`, `horde`, `alliance`.
   - `createdAt`: timestamp, required, immutable.
   - `updatedAt`: timestamp, required.
   - Security assumption:
@@ -45,6 +46,7 @@
 - Ownership hijacking: denied because `uid` must match the document id and auth uid, and cannot change.
 - Resource exhaustion: string fields and provider list have size limits.
 - Privilege escalation: denied because `isPremium` must be false on client create and unchanged on client update.
+- Wallpaper preference abuse: constrained to three known values and owner-only updates.
 - Schema pollution: denied by `hasOnly`.
 - Required field omission: denied by `hasAll`.
 - Query mismatch: no list query is required by the app.

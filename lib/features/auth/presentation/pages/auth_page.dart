@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/services/firebase_account_service.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/app_user_profile.dart';
+import '../../../../data/models/app_wallpaper_preference.dart';
 import '../../../legal/presentation/pages/legal_page.dart';
 
 enum _AuthMode { signIn, signUp }
@@ -80,6 +81,16 @@ class _AuthPageState extends State<AuthPage> {
 
   Future<void> _signOut() async {
     await _runAuthAction(_accountService.signOut, stayOnPage: true);
+  }
+
+  Future<void> _updateWallpaperPreference(
+    AppWallpaperPreference preference,
+  ) async {
+    await _runAuthAction(
+      () => _accountService.updateWallpaperPreference(preference),
+      successMessage: 'Fond d\'ecran mis a jour.',
+      stayOnPage: true,
+    );
   }
 
   Future<void> _runAuthAction(
@@ -249,6 +260,7 @@ class _AuthPageState extends State<AuthPage> {
                               profile: profile,
                               isBusy: _isBusy,
                               message: _message,
+                              onWallpaperChanged: _updateWallpaperPreference,
                               onSignOut: _signOut,
                             ),
                     ),
@@ -420,12 +432,14 @@ class _SignedInPanel extends StatelessWidget {
     required this.profile,
     required this.isBusy,
     required this.message,
+    required this.onWallpaperChanged,
     required this.onSignOut,
   });
 
   final AppUserProfile profile;
   final bool isBusy;
   final String? message;
+  final ValueChanged<AppWallpaperPreference> onWallpaperChanged;
   final VoidCallback onSignOut;
 
   @override
@@ -479,6 +493,12 @@ class _SignedInPanel extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 18),
+            _WallpaperPreferenceSelector(
+              selected: profile.wallpaperPreference,
+              isBusy: isBusy,
+              onChanged: onWallpaperChanged,
+            ),
+            const SizedBox(height: 18),
             _PremiumStatusBadge(isPremium: profile.isPremium),
             const SizedBox(height: 18),
             OutlinedButton.icon(
@@ -529,6 +549,161 @@ class _PremiumStatusBadge extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _WallpaperPreferenceSelector extends StatelessWidget {
+  const _WallpaperPreferenceSelector({
+    required this.selected,
+    required this.isBusy,
+    required this.onChanged,
+  });
+
+  final AppWallpaperPreference selected;
+  final bool isBusy;
+  final ValueChanged<AppWallpaperPreference> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    const choices = AppWallpaperPreference.values;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const Text(
+          'Fond d\'ecran',
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w900),
+        ),
+        const SizedBox(height: 10),
+        LayoutBuilder(
+          builder: (context, constraints) {
+            final isCompact = constraints.maxWidth < 430;
+            final children = [
+              for (final choice in choices)
+                _WallpaperChoiceTile(
+                  choice: choice,
+                  isSelected: selected == choice,
+                  isBusy: isBusy,
+                  onTap: () {
+                    if (selected != choice) {
+                      onChanged(choice);
+                    }
+                  },
+                ),
+            ];
+
+            if (isCompact) {
+              return Column(
+                children: [
+                  for (final child in children) ...[
+                    child,
+                    if (child != children.last) const SizedBox(height: 10),
+                  ],
+                ],
+              );
+            }
+
+            return Row(
+              children: [
+                for (final child in children) ...[
+                  Expanded(child: child),
+                  if (child != children.last) const SizedBox(width: 10),
+                ],
+              ],
+            );
+          },
+        ),
+      ],
+    );
+  }
+}
+
+class _WallpaperChoiceTile extends StatelessWidget {
+  const _WallpaperChoiceTile({
+    required this.choice,
+    required this.isSelected,
+    required this.isBusy,
+    required this.onTap,
+  });
+
+  final AppWallpaperPreference choice;
+  final bool isSelected;
+  final bool isBusy;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final borderColor = isSelected
+        ? AppTheme.gold
+        : AppTheme.mutedText.withValues(alpha: 0.28);
+
+    return Semantics(
+      button: true,
+      selected: isSelected,
+      label: choice.label,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: isBusy ? null : onTap,
+          borderRadius: BorderRadius.circular(14),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 180),
+            height: 78,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(14),
+              border: Border.all(color: borderColor, width: isSelected ? 2 : 1),
+            ),
+            clipBehavior: Clip.antiAlias,
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                Image.asset(
+                  choice.assetPath,
+                  fit: BoxFit.cover,
+                  alignment: Alignment.center,
+                  filterQuality: FilterQuality.medium,
+                ),
+                ColoredBox(
+                  color: Colors.black.withValues(
+                    alpha: isSelected ? 0.22 : 0.45,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Align(
+                    alignment: Alignment.bottomLeft,
+                    child: Row(
+                      children: [
+                        Icon(
+                          isSelected
+                              ? Icons.check_circle
+                              : Icons.radio_button_unchecked,
+                          size: 18,
+                          color: isSelected ? AppTheme.gold : AppTheme.text,
+                        ),
+                        const SizedBox(width: 7),
+                        Expanded(
+                          child: Text(
+                            choice.label,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                              color: isSelected ? AppTheme.gold : AppTheme.text,
+                              fontWeight: FontWeight.w900,
+                              fontSize: 12,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

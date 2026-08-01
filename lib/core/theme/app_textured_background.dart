@@ -2,6 +2,8 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 
+import '../../data/models/app_wallpaper_preference.dart';
+import '../services/firebase_account_service.dart';
 import 'app_theme.dart';
 
 class AppTexturedBackground extends StatelessWidget {
@@ -11,20 +13,29 @@ class AppTexturedBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        const Positioned.fill(child: ColoredBox(color: AppTheme.background)),
-        Positioned.fill(
-          child: Image.asset(
-            'assets/images/icones/wallpaper_app.jpg',
-            fit: BoxFit.cover,
-            alignment: Alignment.center,
-            filterQuality: FilterQuality.medium,
-          ),
-        ),
-        const Positioned.fill(child: _WallpaperVeil()),
-        Positioned.fill(child: child),
-      ],
+    return StreamBuilder<AppWallpaperPreference>(
+      stream: FirebaseAccountService().wallpaperPreferenceChanges,
+      builder: (context, snapshot) {
+        final wallpaper = snapshot.data ?? AppWallpaperPreference.factions;
+
+        return Stack(
+          children: [
+            const Positioned.fill(
+              child: ColoredBox(color: AppTheme.background),
+            ),
+            Positioned.fill(
+              child: Image.asset(
+                wallpaper.assetPath,
+                fit: BoxFit.cover,
+                alignment: Alignment.center,
+                filterQuality: FilterQuality.medium,
+              ),
+            ),
+            const Positioned.fill(child: _WallpaperVeil()),
+            Positioned.fill(child: child),
+          ],
+        );
+      },
     );
   }
 }

@@ -154,6 +154,50 @@ function pickCharacterPortraitUrl(media: any): string | null {
   return preferred?.value ?? null;
 }
 
+async function fetchCharacterMythicKeystoneRating(
+  token: string,
+  character: {name?: string; realmSlug?: string},
+): Promise<number> {
+  if (!character.realmSlug || !character.name) {
+    return 0;
+  }
+
+  try {
+    const characterSlug = encodeURIComponent(character.name.toLowerCase());
+    const result = await axios.get(
+      `https://eu.api.blizzard.com/profile/wow/character/${character.realmSlug}/${characterSlug}/mythic-keystone-profile`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+        params: {
+          namespace: "profile-eu",
+          locale: "fr_FR",
+        },
+      },
+    );
+
+    return ratingFromMythicKeystoneProfile(result.data);
+  } catch (_) {
+    return 0;
+  }
+}
+
+function ratingFromMythicKeystoneProfile(profile: any): number {
+  const rating = profile?.current_mythic_rating?.rating;
+
+  if (typeof rating === "number") {
+    return Math.round(rating);
+  }
+
+  if (typeof rating === "string") {
+    const parsed = Number.parseFloat(rating);
+    return Number.isFinite(parsed) ? Math.round(parsed) : 0;
+  }
+
+  return 0;
+}
+
 export const exchangeBattleNetCode = onRequest(
   async (request, response) => {
     try {
@@ -276,16 +320,23 @@ export const getWowCharacters = onRequest(
 
       const finalCharacters = await Promise.all(
         characterSummaries.map(async (character) => {
-          const [professions, profile, portraitUrl] = await Promise.all([
+          const [
+            professions,
+            profile,
+            portraitUrl,
+            mythicKeystoneRating,
+          ] = await Promise.all([
             fetchCharacterProfessions(token, character),
             fetchCharacterProfile(token, character),
             fetchCharacterPortraitUrl(token, character),
+            fetchCharacterMythicKeystoneRating(token, character),
           ]);
 
           return {
             ...character,
             professions,
             achievementPoints: profile.achievement_points ?? 0,
+            mythicKeystoneRating,
             portraitUrl,
           };
         })
