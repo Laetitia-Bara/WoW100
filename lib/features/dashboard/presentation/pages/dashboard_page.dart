@@ -841,32 +841,11 @@ class _AchievementPointsBadge extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 9),
             child: Row(
               children: [
-                Container(
+                SizedBox(
                   width: 42,
                   height: 42,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient: const RadialGradient(
-                      center: Alignment(-0.35, -0.35),
-                      radius: 0.9,
-                      colors: [
-                        Color(0xFFFFF4BD),
-                        Color(0xFFE6B64D),
-                        Color(0xFF8D5611),
-                      ],
-                    ),
-                    border: Border.all(
-                      color: const Color(0xFFFFE7A3).withAlpha(210),
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: AppTheme.gold.withAlpha(70),
-                        blurRadius: 10,
-                      ),
-                    ],
-                  ),
                   child: Padding(
-                    padding: const EdgeInsets.all(3),
+                    padding: const EdgeInsets.all(1),
                     child: Image.asset(
                       'assets/images/icones/hf_points_flower_badge.png',
                       fit: BoxFit.contain,
@@ -917,6 +896,8 @@ class _AchievementPointsBadge extends StatelessWidget {
 
 class _MythicKeystoneRatingBadge extends StatelessWidget {
   const _MythicKeystoneRatingBadge({required this.rating});
+
+  static const _iconAsset = 'assets/images/icones/mythic_keystone_icon.png';
 
   final int rating;
 
@@ -995,10 +976,13 @@ class _MythicKeystoneRatingBadge extends StatelessWidget {
                       ),
                     ],
                   ),
-                  child: const Icon(
-                    Icons.auto_awesome,
-                    color: Color(0xFF071527),
-                    size: 22,
+                  child: Padding(
+                    padding: const EdgeInsets.all(4),
+                    child: Image.asset(
+                      _iconAsset,
+                      filterQuality: FilterQuality.medium,
+                      excludeFromSemantics: true,
+                    ),
                   ),
                 ),
                 const SizedBox(width: 9),
@@ -1296,7 +1280,11 @@ class _DashboardSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [_SearchSectionTitle(title), const SizedBox(height: 10), child],
+      children: [
+        _SearchSectionTitle(title),
+        const SizedBox(height: 10),
+        Padding(padding: const EdgeInsets.only(left: 24), child: child),
+      ],
     );
   }
 }
