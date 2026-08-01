@@ -567,7 +567,6 @@ class _DashboardAccountActions extends StatelessWidget {
       return Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          _AccountAction(onPressed: onAccountTap, compact: true),
           IconButton(
             tooltip: 'Mes personnages',
             icon: const Icon(Icons.person),
@@ -578,6 +577,7 @@ class _DashboardAccountActions extends StatelessWidget {
             icon: const Icon(Icons.group, color: Color(0xFF00AEFF)),
             onPressed: onFriendsTap,
           ),
+          _AccountAction(onPressed: onAccountTap, compact: true),
           IconButton(
             tooltip: 'Déconnexion',
             icon: const Icon(Icons.logout),
@@ -590,13 +590,13 @@ class _DashboardAccountActions extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        _AccountAction(onPressed: onAccountTap),
         TextButton.icon(
           onPressed: onCharacterTap,
           icon: const Icon(Icons.person),
           label: const Text('Mes personnages'),
         ),
         _BattleNetFriendsAction(onPressed: onFriendsTap),
+        _AccountAction(onPressed: onAccountTap),
         IconButton(
           tooltip: 'Déconnexion',
           icon: const Icon(Icons.logout),
