@@ -402,13 +402,26 @@ class _AuthForm extends StatelessWidget {
               const SizedBox(height: 12),
               OutlinedButton.icon(
                 onPressed: isBusy ? null : onGoogle,
-                icon: const Icon(Icons.g_mobiledata, size: 28),
+                icon: Opacity(
+                  opacity: isBusy ? 0.38 : 1,
+                  child: Image.asset(
+                    'assets/images/google_g_logo.png',
+                    width: 18,
+                    height: 18,
+                    fit: BoxFit.contain,
+                    filterQuality: FilterQuality.high,
+                  ),
+                ),
                 label: const Text('Continuer avec Google'),
               ),
               const SizedBox(height: 10),
               OutlinedButton.icon(
                 onPressed: isBusy ? null : onApple,
-                icon: const Icon(Icons.apple),
+                icon: Icon(
+                  Icons.apple,
+                  color: isBusy ? AppTheme.mutedText : Colors.white,
+                  size: 21,
+                ),
                 label: const Text('Continuer avec Apple'),
               ),
               if (isBusy) ...[
