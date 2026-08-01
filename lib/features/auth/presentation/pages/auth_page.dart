@@ -325,7 +325,7 @@ class _AuthForm extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               const Text(
-                'Connecte-toi pour afin de retrouver ton progress et tes favoris, quelque soit ta plateforme (Web, Android, iOS)  ;)',
+                'Connecte-toi afin de retrouver ton progress et tes favoris, quelque soit ta plateforme (Web, Android, iOS)  ;)',
                 style: TextStyle(color: AppTheme.mutedText, height: 1.4),
               ),
               const SizedBox(height: 18),
