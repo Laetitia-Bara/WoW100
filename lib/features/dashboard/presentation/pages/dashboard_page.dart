@@ -639,6 +639,9 @@ class _HeroCard extends StatelessWidget {
           final showInlinePortrait = hasPortrait && constraints.maxWidth >= 560;
           final showInlineAchievementBadge =
               hasCharacter && constraints.maxWidth >= 430;
+          final showStackedPortrait = hasPortrait && !showInlinePortrait;
+          final showStackedAchievementBadge =
+              hasCharacter && !showInlineAchievementBadge;
 
           return Stack(
             children: [
@@ -691,15 +694,28 @@ class _HeroCard extends StatelessWidget {
                         ],
                       ],
                     ),
-                    if (hasCharacter && !showInlineAchievementBadge) ...[
+                    if (showStackedPortrait || showStackedAchievementBadge) ...[
                       const SizedBox(height: 14),
-                      _AchievementPointsBadge(
-                        points: character!.achievementPoints,
-                      ),
-                    ],
-                    if (hasPortrait && !showInlinePortrait) ...[
-                      const SizedBox(height: 14),
-                      _CharacterPortraitFrame(imageUrl: portraitUrl),
+                      if (showStackedPortrait && showStackedAchievementBadge)
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            _CharacterPortraitFrame(imageUrl: portraitUrl),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: _AchievementPointsBadge(
+                                points: character!.achievementPoints,
+                                width: double.infinity,
+                              ),
+                            ),
+                          ],
+                        )
+                      else if (showStackedAchievementBadge)
+                        _AchievementPointsBadge(
+                          points: character!.achievementPoints,
+                        )
+                      else
+                        _CharacterPortraitFrame(imageUrl: portraitUrl!),
                     ],
                     const SizedBox(height: 18),
                     _TotalProgressSummary(
@@ -718,9 +734,10 @@ class _HeroCard extends StatelessWidget {
 }
 
 class _AchievementPointsBadge extends StatelessWidget {
-  const _AchievementPointsBadge({required this.points});
+  const _AchievementPointsBadge({required this.points, this.width = 166});
 
   final int points;
+  final double width;
 
   @override
   Widget build(BuildContext context) {
@@ -729,7 +746,7 @@ class _AchievementPointsBadge extends StatelessWidget {
     return Semantics(
       label: 'Points de hauts faits $formattedPoints',
       child: Container(
-        width: 166,
+        width: width,
         height: 76,
         padding: const EdgeInsets.all(1.5),
         decoration: BoxDecoration(
