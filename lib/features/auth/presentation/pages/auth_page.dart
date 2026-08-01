@@ -116,7 +116,10 @@ class _AuthPageState extends State<AuthPage> {
 
       if (Navigator.canPop(context)) {
         Navigator.pop(context);
+        return;
       }
+
+      Navigator.of(context).pushNamedAndRemoveUntil('/', (_) => false);
     } on FirebaseAuthException catch (error) {
       if (!mounted) return;
       setState(() {

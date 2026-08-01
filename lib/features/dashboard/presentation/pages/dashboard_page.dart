@@ -174,10 +174,7 @@ class _DashboardPageState extends State<DashboardPage> {
 
     if (!mounted) return;
 
-    Navigator.of(context).pushAndRemoveUntil(
-      MaterialPageRoute(builder: (_) => const AuthPage()),
-      (_) => false,
-    );
+    Navigator.of(context).pushNamedAndRemoveUntil('/', (_) => false);
   }
 
   Future<void> _openBattleNetLogin() async {
