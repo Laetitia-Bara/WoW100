@@ -503,20 +503,10 @@ class _DashboardTopBar extends StatelessWidget {
                 icon: const Icon(Icons.info_outline),
                 onPressed: onLegalTap,
               ),
-              IconButton(
-                tooltip: 'Compte WoW100%',
-                constraints: const BoxConstraints.tightFor(
-                  width: 38,
-                  height: 38,
-                ),
-                padding: EdgeInsets.zero,
-                visualDensity: VisualDensity.compact,
-                icon: const Icon(Icons.account_circle_outlined),
-                onPressed: onAccountTap,
-              ),
               const Spacer(),
               _DashboardAccountActions(
                 mainCharacter: mainCharacter,
+                onAccountTap: onAccountTap,
                 onLoginTap: onLoginTap,
                 onCharacterTap: onCharacterTap,
                 onFriendsTap: onFriendsTap,
@@ -533,6 +523,7 @@ class _DashboardTopBar extends StatelessWidget {
 class _DashboardAccountActions extends StatelessWidget {
   const _DashboardAccountActions({
     required this.mainCharacter,
+    required this.onAccountTap,
     required this.onLoginTap,
     required this.onCharacterTap,
     required this.onFriendsTap,
@@ -540,6 +531,7 @@ class _DashboardAccountActions extends StatelessWidget {
   });
 
   final WowCharacter? mainCharacter;
+  final VoidCallback onAccountTap;
   final VoidCallback onLoginTap;
   final VoidCallback onCharacterTap;
   final VoidCallback onFriendsTap;
@@ -550,17 +542,24 @@ class _DashboardAccountActions extends StatelessWidget {
     final isCompact = MediaQuery.sizeOf(context).width < 480;
 
     if (mainCharacter == null) {
-      return FilledButton.icon(
-        onPressed: onLoginTap,
-        icon: const Icon(Icons.login, size: 18),
-        label: Text(isCompact ? 'Connexion' : 'Connexion Battle.net'),
-        style: FilledButton.styleFrom(
-          backgroundColor: AppTheme.gold,
-          foregroundColor: AppTheme.background,
-          visualDensity: VisualDensity.compact,
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-          textStyle: const TextStyle(fontWeight: FontWeight.w900),
-        ),
+      return Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          _AccountAction(onPressed: onAccountTap, compact: true),
+          const SizedBox(width: 8),
+          FilledButton.icon(
+            onPressed: onLoginTap,
+            icon: const Icon(Icons.login, size: 18),
+            label: Text(isCompact ? 'Connexion' : 'Connexion Battle.net'),
+            style: FilledButton.styleFrom(
+              backgroundColor: AppTheme.gold,
+              foregroundColor: AppTheme.background,
+              visualDensity: VisualDensity.compact,
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+              textStyle: const TextStyle(fontWeight: FontWeight.w900),
+            ),
+          ),
+        ],
       );
     }
 
@@ -568,6 +567,7 @@ class _DashboardAccountActions extends StatelessWidget {
       return Row(
         mainAxisSize: MainAxisSize.min,
         children: [
+          _AccountAction(onPressed: onAccountTap, compact: true),
           IconButton(
             tooltip: 'Mes personnages',
             icon: const Icon(Icons.person),
@@ -590,6 +590,7 @@ class _DashboardAccountActions extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
+        _AccountAction(onPressed: onAccountTap),
         TextButton.icon(
           onPressed: onCharacterTap,
           icon: const Icon(Icons.person),
@@ -602,6 +603,30 @@ class _DashboardAccountActions extends StatelessWidget {
           onPressed: onLogoutTap,
         ),
       ],
+    );
+  }
+}
+
+class _AccountAction extends StatelessWidget {
+  const _AccountAction({required this.onPressed, this.compact = false});
+
+  final VoidCallback onPressed;
+  final bool compact;
+
+  @override
+  Widget build(BuildContext context) {
+    if (compact) {
+      return IconButton(
+        tooltip: 'Compte WoW100%',
+        icon: const Icon(Icons.account_circle_outlined),
+        onPressed: onPressed,
+      );
+    }
+
+    return TextButton.icon(
+      onPressed: onPressed,
+      icon: const Icon(Icons.account_circle_outlined),
+      label: const Text('Compte'),
     );
   }
 }
