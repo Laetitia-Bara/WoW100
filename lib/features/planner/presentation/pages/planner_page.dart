@@ -2603,38 +2603,36 @@ class _SoloPlannerActionBar extends StatelessWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < 1240) {
-          return Wrap(
-            spacing: 10,
-            runSpacing: 10,
-            crossAxisAlignment: WrapCrossAlignment.center,
-            children: [
-              count,
-              clearButton,
-              selectAllButton,
-              savedRoutesButton,
-              saveButton,
-              routeButton,
-              sortControls,
-            ],
-          );
-        }
+        final topRow = constraints.maxWidth < 820
+            ? Wrap(
+                spacing: 10,
+                runSpacing: 10,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [count, clearButton, selectAllButton, sortControls],
+              )
+            : Row(
+                children: [
+                  count,
+                  const SizedBox(width: 10),
+                  clearButton,
+                  const SizedBox(width: 10),
+                  selectAllButton,
+                  const Spacer(),
+                  sortControls,
+                ],
+              );
 
-        return Row(
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            count,
-            const SizedBox(width: 10),
-            clearButton,
-            const SizedBox(width: 10),
-            selectAllButton,
-            const SizedBox(width: 10),
-            savedRoutesButton,
-            const SizedBox(width: 10),
-            saveButton,
-            const SizedBox(width: 10),
-            routeButton,
-            const Spacer(),
-            sortControls,
+            topRow,
+            const SizedBox(height: 10),
+            Wrap(
+              spacing: 10,
+              runSpacing: 10,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [savedRoutesButton, saveButton, routeButton],
+            ),
           ],
         );
       },
