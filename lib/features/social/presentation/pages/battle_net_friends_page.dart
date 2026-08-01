@@ -234,8 +234,19 @@ class _BattleNetFriendsPageState extends State<BattleNetFriendsPage> {
   }
 
   Future<void> _saveFriend(BattleNetFriend friend) async {
-    await _friendService.saveFriend(friend);
-    await _reloadFriends();
+    try {
+      await _friendService.saveFriend(friend);
+      await _reloadFriends();
+    } catch (_) {
+      if (!mounted) return;
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Impossible d enregistrer cet ami pour le moment.'),
+        ),
+      );
+      return;
+    }
 
     if (!mounted) return;
 
@@ -245,8 +256,18 @@ class _BattleNetFriendsPageState extends State<BattleNetFriendsPage> {
   }
 
   Future<void> _removeFriend(BattleNetFriend friend) async {
-    await _friendService.removeFriend(friend);
-    await _reloadFriends();
+    try {
+      await _friendService.removeFriend(friend);
+      await _reloadFriends();
+    } catch (_) {
+      if (!mounted) return;
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Impossible de retirer cet ami pour le moment.'),
+        ),
+      );
+    }
   }
 
   bool _isSaved(BattleNetFriend friend) {
@@ -329,7 +350,7 @@ class _BattleNetFriendsPageState extends State<BattleNetFriendsPage> {
                           padding: const EdgeInsets.fromLTRB(16, 6, 16, 10),
                           sliver: SliverToBoxAdapter(
                             child: Text(
-                              'Liste locale',
+                              'Liste Firestore',
                               style: Theme.of(context).textTheme.titleLarge
                                   ?.copyWith(fontWeight: FontWeight.w900),
                             ),

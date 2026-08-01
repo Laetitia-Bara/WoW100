@@ -860,10 +860,10 @@ class _AchievementPointsBadge extends StatelessWidget {
             child: Row(
               children: [
                 SizedBox(
-                  width: 48,
-                  height: 48,
+                  width: 54,
+                  height: 54,
                   child: Padding(
-                    padding: const EdgeInsets.all(0.5),
+                    padding: EdgeInsets.zero,
                     child: Image.asset(
                       'assets/images/icones/hf_points_flower_badge.png',
                       fit: BoxFit.contain,

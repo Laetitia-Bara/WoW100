@@ -12,6 +12,8 @@ import 'package:wow100/data/repositories/battle_net_repository.dart';
 import '../../../../core/ads/app_ads.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/services/route_planner_service.dart';
+import '../../../../core/services/battle_net_friend_service.dart';
+import '../../../../core/services/saved_farm_route_service.dart';
 import '../../../../core/services/solo_planner_service.dart';
 import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../core/theme/app_theme.dart';
@@ -20,6 +22,8 @@ import '../../../../core/widgets/journey_step_bar.dart';
 import '../../../../core/widgets/scrolling_notice_banner.dart';
 import '../../../../core/widgets/web_sponsor_panel.dart';
 import '../../../../data/models/tracking_item.dart';
+import '../../../../data/models/battle_net_friend.dart';
+import '../../../../data/models/saved_farm_route.dart';
 import '../../../../data/models/wow_character.dart';
 import '../../../../data/models/wow_expansion.dart';
 import '../../../../data/models/wow_region_filter.dart';
@@ -1020,11 +1024,21 @@ enum _AdventureCrewMode { solo, friends }
 class _SoloPlannerPageState extends State<SoloPlannerPage> {
   final PlannerRepository _repository = JsonPlannerRepository();
   final SoloPlannerService _soloPlannerService = SoloPlannerService();
+  final BattleNetFriendService _friendService = BattleNetFriendService();
+  final SavedFarmRouteService _savedFarmRouteService = SavedFarmRouteService();
+  final SelectedCharacterService _selectedCharacterService =
+      SelectedCharacterService();
   final Set<String> _collapsedGroups = {};
 
   List<TrackingItem> _items = [];
   Set<String> _todayItemIds = {};
+  List<BattleNetFriend> _friends = [];
+  List<SavedFarmRoute> _friendPublicRoutes = [];
+  BattleNetFriend? _selectedFriend;
+  SavedFarmRoute? _selectedFriendRoute;
+  WowCharacter? _selectedCharacter;
   bool _isLoading = true;
+  bool _isLoadingFriendRoutes = false;
   String _searchQuery = '';
   _SoloPlannerSortMode _sortMode = _SoloPlannerSortMode.location;
   _AdventureCrewMode _crewMode = _AdventureCrewMode.solo;
@@ -1044,6 +1058,8 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
     final todayItemIds = await _soloPlannerService.selectedTodayItemIds(
       soloItemIds,
     );
+    final character = await _selectedCharacterService.loadCharacter();
+    final friends = await _friendService.loadFriends();
     final allCatalogItems = await Future.wait([
       _repository.getItems(
         WowExpansion.allAchievements,
@@ -1073,6 +1089,8 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
     setState(() {
       _items = selectedItems;
       _todayItemIds = todayItemIds;
+      _friends = friends;
+      _selectedCharacter = character;
       _isLoading = false;
     });
   }
@@ -1173,6 +1191,73 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
     });
   }
 
+  void _setCrewMode(_AdventureCrewMode mode) {
+    if (_crewMode == mode) return;
+
+    setState(() {
+      _crewMode = mode;
+      if (mode == _AdventureCrewMode.solo) {
+        _selectedFriend = null;
+        _selectedFriendRoute = null;
+        _friendPublicRoutes = const [];
+        _isLoadingFriendRoutes = false;
+      }
+    });
+  }
+
+  Future<void> _setSelectedFriend(BattleNetFriend friend, bool selected) async {
+    if (!selected) {
+      setState(() {
+        _selectedFriend = null;
+        _selectedFriendRoute = null;
+        _friendPublicRoutes = const [];
+        _isLoadingFriendRoutes = false;
+      });
+      return;
+    }
+
+    setState(() {
+      _selectedFriend = friend;
+      _selectedFriendRoute = null;
+      _friendPublicRoutes = const [];
+      _isLoadingFriendRoutes = true;
+    });
+
+    try {
+      final routes = await _savedFarmRouteService.loadPublicRoutesForFriend(
+        friend,
+      );
+
+      if (!mounted || _selectedFriend?.storageKey != friend.storageKey) return;
+
+      setState(() {
+        _friendPublicRoutes = routes;
+        _isLoadingFriendRoutes = false;
+      });
+    } catch (_) {
+      if (!mounted || _selectedFriend?.storageKey != friend.storageKey) return;
+
+      setState(() {
+        _friendPublicRoutes = const [];
+        _isLoadingFriendRoutes = false;
+      });
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text(
+            'Impossible de charger les routes publiques de cet ami.',
+          ),
+        ),
+      );
+    }
+  }
+
+  void _setSelectedFriendRoute(SavedFarmRoute route, bool selected) {
+    setState(() {
+      _selectedFriendRoute = selected ? route : null;
+    });
+  }
+
   Future<void> _setTodaySelected(TrackingItem item, bool selected) async {
     await _soloPlannerService.setTodaySelected(item.id, selected);
 
@@ -1206,11 +1291,59 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
     });
   }
 
+  Future<void> _saveCurrentRoute() async {
+    if (_todayItemIds.isEmpty) return;
+
+    final result = await showDialog<_SaveFarmRouteResult>(
+      context: context,
+      builder: (_) => const _SaveFarmRouteDialog(),
+    );
+
+    if (result == null) return;
+
+    try {
+      await _savedFarmRouteService.saveRoute(
+        name: result.name,
+        visibility: result.visibility,
+        itemIds: _todayItemIds,
+        character: _selectedCharacter,
+      );
+
+      if (!mounted) return;
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Route "${result.name}" sauvegardee.')),
+      );
+    } catch (_) {
+      if (!mounted) return;
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text(
+            'Connecte-toi a ton compte pour sauvegarder cette route.',
+          ),
+        ),
+      );
+    }
+  }
+
   void _backToProgress() {
     Navigator.of(context).popUntil((route) => route.isFirst);
   }
 
   Future<void> _openRoute() async {
+    final friendRoute = _selectedFriendRoute;
+    if (_crewMode == _AdventureCrewMode.friends && friendRoute != null) {
+      final itemIds = {..._todayItemIds, ...friendRoute.itemIds};
+      await _soloPlannerService.setAllTodaySelected(itemIds);
+
+      if (!mounted) return;
+
+      setState(() {
+        _todayItemIds = itemIds;
+      });
+    }
+
     await Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (_) => const RoutePlannerPage()),
@@ -1280,13 +1413,21 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                       const SizedBox(height: 16),
                       _AdventureCrewPicker(
                         selectedMode: _crewMode,
-                        onChanged: (mode) {
-                          setState(() {
-                            _crewMode = mode;
-                          });
-                        },
+                        onChanged: _setCrewMode,
                       ),
                       const SizedBox(height: 16),
+                      if (_crewMode == _AdventureCrewMode.friends) ...[
+                        _FriendFarmPanel(
+                          friends: _friends,
+                          selectedFriend: _selectedFriend,
+                          publicRoutes: _friendPublicRoutes,
+                          selectedRoute: _selectedFriendRoute,
+                          isLoadingRoutes: _isLoadingFriendRoutes,
+                          onFriendChanged: _setSelectedFriend,
+                          onRouteChanged: _setSelectedFriendRoute,
+                        ),
+                        const SizedBox(height: 16),
+                      ],
                       TextField(
                         decoration: const InputDecoration(
                           labelText: 'Rechercher dans ma whishlist',
@@ -1307,9 +1448,13 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                         countLabel: _soloCountLabel(filteredItems.length),
                         hasTodaySelection: _todayItemIds.isNotEmpty,
                         allItemsSelected: _todayItemIds.length == _items.length,
+                        canOpenRoute:
+                            _todayItemIds.isNotEmpty ||
+                            _selectedFriendRoute != null,
                         sortMode: _sortMode,
                         onClearSelection: _clearTodaySelection,
                         onSelectAll: _selectAllToday,
+                        onSaveRoute: _saveCurrentRoute,
                         onOpenRoute: _openRoute,
                         onSortModeChanged: _setSortMode,
                       ),
@@ -1850,7 +1995,7 @@ class _AdventureCrewPicker extends StatelessWidget {
                 icon: Icons.groups_2_outlined,
                 label: 'Avec des amis',
                 selected: selectedMode == _AdventureCrewMode.friends,
-                onPressed: null,
+                onPressed: () => onChanged(_AdventureCrewMode.friends),
               ),
             ];
 
@@ -1937,14 +2082,327 @@ class _CrewButton extends StatelessWidget {
   }
 }
 
+class _FriendFarmPanel extends StatelessWidget {
+  const _FriendFarmPanel({
+    required this.friends,
+    required this.selectedFriend,
+    required this.publicRoutes,
+    required this.selectedRoute,
+    required this.isLoadingRoutes,
+    required this.onFriendChanged,
+    required this.onRouteChanged,
+  });
+
+  final List<BattleNetFriend> friends;
+  final BattleNetFriend? selectedFriend;
+  final List<SavedFarmRoute> publicRoutes;
+  final SavedFarmRoute? selectedRoute;
+  final bool isLoadingRoutes;
+  final void Function(BattleNetFriend friend, bool selected) onFriendChanged;
+  final void Function(SavedFarmRoute route, bool selected) onRouteChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: Theme.of(context).cardColor.withValues(alpha: 0.36),
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: AppTheme.gold.withValues(alpha: 0.22)),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              'Choisis ton compagnon de farm',
+              style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                color: AppTheme.gold,
+                fontWeight: FontWeight.w900,
+              ),
+            ),
+            const SizedBox(height: 10),
+            if (friends.isEmpty)
+              const Text(
+                'Aucun ami enregistre pour le moment.',
+                style: TextStyle(color: AppTheme.mutedText),
+              )
+            else
+              Wrap(
+                spacing: 10,
+                runSpacing: 10,
+                children: [
+                  for (final friend in friends)
+                    _FriendChoiceTile(
+                      friend: friend,
+                      selected: selectedFriend?.storageKey == friend.storageKey,
+                      onChanged: (value) =>
+                          onFriendChanged(friend, value ?? false),
+                    ),
+                ],
+              ),
+            if (selectedFriend != null) ...[
+              const SizedBox(height: 14),
+              const Divider(height: 1),
+              const SizedBox(height: 12),
+              Text(
+                'Listes publiques de ${selectedFriend!.name}',
+                style: const TextStyle(fontWeight: FontWeight.w800),
+              ),
+              const SizedBox(height: 8),
+              if (isLoadingRoutes)
+                const Align(
+                  alignment: Alignment.centerLeft,
+                  child: SizedBox.square(
+                    dimension: 20,
+                    child: CircularProgressIndicator(strokeWidth: 2),
+                  ),
+                )
+              else if (publicRoutes.isEmpty)
+                const Text(
+                  'Aucune liste publique disponible pour cet ami.',
+                  style: TextStyle(color: AppTheme.mutedText),
+                )
+              else
+                Wrap(
+                  spacing: 10,
+                  runSpacing: 10,
+                  children: [
+                    for (final route in publicRoutes)
+                      _FriendRouteChoiceTile(
+                        route: route,
+                        selected: selectedRoute?.id == route.id,
+                        onChanged: (value) =>
+                            onRouteChanged(route, value ?? false),
+                      ),
+                  ],
+                ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _FriendChoiceTile extends StatelessWidget {
+  const _FriendChoiceTile({
+    required this.friend,
+    required this.selected,
+    required this.onChanged,
+  });
+
+  final BattleNetFriend friend;
+  final bool selected;
+  final ValueChanged<bool?> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final subtitle = [
+      friend.realm,
+      friend.characterClass,
+      if ((friend.guildName ?? '').isNotEmpty) friend.guildName!,
+    ].where((value) => value.trim().isNotEmpty).join(' - ');
+
+    return ConstrainedBox(
+      constraints: const BoxConstraints(minWidth: 220, maxWidth: 320),
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: selected
+              ? AppTheme.gold.withValues(alpha: 0.14)
+              : Colors.white.withValues(alpha: 0.035),
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(
+            color: selected
+                ? AppTheme.gold.withValues(alpha: 0.72)
+                : AppTheme.gold.withValues(alpha: 0.18),
+          ),
+        ),
+        child: CheckboxListTile(
+          value: selected,
+          onChanged: onChanged,
+          controlAffinity: ListTileControlAffinity.leading,
+          secondary: _FriendAvatar(friend: friend),
+          title: Text(
+            friend.name,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(fontWeight: FontWeight.w800),
+          ),
+          subtitle: subtitle.isEmpty
+              ? null
+              : Text(subtitle, overflow: TextOverflow.ellipsis),
+        ),
+      ),
+    );
+  }
+}
+
+class _FriendRouteChoiceTile extends StatelessWidget {
+  const _FriendRouteChoiceTile({
+    required this.route,
+    required this.selected,
+    required this.onChanged,
+  });
+
+  final SavedFarmRoute route;
+  final bool selected;
+  final ValueChanged<bool?> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    return ConstrainedBox(
+      constraints: const BoxConstraints(minWidth: 220, maxWidth: 320),
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: selected
+              ? AppTheme.gold.withValues(alpha: 0.14)
+              : Colors.white.withValues(alpha: 0.035),
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(
+            color: selected
+                ? AppTheme.gold.withValues(alpha: 0.72)
+                : AppTheme.gold.withValues(alpha: 0.18),
+          ),
+        ),
+        child: CheckboxListTile(
+          value: selected,
+          onChanged: onChanged,
+          controlAffinity: ListTileControlAffinity.leading,
+          title: Text(
+            route.name,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(fontWeight: FontWeight.w800),
+          ),
+          subtitle: Text('${route.itemIds.length} objectif(s)'),
+        ),
+      ),
+    );
+  }
+}
+
+class _FriendAvatar extends StatelessWidget {
+  const _FriendAvatar({required this.friend});
+
+  final BattleNetFriend friend;
+
+  @override
+  Widget build(BuildContext context) {
+    final portraitUrl = friend.portraitUrl;
+
+    if (portraitUrl == null || portraitUrl.isEmpty) {
+      return CircleAvatar(
+        backgroundColor: AppTheme.gold.withValues(alpha: 0.18),
+        child: const Icon(Icons.person_rounded, color: AppTheme.gold),
+      );
+    }
+
+    return CircleAvatar(
+      backgroundImage: NetworkImage(portraitUrl),
+      backgroundColor: AppTheme.gold.withValues(alpha: 0.18),
+    );
+  }
+}
+
+class _SaveFarmRouteResult {
+  const _SaveFarmRouteResult({required this.name, required this.visibility});
+
+  final String name;
+  final SavedFarmRouteVisibility visibility;
+}
+
+class _SaveFarmRouteDialog extends StatefulWidget {
+  const _SaveFarmRouteDialog();
+
+  @override
+  State<_SaveFarmRouteDialog> createState() => _SaveFarmRouteDialogState();
+}
+
+class _SaveFarmRouteDialogState extends State<_SaveFarmRouteDialog> {
+  final TextEditingController _nameController = TextEditingController();
+  SavedFarmRouteVisibility _visibility = SavedFarmRouteVisibility.private;
+
+  @override
+  void dispose() {
+    _nameController.dispose();
+    super.dispose();
+  }
+
+  void _submit() {
+    final name = _nameController.text.trim();
+    if (name.isEmpty) return;
+
+    Navigator.pop(
+      context,
+      _SaveFarmRouteResult(name: name, visibility: _visibility),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: const Text('Sauvegarder ma route'),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          TextField(
+            controller: _nameController,
+            autofocus: true,
+            maxLength: 80,
+            decoration: const InputDecoration(
+              labelText: 'Nom de la route',
+              border: OutlineInputBorder(),
+            ),
+            onSubmitted: (_) => _submit(),
+          ),
+          const SizedBox(height: 12),
+          SegmentedButton<SavedFarmRouteVisibility>(
+            segments: const [
+              ButtonSegment(
+                value: SavedFarmRouteVisibility.private,
+                icon: Icon(Icons.lock_outline_rounded),
+                label: Text('Privee'),
+              ),
+              ButtonSegment(
+                value: SavedFarmRouteVisibility.public,
+                icon: Icon(Icons.public_rounded),
+                label: Text('Publique'),
+              ),
+            ],
+            selected: {_visibility},
+            onSelectionChanged: (selection) {
+              setState(() {
+                _visibility = selection.single;
+              });
+            },
+          ),
+        ],
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text('Annuler'),
+        ),
+        FilledButton.icon(
+          onPressed: _submit,
+          icon: const Icon(Icons.save_outlined),
+          label: const Text('Sauvegarder'),
+        ),
+      ],
+    );
+  }
+}
+
 class _SoloPlannerActionBar extends StatelessWidget {
   const _SoloPlannerActionBar({
     required this.countLabel,
     required this.hasTodaySelection,
     required this.allItemsSelected,
+    required this.canOpenRoute,
     required this.sortMode,
     required this.onClearSelection,
     required this.onSelectAll,
+    required this.onSaveRoute,
     required this.onOpenRoute,
     required this.onSortModeChanged,
   });
@@ -1952,9 +2410,11 @@ class _SoloPlannerActionBar extends StatelessWidget {
   final String countLabel;
   final bool hasTodaySelection;
   final bool allItemsSelected;
+  final bool canOpenRoute;
   final _SoloPlannerSortMode sortMode;
   final VoidCallback onClearSelection;
   final VoidCallback onSelectAll;
+  final VoidCallback onSaveRoute;
   final VoidCallback onOpenRoute;
   final ValueChanged<_SoloPlannerSortMode> onSortModeChanged;
 
@@ -1974,8 +2434,13 @@ class _SoloPlannerActionBar extends StatelessWidget {
       icon: const Icon(Icons.done_all_outlined),
       label: const Text('Tout activer'),
     );
+    final saveButton = OutlinedButton.icon(
+      onPressed: hasTodaySelection ? onSaveRoute : null,
+      icon: const Icon(Icons.bookmark_add_outlined),
+      label: const Text('Sauvegarder ma route'),
+    );
     final routeButton = FilledButton.icon(
-      onPressed: hasTodaySelection ? onOpenRoute : null,
+      onPressed: canOpenRoute ? onOpenRoute : null,
       icon: const Icon(Icons.route_rounded),
       label: const Text('Générer ma route'),
     );
@@ -1995,6 +2460,7 @@ class _SoloPlannerActionBar extends StatelessWidget {
               count,
               clearButton,
               selectAllButton,
+              saveButton,
               routeButton,
               sortControls,
             ],
@@ -2008,6 +2474,8 @@ class _SoloPlannerActionBar extends StatelessWidget {
             clearButton,
             const SizedBox(width: 10),
             selectAllButton,
+            const SizedBox(width: 10),
+            saveButton,
             const SizedBox(width: 10),
             routeButton,
             const Spacer(),

@@ -34,6 +34,41 @@ service cloud.firestore {
     //   - portraitUrl: string or null (optional, max 500) - Character portrait URL.
     //   - updatedAt: timestamp (required) - Last selected-character update time.
     //
+    // Subcollection: users/{uid}/friends
+    // Document ID: Battle.net friend storage key:
+    //   lowercase region|lowercase realmSlug|lowercase character name.
+    // Fields:
+    //   - storageKey: string (required, immutable, max 240) - Must match the document ID.
+    //   - region: string (required, max 8) - Battle.net region.
+    //   - name: string (required, max 80) - Character name.
+    //   - realm: string (required, max 80) - Character realm display name.
+    //   - realmSlug: string (required, max 100) - Battle.net realm slug.
+    //   - level: int (required, 0..1000) - Character level.
+    //   - race: string (required, max 80) - Character race.
+    //   - characterClass: string (required, max 80) - Character class.
+    //   - faction: string (required, max 32) - Character faction.
+    //   - guildName: string or null (optional, max 100) - Guild display name.
+    //   - guildRealm: string or null (optional, max 80) - Guild realm display name.
+    //   - guildRealmSlug: string or null (optional, max 100) - Guild realm slug.
+    //   - achievementPoints: int (required, 0..10000000) - Character achievement points.
+    //   - portraitUrl: string or null (optional, max 500) - Character portrait URL.
+    //   - updatedAt: timestamp (required) - Last saved-friend update time.
+    //
+    // Collection: farmRoutes
+    // Document ID: Auto-generated route id.
+    // Fields:
+    //   - ownerUid: string (required, immutable) - Firebase Auth uid of route owner.
+    //   - ownerStorageKey: string (required, immutable, max 240) - Battle.net character key used for public friend lookup.
+    //   - ownerCharacterName: string (required, max 80) - Owner character display name.
+    //   - ownerRealm: string (optional, max 80) - Owner character realm display name.
+    //   - ownerRealmSlug: string (optional, max 100) - Owner character realm slug.
+    //   - ownerRegion: string (required, max 8) - Battle.net region.
+    //   - name: string (required, max 80) - Saved route name.
+    //   - visibility: string (required, private|public) - Route sharing mode.
+    //   - itemIds: list (required, 1..250) - Catalog item ids included in the route.
+    //   - createdAt: timestamp (required, immutable) - Route creation time.
+    //   - updatedAt: timestamp (required) - Last route update time.
+    //
     // Premium entitlement must be updated by trusted backend/admin code.
     //
     // ===============================================================
@@ -66,6 +101,11 @@ service cloud.firestore {
         (value == 'default' ||
           value == 'horde' ||
           value == 'alliance');
+    }
+
+    function validRouteVisibility(value) {
+      return value is string &&
+        (value == 'private' || value == 'public');
     }
 
     function hasValidUserShape(data, userId) {
@@ -170,6 +210,118 @@ service cloud.firestore {
         data.updatedAt == request.time;
     }
 
+    function hasValidFriendShape(data, friendId) {
+      return data.keys().hasOnly([
+          'storageKey',
+          'region',
+          'name',
+          'realm',
+          'realmSlug',
+          'level',
+          'race',
+          'characterClass',
+          'faction',
+          'guildName',
+          'guildRealm',
+          'guildRealmSlug',
+          'achievementPoints',
+          'portraitUrl',
+          'updatedAt',
+        ]) &&
+        data.keys().hasAll([
+          'storageKey',
+          'region',
+          'name',
+          'realm',
+          'realmSlug',
+          'level',
+          'race',
+          'characterClass',
+          'faction',
+          'achievementPoints',
+          'updatedAt',
+        ]) &&
+        validString(data.storageKey, 240) &&
+        data.storageKey == friendId &&
+        validString(data.region, 8) &&
+        validString(data.name, 80) &&
+        validString(data.realm, 80) &&
+        validString(data.realmSlug, 100) &&
+        data.level is int &&
+        data.level >= 0 &&
+        data.level <= 1000 &&
+        validString(data.race, 80) &&
+        validString(data.characterClass, 80) &&
+        validString(data.faction, 32) &&
+        (!('guildName' in data) || validNullableString(data.guildName, 100)) &&
+        (!('guildRealm' in data) || validNullableString(data.guildRealm, 80)) &&
+        (!('guildRealmSlug' in data) ||
+          validNullableString(data.guildRealmSlug, 100)) &&
+        data.achievementPoints is int &&
+        data.achievementPoints >= 0 &&
+        data.achievementPoints <= 10000000 &&
+        (!('portraitUrl' in data) ||
+          validNullableUrl(data.portraitUrl, 500)) &&
+        data.updatedAt is timestamp &&
+        data.updatedAt == request.time;
+    }
+
+    function hasValidFarmRouteShape(data) {
+      return data.keys().hasOnly([
+          'ownerUid',
+          'ownerStorageKey',
+          'ownerCharacterName',
+          'ownerRealm',
+          'ownerRealmSlug',
+          'ownerRegion',
+          'name',
+          'visibility',
+          'itemIds',
+          'createdAt',
+          'updatedAt',
+        ]) &&
+        data.keys().hasAll([
+          'ownerUid',
+          'ownerStorageKey',
+          'ownerCharacterName',
+          'ownerRegion',
+          'name',
+          'visibility',
+          'itemIds',
+          'createdAt',
+          'updatedAt',
+        ]) &&
+        validString(data.ownerUid, 128) &&
+        data.ownerUid == request.auth.uid &&
+        validString(data.ownerStorageKey, 240) &&
+        validString(data.ownerCharacterName, 80) &&
+        (!('ownerRealm' in data) || validNullableString(data.ownerRealm, 80)) &&
+        (!('ownerRealmSlug' in data) ||
+          validNullableString(data.ownerRealmSlug, 100)) &&
+        validString(data.ownerRegion, 8) &&
+        validString(data.name, 80) &&
+        validRouteVisibility(data.visibility) &&
+        data.itemIds is list &&
+        data.itemIds.size() > 0 &&
+        data.itemIds.size() <= 250 &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp &&
+        data.updatedAt == request.time;
+    }
+
+    function isValidFarmRouteCreate() {
+      return hasValidFarmRouteShape(request.resource.data) &&
+        request.resource.data.createdAt == request.time;
+    }
+
+    function isValidFarmRouteUpdate() {
+      return hasValidFarmRouteShape(request.resource.data) &&
+        resource.data.ownerUid == request.auth.uid &&
+        request.resource.data.ownerUid == resource.data.ownerUid &&
+        request.resource.data.ownerStorageKey == resource.data.ownerStorageKey &&
+        request.resource.data.createdAt == resource.data.createdAt;
+    }
+
     match /users/{userId} {
       allow read: if isOwner(userId);
       allow create: if isOwner(userId) && isValidUserCreate(userId);
@@ -183,6 +335,23 @@ service cloud.firestore {
           hasValidMainCharacterShape(request.resource.data);
         allow delete: if isOwner(userId) && settingId == 'mainCharacter';
       }
+
+      match /friends/{friendId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId) &&
+          hasValidFriendShape(request.resource.data, friendId);
+        allow delete: if isOwner(userId);
+      }
+    }
+
+    match /farmRoutes/{routeId} {
+      allow read: if isAuthenticated() &&
+        (resource.data.ownerUid == request.auth.uid ||
+          resource.data.visibility == 'public');
+      allow create: if isAuthenticated() && isValidFarmRouteCreate();
+      allow update: if isAuthenticated() && isValidFarmRouteUpdate();
+      allow delete: if isAuthenticated() &&
+        resource.data.ownerUid == request.auth.uid;
     }
 
     match /{document=**} {
