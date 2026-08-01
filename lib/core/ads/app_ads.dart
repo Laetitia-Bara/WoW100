@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
+import '../services/firebase_account_service.dart';
 import '../theme/app_theme.dart';
 
 class AppAds {
@@ -94,6 +95,11 @@ class _AppBannerAdState extends State<AppBannerAd> {
       return;
     }
 
+    final isPremium = await FirebaseAccountService().isPremium();
+    if (isPremium) {
+      return;
+    }
+
     await WidgetsBinding.instance.endOfFrame;
     try {
       await AppAds.initialize().timeout(const Duration(seconds: 8));
@@ -145,18 +151,20 @@ class _AppBannerAdState extends State<AppBannerAd> {
     final verticalPadding = 12.0;
     final adHeight = ad.size.height.toDouble();
 
-    return SizedBox(
-      width: double.infinity,
-      height: adHeight + verticalPadding + bottomInset,
-      child: ColoredBox(
-        color: AppTheme.background.withAlpha(242),
-        child: Padding(
-          padding: EdgeInsets.fromLTRB(0, 6, 0, 6 + bottomInset),
-          child: Center(
-            child: SizedBox(
-              width: ad.size.width.toDouble(),
-              height: adHeight,
-              child: AdWidget(ad: ad),
+    return _PremiumAdGate(
+      child: SizedBox(
+        width: double.infinity,
+        height: adHeight + verticalPadding + bottomInset,
+        child: ColoredBox(
+          color: AppTheme.background.withAlpha(242),
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(0, 6, 0, 6 + bottomInset),
+            child: Center(
+              child: SizedBox(
+                width: ad.size.width.toDouble(),
+                height: adHeight,
+                child: AdWidget(ad: ad),
+              ),
             ),
           ),
         ),
@@ -184,6 +192,11 @@ class _AppNativeAdState extends State<AppNativeAd> {
 
   Future<void> _loadAd() async {
     if (!AppAds.isSupported) {
+      return;
+    }
+
+    final isPremium = await FirebaseAccountService().isPremium();
+    if (isPremium) {
       return;
     }
 
@@ -262,15 +275,37 @@ class _AppNativeAdState extends State<AppNativeAd> {
       return const SizedBox.shrink();
     }
 
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 20),
-      child: SizedBox(
-        height: 320,
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(16),
-          child: AdWidget(ad: ad),
+    return _PremiumAdGate(
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: 20),
+        child: SizedBox(
+          height: 320,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(16),
+            child: AdWidget(ad: ad),
+          ),
         ),
       ),
+    );
+  }
+}
+
+class _PremiumAdGate extends StatelessWidget {
+  const _PremiumAdGate({required this.child});
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder(
+      stream: FirebaseAccountService().profileChanges,
+      builder: (context, snapshot) {
+        if (snapshot.data?.isPremium == true) {
+          return const SizedBox.shrink();
+        }
+
+        return child;
+      },
     );
   }
 }

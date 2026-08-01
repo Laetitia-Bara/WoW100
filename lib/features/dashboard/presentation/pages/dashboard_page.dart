@@ -21,6 +21,7 @@ import '../../../../data/repositories/planner_repository.dart';
 import '../../../../data/repositories/progress_repository.dart';
 import '../../../../data/sources/wow_expansion_catalog.dart';
 import '../../../auth/presentation/pages/auth_callback_page.dart';
+import '../../../auth/presentation/pages/auth_page.dart';
 import '../../../auth/presentation/pages/character_switch_page.dart';
 import '../../../legal/presentation/pages/legal_page.dart';
 import '../../../planner/presentation/pages/planner_page.dart';
@@ -289,6 +290,13 @@ class _DashboardPageState extends State<DashboardPage> {
     );
   }
 
+  void _openAccountPage() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const AuthPage()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
@@ -317,6 +325,7 @@ class _DashboardPageState extends State<DashboardPage> {
             _DashboardTopBar(
               mainCharacter: _mainCharacter,
               onLegalTap: _openLegalPage,
+              onAccountTap: _openAccountPage,
               onLoginTap: _openBattleNetLogin,
               onCharacterTap: _openCharacterSwitch,
               onFriendsTap: _openBattleNetFriends,
@@ -441,6 +450,7 @@ class _DashboardTopBar extends StatelessWidget {
   const _DashboardTopBar({
     required this.mainCharacter,
     required this.onLegalTap,
+    required this.onAccountTap,
     required this.onLoginTap,
     required this.onCharacterTap,
     required this.onFriendsTap,
@@ -449,6 +459,7 @@ class _DashboardTopBar extends StatelessWidget {
 
   final WowCharacter? mainCharacter;
   final VoidCallback onLegalTap;
+  final VoidCallback onAccountTap;
   final VoidCallback onLoginTap;
   final VoidCallback onCharacterTap;
   final VoidCallback onFriendsTap;
@@ -491,6 +502,17 @@ class _DashboardTopBar extends StatelessWidget {
                 visualDensity: VisualDensity.compact,
                 icon: const Icon(Icons.info_outline),
                 onPressed: onLegalTap,
+              ),
+              IconButton(
+                tooltip: 'Compte WoW100%',
+                constraints: const BoxConstraints.tightFor(
+                  width: 38,
+                  height: 38,
+                ),
+                padding: EdgeInsets.zero,
+                visualDensity: VisualDensity.compact,
+                icon: const Icon(Icons.account_circle_outlined),
+                onPressed: onAccountTap,
               ),
               const Spacer(),
               _DashboardAccountActions(

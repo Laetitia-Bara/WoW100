@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../services/firebase_account_service.dart';
 import '../theme/app_theme.dart';
 
 class WebSponsorPageBody extends StatelessWidget {
@@ -41,9 +42,11 @@ class WebSponsorPageBody extends StatelessWidget {
                   children: [
                     Expanded(child: SingleChildScrollView(child: content)),
                     const SizedBox(width: _sidebarGap),
-                    const SizedBox(
-                      width: _sidebarWidth,
-                      child: WebSponsorPanel(),
+                    const _PremiumSponsorGate(
+                      child: SizedBox(
+                        width: _sidebarWidth,
+                        child: WebSponsorPanel(),
+                      ),
                     ),
                   ],
                 ),
@@ -61,7 +64,9 @@ class WebSponsorPageBody extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   if (kIsWeb) ...[
-                    const WebSponsorPanel(compact: true),
+                    const _PremiumSponsorGate(
+                      child: WebSponsorPanel(compact: true),
+                    ),
                     const SizedBox(height: 20),
                   ],
                   content,
@@ -111,9 +116,11 @@ class WebSponsorSliverPageBody extends StatelessWidget {
                   children: [
                     Expanded(child: CustomScrollView(slivers: slivers)),
                     const SizedBox(width: _sidebarGap),
-                    const SizedBox(
-                      width: _sidebarWidth,
-                      child: WebSponsorPanel(),
+                    const _PremiumSponsorGate(
+                      child: SizedBox(
+                        width: _sidebarWidth,
+                        child: WebSponsorPanel(),
+                      ),
                     ),
                   ],
                 ),
@@ -140,7 +147,9 @@ class WebSponsorSliverPageBody extends StatelessWidget {
                 slivers: [
                   if (kIsWeb) ...[
                     const SliverToBoxAdapter(
-                      child: WebSponsorPanel(compact: true),
+                      child: _PremiumSponsorGate(
+                        child: WebSponsorPanel(compact: true),
+                      ),
                     ),
                     const SliverToBoxAdapter(child: SizedBox(height: 20)),
                   ],
@@ -150,6 +159,26 @@ class WebSponsorSliverPageBody extends StatelessWidget {
             ),
           ],
         );
+      },
+    );
+  }
+}
+
+class _PremiumSponsorGate extends StatelessWidget {
+  const _PremiumSponsorGate({required this.child});
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder(
+      stream: FirebaseAccountService().profileChanges,
+      builder: (context, snapshot) {
+        if (snapshot.data?.isPremium == true) {
+          return const SizedBox.shrink();
+        }
+
+        return child;
       },
     );
   }

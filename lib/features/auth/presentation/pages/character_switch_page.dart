@@ -4,7 +4,7 @@ import '../../../../core/services/battle_net_token_service.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/wow_character.dart';
 import '../../../../data/repositories/battle_net_repository.dart';
-import 'auth_page.dart';
+import 'battle_net_auth_page.dart';
 import 'character_selection_page.dart';
 
 class CharacterSwitchPage extends StatefulWidget {
@@ -94,7 +94,9 @@ class _CharacterSwitchPageState extends State<CharacterSwitchPage> {
                     onPressed: () {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (_) => const AuthPage()),
+                        MaterialPageRoute(
+                          builder: (_) => const BattleNetAuthPage(),
+                        ),
                       );
                     },
                     icon: const Icon(Icons.login),

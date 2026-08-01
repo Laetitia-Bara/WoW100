@@ -3,6 +3,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 import 'core/ads/app_ads.dart';
 import 'core/diagnostics/startup_logger.dart';
@@ -11,6 +12,7 @@ import 'core/theme/app_theme.dart';
 import 'features/dashboard/presentation/pages/dashboard_page.dart';
 import 'features/auth/presentation/pages/auth_callback_page.dart';
 import 'features/legal/presentation/pages/legal_page.dart';
+import 'firebase_options.dart';
 
 void main() {
   runZonedGuarded(
@@ -18,6 +20,10 @@ void main() {
       StartupLogger.mark('app started');
       WidgetsFlutterBinding.ensureInitialized();
       StartupLogger.mark('Flutter initialized');
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
+      StartupLogger.mark('Firebase initialized');
       _configureSystemBars();
       _configureStartupErrorLogging();
       unawaited(StartupLogger.initializePersistence());

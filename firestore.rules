@@ -1,0 +1,106 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: users
+    // Document ID: Firebase Auth uid
+    // Fields:
+    //   - uid: string (required, immutable) - Firebase Auth uid.
+    //   - email: string or null (optional, private) - Account email.
+    //   - displayName: string or null (optional, max 80) - Account display name.
+    //   - photoUrl: string or null (optional, max 500) - Account avatar URL.
+    //   - providerIds: list (optional, max 8) - Firebase Auth provider ids.
+    //   - isPremium: bool (required, client create must be false, immutable by client) - Ad removal entitlement.
+    //   - createdAt: timestamp (required, immutable) - Profile creation time.
+    //   - updatedAt: timestamp (required) - Last profile refresh time.
+    //
+    // Premium entitlement must be updated by trusted backend/admin code.
+    //
+    // ===============================================================
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function validNullableString(value, maxLength) {
+      return value == null || (value is string && value.size() <= maxLength);
+    }
+
+    function validNullableUrl(value, maxLength) {
+      return value == null ||
+        (value is string &&
+          value.size() <= maxLength &&
+          (value.matches('^https://.*') || value.matches('^http://.*')));
+    }
+
+    function hasValidUserShape(data, userId) {
+      return data.keys().hasOnly([
+          'uid',
+          'email',
+          'displayName',
+          'photoUrl',
+          'providerIds',
+          'isPremium',
+          'createdAt',
+          'updatedAt',
+        ]) &&
+        data.keys().hasAll([
+          'uid',
+          'isPremium',
+          'createdAt',
+          'updatedAt',
+        ]) &&
+        data.uid is string &&
+        data.uid == userId &&
+        data.uid == request.auth.uid &&
+        validNullableString(data.email, 320) &&
+        validNullableString(data.displayName, 80) &&
+        validNullableUrl(data.photoUrl, 500) &&
+        (!('providerIds' in data) ||
+          (data.providerIds is list &&
+            data.providerIds.size() <= 8 &&
+            data.providerIds.hasOnly([
+              'password',
+              'google.com',
+              'apple.com',
+            ]))) &&
+        data.isPremium is bool &&
+        data.createdAt is timestamp &&
+        data.updatedAt is timestamp;
+    }
+
+    function isValidUserCreate(userId) {
+      return hasValidUserShape(request.resource.data, userId) &&
+        request.resource.data.isPremium == false &&
+        request.resource.data.createdAt == request.time &&
+        request.resource.data.updatedAt == request.time;
+    }
+
+    function isValidUserUpdate(userId) {
+      return hasValidUserShape(request.resource.data, userId) &&
+        request.resource.data.uid == resource.data.uid &&
+        request.resource.data.isPremium == resource.data.isPremium &&
+        request.resource.data.createdAt == resource.data.createdAt &&
+        request.resource.data.updatedAt == request.time;
+    }
+
+    match /users/{userId} {
+      allow read: if isOwner(userId);
+      allow create: if isOwner(userId) && isValidUserCreate(userId);
+      allow update: if isOwner(userId) && isValidUserUpdate(userId);
+      allow delete: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

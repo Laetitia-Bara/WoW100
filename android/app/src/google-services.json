@@ -12,7 +12,20 @@
           "package_name": "fr.cosmoslty.wow100"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "536516621931-28q459hs1l76ioqr60q8pf2cc12s8sgo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.cosmoslty.wow100",
+            "certificate_hash": "7f60ec59cb461ca6208b113292f4ce08598dff4b"
+          }
+        },
+        {
+          "client_id": "536516621931-cl20e58bkn46hdip60dqi2p4eqcns9er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCRoKh-yI8UBFnuezbkbeyc6uec8_raP6Q"
@@ -20,7 +33,20 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536516621931-cl20e58bkn46hdip60dqi2p4eqcns9er.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "536516621931-kbpmmor4o24rupb1te678iimie5t32af.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "fr.cosmoslty.wow100",
+                "app_store_id": "6778885180"
+              }
+            }
+          ]
         }
       }
     }

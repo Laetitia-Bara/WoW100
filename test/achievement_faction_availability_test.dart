@@ -47,6 +47,52 @@ void main() {
     );
   });
 
+  test(
+    'hides Alliance Eastern Kingdoms quest achievements for Horde characters',
+    () {
+      for (final id in [4899, 4902, 4903, 12429, 12430]) {
+        final item = _achievement(blizzardId: id);
+
+        expect(
+          AchievementFactionAvailability.isUnavailableForFaction(item, 'Horde'),
+          isTrue,
+          reason: 'achievement_$id should be Alliance-only',
+        );
+        expect(
+          AchievementFactionAvailability.isUnavailableForFaction(
+            item,
+            'Alliance',
+          ),
+          isFalse,
+          reason: 'achievement_$id should remain visible for Alliance',
+        );
+      }
+    },
+  );
+
+  test(
+    'hides Horde Eastern Kingdoms quest achievements for Alliance characters',
+    () {
+      for (final id in [4894, 4895, 4908]) {
+        final item = _achievement(blizzardId: id);
+
+        expect(
+          AchievementFactionAvailability.isUnavailableForFaction(
+            item,
+            'Alliance',
+          ),
+          isTrue,
+          reason: 'achievement_$id should be Horde-only',
+        );
+        expect(
+          AchievementFactionAvailability.isUnavailableForFaction(item, 'Horde'),
+          isFalse,
+          reason: 'achievement_$id should remain visible for Horde',
+        );
+      }
+    },
+  );
+
   test('keeps faction-specific items visible without a selected character', () {
     final item = _achievement(
       blizzardId: 860,
