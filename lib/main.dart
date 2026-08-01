@@ -9,8 +9,8 @@ import 'core/ads/app_ads.dart';
 import 'core/diagnostics/startup_logger.dart';
 import 'core/theme/app_textured_background.dart';
 import 'core/theme/app_theme.dart';
-import 'features/dashboard/presentation/pages/dashboard_page.dart';
 import 'features/auth/presentation/pages/auth_callback_page.dart';
+import 'features/auth/presentation/pages/session_gate_page.dart';
 import 'features/legal/presentation/pages/legal_page.dart';
 import 'firebase_options.dart';
 
@@ -248,7 +248,7 @@ class _WoW100AppShellState extends State<_WoW100AppShell> {
 
     return MaterialPageRoute(
       settings: settings,
-      builder: (_) => const DashboardPage(),
+      builder: (_) => const SessionGatePage(),
     );
   }
 

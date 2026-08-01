@@ -51,7 +51,9 @@ class JsonProgressRepository implements ProgressRepository {
     final ownedMountIds = <int>{};
     final ownedPetIds = <int>{};
     final ownedAchievementIds = <int>{};
-    final character = await _selectedCharacterService.loadCharacter();
+    final character = token == null
+        ? null
+        : await _selectedCharacterService.loadCharacter();
 
     if (token != null) {
       try {

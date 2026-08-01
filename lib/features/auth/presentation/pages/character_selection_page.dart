@@ -164,9 +164,7 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
   }
 
   Future<void> _disconnectBattleNet() async {
-    await BattleNetSessionService(
-      selectedCharacterService: _service,
-    ).clearSessionAndOpenBattleNetLogout();
+    await BattleNetSessionService().clearSessionAndOpenBattleNetLogout();
 
     if (!mounted) return;
 

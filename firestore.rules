@@ -18,6 +18,20 @@ service cloud.firestore {
     //   - createdAt: timestamp (required, immutable) - Profile creation time.
     //   - updatedAt: timestamp (required) - Last profile refresh time.
     //
+    // Subcollection: users/{uid}/settings
+    // Document ID: mainCharacter
+    // Fields:
+    //   - name: string (required, max 80) - Character name.
+    //   - level: int (required, 1..1000) - Character level.
+    //   - realm: string (required, max 80) - Character realm.
+    //   - race: string (required, max 80) - Character race.
+    //   - characterClass: string (required, max 80) - Character class.
+    //   - faction: string (required, max 32) - Character faction.
+    //   - realmSlug: string (required, max 100) - Battle.net realm slug.
+    //   - achievementPoints: int (required, 0..10000000) - Character achievement points.
+    //   - portraitUrl: string or null (optional, max 500) - Character portrait URL.
+    //   - updatedAt: timestamp (required) - Last selected-character update time.
+    //
     // Premium entitlement must be updated by trusted backend/admin code.
     //
     // ===============================================================
@@ -32,6 +46,10 @@ service cloud.firestore {
 
     function validNullableString(value, maxLength) {
       return value == null || (value is string && value.size() <= maxLength);
+    }
+
+    function validString(value, maxLength) {
+      return value is string && value.size() > 0 && value.size() <= maxLength;
     }
 
     function validNullableUrl(value, maxLength) {
@@ -61,9 +79,10 @@ service cloud.firestore {
         data.uid is string &&
         data.uid == userId &&
         data.uid == request.auth.uid &&
-        validNullableString(data.email, 320) &&
-        validNullableString(data.displayName, 80) &&
-        validNullableUrl(data.photoUrl, 500) &&
+        (!('email' in data) || validNullableString(data.email, 320)) &&
+        (!('displayName' in data) ||
+          validNullableString(data.displayName, 80)) &&
+        (!('photoUrl' in data) || validNullableUrl(data.photoUrl, 500)) &&
         (!('providerIds' in data) ||
           (data.providerIds is list &&
             data.providerIds.size() <= 8 &&
@@ -92,11 +111,61 @@ service cloud.firestore {
         request.resource.data.updatedAt == request.time;
     }
 
+    function hasValidMainCharacterShape(data) {
+      return data.keys().hasOnly([
+          'name',
+          'level',
+          'realm',
+          'race',
+          'characterClass',
+          'faction',
+          'realmSlug',
+          'achievementPoints',
+          'portraitUrl',
+          'updatedAt',
+        ]) &&
+        data.keys().hasAll([
+          'name',
+          'level',
+          'realm',
+          'race',
+          'characterClass',
+          'faction',
+          'realmSlug',
+          'achievementPoints',
+          'updatedAt',
+        ]) &&
+        validString(data.name, 80) &&
+        data.level is int &&
+        data.level >= 1 &&
+        data.level <= 1000 &&
+        validString(data.realm, 80) &&
+        validString(data.race, 80) &&
+        validString(data.characterClass, 80) &&
+        validString(data.faction, 32) &&
+        validString(data.realmSlug, 100) &&
+        data.achievementPoints is int &&
+        data.achievementPoints >= 0 &&
+        data.achievementPoints <= 10000000 &&
+        (!('portraitUrl' in data) ||
+          validNullableUrl(data.portraitUrl, 500)) &&
+        data.updatedAt is timestamp &&
+        data.updatedAt == request.time;
+    }
+
     match /users/{userId} {
       allow read: if isOwner(userId);
       allow create: if isOwner(userId) && isValidUserCreate(userId);
       allow update: if isOwner(userId) && isValidUserUpdate(userId);
       allow delete: if false;
+
+      match /settings/{settingId} {
+        allow read: if isOwner(userId) && settingId == 'mainCharacter';
+        allow create, update: if isOwner(userId) &&
+          settingId == 'mainCharacter' &&
+          hasValidMainCharacterShape(request.resource.data);
+        allow delete: if isOwner(userId) && settingId == 'mainCharacter';
+      }
     }
 
     match /{document=**} {
