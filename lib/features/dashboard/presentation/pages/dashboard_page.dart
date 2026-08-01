@@ -6,6 +6,7 @@ import 'package:wow100/core/services/battle_net_session_service.dart';
 import 'package:wow100/core/services/battle_net_token_service.dart';
 
 import '../../../../core/ads/app_ads.dart';
+import '../../../../core/services/firebase_account_service.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/widgets/journey_step_bar.dart';
@@ -50,6 +51,8 @@ class _DashboardPageState extends State<DashboardPage> {
   final BattleNetTokenService _battleNetTokenService = BattleNetTokenService();
   final BattleNetSessionService _battleNetSessionService =
       BattleNetSessionService();
+  final FirebaseAccountService _firebaseAccountService =
+      FirebaseAccountService();
 
   bool _newestFirst = false;
   bool _isLoading = true;
@@ -140,6 +143,7 @@ class _DashboardPageState extends State<DashboardPage> {
     }
   }
 
+  // ignore: unused_element
   Future<void> _disconnectBattleNet() async {
     final didOpenBattleNetLogout = await _battleNetSessionService
         .clearSessionAndOpenBattleNetLogout();
@@ -164,7 +168,31 @@ class _DashboardPageState extends State<DashboardPage> {
     );
   }
 
+  Future<void> _signOutApp() async {
+    await _battleNetSessionService.clearSession();
+    await _firebaseAccountService.signOut();
+
+    if (!mounted) return;
+
+    Navigator.of(context).pushAndRemoveUntil(
+      MaterialPageRoute(builder: (_) => const AuthPage()),
+      (_) => false,
+    );
+  }
+
   Future<void> _openBattleNetLogin() async {
+    if (_firebaseAccountService.currentUser == null) {
+      if (!mounted) return;
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Connecte-toi a ton compte WoW100% avant Battle.net.'),
+        ),
+      );
+      _openAccountPage();
+      return;
+    }
+
     await _battleNetSessionService.clearSession();
 
     final service = BattleNetAuthService();
@@ -326,12 +354,13 @@ class _DashboardPageState extends State<DashboardPage> {
           children: [
             _DashboardTopBar(
               mainCharacter: _mainCharacter,
+              canUseBattleNetLogin: _firebaseAccountService.currentUser != null,
               onLegalTap: _openLegalPage,
               onAccountTap: _openAccountPage,
               onLoginTap: _openBattleNetLogin,
               onCharacterTap: _openCharacterSwitch,
               onFriendsTap: _openBattleNetFriends,
-              onLogoutTap: _disconnectBattleNet,
+              onLogoutTap: _signOutApp,
             ),
             JourneyStepBar(
               currentStep: 1,
@@ -451,6 +480,7 @@ class _DashboardPageState extends State<DashboardPage> {
 class _DashboardTopBar extends StatelessWidget {
   const _DashboardTopBar({
     required this.mainCharacter,
+    required this.canUseBattleNetLogin,
     required this.onLegalTap,
     required this.onAccountTap,
     required this.onLoginTap,
@@ -460,6 +490,7 @@ class _DashboardTopBar extends StatelessWidget {
   });
 
   final WowCharacter? mainCharacter;
+  final bool canUseBattleNetLogin;
   final VoidCallback onLegalTap;
   final VoidCallback onAccountTap;
   final VoidCallback onLoginTap;
@@ -508,6 +539,7 @@ class _DashboardTopBar extends StatelessWidget {
               const Spacer(),
               _DashboardAccountActions(
                 mainCharacter: mainCharacter,
+                canUseBattleNetLogin: canUseBattleNetLogin,
                 onAccountTap: onAccountTap,
                 onLoginTap: onLoginTap,
                 onCharacterTap: onCharacterTap,
@@ -525,6 +557,7 @@ class _DashboardTopBar extends StatelessWidget {
 class _DashboardAccountActions extends StatelessWidget {
   const _DashboardAccountActions({
     required this.mainCharacter,
+    required this.canUseBattleNetLogin,
     required this.onAccountTap,
     required this.onLoginTap,
     required this.onCharacterTap,
@@ -533,6 +566,7 @@ class _DashboardAccountActions extends StatelessWidget {
   });
 
   final WowCharacter? mainCharacter;
+  final bool canUseBattleNetLogin;
   final VoidCallback onAccountTap;
   final VoidCallback onLoginTap;
   final VoidCallback onCharacterTap;
@@ -550,7 +584,7 @@ class _DashboardAccountActions extends StatelessWidget {
           _AccountAction(onPressed: onAccountTap, compact: true),
           const SizedBox(width: 8),
           FilledButton.icon(
-            onPressed: onLoginTap,
+            onPressed: canUseBattleNetLogin ? onLoginTap : null,
             icon: const Icon(Icons.login, size: 18),
             label: Text(isCompact ? 'Connexion' : 'Connexion Battle.net'),
             style: FilledButton.styleFrom(

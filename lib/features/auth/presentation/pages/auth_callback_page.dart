@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wow100/core/services/battle_net_token_service.dart';
 
+import '../../../../core/services/firebase_account_service.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../data/models/wow_character.dart';
 import '../../../../data/repositories/battle_net_repository.dart';
@@ -22,6 +23,7 @@ class _AuthCallbackPageState extends State<AuthCallbackPage> {
 
   final BattleNetRepository _repository = BattleNetRepository();
   final BattleNetTokenService _tokenService = BattleNetTokenService();
+  final FirebaseAccountService _accountService = FirebaseAccountService();
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
 
@@ -39,6 +41,13 @@ class _AuthCallbackPageState extends State<AuthCallbackPage> {
     try {
       if (widget.error != null) {
         throw Exception(widget.error);
+      }
+
+      if (_accountService.currentUser == null) {
+        await _tokenService.clearToken();
+        throw Exception(
+          'Connecte-toi a ton compte WoW100% avant de connecter Battle.net.',
+        );
       }
 
       final code = widget.code;
