@@ -580,16 +580,26 @@ class _DashboardAccountActions extends StatelessWidget {
         children: [
           _AccountAction(onPressed: onAccountTap, compact: true),
           const SizedBox(width: 8),
-          FilledButton.icon(
-            onPressed: canUseBattleNetLogin ? onLoginTap : null,
-            icon: const Icon(Icons.login, size: 18),
-            label: Text(isCompact ? 'Connexion' : 'Connexion Battle.net'),
-            style: FilledButton.styleFrom(
-              backgroundColor: AppTheme.gold,
-              foregroundColor: AppTheme.background,
-              visualDensity: VisualDensity.compact,
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-              textStyle: const TextStyle(fontWeight: FontWeight.w900),
+          Tooltip(
+            message: 'Connecte-toi à ton compte Battle.Net',
+            child: FilledButton.icon(
+              onPressed: canUseBattleNetLogin ? onLoginTap : null,
+              icon: const Icon(Icons.login, size: 18),
+              label: const Text('Battle.Net'),
+              style: FilledButton.styleFrom(
+                backgroundColor: AppTheme.battleNetBlue,
+                foregroundColor: AppTheme.background,
+                disabledBackgroundColor: AppTheme.battleNetBlue.withValues(
+                  alpha: 0.32,
+                ),
+                disabledForegroundColor: AppTheme.text.withValues(alpha: 0.56),
+                visualDensity: VisualDensity.compact,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 10,
+                ),
+                textStyle: const TextStyle(fontWeight: FontWeight.w900),
+              ),
             ),
           ),
         ],
@@ -607,7 +617,7 @@ class _DashboardAccountActions extends StatelessWidget {
           ),
           IconButton(
             tooltip: 'Mes amis',
-            icon: const Icon(Icons.group, color: Color(0xFF00AEFF)),
+            icon: const Icon(Icons.group, color: AppTheme.battleNetBlue),
             onPressed: onFriendsTap,
           ),
           _AccountAction(onPressed: onAccountTap, compact: true),
@@ -672,18 +682,16 @@ class _BattleNetFriendsAction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isCompact = MediaQuery.sizeOf(context).width < 720;
-    const battleNetBlue = Color(0xFF00AEFF);
-
     if (isCompact) {
       return IconButton(
         tooltip: 'Mes amis',
-        icon: const Icon(Icons.group, color: battleNetBlue),
+        icon: const Icon(Icons.group, color: AppTheme.battleNetBlue),
         onPressed: onPressed,
       );
     }
 
     return TextButton.icon(
-      style: TextButton.styleFrom(foregroundColor: battleNetBlue),
+      style: TextButton.styleFrom(foregroundColor: AppTheme.battleNetBlue),
       onPressed: onPressed,
       icon: const Icon(Icons.group),
       label: const Text('Mes amis'),
@@ -709,6 +717,9 @@ class _HeroCard extends StatelessWidget {
     final characterClassColor = currentCharacter != null
         ? _wowClassColor(currentCharacter.characterClass)
         : AppTheme.text;
+    final subtitleColor = hasCharacter
+        ? AppTheme.mutedText
+        : AppTheme.battleNetBlue;
     final portraitUrl = currentCharacter?.portraitUrl;
     final hasPortrait = portraitUrl != null && portraitUrl.isNotEmpty;
 
@@ -738,7 +749,7 @@ class _HeroCard extends StatelessWidget {
                 hasCharacter
                     ? '${currentCharacter.race} ${currentCharacter.characterClass} • ${currentCharacter.realm} • ${currentCharacter.faction} • Niveau ${currentCharacter.level}'
                     : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
-                style: const TextStyle(color: AppTheme.mutedText, height: 1.4),
+                style: TextStyle(color: subtitleColor, height: 1.4),
               ),
             ],
           );

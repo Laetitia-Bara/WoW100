@@ -25,14 +25,21 @@ class JourneyStepBar extends StatelessWidget implements PreferredSizeWidget {
       _JourneyStep(
         number: 1,
         label: 'Sélectionne les items à farmer',
+        compactLabel: 'Sélectionne',
         onPressed: onStep1,
       ),
       _JourneyStep(
         number: 2,
         label: 'Organise ta whishlist',
+        compactLabel: 'Organise',
         onPressed: onStep2,
       ),
-      _JourneyStep(number: 3, label: 'Prends la route', onPressed: onStep3),
+      _JourneyStep(
+        number: 3,
+        label: 'Prends la route',
+        compactLabel: 'Go farm',
+        onPressed: onStep3,
+      ),
     ];
 
     return SizedBox(
@@ -89,11 +96,13 @@ class _JourneyStep {
   const _JourneyStep({
     required this.number,
     required this.label,
+    required this.compactLabel,
     required this.onPressed,
   });
 
   final int number;
   final String label;
+  final String compactLabel;
   final VoidCallback onPressed;
 }
 
@@ -110,6 +119,7 @@ class _JourneyStepButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final label = compact ? step.compactLabel : step.label;
     final backgroundColor = selected
         ? AppTheme.gold
         : Colors.white.withValues(alpha: 0.06);
@@ -148,11 +158,7 @@ class _JourneyStepButton extends StatelessWidget {
           ),
           SizedBox(width: compact ? 5 : 10),
           Flexible(
-            child: Text(
-              step.label,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-            ),
+            child: Text(label, maxLines: 1, overflow: TextOverflow.ellipsis),
           ),
         ],
       ),

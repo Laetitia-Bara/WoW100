@@ -5,6 +5,7 @@ class AppTheme {
   static const Color card = Color(0xFF181020);
   static const Color gold = Color(0xFFD7A84B);
   static const Color blue = Color(0xFF3B82F6);
+  static const Color battleNetBlue = Color(0xFF00AEFF);
   static const Color text = Color(0xFFF8FAFC);
   static const Color mutedText = Color(0xFF94A3B8);
 
