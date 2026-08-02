@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 import '../../data/models/battle_net_friend.dart';
+import '../../data/models/farm_profile.dart';
 import '../../data/models/saved_farm_route.dart';
 import '../../data/models/wow_character.dart';
 
@@ -12,6 +13,7 @@ class SavedFarmRouteService {
       _firestore = firestore ?? FirebaseFirestore.instance;
 
   static const _routesCollection = 'farmRoutes';
+  static const _profilesCollection = 'farmProfiles';
   static const _defaultRegion = 'EU';
 
   final FirebaseAuth _auth;
@@ -47,6 +49,48 @@ class SavedFarmRouteService {
 
     _sortRoutes(routes);
     return routes;
+  }
+
+  Future<FarmProfile?> loadPublicProfileForFriend(
+    BattleNetFriend friend,
+  ) async {
+    final user = _currentUser;
+    if (user == null) return null;
+
+    final snapshot = await _profilesRef.doc(friend.storageKey).get();
+    if (!snapshot.exists) return null;
+
+    return FarmProfile.fromFirestore(snapshot);
+  }
+
+  Future<void> syncWishlistProfile({
+    required Iterable<String> itemIds,
+    required WowCharacter? character,
+  }) async {
+    final user = _currentUser;
+    if (user == null || character == null) return;
+
+    final uniqueItemIds =
+        itemIds.where((itemId) => itemId.trim().isNotEmpty).toSet().toList()
+          ..sort();
+    final ownerRegion = _defaultRegion;
+    final ownerStorageKey = _ownerStorageKey(
+      uid: user.uid,
+      character: character,
+      region: ownerRegion,
+    );
+
+    await _profilesRef.doc(ownerStorageKey).set({
+      'ownerUid': user.uid,
+      'ownerStorageKey': ownerStorageKey,
+      'ownerCharacterName': character.name,
+      'ownerRealm': character.realm,
+      'ownerRealmSlug': character.realmSlug,
+      'ownerRegion': ownerRegion,
+      'portraitUrl': character.portraitUrl,
+      'itemIds': uniqueItemIds,
+      'updatedAt': FieldValue.serverTimestamp(),
+    });
   }
 
   Future<SavedFarmRoute> saveRoute({
@@ -103,6 +147,10 @@ class SavedFarmRouteService {
 
   CollectionReference<Map<String, dynamic>> get _routesRef {
     return _firestore.collection(_routesCollection);
+  }
+
+  CollectionReference<Map<String, dynamic>> get _profilesRef {
+    return _firestore.collection(_profilesCollection);
   }
 
   String _ownerStorageKey({

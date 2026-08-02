@@ -9,6 +9,7 @@
 ## New Firestore path
 
 - `farmRoutes/{routeId}`: saved farm route.
+- `farmProfiles/{ownerStorageKey}`: public farm profile for a character, used by friends to select "Tous ses items".
 
 ## Route fields
 
@@ -25,9 +26,19 @@
 
 - Current user's saved routes: `farmRoutes.where('ownerUid', isEqualTo: uid)`.
 - Friend public routes: `farmRoutes.where('ownerStorageKey', isEqualTo: friend.storageKey).where('visibility', isEqualTo: 'public')`.
+- Friend public wishlist profile: `farmProfiles.doc(friend.storageKey).get()`.
 
 ## Access assumptions
 
 - Private routes are only readable by their owner.
 - Public routes are readable by authenticated users so friends can discover them by Battle.net character key.
+- Public farm profiles are readable by direct document lookup for authenticated users, but listing all profiles is denied.
 - Writes remain owner-only and validated against strict field names, string lengths, enum values, and timestamps.
+
+## Farm profile fields
+
+- `ownerUid`: Firebase Auth uid. Required, immutable, must equal the writer.
+- `ownerStorageKey`: Battle.net character storage key. Required, immutable, must match the document id.
+- `ownerCharacterName`, `ownerRealm`, `ownerRealmSlug`, `ownerRegion`, `portraitUrl`: public character display fields.
+- `itemIds`: public wishlist item ids, 0 to 1000 values.
+- `updatedAt`: server timestamp.

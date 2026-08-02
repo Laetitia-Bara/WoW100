@@ -1,11 +1,11 @@
 {
   "score": 4,
-  "summary": "The farmRoutes rules use owner-only writes, authenticated reads, public visibility gating, strict field allowlists, timestamp validation, and immutable owner fields. No unauthorized private read/write path was identified in the added route rules.",
+  "summary": "The farmRoutes and farmProfiles rules use owner-only writes, authenticated reads, public visibility gating where needed, strict field allowlists, timestamp validation, and immutable owner fields. farmProfiles allows direct authenticated get by known friend key but denies list access. No unauthorized private read/write path was identified in the added route rules.",
   "findings": [
     {
       "check": "Storage Abuse / Deep Array Inspection",
       "severity": "minor",
-      "issue": "itemIds is constrained to a list of 1 to 250 values, but the rules do not validate every dynamic catalog id element as a string.",
+      "issue": "itemIds is constrained to bounded list sizes, 1 to 250 for routes and 0 to 1000 for farm profiles, but the rules do not validate every dynamic catalog id element as a string.",
       "recommendation": "Keep the client-side string sanitization and consider a future map-based or backend-validated route format if route sharing becomes a sensitive or high-abuse surface."
     }
   ]

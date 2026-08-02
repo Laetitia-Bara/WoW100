@@ -69,6 +69,19 @@ service cloud.firestore {
     //   - createdAt: timestamp (required, immutable) - Route creation time.
     //   - updatedAt: timestamp (required) - Last route update time.
     //
+    // Collection: farmProfiles
+    // Document ID: Battle.net owner storage key.
+    // Fields:
+    //   - ownerUid: string (required, immutable) - Firebase Auth uid of profile owner.
+    //   - ownerStorageKey: string (required, immutable, max 240) - Must match the document ID.
+    //   - ownerCharacterName: string (required, max 80) - Public character display name.
+    //   - ownerRealm: string (optional, max 80) - Public character realm display name.
+    //   - ownerRealmSlug: string (optional, max 100) - Public character realm slug.
+    //   - ownerRegion: string (required, max 8) - Battle.net region.
+    //   - portraitUrl: string or null (optional, max 500) - Public character portrait URL.
+    //   - itemIds: list (required, 0..1000) - Public wishlist item ids for group farm matching.
+    //   - updatedAt: timestamp (required) - Last wishlist profile update time.
+    //
     // Premium entitlement must be updated by trusted backend/admin code.
     //
     // ===============================================================
@@ -322,6 +335,54 @@ service cloud.firestore {
         request.resource.data.createdAt == resource.data.createdAt;
     }
 
+    function hasValidFarmProfileShape(data, profileId) {
+      return data.keys().hasOnly([
+          'ownerUid',
+          'ownerStorageKey',
+          'ownerCharacterName',
+          'ownerRealm',
+          'ownerRealmSlug',
+          'ownerRegion',
+          'portraitUrl',
+          'itemIds',
+          'updatedAt',
+        ]) &&
+        data.keys().hasAll([
+          'ownerUid',
+          'ownerStorageKey',
+          'ownerCharacterName',
+          'ownerRegion',
+          'itemIds',
+          'updatedAt',
+        ]) &&
+        validString(data.ownerUid, 128) &&
+        data.ownerUid == request.auth.uid &&
+        validString(data.ownerStorageKey, 240) &&
+        data.ownerStorageKey == profileId &&
+        validString(data.ownerCharacterName, 80) &&
+        (!('ownerRealm' in data) || validNullableString(data.ownerRealm, 80)) &&
+        (!('ownerRealmSlug' in data) ||
+          validNullableString(data.ownerRealmSlug, 100)) &&
+        validString(data.ownerRegion, 8) &&
+        (!('portraitUrl' in data) ||
+          validNullableUrl(data.portraitUrl, 500)) &&
+        data.itemIds is list &&
+        data.itemIds.size() <= 1000 &&
+        data.updatedAt is timestamp &&
+        data.updatedAt == request.time;
+    }
+
+    function isValidFarmProfileCreate(profileId) {
+      return hasValidFarmProfileShape(request.resource.data, profileId);
+    }
+
+    function isValidFarmProfileUpdate(profileId) {
+      return hasValidFarmProfileShape(request.resource.data, profileId) &&
+        resource.data.ownerUid == request.auth.uid &&
+        request.resource.data.ownerUid == resource.data.ownerUid &&
+        request.resource.data.ownerStorageKey == resource.data.ownerStorageKey;
+    }
+
     match /users/{userId} {
       allow read: if isOwner(userId);
       allow create: if isOwner(userId) && isValidUserCreate(userId);
@@ -350,6 +411,17 @@ service cloud.firestore {
           resource.data.visibility == 'public');
       allow create: if isAuthenticated() && isValidFarmRouteCreate();
       allow update: if isAuthenticated() && isValidFarmRouteUpdate();
+      allow delete: if isAuthenticated() &&
+        resource.data.ownerUid == request.auth.uid;
+    }
+
+    match /farmProfiles/{profileId} {
+      allow get: if isAuthenticated();
+      allow list: if false;
+      allow create: if isAuthenticated() &&
+        isValidFarmProfileCreate(profileId);
+      allow update: if isAuthenticated() &&
+        isValidFarmProfileUpdate(profileId);
       allow delete: if isAuthenticated() &&
         resource.data.ownerUid == request.auth.uid;
     }

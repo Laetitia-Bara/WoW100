@@ -13,6 +13,7 @@ import '../../../../core/ads/app_ads.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/services/route_planner_service.dart';
 import '../../../../core/services/battle_net_friend_service.dart';
+import '../../../../core/services/group_route_session_service.dart';
 import '../../../../core/services/saved_farm_route_service.dart';
 import '../../../../core/services/solo_planner_service.dart';
 import '../../../../core/services/wowhead_url_builder.dart';
@@ -23,6 +24,7 @@ import '../../../../core/widgets/scrolling_notice_banner.dart';
 import '../../../../core/widgets/web_sponsor_panel.dart';
 import '../../../../data/models/tracking_item.dart';
 import '../../../../data/models/battle_net_friend.dart';
+import '../../../../data/models/farm_profile.dart';
 import '../../../../data/models/saved_farm_route.dart';
 import '../../../../data/models/wow_character.dart';
 import '../../../../data/models/wow_expansion.dart';
@@ -51,6 +53,7 @@ class PlannerPage extends StatefulWidget {
 class _PlannerPageState extends State<PlannerPage> {
   final PlannerRepository _repository = JsonPlannerRepository();
   final SoloPlannerService _soloPlannerService = SoloPlannerService();
+  final SavedFarmRouteService _savedFarmRouteService = SavedFarmRouteService();
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
   final Set<String> _collapsedGroups = {};
@@ -628,13 +631,25 @@ class _PlannerPageState extends State<PlannerPage> {
 
     if (!mounted) return;
 
+    final updatedItemIds = _soloItemIds.toSet();
+    if (selected) {
+      updatedItemIds.add(item.id);
+    } else {
+      updatedItemIds.remove(item.id);
+    }
+
     setState(() {
-      if (selected) {
-        _soloItemIds.add(item.id);
-      } else {
-        _soloItemIds.remove(item.id);
-      }
+      _soloItemIds = updatedItemIds;
     });
+
+    unawaited(
+      _savedFarmRouteService
+          .syncWishlistProfile(
+            itemIds: updatedItemIds,
+            character: _selectedCharacter,
+          )
+          .catchError((Object error, StackTrace stack) {}),
+    );
   }
 
   void _backToProgress() {
@@ -1021,11 +1036,15 @@ enum _SoloPlannerSortMode { location, category }
 
 enum _AdventureCrewMode { solo, friends }
 
+enum _GroupRouteViewMode { common, all }
+
 class _SoloPlannerPageState extends State<SoloPlannerPage> {
   final PlannerRepository _repository = JsonPlannerRepository();
   final SoloPlannerService _soloPlannerService = SoloPlannerService();
   final BattleNetFriendService _friendService = BattleNetFriendService();
   final SavedFarmRouteService _savedFarmRouteService = SavedFarmRouteService();
+  final GroupRouteSessionService _groupRouteSessionService =
+      GroupRouteSessionService();
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
   final Set<String> _collapsedGroups = {};
@@ -1036,6 +1055,8 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
   List<SavedFarmRoute> _friendPublicRoutes = [];
   BattleNetFriend? _selectedFriend;
   SavedFarmRoute? _selectedFriendRoute;
+  FarmProfile? _selectedFriendProfile;
+  bool _selectedFriendAllItems = false;
   WowCharacter? _selectedCharacter;
   bool _isLoading = true;
   bool _isLoadingFriendRoutes = false;
@@ -1093,6 +1114,12 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
       _selectedCharacter = character;
       _isLoading = false;
     });
+
+    unawaited(
+      _savedFarmRouteService
+          .syncWishlistProfile(itemIds: soloItemIds, character: character)
+          .catchError((Object error, StackTrace stack) {}),
+    );
   }
 
   int _compareCategoryItems(TrackingItem left, TrackingItem right) {
@@ -1199,6 +1226,8 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
       if (mode == _AdventureCrewMode.solo) {
         _selectedFriend = null;
         _selectedFriendRoute = null;
+        _selectedFriendProfile = null;
+        _selectedFriendAllItems = false;
         _friendPublicRoutes = const [];
         _isLoadingFriendRoutes = false;
       }
@@ -1210,6 +1239,8 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
       setState(() {
         _selectedFriend = null;
         _selectedFriendRoute = null;
+        _selectedFriendProfile = null;
+        _selectedFriendAllItems = false;
         _friendPublicRoutes = const [];
         _isLoadingFriendRoutes = false;
       });
@@ -1219,6 +1250,8 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
     setState(() {
       _selectedFriend = friend;
       _selectedFriendRoute = null;
+      _selectedFriendProfile = null;
+      _selectedFriendAllItems = false;
       _friendPublicRoutes = const [];
       _isLoadingFriendRoutes = true;
     });
@@ -1227,11 +1260,15 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
       final routes = await _savedFarmRouteService.loadPublicRoutesForFriend(
         friend,
       );
+      final profile = await _savedFarmRouteService.loadPublicProfileForFriend(
+        friend,
+      );
 
       if (!mounted || _selectedFriend?.storageKey != friend.storageKey) return;
 
       setState(() {
         _friendPublicRoutes = routes;
+        _selectedFriendProfile = profile;
         _isLoadingFriendRoutes = false;
       });
     } catch (_) {
@@ -1239,6 +1276,8 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
 
       setState(() {
         _friendPublicRoutes = const [];
+        _selectedFriendProfile = null;
+        _selectedFriendAllItems = false;
         _isLoadingFriendRoutes = false;
       });
 
@@ -1255,6 +1294,18 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
   void _setSelectedFriendRoute(SavedFarmRoute route, bool selected) {
     setState(() {
       _selectedFriendRoute = selected ? route : null;
+      if (selected) {
+        _selectedFriendAllItems = false;
+      }
+    });
+  }
+
+  void _setSelectedFriendAllItems(bool selected) {
+    setState(() {
+      _selectedFriendAllItems = selected;
+      if (selected) {
+        _selectedFriendRoute = null;
+      }
     });
   }
 
@@ -1368,22 +1419,59 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
   }
 
   Future<void> _openRoute() async {
-    final friendRoute = _selectedFriendRoute;
-    if (_crewMode == _AdventureCrewMode.friends && friendRoute != null) {
-      final itemIds = {..._todayItemIds, ...friendRoute.itemIds};
+    final friendItems = _selectedFriendItemIds();
+    final selectedFriend = _selectedFriend;
+    final selectedCharacter = _selectedCharacter;
+
+    if (_crewMode == _AdventureCrewMode.friends &&
+        selectedFriend != null &&
+        friendItems.isNotEmpty) {
+      final itemIds = {..._todayItemIds, ...friendItems};
       await _soloPlannerService.setAllTodaySelected(itemIds);
+      await _groupRouteSessionService.saveSession(
+        GroupRouteSession(
+          players: [
+            GroupRoutePlayer(
+              id: 'me',
+              name: selectedCharacter?.name ?? 'Moi',
+              realm: selectedCharacter?.realm ?? '',
+              portraitUrl: selectedCharacter?.portraitUrl,
+              itemIds: _todayItemIds,
+            ),
+            GroupRoutePlayer(
+              id: selectedFriend.storageKey,
+              name: selectedFriend.name,
+              realm: selectedFriend.realm,
+              portraitUrl: selectedFriend.portraitUrl,
+              itemIds: friendItems,
+            ),
+          ],
+        ),
+      );
 
       if (!mounted) return;
 
       setState(() {
         _todayItemIds = itemIds;
       });
+    } else {
+      await _groupRouteSessionService.clearSession();
     }
+
+    if (!mounted) return;
 
     await Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (_) => const RoutePlannerPage()),
     );
+  }
+
+  Set<String> _selectedFriendItemIds() {
+    if (_selectedFriendAllItems) {
+      return _selectedFriendProfile?.itemIds.toSet() ?? const {};
+    }
+
+    return _selectedFriendRoute?.itemIds.toSet() ?? const {};
   }
 
   @override
@@ -1456,10 +1544,13 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                         _FriendFarmPanel(
                           friends: _friends,
                           selectedFriend: _selectedFriend,
+                          friendProfile: _selectedFriendProfile,
                           publicRoutes: _friendPublicRoutes,
                           selectedRoute: _selectedFriendRoute,
+                          selectedAllItems: _selectedFriendAllItems,
                           isLoadingRoutes: _isLoadingFriendRoutes,
                           onFriendChanged: _setSelectedFriend,
+                          onAllItemsChanged: _setSelectedFriendAllItems,
                           onRouteChanged: _setSelectedFriendRoute,
                         ),
                         const SizedBox(height: 16),
@@ -1486,7 +1577,8 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                         allItemsSelected: _todayItemIds.length == _items.length,
                         canOpenRoute:
                             _todayItemIds.isNotEmpty ||
-                            _selectedFriendRoute != null,
+                            _selectedFriendRoute != null ||
+                            _selectedFriendAllItems,
                         sortMode: _sortMode,
                         onClearSelection: _clearTodaySelection,
                         onSelectAll: _selectAllToday,
@@ -1560,13 +1652,18 @@ class RoutePlannerPage extends StatefulWidget {
 class _RoutePlannerPageState extends State<RoutePlannerPage> {
   final PlannerRepository _repository = JsonPlannerRepository();
   final SoloPlannerService _soloPlannerService = SoloPlannerService();
+  final GroupRouteSessionService _groupRouteSessionService =
+      GroupRouteSessionService();
   final RoutePlannerService _routePlannerService = RoutePlannerService();
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
 
   List<TrackingItem> _items = [];
   List<PlannedRouteStep> _routeSteps = [];
+  Map<String, TrackingItem> _catalogItemsById = {};
   Set<String> _completedRouteStepIds = {};
+  GroupRouteSession? _groupRouteSession;
+  _GroupRouteViewMode _groupRouteViewMode = _GroupRouteViewMode.common;
   WowCharacter? _selectedCharacter;
   bool _isLoading = true;
 
@@ -1585,6 +1682,7 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
     final todayItemIds = await _soloPlannerService.selectedTodayItemIds(
       wishlistItemIds,
     );
+    final groupRouteSession = await _groupRouteSessionService.loadSession();
     final character = await _selectedCharacterService.loadCharacter();
     final allCatalogItems = await Future.wait([
       _repository.getItems(
@@ -1599,10 +1697,21 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
     ]);
 
     final selectedItemsById = <String, TrackingItem>{};
+    final catalogItemsById = <String, TrackingItem>{};
 
     for (final catalogItems in allCatalogItems) {
       for (final item in catalogItems) {
-        if (todayItemIds.contains(item.id)) {
+        catalogItemsById.putIfAbsent(item.id, () => item);
+      }
+    }
+
+    final selectedItemIds = groupRouteSession == null
+        ? todayItemIds
+        : _groupRouteItemIds(groupRouteSession);
+
+    for (final catalogItems in allCatalogItems) {
+      for (final item in catalogItems) {
+        if (selectedItemIds.contains(item.id)) {
           selectedItemsById.putIfAbsent(item.id, () => item);
         }
       }
@@ -1621,8 +1730,50 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
     setState(() {
       _items = items;
       _routeSteps = routePlan.steps;
+      _catalogItemsById = catalogItemsById;
       _completedRouteStepIds = completedRouteStepIds;
+      _groupRouteSession = groupRouteSession;
       _selectedCharacter = character;
+      _isLoading = false;
+    });
+  }
+
+  Set<String> _groupRouteItemIds(GroupRouteSession session) {
+    return switch (_groupRouteViewMode) {
+      _GroupRouteViewMode.common => session.commonItemIds,
+      _GroupRouteViewMode.all => session.allItemIds,
+    };
+  }
+
+  Future<void> _setGroupRouteViewMode(_GroupRouteViewMode mode) async {
+    if (_groupRouteViewMode == mode) return;
+
+    final session = _groupRouteSession;
+    if (session == null) return;
+
+    setState(() {
+      _groupRouteViewMode = mode;
+      _isLoading = true;
+    });
+
+    final itemIds = _groupRouteItemIds(session);
+    final items = [
+      for (final itemId in itemIds)
+        if (_catalogItemsById[itemId] != null) _catalogItemsById[itemId]!,
+    ];
+    final routePlan = await _routePlannerService.buildPlan(
+      items: items,
+      faction: _selectedCharacter?.faction ?? '',
+    );
+    final completedRouteStepIds = await _soloPlannerService
+        .routeCompletedStepIds(routePlan.steps.map((step) => step.id).toSet());
+
+    if (!mounted) return;
+
+    setState(() {
+      _items = items;
+      _routeSteps = routePlan.steps;
+      _completedRouteStepIds = completedRouteStepIds;
       _isLoading = false;
     });
   }
@@ -1737,6 +1888,13 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
                         style: const TextStyle(fontWeight: FontWeight.w700),
                       ),
                       const SizedBox(height: 12),
+                      if (_groupRouteSession != null) ...[
+                        _GroupRouteModeSelector(
+                          selectedMode: _groupRouteViewMode,
+                          onChanged: _setGroupRouteViewMode,
+                        ),
+                        const SizedBox(height: 12),
+                      ],
                       _RouteResetActionBar(
                         hasCompletedSteps: _completedRouteStepIds.isNotEmpty,
                         onResetAll: _resetAllRouteSteps,
@@ -1768,6 +1926,10 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
                       step: step,
                       stepNumber: ++stepNumber,
                       completed: _completedRouteStepIds.contains(step.id),
+                      farmers: _farmersForStep(step),
+                      showFarmers:
+                          _groupRouteSession != null &&
+                          _groupRouteViewMode == _GroupRouteViewMode.all,
                       onChanged: (value) =>
                           _setRouteStepCompleted(step, value ?? false),
                     );
@@ -1783,6 +1945,14 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
     if (count == 1) return '1 objectif pour cette balade';
 
     return '$count objectifs pour cette balade';
+  }
+
+  List<GroupRoutePlayer> _farmersForStep(PlannedRouteStep step) {
+    final item = step.item;
+    final session = _groupRouteSession;
+    if (item == null || session == null) return const [];
+
+    return session.playersForItem(item.id);
   }
 }
 
@@ -1853,17 +2023,115 @@ class _RouteResetActionBar extends StatelessWidget {
   }
 }
 
+class _GroupRouteModeSelector extends StatelessWidget {
+  const _GroupRouteModeSelector({
+    required this.selectedMode,
+    required this.onChanged,
+  });
+
+  final _GroupRouteViewMode selectedMode;
+  final ValueChanged<_GroupRouteViewMode> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: SegmentedButton<_GroupRouteViewMode>(
+        segments: const [
+          ButtonSegment(
+            value: _GroupRouteViewMode.common,
+            icon: Icon(Icons.compare_arrows_rounded),
+            label: Text('Items en commun'),
+          ),
+          ButtonSegment(
+            value: _GroupRouteViewMode.all,
+            icon: Icon(Icons.all_inclusive_rounded),
+            label: Text('Tous les items'),
+          ),
+        ],
+        selected: {selectedMode},
+        onSelectionChanged: (selection) => onChanged(selection.single),
+      ),
+    );
+  }
+}
+
+class _RouteFarmersAvatars extends StatelessWidget {
+  const _RouteFarmersAvatars({required this.farmers});
+
+  final List<GroupRoutePlayer> farmers;
+
+  @override
+  Widget build(BuildContext context) {
+    if (farmers.isEmpty) return const SizedBox.shrink();
+
+    return SizedBox(
+      width: 30 + (farmers.length - 1) * 18,
+      height: 34,
+      child: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          for (var index = 0; index < farmers.length; index++)
+            Positioned(
+              left: index * 18,
+              child: Tooltip(
+                message: farmers[index].displayName,
+                child: _RouteFarmerAvatar(player: farmers[index]),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+class _RouteFarmerAvatar extends StatelessWidget {
+  const _RouteFarmerAvatar({required this.player});
+
+  final GroupRoutePlayer player;
+
+  @override
+  Widget build(BuildContext context) {
+    final portraitUrl = player.portraitUrl;
+
+    return CircleAvatar(
+      radius: 15,
+      backgroundColor: AppTheme.background,
+      child: CircleAvatar(
+        radius: 13,
+        backgroundColor: AppTheme.gold.withValues(alpha: 0.18),
+        backgroundImage: portraitUrl == null || portraitUrl.isEmpty
+            ? null
+            : NetworkImage(portraitUrl),
+        child: portraitUrl == null || portraitUrl.isEmpty
+            ? Text(
+                player.name.isEmpty ? '?' : player.name[0].toUpperCase(),
+                style: const TextStyle(
+                  color: AppTheme.gold,
+                  fontWeight: FontWeight.w900,
+                ),
+              )
+            : null,
+      ),
+    );
+  }
+}
+
 class _RouteStepCard extends StatelessWidget {
   const _RouteStepCard({
     required this.step,
     required this.stepNumber,
     required this.completed,
+    this.farmers = const [],
+    this.showFarmers = false,
     required this.onChanged,
   });
 
   final PlannedRouteStep step;
   final int stepNumber;
   final bool completed;
+  final List<GroupRoutePlayer> farmers;
+  final bool showFarmers;
   final ValueChanged<bool?> onChanged;
 
   @override
@@ -1892,6 +2160,10 @@ class _RouteStepCard extends StatelessWidget {
             _RouteStepIcon(kind: step.kind),
             const SizedBox(width: 12),
             if (item != null) ...[
+              if (showFarmers) ...[
+                _RouteFarmersAvatars(farmers: farmers),
+                const SizedBox(width: 10),
+              ],
               _PlannerItemArtwork(item: item),
               const SizedBox(width: 12),
             ],
@@ -2123,19 +2395,25 @@ class _FriendFarmPanel extends StatelessWidget {
   const _FriendFarmPanel({
     required this.friends,
     required this.selectedFriend,
+    required this.friendProfile,
     required this.publicRoutes,
     required this.selectedRoute,
+    required this.selectedAllItems,
     required this.isLoadingRoutes,
     required this.onFriendChanged,
+    required this.onAllItemsChanged,
     required this.onRouteChanged,
   });
 
   final List<BattleNetFriend> friends;
   final BattleNetFriend? selectedFriend;
+  final FarmProfile? friendProfile;
   final List<SavedFarmRoute> publicRoutes;
   final SavedFarmRoute? selectedRoute;
+  final bool selectedAllItems;
   final bool isLoadingRoutes;
   final void Function(BattleNetFriend friend, bool selected) onFriendChanged;
+  final ValueChanged<bool> onAllItemsChanged;
   final void Function(SavedFarmRoute route, bool selected) onRouteChanged;
 
   @override
@@ -2182,6 +2460,20 @@ class _FriendFarmPanel extends StatelessWidget {
               const SizedBox(height: 14),
               const Divider(height: 1),
               const SizedBox(height: 12),
+              Text(
+                'Sélection par défaut',
+                style: const TextStyle(fontWeight: FontWeight.w800),
+              ),
+              const SizedBox(height: 8),
+              _FriendAllItemsChoiceTile(
+                profile: friendProfile,
+                selected: selectedAllItems,
+                onChanged:
+                    friendProfile == null || friendProfile!.itemIds.isEmpty
+                    ? null
+                    : (value) => onAllItemsChanged(value ?? false),
+              ),
+              const SizedBox(height: 14),
               Text(
                 'Listes publiques de ${selectedFriend!.name}',
                 style: const TextStyle(fontWeight: FontWeight.w800),
@@ -2268,6 +2560,55 @@ class _FriendChoiceTile extends StatelessWidget {
           subtitle: subtitle.isEmpty
               ? null
               : Text(subtitle, overflow: TextOverflow.ellipsis),
+        ),
+      ),
+    );
+  }
+}
+
+class _FriendAllItemsChoiceTile extends StatelessWidget {
+  const _FriendAllItemsChoiceTile({
+    required this.profile,
+    required this.selected,
+    required this.onChanged,
+  });
+
+  final FarmProfile? profile;
+  final bool selected;
+  final ValueChanged<bool?>? onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final itemCount = profile?.itemIds.length ?? 0;
+    final subtitle = profile == null
+        ? 'Aucune wishlist publique synchronisee pour le moment.'
+        : '$itemCount item(s) dans sa wishlist';
+
+    return ConstrainedBox(
+      constraints: const BoxConstraints(minWidth: 240, maxWidth: 360),
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: selected
+              ? AppTheme.gold.withValues(alpha: 0.14)
+              : Colors.white.withValues(alpha: 0.035),
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(
+            color: selected
+                ? AppTheme.gold.withValues(alpha: 0.72)
+                : AppTheme.gold.withValues(alpha: 0.18),
+          ),
+        ),
+        child: CheckboxListTile(
+          value: selected,
+          onChanged: onChanged,
+          controlAffinity: ListTileControlAffinity.leading,
+          secondary: const Icon(Icons.inventory_2_outlined),
+          title: const Text(
+            'Tous ses items',
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(fontWeight: FontWeight.w800),
+          ),
+          subtitle: Text(subtitle, overflow: TextOverflow.ellipsis),
         ),
       ),
     );
