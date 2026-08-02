@@ -2603,6 +2603,54 @@ class _SoloPlannerActionBar extends StatelessWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
+        if (constraints.maxWidth < 560) {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              count,
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  Expanded(child: selectAllButton),
+                  const SizedBox(width: 10),
+                  Expanded(child: clearButton),
+                ],
+              ),
+              const SizedBox(height: 10),
+              Align(alignment: Alignment.center, child: sortControls),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  Expanded(
+                    child: _SoloPlannerMobileRouteButton(
+                      icon: Icons.folder_open_rounded,
+                      label: 'Mes routes',
+                      onPressed: onOpenSavedRoutes,
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: _SoloPlannerMobileRouteButton(
+                      icon: Icons.bookmark_add_outlined,
+                      label: 'Sauver',
+                      onPressed: hasTodaySelection ? onSaveRoute : null,
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: _SoloPlannerMobileRouteButton(
+                      icon: Icons.route_rounded,
+                      label: 'Générer',
+                      onPressed: canOpenRoute ? onOpenRoute : null,
+                      filled: true,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          );
+        }
+
         final topRow = constraints.maxWidth < 820
             ? Wrap(
                 spacing: 10,
@@ -2636,6 +2684,51 @@ class _SoloPlannerActionBar extends StatelessWidget {
           ],
         );
       },
+    );
+  }
+}
+
+class _SoloPlannerMobileRouteButton extends StatelessWidget {
+  const _SoloPlannerMobileRouteButton({
+    required this.icon,
+    required this.label,
+    required this.onPressed,
+    this.filled = false,
+  });
+
+  final IconData icon;
+  final String label;
+  final VoidCallback? onPressed;
+  final bool filled;
+
+  @override
+  Widget build(BuildContext context) {
+    final labelWidget = FittedBox(
+      fit: BoxFit.scaleDown,
+      child: Text(label, maxLines: 1),
+    );
+    final style = ButtonStyle(
+      minimumSize: WidgetStateProperty.all(const Size(0, 46)),
+      padding: WidgetStateProperty.all(
+        const EdgeInsets.symmetric(horizontal: 8),
+      ),
+      visualDensity: VisualDensity.compact,
+    );
+
+    if (filled) {
+      return FilledButton.icon(
+        onPressed: onPressed,
+        icon: Icon(icon, size: 18),
+        label: labelWidget,
+        style: style,
+      );
+    }
+
+    return OutlinedButton.icon(
+      onPressed: onPressed,
+      icon: Icon(icon, size: 18),
+      label: labelWidget,
+      style: style,
     );
   }
 }
@@ -4175,13 +4268,25 @@ class _MountExternalLinkButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(
-      tooltip: tooltip,
-      onPressed: onPressed,
-      constraints: const BoxConstraints.tightFor(width: 34, height: 34),
-      padding: const EdgeInsets.all(4),
-      visualDensity: VisualDensity.compact,
-      icon: child,
+    const size = 34.0;
+
+    return Tooltip(
+      message: tooltip,
+      child: Semantics(
+        button: true,
+        child: Material(
+          type: MaterialType.transparency,
+          child: InkResponse(
+            onTap: onPressed,
+            containedInkWell: true,
+            radius: size / 2,
+            child: SizedBox.square(
+              dimension: size,
+              child: Center(child: child),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

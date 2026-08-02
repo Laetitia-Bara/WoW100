@@ -460,6 +460,7 @@ class _SignedInPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final showWallpaperSelector = MediaQuery.sizeOf(context).width >= 600;
     final title = profile.displayName?.trim().isNotEmpty == true
         ? profile.displayName!.trim()
         : profile.email ?? 'Compte connecté';
@@ -508,12 +509,14 @@ class _SignedInPanel extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 18),
-            _WallpaperPreferenceSelector(
-              selected: profile.wallpaperPreference,
-              isBusy: isBusy,
-              onChanged: onWallpaperChanged,
-            ),
+            if (showWallpaperSelector) ...[
+              const SizedBox(height: 18),
+              _WallpaperPreferenceSelector(
+                selected: profile.wallpaperPreference,
+                isBusy: isBusy,
+                onChanged: onWallpaperChanged,
+              ),
+            ],
             const SizedBox(height: 18),
             _PremiumStatusBadge(isPremium: profile.isPremium),
             const SizedBox(height: 18),

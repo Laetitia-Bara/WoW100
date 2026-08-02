@@ -727,10 +727,12 @@ class _HeroCard extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       child: LayoutBuilder(
         builder: (context, constraints) {
+          final isMobile = constraints.maxWidth < 560;
           final showInlineProfileStats =
               hasCharacter && constraints.maxWidth >= 980;
           final showStackedProfileStats =
               hasCharacter && !showInlineProfileStats;
+          final showPortrait = hasPortrait && !isMobile;
           final identityBlock = Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -748,23 +750,41 @@ class _HeroCard extends StatelessWidget {
               Text(
                 hasCharacter
                     ? '${currentCharacter.race} ${currentCharacter.characterClass} • ${currentCharacter.realm} • ${currentCharacter.faction} • Niveau ${currentCharacter.level}'
-                    : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression par extension.',
+                    : 'Connecte ton compte Battle.net, choisis ton personnage principal, puis suis ta progression.',
                 style: TextStyle(color: subtitleColor, height: 1.4),
               ),
             ],
           );
-          final profileStatsBlock = Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              _AchievementPointsBadge(
-                points: currentCharacter?.achievementPoints ?? 0,
-              ),
-              const SizedBox(width: 12),
-              _MythicKeystoneRatingBadge(
-                rating: currentCharacter?.mythicKeystoneRating ?? 0,
-              ),
-            ],
-          );
+          final profileStatsBlock = isMobile
+              ? Row(
+                  children: [
+                    Expanded(
+                      child: _AchievementPointsBadge(
+                        points: currentCharacter?.achievementPoints ?? 0,
+                        width: double.infinity,
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: _MythicKeystoneRatingBadge(
+                        rating: currentCharacter?.mythicKeystoneRating ?? 0,
+                        width: double.infinity,
+                      ),
+                    ),
+                  ],
+                )
+              : Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    _AchievementPointsBadge(
+                      points: currentCharacter?.achievementPoints ?? 0,
+                    ),
+                    const SizedBox(width: 12),
+                    _MythicKeystoneRatingBadge(
+                      rating: currentCharacter?.mythicKeystoneRating ?? 0,
+                    ),
+                  ],
+                );
 
           return Stack(
             children: [
@@ -777,7 +797,7 @@ class _HeroCard extends StatelessWidget {
                   children: [
                     if (showInlineProfileStats)
                       SizedBox(
-                        height: hasPortrait ? 112 : 76,
+                        height: showPortrait ? 112 : 76,
                         child: Stack(
                           clipBehavior: Clip.none,
                           children: [
@@ -791,7 +811,7 @@ class _HeroCard extends StatelessWidget {
                                 child: identityBlock,
                               ),
                             ),
-                            if (hasPortrait)
+                            if (showPortrait)
                               Align(
                                 alignment: Alignment.topCenter,
                                 child: _CharacterPortraitFrame(
@@ -812,17 +832,23 @@ class _HeroCard extends StatelessWidget {
                       ),
                     if (showStackedProfileStats) ...[
                       const SizedBox(height: 14),
-                      Wrap(
-                        spacing: 12,
-                        runSpacing: 12,
-                        crossAxisAlignment: WrapCrossAlignment.center,
-                        children: [
-                          profileStatsBlock,
-                          if (hasPortrait)
-                            _CharacterPortraitFrame(imageUrl: portraitUrl),
-                        ],
-                      ),
-                    ] else if (!hasCharacter && hasPortrait) ...[
+                      if (isMobile)
+                        SizedBox(
+                          width: double.infinity,
+                          child: profileStatsBlock,
+                        )
+                      else
+                        Wrap(
+                          spacing: 12,
+                          runSpacing: 12,
+                          crossAxisAlignment: WrapCrossAlignment.center,
+                          children: [
+                            profileStatsBlock,
+                            if (showPortrait)
+                              _CharacterPortraitFrame(imageUrl: portraitUrl),
+                          ],
+                        ),
+                    ] else if (!hasCharacter && showPortrait) ...[
                       const SizedBox(height: 14),
                       Align(
                         alignment: Alignment.centerLeft,
@@ -846,9 +872,10 @@ class _HeroCard extends StatelessWidget {
 }
 
 class _AchievementPointsBadge extends StatelessWidget {
-  const _AchievementPointsBadge({required this.points});
+  const _AchievementPointsBadge({required this.points, this.width = 174});
 
   final int points;
+  final double width;
 
   @override
   Widget build(BuildContext context) {
@@ -857,7 +884,7 @@ class _AchievementPointsBadge extends StatelessWidget {
     return Semantics(
       label: 'Points de hauts faits $formattedPoints',
       child: Container(
-        width: 174,
+        width: width,
         height: 76,
         padding: const EdgeInsets.all(1.5),
         decoration: BoxDecoration(
@@ -955,11 +982,12 @@ class _AchievementPointsBadge extends StatelessWidget {
 }
 
 class _MythicKeystoneRatingBadge extends StatelessWidget {
-  const _MythicKeystoneRatingBadge({required this.rating});
+  const _MythicKeystoneRatingBadge({required this.rating, this.width = 146});
 
   static const _iconAsset = 'assets/images/icones/mythic_keystone_icon.png';
 
   final int rating;
+  final double width;
 
   @override
   Widget build(BuildContext context) {
@@ -968,7 +996,7 @@ class _MythicKeystoneRatingBadge extends StatelessWidget {
     return Semantics(
       label: 'Cote Mythique Plus $formattedRating',
       child: Container(
-        width: 146,
+        width: width,
         height: 76,
         padding: const EdgeInsets.all(1.5),
         decoration: BoxDecoration(
