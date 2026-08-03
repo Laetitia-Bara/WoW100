@@ -982,7 +982,7 @@ class _AchievementPointsBadge extends StatelessWidget {
 }
 
 class _MythicKeystoneRatingBadge extends StatelessWidget {
-  const _MythicKeystoneRatingBadge({required this.rating, this.width = 146});
+  const _MythicKeystoneRatingBadge({required this.rating, this.width = 174});
 
   static const _iconAsset = 'assets/images/icones/mythic_keystone_icon.png';
 
