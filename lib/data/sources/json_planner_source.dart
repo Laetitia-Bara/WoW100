@@ -140,14 +140,6 @@ class JsonPlannerSource {
           draft?['expansion'] ??
           mamytwink?['expansion'];
 
-      if (expansion != WowExpansion.allMounts &&
-          (expansionKey is! String || expansionKey != expansion.name)) {
-        continue;
-      }
-
-      final itemExpansion = expansionKey is String
-          ? WowExpansionParser.fromJson(expansionKey)
-          : WowExpansion.allMounts;
       final manualSource =
           manual?['source'] as String? ?? manual?['sourceName'] as String?;
       final wowheadSource =
@@ -190,6 +182,17 @@ class JsonPlannerSource {
           : (mamytwinkSource?.isNotEmpty ?? false)
           ? mamytwinkSource!
           : _sourceNameFromBlizzard(mount);
+
+      if (expansion != WowExpansion.allMounts &&
+          (expansionKey is! String ||
+              expansionKey != expansion.name ||
+              _isWorldEventMountSource(sourceName))) {
+        continue;
+      }
+
+      final itemExpansion = expansionKey is String
+          ? WowExpansionParser.fromJson(expansionKey)
+          : WowExpansion.allMounts;
       final status = _mountStatus(
         sourceName: sourceName,
         difficulty: difficulty,
@@ -527,6 +530,21 @@ class JsonPlannerSource {
         normalized.contains('hebdomadaire');
   }
 
+  bool _isWorldEventMountSource(String sourceName) {
+    final source = _normalizeMountStatusText(sourceName);
+
+    return source.contains('evenement mondial') ||
+        source.contains('evenement') ||
+        source.contains('anniversaire') ||
+        source.contains('fete') ||
+        source.contains('fete lunaire') ||
+        source.contains('amour dans l air') ||
+        source.contains('jardin des nobles') ||
+        source.contains('fete des brasseurs') ||
+        source.contains('sanssaint') ||
+        source.contains('voile d hiver');
+  }
+
   String _mountStatus({
     required String sourceName,
     required String? difficulty,
@@ -577,13 +595,7 @@ class JsonPlannerSource {
       return 'Métier';
     }
 
-    if (source.contains('evenement mondial') ||
-        source.contains('evenement') ||
-        source.contains('anniversaire') ||
-        source.contains('fete') ||
-        source.contains('amour dans l air') ||
-        source.contains('jardin des nobles') ||
-        source.contains('voile d hiver')) {
+    if (_isWorldEventMountSource(sourceName)) {
       return 'Événement mondial';
     }
 

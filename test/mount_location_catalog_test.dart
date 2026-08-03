@@ -71,6 +71,23 @@ void main() {
       );
       expect(vanillaDeathcharger.instance, 'Butin');
       expect(vanillaDeathcharger.subzone, 'Stratholme');
+
+      final allBrewfestMount = items.singleWhere(
+        (item) => item.blizzardId == 202,
+      );
+      expect(allBrewfestMount.source, 'Fête des brasseurs');
+
+      final tbcItems = await JsonPlannerSource().loadMountItems(
+        WowExpansion.tbc,
+      );
+      expect(
+        tbcItems.where(
+          (item) =>
+              item.source == 'Fête des brasseurs' ||
+              item.name.contains('fête des Brasseurs'),
+        ),
+        isEmpty,
+      );
     },
   );
 }
