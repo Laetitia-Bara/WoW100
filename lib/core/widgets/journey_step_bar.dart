@@ -24,7 +24,7 @@ class JourneyStepBar extends StatelessWidget implements PreferredSizeWidget {
     final steps = [
       _JourneyStep(
         number: 1,
-        label: 'Sélectionne les items à farmer',
+        label: 'Sélectionne tes items manquants',
         compactLabel: 'Sélectionne',
         onPressed: onStep1,
       ),
