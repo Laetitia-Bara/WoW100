@@ -80,6 +80,17 @@ void main() {
       final tbcItems = await JsonPlannerSource().loadMountItems(
         WowExpansion.tbc,
       );
+      final tbcAshesOfAlar = tbcItems.singleWhere(
+        (item) => item.blizzardId == 183,
+      );
+      expect(tbcAshesOfAlar.instance, 'Butin');
+      expect(tbcAshesOfAlar.displayInstance, 'L’Œil');
+
+      final ravenLord = tbcItems.singleWhere((item) => item.blizzardId == 185);
+      expect(ravenLord.instance, 'Butin');
+      expect(ravenLord.source, 'Butin');
+      expect(ravenLord.dropRate, '2');
+
       expect(
         tbcItems.where(
           (item) =>

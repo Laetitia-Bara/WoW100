@@ -391,8 +391,14 @@ class AchievementGroupHierarchy {
     15610: 'Contenu d’extension',
   };
 
+  static const _arenaSeasonMountAchievementIds = {886, 887, 888, 2316};
+
   static String? labelFor(TrackingItem item) {
     if (item.category != TrackingCategory.achievements) return null;
+
+    if (_isArenaSeasonMountAchievement(item)) {
+      return 'Joueur contre Joueur${separator}Arène';
+    }
 
     final leaf = item.blizzardCategoryName.trim();
     if (leaf == 'Guilde') return leaf;
@@ -410,6 +416,40 @@ class AchievementGroupHierarchy {
     }
 
     return '$root$separator$leaf';
+  }
+
+  static bool _isArenaSeasonMountAchievement(TrackingItem item) {
+    if (item.blizzardCategoryName.trim() != 'Montures') return false;
+
+    final achievementId = item.blizzardId ?? item.wowheadAchievementId;
+    if (_arenaSeasonMountAchievementIds.contains(achievementId)) return true;
+
+    final source = _normalize(item.source);
+    return source.contains('saison') &&
+        (source.contains('arene') || source.contains('drake du neant'));
+  }
+
+  static String _normalize(String value) {
+    return value
+        .toLowerCase()
+        .replaceAll(RegExp(r"['’´`\-/]"), ' ')
+        .replaceAll('à', 'a')
+        .replaceAll('â', 'a')
+        .replaceAll('ä', 'a')
+        .replaceAll('é', 'e')
+        .replaceAll('è', 'e')
+        .replaceAll('ê', 'e')
+        .replaceAll('ë', 'e')
+        .replaceAll('î', 'i')
+        .replaceAll('ï', 'i')
+        .replaceAll('ô', 'o')
+        .replaceAll('ö', 'o')
+        .replaceAll('ù', 'u')
+        .replaceAll('û', 'u')
+        .replaceAll('ü', 'u')
+        .replaceAll('ç', 'c')
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
   }
 
   static String rootLabel(String label) {

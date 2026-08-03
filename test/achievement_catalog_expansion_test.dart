@@ -1,4 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:wow100/data/models/achievement_group_hierarchy.dart';
 import 'package:wow100/data/models/tracking_category.dart';
 import 'package:wow100/data/models/tracking_item.dart';
 import 'package:wow100/data/models/wow_expansion.dart';
@@ -50,6 +51,8 @@ const _worldEventCategoryIds = {
   15567,
   15574,
 };
+
+const _tbcArenaMountAchievementIds = {886, 887, 888, 2316};
 
 const _extensionContentCategoryIds = {
   14941,
@@ -231,6 +234,28 @@ void main() {
         eventAchievements,
         isEmpty,
         reason: '${expansion.name} should not contain world event HFs',
+      );
+    }
+  });
+
+  test('routes TBC arena season mount achievements to PvP groups', () async {
+    final repository = JsonPlannerRepository();
+
+    final achievements = await repository.getItems(
+      WowExpansion.tbc,
+      category: TrackingCategory.achievements,
+    );
+    final achievementsById = {
+      for (final item in achievements) item.blizzardId: item,
+    };
+
+    for (final achievementId in _tbcArenaMountAchievementIds) {
+      final achievement = achievementsById[achievementId];
+
+      expect(achievement, isNotNull);
+      expect(
+        AchievementGroupHierarchy.labelFor(achievement!),
+        'Joueur contre Joueur > Arène',
       );
     }
   });

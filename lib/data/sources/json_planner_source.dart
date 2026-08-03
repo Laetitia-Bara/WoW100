@@ -152,7 +152,7 @@ class JsonPlannerSource {
           _metadataString(manual, 'difficulty') ??
           _metadataString(draft, 'difficulty') ??
           _metadataString(mamytwink, 'difficulty');
-      final dropRate =
+      final rawDropRate =
           _firstMetadataString(wowhead, _dropRateKeys) ??
           _firstMetadataString(manual, _dropRateKeys) ??
           _firstMetadataString(draft, _dropRateKeys) ??
@@ -175,13 +175,15 @@ class JsonPlannerSource {
             }
             return tags;
           });
-      final sourceName = (wowheadSource?.isNotEmpty ?? false)
+      final rawSourceName = (wowheadSource?.isNotEmpty ?? false)
           ? wowheadSource!
           : (manualSource?.isNotEmpty ?? false)
           ? manualSource!
           : (mamytwinkSource?.isNotEmpty ?? false)
           ? mamytwinkSource!
           : _sourceNameFromBlizzard(mount);
+      final sourceName = _cleanMountSourceName(rawSourceName);
+      final dropRate = rawDropRate ?? _dropRateFromSourceName(rawSourceName);
 
       if (expansion != WowExpansion.allMounts &&
           (expansionKey is! String ||
@@ -206,6 +208,7 @@ class JsonPlannerSource {
       final instance = (manualInstance?.isNotEmpty ?? false)
           ? manualInstance!
           : sourceName;
+      final groupInstance = _isLootMountSource(sourceName) ? status : instance;
       final displayInstance = (manualInstance?.isNotEmpty ?? false)
           ? manualInstance!
           : '';
@@ -238,9 +241,9 @@ class JsonPlannerSource {
           locationRef: _metadataString(reference, 'primaryLocationRef') ?? '',
           instance: expansion == WowExpansion.allMounts
               ? status
-              : instance.isEmpty
+              : groupInstance.isEmpty
               ? 'Source a verifier'
-              : instance,
+              : groupInstance,
           displayInstance: displayInstance,
           source: sourceName,
           groupRequired:
@@ -429,6 +432,21 @@ class JsonPlannerSource {
     return mount['sourceType'] ?? 'Source à vérifier';
   }
 
+  String _cleanMountSourceName(String sourceName) {
+    return sourceName
+        .replaceFirst(RegExp(r'\s*\(\s*\d+(?:[,.]\d+)?\s*%?\s*\)\s*$'), '')
+        .trim();
+  }
+
+  String? _dropRateFromSourceName(String sourceName) {
+    final match = RegExp(
+      r'\(\s*(\d+(?:[,.]\d+)?)\s*%?\s*\)',
+    ).firstMatch(sourceName);
+    if (match == null) return null;
+
+    return match.group(1);
+  }
+
   String? _metadataString(Map<String, dynamic>? metadata, String key) {
     if (metadata == null) return null;
 
@@ -528,6 +546,12 @@ class JsonPlannerSource {
     return normalized.startsWith('butin') ||
         normalized.contains('raid') ||
         normalized.contains('hebdomadaire');
+  }
+
+  bool _isLootMountSource(String sourceName) {
+    final source = _normalizeMountStatusText(sourceName);
+
+    return source.contains('butin') || source.contains('drop');
   }
 
   bool _isWorldEventMountSource(String sourceName) {
