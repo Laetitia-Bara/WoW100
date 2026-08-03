@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
+import '../../../../core/services/auth_remember_me_service.dart';
 import '../../../../core/services/firebase_account_service.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/app_user_profile.dart';
@@ -18,21 +20,42 @@ class AuthPage extends StatefulWidget {
 
 class _AuthPageState extends State<AuthPage> {
   final FirebaseAccountService _accountService = FirebaseAccountService();
+  final AuthRememberMeService _rememberMeService = AuthRememberMeService();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   _AuthMode _mode = _AuthMode.signIn;
+  bool _rememberMe = false;
   bool _isBusy = false;
   String? _message;
 
   bool get _isSignUp => _mode == _AuthMode.signUp;
 
   @override
+  void initState() {
+    super.initState();
+    _loadRememberedAuthInfo();
+  }
+
+  @override
   void dispose() {
     _emailController.dispose();
     _passwordController.dispose();
     super.dispose();
+  }
+
+  Future<void> _loadRememberedAuthInfo() async {
+    final rememberedInfo = await _rememberMeService.load();
+
+    if (!mounted) return;
+
+    setState(() {
+      _rememberMe = rememberedInfo.rememberMe;
+      if (rememberedInfo.email != null && _emailController.text.isEmpty) {
+        _emailController.text = rememberedInfo.email!;
+      }
+    });
   }
 
   Future<void> _submitEmailPassword() async {
@@ -52,15 +75,32 @@ class _AuthPageState extends State<AuthPage> {
           password: _passwordController.text,
         );
       }
+
+      await _saveRememberedAuthInfo(_emailController.text);
+      TextInput.finishAutofillContext(shouldSave: _rememberMe);
     });
   }
 
   Future<void> _signInWithGoogle() {
-    return _runAuthAction(_accountService.signInWithGoogle);
+    return _runAuthAction(() async {
+      final credential = await _accountService.signInWithGoogle();
+      await _saveRememberedAuthInfo(credential.user?.email ?? '');
+    });
   }
 
   Future<void> _signInWithApple() {
-    return _runAuthAction(_accountService.signInWithApple);
+    return _runAuthAction(() async {
+      final credential = await _accountService.signInWithApple();
+      await _saveRememberedAuthInfo(credential.user?.email ?? '');
+    });
+  }
+
+  Future<void> _saveRememberedAuthInfo(String email) {
+    if (_rememberMe) {
+      return _rememberMeService.saveEmail(email);
+    }
+
+    return _rememberMeService.clear();
   }
 
   Future<void> _sendPasswordReset() async {
@@ -244,6 +284,7 @@ class _AuthPageState extends State<AuthPage> {
                               mode: _mode,
                               emailController: _emailController,
                               passwordController: _passwordController,
+                              rememberMe: _rememberMe,
                               isBusy: _isBusy,
                               message: _message,
                               onModeChanged: (mode) {
@@ -256,6 +297,11 @@ class _AuthPageState extends State<AuthPage> {
                               onGoogle: _signInWithGoogle,
                               onApple: _signInWithApple,
                               onPasswordReset: _sendPasswordReset,
+                              onRememberMeChanged: (value) {
+                                setState(() {
+                                  _rememberMe = value;
+                                });
+                              },
                               validateEmail: _validateEmail,
                               validatePassword: _validatePassword,
                             )
@@ -284,6 +330,7 @@ class _AuthForm extends StatelessWidget {
     required this.mode,
     required this.emailController,
     required this.passwordController,
+    required this.rememberMe,
     required this.isBusy,
     required this.message,
     required this.onModeChanged,
@@ -291,6 +338,7 @@ class _AuthForm extends StatelessWidget {
     required this.onGoogle,
     required this.onApple,
     required this.onPasswordReset,
+    required this.onRememberMeChanged,
     required this.validateEmail,
     required this.validatePassword,
   });
@@ -299,6 +347,7 @@ class _AuthForm extends StatelessWidget {
   final _AuthMode mode;
   final TextEditingController emailController;
   final TextEditingController passwordController;
+  final bool rememberMe;
   final bool isBusy;
   final String? message;
   final ValueChanged<_AuthMode> onModeChanged;
@@ -306,6 +355,7 @@ class _AuthForm extends StatelessWidget {
   final VoidCallback onGoogle;
   final VoidCallback onApple;
   final VoidCallback onPasswordReset;
+  final ValueChanged<bool> onRememberMeChanged;
   final FormFieldValidator<String> validateEmail;
   final FormFieldValidator<String> validatePassword;
 
@@ -318,124 +368,146 @@ class _AuthForm extends StatelessWidget {
         padding: const EdgeInsets.all(18),
         child: Form(
           key: formKey,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              const Text(
-                'WoW100%',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w900),
-              ),
-              const SizedBox(height: 8),
-              const Text(
-                'Connecte-toi afin de retrouver ton progress et tes favoris, quelque soit ta plateforme (Web, Android, iOS)  ;)',
-                style: TextStyle(color: AppTheme.mutedText, height: 1.4),
-              ),
-              const SizedBox(height: 18),
-              SegmentedButton<_AuthMode>(
-                segments: const [
-                  ButtonSegment(
-                    value: _AuthMode.signIn,
-                    icon: Icon(Icons.login),
-                    label: Text('Connexion'),
+          child: AutofillGroup(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                const Text(
+                  'WoW100%',
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w900),
+                ),
+                const SizedBox(height: 8),
+                const Text(
+                  'Connecte-toi afin de retrouver ton progress et tes favoris, quelque soit ta plateforme (Web, Android, iOS)  ;)',
+                  style: TextStyle(color: AppTheme.mutedText, height: 1.4),
+                ),
+                const SizedBox(height: 18),
+                SegmentedButton<_AuthMode>(
+                  segments: const [
+                    ButtonSegment(
+                      value: _AuthMode.signIn,
+                      icon: Icon(Icons.login),
+                      label: Text('Connexion'),
+                    ),
+                    ButtonSegment(
+                      value: _AuthMode.signUp,
+                      icon: Icon(Icons.person_add_alt_1),
+                      label: Text('Inscription'),
+                    ),
+                  ],
+                  selected: {mode},
+                  onSelectionChanged: isBusy
+                      ? null
+                      : (selection) => onModeChanged(selection.first),
+                ),
+                const SizedBox(height: 16),
+                TextFormField(
+                  controller: emailController,
+                  enabled: !isBusy,
+                  keyboardType: TextInputType.emailAddress,
+                  textInputAction: TextInputAction.next,
+                  autofillHints: const [
+                    AutofillHints.email,
+                    AutofillHints.username,
+                  ],
+                  autocorrect: false,
+                  decoration: const InputDecoration(
+                    prefixIcon: Icon(Icons.mail_outline),
+                    labelText: 'E-mail',
                   ),
-                  ButtonSegment(
-                    value: _AuthMode.signUp,
-                    icon: Icon(Icons.person_add_alt_1),
-                    label: Text('Inscription'),
+                  validator: validateEmail,
+                ),
+                const SizedBox(height: 12),
+                TextFormField(
+                  controller: passwordController,
+                  enabled: !isBusy,
+                  obscureText: true,
+                  textInputAction: TextInputAction.done,
+                  autofillHints: [
+                    _isSignUp
+                        ? AutofillHints.newPassword
+                        : AutofillHints.password,
+                  ],
+                  decoration: const InputDecoration(
+                    prefixIcon: Icon(Icons.lock_outline),
+                    labelText: 'Mot de passe',
                   ),
-                ],
-                selected: {mode},
-                onSelectionChanged: isBusy
-                    ? null
-                    : (selection) => onModeChanged(selection.first),
-              ),
-              const SizedBox(height: 16),
-              TextFormField(
-                controller: emailController,
-                enabled: !isBusy,
-                keyboardType: TextInputType.emailAddress,
-                textInputAction: TextInputAction.next,
-                decoration: const InputDecoration(
-                  prefixIcon: Icon(Icons.mail_outline),
-                  labelText: 'E-mail',
+                  validator: validatePassword,
+                  onFieldSubmitted: (_) => onSubmit(),
                 ),
-                validator: validateEmail,
-              ),
-              const SizedBox(height: 12),
-              TextFormField(
-                controller: passwordController,
-                enabled: !isBusy,
-                obscureText: true,
-                textInputAction: TextInputAction.done,
-                decoration: const InputDecoration(
-                  prefixIcon: Icon(Icons.lock_outline),
-                  labelText: 'Mot de passe',
+                const SizedBox(height: 4),
+                CheckboxListTile(
+                  value: rememberMe,
+                  onChanged: isBusy
+                      ? null
+                      : (value) => onRememberMeChanged(value ?? false),
+                  dense: true,
+                  contentPadding: EdgeInsets.zero,
+                  controlAffinity: ListTileControlAffinity.leading,
+                  title: const Text('Se souvenir de moi'),
                 ),
-                validator: validatePassword,
-                onFieldSubmitted: (_) => onSubmit(),
-              ),
-              const SizedBox(height: 16),
-              FilledButton.icon(
-                onPressed: isBusy ? null : onSubmit,
-                icon: Icon(_isSignUp ? Icons.person_add_alt_1 : Icons.login),
-                label: Text(_isSignUp ? 'Creer mon compte' : 'Me connecter'),
-              ),
-              if (!_isSignUp)
-                TextButton(
-                  onPressed: isBusy ? null : onPasswordReset,
-                  child: const Text('Mot de passe oublié'),
+                const SizedBox(height: 16),
+                FilledButton.icon(
+                  onPressed: isBusy ? null : onSubmit,
+                  icon: Icon(_isSignUp ? Icons.person_add_alt_1 : Icons.login),
+                  label: Text(_isSignUp ? 'Creer mon compte' : 'Me connecter'),
                 ),
-              const SizedBox(height: 12),
-              Row(
-                children: [
-                  const Expanded(child: Divider()),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
-                    child: Text(
-                      'ou',
-                      style: Theme.of(context).textTheme.labelMedium?.copyWith(
-                        color: AppTheme.mutedText,
+                if (!_isSignUp)
+                  TextButton(
+                    onPressed: isBusy ? null : onPasswordReset,
+                    child: const Text('Mot de passe oublié'),
+                  ),
+                const SizedBox(height: 12),
+                Row(
+                  children: [
+                    const Expanded(child: Divider()),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      child: Text(
+                        'ou',
+                        style: Theme.of(context).textTheme.labelMedium
+                            ?.copyWith(color: AppTheme.mutedText),
                       ),
                     ),
+                    const Expanded(child: Divider()),
+                  ],
+                ),
+                const SizedBox(height: 12),
+                OutlinedButton.icon(
+                  onPressed: isBusy ? null : onGoogle,
+                  icon: Opacity(
+                    opacity: isBusy ? 0.38 : 1,
+                    child: Image.asset(
+                      'assets/images/google_g_logo.png',
+                      width: 18,
+                      height: 18,
+                      fit: BoxFit.contain,
+                      filterQuality: FilterQuality.high,
+                    ),
                   ),
-                  const Expanded(child: Divider()),
+                  label: const Text('Continuer avec Google'),
+                ),
+                const SizedBox(height: 10),
+                OutlinedButton.icon(
+                  onPressed: isBusy ? null : onApple,
+                  icon: Icon(
+                    Icons.apple,
+                    color: isBusy ? AppTheme.mutedText : Colors.white,
+                    size: 21,
+                  ),
+                  label: const Text('Continuer avec Apple'),
+                ),
+                if (isBusy) ...[
+                  const SizedBox(height: 16),
+                  const Center(child: CircularProgressIndicator()),
                 ],
-              ),
-              const SizedBox(height: 12),
-              OutlinedButton.icon(
-                onPressed: isBusy ? null : onGoogle,
-                icon: Opacity(
-                  opacity: isBusy ? 0.38 : 1,
-                  child: Image.asset(
-                    'assets/images/google_g_logo.png',
-                    width: 18,
-                    height: 18,
-                    fit: BoxFit.contain,
-                    filterQuality: FilterQuality.high,
-                  ),
-                ),
-                label: const Text('Continuer avec Google'),
-              ),
-              const SizedBox(height: 10),
-              OutlinedButton.icon(
-                onPressed: isBusy ? null : onApple,
-                icon: Icon(
-                  Icons.apple,
-                  color: isBusy ? AppTheme.mutedText : Colors.white,
-                  size: 21,
-                ),
-                label: const Text('Continuer avec Apple'),
-              ),
-              if (isBusy) ...[
-                const SizedBox(height: 16),
-                const Center(child: CircularProgressIndicator()),
+                if (message != null) ...[
+                  const SizedBox(height: 14),
+                  _AuthMessage(message: message!),
+                ],
               ],
-              if (message != null) ...[
-                const SizedBox(height: 14),
-                _AuthMessage(message: message!),
-              ],
-            ],
+            ),
           ),
         ),
       ),
