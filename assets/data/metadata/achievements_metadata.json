@@ -14,6 +14,10 @@
     "patch": "10.0.7"
   },
   {
+    "blizzardId": 13928,
+    "tags": ["Saisonnier"]
+  },
+  {
     "blizzardId": 18368,
     "expansion": "dragonflight",
     "patch": "10.1.5"

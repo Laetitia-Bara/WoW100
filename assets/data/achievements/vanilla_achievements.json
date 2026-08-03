@@ -7043,6 +7043,9 @@
     "zone": "Vallée d'Alterac",
     "instance": "Vallée d'Alterac",
     "source": "Collectez 200 insignes distordus dans le temps grâce aux quêtes et en participant à l’évènement Vallée d’Alterac classique.",
+    "tags": [
+      "Saisonnier"
+    ],
     "points": 10,
     "rewardDescription": "",
     "isAccountWide": true,

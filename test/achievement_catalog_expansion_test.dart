@@ -189,6 +189,20 @@ void main() {
     expect(onyxiaLevel60.source, contains('Indisponible'));
   });
 
+  test('marks Alterac Valley of Olde as seasonal', () async {
+    final repository = JsonPlannerRepository();
+
+    final vanillaAchievements = await repository.getItems(
+      WowExpansion.vanilla,
+      category: TrackingCategory.achievements,
+    );
+    final alteracValleyOfOlde = vanillaAchievements.singleWhere(
+      (item) => item.blizzardId == 13928,
+    );
+
+    expect(alteracValleyOfOlde.tags, contains('Saisonnier'));
+  });
+
   test('routes Dragonflight old-world secrets out of Vanilla', () async {
     final repository = JsonPlannerRepository();
 

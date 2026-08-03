@@ -713,6 +713,9 @@ function toWow100Item(achievement, manualMetadata, wowheadMetadata, locationInde
     ...(manualMetadata.availability
       ? { availability: manualMetadata.availability }
       : {}),
+    ...(Array.isArray(manualMetadata.tags) && manualMetadata.tags.length > 0
+      ? { tags: manualMetadata.tags }
+      : {}),
     points: achievement.points,
     rewardDescription: achievement.rewardDescription,
     isAccountWide: achievement.isAccountWide,
