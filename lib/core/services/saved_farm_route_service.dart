@@ -137,6 +137,40 @@ class SavedFarmRouteService {
     return SavedFarmRoute.fromFirestore(snapshot);
   }
 
+  Future<SavedFarmRoute> updateRouteVisibility({
+    required SavedFarmRoute route,
+    required SavedFarmRouteVisibility visibility,
+  }) async {
+    final user = _currentUser;
+    if (user == null) {
+      throw FirebaseAuthException(
+        code: 'not-authenticated',
+        message: 'No Firebase account is signed in.',
+      );
+    }
+
+    final routeRef = _routesRef.doc(route.id);
+    await routeRef.update({
+      'visibility': visibility.firestoreValue,
+      'updatedAt': FieldValue.serverTimestamp(),
+    });
+    final snapshot = await routeRef.get();
+
+    return SavedFarmRoute.fromFirestore(snapshot);
+  }
+
+  Future<void> deleteRoute(SavedFarmRoute route) async {
+    final user = _currentUser;
+    if (user == null) {
+      throw FirebaseAuthException(
+        code: 'not-authenticated',
+        message: 'No Firebase account is signed in.',
+      );
+    }
+
+    await _routesRef.doc(route.id).delete();
+  }
+
   User? get _currentUser {
     if (Firebase.apps.isEmpty) {
       return null;

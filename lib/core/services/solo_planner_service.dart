@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class SoloPlannerService {
   static const _itemIdsKey = 'solo_planner_item_ids';
   static const _todayItemIdsKey = 'solo_planner_today_item_ids';
+  static const _loadedRouteNameKey = 'solo_planner_loaded_route_name';
   static const _routeCompletedStepIdsKey = 'solo_route_completed_step_ids';
 
   Future<Set<String>> selectedItemIds() async {
@@ -53,6 +54,13 @@ class SoloPlannerService {
     return savedItemIds.where(wishlistItemIds.contains).toSet();
   }
 
+  Future<String?> loadedRouteName() async {
+    final prefs = await SharedPreferences.getInstance();
+    final routeName = prefs.getString(_loadedRouteNameKey)?.trim();
+
+    return routeName == null || routeName.isEmpty ? null : routeName;
+  }
+
   Future<void> setTodaySelected(String itemId, bool selected) async {
     final prefs = await SharedPreferences.getInstance();
     final wishlistItemIds = await selectedItemIds();
@@ -66,17 +74,29 @@ class SoloPlannerService {
 
     final sortedItemIds = itemIds.toList()..sort();
     await prefs.setStringList(_todayItemIdsKey, sortedItemIds);
+    await prefs.remove(_loadedRouteNameKey);
   }
 
-  Future<void> setAllTodaySelected(Iterable<String> itemIds) async {
+  Future<void> setAllTodaySelected(
+    Iterable<String> itemIds, {
+    String? loadedRouteName,
+  }) async {
     final prefs = await SharedPreferences.getInstance();
     final sortedItemIds = itemIds.toSet().toList()..sort();
     await prefs.setStringList(_todayItemIdsKey, sortedItemIds);
+
+    final routeName = loadedRouteName?.trim();
+    if (routeName == null || routeName.isEmpty) {
+      await prefs.remove(_loadedRouteNameKey);
+    } else {
+      await prefs.setString(_loadedRouteNameKey, routeName);
+    }
   }
 
   Future<void> clearTodaySelected() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setStringList(_todayItemIdsKey, const <String>[]);
+    await prefs.remove(_loadedRouteNameKey);
   }
 
   Future<Set<String>> routeCompletedStepIds([Set<String>? validStepIds]) async {

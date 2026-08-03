@@ -1058,6 +1058,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
   FarmProfile? _selectedFriendProfile;
   bool _selectedFriendAllItems = false;
   WowCharacter? _selectedCharacter;
+  String? _loadedRouteName;
   bool _isLoading = true;
   bool _isLoadingFriendRoutes = false;
   String _searchQuery = '';
@@ -1079,6 +1080,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
     final todayItemIds = await _soloPlannerService.selectedTodayItemIds(
       soloItemIds,
     );
+    final loadedRouteName = await _soloPlannerService.loadedRouteName();
     final character = await _selectedCharacterService.loadCharacter();
     final friends = await _friendService.loadFriends();
     final allCatalogItems = await Future.wait([
@@ -1112,6 +1114,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
       _todayItemIds = todayItemIds;
       _friends = friends;
       _selectedCharacter = character;
+      _loadedRouteName = todayItemIds.isEmpty ? null : loadedRouteName;
       _isLoading = false;
     });
 
@@ -1320,6 +1323,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
       } else {
         _todayItemIds.remove(item.id);
       }
+      _loadedRouteName = null;
     });
   }
 
@@ -1328,7 +1332,10 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
 
     if (!mounted) return;
 
-    setState(_todayItemIds.clear);
+    setState(() {
+      _todayItemIds.clear();
+      _loadedRouteName = null;
+    });
   }
 
   Future<void> _selectAllToday() async {
@@ -1339,6 +1346,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
 
     setState(() {
       _todayItemIds = allItemIds;
+      _loadedRouteName = null;
     });
   }
 
@@ -1392,12 +1400,16 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
       if (selectedRoute == null) return;
 
       final itemIds = selectedRoute.itemIds.toSet();
-      await _soloPlannerService.setAllTodaySelected(itemIds);
+      await _soloPlannerService.setAllTodaySelected(
+        itemIds,
+        loadedRouteName: selectedRoute.name,
+      );
 
       if (!mounted) return;
 
       setState(() {
         _todayItemIds = itemIds;
+        _loadedRouteName = selectedRoute.name;
       });
 
       ScaffoldMessenger.of(context).showSnackBar(
@@ -1529,11 +1541,15 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                       ),
                       const SizedBox(height: 12),
                       Text(
-                        'Organise ta whishlist',
+                        'Organise ta whishlist en créant différentes Routes en fonction de ce que tu veux aller farmer lors de tes prochaines sorties (ex : une route "HF Guilde", une route "Montures Raid", etc ...)',
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
                           fontWeight: FontWeight.w800,
                         ),
                       ),
+                      if (_loadedRouteName != null) ...[
+                        const SizedBox(height: 8),
+                        _LoadedRouteIndicator(routeName: _loadedRouteName!),
+                      ],
                       const SizedBox(height: 16),
                       _AdventureCrewPicker(
                         selectedMode: _crewMode,
@@ -1665,6 +1681,7 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
   GroupRouteSession? _groupRouteSession;
   _GroupRouteViewMode _groupRouteViewMode = _GroupRouteViewMode.common;
   WowCharacter? _selectedCharacter;
+  String? _loadedRouteName;
   bool _isLoading = true;
 
   @override
@@ -1682,6 +1699,7 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
     final todayItemIds = await _soloPlannerService.selectedTodayItemIds(
       wishlistItemIds,
     );
+    final loadedRouteName = await _soloPlannerService.loadedRouteName();
     final groupRouteSession = await _groupRouteSessionService.loadSession();
     final character = await _selectedCharacterService.loadCharacter();
     final allCatalogItems = await Future.wait([
@@ -1734,6 +1752,7 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
       _completedRouteStepIds = completedRouteStepIds;
       _groupRouteSession = groupRouteSession;
       _selectedCharacter = character;
+      _loadedRouteName = selectedItemIds.isEmpty ? null : loadedRouteName;
       _isLoading = false;
     });
   }
@@ -1880,6 +1899,10 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
                           fontWeight: FontWeight.w900,
                         ),
                       ),
+                      if (_loadedRouteName != null) ...[
+                        const SizedBox(height: 8),
+                        _LoadedRouteIndicator(routeName: _loadedRouteName!),
+                      ],
                       const SizedBox(height: 12),
                       _RouteStartCard(capital: _startingCapital),
                       const SizedBox(height: 18),
@@ -1953,6 +1976,46 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
     if (item == null || session == null) return const [];
 
     return session.playersForItem(item.id);
+  }
+}
+
+class _LoadedRouteIndicator extends StatelessWidget {
+  const _LoadedRouteIndicator({required this.routeName});
+
+  final String routeName;
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Container(
+        constraints: const BoxConstraints(maxWidth: 520),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+        decoration: BoxDecoration(
+          color: AppTheme.gold.withValues(alpha: 0.08),
+          border: Border.all(color: AppTheme.gold.withValues(alpha: 0.28)),
+          borderRadius: BorderRadius.circular(999),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.route_outlined, size: 16, color: AppTheme.gold),
+            const SizedBox(width: 8),
+            Flexible(
+              child: Text(
+                'Route chargee : $routeName',
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                  color: AppTheme.mutedText,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 
@@ -2771,10 +2834,136 @@ class _SaveFarmRouteDialogState extends State<_SaveFarmRouteDialog> {
   }
 }
 
-class _SavedFarmRoutesDialog extends StatelessWidget {
+class _SavedFarmRoutesDialog extends StatefulWidget {
   const _SavedFarmRoutesDialog({required this.routes});
 
   final List<SavedFarmRoute> routes;
+
+  @override
+  State<_SavedFarmRoutesDialog> createState() => _SavedFarmRoutesDialogState();
+}
+
+class _SavedFarmRoutesDialogState extends State<_SavedFarmRoutesDialog> {
+  final SavedFarmRouteService _savedFarmRouteService = SavedFarmRouteService();
+  final Set<String> _busyRouteIds = {};
+  late List<SavedFarmRoute> _routes;
+
+  @override
+  void initState() {
+    super.initState();
+    _routes = [...widget.routes];
+  }
+
+  Future<void> _toggleVisibility(SavedFarmRoute route) async {
+    if (_busyRouteIds.contains(route.id)) return;
+
+    final nextVisibility = route.isPublic
+        ? SavedFarmRouteVisibility.private
+        : SavedFarmRouteVisibility.public;
+
+    setState(() {
+      _busyRouteIds.add(route.id);
+    });
+
+    try {
+      final updatedRoute = await _savedFarmRouteService.updateRouteVisibility(
+        route: route,
+        visibility: nextVisibility,
+      );
+
+      if (!mounted) return;
+
+      setState(() {
+        final index = _routes.indexWhere((entry) => entry.id == route.id);
+        if (index != -1) {
+          _routes[index] = updatedRoute;
+        }
+      });
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            'Route "${updatedRoute.name}" ${updatedRoute.visibility.label.toLowerCase()}.',
+          ),
+        ),
+      );
+    } catch (_) {
+      if (!mounted) return;
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Impossible de modifier cette route pour le moment.'),
+        ),
+      );
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busyRouteIds.remove(route.id);
+        });
+      }
+    }
+  }
+
+  Future<void> _deleteRoute(SavedFarmRoute route) async {
+    if (_busyRouteIds.contains(route.id)) return;
+
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text('Supprimer cette route ?'),
+          content: Text(
+            'La route "${route.name}" sera supprimee de tes routes sauvegardees.',
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context, false),
+              child: const Text('Annuler'),
+            ),
+            FilledButton.icon(
+              onPressed: () => Navigator.pop(context, true),
+              icon: const Icon(Icons.delete_outline),
+              label: const Text('Supprimer'),
+            ),
+          ],
+        );
+      },
+    );
+
+    if (confirmed != true || !mounted) return;
+
+    setState(() {
+      _busyRouteIds.add(route.id);
+    });
+
+    try {
+      await _savedFarmRouteService.deleteRoute(route);
+
+      if (!mounted) return;
+
+      setState(() {
+        _routes.removeWhere((entry) => entry.id == route.id);
+      });
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Route "${route.name}" supprimee.')),
+      );
+    } catch (_) {
+      if (!mounted) return;
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Impossible de supprimer cette route pour le moment.'),
+        ),
+      );
+    } finally {
+      if (mounted) {
+        setState(() {
+          _busyRouteIds.remove(route.id);
+        });
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -2782,7 +2971,7 @@ class _SavedFarmRoutesDialog extends StatelessWidget {
       title: const Text('Mes routes sauvegardees'),
       content: SizedBox(
         width: 560,
-        child: routes.isEmpty
+        child: _routes.isEmpty
             ? const Text(
                 'Aucune route sauvegardee pour le moment.',
                 style: TextStyle(color: AppTheme.mutedText),
@@ -2791,10 +2980,18 @@ class _SavedFarmRoutesDialog extends StatelessWidget {
                 constraints: const BoxConstraints(maxHeight: 420),
                 child: ListView.separated(
                   shrinkWrap: true,
-                  itemCount: routes.length,
+                  itemCount: _routes.length,
                   separatorBuilder: (_, _) => const SizedBox(height: 10),
                   itemBuilder: (context, index) {
-                    return _SavedFarmRouteTile(route: routes[index]);
+                    final route = _routes[index];
+
+                    return _SavedFarmRouteTile(
+                      route: route,
+                      isBusy: _busyRouteIds.contains(route.id),
+                      onLoad: () => Navigator.pop(context, route),
+                      onToggleVisibility: () => _toggleVisibility(route),
+                      onDelete: () => _deleteRoute(route),
+                    );
                   },
                 ),
               ),
@@ -2810,9 +3007,19 @@ class _SavedFarmRoutesDialog extends StatelessWidget {
 }
 
 class _SavedFarmRouteTile extends StatelessWidget {
-  const _SavedFarmRouteTile({required this.route});
+  const _SavedFarmRouteTile({
+    required this.route,
+    required this.isBusy,
+    required this.onLoad,
+    required this.onToggleVisibility,
+    required this.onDelete,
+  });
 
   final SavedFarmRoute route;
+  final bool isBusy;
+  final VoidCallback onLoad;
+  final VoidCallback onToggleVisibility;
+  final VoidCallback onDelete;
 
   @override
   Widget build(BuildContext context) {
@@ -2821,21 +3028,43 @@ class _SavedFarmRouteTile extends StatelessWidget {
       route.ownerRealm,
     ].where((value) => value.trim().isNotEmpty).join(' - ');
 
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.035),
-        borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: AppTheme.gold.withValues(alpha: 0.18)),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(12),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Icon(
-              route.isPublic ? Icons.public_rounded : Icons.lock_outline,
-              color: AppTheme.gold,
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final actions = [
+          FilledButton.icon(
+            onPressed: isBusy ? null : onLoad,
+            icon: const Icon(Icons.playlist_add_check_rounded),
+            label: const Text('Charger'),
+          ),
+          OutlinedButton.icon(
+            onPressed: isBusy ? null : onToggleVisibility,
+            icon: Icon(
+              route.isPublic
+                  ? Icons.lock_outline_rounded
+                  : Icons.public_rounded,
             ),
+            label: Text(route.isPublic ? 'Rendre privee' : 'Rendre publique'),
+          ),
+          IconButton.outlined(
+            tooltip: 'Supprimer',
+            onPressed: isBusy ? null : onDelete,
+            icon: const Icon(Icons.delete_outline),
+          ),
+        ];
+
+        final routeInfo = Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (isBusy)
+              const SizedBox.square(
+                dimension: 24,
+                child: CircularProgressIndicator(strokeWidth: 2),
+              )
+            else
+              Icon(
+                route.isPublic ? Icons.public_rounded : Icons.lock_outline,
+                color: AppTheme.gold,
+              ),
             const SizedBox(width: 12),
             Expanded(
               child: Column(
@@ -2866,15 +3095,37 @@ class _SavedFarmRouteTile extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(width: 12),
-            FilledButton.icon(
-              onPressed: () => Navigator.pop(context, route),
-              icon: const Icon(Icons.playlist_add_check_rounded),
-              label: const Text('Charger'),
-            ),
           ],
-        ),
-      ),
+        );
+
+        return DecoratedBox(
+          decoration: BoxDecoration(
+            color: Colors.white.withValues(alpha: 0.035),
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(color: AppTheme.gold.withValues(alpha: 0.18)),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(12),
+            child: constraints.maxWidth < 480
+                ? Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      routeInfo,
+                      const SizedBox(height: 12),
+                      Wrap(spacing: 8, runSpacing: 8, children: actions),
+                    ],
+                  )
+                : Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(child: routeInfo),
+                      const SizedBox(width: 12),
+                      Wrap(spacing: 8, runSpacing: 8, children: actions),
+                    ],
+                  ),
+          ),
+        );
+      },
     );
   }
 }
