@@ -35,12 +35,19 @@ class SoloPlannerService {
 
   Future<void> clearSelected(Iterable<String> itemIds) async {
     final prefs = await SharedPreferences.getInstance();
+    final removedItemIds = itemIds.toSet();
     final selectedIds =
         (prefs.getStringList(_itemIdsKey) ?? const <String>[]).toSet()
-          ..removeAll(itemIds);
+          ..removeAll(removedItemIds);
+    final todayItemIds =
+        (prefs.getStringList(_todayItemIdsKey) ?? const <String>[]).toSet()
+          ..removeAll(removedItemIds);
 
     final sortedItemIds = selectedIds.toList()..sort();
+    final sortedTodayItemIds = todayItemIds.toList()..sort();
     await prefs.setStringList(_itemIdsKey, sortedItemIds);
+    await prefs.setStringList(_todayItemIdsKey, sortedTodayItemIds);
+    await prefs.remove(_loadedRouteNameKey);
   }
 
   Future<Set<String>> selectedTodayItemIds(Set<String> wishlistItemIds) async {

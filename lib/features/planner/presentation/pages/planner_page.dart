@@ -1350,6 +1350,83 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
     });
   }
 
+  Future<void> _clearWishlist() async {
+    if (_items.isEmpty) return;
+
+    final itemCount = _items.length;
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text('Vider ma wishlist ?'),
+          content: Text(
+            'Attention, tu vas effacer toute ta wishlist ($itemCount item(s)). Cette action retirera aussi ces items de ta route prevue.',
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context, false),
+              child: const Text('Annuler'),
+            ),
+            FilledButton.icon(
+              onPressed: () => Navigator.pop(context, true),
+              icon: const Icon(Icons.delete_sweep_outlined),
+              label: const Text('Vider ma wishlist'),
+            ),
+          ],
+        );
+      },
+    );
+
+    if (confirmed != true || !mounted) return;
+
+    await _soloPlannerService.clearSelected(_items.map((item) => item.id));
+
+    if (!mounted) return;
+
+    setState(() {
+      _items = const [];
+      _todayItemIds.clear();
+      _loadedRouteName = null;
+      _collapsedGroups.clear();
+    });
+
+    unawaited(
+      _savedFarmRouteService
+          .syncWishlistProfile(
+            itemIds: const <String>[],
+            character: _selectedCharacter,
+          )
+          .catchError((Object error, StackTrace stack) {}),
+    );
+  }
+
+  Future<void> _removeFromWishlist(TrackingItem item) async {
+    await _soloPlannerService.clearSelected([item.id]);
+
+    if (!mounted) return;
+
+    final updatedItems = _items.where((entry) => entry.id != item.id).toList();
+    final updatedItemIds = updatedItems.map((entry) => entry.id).toSet();
+
+    setState(() {
+      _items = updatedItems;
+      _todayItemIds.remove(item.id);
+      _loadedRouteName = null;
+      _collapsedGroups.removeWhere((group) {
+        return !updatedItems.any((entry) => _groupLabel(entry) == group);
+      });
+    });
+
+    unawaited(
+      _savedFarmRouteService
+          .syncWishlistProfile(
+            itemIds: updatedItemIds,
+            character: _selectedCharacter,
+          )
+          .catchError((Object error, StackTrace stack) {}),
+    );
+  }
+
   Future<void> _saveCurrentRoute() async {
     if (_todayItemIds.isEmpty) return;
 
@@ -1589,6 +1666,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                       const SizedBox(height: 16),
                       _SoloPlannerActionBar(
                         countLabel: _soloCountLabel(filteredItems.length),
+                        hasWishlistItems: _items.isNotEmpty,
                         hasTodaySelection: _todayItemIds.isNotEmpty,
                         allItemsSelected: _todayItemIds.length == _items.length,
                         canOpenRoute:
@@ -1598,6 +1676,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                         sortMode: _sortMode,
                         onClearSelection: _clearTodaySelection,
                         onSelectAll: _selectAllToday,
+                        onClearWishlist: _clearWishlist,
                         onOpenSavedRoutes: _openSavedRoutes,
                         onSaveRoute: _saveCurrentRoute,
                         onOpenRoute: _openRoute,
@@ -1641,6 +1720,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
                       selectionTagLabel: 'Prochain farm',
                       onChanged: (value) =>
                           _setTodaySelected(item, value ?? false),
+                      onRemoveFromWishlist: () => _removeFromWishlist(item),
                     );
                   }, childCount: listEntries.length),
                 ),
@@ -3133,12 +3213,14 @@ class _SavedFarmRouteTile extends StatelessWidget {
 class _SoloPlannerActionBar extends StatelessWidget {
   const _SoloPlannerActionBar({
     required this.countLabel,
+    required this.hasWishlistItems,
     required this.hasTodaySelection,
     required this.allItemsSelected,
     required this.canOpenRoute,
     required this.sortMode,
     required this.onClearSelection,
     required this.onSelectAll,
+    required this.onClearWishlist,
     required this.onOpenSavedRoutes,
     required this.onSaveRoute,
     required this.onOpenRoute,
@@ -3146,12 +3228,14 @@ class _SoloPlannerActionBar extends StatelessWidget {
   });
 
   final String countLabel;
+  final bool hasWishlistItems;
   final bool hasTodaySelection;
   final bool allItemsSelected;
   final bool canOpenRoute;
   final _SoloPlannerSortMode sortMode;
   final VoidCallback onClearSelection;
   final VoidCallback onSelectAll;
+  final VoidCallback onClearWishlist;
   final VoidCallback onOpenSavedRoutes;
   final VoidCallback onSaveRoute;
   final VoidCallback onOpenRoute;
@@ -3172,6 +3256,11 @@ class _SoloPlannerActionBar extends StatelessWidget {
       onPressed: allItemsSelected ? null : onSelectAll,
       icon: const Icon(Icons.done_all_outlined),
       label: const Text('Tout activer'),
+    );
+    final clearWishlistButton = OutlinedButton.icon(
+      onPressed: hasWishlistItems ? onClearWishlist : null,
+      icon: const Icon(Icons.delete_sweep_outlined),
+      label: const Text('Vider ma wishlist'),
     );
     final savedRoutesButton = OutlinedButton.icon(
       onPressed: onOpenSavedRoutes,
@@ -3209,6 +3298,8 @@ class _SoloPlannerActionBar extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
+              SizedBox(width: double.infinity, child: clearWishlistButton),
+              const SizedBox(height: 10),
               Align(alignment: Alignment.center, child: sortControls),
               const SizedBox(height: 10),
               Row(
@@ -3243,12 +3334,18 @@ class _SoloPlannerActionBar extends StatelessWidget {
           );
         }
 
-        final topRow = constraints.maxWidth < 820
+        final topRow = constraints.maxWidth < 1040
             ? Wrap(
                 spacing: 10,
                 runSpacing: 10,
                 crossAxisAlignment: WrapCrossAlignment.center,
-                children: [count, clearButton, selectAllButton, sortControls],
+                children: [
+                  count,
+                  clearButton,
+                  selectAllButton,
+                  clearWishlistButton,
+                  sortControls,
+                ],
               )
             : Row(
                 children: [
@@ -3257,6 +3354,8 @@ class _SoloPlannerActionBar extends StatelessWidget {
                   clearButton,
                   const SizedBox(width: 10),
                   selectAllButton,
+                  const SizedBox(width: 10),
+                  clearWishlistButton,
                   const Spacer(),
                   sortControls,
                 ],
@@ -4423,12 +4522,14 @@ class _PlannerItemCard extends StatelessWidget {
     required this.selectedForSolo,
     this.selectionTagLabel = 'Prochain farm',
     required this.onChanged,
+    this.onRemoveFromWishlist,
   });
 
   final TrackingItem item;
   final bool selectedForSolo;
   final String selectionTagLabel;
   final ValueChanged<bool?> onChanged;
+  final VoidCallback? onRemoveFromWishlist;
 
   String _wowheadUrl(BuildContext context) {
     final preferredLocale = WowheadUrlBuilder.preferredLocaleCode(
@@ -4825,6 +4926,19 @@ class _PlannerItemCard extends StatelessWidget {
                 ],
               ),
             ),
+            if (onRemoveFromWishlist != null) ...[
+              const SizedBox(width: 6),
+              Tooltip(
+                message: 'Retirer de ma wishlist',
+                child: IconButton(
+                  visualDensity: VisualDensity.compact,
+                  iconSize: 20,
+                  color: AppTheme.mutedText,
+                  onPressed: onRemoveFromWishlist,
+                  icon: const Icon(Icons.close_rounded),
+                ),
+              ),
+            ],
           ],
         ),
       ),

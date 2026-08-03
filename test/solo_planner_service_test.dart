@@ -32,4 +32,24 @@ void main() {
       expect(await service.loadedRouteName(), isNull);
     },
   );
+
+  test(
+    'removing wishlist items also removes them from today selection',
+    () async {
+      final service = SoloPlannerService();
+
+      await service.setSelected('mount-1', true);
+      await service.setSelected('mount-2', true);
+      await service.setAllTodaySelected([
+        'mount-1',
+        'mount-2',
+      ], loadedRouteName: 'Farm du soir');
+
+      await service.clearSelected(['mount-1']);
+
+      expect(await service.selectedItemIds(), {'mount-2'});
+      expect(await service.selectedTodayItemIds({'mount-2'}), {'mount-2'});
+      expect(await service.loadedRouteName(), isNull);
+    },
+  );
 }
