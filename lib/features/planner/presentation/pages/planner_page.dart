@@ -1360,7 +1360,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
         return AlertDialog(
           title: const Text('Vider ma wishlist ?'),
           content: Text(
-            'Attention, tu vas effacer toute ta wishlist ($itemCount item(s)). Cette action retirera aussi ces items de ta route prevue.',
+            'Attention, tu vas effacer toute ta wishlist ($itemCount item(s)). Cette action retirera aussi ces items de ta route prevue, mais tes routes deja sauvegardees ne seront pas modifiees.',
           ),
           actions: [
             TextButton(
@@ -1477,6 +1477,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
       if (selectedRoute == null) return;
 
       final itemIds = selectedRoute.itemIds.toSet();
+      await _soloPlannerService.addSelected(itemIds);
       await _soloPlannerService.setAllTodaySelected(
         itemIds,
         loadedRouteName: selectedRoute.name,
@@ -1484,10 +1485,9 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
 
       if (!mounted) return;
 
-      setState(() {
-        _todayItemIds = itemIds;
-        _loadedRouteName = selectedRoute.name;
-      });
+      await _loadItems();
+
+      if (!mounted) return;
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Route "${selectedRoute.name}" chargee.')),

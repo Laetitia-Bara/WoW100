@@ -52,4 +52,29 @@ void main() {
       expect(await service.loadedRouteName(), isNull);
     },
   );
+
+  test(
+    'can add saved route items to the wishlist before selecting them',
+    () async {
+      final service = SoloPlannerService();
+
+      await service.setSelected('mount-1', true);
+      await service.addSelected(['mount-2', 'mount-3']);
+      await service.setAllTodaySelected([
+        'mount-2',
+        'mount-3',
+      ], loadedRouteName: 'Route raid');
+
+      expect(await service.selectedItemIds(), {
+        'mount-1',
+        'mount-2',
+        'mount-3',
+      });
+      expect(
+        await service.selectedTodayItemIds({'mount-1', 'mount-2', 'mount-3'}),
+        {'mount-2', 'mount-3'},
+      );
+      expect(await service.loadedRouteName(), 'Route raid');
+    },
+  );
 }

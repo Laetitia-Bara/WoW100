@@ -33,6 +33,16 @@ class SoloPlannerService {
     await prefs.setStringList(_itemIdsKey, sortedItemIds);
   }
 
+  Future<void> addSelected(Iterable<String> itemIds) async {
+    final prefs = await SharedPreferences.getInstance();
+    final selectedIds =
+        (prefs.getStringList(_itemIdsKey) ?? const <String>[]).toSet()
+          ..addAll(itemIds.where((itemId) => itemId.trim().isNotEmpty));
+
+    final sortedItemIds = selectedIds.toList()..sort();
+    await prefs.setStringList(_itemIdsKey, sortedItemIds);
+  }
+
   Future<void> clearSelected(Iterable<String> itemIds) async {
     final prefs = await SharedPreferences.getInstance();
     final removedItemIds = itemIds.toSet();
