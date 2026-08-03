@@ -709,6 +709,10 @@ function toWow100Item(achievement, manualMetadata, wowheadMetadata, locationInde
     ...locationFields(location),
     instance: group,
     source,
+    ...(manualMetadata.unavailable === true ? { unavailable: true } : {}),
+    ...(manualMetadata.availability
+      ? { availability: manualMetadata.availability }
+      : {}),
     points: achievement.points,
     rewardDescription: achievement.rewardDescription,
     isAccountWide: achievement.isAccountWide,

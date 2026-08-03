@@ -1,5 +1,14 @@
 [
   {
+    "blizzardId": 684,
+    "expansion": "vanilla",
+    "zone": "Raids",
+    "instance": "Raids",
+    "source": "Indisponible : la version classique de niveau 60 d'Onyxia a ete remplacee par la version niveau 80 depuis le patch 3.2.2.",
+    "unavailable": true,
+    "availability": "Indisponible"
+  },
+  {
     "blizzardId": 46,
     "expansion": "allAchievements"
   },

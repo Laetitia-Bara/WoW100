@@ -172,6 +172,21 @@ void main() {
     expect(universeExplorer.expansion, WowExpansion.allAchievements);
   });
 
+  test('marks level 60 Onyxia as unavailable', () async {
+    final repository = JsonPlannerRepository();
+
+    final vanillaAchievements = await repository.getItems(
+      WowExpansion.vanilla,
+      category: TrackingCategory.achievements,
+    );
+    final onyxiaLevel60 = vanillaAchievements.singleWhere(
+      (item) => item.blizzardId == 684,
+    );
+
+    expect(onyxiaLevel60.unavailable, isTrue);
+    expect(onyxiaLevel60.source, contains('Indisponible'));
+  });
+
   test('keeps Vanilla guild achievements in the global guild group', () async {
     final repository = JsonPlannerRepository();
 
