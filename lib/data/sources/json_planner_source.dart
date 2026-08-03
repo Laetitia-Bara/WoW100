@@ -223,6 +223,18 @@ class JsonPlannerSource {
       final wowheadItemId =
           reference?['wowheadItemId'] as int? ??
           wowhead?['wowheadItemId'] as int?;
+      final zone =
+          _usableMetadataString(location, 'regionName') ??
+          _usableZoneString(manual, 'zone') ??
+          TrackingItem.unknownZone;
+      final region =
+          _usableMetadataString(location, 'continentName') ??
+          _usableRegionString(manual, 'region') ??
+          TrackingItem.unknownZone;
+      final world =
+          _usableMetadataString(location, 'worldName') ??
+          _usableMetadataString(manual, 'world') ??
+          '';
 
       items.add(
         TrackingItem(
@@ -230,14 +242,10 @@ class JsonPlannerSource {
           name: mount['name'] ?? mamytwink?['mamytwinkName'] ?? '',
           category: TrackingCategory.mounts,
           expansion: itemExpansion,
-          zone:
-              _metadataString(location, 'regionName') ??
-              TrackingItem.unknownZone,
+          zone: zone,
           subzone: _metadataString(location, 'subzoneName') ?? '',
-          region:
-              _metadataString(location, 'continentName') ??
-              TrackingItem.unknownZone,
-          world: _metadataString(location, 'worldName') ?? '',
+          region: region,
+          world: world,
           locationRef: _metadataString(reference, 'primaryLocationRef') ?? '',
           instance: expansion == WowExpansion.allMounts
               ? status
@@ -462,6 +470,36 @@ class JsonPlannerSource {
     }
 
     return null;
+  }
+
+  String? _usableMetadataString(Map<String, dynamic>? metadata, String key) {
+    final value = _metadataString(metadata, key);
+    if (value == null) return null;
+
+    final normalized = _normalizeMountStatusText(value);
+    if (normalized.isEmpty ||
+        normalized == 'a definir' ||
+        normalized == 'source a verifier' ||
+        normalized == 'unknown' ||
+        normalized == 'sans zone') {
+      return null;
+    }
+
+    return value;
+  }
+
+  String? _usableZoneString(Map<String, dynamic>? metadata, String key) {
+    final value = _usableMetadataString(metadata, key);
+    if (value == null || !TrackingItem.isKnownWorldZone(value)) return null;
+
+    return value;
+  }
+
+  String? _usableRegionString(Map<String, dynamic>? metadata, String key) {
+    final value = _usableMetadataString(metadata, key);
+    if (value == null || !TrackingItem.isWorldRegion(value)) return null;
+
+    return value;
   }
 
   List<String> _metadataStringList(Map<String, dynamic>? metadata, String key) {

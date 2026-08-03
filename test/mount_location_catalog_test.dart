@@ -87,9 +87,16 @@ void main() {
       expect(tbcAshesOfAlar.displayInstance, 'L’Œil');
 
       final ravenLord = tbcItems.singleWhere((item) => item.blizzardId == 185);
+      expect(ravenLord.world, 'Outreterre');
+      expect(ravenLord.region, 'Outreterre');
+      expect(ravenLord.zone, 'Forêt de Terokkar');
       expect(ravenLord.instance, 'Butin');
+      expect(ravenLord.displayInstance, 'Les salles des Sethekk');
       expect(ravenLord.source, 'Butin');
       expect(ravenLord.dropRate, '2');
+      expect(ravenLord.tags, ['Donjon']);
+      expect(ravenLord.frequencyLabel, 'Quotidien');
+      expect(ravenLord.boss, 'Anzu');
 
       expect(
         tbcItems.where(

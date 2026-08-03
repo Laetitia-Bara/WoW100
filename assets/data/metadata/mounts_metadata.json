@@ -42,6 +42,25 @@
     "frequencyLabel": "Hebdomadaire"
   },
   {
+    "blizzardId": 185,
+    "expansion": "tbc",
+    "category": "dungeon_drop",
+    "world": "Outreterre",
+    "region": "Outreterre",
+    "zone": "Forêt de Terokkar",
+    "instance": "Les salles des Sethekk",
+    "boss": "Anzu",
+    "groupRequired": true,
+    "weeklyLockout": false,
+    "source": "Butin",
+    "dropRate": "2",
+    "difficulty": "Difficile",
+    "tags": [
+      "Donjon"
+    ],
+    "frequencyLabel": "Quotidien"
+  },
+  {
     "blizzardId": 168,
     "expansion": "tbc",
     "category": "raid_drop",
