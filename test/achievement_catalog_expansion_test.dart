@@ -118,6 +118,8 @@ const _extensionContentAchievementExpansionById = {
   17723: WowExpansion.dragonflight,
 };
 
+const _dragonflightOldWorldSecretAchievementIds = {17366, 18368, 18372};
+
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -185,6 +187,37 @@ void main() {
 
     expect(onyxiaLevel60.unavailable, isTrue);
     expect(onyxiaLevel60.source, contains('Indisponible'));
+  });
+
+  test('routes Dragonflight old-world secrets out of Vanilla', () async {
+    final repository = JsonPlannerRepository();
+
+    final vanillaAchievements = await repository.getItems(
+      WowExpansion.vanilla,
+      category: TrackingCategory.achievements,
+    );
+    final vanillaIds = vanillaAchievements.map((item) => item.blizzardId);
+
+    for (final achievementId in _dragonflightOldWorldSecretAchievementIds) {
+      expect(vanillaIds, isNot(contains(achievementId)));
+    }
+
+    final dragonflightAchievements = await repository.getItems(
+      WowExpansion.dragonflight,
+      category: TrackingCategory.achievements,
+    );
+    final dragonflightById = {
+      for (final item in dragonflightAchievements)
+        if (item.blizzardId != null) item.blizzardId!: item,
+    };
+
+    for (final achievementId in _dragonflightOldWorldSecretAchievementIds) {
+      final achievement = dragonflightById[achievementId];
+
+      expect(achievement, isNotNull);
+      expect(achievement!.expansion, WowExpansion.dragonflight);
+      expect(achievement.blizzardCategoryName, "Royaumes de l'Est");
+    }
   });
 
   test('keeps Vanilla guild achievements in the global guild group', () async {

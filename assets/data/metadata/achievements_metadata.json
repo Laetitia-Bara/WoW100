@@ -9,6 +9,21 @@
     "availability": "Indisponible"
   },
   {
+    "blizzardId": 17366,
+    "expansion": "dragonflight",
+    "patch": "10.0.7"
+  },
+  {
+    "blizzardId": 18368,
+    "expansion": "dragonflight",
+    "patch": "10.1.5"
+  },
+  {
+    "blizzardId": 18372,
+    "expansion": "dragonflight",
+    "patch": "10.1.5"
+  },
+  {
     "blizzardId": 46,
     "expansion": "allAchievements"
   },
