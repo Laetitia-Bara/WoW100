@@ -2447,6 +2447,7 @@ class _AdventureCrewPicker extends StatelessWidget {
                 icon: Icons.groups_2_outlined,
                 label: 'Avec des amis',
                 selected: selectedMode == _AdventureCrewMode.friends,
+                accentColor: AppTheme.battleNetBlue,
                 onPressed: () => onChanged(_AdventureCrewMode.friends),
               ),
             ];
@@ -2499,21 +2500,25 @@ class _CrewButton extends StatelessWidget {
     required this.label,
     required this.selected,
     required this.onPressed,
+    this.accentColor,
   });
 
   final IconData icon;
   final String label;
   final bool selected;
   final VoidCallback? onPressed;
+  final Color? accentColor;
 
   @override
   Widget build(BuildContext context) {
+    final activeColor = accentColor ?? AppTheme.gold;
     final backgroundColor = selected
-        ? AppTheme.gold.withValues(alpha: 0.18)
+        ? activeColor.withValues(alpha: 0.18)
         : Colors.white.withValues(alpha: 0.025);
-    final foregroundColor = selected ? AppTheme.gold : AppTheme.text;
+    final foregroundColor =
+        accentColor ?? (selected ? AppTheme.gold : AppTheme.text);
     final borderColor = selected
-        ? AppTheme.gold.withValues(alpha: 0.78)
+        ? activeColor.withValues(alpha: 0.78)
         : AppTheme.gold.withValues(alpha: 0.24);
 
     return FilledButton.icon(
