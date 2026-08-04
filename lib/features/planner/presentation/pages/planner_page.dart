@@ -2308,6 +2308,104 @@ class _RouteFarmerAvatar extends StatelessWidget {
   }
 }
 
+String _plannerItemWowheadUrl(BuildContext context, TrackingItem item) {
+  final preferredLocale = WowheadUrlBuilder.preferredLocaleCode(
+    WidgetsBinding.instance.platformDispatcher.locales.map(
+      (locale) => locale.toLanguageTag(),
+    ),
+    fallback: Localizations.localeOf(context).languageCode,
+  );
+  final locale =
+      item.category == TrackingCategory.mounts ||
+          item.category == TrackingCategory.achievements ||
+          item.category == TrackingCategory.pets
+      ? 'fr'
+      : preferredLocale;
+
+  if (item.wowheadUrl.isNotEmpty) {
+    return WowheadUrlBuilder.localizeUrl(item.wowheadUrl, locale: locale);
+  }
+
+  return WowheadUrlBuilder.build(item: item, locale: locale);
+}
+
+Future<void> _openPlannerItemExternalUrl(String url) async {
+  final uri = Uri.tryParse(url.trim());
+  if (uri == null) return;
+
+  await launchUrl(
+    uri,
+    mode: LaunchMode.externalApplication,
+    webOnlyWindowName: '_blank',
+  );
+}
+
+bool _isPlannerItemWowheadUrl(String url) {
+  final host = Uri.tryParse(url.trim())?.host.toLowerCase();
+
+  return host == 'wowhead.com' ||
+      host == 'www.wowhead.com' ||
+      (host?.endsWith('.wowhead.com') ?? false);
+}
+
+bool _hasPlannerItemExternalLinks(BuildContext context, TrackingItem item) {
+  return item.mamytwinkUrl.trim().isNotEmpty ||
+      _plannerItemWowheadUrl(context, item).trim().isNotEmpty;
+}
+
+class _PlannerItemExternalLinks extends StatelessWidget {
+  const _PlannerItemExternalLinks({
+    required this.item,
+    this.mainAxisAlignment = MainAxisAlignment.start,
+  });
+
+  final TrackingItem item;
+  final MainAxisAlignment mainAxisAlignment;
+
+  @override
+  Widget build(BuildContext context) {
+    final mamytwinkUrl = item.mamytwinkUrl.trim();
+    final wowheadUrl = _plannerItemWowheadUrl(context, item).trim();
+    final hasWowheadLink = _isPlannerItemWowheadUrl(wowheadUrl);
+
+    if (mamytwinkUrl.isEmpty && wowheadUrl.isEmpty) {
+      return const SizedBox.shrink();
+    }
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: mainAxisAlignment,
+      children: [
+        if (mamytwinkUrl.isNotEmpty)
+          _MountExternalLinkButton(
+            tooltip: 'Ouvrir sur Mamytwink',
+            onPressed: () => _openPlannerItemExternalUrl(mamytwinkUrl),
+            child: const Text(
+              'M',
+              style: TextStyle(
+                color: Color(0xFF84CC16),
+                fontWeight: FontWeight.w900,
+                fontSize: 17,
+              ),
+            ),
+          ),
+        if (wowheadUrl.isNotEmpty)
+          hasWowheadLink
+              ? _MountExternalLinkButton(
+                  tooltip: 'Ouvrir sur Wowhead',
+                  onPressed: () => _openPlannerItemExternalUrl(wowheadUrl),
+                  child: const _WowheadRocketIcon(),
+                )
+              : _MountExternalLinkButton(
+                  tooltip: 'Ouvrir la fiche',
+                  onPressed: () => _openPlannerItemExternalUrl(wowheadUrl),
+                  child: const Icon(Icons.open_in_new, size: 18),
+                ),
+      ],
+    );
+  }
+}
+
 class _RouteStepCard extends StatelessWidget {
   const _RouteStepCard({
     required this.step,
@@ -2329,6 +2427,8 @@ class _RouteStepCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final item = step.item;
     final details = step.details.trim();
+    final hasExternalLinks =
+        item != null && _hasPlannerItemExternalLinks(context, item);
     final textStyle = TextStyle(
       fontWeight: FontWeight.w900,
       decoration: completed ? TextDecoration.lineThrough : null,
@@ -2345,7 +2445,20 @@ class _RouteStepCard extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Checkbox(value: completed, onChanged: onChanged),
+            SizedBox(
+              width: hasExternalLinks ? 72 : 48,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Checkbox(value: completed, onChanged: onChanged),
+                  if (item != null)
+                    _PlannerItemExternalLinks(
+                      item: item,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                    ),
+                ],
+              ),
+            ),
             _RouteStepNumberBadge(number: stepNumber),
             const SizedBox(width: 8),
             _RouteStepIcon(kind: step.kind),
@@ -4584,45 +4697,6 @@ class _PlannerItemCard extends StatelessWidget {
   final ValueChanged<bool?> onChanged;
   final VoidCallback? onRemoveFromWishlist;
 
-  String _wowheadUrl(BuildContext context) {
-    final preferredLocale = WowheadUrlBuilder.preferredLocaleCode(
-      WidgetsBinding.instance.platformDispatcher.locales.map(
-        (locale) => locale.toLanguageTag(),
-      ),
-      fallback: Localizations.localeOf(context).languageCode,
-    );
-    final locale =
-        item.category == TrackingCategory.mounts ||
-            item.category == TrackingCategory.achievements ||
-            item.category == TrackingCategory.pets
-        ? 'fr'
-        : preferredLocale;
-
-    if (item.wowheadUrl.isNotEmpty) {
-      return WowheadUrlBuilder.localizeUrl(item.wowheadUrl, locale: locale);
-    }
-
-    return WowheadUrlBuilder.build(item: item, locale: locale);
-  }
-
-  Future<void> _openUrl(String url) async {
-    final uri = Uri.parse(url);
-
-    await launchUrl(
-      uri,
-      mode: LaunchMode.externalApplication,
-      webOnlyWindowName: '_blank',
-    );
-  }
-
-  bool _isWowheadUrl(String url) {
-    final host = Uri.tryParse(url.trim())?.host.toLowerCase();
-
-    return host == 'wowhead.com' ||
-        host == 'www.wowhead.com' ||
-        (host?.endsWith('.wowhead.com') ?? false);
-  }
-
   List<_PlannerTag> _metadataTags() {
     final dropRateTag = _dropRateTag();
     final extensionTag = _extensionTag();
@@ -4838,9 +4912,6 @@ class _PlannerItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isMount = item.category == TrackingCategory.mounts;
-    final mamytwinkUrl = item.mamytwinkUrl.trim();
-    final wowheadUrl = _wowheadUrl(context);
-    final hasWowheadLink = _isWowheadUrl(wowheadUrl);
     final groupLabel =
         AchievementGroupHierarchy.labelFor(item) ?? item.instance;
     final difficultyTag = _difficultyTag();
@@ -4907,42 +4978,10 @@ class _PlannerItemCard extends StatelessWidget {
                       onChanged: onChanged,
                     ),
                   ),
-                  if (isMount)
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        if (mamytwinkUrl.isNotEmpty)
-                          _MountExternalLinkButton(
-                            tooltip: 'Ouvrir sur Mamytwink',
-                            onPressed: () => _openUrl(mamytwinkUrl),
-                            child: const Text(
-                              'M',
-                              style: TextStyle(
-                                color: Color(0xFF84CC16),
-                                fontWeight: FontWeight.w900,
-                                fontSize: 17,
-                              ),
-                            ),
-                          ),
-                        _MountExternalLinkButton(
-                          tooltip: 'Ouvrir sur Wowhead',
-                          onPressed: () => _openUrl(wowheadUrl),
-                          child: const _WowheadRocketIcon(),
-                        ),
-                      ],
-                    )
-                  else
-                    hasWowheadLink
-                        ? _MountExternalLinkButton(
-                            tooltip: 'Ouvrir sur Wowhead',
-                            onPressed: () => _openUrl(wowheadUrl),
-                            child: const _WowheadRocketIcon(),
-                          )
-                        : IconButton(
-                            tooltip: 'Ouvrir la fiche',
-                            icon: const Icon(Icons.open_in_new),
-                            onPressed: () => _openUrl(wowheadUrl),
-                          ),
+                  _PlannerItemExternalLinks(
+                    item: item,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                  ),
                 ],
               ),
             ),

@@ -52,6 +52,9 @@ Depuis ce dossier `cloudflare/`, configure les secrets :
 npx wrangler pages secret put BATTLENET_CLIENT_ID --project-name wow100
 npx wrangler pages secret put BATTLENET_CLIENT_SECRET --project-name wow100
 npx wrangler pages secret put BATTLENET_ALLOWED_REDIRECT_URIS --project-name wow100
+npx wrangler pages secret put FIREBASE_PROJECT_ID --project-name wow100
+npx wrangler pages secret put FIREBASE_SERVICE_ACCOUNT_EMAIL --project-name wow100
+npx wrangler pages secret put FIREBASE_SERVICE_ACCOUNT_PRIVATE_KEY --project-name wow100
 ```
 
 Exemple pour `BATTLENET_ALLOWED_REDIRECT_URIS` :
@@ -59,6 +62,16 @@ Exemple pour `BATTLENET_ALLOWED_REDIRECT_URIS` :
 ```text
 http://localhost:8788/callback,http://localhost:8080/callback,https://wow100.pages.dev/callback,https://wow100.cosmos-lty.fr/callback
 ```
+
+Pour RevenueCat, configure le webhook avec :
+
+```text
+https://wow100.cosmos-lty.fr/api/revenueCatWebhook
+```
+
+Laisse `Authorization header value` vide si tu veux rester comme BoB. Le webhook
+Cloudflare mettra `users/{uid}.isPremium` a jour dans Firestore via le compte de
+service configure ci-dessus.
 
 ## Test local Cloudflare
 

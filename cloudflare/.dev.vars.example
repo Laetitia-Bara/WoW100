@@ -1,3 +1,10 @@
 BATTLENET_CLIENT_ID=ton_client_id_battlenet
 BATTLENET_CLIENT_SECRET=ton_client_secret_battlenet
 BATTLENET_ALLOWED_REDIRECT_URIS=http://localhost:8788/callback,http://localhost:8080/callback,https://wow100.pages.dev/callback,https://wow100.cosmos-lty.fr/callback
+FIREBASE_PROJECT_ID=wow100-106c3
+FIREBASE_SERVICE_ACCOUNT_EMAIL=ton-service-account@wow100-106c3.iam.gserviceaccount.com
+FIREBASE_SERVICE_ACCOUNT_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n"
+# Optional. Leave unset if RevenueCat has no Authorization header value.
+REVENUECAT_WEBHOOK_AUTHORIZATION=
+REVENUECAT_PREMIUM_ENTITLEMENT_ID=WoW100% Premium
+REVENUECAT_PREMIUM_ENTITLEMENT_REST_ID=ent1288ffbccce

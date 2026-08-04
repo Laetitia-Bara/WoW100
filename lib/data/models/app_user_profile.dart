@@ -9,6 +9,9 @@ class AppUserProfile {
     required this.displayName,
     required this.photoUrl,
     required this.isPremium,
+    required this.premiumSource,
+    required this.premiumExpirationAt,
+    required this.revenueCatAppUserId,
     required this.wallpaperPreference,
   });
 
@@ -17,6 +20,9 @@ class AppUserProfile {
   final String? displayName;
   final String? photoUrl;
   final bool isPremium;
+  final String? premiumSource;
+  final DateTime? premiumExpirationAt;
+  final String? revenueCatAppUserId;
   final AppWallpaperPreference wallpaperPreference;
 
   factory AppUserProfile.fromFirestore(
@@ -30,6 +36,10 @@ class AppUserProfile {
       displayName: data['displayName'] as String?,
       photoUrl: data['photoUrl'] as String?,
       isPremium: data['isPremium'] as bool? ?? false,
+      premiumSource: data['premiumSource'] as String?,
+      premiumExpirationAt: (data['premiumExpirationAt'] as Timestamp?)
+          ?.toDate(),
+      revenueCatAppUserId: data['revenueCatAppUserId'] as String?,
       wallpaperPreference: AppWallpaperPreference.fromFirestoreValue(
         data['wallpaperPreference'],
       ),

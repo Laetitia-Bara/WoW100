@@ -2,6 +2,26 @@ import 'package:flutter/foundation.dart';
 
 class AppConfig {
   static const battleNetClientId = 'd1a63c10c180407c9ce681b2faee7b5d';
+  static const revenueCatPremiumEntitlementId = String.fromEnvironment(
+    'REVENUECAT_PREMIUM_ENTITLEMENT_ID',
+    defaultValue: 'WoW100% Premium',
+  );
+  static const revenueCatOfferingId = String.fromEnvironment(
+    'REVENUECAT_OFFERING_ID',
+    defaultValue: '',
+  );
+  static const revenueCatAndroidApiKey = String.fromEnvironment(
+    'REVENUECAT_ANDROID_API_KEY',
+    defaultValue: 'goog_RaZXGplgnynlCktWxZDxnzkxUdF',
+  );
+  static const revenueCatIosApiKey = String.fromEnvironment(
+    'REVENUECAT_IOS_API_KEY',
+    defaultValue: 'appl_EHCttKWnNCpzwlPthKryIbXDOlh',
+  );
+  static const revenueCatWebApiKey = String.fromEnvironment(
+    'REVENUECAT_WEB_API_KEY',
+    defaultValue: 'rcb_OzPMcxuEYzjMZTUYsEwQLRiXrqiV',
+  );
   static const _defaultApiBaseUrl = '/api';
   static const _defaultRemoteApiBaseUrl = 'https://wow100.cosmos-lty.fr/api';
   static const _defaultAppBaseUrl = 'https://wow100.cosmos-lty.fr';

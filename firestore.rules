@@ -15,6 +15,12 @@ service cloud.firestore {
     //   - photoUrl: string or null (optional, max 500) - Account avatar URL.
     //   - providerIds: list (optional, max 8) - Firebase Auth provider ids.
     //   - isPremium: bool (required, client create must be false, immutable by client) - Ad removal entitlement.
+    //   - premiumSource: string or null (optional, immutable by client) - Trusted premium source.
+    //   - premiumExpirationAt: timestamp or null (optional, immutable by client) - Premium end date.
+    //   - premiumEntitlements: list (optional, immutable by client) - Active RevenueCat entitlements.
+    //   - revenueCatAppUserId: string or null (optional, immutable by client) - RevenueCat app user id.
+    //   - revenueCatManagementUrl: string or null (optional, immutable by client) - Subscription portal.
+    //   - revenueCatUpdatedAt: timestamp or null (optional, immutable by client) - Last RevenueCat sync.
     //   - wallpaperPreference: string (optional, default|horde|alliance) - App background preference.
     //   - createdAt: timestamp (required, immutable) - Profile creation time.
     //   - updatedAt: timestamp (required) - Last profile refresh time.
@@ -109,6 +115,10 @@ service cloud.firestore {
           (value.matches('^https://.*') || value.matches('^http://.*')));
     }
 
+    function validNullableTimestamp(value) {
+      return value == null || value is timestamp;
+    }
+
     function validWallpaperPreference(value) {
       return value is string &&
         (value == 'default' ||
@@ -129,6 +139,12 @@ service cloud.firestore {
           'photoUrl',
           'providerIds',
           'isPremium',
+          'premiumSource',
+          'premiumExpirationAt',
+          'premiumEntitlements',
+          'revenueCatAppUserId',
+          'revenueCatManagementUrl',
+          'revenueCatUpdatedAt',
           'wallpaperPreference',
           'createdAt',
           'updatedAt',
@@ -157,6 +173,19 @@ service cloud.firestore {
         (!('wallpaperPreference' in data) ||
           validWallpaperPreference(data.wallpaperPreference)) &&
         data.isPremium is bool &&
+        (!('premiumSource' in data) ||
+          validNullableString(data.premiumSource, 40)) &&
+        (!('premiumExpirationAt' in data) ||
+          validNullableTimestamp(data.premiumExpirationAt)) &&
+        (!('premiumEntitlements' in data) ||
+          (data.premiumEntitlements is list &&
+            data.premiumEntitlements.size() <= 20)) &&
+        (!('revenueCatAppUserId' in data) ||
+          validNullableString(data.revenueCatAppUserId, 128)) &&
+        (!('revenueCatManagementUrl' in data) ||
+          validNullableUrl(data.revenueCatManagementUrl, 500)) &&
+        (!('revenueCatUpdatedAt' in data) ||
+          validNullableTimestamp(data.revenueCatUpdatedAt)) &&
         data.createdAt is timestamp &&
         data.updatedAt is timestamp;
     }
@@ -164,6 +193,12 @@ service cloud.firestore {
     function isValidUserCreate(userId) {
       return hasValidUserShape(request.resource.data, userId) &&
         request.resource.data.isPremium == false &&
+        !('premiumSource' in request.resource.data) &&
+        !('premiumExpirationAt' in request.resource.data) &&
+        !('premiumEntitlements' in request.resource.data) &&
+        !('revenueCatAppUserId' in request.resource.data) &&
+        !('revenueCatManagementUrl' in request.resource.data) &&
+        !('revenueCatUpdatedAt' in request.resource.data) &&
         request.resource.data.createdAt == request.time &&
         request.resource.data.updatedAt == request.time;
     }
@@ -171,9 +206,16 @@ service cloud.firestore {
     function isValidUserUpdate(userId) {
       return hasValidUserShape(request.resource.data, userId) &&
         request.resource.data.uid == resource.data.uid &&
-        request.resource.data.isPremium == resource.data.isPremium &&
         request.resource.data.createdAt == resource.data.createdAt &&
-        request.resource.data.updatedAt == request.time;
+        request.resource.data.updatedAt == request.time &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'email',
+          'displayName',
+          'photoUrl',
+          'providerIds',
+          'wallpaperPreference',
+          'updatedAt',
+        ]);
     }
 
     function hasValidMainCharacterShape(data) {

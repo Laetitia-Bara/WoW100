@@ -1,0 +1,109 @@
+{
+  "routes": [
+    {
+      "routePath": "/api/exchangeBattleNetCode",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/exchangeBattleNetCode.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/getCharacterAchievements",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/getCharacterAchievements.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/getCollectibleMedia",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/getCollectibleMedia.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/getMountCatalog",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/getMountCatalog.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/getMountDetails",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/getMountDetails.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/getWowAchievements",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/getWowAchievements.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/getWowCharacterProfile",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/getWowCharacterProfile.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/getWowCharacters",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/getWowCharacters.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/getWowGuildRoster",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/getWowGuildRoster.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/getWowMounts",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/getWowMounts.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/getWowPets",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/getWowPets.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/getWowProfile",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/getWowProfile.js:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/revenueCatWebhook",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/revenueCatWebhook.js:onRequest"
+      ]
+    }
+  ],
+  "baseURL": "/"
+}

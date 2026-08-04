@@ -12,6 +12,7 @@ import 'core/theme/app_theme.dart';
 import 'features/auth/presentation/pages/auth_callback_page.dart';
 import 'features/auth/presentation/pages/session_gate_page.dart';
 import 'features/legal/presentation/pages/legal_page.dart';
+import 'features/premium/presentation/pages/premium_page.dart';
 import 'firebase_options.dart';
 
 void main() {
@@ -184,6 +185,16 @@ class _WoW100AppShellState extends State<_WoW100AppShell> {
           builder: (_) => const LegalPage.privacy(),
         ),
       );
+      return;
+    }
+
+    if (_isPremiumUri(uri)) {
+      navigator.push(
+        MaterialPageRoute<void>(
+          settings: RouteSettings(name: link),
+          builder: (_) => const PremiumPage(),
+        ),
+      );
     }
   }
 
@@ -214,11 +225,19 @@ class _WoW100AppShellState extends State<_WoW100AppShell> {
       return platformRoute;
     }
 
+    if (_isPremiumRoute(platformRoute)) {
+      return platformRoute;
+    }
+
     if (_isCallbackUri(Uri.base)) {
       return Uri.base.toString();
     }
 
     if (_isPrivacyUri(Uri.base)) {
+      return Uri.base.toString();
+    }
+
+    if (_isPremiumUri(Uri.base)) {
       return Uri.base.toString();
     }
 
@@ -246,6 +265,13 @@ class _WoW100AppShellState extends State<_WoW100AppShell> {
       );
     }
 
+    if (uri != null && _isPremiumUri(uri)) {
+      return MaterialPageRoute(
+        settings: settings,
+        builder: (_) => const PremiumPage(),
+      );
+    }
+
     return MaterialPageRoute(
       settings: settings,
       builder: (_) => const SessionGatePage(),
@@ -262,6 +288,11 @@ class _WoW100AppShellState extends State<_WoW100AppShell> {
     return uri != null && _isPrivacyUri(uri);
   }
 
+  bool _isPremiumRoute(String routeName) {
+    final uri = Uri.tryParse(routeName);
+    return uri != null && _isPremiumUri(uri);
+  }
+
   bool _isCallbackUri(Uri uri) {
     return uri.path == '/callback' ||
         (uri.scheme == 'wow100' && uri.host == 'callback');
@@ -271,13 +302,20 @@ class _WoW100AppShellState extends State<_WoW100AppShell> {
     return uri.path == '/privacy' || uri.path == '/legal';
   }
 
+  bool _isPremiumUri(Uri uri) {
+    return uri.path == '/premium' ||
+        (uri.scheme == 'wow100' && uri.host == 'premium');
+  }
+
   void _markInitialDeepLinksAsHandled() {
     final platformRoute =
         WidgetsBinding.instance.platformDispatcher.defaultRouteName;
 
     _markDeepLinkStringAsHandled(platformRoute);
 
-    if (_isCallbackUri(Uri.base) || _isPrivacyUri(Uri.base)) {
+    if (_isCallbackUri(Uri.base) ||
+        _isPrivacyUri(Uri.base) ||
+        _isPremiumUri(Uri.base)) {
       _markDeepLinkAsHandled(Uri.base);
     }
   }
@@ -292,7 +330,7 @@ class _WoW100AppShellState extends State<_WoW100AppShell> {
   }
 
   bool _markDeepLinkAsHandled(Uri uri) {
-    if (!_isCallbackUri(uri) && !_isPrivacyUri(uri)) {
+    if (!_isCallbackUri(uri) && !_isPrivacyUri(uri) && !_isPremiumUri(uri)) {
       return true;
     }
 
@@ -314,6 +352,10 @@ class _WoW100AppShellState extends State<_WoW100AppShell> {
 
     if (_isPrivacyUri(uri)) {
       return 'privacy:${uri.path}';
+    }
+
+    if (_isPremiumUri(uri)) {
+      return 'premium:${uri.path}';
     }
 
     return uri.toString();

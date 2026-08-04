@@ -66,6 +66,9 @@ class FirebaseAccountService {
             displayName: user.displayName,
             photoUrl: user.photoURL,
             isPremium: false,
+            premiumSource: null,
+            premiumExpirationAt: null,
+            revenueCatAppUserId: null,
             wallpaperPreference: AppWallpaperPreference.factions,
           );
         }

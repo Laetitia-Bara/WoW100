@@ -27,6 +27,7 @@ import '../../../auth/presentation/pages/character_switch_page.dart';
 import '../../../legal/presentation/pages/legal_page.dart';
 import '../../../planner/presentation/pages/planner_page.dart';
 import '../../../planner/presentation/widgets/region_selector_sheet.dart';
+import '../../../premium/presentation/pages/premium_page.dart';
 import '../../../social/presentation/pages/battle_net_friends_page.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -324,6 +325,13 @@ class _DashboardPageState extends State<DashboardPage> {
     );
   }
 
+  void _openPremiumPage() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const PremiumPage()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
@@ -354,6 +362,7 @@ class _DashboardPageState extends State<DashboardPage> {
               canUseBattleNetLogin: _firebaseAccountService.currentUser != null,
               onLegalTap: _openLegalPage,
               onAccountTap: _openAccountPage,
+              onPremiumTap: _openPremiumPage,
               onLoginTap: _openBattleNetLogin,
               onCharacterTap: _openCharacterSwitch,
               onFriendsTap: _openBattleNetFriends,
@@ -480,6 +489,7 @@ class _DashboardTopBar extends StatelessWidget {
     required this.canUseBattleNetLogin,
     required this.onLegalTap,
     required this.onAccountTap,
+    required this.onPremiumTap,
     required this.onLoginTap,
     required this.onCharacterTap,
     required this.onFriendsTap,
@@ -490,6 +500,7 @@ class _DashboardTopBar extends StatelessWidget {
   final bool canUseBattleNetLogin;
   final VoidCallback onLegalTap;
   final VoidCallback onAccountTap;
+  final VoidCallback onPremiumTap;
   final VoidCallback onLoginTap;
   final VoidCallback onCharacterTap;
   final VoidCallback onFriendsTap;
@@ -537,6 +548,7 @@ class _DashboardTopBar extends StatelessWidget {
               _DashboardAccountActions(
                 mainCharacter: mainCharacter,
                 canUseBattleNetLogin: canUseBattleNetLogin,
+                onPremiumTap: onPremiumTap,
                 onAccountTap: onAccountTap,
                 onLoginTap: onLoginTap,
                 onCharacterTap: onCharacterTap,
@@ -555,6 +567,7 @@ class _DashboardAccountActions extends StatelessWidget {
   const _DashboardAccountActions({
     required this.mainCharacter,
     required this.canUseBattleNetLogin,
+    required this.onPremiumTap,
     required this.onAccountTap,
     required this.onLoginTap,
     required this.onCharacterTap,
@@ -564,6 +577,7 @@ class _DashboardAccountActions extends StatelessWidget {
 
   final WowCharacter? mainCharacter;
   final bool canUseBattleNetLogin;
+  final VoidCallback onPremiumTap;
   final VoidCallback onAccountTap;
   final VoidCallback onLoginTap;
   final VoidCallback onCharacterTap;
@@ -578,6 +592,8 @@ class _DashboardAccountActions extends StatelessWidget {
       return Row(
         mainAxisSize: MainAxisSize.min,
         children: [
+          _StopAdsAction(onPressed: onPremiumTap, compact: true),
+          const SizedBox(width: 6),
           _AccountAction(onPressed: onAccountTap, compact: true),
           const SizedBox(width: 8),
           Tooltip(
@@ -610,6 +626,7 @@ class _DashboardAccountActions extends StatelessWidget {
       return Row(
         mainAxisSize: MainAxisSize.min,
         children: [
+          _StopAdsAction(onPressed: onPremiumTap, compact: true),
           IconButton(
             tooltip: 'Mes personnages',
             icon: const Icon(Icons.person),
@@ -633,6 +650,8 @@ class _DashboardAccountActions extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
+        _StopAdsAction(onPressed: onPremiumTap),
+        const SizedBox(width: 6),
         TextButton.icon(
           onPressed: onCharacterTap,
           icon: const Icon(Icons.person),
@@ -646,6 +665,46 @@ class _DashboardAccountActions extends StatelessWidget {
           onPressed: onLogoutTap,
         ),
       ],
+    );
+  }
+}
+
+class _StopAdsAction extends StatelessWidget {
+  const _StopAdsAction({required this.onPressed, this.compact = false});
+
+  final VoidCallback onPressed;
+  final bool compact;
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder(
+      stream: FirebaseAccountService().profileChanges,
+      builder: (context, snapshot) {
+        if (snapshot.data?.isPremium == true) {
+          return const SizedBox.shrink();
+        }
+
+        if (compact) {
+          return IconButton(
+            tooltip: 'Stop pub',
+            icon: const Icon(Icons.block_rounded, color: AppTheme.gold),
+            onPressed: onPressed,
+          );
+        }
+
+        return OutlinedButton.icon(
+          onPressed: onPressed,
+          icon: const Icon(Icons.block_rounded, size: 17),
+          label: const Text('Stop pub'),
+          style: OutlinedButton.styleFrom(
+            foregroundColor: AppTheme.gold,
+            side: BorderSide(color: AppTheme.gold.withValues(alpha: 0.62)),
+            visualDensity: VisualDensity.compact,
+            padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 9),
+            textStyle: const TextStyle(fontWeight: FontWeight.w900),
+          ),
+        );
+      },
     );
   }
 }

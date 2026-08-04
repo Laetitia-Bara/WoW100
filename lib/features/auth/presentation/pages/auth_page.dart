@@ -8,6 +8,7 @@ import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/app_user_profile.dart';
 import '../../../../data/models/app_wallpaper_preference.dart';
 import '../../../legal/presentation/pages/legal_page.dart';
+import '../../../premium/presentation/pages/premium_page.dart';
 
 enum _AuthMode { signIn, signUp }
 
@@ -226,6 +227,13 @@ class _AuthPageState extends State<AuthPage> {
     );
   }
 
+  void _openPremiumPage() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const PremiumPage()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -310,6 +318,7 @@ class _AuthPageState extends State<AuthPage> {
                               isBusy: _isBusy,
                               message: _message,
                               onWallpaperChanged: _updateWallpaperPreference,
+                              onPremiumTap: _openPremiumPage,
                               onSignOut: _signOut,
                             ),
                     ),
@@ -521,6 +530,7 @@ class _SignedInPanel extends StatelessWidget {
     required this.isBusy,
     required this.message,
     required this.onWallpaperChanged,
+    required this.onPremiumTap,
     required this.onSignOut,
   });
 
@@ -528,6 +538,7 @@ class _SignedInPanel extends StatelessWidget {
   final bool isBusy;
   final String? message;
   final ValueChanged<AppWallpaperPreference> onWallpaperChanged;
+  final VoidCallback onPremiumTap;
   final VoidCallback onSignOut;
 
   @override
@@ -590,6 +601,11 @@ class _SignedInPanel extends StatelessWidget {
               ),
             ],
             const SizedBox(height: 18),
+            PremiumAccountCard(
+              isPremium: profile.isPremium,
+              onTap: onPremiumTap,
+            ),
+            const SizedBox(height: 12),
             _PremiumStatusBadge(isPremium: profile.isPremium),
             const SizedBox(height: 18),
             OutlinedButton.icon(
