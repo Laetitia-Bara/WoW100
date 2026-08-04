@@ -2348,11 +2348,6 @@ bool _isPlannerItemWowheadUrl(String url) {
       (host?.endsWith('.wowhead.com') ?? false);
 }
 
-bool _hasPlannerItemExternalLinks(BuildContext context, TrackingItem item) {
-  return item.mamytwinkUrl.trim().isNotEmpty ||
-      _plannerItemWowheadUrl(context, item).trim().isNotEmpty;
-}
-
 class _PlannerItemExternalLinks extends StatelessWidget {
   const _PlannerItemExternalLinks({
     required this.item,
@@ -2427,8 +2422,6 @@ class _RouteStepCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final item = step.item;
     final details = step.details.trim();
-    final hasExternalLinks =
-        item != null && _hasPlannerItemExternalLinks(context, item);
     final textStyle = TextStyle(
       fontWeight: FontWeight.w900,
       decoration: completed ? TextDecoration.lineThrough : null,
@@ -2445,20 +2438,7 @@ class _RouteStepCard extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(
-              width: hasExternalLinks ? 72 : 48,
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Checkbox(value: completed, onChanged: onChanged),
-                  if (item != null)
-                    _PlannerItemExternalLinks(
-                      item: item,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                    ),
-                ],
-              ),
-            ),
+            Checkbox(value: completed, onChanged: onChanged),
             _RouteStepNumberBadge(number: stepNumber),
             const SizedBox(width: 8),
             _RouteStepIcon(kind: step.kind),
@@ -2489,6 +2469,7 @@ class _RouteStepCard extends StatelessWidget {
                       for (final tag in step.tags) _PlannerTag(label: tag),
                       if (step.resetScope != RouteResetScope.none)
                         _PlannerTag(label: _resetScopeLabel(step)),
+                      if (item != null) _PlannerItemExternalLinks(item: item),
                     ],
                   ),
                 ],
