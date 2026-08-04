@@ -83,6 +83,7 @@ class SelectedCharacterService {
       'characterClass': character.characterClass,
       'faction': character.faction,
       'realmSlug': character.realmSlug,
+      'professions': character.professions,
       'achievementPoints': character.achievementPoints,
       if (character.mythicKeystoneRating != null)
         'mythicKeystoneRating': character.mythicKeystoneRating,

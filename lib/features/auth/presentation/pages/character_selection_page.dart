@@ -61,7 +61,7 @@ const _playableProfessions = <_CollectionEntry>[
   _CollectionEntry('Dépeçage', aliases: ['Skinning']),
   _CollectionEntry('Enchantement', aliases: ['Enchanting']),
   _CollectionEntry('Forge', aliases: ['Blacksmithing']),
-  _CollectionEntry('Herboristerie', aliases: ['Herbalism']),
+  _CollectionEntry('Herboristerie', aliases: ['Herbalism', 'Herboriste']),
   _CollectionEntry('Ingénierie', aliases: ['Engineering']),
   _CollectionEntry('Joaillerie', aliases: ['Jewelcrafting']),
   _CollectionEntry('Minage', aliases: ['Mining']),
@@ -110,9 +110,14 @@ String _collectionKey(String value) {
 }
 
 class CharacterSelectionPage extends StatefulWidget {
-  const CharacterSelectionPage({super.key, required this.characters});
+  const CharacterSelectionPage({
+    super.key,
+    required this.characters,
+    this.showAds = true,
+  });
 
   final List<WowCharacter> characters;
+  final bool showAds;
 
   @override
   State<CharacterSelectionPage> createState() => _CharacterSelectionPageState();
@@ -330,7 +335,7 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
           );
         },
       ),
-      bottomNavigationBar: const AppBannerAd(),
+      bottomNavigationBar: widget.showAds ? const AppBannerAd() : null,
     );
   }
 }
