@@ -53,6 +53,22 @@ build/
 node_modules/
 **/node_modules/
 
+# Generated catalog review outputs
+/outputs/
+/assets/data/mounts/
+/assets/generated/*
+!/assets/generated/achievements_wow100_draft.json
+!/assets/generated/locations_reference_catalog.json
+!/assets/generated/mamytwink_mount_candidates.json
+!/assets/generated/mounts_catalog_enriched.json
+!/assets/generated/mounts_metadata_mamytwink_draft.json
+!/assets/generated/mounts_reference_catalog.json
+!/assets/generated/pets_wow100_draft.json
+
+# Scratch artwork exports
+/logo_*.png
+/assets/ChatGPT Image*.png
+
 # IDE / OS
 .vscode/
 .idea/

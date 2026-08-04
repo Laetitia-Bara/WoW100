@@ -2117,26 +2117,99 @@ class _RouteResetActionBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Wrap(
-      spacing: 10,
-      runSpacing: 10,
-      children: [
-        OutlinedButton.icon(
-          onPressed: hasCompletedSteps ? onResetAll : null,
-          icon: const Icon(Icons.restart_alt_rounded),
-          label: const Text('Reset all'),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth < 560) {
+          return Row(
+            children: [
+              Expanded(
+                child: _CompactRouteResetButton(
+                  tooltip: 'Reset all',
+                  icon: Icons.restart_alt_rounded,
+                  label: 'All',
+                  onPressed: hasCompletedSteps ? onResetAll : null,
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: _CompactRouteResetButton(
+                  tooltip: 'Reset quotidien',
+                  icon: Icons.today_rounded,
+                  label: 'Quotid.',
+                  onPressed: onResetDaily,
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: _CompactRouteResetButton(
+                  tooltip: 'Reset hebdo',
+                  icon: Icons.calendar_month_rounded,
+                  label: 'Hebdo',
+                  onPressed: onResetWeekly,
+                ),
+              ),
+            ],
+          );
+        }
+
+        return Wrap(
+          spacing: 10,
+          runSpacing: 10,
+          children: [
+            OutlinedButton.icon(
+              onPressed: hasCompletedSteps ? onResetAll : null,
+              icon: const Icon(Icons.restart_alt_rounded),
+              label: const Text('Reset all'),
+            ),
+            OutlinedButton.icon(
+              onPressed: onResetDaily,
+              icon: const Icon(Icons.today_rounded),
+              label: const Text('Reset quotidien'),
+            ),
+            OutlinedButton.icon(
+              onPressed: onResetWeekly,
+              icon: const Icon(Icons.calendar_month_rounded),
+              label: const Text('Reset hebdo'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+}
+
+class _CompactRouteResetButton extends StatelessWidget {
+  const _CompactRouteResetButton({
+    required this.tooltip,
+    required this.icon,
+    required this.label,
+    required this.onPressed,
+  });
+
+  final String tooltip;
+  final IconData icon;
+  final String label;
+  final VoidCallback? onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return Tooltip(
+      message: tooltip,
+      child: OutlinedButton.icon(
+        onPressed: onPressed,
+        icon: Icon(icon, size: 18),
+        label: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(label, maxLines: 1),
         ),
-        OutlinedButton.icon(
-          onPressed: onResetDaily,
-          icon: const Icon(Icons.today_rounded),
-          label: const Text('Reset quotidien'),
+        style: ButtonStyle(
+          minimumSize: WidgetStateProperty.all(const Size(0, 42)),
+          padding: WidgetStateProperty.all(
+            const EdgeInsets.symmetric(horizontal: 8),
+          ),
+          visualDensity: VisualDensity.compact,
         ),
-        OutlinedButton.icon(
-          onPressed: onResetWeekly,
-          icon: const Icon(Icons.calendar_month_rounded),
-          label: const Text('Reset hebdo'),
-        ),
-      ],
+      ),
     );
   }
 }

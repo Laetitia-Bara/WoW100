@@ -42,14 +42,37 @@ flutter:
   uses-material-design: true
   assets:
     - assets/translations/
-    - assets/data/mounts/
-    - assets/data/metadata/
+    - assets/data/metadata/mounts_metadata.json
+    - assets/data/metadata/mounts_wowhead_overrides.json
     - assets/data/routes/
     - assets/data/pets/
-    - assets/images/expansions/
-    - assets/images/
-    - assets/images/bann/
-    - assets/images/icones/
     - assets/data/achievements/
-    - assets/generated/
-    - assets/app_icon/
+    - assets/generated/achievements_wow100_draft.json
+    - assets/generated/locations_reference_catalog.json
+    - assets/generated/mamytwink_mount_candidates.json
+    - assets/generated/mounts_catalog_enriched.json
+    - assets/generated/mounts_metadata_mamytwink_draft.json
+    - assets/generated/mounts_reference_catalog.json
+    - assets/generated/pets_wow100_draft.json
+    - assets/images/google_g_logo.png
+    - assets/images/bann/bann_perso_alliance.png
+    - assets/images/bann/bann_perso_horde.png
+    - assets/images/expansions/bann_bfa.jpg
+    - assets/images/expansions/bann_dreanor.jpg
+    - assets/images/expansions/cataclysm.jpg
+    - assets/images/expansions/dragonflight.jpg
+    - assets/images/expansions/legion.jpg
+    - assets/images/expansions/midnight.jpg
+    - assets/images/expansions/mop.jpg
+    - assets/images/expansions/shadow.jpg
+    - assets/images/expansions/tbc.jpg
+    - assets/images/expansions/tww.jpg
+    - assets/images/expansions/vanilla.jpg
+    - assets/images/expansions/wrath.jpg
+    - assets/images/icones/campaign_quest_icon_native.png
+    - assets/images/icones/hf_points_flower_badge.png
+    - assets/images/icones/icone192.png
+    - assets/images/icones/mythic_keystone_icon.png
+    - assets/images/icones/wallpaper_alliance.png
+    - assets/images/icones/wallpaper_app.jpg
+    - assets/images/icones/wallpaper_horde.png

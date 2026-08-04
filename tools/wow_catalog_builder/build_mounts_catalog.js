@@ -170,32 +170,7 @@ async function main() {
 
   console.log("Draft WoW100 sauvegardé");
 
-  const expansions = [
-    "vanilla",
-    "tbc",
-    "wrath",
-    "cataclysm",
-    "mop",
-    "wod",
-    "legion",
-    "bfa",
-    "shadowlands",
-    "dragonflight",
-    "warWithin",
-    "midnight",
-  ];
-
-  for (const expansion of expansions) {
-    const items = wow100Draft.filter((mount) => mount.expansion === expansion);
-
-    await fs.writeFile(
-      `../../assets/data/mounts/${expansion}_mounts.json`,
-      JSON.stringify(items, null, 2),
-      "utf8",
-    );
-
-    console.log(`${expansion}_mounts.json : ${items.length} montures`);
-  }
+  console.log(`${wow100Draft.length} montures prêtes pour le draft WoW100`);
 }
 
 main().catch(console.error);

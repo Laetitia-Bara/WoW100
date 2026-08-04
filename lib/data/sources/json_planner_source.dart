@@ -79,10 +79,6 @@ class JsonPlannerSource {
     WowExpansion.midnight: 'assets/data/pets/midnight_pets.json',
   };
 
-  Future<List<TrackingItem>> loadWrathMounts() {
-    return loadItemsFromAsset('assets/data/mounts/wrath_mounts.json');
-  }
-
   Future<List<TrackingItem>> loadItemsFromAsset(String assetPath) async {
     final items = await _itemAssetCache.putIfAbsent(
       assetPath,
