@@ -84,6 +84,15 @@ class LegalPage extends StatelessWidget {
         'Ces sources restent la propriété de leurs éditeurs respectifs. WoW100% les utilise comme références pour aider au classement et à la navigation.',
       ],
     ),
+    _LegalContentSection(
+      title: 'Abonnement Premium',
+      paragraphs: [
+        'WoW100% Premium est un abonnement mensuel à reconduction automatique destiné à supprimer les publicités mobiles et les blocs sponsorisés web.',
+        'La première semaine est offerte pour le premier abonnement des nouveaux abonnés éligibles. À la fin de l’essai, l’abonnement devient payant et se renouvelle automatiquement chaque mois, sauf annulation avant la fin de l’essai.',
+        'Le prix exact, la devise, les taxes applicables et la confirmation d’achat sont affichés par l’App Store, Google Play ou Stripe selon la plateforme utilisée.',
+        'Vous pouvez annuler à tout moment depuis les réglages d’abonnements de l’App Store ou de Google Play, ou depuis les outils de gestion fournis par la plateforme de paiement utilisée.',
+      ],
+    ),
   ];
 
   static const List<_LegalContentSection> _privacySections = [
@@ -134,10 +143,18 @@ class LegalPage extends StatelessWidget {
       ],
     ),
     _LegalContentSection(
+      title: 'Achats Premium',
+      paragraphs: [
+        'Lorsque vous utilisez WoW100% Premium, les informations nécessaires à l’achat, à la restauration et à la synchronisation de l’abonnement peuvent être traitées par RevenueCat, Apple, Google Play ou Stripe selon la plateforme.',
+        'WoW100% ne reçoit pas vos informations complètes de carte bancaire. Les plateformes de paiement gèrent la transaction, les reçus, le renouvellement et l’annulation.',
+        'L’état Premium peut être synchronisé avec votre compte WoW100% afin de masquer les publicités et sponsors sur les plateformes compatibles.',
+      ],
+    ),
+    _LegalContentSection(
       title: 'Partage et prestataires',
       paragraphs: [
         'Les données nécessaires à la connexion et à la récupération de progression peuvent être transmises aux services Battle.net et Blizzard Entertainment afin d’obtenir les informations demandées par l’utilisateur.',
-        'L’application et son site peuvent s’appuyer sur des prestataires techniques d’hébergement, d’exécution ou de diffusion publicitaire, notamment Cloudflare, Firebase/Google et Google AdMob, pour fournir le service.',
+        'L’application et son site peuvent s’appuyer sur des prestataires techniques d’hébergement, d’exécution, de diffusion publicitaire ou de paiement, notamment Cloudflare, Firebase/Google, Google AdMob, RevenueCat, Apple, Google Play et Stripe, pour fournir le service.',
       ],
     ),
     _LegalContentSection(

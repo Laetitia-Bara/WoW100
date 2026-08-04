@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/services/premium_service.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../legal/presentation/pages/legal_page.dart';
 
 class PremiumPage extends StatefulWidget {
   const PremiumPage({super.key});
@@ -99,6 +100,18 @@ class _PremiumPageState extends State<PremiumPage> {
     await launchUrl(uri, mode: LaunchMode.externalApplication);
   }
 
+  void _openLegalPage() {
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (_) => const LegalPage()));
+  }
+
+  void _openPrivacyPage() {
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (_) => const LegalPage.privacy()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -138,7 +151,7 @@ class _PremiumPageState extends State<PremiumPage> {
                           _PremiumHero(isPremium: isPremium),
                           const SizedBox(height: 18),
                           if (!state.isConfigured)
-                            const _PremiumUnavailablePanel()
+                            _PremiumUnavailablePanel(message: state.message)
                           else if (isPremium)
                             _PremiumActivePanel(
                               managementUrl: managementUrl,
@@ -154,6 +167,14 @@ class _PremiumPageState extends State<PremiumPage> {
                               onPurchase: _purchase,
                               onRestore: _restore,
                             ),
+                          if (!isPremium) ...[
+                            const SizedBox(height: 14),
+                            _SubscriptionDisclosure(
+                              packages: state.packages,
+                              onOpenLegal: _openLegalPage,
+                              onOpenPrivacy: _openPrivacyPage,
+                            ),
+                          ],
                           if (_isBusy) ...[
                             const SizedBox(height: 18),
                             const Center(child: CircularProgressIndicator()),
@@ -512,10 +533,16 @@ class _PremiumActivePanel extends StatelessWidget {
 }
 
 class _PremiumUnavailablePanel extends StatelessWidget {
-  const _PremiumUnavailablePanel();
+  const _PremiumUnavailablePanel({this.message});
+
+  final String? message;
 
   @override
   Widget build(BuildContext context) {
+    final displayMessage =
+        message ??
+        'Premium sera disponible des que les abonnements seront ouverts sur cette plateforme.';
+
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(18),
@@ -530,10 +557,10 @@ class _PremiumUnavailablePanel extends StatelessWidget {
               child: const Icon(Icons.lock_clock_rounded, color: AppTheme.gold),
             ),
             const SizedBox(width: 14),
-            const Expanded(
+            Expanded(
               child: Text(
-                'Premium sera disponible des que les abonnements seront ouverts sur cette plateforme.',
-                style: TextStyle(
+                displayMessage,
+                style: const TextStyle(
                   color: AppTheme.mutedText,
                   height: 1.35,
                   fontWeight: FontWeight.w700,
@@ -577,6 +604,133 @@ class _EmptyOfferingPanel extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _SubscriptionDisclosure extends StatelessWidget {
+  const _SubscriptionDisclosure({
+    required this.packages,
+    required this.onOpenLegal,
+    required this.onOpenPrivacy,
+  });
+
+  final List<Package> packages;
+  final VoidCallback onOpenLegal;
+  final VoidCallback onOpenPrivacy;
+
+  @override
+  Widget build(BuildContext context) {
+    final monthlyPackage = _monthlyPackage();
+    final price = monthlyPackage?.storeProduct.priceString.trim();
+    final hasPrice = price != null && price.isNotEmpty;
+    final renewalText = hasPrice
+        ? 'Après l’essai, $price est facturé chaque mois par le Store, sauf annulation avant la fin de l’essai.'
+        : 'Après l’essai, le prix mensuel affiché par le Store est facturé chaque mois, sauf annulation avant la fin de l’essai.';
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const Row(
+              children: [
+                Icon(Icons.info_outline_rounded, color: AppTheme.gold),
+                SizedBox(width: 10),
+                Expanded(
+                  child: Text(
+                    'Conditions de l’abonnement',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w900),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 10),
+            const _DisclosureLine(
+              text:
+                  'WoW100% Premium est un abonnement mensuel à reconduction automatique.',
+            ),
+            const _DisclosureLine(
+              text:
+                  'La première semaine est offerte pour le premier abonnement des nouveaux abonnés éligibles.',
+            ),
+            _DisclosureLine(text: renewalText),
+            const _DisclosureLine(
+              text:
+                  'Tu peux annuler à tout moment depuis les réglages d’abonnements de l’App Store ou de Google Play. Pour éviter une facturation après un essai Apple, annule au moins 24 h avant la fin de l’essai.',
+            ),
+            const _DisclosureLine(
+              text:
+                  'Après annulation, l’accès Premium reste disponible jusqu’à la fin de la période déjà payée, selon les règles du Store.',
+            ),
+            const SizedBox(height: 10),
+            Wrap(
+              spacing: 10,
+              runSpacing: 10,
+              children: [
+                TextButton.icon(
+                  onPressed: onOpenLegal,
+                  icon: const Icon(Icons.article_outlined),
+                  label: const Text('Informations légales'),
+                ),
+                TextButton.icon(
+                  onPressed: onOpenPrivacy,
+                  icon: const Icon(Icons.privacy_tip_outlined),
+                  label: const Text('Confidentialité'),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Package? _monthlyPackage() {
+    for (final package in packages) {
+      if (package.packageType == PackageType.monthly) {
+        return package;
+      }
+    }
+
+    return packages.isEmpty ? null : packages.first;
+  }
+}
+
+class _DisclosureLine extends StatelessWidget {
+  const _DisclosureLine({required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 7),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            width: 5,
+            height: 5,
+            margin: const EdgeInsets.only(top: 8, right: 9),
+            decoration: const BoxDecoration(
+              color: AppTheme.gold,
+              shape: BoxShape.circle,
+            ),
+          ),
+          Expanded(
+            child: Text(
+              text,
+              style: const TextStyle(
+                color: AppTheme.mutedText,
+                height: 1.35,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

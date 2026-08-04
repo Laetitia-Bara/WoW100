@@ -28,17 +28,38 @@ class PremiumService {
       return const PremiumPurchaseState.unavailable();
     }
 
-    await _configureForCurrentUser();
-    final results = await Future.wait([
-      Purchases.getCustomerInfo(),
-      Purchases.getOfferings(),
-    ]);
-    final customerInfo = results[0] as CustomerInfo;
-    final offerings = results[1] as Offerings;
+    try {
+      await _configureForCurrentUser();
+    } on FirebaseAuthException {
+      return const PremiumPurchaseState.unavailable(
+        message: 'Connecte-toi a ton compte WoW100% pour gerer Premium.',
+      );
+    } on Object {
+      return const PremiumPurchaseState.unavailable(
+        message: 'Premium est indisponible sur ce simulateur pour le moment.',
+      );
+    }
+
+    CustomerInfo customerInfo;
+    try {
+      customerInfo = await Purchases.getCustomerInfo();
+    } on Object {
+      return const PremiumPurchaseState.unavailable(
+        message: 'Premium est indisponible sur ce simulateur pour le moment.',
+      );
+    }
+
+    Offering? offering;
+    try {
+      final offerings = await Purchases.getOfferings();
+      offering = _selectOffering(offerings);
+    } on Object {
+      offering = null;
+    }
 
     return PremiumPurchaseState.available(
       customerInfo: customerInfo,
-      offering: _selectOffering(offerings),
+      offering: offering,
     );
   }
 
@@ -167,9 +188,11 @@ class PremiumPurchaseState {
     required this.isConfigured,
     this.customerInfo,
     this.offering,
+    this.message,
   });
 
-  const PremiumPurchaseState.unavailable() : this._(isConfigured: false);
+  const PremiumPurchaseState.unavailable({String? message})
+    : this._(isConfigured: false, message: message);
 
   const PremiumPurchaseState.available({
     required CustomerInfo customerInfo,
@@ -183,6 +206,7 @@ class PremiumPurchaseState {
   final bool isConfigured;
   final CustomerInfo? customerInfo;
   final Offering? offering;
+  final String? message;
 
   bool get isPremium {
     final info = customerInfo;
