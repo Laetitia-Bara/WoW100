@@ -9,15 +9,16 @@ import '../../data/models/wow_character.dart';
 
 class SavedFarmRouteService {
   SavedFarmRouteService({FirebaseAuth? auth, FirebaseFirestore? firestore})
-    : _auth = auth ?? FirebaseAuth.instance,
-      _firestore = firestore ?? FirebaseFirestore.instance;
+    : this._(auth, firestore);
+
+  SavedFarmRouteService._(this._auth, this._firestore);
 
   static const _routesCollection = 'farmRoutes';
   static const _profilesCollection = 'farmProfiles';
   static const _defaultRegion = 'EU';
 
-  final FirebaseAuth _auth;
-  final FirebaseFirestore _firestore;
+  final FirebaseAuth? _auth;
+  final FirebaseFirestore? _firestore;
 
   Future<List<SavedFarmRoute>> loadMyRoutes() async {
     final user = _currentUser;
@@ -91,6 +92,46 @@ class SavedFarmRouteService {
       'itemIds': uniqueItemIds,
       'updatedAt': FieldValue.serverTimestamp(),
     });
+  }
+
+  Future<void> removeItemsFromMyRoutes(Iterable<String> itemIds) async {
+    final user = _currentUser;
+    if (user == null) return;
+
+    final removedItemIds = itemIds
+        .where((itemId) => itemId.trim().isNotEmpty)
+        .toSet();
+    if (removedItemIds.isEmpty) return;
+
+    final routes = await loadMyRoutes();
+    final batch = _firestoreInstance.batch();
+    var hasWrites = false;
+
+    for (final route in routes) {
+      final updatedItemIds =
+          route.itemIds
+              .where((itemId) => !removedItemIds.contains(itemId))
+              .toSet()
+              .toList()
+            ..sort();
+
+      if (updatedItemIds.length == route.itemIds.length) continue;
+
+      final routeRef = _routesRef.doc(route.id);
+      if (updatedItemIds.isEmpty) {
+        batch.delete(routeRef);
+      } else {
+        batch.update(routeRef, {
+          'itemIds': updatedItemIds,
+          'updatedAt': FieldValue.serverTimestamp(),
+        });
+      }
+      hasWrites = true;
+    }
+
+    if (hasWrites) {
+      await batch.commit();
+    }
   }
 
   Future<SavedFarmRoute> saveRoute({
@@ -176,15 +217,19 @@ class SavedFarmRouteService {
       return null;
     }
 
-    return _auth.currentUser;
+    return (_auth ?? FirebaseAuth.instance).currentUser;
+  }
+
+  FirebaseFirestore get _firestoreInstance {
+    return _firestore ?? FirebaseFirestore.instance;
   }
 
   CollectionReference<Map<String, dynamic>> get _routesRef {
-    return _firestore.collection(_routesCollection);
+    return _firestoreInstance.collection(_routesCollection);
   }
 
   CollectionReference<Map<String, dynamic>> get _profilesRef {
-    return _firestore.collection(_profilesCollection);
+    return _firestoreInstance.collection(_profilesCollection);
   }
 
   String _ownerStorageKey({

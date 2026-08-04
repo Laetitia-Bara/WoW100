@@ -2,20 +2,20 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:wow100/core/services/battle_net_token_service.dart';
 import 'package:wow100/data/models/achievement_faction_availability.dart';
-import 'package:wow100/data/models/achievement_faction_equivalents.dart';
 import 'package:wow100/data/models/achievement_group_hierarchy.dart';
 import 'package:wow100/data/models/tracking_category.dart';
 import 'package:wow100/data/repositories/battle_net_repository.dart';
 
 import '../../../../core/ads/app_ads.dart';
+import '../../../../core/services/collection_ownership_service.dart';
 import '../../../../core/services/selected_character_service.dart';
 import '../../../../core/services/route_planner_service.dart';
 import '../../../../core/services/battle_net_friend_service.dart';
 import '../../../../core/services/group_route_session_service.dart';
 import '../../../../core/services/saved_farm_route_service.dart';
 import '../../../../core/services/solo_planner_service.dart';
+import '../../../../core/services/wishlist_progress_cleanup_service.dart';
 import '../../../../core/services/wowhead_url_builder.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/expansion_palette.dart';
@@ -54,6 +54,10 @@ class _PlannerPageState extends State<PlannerPage> {
   final PlannerRepository _repository = JsonPlannerRepository();
   final SoloPlannerService _soloPlannerService = SoloPlannerService();
   final SavedFarmRouteService _savedFarmRouteService = SavedFarmRouteService();
+  final CollectionOwnershipService _collectionOwnershipService =
+      CollectionOwnershipService();
+  final WishlistProgressCleanupService _wishlistProgressCleanupService =
+      WishlistProgressCleanupService();
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
   final Set<String> _collapsedGroups = {};
@@ -265,7 +269,7 @@ class _PlannerPageState extends State<PlannerPage> {
       );
       final character = await _selectedCharacterService.loadCharacter();
       final soloItemIds = await _soloPlannerService.selectedItemIds();
-      final localItems = _applyProgress(items);
+      final localItems = items;
       _applyInitialGroupCollapse(localItems);
 
       if (!mounted || generation != _loadGeneration) return;
@@ -328,102 +332,37 @@ class _PlannerPageState extends State<PlannerPage> {
     WowCharacter? character,
     int generation,
   ) async {
-    final token = await BattleNetTokenService().loadToken();
-    if (token == null || !mounted || generation != _loadGeneration) return;
-
-    final ownedMountIds = <int>{};
-    final ownedPetIds = <int>{};
-    final ownedAchievementIds = <int>{};
-    final battleNetRepository = BattleNetRepository();
-
-    if (_tracksAchievements) {
-      try {
-        final accountAchievements = await battleNetRepository
-            .getAccountAchievements(token);
-        ownedAchievementIds.addAll(
-          accountAchievements.map((achievement) => achievement.id),
-        );
-      } catch (e, stack) {
-        debugPrint('BATTLE.NET ACCOUNT ACHIEVEMENTS ERROR: $e');
-        debugPrint('$stack');
-      }
-
-      if (character != null) {
-        try {
-          final achievements = await battleNetRepository.getAchievements(
-            token,
-            character.realmSlug,
-            character.name,
-          );
-          ownedAchievementIds.addAll(
-            achievements.map((achievement) => achievement.id),
-          );
-        } catch (e, stack) {
-          debugPrint('BATTLE.NET CHARACTER ACHIEVEMENTS ERROR: $e');
-          debugPrint('$stack');
-        }
-      }
-    }
-
-    if (_tracksPets) {
-      try {
-        final pets = await battleNetRepository.getPets(token);
-        ownedPetIds.addAll(pets.map((pet) => pet.id));
-      } catch (e, stack) {
-        debugPrint('BATTLE.NET PETS ERROR: $e');
-        debugPrint('$stack');
-      }
-    }
-
-    if (_tracksMounts) {
-      try {
-        final mounts = await battleNetRepository.getMounts(token);
-        ownedMountIds.addAll(mounts.map((mount) => mount.id));
-      } catch (e, stack) {
-        debugPrint('BATTLE.NET MOUNTS ERROR: $e');
-        debugPrint('$stack');
-      }
-    }
-
-    final updatedItems = _applyProgress(
-      items,
-      ownedMountIds: ownedMountIds,
-      ownedPetIds: ownedPetIds,
-      ownedAchievementIds: ownedAchievementIds,
+    final ownership = await _collectionOwnershipService.load(
+      character: character,
+      tracksMounts: _tracksMounts,
+      tracksPets: _tracksPets,
+      tracksAchievements: _tracksAchievements,
     );
+    if (ownership == null || !mounted || generation != _loadGeneration) return;
+
+    final updatedItems = ownership.applyTo(items);
+    final cleanupResult = await _wishlistProgressCleanupService
+        .removeObtainedItems(items: updatedItems, ownership: ownership);
 
     if (!mounted || generation != _loadGeneration) return;
 
     setState(() {
       _items = updatedItems;
+      if (cleanupResult.removedAny) {
+        _soloItemIds = cleanupResult.selectedItemIds;
+      }
     });
-  }
 
-  List<TrackingItem> _applyProgress(
-    List<TrackingItem> items, {
-    Set<int> ownedMountIds = const <int>{},
-    Set<int> ownedPetIds = const <int>{},
-    Set<int> ownedAchievementIds = const <int>{},
-  }) {
-    final expandedOwnedAchievementIds = AchievementFactionEquivalents.expand(
-      ownedAchievementIds,
-    );
-
-    return [
-      for (final item in items)
-        item.copyWith(
-          obtained:
-              (item.category == TrackingCategory.mounts &&
-                  item.blizzardId != null &&
-                  ownedMountIds.contains(item.blizzardId)) ||
-              (item.category == TrackingCategory.pets &&
-                  item.blizzardId != null &&
-                  ownedPetIds.contains(item.blizzardId)) ||
-              (item.category == TrackingCategory.achievements &&
-                  item.blizzardId != null &&
-                  expandedOwnedAchievementIds.contains(item.blizzardId)),
-        ),
-    ];
+    if (cleanupResult.removedAny) {
+      unawaited(
+        _savedFarmRouteService
+            .syncWishlistProfile(
+              itemIds: cleanupResult.selectedItemIds,
+              character: character,
+            )
+            .catchError((Object error, StackTrace stack) {}),
+      );
+    }
   }
 
   List<String> _groupOptions() {
@@ -1045,6 +984,10 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
   final SavedFarmRouteService _savedFarmRouteService = SavedFarmRouteService();
   final GroupRouteSessionService _groupRouteSessionService =
       GroupRouteSessionService();
+  final CollectionOwnershipService _collectionOwnershipService =
+      CollectionOwnershipService();
+  final WishlistProgressCleanupService _wishlistProgressCleanupService =
+      WishlistProgressCleanupService();
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
   final Set<String> _collapsedGroups = {};
@@ -1076,11 +1019,7 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
       _isLoading = true;
     });
 
-    final soloItemIds = await _soloPlannerService.selectedItemIds();
-    final todayItemIds = await _soloPlannerService.selectedTodayItemIds(
-      soloItemIds,
-    );
-    final loadedRouteName = await _soloPlannerService.loadedRouteName();
+    var soloItemIds = await _soloPlannerService.selectedItemIds();
     final character = await _selectedCharacterService.loadCharacter();
     final friends = await _friendService.loadFriends();
     final allCatalogItems = await Future.wait([
@@ -1094,14 +1033,27 @@ class _SoloPlannerPageState extends State<SoloPlannerPage> {
         category: TrackingCategory.pets,
       ),
     ]);
+    final catalogItems = allCatalogItems.expand((items) => items).toList();
+    final ownership = await _collectionOwnershipService.load(
+      character: character,
+    );
+
+    if (ownership != null) {
+      final cleanupResult = await _wishlistProgressCleanupService
+          .removeObtainedItems(items: catalogItems, ownership: ownership);
+      soloItemIds = cleanupResult.selectedItemIds;
+    }
+
+    final todayItemIds = await _soloPlannerService.selectedTodayItemIds(
+      soloItemIds,
+    );
+    final loadedRouteName = await _soloPlannerService.loadedRouteName();
 
     final selectedItemsById = <String, TrackingItem>{};
 
-    for (final catalogItems in allCatalogItems) {
-      for (final item in catalogItems) {
-        if (soloItemIds.contains(item.id)) {
-          selectedItemsById.putIfAbsent(item.id, () => item);
-        }
+    for (final item in catalogItems) {
+      if (soloItemIds.contains(item.id)) {
+        selectedItemsById.putIfAbsent(item.id, () => item);
       }
     }
 
@@ -1751,6 +1703,11 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
   final GroupRouteSessionService _groupRouteSessionService =
       GroupRouteSessionService();
   final RoutePlannerService _routePlannerService = RoutePlannerService();
+  final SavedFarmRouteService _savedFarmRouteService = SavedFarmRouteService();
+  final CollectionOwnershipService _collectionOwnershipService =
+      CollectionOwnershipService();
+  final WishlistProgressCleanupService _wishlistProgressCleanupService =
+      WishlistProgressCleanupService();
   final SelectedCharacterService _selectedCharacterService =
       SelectedCharacterService();
 
@@ -1775,11 +1732,7 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
       _isLoading = true;
     });
 
-    final wishlistItemIds = await _soloPlannerService.selectedItemIds();
-    final todayItemIds = await _soloPlannerService.selectedTodayItemIds(
-      wishlistItemIds,
-    );
-    final loadedRouteName = await _soloPlannerService.loadedRouteName();
+    var wishlistItemIds = await _soloPlannerService.selectedItemIds();
     final groupRouteSession = await _groupRouteSessionService.loadSession();
     final character = await _selectedCharacterService.loadCharacter();
     final allCatalogItems = await Future.wait([
@@ -1796,22 +1749,44 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
 
     final selectedItemsById = <String, TrackingItem>{};
     final catalogItemsById = <String, TrackingItem>{};
+    final catalogItems = allCatalogItems.expand((items) => items).toList();
 
-    for (final catalogItems in allCatalogItems) {
-      for (final item in catalogItems) {
-        catalogItemsById.putIfAbsent(item.id, () => item);
+    for (final item in catalogItems) {
+      catalogItemsById.putIfAbsent(item.id, () => item);
+    }
+
+    final ownership = await _collectionOwnershipService.load(
+      character: character,
+    );
+
+    if (ownership != null) {
+      final cleanupResult = await _wishlistProgressCleanupService
+          .removeObtainedItems(items: catalogItems, ownership: ownership);
+      wishlistItemIds = cleanupResult.selectedItemIds;
+
+      if (cleanupResult.removedAny) {
+        unawaited(
+          _savedFarmRouteService
+              .syncWishlistProfile(
+                itemIds: cleanupResult.selectedItemIds,
+                character: character,
+              )
+              .catchError((Object error, StackTrace stack) {}),
+        );
       }
     }
 
+    final todayItemIds = await _soloPlannerService.selectedTodayItemIds(
+      wishlistItemIds,
+    );
+    final loadedRouteName = await _soloPlannerService.loadedRouteName();
     final selectedItemIds = groupRouteSession == null
         ? todayItemIds
         : _groupRouteItemIds(groupRouteSession);
 
-    for (final catalogItems in allCatalogItems) {
-      for (final item in catalogItems) {
-        if (selectedItemIds.contains(item.id)) {
-          selectedItemsById.putIfAbsent(item.id, () => item);
-        }
+    for (final item in catalogItems) {
+      if (selectedItemIds.contains(item.id)) {
+        selectedItemsById.putIfAbsent(item.id, () => item);
       }
     }
 
