@@ -10,13 +10,16 @@ import '../models/wow_pet.dart';
 import '../models/wow_achievement.dart';
 
 class BattleNetRepository {
+  static const _apiTimeout = Duration(seconds: 25);
+  static const _enrichedCharactersTimeout = Duration(seconds: 60);
+
   Future<BattleNetAuthResult> exchangeCodeForToken(String code) async {
     final uri = _apiUri('exchangeBattleNetCode', {
       'code': code,
       'redirectUri': AppConfig.battleNetRedirectUri,
     });
 
-    final response = await http.get(uri);
+    final response = await http.get(uri).timeout(_apiTimeout);
 
     if (response.statusCode != 200) {
       _throwApiException(response);
@@ -26,10 +29,27 @@ class BattleNetRepository {
     return BattleNetAuthResult.fromJson(data);
   }
 
+  Future<List<WowCharacter>> getCharacterSummaries(String token) async {
+    final uri = _apiUri('getWowProfile');
+
+    final response = await http
+        .get(uri, headers: _authHeaders(token))
+        .timeout(_apiTimeout);
+
+    if (response.statusCode != 200) {
+      throw Exception(response.body);
+    }
+
+    final data = jsonDecode(response.body) as Map<String, dynamic>;
+    return _charactersFromProfileJson(data);
+  }
+
   Future<List<WowCharacter>> getCharacters(String token) async {
     final uri = _apiUri('getWowCharacters');
 
-    final response = await http.get(uri, headers: _authHeaders(token));
+    final response = await http
+        .get(uri, headers: _authHeaders(token))
+        .timeout(_enrichedCharactersTimeout);
 
     if (response.statusCode != 200) {
       throw Exception(response.body);
@@ -223,6 +243,59 @@ class BattleNetRepository {
 
   Map<String, String> _authHeaders(String token) {
     return {'Authorization': 'Bearer $token'};
+  }
+
+  List<WowCharacter> _charactersFromProfileJson(Map<String, dynamic> data) {
+    final accounts = data['wow_accounts'];
+    if (accounts is! List) {
+      return const [];
+    }
+
+    final characters = <WowCharacter>[];
+
+    for (final account in accounts) {
+      if (account is! Map) continue;
+
+      final accountCharacters = account['characters'];
+      if (accountCharacters is! List) continue;
+
+      for (final character in accountCharacters) {
+        if (character is! Map) continue;
+
+        characters.add(
+          WowCharacter.fromJson({
+            'name': character['name'],
+            'level': character['level'],
+            'realm': _nestedName(character['realm']),
+            'race': _nestedName(character['playable_race']),
+            'characterClass': _nestedName(character['playable_class']),
+            'faction': _nestedName(character['faction']),
+            'realmSlug': _nestedSlug(character['realm']),
+          }),
+        );
+      }
+    }
+
+    characters.sort((a, b) => b.level.compareTo(a.level));
+    return characters;
+  }
+
+  String _nestedName(Object? value) {
+    if (value is Map) {
+      final name = value['name'];
+      return name is String ? name : '';
+    }
+
+    return '';
+  }
+
+  String _nestedSlug(Object? value) {
+    if (value is Map) {
+      final slug = value['slug'];
+      return slug is String ? slug : '';
+    }
+
+    return '';
   }
 
   Never _throwApiException(http.Response response) {

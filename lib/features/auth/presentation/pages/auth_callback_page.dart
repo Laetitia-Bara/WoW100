@@ -97,7 +97,7 @@ class _AuthCallbackPageState extends State<AuthCallbackPage> {
       if (_isConsumedAuthorizationCodeError(error)) {
         final token = await _tokenService.loadToken();
         if (token != null) {
-          return _repository.getCharacters(token);
+          return _repository.getCharacterSummaries(token);
         }
       }
 
@@ -111,7 +111,7 @@ class _AuthCallbackPageState extends State<AuthCallbackPage> {
   Future<List<WowCharacter>> _exchangeCodeAndLoadCharacters(String code) async {
     final authResult = await _repository.exchangeCodeForToken(code);
     await _tokenService.saveAuthResult(authResult);
-    return _repository.getCharacters(authResult.accessToken);
+    return _repository.getCharacterSummaries(authResult.accessToken);
   }
 
   Future<WowCharacter?> _matchingSelectedCharacter(
@@ -139,7 +139,18 @@ class _AuthCallbackPageState extends State<AuthCallbackPage> {
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
-      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+      return const Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              CircularProgressIndicator(),
+              SizedBox(height: 16),
+              Text('Connexion Battle.net en cours...'),
+            ],
+          ),
+        ),
+      );
     }
 
     if (_error != null) {

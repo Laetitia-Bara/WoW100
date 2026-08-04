@@ -1,4 +1,5 @@
 {
+  "originHash" : "6ff6e57af764410e9a34735aebbbcfdf6884e99cef1d195c2c1b91507d258599",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -145,12 +146,30 @@
       }
     },
     {
+      "identity" : "purchases-hybrid-common",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RevenueCat/purchases-hybrid-common.git",
+      "state" : {
+        "revision" : "4394fd28b5d0fb99261c6bdc1381edc6eb4d2e7a",
+        "version" : "18.28.0"
+      }
+    },
+    {
+      "identity" : "purchases-ios-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RevenueCat/purchases-ios-spm",
+      "state" : {
+        "revision" : "c69a23f56c63bdfe96096fa64a1c65334d2592db",
+        "version" : "5.83.0"
+      }
+    },
+    {
       "identity" : "swift-package-manager-google-mobile-ads",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/googleads/swift-package-manager-google-mobile-ads",
       "state" : {
-        "revision" : "166a2dcff33c893b22e4bfccbbdd0ed00a248c24",
-        "version" : "13.5.0"
+        "revision" : "868149fc50d1452078e83540e636cf519bac3e6a",
+        "version" : "13.7.0"
       }
     },
     {
@@ -163,5 +182,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
