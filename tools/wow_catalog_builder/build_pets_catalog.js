@@ -535,6 +535,10 @@ function toWow100Item(pet, manualMetadata, wowheadMetadata, locationIndex) {
       : { zone: manualMetadata.zone ?? "" }),
     instance: manualMetadata.instance ?? sourceLabel,
     source: firstNonEmpty(manualMetadata.sourceName, pet.sourceName, sourceLabel),
+    ...(Array.isArray(manualMetadata.tags) && manualMetadata.tags.length > 0
+      ? { tags: manualMetadata.tags }
+      : {}),
+    ...(manualMetadata.condition ? { condition: manualMetadata.condition } : {}),
     sourceType: pet.sourceType || "UNKNOWN",
     sourceName: pet.sourceName || "",
     groupRequired: manualMetadata.groupRequired ?? false,

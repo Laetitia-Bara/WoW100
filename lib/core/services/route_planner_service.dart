@@ -244,7 +244,11 @@ class RoutePlannerService {
   }
 
   List<String> _objectiveTags(TrackingItem item) {
-    return [?_contentTypeLabel(item)];
+    return [
+      ?_contentTypeLabel(item),
+      if (item.condition.trim().isNotEmpty)
+        'Condition : ${item.condition.trim()}',
+    ];
   }
 
   String _routeDestinationLabel(TrackingItem item, String zoneLabel) {

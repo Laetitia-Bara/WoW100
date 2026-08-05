@@ -73,6 +73,9 @@ class TrackingItem {
   /// Tags manuels additionnels affiches apres les metadonnees standard.
   final List<String> tags;
 
+  /// Contrainte particuliere a respecter pour valider l'objectif.
+  final String condition;
+
   final int? blizzardId;
 
   final String boss;
@@ -108,6 +111,7 @@ class TrackingItem {
     this.difficulty = '',
     this.dropRate = '',
     this.tags = const [],
+    this.condition = '',
     this.blizzardId,
     required this.boss,
     this.externalUrl = '',
@@ -141,6 +145,7 @@ class TrackingItem {
       difficulty: difficulty,
       dropRate: dropRate,
       tags: tags,
+      condition: condition,
       blizzardId: blizzardId,
       boss: boss,
       externalUrl: externalUrl,
@@ -188,6 +193,7 @@ class TrackingItem {
         'drop',
       ]),
       tags: _jsonStringList(json['tags']),
+      condition: _firstJsonDisplayString(json, ['condition', 'note']),
       blizzardId: json['blizzardId'],
       boss: json['boss'] ?? '',
       externalUrl: json['externalUrl'] ?? json['mamytwinkUrl'] ?? '',

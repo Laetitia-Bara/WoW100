@@ -57003,7 +57003,7 @@
     "name": "Conquérant",
     "description": "Être exalté auprès des factions du goulet des Chanteguerres, du bassin Arathi et de la vallée d’Alterac.",
     "category": "achievements",
-    "expansion": "allAchievements",
+    "expansion": "vanilla",
     "zone": "Goulet des Chanteguerres",
     "primaryLocationRef": "wowhead-zone:8685",
     "locationRefs": [
@@ -59330,7 +59330,7 @@
     "name": "Le justicier",
     "description": "Être exalté auprès des factions du goulet des Chanteguerres, du bassin Arathi et de la vallée d’Alterac.",
     "category": "achievements",
-    "expansion": "allAchievements",
+    "expansion": "vanilla",
     "zone": "Goulet des Chanteguerres",
     "primaryLocationRef": "wowhead-zone:8685",
     "locationRefs": [
@@ -230367,9 +230367,9 @@
     "name": "Batailles classiques",
     "description": "Être exalté auprès des factions des champs de bataille classiques listées ci-dessous.",
     "category": "achievements",
-    "expansion": "vanilla",
-    "zone": "Réputation",
-    "instance": "Réputation",
+    "expansion": "allAchievements",
+    "zone": "Guilde",
+    "instance": "Guilde",
     "source": "Être exalté auprès des factions des champs de bataille classiques listées ci-dessous.",
     "points": 10,
     "rewardDescription": "",
@@ -230381,18 +230381,21 @@
     "boss": "",
     "externalUrl": "https://www.wowhead.com/fr/achievement=5128",
     "blizzardCategoryId": 15089,
-    "blizzardCategoryName": "Réputation",
+    "blizzardCategoryName": "Guilde",
     "wowhead": null,
-    "mamytwink": null
+    "mamytwink": null,
+    "tags": [
+      "Guilde"
+    ]
   },
   {
     "id": "achievement_5131",
     "name": "Batailles classiques",
     "description": "Être exalté auprès des factions des champs de bataille classiques listées ci-dessous.",
     "category": "achievements",
-    "expansion": "vanilla",
-    "zone": "Réputation",
-    "instance": "Réputation",
+    "expansion": "allAchievements",
+    "zone": "Guilde",
+    "instance": "Guilde",
     "source": "Être exalté auprès des factions des champs de bataille classiques listées ci-dessous.",
     "points": 10,
     "rewardDescription": "",
@@ -230404,9 +230407,12 @@
     "boss": "",
     "externalUrl": "https://www.wowhead.com/fr/achievement=5131",
     "blizzardCategoryId": 15089,
-    "blizzardCategoryName": "Réputation",
+    "blizzardCategoryName": "Guilde",
     "wowhead": null,
-    "mamytwink": null
+    "mamytwink": null,
+    "tags": [
+      "Guilde"
+    ]
   },
   {
     "id": "achievement_1206",

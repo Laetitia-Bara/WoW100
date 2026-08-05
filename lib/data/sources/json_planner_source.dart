@@ -160,6 +160,12 @@ class JsonPlannerSource {
           _firstMetadataString(reference, _frequencyLabelKeys) ??
           _firstMetadataString(draft, _frequencyLabelKeys) ??
           _firstMetadataString(mamytwink, _frequencyLabelKeys);
+      final condition =
+          _firstMetadataString(wowhead, _conditionKeys) ??
+          _firstMetadataString(manual, _conditionKeys) ??
+          _firstMetadataString(reference, _conditionKeys) ??
+          _firstMetadataString(draft, _conditionKeys) ??
+          _firstMetadataString(mamytwink, _conditionKeys);
       final tags = _metadataStringList(wowhead, 'tags')
           .followedBy(_metadataStringList(manual, 'tags'))
           .followedBy(_metadataStringList(reference, 'tags'))
@@ -262,6 +268,7 @@ class JsonPlannerSource {
           difficulty: difficulty ?? '',
           dropRate: dropRate ?? '',
           tags: tags,
+          condition: condition ?? '',
           blizzardId: blizzardId,
           wowheadItemId: wowheadItemId,
           boss: wowhead?['boss'] ?? manual?['boss'] ?? '',
@@ -523,6 +530,8 @@ class JsonPlannerSource {
     'frequency',
     'resetFrequency',
   ];
+
+  static const List<String> _conditionKeys = ['condition', 'note'];
 
   String? _firstMetadataString(
     Map<String, dynamic>? metadata,

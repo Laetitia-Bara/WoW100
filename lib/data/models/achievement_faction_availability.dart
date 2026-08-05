@@ -6,6 +6,8 @@ class AchievementFactionAvailability {
   static const String horde = 'horde';
 
   static const Map<int, String> _requiredFactionByAchievementId = {
+    714: horde,
+    907: alliance,
     1271: horde,
     1272: horde,
     1273: horde,

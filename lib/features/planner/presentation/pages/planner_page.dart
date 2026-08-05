@@ -1917,7 +1917,7 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
 
   @override
   Widget build(BuildContext context) {
-    var stepNumber = 0;
+    final objectiveStepNumbers = _objectiveStepNumbers(_routeSteps);
 
     return Scaffold(
       appBar: AppBar(
@@ -2002,7 +2002,7 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
 
                     return _RouteStepCard(
                       step: step,
-                      stepNumber: ++stepNumber,
+                      stepNumber: objectiveStepNumbers[index],
                       completed: _completedRouteStepIds.contains(step.id),
                       farmers: _farmersForStep(step),
                       showFarmers:
@@ -2016,6 +2016,15 @@ class _RoutePlannerPageState extends State<RoutePlannerPage> {
               ],
             ),
     );
+  }
+
+  List<int?> _objectiveStepNumbers(List<PlannedRouteStep> steps) {
+    var objectiveNumber = 0;
+
+    return [
+      for (final step in steps)
+        step.kind == RouteStepKind.objective ? ++objectiveNumber : null,
+    ];
   }
 
   String _routeCountLabel(int count) {
@@ -2412,7 +2421,7 @@ class _RouteStepCard extends StatelessWidget {
   });
 
   final PlannedRouteStep step;
-  final int stepNumber;
+  final int? stepNumber;
   final bool completed;
   final List<GroupRoutePlayer> farmers;
   final bool showFarmers;
@@ -2439,7 +2448,10 @@ class _RouteStepCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Checkbox(value: completed, onChanged: onChanged),
-            _RouteStepNumberBadge(number: stepNumber),
+            if (stepNumber == null)
+              const SizedBox(width: 42)
+            else
+              _RouteStepNumberBadge(number: stepNumber!),
             const SizedBox(width: 8),
             _RouteStepIcon(kind: step.kind),
             const SizedBox(width: 12),
@@ -5187,13 +5199,21 @@ class _PlannerTag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final seasonal = WowRegionFilter.normalize(label) == 'saisonnier';
+    final effectiveBackgroundColor = seasonal
+        ? const Color(0xFF9A3412)
+        : backgroundColor;
+    final effectiveForegroundColor = seasonal
+        ? const Color(0xFFFFEDD5)
+        : foregroundColor;
+
     return Chip(
       label: Text(label),
-      labelStyle: foregroundColor == null
+      labelStyle: effectiveForegroundColor == null
           ? null
-          : TextStyle(color: foregroundColor),
+          : TextStyle(color: effectiveForegroundColor),
       visualDensity: VisualDensity.compact,
-      backgroundColor: backgroundColor,
+      backgroundColor: effectiveBackgroundColor,
       side: BorderSide.none,
     );
   }

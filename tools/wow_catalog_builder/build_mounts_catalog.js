@@ -158,6 +158,7 @@ async function main() {
       weeklyLockout: meta.weeklyLockout ?? mount.sourceType === "DROP",
       blizzardId: mount.id,
       categoryType: meta.category ?? "unknown",
+      condition: meta.condition ?? "",
       boss: meta.boss ?? "",
     };
   });

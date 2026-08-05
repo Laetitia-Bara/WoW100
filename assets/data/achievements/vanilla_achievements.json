@@ -1405,6 +1405,118 @@
     "mamytwink": null
   },
   {
+    "id": "achievement_714",
+    "name": "Conquérant",
+    "description": "Être exalté auprès des factions du goulet des Chanteguerres, du bassin Arathi et de la vallée d’Alterac.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Goulet des Chanteguerres",
+    "primaryLocationRef": "wowhead-zone:8685",
+    "locationRefs": [
+      "wowhead-zone:8685"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8685",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8685",
+      "name": "Goulet des Chanteguerres",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Goulet des Chanteguerres",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Goulet des Chanteguerres"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Goulet des Chanteguerres",
+      "wowheadZoneIds": [
+        8685
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Goulet des Chanteguerres",
+    "instance": "Joueur contre Joueur",
+    "source": "Être exalté auprès des factions du goulet des Chanteguerres, du bassin Arathi et de la vallée d’Alterac.",
+    "points": 20,
+    "rewardDescription": "Titre : conquérant ou conquérante de la tempête",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 714,
+    "wowheadAchievementId": 714,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=714",
+    "blizzardCategoryId": 95,
+    "blizzardCategoryName": "Joueur contre Joueur",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
+    "id": "achievement_907",
+    "name": "Le justicier",
+    "description": "Être exalté auprès des factions du goulet des Chanteguerres, du bassin Arathi et de la vallée d’Alterac.",
+    "category": "achievements",
+    "expansion": "vanilla",
+    "zone": "Goulet des Chanteguerres",
+    "primaryLocationRef": "wowhead-zone:8685",
+    "locationRefs": [
+      "wowhead-zone:8685"
+    ],
+    "locationAssignments": [
+      {
+        "locationRef": "wowhead-zone:8685",
+        "role": "primary_obtainment",
+        "source": "achievement_text_and_locations_reference_catalog",
+        "confidence": "auto_assigned_text_match"
+      }
+    ],
+    "location": {
+      "ref": "wowhead-zone:8685",
+      "name": "Goulet des Chanteguerres",
+      "kind": "region",
+      "subzoneName": "",
+      "regionName": "Goulet des Chanteguerres",
+      "continentName": "Royaumes de l'Est",
+      "worldName": "Azeroth",
+      "path": [
+        "Azeroth",
+        "Royaumes de l'Est",
+        "Goulet des Chanteguerres"
+      ],
+      "pathLabel": "Azeroth > Royaumes de l'Est > Goulet des Chanteguerres",
+      "wowheadZoneIds": [
+        8685
+      ]
+    },
+    "world": "Azeroth",
+    "region": "Royaumes de l'Est",
+    "locationZone": "Goulet des Chanteguerres",
+    "instance": "Joueur contre Joueur",
+    "source": "Être exalté auprès des factions du goulet des Chanteguerres, du bassin Arathi et de la vallée d’Alterac.",
+    "points": 20,
+    "rewardDescription": "Titre : justicier ou justicière",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 907,
+    "wowheadAchievementId": 907,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=907",
+    "blizzardCategoryId": 95,
+    "blizzardCategoryName": "Joueur contre Joueur",
+    "wowhead": null,
+    "mamytwink": null
+  },
+  {
     "id": "achievement_5454",
     "name": "Azshara express",
     "description": "Parcourir toute la ligne du fusorail en Azshara.",
@@ -4345,52 +4457,6 @@
     "externalUrl": "https://www.wowhead.com/fr/achievement=684",
     "blizzardCategoryId": 15278,
     "blizzardCategoryName": "Raids",
-    "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_5128",
-    "name": "Batailles classiques",
-    "description": "Être exalté auprès des factions des champs de bataille classiques listées ci-dessous.",
-    "category": "achievements",
-    "expansion": "vanilla",
-    "zone": "Réputation",
-    "instance": "Réputation",
-    "source": "Être exalté auprès des factions des champs de bataille classiques listées ci-dessous.",
-    "points": 10,
-    "rewardDescription": "",
-    "isAccountWide": false,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 5128,
-    "wowheadAchievementId": 5128,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=5128",
-    "blizzardCategoryId": 15089,
-    "blizzardCategoryName": "Réputation",
-    "wowhead": null,
-    "mamytwink": null
-  },
-  {
-    "id": "achievement_5131",
-    "name": "Batailles classiques",
-    "description": "Être exalté auprès des factions des champs de bataille classiques listées ci-dessous.",
-    "category": "achievements",
-    "expansion": "vanilla",
-    "zone": "Réputation",
-    "instance": "Réputation",
-    "source": "Être exalté auprès des factions des champs de bataille classiques listées ci-dessous.",
-    "points": 10,
-    "rewardDescription": "",
-    "isAccountWide": false,
-    "groupRequired": false,
-    "weeklyLockout": false,
-    "blizzardId": 5131,
-    "wowheadAchievementId": 5131,
-    "boss": "",
-    "externalUrl": "https://www.wowhead.com/fr/achievement=5131",
-    "blizzardCategoryId": 15089,
-    "blizzardCategoryName": "Réputation",
     "wowhead": null,
     "mamytwink": null
   },

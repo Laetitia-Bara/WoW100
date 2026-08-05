@@ -119,6 +119,8 @@ const _extensionContentAchievementExpansionById = {
 };
 
 const _dragonflightOldWorldSecretAchievementIds = {17366, 18368, 18372};
+const _classicBattlegroundPersonalAchievementIds = {714, 907};
+const _classicBattlegroundGuildAchievementIds = {5128, 5131};
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -201,6 +203,31 @@ void main() {
     );
 
     expect(alteracValleyOfOlde.tags, contains('Saisonnier'));
+  });
+
+  test('uses personal classic battleground achievements in Vanilla', () async {
+    final repository = JsonPlannerRepository();
+
+    final vanillaAchievements = await repository.getItems(
+      WowExpansion.vanilla,
+      category: TrackingCategory.achievements,
+    );
+    final vanillaById = {
+      for (final item in vanillaAchievements)
+        if (item.blizzardId != null) item.blizzardId!: item,
+    };
+
+    for (final achievementId in _classicBattlegroundPersonalAchievementIds) {
+      final achievement = vanillaById[achievementId];
+
+      expect(achievement, isNotNull);
+      expect(achievement!.expansion, WowExpansion.vanilla);
+      expect(achievement.instance, 'Joueur contre Joueur');
+    }
+
+    for (final achievementId in _classicBattlegroundGuildAchievementIds) {
+      expect(vanillaById, isNot(contains(achievementId)));
+    }
   });
 
   test('routes Dragonflight old-world secrets out of Vanilla', () async {

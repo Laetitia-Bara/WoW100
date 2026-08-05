@@ -9,6 +9,32 @@
     "availability": "Indisponible"
   },
   {
+    "blizzardId": 714,
+    "expansion": "vanilla"
+  },
+  {
+    "blizzardId": 907,
+    "expansion": "vanilla"
+  },
+  {
+    "blizzardId": 5128,
+    "expansion": "allAchievements",
+    "category": "Guilde",
+    "instance": "Guilde",
+    "zone": "Guilde",
+    "blizzardCategoryName": "Guilde",
+    "tags": ["Guilde"]
+  },
+  {
+    "blizzardId": 5131,
+    "expansion": "allAchievements",
+    "category": "Guilde",
+    "instance": "Guilde",
+    "zone": "Guilde",
+    "blizzardCategoryName": "Guilde",
+    "tags": ["Guilde"]
+  },
+  {
     "blizzardId": 17366,
     "expansion": "dragonflight",
     "patch": "10.0.7"

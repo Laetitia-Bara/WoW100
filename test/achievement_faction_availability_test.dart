@@ -5,6 +5,37 @@ import 'package:wow100/data/models/tracking_item.dart';
 import 'package:wow100/data/models/wow_expansion.dart';
 
 void main() {
+  test('hides classic battleground title achievements by faction', () {
+    final conqueror = _achievement(blizzardId: 714);
+    final justicar = _achievement(blizzardId: 907);
+
+    expect(
+      AchievementFactionAvailability.isUnavailableForFaction(
+        conqueror,
+        'Alliance',
+      ),
+      isTrue,
+    );
+    expect(
+      AchievementFactionAvailability.isUnavailableForFaction(
+        conqueror,
+        'Horde',
+      ),
+      isFalse,
+    );
+    expect(
+      AchievementFactionAvailability.isUnavailableForFaction(justicar, 'Horde'),
+      isTrue,
+    );
+    expect(
+      AchievementFactionAvailability.isUnavailableForFaction(
+        justicar,
+        'Alliance',
+      ),
+      isFalse,
+    );
+  });
+
   test('hides Bloodmyst quest achievements for Horde characters', () {
     final item = _achievement(
       blizzardId: 4926,

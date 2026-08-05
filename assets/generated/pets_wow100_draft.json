@@ -78833,6 +78833,9 @@
     "world": "Azeroth",
     "instance": "Combat de mascottes",
     "source": "Combat de mascottes",
+    "tags": [
+      "Saisonnier"
+    ],
     "sourceType": "WILDPET",
     "sourceName": "Combat de mascottes",
     "groupRequired": false,
