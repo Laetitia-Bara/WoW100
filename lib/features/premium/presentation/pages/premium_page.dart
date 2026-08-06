@@ -112,6 +112,13 @@ class _PremiumPageState extends State<PremiumPage> {
     ).push(MaterialPageRoute(builder: (_) => const LegalPage.privacy()));
   }
 
+  Future<void> _openAppleEula() {
+    return launchUrl(
+      LegalPage.appleStandardEulaUri,
+      mode: LaunchMode.externalApplication,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -173,6 +180,14 @@ class _PremiumPageState extends State<PremiumPage> {
                               packages: state.packages,
                               onOpenLegal: _openLegalPage,
                               onOpenPrivacy: _openPrivacyPage,
+                            ),
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: TextButton.icon(
+                                onPressed: _openAppleEula,
+                                icon: const Icon(Icons.open_in_new_rounded),
+                                label: const Text('EULA Apple'),
+                              ),
                             ),
                           ],
                           if (_isBusy) ...[

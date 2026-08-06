@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/theme/app_theme.dart';
 
@@ -12,6 +13,9 @@ class LegalPage extends StatelessWidget {
 
   static const String owner = 'cosmos-lty';
   static const String contactEmail = 'contact@cosmos-lty.fr';
+  static final Uri appleStandardEulaUri = Uri.parse(
+    'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/',
+  );
 
   final String title;
   final bool isPrivacyPolicy;
@@ -37,6 +41,10 @@ class LegalPage extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(16, 16, 16, bottomPadding),
                 children: [
                   _LegalHero(isPrivacyPolicy: isPrivacyPolicy),
+                  if (!isPrivacyPolicy) ...[
+                    const SizedBox(height: 14),
+                    const _LegalLinksCard(),
+                  ],
                   const SizedBox(height: 14),
                   for (final section in sections)
                     _LegalSection(
@@ -91,6 +99,13 @@ class LegalPage extends StatelessWidget {
         'La première semaine est offerte pour le premier abonnement des nouveaux abonnés éligibles. À la fin de l’essai, l’abonnement devient payant et se renouvelle automatiquement chaque mois, sauf annulation avant la fin de l’essai.',
         'Le prix exact, la devise, les taxes applicables et la confirmation d’achat sont affichés par l’App Store, Google Play ou Stripe selon la plateforme utilisée.',
         'Vous pouvez annuler à tout moment depuis les réglages d’abonnements de l’App Store ou de Google Play, ou depuis les outils de gestion fournis par la plateforme de paiement utilisée.',
+      ],
+    ),
+    _LegalContentSection(
+      title: 'Conditions d utilisation Apple (EULA)',
+      paragraphs: [
+        'Pour les achats et abonnements realises via l App Store, WoW100% utilise les conditions standard Apple.',
+        'Lien EULA Apple : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/',
       ],
     ),
   ];
@@ -248,6 +263,52 @@ class _LegalSection extends StatelessWidget {
               Text(paragraph),
               if (paragraph != children.last) const SizedBox(height: 8),
             ],
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _LegalLinksCard extends StatelessWidget {
+  const _LegalLinksCard();
+
+  Future<void> _openAppleEula() {
+    return launchUrl(
+      LegalPage.appleStandardEulaUri,
+      mode: LaunchMode.externalApplication,
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(18),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              'Conditions d utilisation',
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.w800,
+                color: AppTheme.gold,
+              ),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              'WoW100% utilise les conditions standard Apple pour les achats et abonnements effectues via l App Store.',
+              style: TextStyle(color: AppTheme.mutedText, height: 1.4),
+            ),
+            const SizedBox(height: 12),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: OutlinedButton.icon(
+                onPressed: _openAppleEula,
+                icon: const Icon(Icons.open_in_new_rounded),
+                label: const Text('Ouvrir l EULA Apple'),
+              ),
+            ),
           ],
         ),
       ),
