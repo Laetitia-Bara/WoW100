@@ -205,6 +205,25 @@ void main() {
     expect(alteracValleyOfOlde.tags, contains('Saisonnier'));
   });
 
+  test('marks Midnight season 1 achievements as unavailable', () async {
+    final repository = JsonPlannerRepository();
+
+    final midnightAchievements = await repository.getItems(
+      WowExpansion.midnight,
+      category: TrackingCategory.achievements,
+    );
+    final seasonOneIds = {61256, 61258, 61450, 61586};
+
+    for (final achievementId in seasonOneIds) {
+      final achievement = midnightAchievements.singleWhere(
+        (item) => item.blizzardId == achievementId,
+      );
+
+      expect(achievement.unavailable, isTrue);
+      expect(achievement.tags, contains('Saisonnier'));
+    }
+  });
+
   test('uses personal classic battleground achievements in Vanilla', () async {
     final repository = JsonPlannerRepository();
 

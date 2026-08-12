@@ -91,5 +91,53 @@
     "boss": "Connexion à Hearthstone pendant le 10e anniversaire, offre limitée du 11 mars au 14 mai 2024",
     "groupRequired": false,
     "weeklyLockout": false
+  },
+  {
+    "blizzardId": 2733,
+    "expansion": "midnight",
+    "category": "achievement",
+    "zone": "Donjons",
+    "instance": "Saison 1 de Midnight",
+    "source": "Haut fait saisonnier",
+    "difficulty": "Indisponible",
+    "tags": [
+      "Saisonnier"
+    ],
+    "condition": "Récompense de Maîtrise mythique de Midnight : saison 1, plus obtenable depuis le 12 août 2026.",
+    "groupRequired": true,
+    "weeklyLockout": false,
+    "availability": "Indisponible"
+  },
+  {
+    "blizzardId": 2734,
+    "expansion": "midnight",
+    "category": "achievement",
+    "zone": "Donjons",
+    "instance": "Saison 1 de Midnight",
+    "source": "Haut fait saisonnier",
+    "difficulty": "Indisponible",
+    "tags": [
+      "Saisonnier"
+    ],
+    "condition": "Récompense de Légende mythique de Midnight : saison 1, plus obtenable depuis le 12 août 2026.",
+    "groupRequired": true,
+    "weeklyLockout": false,
+    "availability": "Indisponible"
+  },
+  {
+    "blizzardId": 2801,
+    "expansion": "midnight",
+    "category": "achievement",
+    "zone": "JcJ",
+    "instance": "Saison 1 de Midnight",
+    "source": "Haut fait saisonnier",
+    "difficulty": "Indisponible",
+    "tags": [
+      "Saisonnier"
+    ],
+    "condition": "Récompense du gladiateur galactique de Midnight : saison 1, plus obtenable depuis le 12 août 2026.",
+    "groupRequired": true,
+    "weeklyLockout": false,
+    "availability": "Indisponible"
   }
 ]

@@ -106,6 +106,16 @@ void main() {
         ),
         isEmpty,
       );
+
+      for (final mountId in [2733, 2734, 2801]) {
+        final seasonOneMount = items.singleWhere(
+          (item) => item.blizzardId == mountId,
+        );
+
+        expect(seasonOneMount.unavailable, isTrue);
+        expect(seasonOneMount.difficulty, 'Indisponible');
+        expect(seasonOneMount.tags, contains('Saisonnier'));
+      }
     },
   );
 }
