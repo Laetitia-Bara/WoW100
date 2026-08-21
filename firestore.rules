@@ -429,7 +429,7 @@ service cloud.firestore {
       allow read: if isOwner(userId);
       allow create: if isOwner(userId) && isValidUserCreate(userId);
       allow update: if isOwner(userId) && isValidUserUpdate(userId);
-      allow delete: if false;
+      allow delete: if isOwner(userId);
 
       match /settings/{settingId} {
         allow read: if isOwner(userId) && settingId == 'mainCharacter';
@@ -459,7 +459,10 @@ service cloud.firestore {
 
     match /farmProfiles/{profileId} {
       allow get: if isAuthenticated();
-      allow list: if false;
+      // Listing is restricted to the owner so account deletion can remove
+      // every profile created by that owner without exposing other profiles.
+      allow list: if isAuthenticated() &&
+        resource.data.ownerUid == request.auth.uid;
       allow create: if isAuthenticated() &&
         isValidFarmProfileCreate(profileId);
       allow update: if isAuthenticated() &&

@@ -64,7 +64,7 @@ class LegalPage extends StatelessWidget {
     _LegalContentSection(
       title: 'Éditeur',
       paragraphs: [
-        'v. 1.0.7',
+        'v. 1.0.8',
         'WoW100% est édité par cosmos-lty.',
         'Contact : contact@cosmos-lty.fr',
       ],
@@ -97,8 +97,8 @@ class LegalPage extends StatelessWidget {
       paragraphs: [
         'WoW100% Premium est un abonnement mensuel à reconduction automatique destiné à supprimer les publicités mobiles et les blocs sponsorisés web.',
         'La première semaine est offerte pour le premier abonnement des nouveaux abonnés éligibles. À la fin de l’essai, l’abonnement devient payant et se renouvelle automatiquement chaque mois, sauf annulation avant la fin de l’essai.',
-        'Le prix exact, la devise, les taxes applicables et la confirmation d’achat sont affichés par l’App Store, Google Play ou Stripe selon la plateforme utilisée.',
-        'Vous pouvez annuler à tout moment depuis les réglages d’abonnements de l’App Store ou de Google Play, ou depuis les outils de gestion fournis par la plateforme de paiement utilisée.',
+        'Le prix exact, la devise, les taxes applicables et la confirmation d’achat sont affichés par la plateforme de paiement utilisée.',
+        'Vous pouvez annuler à tout moment depuis les réglages d’abonnement de votre appareil ou depuis les outils de gestion fournis par la plateforme de paiement utilisée.',
       ],
     ),
     _LegalContentSection(
@@ -160,7 +160,7 @@ class LegalPage extends StatelessWidget {
     _LegalContentSection(
       title: 'Achats Premium',
       paragraphs: [
-        'Lorsque vous utilisez WoW100% Premium, les informations nécessaires à l’achat, à la restauration et à la synchronisation de l’abonnement peuvent être traitées par RevenueCat, Apple, Google Play ou Stripe selon la plateforme.',
+        'Lorsque vous utilisez WoW100% Premium, les informations nécessaires à l’achat, à la restauration et à la synchronisation de l’abonnement peuvent être traitées par RevenueCat et la plateforme de paiement utilisée.',
         'WoW100% ne reçoit pas vos informations complètes de carte bancaire. Les plateformes de paiement gèrent la transaction, les reçus, le renouvellement et l’annulation.',
         'L’état Premium peut être synchronisé avec votre compte WoW100% afin de masquer les publicités et sponsors sur les plateformes compatibles.',
       ],
@@ -169,7 +169,7 @@ class LegalPage extends StatelessWidget {
       title: 'Partage et prestataires',
       paragraphs: [
         'Les données nécessaires à la connexion et à la récupération de progression peuvent être transmises aux services Battle.net et Blizzard Entertainment afin d’obtenir les informations demandées par l’utilisateur.',
-        'L’application et son site peuvent s’appuyer sur des prestataires techniques d’hébergement, d’exécution, de diffusion publicitaire ou de paiement, notamment Cloudflare, Firebase/Google, Google AdMob, RevenueCat, Apple, Google Play et Stripe, pour fournir le service.',
+        'L’application et son site peuvent s’appuyer sur des prestataires techniques d’hébergement, d’exécution, de diffusion publicitaire ou de paiement, notamment Cloudflare, Firebase/Google, Google AdMob, RevenueCat et les plateformes de paiement utilisées, pour fournir le service.',
       ],
     ),
     _LegalContentSection(
@@ -183,7 +183,7 @@ class LegalPage extends StatelessWidget {
       title: 'Vos droits et suppression',
       paragraphs: [
         'Vous pouvez déconnecter votre compte Battle.net depuis l’application afin de supprimer le jeton de connexion et le personnage sélectionné de l’espace local de l’application.',
-        'Vous pouvez également supprimer les données locales de WoW100% depuis les réglages de votre appareil ou en désinstallant l’application.',
+        'La suppression du compte est disponible depuis l’écran Compte. Elle supprime définitivement le compte Firebase, les profils, favoris et itinéraires associés, ainsi que les données locales de l’application.',
         'Pour toute demande d’accès, de rectification, d’opposition ou de suppression liée aux données personnelles, vous pouvez écrire à contact@cosmos-lty.fr.',
       ],
     ),

@@ -192,6 +192,51 @@ class FirebaseAccountService {
     await _auth.signOut();
   }
 
+  /// Permanently removes the signed-in account and the data owned by it.
+  ///
+  /// The Firebase Auth record is deleted last so all owned Firestore data is
+  /// removed before the account disappears. If Firebase requires a recent
+  /// login, the cleanup can be retried after the user authenticates again.
+  Future<void> deleteAccount() async {
+    final user = _auth.currentUser;
+    if (user == null) {
+      throw FirebaseAuthException(
+        code: 'not-authenticated',
+        message: 'No Firebase account is signed in.',
+      );
+    }
+
+    final userRef = _userRef(user.uid);
+    final friendsRef = userRef.collection('friends');
+    final mainCharacterRef = userRef
+        .collection('settings')
+        .doc('mainCharacter');
+
+    await _deleteQueryDocuments(friendsRef);
+    await mainCharacterRef.delete();
+    await _deleteQueryDocuments(
+      _firestore
+          .collection('farmRoutes')
+          .where('ownerUid', isEqualTo: user.uid),
+    );
+    await _deleteQueryDocuments(
+      _firestore
+          .collection('farmProfiles')
+          .where('ownerUid', isEqualTo: user.uid),
+    );
+    await userRef.delete();
+
+    await user.delete();
+
+    if (!kIsWeb) {
+      try {
+        await _googleSignIn.signOut();
+      } on Object {
+        // Firebase Auth remains the source of truth for the deleted session.
+      }
+    }
+  }
+
   Future<void> updateWallpaperPreference(
     AppWallpaperPreference preference,
   ) async {
@@ -240,6 +285,20 @@ class FirebaseAccountService {
 
   DocumentReference<Map<String, dynamic>> _userRef(String uid) {
     return _firestore.collection('users').doc(uid);
+  }
+
+  Future<void> _deleteQueryDocuments(Query<Map<String, dynamic>> query) async {
+    final snapshot = await query.get();
+
+    // Keep batches below Firestore's 500-write limit.
+    for (var start = 0; start < snapshot.docs.length; start += 450) {
+      final end = min(start + 450, snapshot.docs.length);
+      final batch = _firestore.batch();
+      for (final document in snapshot.docs.sublist(start, end)) {
+        batch.delete(document.reference);
+      }
+      await batch.commit();
+    }
   }
 
   Future<void> _ensureGoogleInitialized() {

@@ -674,7 +674,7 @@ class _SubscriptionDisclosure extends StatelessWidget {
             _DisclosureLine(text: renewalText),
             const _DisclosureLine(
               text:
-                  'Tu peux annuler à tout moment depuis les réglages d’abonnements de l’App Store ou de Google Play. Pour éviter une facturation après un essai Apple, annule au moins 24 h avant la fin de l’essai.',
+                  'Tu peux annuler à tout moment depuis les réglages d’abonnement de ton appareil. Pour éviter une facturation après un essai, annule au moins 24 h avant sa fin.',
             ),
             const _DisclosureLine(
               text:
@@ -757,7 +757,7 @@ class _PremiumFinePrint extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Text(
-      'Abonnement gere par Apple, Google Play ou Stripe selon ta plateforme. Les droits Premium sont synchronises avec ton compte WoW100%.',
+      'Abonnement gere par la plateforme de paiement utilisee. Les droits Premium sont synchronises avec ton compte WoW100%.',
       textAlign: TextAlign.center,
       style: TextStyle(color: AppTheme.mutedText, fontSize: 12, height: 1.35),
     );

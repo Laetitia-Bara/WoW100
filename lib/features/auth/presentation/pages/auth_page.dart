@@ -1,8 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../../core/services/auth_remember_me_service.dart';
+import '../../../../core/services/battle_net_session_service.dart';
 import '../../../../core/services/firebase_account_service.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/app_user_profile.dart';
@@ -124,6 +126,42 @@ class _AuthPageState extends State<AuthPage> {
     await _runAuthAction(_accountService.signOut, stayOnPage: true);
   }
 
+  Future<void> _deleteAccount() async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) {
+        return AlertDialog(
+          title: const Text('Supprimer le compte ?'),
+          content: const Text(
+            'Cette action supprime définitivement ton compte WoW100% et les données associées. Elle ne peut pas être annulée. Si tu as un abonnement Premium, pense à le résilier séparément dans les réglages d’abonnement de ta plateforme de paiement : la suppression du compte ne résilie pas l’abonnement.',
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(dialogContext, false),
+              child: const Text('Annuler'),
+            ),
+            FilledButton(
+              onPressed: () => Navigator.pop(dialogContext, true),
+              style: FilledButton.styleFrom(
+                backgroundColor: Theme.of(context).colorScheme.error,
+              ),
+              child: const Text('Supprimer définitivement'),
+            ),
+          ],
+        );
+      },
+    );
+
+    if (confirmed != true || !mounted) return;
+
+    await _runAuthAction(() async {
+      await _accountService.deleteAccount();
+      await BattleNetSessionService().clearSession();
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.clear();
+    });
+  }
+
   Future<void> _updateWallpaperPreference(
     AppWallpaperPreference preference,
   ) async {
@@ -195,6 +233,8 @@ class _AuthPageState extends State<AuthPage> {
 
   String _authErrorMessage(FirebaseAuthException error) {
     return switch (error.code) {
+      'requires-recent-login' =>
+        'Reconnecte-toi puis relance la suppression du compte pour confirmer ton identité.',
       'invalid-email' => 'Adresse e-mail invalide.',
       'invalid-credential' => 'Identifiants incorrects.',
       'email-already-in-use' => 'Un compte existe deja avec cet e-mail.',
@@ -320,6 +360,7 @@ class _AuthPageState extends State<AuthPage> {
                               onWallpaperChanged: _updateWallpaperPreference,
                               onPremiumTap: _openPremiumPage,
                               onSignOut: _signOut,
+                              onDeleteAccount: _deleteAccount,
                             ),
                     ),
                   ),
@@ -388,7 +429,7 @@ class _AuthForm extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  'Connecte-toi afin de retrouver ton progress et tes favoris, quelque soit ta plateforme (Web, Android, iOS)  ;)',
+                  'Connecte-toi afin de retrouver ta progression et tes favoris sur tous tes appareils ;)',
                   style: TextStyle(color: AppTheme.mutedText, height: 1.4),
                 ),
                 const SizedBox(height: 18),
@@ -532,6 +573,7 @@ class _SignedInPanel extends StatelessWidget {
     required this.onWallpaperChanged,
     required this.onPremiumTap,
     required this.onSignOut,
+    required this.onDeleteAccount,
   });
 
   final AppUserProfile profile;
@@ -540,6 +582,7 @@ class _SignedInPanel extends StatelessWidget {
   final ValueChanged<AppWallpaperPreference> onWallpaperChanged;
   final VoidCallback onPremiumTap;
   final VoidCallback onSignOut;
+  final VoidCallback onDeleteAccount;
 
   @override
   Widget build(BuildContext context) {
@@ -612,6 +655,15 @@ class _SignedInPanel extends StatelessWidget {
               onPressed: isBusy ? null : onSignOut,
               icon: const Icon(Icons.logout),
               label: const Text('Déconnexion'),
+            ),
+            const SizedBox(height: 8),
+            TextButton.icon(
+              onPressed: isBusy ? null : onDeleteAccount,
+              icon: const Icon(Icons.delete_forever_outlined),
+              label: const Text('Supprimer mon compte'),
+              style: TextButton.styleFrom(
+                foregroundColor: Theme.of(context).colorScheme.error,
+              ),
             ),
             if (message != null) ...[
               const SizedBox(height: 14),

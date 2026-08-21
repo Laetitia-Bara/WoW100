@@ -8,7 +8,7 @@ Hello App Review Team,
 Thank you for reviewing WoW100%. Please find below the requested information for this new app submission.
 
 1. Screen recording
-A screen recording captured on a physical iPhone running the latest available iOS version is available here:
+A screen recording captured on a physical iPad/iPhone running the latest available iOS version is available here:
 [PASTE PRIVATE VIDEO LINK OR MENTION ATTACHMENT]
 
 The recording starts with launching the app and demonstrates the main user flow:
@@ -25,6 +25,13 @@ The recording starts with launching the app and demonstrates the main user flow:
 - Disconnecting Battle.net, which clears the local access token and selected character
 - Opening the legal and privacy information screen
 
+The recording also demonstrates the complete account deletion flow:
+- Signing in with a WoW100% demo account
+- Opening the account screen
+- Tapping "Supprimer mon compte"
+- Confirming "Supprimer définitivement"
+- Returning to the sign-in screen after the Firebase account, associated profiles/routes, and local app data are deleted
+
 The app includes an optional WoW100% Premium auto-renewable subscription that removes ads and sponsored web panels. The app also remains usable without Premium.
 
 Terms of Use (Apple Standard EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
@@ -34,8 +41,8 @@ WoW100% may display non-personalized Google AdMob ads. Ad requests are configure
 
 2. Devices and operating systems tested
 The app was tested before submission on:
-- iPhone [MODEL], iOS [VERSION]
-- iPhone [MODEL], iOS [VERSION]
+- iPad/iPhone [MODEL], iPadOS/iOS [VERSION]
+- iPad/iPhone [MODEL], iPadOS/iOS [VERSION]
 
 3. App purpose and target audience
 WoW100% is an independent collection companion for World of Warcraft players. It helps players track their progress across expansions for achievements, mounts, and battle pets. The app is intended for players who want a clear mobile checklist and progress dashboard for long-term collection goals.
@@ -73,7 +80,7 @@ WoW100% uses the following external services and platforms:
 - Cloudflare Pages Functions hosted at https://wow100.cosmos-lty.fr/api to securely exchange OAuth codes and proxy Battle.net API requests
 - Wowhead links as external reference pages for World of Warcraft items and achievements
 - Google AdMob to display non-personalized ads
-- RevenueCat, Apple, Google Play, and Stripe for Premium subscription purchase, restoration, and entitlement synchronization
+- RevenueCat and Apple In-App Purchase for Premium subscription purchase, restoration, and entitlement synchronization on iOS
 - Locally bundled catalog data for achievements, mounts, pets, expansions, and metadata
 - Local device storage via Flutter shared_preferences for the Battle.net access token, selected character, and manual checklist state
 
