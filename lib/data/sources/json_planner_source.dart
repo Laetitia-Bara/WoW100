@@ -217,8 +217,10 @@ class JsonPlannerSource {
       final mamytwinkUrl =
           _metadataString(reference, 'mamytwinkUrl') ??
           _metadataString(mamytwink, 'mamytwinkUrl') ??
+          _metadataString(manual, 'mamytwinkUrl') ??
           '';
       final wowheadUrl =
+          _metadataString(manual, 'wowheadUrl') ??
           _metadataString(reference, 'wowheadUrl') ??
           _metadataString(wowhead, 'externalUrl') ??
           '';
@@ -307,6 +309,10 @@ class JsonPlannerSource {
       items.addAll(await loadItemsFromAsset(assetPath));
     }
 
+    // Shared content can be stored in the file of the expansion in which it
+    // was introduced, but must stay out of that expansion's planner.
+    items.removeWhere(_isOutOfExpansionPet);
+
     items.sort((a, b) {
       final expansionCompare = a.expansion.index.compareTo(b.expansion.index);
       if (expansionCompare != 0) return expansionCompare;
@@ -318,6 +324,34 @@ class JsonPlannerSource {
     });
 
     return items;
+  }
+
+  bool _isOutOfExpansionPet(TrackingItem item) {
+    return _isWorldEventText(item.instance) ||
+        _isWorldEventText(item.source) ||
+        _isBlizzardPromotionText(item.instance) ||
+        _isBlizzardPromotionText(item.source);
+  }
+
+  bool _isWorldEventText(String value) {
+    final normalized = _normalizeMountStatusText(value);
+
+    return normalized.contains('evenement mondial') ||
+        normalized.contains('evenement') ||
+        normalized.contains('anniversaire') ||
+        normalized.contains('fete') ||
+        normalized.contains('amour dans l air') ||
+        normalized.contains('jardin des nobles') ||
+        normalized.contains('fete des brasseurs') ||
+        normalized.contains('sanssaint') ||
+        normalized.contains('voile d hiver');
+  }
+
+  bool _isBlizzardPromotionText(String value) {
+    final normalized = _normalizeMountStatusText(value);
+
+    return normalized == 'promotion' ||
+        normalized.contains('promotion blizzard');
   }
 
   Future<List<TrackingItem>> loadAchievementItems(
