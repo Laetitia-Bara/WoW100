@@ -44,9 +44,7 @@
     "source": "Butin",
     "dropRate": "1.70",
     "difficulty": "Difficile",
-    "tags": [
-      "Raid"
-    ],
+    "tags": ["Raid", "25 joueurs"],
     "frequencyLabel": "Hebdomadaire"
   },
   {
@@ -63,9 +61,7 @@
     "source": "Butin",
     "dropRate": "2",
     "difficulty": "Difficile",
-    "tags": [
-      "Donjon"
-    ],
+    "tags": ["Donjon", "Héro"],
     "frequencyLabel": "Quotidien"
   },
   {
@@ -80,9 +76,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": [
-      "Raid"
-    ],
+    "tags": ["Raid", "10 joueurs"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -101,9 +95,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "0.78",
-    "tags": [
-      "Raid"
-    ],
+    "tags": ["Raid", "25 joueurs", "Héro"],
     "frequencyLabel": "Hebdomadaire"
   },
   {
@@ -216,7 +208,7 @@
     "source": "Butin",
     "difficulty": "Moyen",
     "dropRate": "4",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Héro"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien"
@@ -233,7 +225,7 @@
     "source": "Butin",
     "difficulty": "Moyen",
     "dropRate": "3",
-    "tags": ["Raid"],
+    "tags": ["Raid", "10 / 25 joueurs"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -250,7 +242,7 @@
     "source": "Butin",
     "difficulty": "Moyen",
     "dropRate": "3",
-    "tags": ["Raid"],
+    "tags": ["Raid", "10 / 25 joueurs"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -267,7 +259,7 @@
     "source": "Butin",
     "difficulty": "Facile",
     "dropRate": "100",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Héro", "Temps imparti"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Multi-Quotidien"
@@ -284,7 +276,7 @@
     "source": "Butin",
     "difficulty": "Facile",
     "dropRate": "100",
-    "tags": ["Raid"],
+    "tags": ["Raid", "25 joueurs", "3 drakes"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -301,7 +293,7 @@
     "source": "Butin",
     "difficulty": "Facile",
     "dropRate": "100",
-    "tags": ["Raid"],
+    "tags": ["Raid", "10 joueurs", "3 drakes"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -318,7 +310,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Héro"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien"
@@ -335,7 +327,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1.42",
-    "tags": ["Raid"],
+    "tags": ["Raid", "Sans gardiens"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -352,7 +344,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1.48",
-    "tags": ["Raid"],
+    "tags": ["Raid", "10 / 25 joueurs"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -369,7 +361,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Normal / Héro"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien"
@@ -403,7 +395,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "0.8",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Normal / Héro"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien"
@@ -420,7 +412,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Héro"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien"
@@ -437,7 +429,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "0.93",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Héro"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien"
@@ -490,7 +482,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "2",
-    "tags": ["Raid"],
+    "tags": ["Raid", "Normal / Héro"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -507,7 +499,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "3",
-    "tags": ["Raid"],
+    "tags": ["Raid", "Héro"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -558,7 +550,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1.81",
-    "tags": ["Raid"],
+    "tags": ["Raid", "Normal / Héro"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -575,7 +567,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "2.5",
-    "tags": ["Raid"],
+    "tags": ["Raid", "Normal / Héro"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -592,7 +584,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "5.92",
-    "tags": ["Raid"],
+    "tags": ["Raid", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -609,7 +601,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Raid"],
+    "tags": ["Raid", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -626,7 +618,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Raid"],
+    "tags": ["Raid", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -643,7 +635,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "0.5",
-    "tags": ["Raid"],
+    "tags": ["Raid", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire",
@@ -681,7 +673,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Raid"],
+    "tags": ["Raid", "LFR possible"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -698,7 +690,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Raid"],
+    "tags": ["Raid", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -732,7 +724,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1.7",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire",
@@ -751,7 +743,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "100",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Mythique", "Boss secret", "Temps imparti"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -768,7 +760,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien",
@@ -787,7 +779,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien"
@@ -804,7 +796,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien",
@@ -823,7 +815,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Raid"],
+    "tags": ["Raid", "LFR / Normal / Héro / Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -840,7 +832,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Raid"],
+    "tags": ["Raid", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -857,7 +849,7 @@
     "source": "Butin",
     "difficulty": "Facile",
     "dropRate": "100",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Mode difficile"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien"
@@ -874,7 +866,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien"
@@ -891,7 +883,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Raid"],
+    "tags": ["Raid", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -908,7 +900,7 @@
     "source": "Butin",
     "difficulty": "Difficile",
     "dropRate": "1",
-    "tags": ["Donjon"],
+    "tags": ["Donjon", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien"
@@ -924,7 +916,8 @@
     "boss": "So'leah",
     "source": "Butin",
     "difficulty": "Difficile",
-    "tags": ["Donjon"],
+    "dropRate": "2",
+    "tags": ["Donjon", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien"
@@ -940,6 +933,7 @@
     "boss": "Les Neuf",
     "source": "Butin",
     "difficulty": "Difficile",
+    "dropRate": "0.3",
     "tags": ["Raid"],
     "groupRequired": true,
     "weeklyLockout": true,
@@ -956,7 +950,8 @@
     "boss": "Dame Sylvanas Coursevent",
     "source": "Butin",
     "difficulty": "Difficile",
-    "tags": ["Raid"],
+    "dropRate": "1",
+    "tags": ["Raid", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire",
@@ -974,7 +969,8 @@
     "boss": "Le Geôlier",
     "source": "Butin",
     "difficulty": "Difficile",
-    "tags": ["Raid"],
+    "dropRate": "0.6",
+    "tags": ["Raid", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire",
@@ -992,7 +988,8 @@
     "boss": "Fyrakka",
     "source": "Butin",
     "difficulty": "Difficile",
-    "tags": ["Raid"],
+    "dropRate": "0.6",
+    "tags": ["Raid", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -1008,6 +1005,7 @@
     "boss": "Reine Ansurek",
     "source": "Butin",
     "difficulty": "Moyen",
+    "dropRate": "0.6",
     "tags": ["Raid"],
     "groupRequired": true,
     "weeklyLockout": true,
@@ -1024,7 +1022,8 @@
     "boss": "Reine Ansurek",
     "source": "Butin",
     "difficulty": "Moyen",
-    "tags": ["Raid"],
+    "dropRate": "0.2",
+    "tags": ["Raid", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -1040,6 +1039,7 @@
     "boss": "Roi du chrome Gallywix",
     "source": "Butin",
     "difficulty": "Moyen",
+    "dropRate": "0.6",
     "tags": ["Raid"],
     "groupRequired": true,
     "weeklyLockout": true,
@@ -1056,7 +1056,8 @@
     "boss": "Glas de Minuit",
     "source": "Butin",
     "difficulty": "Difficile",
-    "tags": ["Raid"],
+    "dropRate": "1",
+    "tags": ["Raid", "Mythique"],
     "groupRequired": true,
     "weeklyLockout": true,
     "frequencyLabel": "Hebdomadaire"
@@ -1072,7 +1073,8 @@
     "boss": "Dégentrius",
     "source": "Butin",
     "difficulty": "Moyen",
-    "tags": ["Donjon"],
+    "dropRate": "2",
+    "tags": ["Donjon", "Mythique / Mythique+"],
     "groupRequired": true,
     "weeklyLockout": false,
     "frequencyLabel": "Quotidien"

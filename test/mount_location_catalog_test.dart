@@ -60,7 +60,8 @@ void main() {
       expect(ashesOfAlar.source, 'Butin');
       expect(ashesOfAlar.difficulty, 'Difficile');
       expect(ashesOfAlar.dropRate, '1.70');
-      expect(ashesOfAlar.tags, ['Raid']);
+      expect(ashesOfAlar.tags, contains('Raid'));
+      expect(ashesOfAlar.tags, contains('25 joueurs'));
       expect(ashesOfAlar.frequencyLabel, 'Hebdomadaire');
 
       final vanillaItems = await JsonPlannerSource().loadMountItems(
@@ -94,7 +95,8 @@ void main() {
       expect(ravenLord.displayInstance, 'Les salles des Sethekk');
       expect(ravenLord.source, 'Butin');
       expect(ravenLord.dropRate, '2');
-      expect(ravenLord.tags, ['Donjon']);
+      expect(ravenLord.tags, contains('Donjon'));
+      expect(ravenLord.tags, contains('Héro'));
       expect(ravenLord.frequencyLabel, 'Quotidien');
       expect(ravenLord.boss, 'Anzu');
 
