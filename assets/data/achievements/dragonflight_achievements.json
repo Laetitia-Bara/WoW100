@@ -11376,5 +11376,37 @@
     "blizzardCategoryName": "Vol dynamique",
     "wowhead": null,
     "mamytwink": null
+  },
+  {
+    "id": "achievement_18558",
+    "name": "Les chefs de Scholomance",
+    "description": "Vaincre les boss suivants dans Scholomance.",
+    "category": "achievements",
+    "expansion": "dragonflight",
+    "zone": "Classique",
+    "instance": "Classique",
+    "source": "Vaincre les boss suivants dans Scholomance.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": true,
+    "groupRequired": false,
+    "weeklyLockout": false,
+    "blizzardId": 18558,
+    "wowheadAchievementId": 18558,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=18558",
+    "blizzardCategoryId": 14808,
+    "blizzardCategoryName": "Classique",
+    "wowhead": {
+      "wowheadName": "Leaders of Scholomance",
+      "wowheadUrl": "https://www.wowhead.com/fr/achievement=18558",
+      "category": 14808,
+      "categoryName": "",
+      "expansion": null,
+      "points": 10,
+      "reward": "",
+      "popularity": 181
+    },
+    "mamytwink": null
   }
 ]

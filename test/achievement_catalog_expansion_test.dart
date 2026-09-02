@@ -79,6 +79,18 @@ const _extensionContentCategoryIds = {
 };
 
 const _petBattleAchievementExpansionById = {
+  61028: WowExpansion.mop,
+  61029: WowExpansion.mop,
+  61030: WowExpansion.mop,
+  61031: WowExpansion.mop,
+  61032: WowExpansion.mop,
+  61033: WowExpansion.mop,
+  61034: WowExpansion.mop,
+  61035: WowExpansion.mop,
+  61036: WowExpansion.mop,
+  61037: WowExpansion.mop,
+  61040: WowExpansion.mop,
+  6603: WowExpansion.mop,
   6558: WowExpansion.mop,
   6559: WowExpansion.mop,
   6560: WowExpansion.mop,
@@ -191,18 +203,35 @@ void main() {
     expect(onyxiaLevel60.source, contains('Indisponible'));
   });
 
-  test('marks Alterac Valley of Olde as seasonal', () async {
+  test('routes Alterac Valley of Olde to Battle for Azeroth', () async {
     final repository = JsonPlannerRepository();
 
     final vanillaAchievements = await repository.getItems(
       WowExpansion.vanilla,
       category: TrackingCategory.achievements,
     );
-    final alteracValleyOfOlde = vanillaAchievements.singleWhere(
-      (item) => item.blizzardId == 13928,
+    final alteracValleyIds = {13928, 13930};
+
+    expect(
+      vanillaAchievements.where(
+        (item) => alteracValleyIds.contains(item.blizzardId),
+      ),
+      isEmpty,
     );
 
-    expect(alteracValleyOfOlde.tags, contains('Saisonnier'));
+    final bfaAchievements = await repository.getItems(
+      WowExpansion.bfa,
+      category: TrackingCategory.achievements,
+    );
+    final alteracValleyOfOlde = bfaAchievements.where(
+      (item) => alteracValleyIds.contains(item.blizzardId),
+    );
+
+    expect(alteracValleyOfOlde, hasLength(2));
+    for (final achievement in alteracValleyOfOlde) {
+      expect(achievement.expansion, WowExpansion.bfa);
+      expect(achievement.tags, contains('Saisonnier'));
+    }
   });
 
   test('marks Midnight season 1 achievements as unavailable', () async {
@@ -280,6 +309,32 @@ void main() {
     }
   });
 
+  test(
+    'routes the Dragonflight Scholomance achievement out of Vanilla',
+    () async {
+      final repository = JsonPlannerRepository();
+
+      final vanillaAchievements = await repository.getItems(
+        WowExpansion.vanilla,
+        category: TrackingCategory.achievements,
+      );
+      final vanillaIds = vanillaAchievements.map((item) => item.blizzardId);
+
+      expect(vanillaIds, isNot(contains(18558)));
+
+      final dragonflightAchievements = await repository.getItems(
+        WowExpansion.dragonflight,
+        category: TrackingCategory.achievements,
+      );
+      final achievement = dragonflightAchievements.singleWhere(
+        (item) => item.blizzardId == 18558,
+      );
+
+      expect(achievement.expansion, WowExpansion.dragonflight);
+      expect(achievement.blizzardCategoryName, 'Classique');
+    },
+  );
+
   test('keeps Vanilla guild achievements in the global guild group', () async {
     final repository = JsonPlannerRepository();
 
@@ -310,6 +365,30 @@ void main() {
       expect(achievement.instance, 'Guilde');
       expect(achievement.blizzardCategoryName, 'Guilde');
     }
+  });
+
+  test('routes the Cataclysm guild dungeon meta out of Vanilla', () async {
+    final repository = JsonPlannerRepository();
+
+    final vanillaAchievements = await repository.getItems(
+      WowExpansion.vanilla,
+      category: TrackingCategory.achievements,
+    );
+    expect(
+      vanillaAchievements.map((item) => item.blizzardId),
+      isNot(contains(4950)),
+    );
+
+    final cataclysmAchievements = await repository.getItems(
+      WowExpansion.cataclysm,
+      category: TrackingCategory.achievements,
+    );
+    final achievement = cataclysmAchievements.singleWhere(
+      (item) => item.blizzardId == 4950,
+    );
+
+    expect(achievement.expansion, WowExpansion.cataclysm);
+    expect(achievement.blizzardCategoryName, 'Donjons et raids');
   });
 
   test('keeps world event achievements out of expansion planners', () async {
@@ -378,6 +457,12 @@ void main() {
         category: TrackingCategory.achievements,
       );
       final vanillaIds = vanillaAchievements.map((item) => item.blizzardId);
+
+      expect(
+        vanillaAchievements.where((item) => item.blizzardCategoryId == 15119),
+        isEmpty,
+        reason: 'Vanilla should not contain Pet Battle achievements',
+      );
 
       for (final achievementId in _petBattleAchievementExpansionById.keys) {
         expect(vanillaIds, isNot(contains(achievementId)));

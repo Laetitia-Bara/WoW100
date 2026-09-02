@@ -76,6 +76,20 @@ const globalAchievementCategoryIds = new Set([
 ]);
 
 const expansionByAchievementId = {
+  61028: "mop",
+  61029: "mop",
+  61030: "mop",
+  61031: "mop",
+  61032: "mop",
+  61033: "mop",
+  61034: "mop",
+  61035: "mop",
+  61036: "mop",
+  61037: "mop",
+  61040: "mop",
+  6603: "mop",
+  18558: "dragonflight",
+  4950: "cataclysm",
   18566: "dragonflight",
   18567: "dragonflight",
   18568: "dragonflight",

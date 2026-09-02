@@ -7875,5 +7875,28 @@
     "blizzardCategoryName": "Raids de Cataclysm",
     "wowhead": null,
     "mamytwink": null
+  },
+  {
+    "id": "achievement_4950",
+    "name": "Maître des vieux donjons en guilde",
+    "description": "Accomplir les hauts faits dans les donjons classiques listés ci-dessous en groupe de guilde.",
+    "category": "achievements",
+    "expansion": "cataclysm",
+    "zone": "Donjons et raids",
+    "instance": "Donjons et raids",
+    "source": "Accomplir les hauts faits dans les donjons classiques listés ci-dessous en groupe de guilde.",
+    "points": 10,
+    "rewardDescription": "",
+    "isAccountWide": false,
+    "groupRequired": true,
+    "weeklyLockout": false,
+    "blizzardId": 4950,
+    "wowheadAchievementId": 4950,
+    "boss": "",
+    "externalUrl": "https://www.wowhead.com/fr/achievement=4950",
+    "blizzardCategoryId": 15079,
+    "blizzardCategoryName": "Donjons et raids",
+    "wowhead": null,
+    "mamytwink": null
   }
 ]

@@ -41,7 +41,20 @@
   },
   {
     "blizzardId": 13928,
+    "expansion": "bfa",
+    "patch": "8.2.5",
     "tags": ["Saisonnier"]
+  },
+  {
+    "blizzardId": 13930,
+    "expansion": "bfa",
+    "patch": "8.2.5",
+    "tags": ["Saisonnier"]
+  },
+  {
+    "blizzardId": 4950,
+    "expansion": "cataclysm",
+    "patch": "4.0.3"
   },
   {
     "blizzardId": 18368,
@@ -50,6 +63,11 @@
   },
   {
     "blizzardId": 18372,
+    "expansion": "dragonflight",
+    "patch": "10.1.5"
+  },
+  {
+    "blizzardId": 18558,
     "expansion": "dragonflight",
     "patch": "10.1.5"
   },
