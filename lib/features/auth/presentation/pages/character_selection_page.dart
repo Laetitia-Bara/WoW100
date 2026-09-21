@@ -312,7 +312,7 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
                         crossAxisCount: columns,
                         crossAxisSpacing: 12,
                         mainAxisSpacing: 12,
-                        mainAxisExtent: 78,
+                        mainAxisExtent: 102,
                       ),
                       itemCount: characters.length,
                       itemBuilder: (context, index) {
@@ -648,6 +648,14 @@ class _CharacterCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final levelStyle = TextStyle(
+      color: character.level == 90 ? Colors.white : AppTheme.mutedText,
+      fontWeight: character.level == 90 ? FontWeight.w900 : FontWeight.normal,
+    );
+    final professionSummary = character.professions.isEmpty
+        ? 'Aucun métier'
+        : character.professions.join(' • ');
+
     return Card(
       margin: EdgeInsets.zero,
       child: ListTile(
@@ -657,27 +665,45 @@ class _CharacterCard extends StatelessWidget {
         ),
         subtitle: Padding(
           padding: const EdgeInsets.only(top: 4),
-          child: Wrap(
-            spacing: 6,
-            runSpacing: 6,
-            crossAxisAlignment: WrapCrossAlignment.center,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                '${character.characterClass} ${character.level}',
-                style: const TextStyle(color: AppTheme.mutedText),
+              Wrap(
+                spacing: 6,
+                runSpacing: 6,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(text: character.characterClass),
+                        const TextSpan(text: ' '),
+                        TextSpan(text: '${character.level}', style: levelStyle),
+                      ],
+                    ),
+                    style: const TextStyle(color: AppTheme.mutedText),
+                  ),
+                  const Text('•', style: TextStyle(color: AppTheme.mutedText)),
+                  Text(
+                    character.realm,
+                    style: const TextStyle(color: AppTheme.mutedText),
+                  ),
+                  const Text('•', style: TextStyle(color: AppTheme.mutedText)),
+                  Text(
+                    character.faction,
+                    style: TextStyle(
+                      color: factionColor,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ],
               ),
-              const Text('•', style: TextStyle(color: AppTheme.mutedText)),
+              const SizedBox(height: 2),
               Text(
-                character.realm,
-                style: const TextStyle(color: AppTheme.mutedText),
-              ),
-              const Text('•', style: TextStyle(color: AppTheme.mutedText)),
-              Text(
-                character.faction,
-                style: TextStyle(
-                  color: factionColor,
-                  fontWeight: FontWeight.w700,
-                ),
+                '${character.race} • $professionSummary',
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(color: AppTheme.mutedText, fontSize: 12),
               ),
             ],
           ),
