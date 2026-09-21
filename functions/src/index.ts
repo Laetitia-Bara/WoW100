@@ -87,7 +87,7 @@ function addProfessionName(names: Set<string>, value: any): void {
 async function fetchCharacterProfile(
   token: string,
   character: {name?: string; realmSlug?: string},
-): Promise<any> {
+): Promise<any | null> {
   if (!character.realmSlug || !character.name) {
     return {};
   }
@@ -108,9 +108,20 @@ async function fetchCharacterProfile(
     );
 
     return result.data;
-  } catch (_) {
+  } catch (error: any) {
+    if (error?.response?.status === 404) {
+      return null;
+    }
+
     return {};
   }
+}
+
+async function characterProfileExists(
+  token: string,
+  character: {name?: string; realmSlug?: string},
+): Promise<boolean> {
+  return (await fetchCharacterProfile(token, character)) !== null;
 }
 
 async function fetchCharacterPortraitUrl(
@@ -264,7 +275,27 @@ export const getWowProfile = onRequest(
         },
       );
 
-      response.json(result.data);
+      const accounts = await Promise.all(
+        (result.data.wow_accounts ?? []).map(async (account: any) => {
+          const characters = await Promise.all(
+            (account.characters ?? []).map(async (character: any) => {
+              return (await characterProfileExists(token, {
+                name: character.name,
+                realmSlug: character.realm?.slug,
+              }))
+                ? character
+                : null;
+            }),
+          );
+
+          return {
+            ...account,
+            characters: characters.filter(Boolean),
+          };
+        }),
+      );
+
+      response.json({...result.data, wow_accounts: accounts});
     } catch (e: any) {
       response.status(500).json({
         error: e?.response?.data ?? e.toString(),
@@ -318,7 +349,7 @@ export const getWowCharacters = onRequest(
         }
       }
 
-      const finalCharacters = await Promise.all(
+      const finalCharacters = (await Promise.all(
         characterSummaries.map(async (character) => {
           const [
             professions,
@@ -332,6 +363,10 @@ export const getWowCharacters = onRequest(
             fetchCharacterMythicKeystoneRating(token, character),
           ]);
 
+          if (profile === null) {
+            return null;
+          }
+
           return {
             ...character,
             professions,
@@ -339,8 +374,8 @@ export const getWowCharacters = onRequest(
             mythicKeystoneRating,
             portraitUrl,
           };
-        })
-      );
+        }),
+      )).filter(Boolean);
 
       finalCharacters.sort((a, b) => b.level - a.level);
 

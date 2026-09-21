@@ -109,6 +109,19 @@ String _collectionKey(String value) {
       .trim();
 }
 
+String _localizedProfessionName(String profession) {
+  final professionKey = _collectionKey(profession);
+
+  for (final entry in _playableProfessions) {
+    if (_collectionKey(entry.name) == professionKey ||
+        entry.aliases.any((alias) => _collectionKey(alias) == professionKey)) {
+      return entry.name;
+    }
+  }
+
+  return profession;
+}
+
 class CharacterSelectionPage extends StatefulWidget {
   const CharacterSelectionPage({
     super.key,
@@ -312,7 +325,7 @@ class _CharacterSelectionPageState extends State<CharacterSelectionPage> {
                         crossAxisCount: columns,
                         crossAxisSpacing: 12,
                         mainAxisSpacing: 12,
-                        mainAxisExtent: 102,
+                        mainAxisExtent: 122,
                       ),
                       itemCount: characters.length,
                       itemBuilder: (context, index) {
@@ -654,7 +667,7 @@ class _CharacterCard extends StatelessWidget {
     );
     final professionSummary = character.professions.isEmpty
         ? 'Aucun métier'
-        : character.professions.join(' • ');
+        : character.professions.map(_localizedProfessionName).join(' • ');
 
     return Card(
       margin: EdgeInsets.zero,
@@ -673,6 +686,11 @@ class _CharacterCard extends StatelessWidget {
                 runSpacing: 6,
                 crossAxisAlignment: WrapCrossAlignment.center,
                 children: [
+                  Text(
+                    character.race,
+                    style: const TextStyle(color: AppTheme.mutedText),
+                  ),
+                  const Text('•', style: TextStyle(color: AppTheme.mutedText)),
                   Text.rich(
                     TextSpan(
                       children: [
@@ -683,7 +701,14 @@ class _CharacterCard extends StatelessWidget {
                     ),
                     style: const TextStyle(color: AppTheme.mutedText),
                   ),
-                  const Text('•', style: TextStyle(color: AppTheme.mutedText)),
+                ],
+              ),
+              const SizedBox(height: 2),
+              Wrap(
+                spacing: 6,
+                runSpacing: 6,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
                   Text(
                     character.realm,
                     style: const TextStyle(color: AppTheme.mutedText),
@@ -700,7 +725,7 @@ class _CharacterCard extends StatelessWidget {
               ),
               const SizedBox(height: 2),
               Text(
-                '${character.race} • $professionSummary',
+                professionSummary,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: const TextStyle(color: AppTheme.mutedText, fontSize: 12),

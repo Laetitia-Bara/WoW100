@@ -73,6 +73,36 @@ export async function fetchBattleNetJson(path, {token, params = {}} = {}) {
   return readBattleNetResponse(result);
 }
 
+export async function characterProfileExists(token, character) {
+  const realmSlug = character?.realm?.slug ?? character?.realmSlug;
+  const characterName = character?.name;
+
+  if (!realmSlug || !characterName) {
+    return false;
+  }
+
+  const characterSlug = encodeURIComponent(characterName.toLowerCase());
+
+  try {
+    await fetchBattleNetJson(
+      `https://eu.api.blizzard.com/profile/wow/character/${realmSlug}/${characterSlug}`,
+      {
+        token,
+        params: {
+          namespace: "profile-eu",
+          locale: "fr_FR",
+        },
+      },
+    );
+
+    return true;
+  } catch (error) {
+    // Only a confirmed missing profile is considered a ghost. Transient API
+    // failures must not make valid characters disappear from the app.
+    return error?.status !== 404;
+  }
+}
+
 export async function readBattleNetResponse(result) {
   const text = await result.text();
   let data;

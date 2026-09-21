@@ -46,7 +46,7 @@ export async function onRequest({request}) {
       }
     }
 
-    const finalCharacters = await Promise.all(
+    const finalCharacters = (await Promise.all(
       characterSummaries.map(async (character) => {
         const [
           professions,
@@ -60,6 +60,10 @@ export async function onRequest({request}) {
           fetchCharacterMythicKeystoneRating(token, character),
         ]);
 
+        if (profile === null) {
+          return null;
+        }
+
         return {
           ...character,
           professions,
@@ -68,7 +72,7 @@ export async function onRequest({request}) {
           portraitUrl,
         };
       }),
-    );
+    )).filter(Boolean);
 
     finalCharacters.sort((a, b) => b.level - a.level);
 
@@ -120,7 +124,11 @@ async function fetchCharacterProfile(token, character) {
         },
       },
     );
-  } catch (_) {
+  } catch (error) {
+    if (error?.status === 404) {
+      return null;
+    }
+
     return {};
   }
 }

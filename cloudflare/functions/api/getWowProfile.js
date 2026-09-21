@@ -1,4 +1,5 @@
 import {
+  characterProfileExists,
   fetchBattleNetJson,
   getBearerToken,
   handleOptions,
@@ -27,7 +28,24 @@ export async function onRequest({request}) {
       },
     );
 
-    return json(data);
+    const accounts = await Promise.all(
+      (data.wow_accounts ?? []).map(async (account) => {
+        const characters = await Promise.all(
+          (account.characters ?? []).map(async (character) => {
+            return (await characterProfileExists(token, character))
+              ? character
+              : null;
+          }),
+        );
+
+        return {
+          ...account,
+          characters: characters.filter(Boolean),
+        };
+      }),
+    );
+
+    return json({...data, wow_accounts: accounts});
   } catch (error) {
     return toErrorResponse(error);
   }
