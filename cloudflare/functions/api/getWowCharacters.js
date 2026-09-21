@@ -162,35 +162,57 @@ async function fetchCharacterProfessions(token, character) {
     return [];
   }
 
-  try {
-    const characterSlug = encodeURIComponent(character.name.toLowerCase());
-    const data = await fetchBattleNetJson(
-      `https://eu.api.blizzard.com/profile/wow/character/${character.realmSlug}/${characterSlug}/professions`,
-      {
+  const characterSlug = encodeURIComponent(character.name.toLowerCase());
+  const endpoint =
+    `https://eu.api.blizzard.com/profile/wow/character/${character.realmSlug}/${characterSlug}/professions`;
+
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    try {
+      const data = await fetchBattleNetJson(endpoint, {
         token,
         params: {
           namespace: "profile-eu",
           locale: "fr_FR",
         },
-      },
-    );
+      });
 
-    return collectProfessionNames(data);
-  } catch (_) {
-    return [];
+      return collectProfessionNames(data);
+    } catch (error) {
+      const shouldRetry =
+        attempt === 0 &&
+        (error?.status == null ||
+          error.status === 408 ||
+          error.status === 429 ||
+          error.status >= 500);
+
+      if (shouldRetry) {
+        await new Promise((resolve) => setTimeout(resolve, 150));
+        continue;
+      }
+
+      console.warn("Unable to load character professions", {
+        character: character.name,
+        realm: character.realmSlug,
+        status: error?.status ?? "network_error",
+      });
+      return [];
+    }
   }
+
+  return [];
 }
 
 function collectProfessionNames(data) {
   const names = new Set();
-  const entries = [
-    ...(Array.isArray(data?.primaries) ? data.primaries : []),
-    ...(Array.isArray(data?.secondaries) ? data.secondaries : []),
-    ...(Array.isArray(data?.professions) ? data.professions : []),
-  ];
 
-  for (const entry of entries) {
-    addProfessionName(names, entry);
+  for (const value of [
+    data?.primaries,
+    data?.secondaries,
+    data?.professions,
+    data?.primary_professions,
+    data?.secondary_professions,
+  ]) {
+    addProfessionName(names, value);
   }
 
   return [...names];
@@ -205,9 +227,17 @@ function addProfessionName(names, value) {
     return;
   }
 
+  if (Array.isArray(value)) {
+    for (const entry of value) {
+      addProfessionName(names, entry);
+    }
+    return;
+  }
+
   if (typeof value !== "object") return;
 
   addProfessionName(names, value.profession);
+  addProfessionName(names, value.profession_name);
   addProfessionName(names, value.name);
 }
 

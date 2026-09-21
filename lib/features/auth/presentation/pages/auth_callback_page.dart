@@ -97,7 +97,7 @@ class _AuthCallbackPageState extends State<AuthCallbackPage> {
       if (_isConsumedAuthorizationCodeError(error)) {
         final token = await _tokenService.loadToken();
         if (token != null) {
-          return _repository.getCharacterSummaries(token);
+          return _repository.getCharacters(token);
         }
       }
 
@@ -111,7 +111,7 @@ class _AuthCallbackPageState extends State<AuthCallbackPage> {
   Future<List<WowCharacter>> _exchangeCodeAndLoadCharacters(String code) async {
     final authResult = await _repository.exchangeCodeForToken(code);
     await _tokenService.saveAuthResult(authResult);
-    return _repository.getCharacterSummaries(authResult.accessToken);
+    return _repository.getCharacters(authResult.accessToken);
   }
 
   Future<WowCharacter?> _matchingSelectedCharacter(
